@@ -1,0 +1,80 @@
+---
+permalink: api/reference_element_api_listutilities.html 
+sidebar: sidebar 
+keywords: utilities,list,listing,listutilities 
+summary: ListUtilities メソッドを使用すると、ノードで実行可能な処理をリストできます。 
+---
+= ListUtilities を使用します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ListUtilities メソッドを使用すると、ノードで実行可能な処理をリストできます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ユーティリティ
+ a| 
+ノードで現在実行できるユーティリティのリスト。
+ a| 
+文字列の配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ListUtilities",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "utilities": [
+      "ResetDrives",
+      "ResetNode",
+      "RestartNetworking",
+      "RestartServices",
+      "CreateSupportBundle",
+      "DeleteAllSupportBundles",
+      "CreateClusterSupportBundle"
+    ]
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

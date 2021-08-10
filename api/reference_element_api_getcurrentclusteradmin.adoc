@@ -1,0 +1,79 @@
+---
+permalink: api/reference_element_api_getcurrentclusteradmin.html 
+sidebar: sidebar 
+keywords: cluster,admin,get,getting,current,getcurrentclusteradmin 
+summary: GetCurrentClusterAdmin メソッドを使用すると、現在のプライマリクラスタ管理者に関する情報を取得できますプライマリクラスタ管理者は、クラスタの作成時に作成されます。 
+---
+= GetCurrentClusterAdmin
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetCurrentClusterAdmin メソッドを使用すると、現在のプライマリクラスタ管理者の情報を返すことができますプライマリクラスタ管理者は、クラスタの作成時に作成されます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+クラスタ管理者
+ a| 
+クラスタ管理者に関する情報。
+ a| 
+xref:reference_element_api_clusteradmin.adoc[クラスタ管理者]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+"method": "GetCurrentClusterAdmin",
+"id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+"id": 1,
+"result": {
+    "clusterAdmin":
+        "access": [
+           "administrator"
+        ],
+         "attributes": null,
+         "authMethod": "Cluster"
+         "clusterAdminID": 1,
+         "username": "admin"
+     }
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+10.0

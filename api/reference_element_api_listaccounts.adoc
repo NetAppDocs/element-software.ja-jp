@@ -1,0 +1,141 @@
+---
+permalink: api/reference_element_api_listaccounts.html 
+sidebar: sidebar 
+keywords: account,accounts,list,listing,all,listaccounts 
+summary: ListAccounts を使用すると、ストレージテナントアカウントのリスト全体を取得できます。オプションでページングをサポートできます。Element アカウントを使用してボリュームにアクセスできます。 
+---
+= ListAccounts の 2 つのグループ
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ListAccounts を使用すると、オプションでページングをサポートしながら、ストレージテナントアカウントのリスト全体を取得できます。Element アカウントを使用してボリュームにアクセスできます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+includeStorageContainers のように指定します
+ a| 
+デフォルトでは仮想ボリュームストレージコンテナは応答に含まれます。ストレージコンテナを除外するには、 false に設定します。
+ a| 
+ブール値
+ a| 
+正しいです
+ a| 
+いいえ
+
+
+
+ a| 
+startAccountID
+ a| 
+返される最初のアカウント ID 。このアカウント ID のアカウントが存在しない場合は、アカウント ID 順で次に来るアカウントがリストの先頭として使用されます。リストをページングするには、前の応答の最後のアカウントに「 1 」を加えたアカウント ID を渡します。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+制限（ Limit ）
+ a| 
+返される account オブジェクトの最大数。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+アカウント
+ a| 
+アカウントのリスト。
+ a| 
+xref:reference_element_api_account.adoc[アカウント：] 配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ListAccounts",
+   "params": {
+     "startAccountID"  : 0,
+     "limit" : 1000
+   },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "result" : {
+    "accounts": [
+	{
+        "attributes": {},
+        "username": "jamesw",
+        "targetSecret": "168#5A757ru268)",
+        "volumes": [],
+        "enableChap": false,
+        "status": "active",
+        "accountID": 16,
+        "storageContainerID": "abcdef01-1234-5678-90ab-cdef01234567",
+        "initiatorSecret": "168#5A757ru268)"
+    },
+    {
+        "attributes": {},
+        "username": "jimmyd",
+        "targetSecret": "targetsecret",
+        "volumes": [],
+        "enableChap": true,
+        "status": "active",
+        "accountID": 5,
+        "storageContainerID": "abcdef01-1234-5678-90ab-cdef01234567",
+        "initiatorSecret": "initiatorsecret"
+    }
+  ]
+}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

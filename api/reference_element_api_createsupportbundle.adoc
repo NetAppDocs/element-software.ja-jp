@@ -1,0 +1,157 @@
+---
+permalink: api/reference_element_api_createsupportbundle.html 
+sidebar: sidebar 
+keywords: create,creating,support,bundle,CreateSupportBundle 
+summary: CreateSupportBundle を使用すると、ノードのディレクトリにサポートバンドルファイルを作成できます。作成したバンドルは、 tar.gz ファイルとしてノードに格納されます。 
+---
+= CreateSupportBundle を作成します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+CreateSupportBundle を使用すると、ノードのディレクトリにサポートバンドルファイルを作成できます。作成したバンドルは、 tar ファイルとしてノードに格納されます（ gz 圧縮オプションは extraArgs パラメータで使用できます）。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+bundleName の略
+ a| 
+サポートバンドルの一意の名前。名前を指定しない場合、「 supportbundle 」とノード名がファイル名として使用されます。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+extraArgs
+ a| 
+tar.gz ファイルとしてサポートバンドルを作成する場合は、「 -compress gz 」を使用してください。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+timeoutSec
+ a| 
+サポートバンドルスクリプトを実行する秒数。
+ a| 
+整数
+ a| 
+1 、 500
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+詳細
+ a| 
+サポートバンドルの詳細。有効な値は次のとおり
+
+* bundleName ： CreateSupportBundleAPI メソッドで指定した名前。名前を指定しなかった場合、「 supportbundle 」が使用されます。
+* extraArgs ：このメソッドで渡された引数。
+* files ：システムが作成したサポートバンドルファイルのリスト。
+* output ：サポートバンドルを作成したスクリプトからのコマンドライン出力。
+* timeoutSec ：サポートバンドルスクリプトの実行を停止するまでの秒数。
+* url ：作成されたサポートバンドルの URL 。
+
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+期間
+ a| 
+サポートバンドルの作成に使用された時間。形式は HH ： MM ： SS.ssss です。
+ a| 
+文字列
+
+
+
+ a| 
+結果
+ a| 
+サポートバンドルの処理が成功したか失敗したか。
+ a| 
+文字列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+ "method": "CreateSupportBundle",
+"params": {
+  "extraArgs": "--compress gz"
+ },
+"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+"id": 1,
+"result": {
+  "details": {
+    "bundleName": "supportbundle",
+    "extraArgs": "--compress gz",
+    "files": [
+         "supportbundle.nodehostname.tar.gz"
+     ],
+     "output": "timeout -s KILL 1500s /sf/scripts/sfsupportbundle --quiet --compress gz /tmp/solidfire-dtemp.1L6bdX/supportbundle<br><br>Moved '/tmp/solidfire-dtemp.1L6bdX/supportbundle.nodehostname.tar.gz' to /tmp/supportbundles",
+      "timeoutSec": 1500,
+      "url": [
+          "https://nodeIP:442/config/supportbundles/supportbundle.nodehostname.tar.gz"
+      ]
+    },
+    "duration": "00:00:43.101627",
+    "result": "Passed"
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

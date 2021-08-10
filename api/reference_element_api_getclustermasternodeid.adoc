@@ -1,0 +1,72 @@
+---
+permalink: api/reference_element_api_getclustermasternodeid.html 
+sidebar: sidebar 
+keywords: cluster,master,node,ID,get,getting,getclustermasternodeID 
+summary: GetClusterMasterNodeID メソッドを使用すると、クラスタ全体の管理タスクを実行し、ストレージ仮想 IP アドレス（ SVIP ）と管理仮想 IP アドレス（ MVIP ）を保持するノードの ID を取得できます。 
+---
+= GetClusterMasterNodeID
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 GetClusterMasterNodeID 」メソッドを使用すると、クラスタ全体の管理タスクを実行し、ストレージ仮想 IP アドレス（ SVIP ）と管理仮想 IP アドレス（ MVIP ）を保持するノードの ID を取得できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ノード ID
+ a| 
+マスターノードの ID 。
+ a| 
+整数
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "GetClusterMasterNodeID",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id" : 1
+  "result": {
+    "nodeID": 1
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

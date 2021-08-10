@@ -1,0 +1,83 @@
+---
+permalink: api/reference_element_api_rekeysoftwareencryptionatrestmasterkey.html 
+sidebar: sidebar 
+keywords: system, api, element, security, rekey, software encryption at rest 
+summary: RekeySoftwareEncryptionAtRestMasterKey メソッドを使用すると、 DEK （データ暗号化キー）の暗号化に使用される保存時のソフトウェア暗号化マスターキーを再生成できます。 
+---
+= RekeySoftwareEncryptionAtRestMasterKey
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RekeySoftwareEncryptionAtRestMasterKey メソッドを使用すると、 DEK （データ暗号化キー）の暗号化に使用される保存時のソフトウェア暗号化マスターキーを再生成できます。クラスタ作成時に、保存データのソフトウェア暗号化が内部キー管理（ IKM ）を使用するように設定されます。このキー再生成方法は、クラスタの作成後に IKM または外部キー管理（ EKM ）を使用するために使用できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。keyManagementType パラメータを指定しない場合は、既存のキー管理設定を使用してキー変更操作が実行されます。「 keyManagementType 」を指定し、キープロバイダが外部の場合は、「 keyProviderID 」パラメータも使用する必要があります。
+
+[cols="4*"]
+|===
+| パラメータ | 説明 | を入力します | 任意。 
+
+
+| keyManagementType をクリックします | マスターキーの管理に使用されるキー管理のタイプ。有効な値は「 Internal 」です。内部キー管理を使用してキーを再生成します。[External] ：外部キー管理を使用してキーを再生成します。このパラメータを指定しない場合は、既存のキー管理設定を使用してキー変更処理が実行されます。 | 文字列 | 正しいです 
+
+
+| KeyProviderID | 使用するキープロバイダの ID 。これは 'CreateKeyProvider' メソッドの一部として返される一意の値ですID は 'keyManagementType' が External の場合にのみ必要であり ' それ以外の場合は無効です | 整数 | 正しいです 
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+[cols="4*"]
+|===
+| パラメータ | 説明 | を入力します | 任意。 
+
+
+| asyncHandle | この「 asyncHandle 」値を「 GetAsyncResult 」に指定して、キー変更処理のステータスを確認します。「 GetAsyncResult 」の出力には、新しいマスターキーに関する情報と、古いキーに関する情報が格納された「 keyToDecommission 」フィールドが含まれます。 | 整数 | いいえ 
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+ "method": "rekeysoftwareencryptionatrestmasterkey",
+ "params": {
+   "keyManagementType": "external",
+   "keyProviderID": "<ID number>"
+ }
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+    "asyncHandle": 1
+}
+----
+
+
+== 新規導入バージョン
+
+12.3
+
+[discrete]
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire のリソースページ"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
+

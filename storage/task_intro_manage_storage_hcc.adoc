@@ -1,0 +1,28 @@
+---
+permalink: storage/task_intro_manage_storage_hcc.html 
+sidebar: sidebar 
+keywords: hybrid cloud control, element, user account, cluster, storage, volume access group, quality of service, qos, initiator, hcc 
+summary: NetApp Hybrid Cloud Control を使用してストレージアセットを管理できます。 
+---
+= NetApp Hybrid Cloud Control を使用してストレージを管理します
+:icons: font
+:imagesdir: ../media/
+
+
+NetApp Hybrid Cloud Control を使用してストレージアセットを管理できます。
+
+* https://docs.netapp.com/us-en/hci/docs/task_hcc_manage_accounts.html["ユーザアカウントを作成および管理します"^]
+* https://docs.netapp.com/us-en/hci/docs/task_hcc_manage_storage_clusters.html["ストレージクラスタを追加および管理する"^]
+* https://docs.netapp.com/us-en/hci/docs/task_hcc_manage_vol_management.html["ボリュームを作成および管理する"^]
+* https://docs.netapp.com/us-en/hci/docs/task_hcc_manage_vol_access_groups.html["ボリュームアクセスグループを作成および管理します"^]
+* https://docs.netapp.com/us-en/hci/docs/task_hcc_manage_initiators.html["イニシエータを作成および管理する"^]
+* https://docs.netapp.com/us-en/hci/docs/task_hcc_qos_policies.html["ボリュームの QoS ポリシーの作成と管理"^]
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

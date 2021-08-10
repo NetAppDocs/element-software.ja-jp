@@ -1,0 +1,59 @@
+---
+permalink: api/reference_element_api_attributes.html 
+sidebar: sidebar 
+keywords: QoS,object,Quality,Service 
+summary: API の多くの要求と応答では、オブジェクトとシンプルな型を使用します。オブジェクトはキーと値のペアの集まりで、値は単純なタイプまたは別のオブジェクトです。属性は、 JSON オブジェクトでユーザが設定できるカスタムの名前と値のペアです。一部のメソッドでは、オブジェクトの作成時または変更時に属性を追加できます。 
+---
+= 属性（ Attributes ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+API の多くの要求と応答では、オブジェクトとシンプルな型を使用します。オブジェクトはキーと値のペアの集まりで、値は単純なタイプまたは別のオブジェクトです。属性は、 JSON オブジェクトでユーザが設定できるカスタムの名前と値のペアです。一部のメソッドでは、オブジェクトの作成時または変更時に属性を追加できます。
+
+エンコードされた属性オブジェクトには 1000 バイトの制限があります。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON オブジェクト
+
+|===
+
+
+== 要求例
+
+次の要求例では、 AddClusterAdmin メソッドを使用しています。
+
+[listing]
+----
+{
+   "method": "AddClusterAdmin",
+   "params": {
+      "username": "joeadmin",
+      "password": "68!5Aru268)$",
+      "access": [
+         "volume",
+         "reporting"
+      ],
+      "attributes": {
+         "name1": "value1",
+         "name2": "value2",
+         "name3": "value3"
+      }
+   }
+}
+----

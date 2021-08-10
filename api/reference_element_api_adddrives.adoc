@@ -1,0 +1,125 @@
+---
+permalink: api/reference_element_api_adddrives.html 
+sidebar: sidebar 
+keywords: drives,adding,cluster,drive,add,adddrives 
+summary: AddDrives メソッドを使用すると、 1 つ以上の使用可能なドライブをクラスタに追加できます。これにより、ドライブはクラスタのデータの一部をホスティングできるようになります。 
+---
+= AddDrives
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AddDrives メソッドを使用すると、 1 つ以上の使用可能なドライブをクラスタに追加できます。これにより、ドライブはクラスタのデータの一部をホスティングできるようになります。
+
+ストレージノードをクラスタに追加するときや既存のノードに新しいドライブをインストールするときに、新しいドライブは「 available 」とマーキングされます。ドライブを利用可能にするには、事前に AddDrives 経由で追加しておく必要があります。を使用します xref:reference_element_api_listdrives.adoc[ListDrives の 2 つのメソッド] メソッドを使用すると、追加可能なドライブを表示できます。ドライブを追加すると、そのドライブに適切なタイプが自動的に決定されます。
+
+このメソッドは非同期で、クラスタ内のドライブをリバランシングするプロセスが開始された時点で戻ります。ただし、新しく追加したドライブを使用したクラスタ内のデータのリバランシングには時間がかかることがあります。その場合、 AddDrives メソッドの呼び出しが完了してもリバランシングが続きます。を使用できます xref:reference_element_api_getasyncresult.adoc[GetAsyncResult] メソッドを使用してこのメソッドが返した asyncHandle を照会することができます。AddDrives メソッドが返されたら、を使用できます xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs] 新しいドライブでのデータのリバランシングの進捗状況を確認する方法。
+
+
+NOTE: 複数のドライブを追加するときは、 1 つのドライブごとに複数の個別メソッドを使用するよりも、 AddDrives メソッド呼び出しを 1 回使用して追加するほうが効率的です。これにより、クラスタのストレージ負荷を一定にするために実施する必要のあるデータバランシングの量が減少します。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ドライブ
+ a| 
+クラスタに追加する各ドライブに関する情報。有効な値は次のとおり
+
+* driveID ：追加するドライブの ID （整数）。
+* type ：追加するドライブのタイプ（文字列）。有効な値は「 slice 」、「 block 」、「 volume 」です。省略した場合は、正しいタイプが割り当てられます。
+
+ a| 
+JSON オブジェクトの配列
+ a| 
+なし
+ a| 
+○（ type は省略可能）
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+asyncHandle
+ a| 
+処理結果の取得に使用されるハンドル値。
+ a| 
+整数
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "method": "AddDrives",
+  "params": {
+    "drives": [
+      {
+        "driveID": 1,
+        "type": "slice"
+      },
+      {
+        "driveID": 2,
+        "type": "block"
+      },
+      {
+        "driveID": 3,
+        "type": "block"
+      }
+    ]
+  }
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result" : {
+    "asyncHandle": 1
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_element_api_getasyncresult.adoc[GetAsyncResult]
+* xref:reference_element_api_listdrives.adoc[ListDrives の 2 つのメソッド]
+* xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs]
+

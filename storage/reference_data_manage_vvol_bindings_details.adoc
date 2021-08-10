@@ -1,0 +1,45 @@
+---
+permalink: storage/reference_data_manage_vvol_bindings_details.html 
+sidebar: sidebar 
+keywords: bindings details, vvols, for each virtual volume, endpoints, 
+summary: VVol タブのバインドページには、各仮想ボリュームに関するバインド情報が表示されます。 
+---
+= バインディングの詳細
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VVol タブのバインドページには、各仮想ボリュームに関するバインド情報が表示されます。
+
+次の情報が表示されます。
+
+* * ホスト ID *
++
+仮想ボリュームをホストしていて、クラスタが認識している ESXi ホストの UUID 。
+
+* * プロトコルエンドポイント ID *
++
+SolidFire クラスタ内の各ノードに対応するプロトコルエンドポイント ID 。
+
+* * 帯域 ID 内のプロトコルエンドポイント *
++
+プロトコルエンドポイントの SCSI NAA デバイス ID 。
+
+* * プロトコルエンドポイントタイプ *
++
+プロトコルエンドポイントタイプ。
+
+* * VVOL のバインド ID *
++
+仮想ボリュームのバインドの UUID 。
+
+* * VVol ID *
++
+仮想ボリュームの Universally Unique Identifier （ UUID ）。
+
+* * VVol セカンダリ ID *
++
+SCSI セカンドレベル LUN ID である仮想ボリュームのセカンダリ ID 。
+
+

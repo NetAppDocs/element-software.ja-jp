@@ -1,0 +1,90 @@
+---
+permalink: api/reference_element_api_setremotelogginghosts.html 
+sidebar: sidebar 
+keywords: remote,logging,host,hosts,set,setting,setremotelogginghosts 
+summary: SetRemoteLoggingHosts メソッドを使用すると、ストレージクラスタ内のノードから一元化された 1 台以上のログサーバへのリモートロギングを設定できます。リモートロギングは、デフォルトポート 514 を使用して TCP 経由で実行されます。この API は、既存のロギングホストには追加しません。現在のロギングホストをこの API メソッドで指定された新しいホストに置き換えます。GetRemoteLoggingHosts を使用して現在のロギングホストを特定してから、 SetRemoteLoggingHosts を使用して現在のロギングホストに新しいロギングホストを加えたリストを設定できます。 
+---
+= SetRemoteLoggingHosts
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「リモート LoggingHosts 」メソッドを使用すると、ストレージクラスタ内のノードから一元化された 1 台以上のログサーバへのリモートロギングを設定できます。リモートロギングは、デフォルトポート 514 を使用して TCP 経由で実行されます。この API は、既存のロギングホストには追加しません。現在のロギングホストをこの API メソッドで指定された新しいホストに置き換えます。「 GetRemoteLoggingHosts 」を使用して現在のロギングホストを特定し、「 S etRemoteLoggingHosts 」を使用して現在のロギングホストと新しいロギングホストのリストを設定できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+リモートホスト
+ a| 
+ログメッセージの受信者であるホストのリスト。
+ a| 
+xref:reference_element_api_loggingserver.adoc[loggingServer の場合] 配列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "method": "SetRemoteLoggingHosts",
+   "params": {
+     "remoteHosts": [
+        {
+          "host": "172.16.1.20",
+          "port": 10514
+        },
+        {
+          "host": "172.16.1.25"
+        }
+      ]
+   }
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+    "id" : 1,
+    "result" : {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_getremotelogginghosts.adoc[GetRemoteLoggingHosts]

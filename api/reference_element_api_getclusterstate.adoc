@@ -1,0 +1,84 @@
+---
+permalink: api/reference_element_api_getclusterstate.html 
+sidebar: sidebar 
+keywords: cluster,state,getting,get,getclusterstate 
+summary: GetClusterState API メソッドを使用すると、ノードがクラスタに含まれているかどうかを確認できます。 
+---
+= GetClusterState
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetClusterState API メソッドを使用すると、ノードがクラスタに含まれているかどうかを確認できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+クラスタ
+ a| 
+クラスタの名前。
+ a| 
+文字列
+
+
+
+ a| 
+状態
+ a| 
+* Available ：ノードにクラスタ名が設定されていません。
+* Pending ：ノードは特定の名前付きクラスタに対して Pending の状態で、追加可能です。
+* Active ：ノードはクラスタのアクティブなメンバーであり、別のクラスタに追加できません。
+
+ a| 
+文字列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "GetClusterState",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" :
+      "cluster" :  "Cluster101"
+      "state" : "Active"
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

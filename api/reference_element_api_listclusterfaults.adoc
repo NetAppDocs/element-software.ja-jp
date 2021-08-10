@@ -1,0 +1,148 @@
+---
+permalink: api/reference_element_api_listclusterfaults.html 
+sidebar: sidebar 
+keywords: cluster,list,listing,fault,faults,listclusterfaults,error,errors 
+summary: ListClusterFaults メソッドを使用すると、クラスタで検出されたあらゆる障害に関する情報をリストできます。このメソッドでは、現在の障害と解決済みの障害の両方を表示できます。障害は 30 秒ごとにキャッシュされます。 
+---
+= ListClusterFaults
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ListClusterFaults 」メソッドを使用すると、クラスタで検出されたあらゆる障害に関する情報をリストできます。このメソッドでは、現在の障害と解決済みの障害の両方を表示できます。障害は 30 秒ごとにキャッシュされます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+BestPractices
+ a| 
+最適化されていないシステム構成でトリガーされた障害が含まれます。有効な値は次のとおり
+
+* 正しいです
+* いいえ
+
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+フォールトタイプ
+ a| 
+返される障害のタイプを指定します。有効な値は次のとおり
+
+* current ：アクティブな未解決の障害を表示します。
+* resolved ：以前に検出された解決済みの障害を表示します。
+* all ：現在の障害と解決済みの障害の両方を表示します。障害ステータスは、障害オブジェクトの「解決済み」メンバーで確認できます。
+
+ a| 
+文字列
+ a| 
+すべて
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+障害
+ a| 
+要求されたクラスタ障害の詳細を示すオブジェクト。
+ a| 
+xref:reference_element_api_fault.adoc[障害]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "ListClusterFaults",
+    "params": {
+      "faultTypes": "current",
+      "bestPractices": true
+    },
+    "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "faults": [
+      {
+        "clusterFaultID": 1,
+        "code": "notUsingLACPBondMode",
+        "data": null,
+        "date": "2016-04-26T14:57:04.275286Z",
+        "details": "Bond1G interfaces found not using LACP bond mode. Nodes not set to LACP bond mode: {1,2,4,5}",
+        "driveID": 0,
+        "driveIDs": [],
+        "nodeHardwareFaultID": 0,
+        "nodeID": 0,
+        "resolved": false,
+        "resolvedDate": "",
+        "serviceID": 0,
+        "severity": "bestPractice",
+        "type": "cluster"
+      },
+      {
+        "clusterFaultID": 9,
+        "code": "disconnectedClusterPair",
+        "data": null,
+        "date": "2016-04-26T20:40:08.736597Z",
+        "details": "One of the clusters in a pair may have become misconfigured or disconnected.  Remove the local pairing and retry pairing the clusters. Disconnected Cluster Pairs: []. Misconfigured Cluster Pairs: [3]",
+        "driveID": 0,
+        "driveIDs": [],
+        "nodeHardwareFaultID": 0,
+        "nodeID": 0,
+        "resolved": false,
+        "resolvedDate": "",
+        "serviceID": 0,
+        "severity": "warning",
+        "type": "cluster"
+      }
+    ]
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

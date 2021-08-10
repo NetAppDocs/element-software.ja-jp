@@ -1,0 +1,26 @@
+---
+permalink: storage/task_data_protection_edit_members_of_group_snapshot.html 
+sidebar: sidebar 
+keywords: group snapshot members, edit 
+summary: 既存のグループ Snapshot のメンバーの保持の設定を編集できます。 
+---
+= グループ Snapshot のメンバーを編集しています
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+既存のグループ Snapshot のメンバーの保持の設定を編集できます。
+
+. [ * データ保護 *>* スナップショット * ] をクリックします。
+. [* メンバー * （ Members * ） ] タブをクリックします。
+. 編集するグループ Snapshot メンバーの操作アイコンをクリックします。
+. 表示されたメニューで、「 * 編集 * 」を選択します。
+. Snapshot のレプリケーション設定を変更するには、次のいずれかのオプションを選択します。
++
+** 「 * Forever * 」をクリックして、 Snapshot をシステム上に無期限に保持します。
+** [ * 保存期間の設定 * ] をクリックし、日付スピンボックスを使用して、システムがスナップショットを保持する期間を選択します。
+
+
+. [ 変更の保存 *] をクリックします。
+

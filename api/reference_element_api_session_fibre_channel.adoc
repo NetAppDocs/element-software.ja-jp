@@ -1,0 +1,89 @@
+---
+permalink: api/reference_element_api_session_fibre_channel.html 
+sidebar: sidebar 
+keywords: object,objects,session 
+summary: session オブジェクトには、クラスタが認識できる各 Fibre Channel セッションと認識可能なターゲットポートの情報が含まれます。この情報は、 ListFibreChannelSessions API メソッドを使用して取得できます。 
+---
+= セッション（ Fibre Channel ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+session オブジェクトには、クラスタが認識できる各 Fibre Channel セッションと認識可能なターゲットポートの情報が含まれます。これらの情報は 'ListFibreChannelSessions' API メソッドを使用して取得できます
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+イニシエータ WWPN
+ a| 
+ターゲットポートにログインするイニシエータの World Wide Port Name （ WWPN ）。
+ a| 
+文字列
+
+
+
+ a| 
+ノード ID
+ a| 
+Fibre Channel セッションを所有するノード。
+ a| 
+整数
+
+
+
+ a| 
+イニシエータ
+ a| 
+この Fibre Channel セッションのサーバイニシエータに関する情報。メンバー
+
+* alias ：イニシエータに割り当てられたフレンドリ名。
+* attributes ：このイニシエータの属性。
+* initiatorID ：このイニシエータの ID 。
+* initiatorName ：このイニシエータの名前。
+* volumeAccessGroups ：このイニシエータに関連付けられたボリュームアクセスグループのリスト。
+
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+サービス ID
+ a| 
+このセッションに関連するターゲットポートのサービス ID 。
+ a| 
+整数
+
+
+
+ a| 
+ターゲット WWPN
+ a| 
+このセッションに関連するターゲットポートの WWPN 。
+ a| 
+文字列
+
+
+
+ a| 
+ボリュームアクセスグループ ID
+ a| 
+イニシエータ WWPN が属するボリュームアクセスグループの ID 。ボリュームアクセスグループ内に存在しない場合、この値は null です。
+ a| 
+整数
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_listfibrechannelsessions.adoc[ListFibreChannelSessions]

@@ -1,0 +1,65 @@
+---
+permalink: storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html 
+sidebar: sidebar 
+keywords: enable, disable, encryption at rest, cluster, sed, hardware-based, encryption settings, software-based 
+summary: SolidFire クラスタでは、ソフトウェアベースまたはハードウェアベースの保存データ暗号化を使用して、クラスタに格納されているすべてのデータを暗号化できます。 
+---
+= クラスタの保存データの暗号化を有効または無効にします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire クラスタでは、クラスタドライブに格納されているすべての保存データを暗号化できます。どちらかを使用して、クラスタ全体の自己暗号化ドライブ（ SED ）の保護を有効にすることができます link:../concepts/concept_solidfire_concepts_security.html["保存データのハードウェアまたはソフトウェアベースの暗号化"]。
+
+Element UI または API を使用して、保存データのハードウェア暗号化を有効にすることができます。保存データの暗号化機能を有効にしても、クラスタのパフォーマンスや効率には影響しません。Element API でのみ、保存データのソフトウェア暗号化を有効にすることができます。
+
+保存データのハードウェアベースの暗号化は、クラスタの作成時にデフォルトでは有効になりません。また、 Element UI から有効または無効にすることができます。クラスタの作成時に保存データのソフトウェア暗号化を有効にし、クラスタの作成後に無効にすることはできません。
+
+.必要なもの
+* 暗号化の設定を有効にしたり変更したりするためのクラスタ管理者権限が必要です。
+* 保存データのハードウェアベースの暗号化では、暗号化の設定を変更する前にクラスタが正常な状態であることを確認しておきます。
+* 暗号化を無効にする場合は、ドライブの暗号化を無効にするために、 2 つのノードがクラスタに参加している必要があります。
+
+
+.オプション（ Options ）
+* <<Enable hardware-based encryption at rest>>
+* <<Enable software-based encryption at rest>>
+* <<Disable hardware-based encryption at rest>>
+
+
+
+
+== 保存データのハードウェアベースの暗号化を有効にします
+
+
+NOTE: 外部キー管理設定を使用して保存データの暗号化を有効にするには、を使用して保存データの暗号化を有効にする必要があります link:../api/reference_element_api_enableencryptionatrest.html["API"]。既存の Element UI ボタンを使用してを有効にすると、内部で生成されたキーの使用に戻ります。
+
+. Element UI で、 * Cluster * > * Settings * を選択します。
+. [ 保存データの暗号化を有効にする ] を選択します。
+
+
+
+
+== 保存データのソフトウェアベースの暗号化を有効にします
+
+
+NOTE: 保存データのソフトウェア暗号化は、クラスタで有効にしたあとは無効にできません。
+
+. クラスタの作成時に、を実行します link:../api/reference_element_api_createcluster.html["クラスタメソッドを作成します"] enableSoftwareEncryptionAtRest を「 true 」に設定します。
+
+
+
+
+== 保存データのハードウェアベースの暗号化を無効にします
+
+. Element UI で、 * Cluster * > * Settings * を選択します。
+. [ 保存データの暗号化を無効にする ] を選択します。
+
+
+[discrete]
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire のリソースページ"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
+

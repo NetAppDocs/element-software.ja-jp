@@ -1,0 +1,133 @@
+---
+permalink: api/reference_element_api_createsnapmirrorvolume.html 
+sidebar: sidebar 
+keywords: SnapMirror,endpoints,create,creating,volume,volumes,CreateSnapMirrorVolume 
+summary: Element Web UI は、 CreateSnapMirrorVolume メソッドを使用して、リモート ONTAP システムにボリュームを作成します。 
+---
+= SnapMirror ボリュームを作成します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element Web UI は、「 CreateSnapMirrorVolume 」メソッドを使用して、リモート ONTAP システム上にボリュームを作成します。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+Element ストレージクラスタと通信するリモート ONTAP ストレージシステムのエンドポイント ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+Vserver
+ a| 
+SVM の名前。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+名前
+ a| 
+デスティネーション ONTAP ボリュームの名前。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+を入力します
+ a| 
+ボリュームのタイプ。有効な値は次のとおり
+
+* rw ：読み書き可能なボリューム
+* ls ：負荷共有ボリューム
+* dp ：データ保護ボリューム
+
+
+タイプを指定しない場合、デフォルトのタイプは DP です。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+アグリゲート
+ a| 
+ボリュームの作成先の ONTAP アグリゲート。ListSnapMirrorAggregates を使用すると、使用可能な ONTAP アグリゲートに関する情報を取得できます。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+サイズ
+ a| 
+ボリュームのサイズ（バイト）。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorVolume
+ a| 
+SnapMirror ボリュームの情報。
+ a| 
+xref:reference_element_api_snapmirrorvolume.adoc[snapMirrorVolume]
+
+|===
+
+
+== 新規導入バージョン
+
+10.1

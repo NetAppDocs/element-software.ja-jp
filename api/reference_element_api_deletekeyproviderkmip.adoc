@@ -1,0 +1,77 @@
+---
+permalink: api/reference_element_api_deletekeyproviderkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key provider,deleting,delete 
+summary: DeleteKeyProviderKmip メソッドを使用すると、指定した非アクティブな Key Management Interoperability Protocol\ （ KMIP \ ）キープロバイダを削除できます。 
+---
+= DeleteKeyProviderKmip
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+`D eleetKeyProviderKmip メソッドを使用すると、指定した非アクティブな Key Management Interoperability Protocol (KMIP ) キープロバイダを削除できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+KeyProviderID
+ a| 
+削除するキープロバイダの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。エラーがないかぎり、削除操作は成功したとみなされます。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "DeleteKeyProviderKmip",
+  "params": {
+    "keyProviderID": "1"
+    },
+"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {}
+}
+----
+
+
+== 新規導入バージョン
+
+11.7

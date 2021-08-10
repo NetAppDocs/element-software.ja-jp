@@ -1,0 +1,139 @@
+---
+permalink: api/reference_element_api_copyvolume.html 
+sidebar: sidebar 
+keywords: volume,volumes,CopyVolume,overwrite,overwriting,data 
+summary: CopyVolume メソッドを使用すると、既存のボリュームのデータコンテンツを別のボリューム（または Snapshot\ ）のデータコンテンツで上書きできます。IQN 、 QoS 設定、サイズ、アカウント、ボリュームアクセスグループのメンバーシップなどの、デスティネーションボリュームの属性は変更されません。デスティネーションボリュームは、すでに存在している必要があり、ソースボリュームと同じサイズである必要があります。 
+---
+= CopyVolume （コピーボリューム）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 CopyVolume 」メソッドを使用すると、既存のボリュームのデータコンテンツを別のボリューム（またはスナップショット）のデータコンテンツで上書きできます。IQN 、 QoS 設定、サイズ、アカウント、ボリュームアクセスグループのメンバーシップなどの、デスティネーションボリュームの属性は変更されません。デスティネーションボリュームは、すでに存在している必要があり、ソースボリュームと同じサイズである必要があります。
+
+この処理を開始する前にクライアントでデスティネーションボリュームをアンマウントすることを推奨します。処理中にデスティネーションボリュームが変更された場合、変更は失われます。この処理が完了するまでの時間は状況によって異なります。を使用できます xref:reference_element_api_getasyncresult.adoc[GetAsyncResult] プロセスがいつ完了したかを判断する方法、および xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs] をクリックしてコピーの進捗状況を確認してください。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+dstVolumeID
+ a| 
+上書きするボリュームの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+ボリューム ID
+ a| 
+データを読み取るボリュームの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+Snapshot ID
+ a| 
+クローンのソースとして使用される Snapshot の ID 。ID を指定しない場合は、現在のアクティブボリュームが使用されます。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+asyncHandle
+ a| 
+処理結果の取得に使用されるハンドル値。
+ a| 
+整数
+
+
+
+ a| 
+クローン ID
+ a| 
+新しいクローンボリュームのクローン ID 。
+ a| 
+整数
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "CopyVolume",
+   "params": {
+      "volumeID" : 3,
+      "dstVolumeID" : 2
+   },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "asyncHandle": 9,
+    "cloneID": 5
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_element_api_getasyncresult.adoc[GetAsyncResult]
+* xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs]
+

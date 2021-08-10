@@ -1,0 +1,42 @@
+---
+permalink: setup/task_setup_create_a_volume_access_group_for_fibre_channel_clients.html 
+sidebar: sidebar 
+keywords:  
+summary: ボリュームアクセスグループによって、 Fibre Channel クライアントと SolidFire ストレージシステム上のボリューム間の通信が可能になります。Fibre Channel クライアントのイニシエータ（ WWPN ）をボリュームアクセスグループ内のボリュームにマッピングすることで、 Fibre Channel ネットワークと SolidFire ボリュームの間の安全なデータ I/O 通信が実現します。 
+---
+= Fibre Channel クライアントのボリュームアクセスグループを作成します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリュームアクセスグループによって、 Fibre Channel クライアントと SolidFire ストレージシステム上のボリューム間の通信が可能になります。Fibre Channel クライアントのイニシエータ（ WWPN ）をボリュームアクセスグループ内のボリュームにマッピングすることで、 Fibre Channel ネットワークと SolidFire ボリュームの間の安全なデータ I/O 通信が実現します。
+
+iSCSI イニシエータをボリュームアクセスグループに追加することもできます。これにより、イニシエータはボリュームアクセスグループ内の同じボリュームにアクセスできるようになります。
+
+.手順
+. [* 管理 *>* アクセスグループ *] をクリックします。
+. [ アクセスグループの作成 *] をクリックします。
+. ボリュームアクセスグループの名前を * Name * フィールドに入力します。
+. Fibre Channel イニシエータを * Unbound Fibre Channel Initiators * リストから選択して追加します。
++
+
+NOTE: イニシエータはあとから追加または削除できます。
+
+. * オプション： * Initiators * リストから iSCSI イニシエータを選択して追加します。
+. ボリュームをアクセスグループに接続するには、次の手順を実行します。
++
+.. * Volumes （ボリューム） * リストからボリュームを選択します。
+.. [* ボリュームの添付 * ] をクリックします。
+
+
+. [ アクセスグループの作成 *] をクリックします。
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

@@ -1,0 +1,76 @@
+---
+permalink: api/reference_element_api_removebackuptarget.html 
+sidebar: sidebar 
+keywords: backup,target,targets,remove,delete,removing,deleting,removebackuptarget 
+summary: RemoveBackupTarget メソッドを使用すると、バックアップターゲットを削除できます。 
+---
+= RemoveBackupTarget
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RemoveBackupTarget メソッドを使用すると ' バックアップ・ターゲットを削除できます
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+backupTargetID
+ a| 
+削除するターゲットの一意の ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "RemoveBackupTarget",
+   "params": {
+        "backupTargetID" : 1
+   },
+    "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

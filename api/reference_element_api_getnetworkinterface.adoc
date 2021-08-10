@@ -1,0 +1,185 @@
+---
+permalink: api/reference_element_api_getnetworkinterface.html 
+sidebar: sidebar 
+keywords: nodes,node,network,interface,get,getting,getnetworkinterface 
+summary: GetNetworkInterface メソッドを使用すると、ノードのネットワークインターフェイスに関する情報を取得できます。 
+---
+= GetNetworkInterface の略
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetNetworkInterface メソッドを使用すると、ノードのネットワークインターフェイスに関する情報を取得できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+インターフェイス
+ a| 
+各ノードについて情報を取得するインターフェイスの名前。有効な値は次のとおり
+
+* Bond1G
+* Bond10G です
+
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+[-force]
+ a| 
+このパラメータを true に設定すると、クラスタのすべてのノードに対して実行されます。
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ノード
+ a| 
+ストレージクラスタ内の各ストレージノードのインターフェイスの詳細を示すオブジェクトの配列。配列内の各オブジェクトには、次のアイテムが含まれます。
+
+* nodeID ：（整数）ストレージクラスタ内のストレージノードの ID 。インターフェイス情報環境。
+* 結果：（xref:reference_element_api_networkinterface.adoc[NetworkInterface の略]）このストレージノードのインターフェイス設定情報。
+
+ a| 
+JSON オブジェクトの配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+	"method": "GetNetworkInterface",
+	"params": {
+		"interface": "Bond1G",
+		"force": true
+		},
+	"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"nodes": [
+			{
+				"nodeID": 1,
+				"result": {
+					"interface": {
+						"address": "10.117.64.32",
+						"addressV6": "::",
+						"broadcast": "10.117.79.255",
+						"macAddress": "90:b1:1c:42:e0:1e",
+						"mtu": 1500,
+						"name": "Bond1G",
+						"namespace": false,
+						"netmask": "255.255.240.0",
+						"status": "UpAndRunning",
+						"type": "BondMaster",
+						"virtualNetworkTag": 0
+					}
+				}
+			},
+			{
+				"nodeID": 2,
+				"result": {
+					"interface": {
+						"address": "10.117.64.35",
+						"addressV6": "::",
+						"broadcast": "10.117.79.255",
+						"macAddress": "d4:ae:52:7a:ae:23",
+						"mtu": 1500,
+						"name": "Bond1G",
+						"namespace": false,
+						"netmask": "255.255.240.0",
+						"status": "UpAndRunning",
+						"type": "BondMaster",
+						"virtualNetworkTag": 0
+					}
+				}
+			},
+			{
+				"nodeID": 3,
+				"result": {
+					"interface": {
+						"address": "10.117.64.39",
+						"addressV6": "::",
+						"broadcast": "10.117.79.255",
+						"macAddress": "c8:1f:66:f0:9d:17",
+						"mtu": 1500,
+						"name": "Bond1G",
+						"namespace": false,
+						"netmask": "255.255.240.0",
+						"status": "UpAndRunning",
+						"type": "BondMaster",
+						"virtualNetworkTag": 0
+					}
+				}
+			},
+			{
+				"nodeID": 4,
+				"result": {
+					"interface": {
+						"address": "10.117.64.107",
+						"addressV6": "::",
+						"broadcast": "10.117.79.255",
+						"macAddress": "b8:ca:3a:f5:24:f8",
+						"mtu": 1500,
+						"name": "Bond1G",
+						"namespace": false,
+						"netmask": "255.255.240.0",
+						"status": "UpAndRunning",
+						"type": "BondMaster",
+						"virtualNetworkTag": 0
+					}
+				}
+			}
+		]
+	}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

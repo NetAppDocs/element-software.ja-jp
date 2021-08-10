@@ -1,0 +1,221 @@
+---
+permalink: api/reference_element_api_createcluster.html 
+sidebar: sidebar 
+keywords: CreateCluster,cluster,create,creating,initialize,initializing 
+summary: CreateCluster メソッドを使用すると、「 mvip 」または「 svip 」アドレスを所有するクラスタ内のノードを初期化できます。新しいクラスタは、それぞれクラスタの最初のノードの管理 IP （ MIP ）を使用して初期化されます。このメソッドは、構成されているすべてのノードを自動的にクラスタに追加します。このメソッドを使用するのは、新しいクラスタを初期化するときに 1 回だけです。 
+---
+= クラスタを作成
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 CreateCluster 」メソッドを使用すると、「 mvip 」または「 svip 」アドレスを所有するクラスタ内のノードを初期化できます。新しいクラスタは、それぞれクラスタの最初のノードの管理 IP （ MIP ）を使用して初期化されます。このメソッドは、構成されているすべてのノードを自動的にクラスタに追加します。このメソッドを使用するのは、新しいクラスタを初期化するときに 1 回だけです。
+
+
+NOTE: クラスタのマスターノードにログインしたら、を実行します xref:reference_element_api_getbootstrapconfig.adoc[GetBootStrapConfig] メソッドを使用すると、クラスタに含める残りのノードの IP アドレスを取得できます。クラスタのマスターノードに対して CreateCluster メソッドを実行します。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+アクセトゥーラ
+ a| 
+このクラスタを作成するときに、エンドユーザライセンス契約を承諾するかどうかを指定します。EULA を承諾するには、このパラメータを TRUE に設定します。
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON オブジェクト
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+enableSoftwareEncryptionAtRest
+ a| 
+保存データのソフトウェアベースの暗号化を使用するには、このパラメータを有効にします。SolidFire エンタープライズ SDS クラスタでは、デフォルトで true に設定されています。他のすべてのクラスタのデフォルトは false です。保存データのソフトウェア暗号化を有効にしたあとは、クラスタで無効にすることはできません。
+ a| 
+ブール値
+ a| 
+正しいです
+ a| 
+いいえ
+
+
+
+ a| 
+MVIP
+ a| 
+管理ネットワークのクラスタのフローティング（仮想） IP アドレス。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+ノード
+ a| 
+クラスタを構成するノードの初期セットの CIP / SIP アドレス。このノードの IP はリストに含まれている必要があります。
+ a| 
+文字列の配列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+オーダー番号
+ a| 
+英数字の販売注文番号。ソフトウェアベースのプラットフォームで必要です。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+× （ハードウェアベースのプラットフォーム）
+
+○（ソフトウェアベースのプラットフォーム）
+
+
+
+ a| 
+パスワード
+ a| 
+クラスタ管理アカウントの初期パスワード。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+シリアル番号
+ a| 
+9 桁の英数字シリアル番号。ソフトウェアベースのプラットフォームでは、必要になる場合があります。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+× （ハードウェアベースのプラットフォーム）
+
+○（ソフトウェアベースのプラットフォーム）
+
+
+
+ a| 
+svip
+ a| 
+ストレージ（ iSCSI ）ネットワークのクラスタのフローティング（仮想） IP アドレス。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+ユーザ名
+ a| 
+クラスタ管理者のユーザ名。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "CreateCluster",
+  "params": {
+    "acceptEula": true,
+    "mvip": "10.0.3.1",
+    "svip": "10.0.4.1",
+    "username": "Admin1",
+    "password": "9R7ka4rEPa2uREtE",
+    "attributes": {
+      "clusteraccountnumber": "axdf323456"
+    },
+    "nodes": [
+      "10.0.2.1",
+      "10.0.2.2",
+      "10.0.2.3",
+      "10.0.2.4"
+    ]
+  },
+  "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+"id" : 1,
+"result" : {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+[discrete]
+== 詳細については、こちらをご覧ください
+
+* link:reference_element_api_getbootstrapconfig.html["GetBootstrapConfig"]
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire のリソースページ"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
+

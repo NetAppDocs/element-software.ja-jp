@@ -1,0 +1,139 @@
+---
+permalink: api/reference_element_api_pendingactivenode.html 
+sidebar: sidebar 
+keywords: object,objects,pendingActiveNode 
+summary: pendingActiveNode オブジェクトには、現在の状態が pending と active の間の pendingActive であるノードの情報が含まれます。これは工場出荷時のソフトウェアイメージに戻されたノードです。ListPendingActiveNodes API メソッドを使用すると、 PendingActive 状態のすべてのノードに関する以下の情報のリストが返されます。 
+---
+= pendingActiveNode
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+pendingActiveNode オブジェクトには、現在の状態が pending と active の間の pendingActive であるノードの情報が含まれます。これは工場出荷時のソフトウェアイメージに戻されたノードです。ListPendingActiveNodes API メソッドを使用すると ' すべての pendingActive ノードのこの情報のリストが返されます
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+activeNodeKey です
+ a| 
+ソフトウェアのインストール完了後にノードが自動的にクラスタに追加されるようにする一意のキー。
+ a| 
+文字列
+
+
+
+ a| 
+割り当てられたノード ID
+ a| 
+ノードに割り当てられたノード ID 。
+ a| 
+文字列
+
+
+
+ a| 
+asyncHandle
+ a| 
+処理のステータスの照会に使用できる非同期メソッドのハンドル。
+ a| 
+整数
+
+
+
+ a| 
+CIP （ CIP ）
+ a| 
+ノードに割り当てられたクラスタ IP アドレス。
+ a| 
+文字列
+
+
+
+ a| 
+MIP
+ a| 
+ノードに割り当てられた管理 IP アドレス。
+ a| 
+文字列
+
+
+
+ a| 
+ノードスロット
+ a| 
+HCI プラットフォームで、シャーシのこのノードが設置されたスロットに対応する文字（「 A 」、「 B 」、「 C 」、または「 D 」）。ストレージプラットフォームの場合、値は null です。
+ a| 
+文字列
+
+
+
+ a| 
+pendingActiveNodeID
+ a| 
+ノードの Pending 状態のノード ID 。
+ a| 
+整数
+
+
+
+ a| 
+プラットフォーム情報
+ a| 
+ノードのハードウェア情報。メンバー
+
+* chassisType ：ノードのハードウェアプラットフォーム。
+* cpuModel ：ハードウェアプラットフォームの CPU モデル。
+* nodeMemoryGB ：物理プラットフォームに取り付けられているメモリの量（ GB ）。
+* nodeType ：ノードのモデル名。
+* platformConfigVersion ：このノードのハードウェアに設定されているソフトウェアのバージョン。
+
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+ロール
+ a| 
+クラスタにおけるノードのロール。有効な値は次のとおり
+
+* 管理
+* ストレージ
+* コンピューティング
+* 監視
+
+ a| 
+
+
+
+ a| 
+SIP
+ a| 
+ノードに割り当てられたストレージ（ iSCSI ） IP アドレス。
+ a| 
+文字列
+
+
+
+ a| 
+ソフトウェアレヴェーション
+ a| 
+ノードで実行している Element ソフトウェアの現在のバージョン。
+ a| 
+文字列
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_listpendingactivenodes.adoc[ListPendingActiveNodes]

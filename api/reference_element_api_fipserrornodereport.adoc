@@ -1,0 +1,41 @@
+---
+permalink: api/reference_element_api_fipserrornodereport.html 
+sidebar: sidebar 
+keywords: objects,object,fipsErrorNodeReport 
+summary: fipsErrorNodeReport オブジェクトには、 GetFipsReport メソッドで照会したときに、 FIPS 140-2 のサポートに関する情報を応答しない各ノードのエラー情報が含まれています。 
+---
+= fipsErrorNodeReport
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+fipsErrorNodeReport オブジェクトには、「 GetFipsReport 」メソッドで照会したときに、 FIPS 140-2 のサポートに関する情報を返さない各ノードのエラー情報が含まれています。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ノード ID
+ a| 
+応答しなかったノードの ID 。
+ a| 
+整数
+
+
+
+ a| 
+エラー
+ a| 
+エラー情報を含む JSON オブジェクト。
+ a| 
+JSON オブジェクト
+
+|===

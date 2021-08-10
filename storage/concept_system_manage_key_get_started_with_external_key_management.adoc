@@ -1,0 +1,30 @@
+---
+permalink: storage/concept_system_manage_key_get_started_with_external_key_management.html 
+sidebar: sidebar 
+keywords: kmip, master key, key management, encryption at rest, software encryption at rest, ekm, ak, eks, seds 
+summary: 外部キー管理 \ （ EKM \ ）は、クラスタ外の外部キーサーバ \ （ EKS \ ）と連携して、安全な認証キー \ （ AK \ ）管理を提供します。AK は、クラスタで保存データの暗号化が有効になっている場合に、自己暗号化ドライブ（ SED ）をロックおよびロック解除するために使用されます。 
+---
+= 外部キー管理の開始
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+外部キー管理（ EKM ）は、クラスタ外の外部キーサーバ（ EKS ）と連携して、安全な認証キー（ AK ）管理を実現します。AK は、自己暗号化ドライブ（ SED ）のロックとロック解除に使用されます link:../concepts/concept_solidfire_concepts_security.html["保存データの暗号化"] クラスタでを有効にしておきます。EKS を使用することで、 AK の安全な生成と保管が可能になります。クラスタは、 OASIS で定義された標準プロトコルである Key Management Interoperability Protocol （ KMIP ）を使用して、 EKS と通信します。
+
+
+NOTE: SolidFire エンタープライズ SDS クラスタでは、保存データのソフトウェア暗号化のみを使用できます。
+
+* link:task_system_manage_key_set_up_external_key_management.html["外部管理をセットアップする"]
+* link:task_system_manage_rekey_software_ear_master_key.html["保存マスターキーでのソフトウェア暗号化のキーを変更します"]
+* link:concept_system_manage_key_recover_inaccessible_or_invalid_authentication_keys["アクセス不可または無効な認証キーをリカバリします"]
+* link:concept_system_manage_key_external_key_management_api_commands.html["外部キー管理 API コマンド"]
+
+
+[discrete]
+== 詳細については、こちらをご覧ください
+
+* link:../api/reference_element_api_createcluster.html["CreateCluster API ：保存データのソフトウェア暗号化を有効にすることができます"]
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire のリソースページ"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
+

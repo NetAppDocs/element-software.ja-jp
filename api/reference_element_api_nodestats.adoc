@@ -1,0 +1,192 @@
+---
+permalink: api/reference_element_api_nodestats.html 
+sidebar: sidebar 
+keywords: object,objects,nodestats 
+summary: nodeStats オブジェクトには、ノードのアクティビティ測定値の概要が含まれます。GetNodeStats API メソッドと ListNodeStats API メソッドを使用すると、 nodeStats オブジェクトの一部またはすべてを取得できます。 
+---
+= nodeStats
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+nodeStats オブジェクトには、ノードのアクティビティ測定値の概要が含まれます。API メソッド「 GetNodeStats 」および「 ListNodeStats 」を使用すると、 nodeStats オブジェクトの一部またはすべてを取得できます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+カウント
+ a| 
+nodeStats オブジェクト内のサンプルの総数。
+ a| 
+整数
+
+
+
+ a| 
+CPU
+ a| 
+CPU 使用率。
+ a| 
+整数
+
+
+
+ a| 
+cpuTotal の値
+ a| 
+CPU 使用率の単調増加値。
+ a| 
+整数
+
+
+
+ a| 
+cBytesIn のように入力します
+ a| 
+クラスタインターフェイスで受信したバイト数。
+ a| 
+整数
+
+
+
+ a| 
+cBytesOut のように入力します
+ a| 
+クラスタインターフェイスで送信したバイト数。
+ a| 
+整数
+
+
+
+ a| 
+sBytesIn
+ a| 
+ストレージインターフェイスで受信したバイト数。
+ a| 
+整数
+
+
+
+ a| 
+sBytesOut のように入力します
+ a| 
+ストレージインターフェイスで送信したバイト数。
+ a| 
+整数
+
+
+
+ a| 
+mBytesIn のように入力します
+ a| 
+管理インターフェイスで受信したバイト数。
+ a| 
+整数
+
+
+
+ a| 
+mBytesOut のように入力します
+ a| 
+管理インターフェイスで送信したバイト数。
+ a| 
+整数
+
+
+
+ a| 
+networkUtilizationCluster
+ a| 
+クラスタネットワークインターフェイスのネットワークインターフェイス使用率。
+ a| 
+整数
+
+
+
+ a| 
+networkUtilizationStorage の略
+ a| 
+ストレージネットワークインターフェイスのネットワークインターフェイス使用率。
+ a| 
+整数
+
+
+
+ a| 
+readLatencyUSecTotal
+ a| 
+ノードに対する読み取り処理の実行に費やされた合計時間の単調増加値。
+ a| 
+整数
+
+
+
+ a| 
+readOps
+ a| 
+ノードに対する読み取り処理の総数の単調増加値。
+ a| 
+整数
+
+
+
+ a| 
+ssLoadHistogram ( ssLoadHist
+ a| 
+スライスサービスの負荷の変化を示すヒストグラムデータ。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+タイムスタンプ
+ a| 
+現在の時刻（ UTC+0 形式）。
+ a| 
+ISO 8601 形式の日付文字列
+
+
+
+ a| 
+usedMemory の略
+ a| 
+合計メモリ使用量（バイト）。
+ a| 
+整数
+
+
+
+ a| 
+writeLatencyUSecTotal
+ a| 
+ノードに対する書き込み処理の実行に費やされた合計時間の単調増加値。
+ a| 
+整数
+
+
+
+ a| 
+writeOps
+ a| 
+ノードに対する書き込み処理の総数の単調増加値。
+ a| 
+整数
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_element_api_getnodestats.adoc[GetNodeStats]
+* xref:reference_element_api_listnodestats.adoc[ListNodeStats の値]
+

@@ -1,0 +1,31 @@
+---
+permalink: storage/task_data_protection_back_up_a_volume_snapshot_to_openstack_swift.html 
+sidebar: sidebar 
+keywords: volume snapshot, backup, openstack swift S3 object store 
+summary: OpenStack Swift と互換性のあるセカンダリオブジェクトストアに SolidFire Snapshot をバックアップできます。 
+---
+= OpenStack Swift オブジェクトストアにボリューム Snapshot をバックアップします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OpenStack Swift と互換性のあるセカンダリオブジェクトストアに SolidFire Snapshot をバックアップできます。
+
+. [ * データ保護 *>* スナップショット * ] をクリックします。
+. バックアップするスナップショットの * アクション * アイコンをクリックします。
+. 表示されたメニューで、 * Backup to * をクリックします。
+. 統合バックアップ * （ Integrated Backup * ）ダイアログボックスの * バックアップ先 * （ * Backup to * ）で、 * Swift * （ * Swift * ）を選択します。
+. [ データフォーマット *] でオプションを選択します。
++
+** * Native * ： SolidFire ストレージシステムのみが読み取り可能な圧縮形式。
+** * Uncompressed * ：他のシステムと互換性がある非圧縮形式。
+
+
+. オブジェクトストアへのアクセスに使用する * URL * を入力します。
+. アカウントの * ユーザー名 * を入力します。
+. アカウントの * 認証キー * を入力します。
+. バックアップを保存する * Container * を入力します。
+. * オプション * ： * Nametag * を入力します。
+. [ 読み取り開始 ] をクリックします。
+

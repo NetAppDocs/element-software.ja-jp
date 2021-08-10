@@ -1,0 +1,31 @@
+---
+permalink: storage/task_system_manage_fips_enable_the_fips_drives_feature.html 
+sidebar: sidebar 
+keywords: fips, security, federal information processing standards, 140-2, enable, ear 
+summary: FIPS ドライブ機能を有効にするには、 NetApp Element ソフトウェアの EnableFeature API メソッドを使用します。 
+---
+= FIPS ドライブ機能を有効にします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+FIPS ドライブ機能を有効にするには、 NetApp Element ソフトウェアの「 EnableFeature 」 API メソッドを使用します。
+
+GetFipsReport にすべてのノードの準備完了ステータスが表示された場合に示すように、クラスタで保存データの暗号化を有効にし、すべてのノードとドライブを FIPS に対応している必要があります。
+
+.ステップ
+. Element API で次のように入力し、すべてのドライブで FIPS を有効にします。
++
+EnableFeature params:FipsDrives'
+
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* link:../api/index.html["Element API を使用してストレージを管理します"]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

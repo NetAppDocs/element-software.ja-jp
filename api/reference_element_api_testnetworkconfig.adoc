@@ -1,0 +1,134 @@
+---
+permalink: api/reference_element_api_testnetworkconfig.html 
+sidebar: sidebar 
+keywords: test,testing,network,config,configuration,testnetworkconfig 
+summary: TestNetworkConfig メソッドを使用すると、設定したネットワーク設定がシステムで使用されているネットワーク設定と一致することを確認できます。 
+---
+= TestNetworkConfig （テスト）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 TestNetworkConfig 」メソッドを使用すると、設定したネットワーク設定がシステムで使用されているネットワーク設定と一致することを確認できます。
+
+
+
+== パラメータ
+
+SetNetworkConfig メソッドを使用してノードを設定する場合は、 UI または TUI で設定が検証されて格納されます。TestNetworkConfig API テストでは、検証後のロジックに格納された設定を使用します。たとえば、停電やネットワーク障害が発生した場合、この API メソッドを使用してノードが直近に保存されたネットワーク設定で稼働していることを確認できます。設定にエラーがないこと、および現在の設定が使用中であることが検証されます。
+
+このテストは、障害だけを応答出力に表示するように設計されています。エラーがない場合、このテストは出力を返しません。次の応答例を参照してください。
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+詳細
+ a| 
+保存されている現在のネットワーク設定を実行中のネットワーク設定で検証したときに見つかったエラーが含まれます。
+ a| 
+JSON オブジェクト
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "TestNetworkConfig",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 応答例 1
+
+エラーが検出されなかった場合は、応答は返されません。
+
+[listing]
+----
+{
+   "id" : 1,
+   "result": {
+   "details": {
+   "network": {...}
+  },
+   "duration": "00:00:00.144514",
+   "result": "Passed"
+  }
+}
+----
+
+
+== 応答例 2
+
+MTU が一致しない例。
+
+[listing]
+----
+{
+  "id" : 1,
+  "result":
+  {
+	 "details" :
+	 {
+		"error":
+		{
+		   "message" : "Network configuration mismatch on Bond10G: Incorrect MTU expectedMTU=[1500]  actualMTU=[9600]", name: "xAssertionFailure"
+		}
+	 },
+	 "duration": "0.125213sec",
+	 "result": "Failed"
+  }
+}
+----
+
+
+== 応答例 3
+
+静的ルートが見つからない例。
+
+[listing]
+----
+{
+  "id": 1,
+  "result":
+  {
+	 "details" :
+	 {
+	 "error":
+		{
+		"message" : "Network configuration mismatch on Bond1G: Routing table missing route=[192.168.137.2 via 192.168.159.254 dev Bond1G]", name: "xAssertionFailure"
+		}
+	 },
+	 "duration" : "0.128547sec",
+	 "result" : "Failed"
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_setnetworkconfig.adoc[SetNetworkConfig の場合]

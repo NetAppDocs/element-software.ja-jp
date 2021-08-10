@@ -1,0 +1,18 @@
+---
+permalink: storage/concept_mnode_work_with_the_management_node.html 
+sidebar: sidebar 
+keywords: management node,mNode 
+summary: 管理ノード \ （ mNode ）は、システムサービスのアップグレード、クラスタのアセットと設定の管理、システムのテストとユーティリティの実行、システム監視用の Active IQ の設定、トラブルシューティング用のネットアップサポートアクセスの有効化に使用できます。 
+---
+= 管理ノードを操作します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理ノード（ mNode ）は、システムサービスのアップグレード、クラスタのアセットと設定の管理、システムのテストとユーティリティの実行、システム監視用の Active IQ の設定、トラブルシューティング用のネットアップサポートアクセスの有効化に使用できます。
+
+
+NOTE: ベストプラクティスとして、 1 つの管理ノードを 1 つの VMware vCenter インスタンスに関連付けるだけで、同じストレージリソースおよびコンピューティングリソースまたは vCenter インスタンスを複数の管理ノードに定義することは避けてください。
+
+を参照してください link:../mnode/task_mnode_work_overview.html["管理ノードのドキュメント"] を参照してください。

@@ -1,0 +1,105 @@
+---
+permalink: storage/reference_intro_icon_reference.html 
+sidebar: sidebar 
+keywords: icons, element interface, actions, system resources, quick reference 
+summary: NetApp Element ソフトウェアのインターフェイスには、システムリソースに対して実行できる操作を表すアイコンが表示されます。 
+---
+= Element インターフェイスのアイコン
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Element ソフトウェアのインターフェイスには、システムリソースに対して実行できる操作を表すアイコンが表示されます。
+
+次の表に、概要を示します。
+
+|===
+
+
+| をクリックします。 | 説明 
+
+
+ a| 
+image:../media/element_icon_action.gif["Element OS Web UI の操作アイコン"]
+ a| 
+アクション
+
+
+
+ a| 
+image:../media/element_icon_backupto.gif["Element OS Web UI でバックアップアイコンをクリックします"]
+ a| 
+バックアップ先
+
+
+
+ a| 
+image:../media/element_icon_clone.gif["Element OS Web UI のクローンアイコン"]
+ a| 
+クローンまたはコピー
+
+
+
+ a| 
+image:../media/element_icon_delete.gif["Element OS Web UI の削除アイコン"]
+ a| 
+削除またはパージ
+
+
+
+ a| 
+image:../media/element_icon_edit.gif["Element OS Web UI で編集アイコンをクリックします"]
+ a| 
+編集
+
+
+
+ a| 
+image:../media/element_icon_filter.gif["Element OS Web UI のフィルタアイコン"]
+ a| 
+フィルタ
+
+
+
+ a| 
+image:../media/element_icon_pair.gif["Element OS Web UI のペアリングアイコン"]
+ a| 
+ペアリング
+
+
+
+ a| 
+image:../media/element_icon_refresh.gif["Element OS Web UI の更新アイコン"]
+ a| 
+更新
+
+
+
+ a| 
+image:../media/element_icon_restore.gif["Element OS Web UI のリストアアイコン"]
+ a| 
+リストア
+
+
+
+ a| 
+image:../media/element_icon_restorefrom.gif["Element OS Web UI のアイコンからリストアします"]
+ a| 
+からリストアします
+
+
+
+ a| 
+image:../media/element_icon_rollback.gif["Element OS Web UI のロールバックアイコン"]
+ a| 
+ロールバック
+
+
+
+ a| 
+image:../media/element_icon_snapshot.gif["Element OS Web UI の Snapshot アイコン"]
+ a| 
+スナップショット
+
+|===

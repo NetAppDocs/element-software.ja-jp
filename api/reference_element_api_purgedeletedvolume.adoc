@@ -1,0 +1,74 @@
+---
+permalink: api/reference_element_api_purgedeletedvolume.html 
+sidebar: sidebar 
+keywords: volume,volumes,purging,purge,deleted,purgedeletedvolume 
+summary: PurgeDeletedVolume メソッドを使用すると、削除されたボリュームをただちに完全にパージできます。パージする前に、 DeleteVolume を使用してボリュームを削除する必要があります。 
+---
+= PurgeDeletedVolume のこと
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+PurgeDeletedVolume メソッドを使用すると、削除されたボリュームをただちに完全にパージできます。パージする前に、「削除ボリューム」を使用してボリュームを削除する必要があります。
+
+ボリュームは一定期間の経過後に自動的にパージされるため、通常はこのメソッドを使用する必要はありません。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+| ボリューム ID | パージするボリュームの ID 。 | 整数 | いいえ | はい。 
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "PurgeDeletedVolume",
+   "params": {
+      "volumeID"  : 5
+   },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id" : 1,
+  "result": {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_deletevolume.adoc[DeleteVolume]

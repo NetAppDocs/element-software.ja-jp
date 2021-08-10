@@ -1,0 +1,92 @@
+---
+permalink: api/reference_element_api_getclusterinfo.html 
+sidebar: sidebar 
+keywords: cluster,get,info,getting,getclusterinfo 
+summary: GetClusterInfo メソッドを使用すると、クラスタの構成情報を取得できます。 
+---
+= GetClusterInfo を使用します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetClusterInfo' メソッドを使用すると、クラスタの構成情報を取得できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+clusterInfo
+ a| 
+クラスタ情報
+ a| 
+xref:reference_element_api_clusterinfo.adoc[clusterInfo]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "GetClusterInfo",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "clusterInfo": {
+      "attributes": {},
+      "encryptionAtRestState": "disabled",
+      "ensemble": [
+        "10.10.21.23",
+        "10.10.21.24",
+        "10.10.21.25"
+      ],
+      "mvip": "10.10.1.57",
+      "mvipInterface": "Bond1G",
+      "mvipNodeID": 2,
+      "mvipVlanTag": "120",
+      "name": "Hulk",
+      "repCount": 2,
+      "svip": "10.10.21.57",
+      "svipInterface": "Bond10G",
+      "svipNodeID": 2,
+      "svipVlanTag": "0",
+      "uniqueID": "17nx",
+      "uuid": "8d385a91-9acf-4371-8939-b29e085191fd"
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

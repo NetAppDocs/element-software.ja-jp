@@ -1,0 +1,22 @@
+---
+permalink: storage/concept_intro_storage_nodes.html 
+sidebar: sidebar 
+keywords: storage nodes, management nodes, block space, metadata space, data management, storage management, Bond10G, network interface, network, metadata, data storage, storage, drives, network interfaces 
+summary: SolidFire ストレージノードは、 Bond10G ネットワークインターフェイスを通じて相互に通信する一連のドライブを搭載したサーバです。ノード内のドライブには、データの格納用と管理用にブロックスペースとメタデータスペースが確保されます。 
+---
+= ストレージノード
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire ストレージノードは、 Bond10G ネットワークインターフェイスを通じて相互に通信する一連のドライブを搭載したサーバです。ノード内のドライブには、データの格納用と管理用にブロックスペースとメタデータスペースが確保されます。
+
+ストレージノードには次のような特徴があります。
+
+* 各ノードには一意の名前が付けられます。管理者が名前を指定しない場合、ノードにはデフォルトで「 SF-XXXX 」という名前が付けられます。 XXXX は、システムによってランダムに生成される任意の 4 文字です。
+* 各ノードに高性能な専用の Non-Volatile Random Access Memory （ NVRAM ；不揮発性 RAM ）書き込みキャッシュが搭載されており、システム全体のパフォーマンスの向上と書き込みレイテンシの低減が実現します。
+* 各ノードはストレージと管理の 2 つのネットワークに接続され、それぞれに 2 つの独立したリンクを使用して冗長性とパフォーマンスを確保します。各ノードには各ネットワークの IP アドレスが必要です。
+* 新しいストレージノードで構成されるクラスタを作成したり、既存のクラスタにストレージノードを追加してストレージの容量とパフォーマンスを拡張したりできます。
+* クラスタに対するノードの追加や削除は、サービスを中断することなくいつでも実行できます。
+

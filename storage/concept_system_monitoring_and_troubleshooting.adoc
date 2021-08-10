@@ -1,0 +1,35 @@
+---
+permalink: storage/concept_system_monitoring_and_troubleshooting.html 
+sidebar: sidebar 
+keywords: trouble, troubleshoot, monitor, element, alert, event 
+summary: システムの監視は、診断目的、および各種システム処理のパフォーマンスの傾向やステータスに関する情報を収集するために実行します。メンテナンスのためにノードや SSD の交換が必要になる場合があります。 
+---
+= システムのトラブルシューティングを行います
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+システムの監視は、診断目的、および各種システム処理のパフォーマンスの傾向やステータスに関する情報を収集するために実行します。メンテナンスのためにノードや SSD の交換が必要になる場合があります。
+
+* link:task_monitor_information_about_system_events.html["システムイベントに関する情報を表示します"]
+* link:reference_monitor_status_of_running_tasks.html["実行中のタスクのステータスを表示します"]
+* link:task_monitor_system_alerts.html["システムアラートを表示します"]
+* link:task_monitor_node_performance_activity.html["ノードのパフォーマンスアクティビティを表示します"]
+* link:task_monitor_volume_performance.html["ボリュームのパフォーマンスを表示します"]
+* link:task_monitor_iscsi_sessions.html["iSCSI セッションを表示します"]
+* link:task_monitor_fibre_channel_sessions.html["Fibre Channel セッションを表示します"]
+* link:concept_troubleshoot_drives.html["ドライブのトラブルシューティング"]
+* link:concept_troubleshoot_nodes.html["ノードのトラブルシューティングを行う"]
+* link:concept_per_node_work_with_utilities.html["ストレージノードのノードユーティリティを使用する"]
+* link:concept_mnode_work_with_the_management_node.html["管理ノードを操作します"]
+* link:concept_monitor_understand_cluster_fullness_levels.html["クラスタフルレベルを把握"]
+
+
+
+
+== を参照してください。
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

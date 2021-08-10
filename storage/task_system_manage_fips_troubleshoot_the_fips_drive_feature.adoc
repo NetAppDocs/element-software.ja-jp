@@ -1,0 +1,33 @@
+---
+permalink: storage/task_system_manage_fips_troubleshoot_the_fips_drive_feature.html 
+sidebar: sidebar 
+keywords: fips, security, federal information processing standards, 140-2 
+summary: NetApp Element ソフトウェア UI を使用して、システムにおける FIPS ドライブ機能に関するクラスタ障害やエラーに関するアラートを確認できます。 
+---
+= FIPS ドライブ機能のトラブルシューティングを行います
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Element ソフトウェア UI を使用して、システムにおける FIPS ドライブ機能に関するクラスタ障害やエラーに関するアラートを確認できます。
+
+. Element UI を使用して、 * Reporting * > * Alerts * を選択します。
+. 次のクラスタ障害を探します。
++
+** FIPS ドライブが一致しません
+** FIPS ドライブが準拠していません
+
+
+. 推奨される解決方法については、クラスタ障害コードの情報を参照してください。
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_monitor_cluster_fault_codes.adoc[クラスタ障害コード]
+* link:../api/index.html["Element API を使用してストレージを管理します"]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

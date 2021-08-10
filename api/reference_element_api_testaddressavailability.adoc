@@ -1,0 +1,145 @@
+---
+permalink: api/reference_element_api_testaddressavailability.html 
+sidebar: sidebar 
+keywords: ip,address,availability,test,testing,ensemble,cluster,testaddressavailability 
+summary: TestAddressAvailability メソッドを使用すると、特定の IP アドレスがストレージクラスタ内のインターフェイスで使用されているかどうかを確認できます。 
+---
+= TestAddressAvailability の値
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 TestAddressAvailability 」メソッドを使用すると、特定の IP アドレスがストレージクラスタ内のインターフェイスで使用されているかどうかを確認できます。
+
+
+NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+インターフェイス
+ a| 
+ターゲットのネットワークインターフェイス（ eth0 、 Bond10G など）。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+住所
+ a| 
+ターゲットインターフェイスでスキャンする IP アドレス。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+virtualNetworkTag
+ a| 
+ターゲットの VLAN ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+タイムアウト
+ a| 
+ターゲットアドレスをテストするためのタイムアウト（秒）。
+ a| 
+整数
+ a| 
+5.
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+住所
+ a| 
+テストした IP アドレス。
+ a| 
+文字列
+
+
+
+ a| 
+利用可能
+ a| 
+要求した IP アドレスが使用中の場合は true 、使用中でない場合は false 。
+ a| 
+ブール値
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+	"method": "TestAddressAvailability",
+	"params": {
+		"interface": "Bond10G",
+		"address": "10.0.0.1",
+		"virtualNetworkTag": 1234
+	}
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"address":"10.0.0.1",
+		"available": true
+	}
+}
+----
+
+
+== 新規導入バージョン
+
+11.0

@@ -1,0 +1,76 @@
+---
+permalink: api/reference_element_api_enablesnmp.html 
+sidebar: sidebar 
+keywords: SNMP,enable,enabling,EnableSNMP 
+summary: EnableSnmp メソッドを使用すると、クラスタノードの SNMP を有効にできます。SNMP を有効にすると、アクション環境クラスタ内のすべてのノードが処理され、指定した値によって、以前の EnableSnmp 呼び出しで設定されたすべての値が置き換えられます。 
+---
+= EnableSnmp
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+EnableSnmp メソッドを使用すると、クラスタ・ノード上で SNMP を有効にできます。SNMP を有効にすると、アクション環境クラスタ内のすべてのノードが処理され、指定した値によって、以前の「 EnableSnmp 」呼び出しで設定されたすべての値が置き換えられます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+snmpV3Enabled を使用します
+ a| 
+true に設定すると、クラスタ内の各ノードで SNMP v3 が有効になります。false に設定すると、 SNMP v2 が有効になります。
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "EnableSnmp",
+  "params": {
+      "snmpV3Enabled"  : "true"
+  },
+  "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

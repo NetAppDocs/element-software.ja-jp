@@ -1,0 +1,35 @@
+---
+permalink: storage/task_data_protection_restore_volume_from_backup_on_amazon_s3.html 
+sidebar: sidebar 
+keywords: volume restore, amazon s3 object store 
+summary: Amazon S3 オブジェクトストア上のバックアップからボリュームをリストアできます。 
+---
+= Amazon S3 オブジェクトストア上のバックアップからボリュームをリストアする
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Amazon S3 オブジェクトストア上のバックアップからボリュームをリストアできます。
+
+. [*Reporting*>*Event Log] をクリックします。
+. リストアする必要のあるバックアップを作成したバックアップイベントを探します。
+. イベントの *Details* 列で、 *Show Details* をクリックします。
+. マニフェスト情報をクリップボードにコピーします。
+. [* 管理 *>* ボリューム *] をクリックします。
+. リストアするボリュームの操作アイコンをクリックします。
+. 表示されたメニューで、 * リストア元 * をクリックします。
+. [ * 統合リストア * ] ダイアログボックスの [ * リストア元 * ] で、 [* S3 * ] を選択します。
+. バックアップに一致するオプションを * Data Format * ：
++
+** * Native * ： SolidFire ストレージシステムのみが読み取り可能な圧縮形式。
+** * Uncompressed * ：他のシステムと互換性がある非圧縮形式。
+
+
+. [*Hostname*] フィールドに、オブジェクトストアへのアクセスに使用するホスト名を入力します。
+. [* アクセスキー ID*] フィールドに、アカウントのアクセスキー ID を入力します。
+. アカウントのシークレットアクセスキーを * Secret Access Key * フィールドに入力します。
+. バックアップを格納する S3 バケットを「 * S3 Bucket * 」フィールドに入力します。
+. マニフェスト情報を * Manifest * フィールドに貼り付けます。
+. 「 * 書き込みを開始」をクリックします。
+

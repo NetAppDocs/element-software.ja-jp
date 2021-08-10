@@ -1,0 +1,45 @@
+---
+permalink: storage/task_post_deploy_access_the_element_software_user_interface.html 
+sidebar: sidebar 
+keywords: Element UI, accessing, using MVIP, blockers, host name, certificate, messages 
+summary: Element UI には、プライマリクラスタノードの管理仮想 IP アドレス（ MVIP ）を使用してアクセスできます。 
+---
+= Element ソフトウェアのユーザインターフェイスにアクセスします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element UI には、プライマリクラスタノードの管理仮想 IP （ MVIP ）アドレスを使用してアクセスできます。
+
+ブラウザでポップアップブロックと NoScript の設定が無効になっていることを確認する必要があります。
+
+クラスタ作成時の設定に応じて、 IPv4 または IPv6 アドレスを使用して UI にアクセスできます。
+
+. 次のいずれかを選択します。
++
+** IPv6 ： https://[IPv6 MVIP アドレスを入力してください。例：
++
+[listing]
+----
+https://[fd20:8b1e:b256:45a::1234]/
+----
+** IPv4 ： Enter https://[IPv4 MVIP address ] 例：
++
+[listing]
+----
+https://10.123.456.789/
+----
+
+
+. DNS のホスト名を入力します。
+. 認証証明書のメッセージが表示されたら該当するボタンをクリック
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

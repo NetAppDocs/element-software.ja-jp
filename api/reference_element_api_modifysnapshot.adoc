@@ -1,0 +1,168 @@
+---
+permalink: api/reference_element_api_modifysnapshot.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,snapshot,attributes,attribute 
+summary: ModifySnapshot を使用すると、 Snapshot に現在割り当てられている属性を変更できます。また、このメソッドを使用すると、読み取り / 書き込みボリューム（ソース）に作成された Snapshot を、 Element ソフトウェアを実行しているターゲットストレージクラスタにリモートでレプリケートできます。 
+---
+= ModifySnapshot の追加
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 modifySnapshot 」を使用すると、現在スナップショットに割り当てられている属性を変更できます。また、このメソッドを使用すると、読み取り / 書き込み（ソース）ボリュームで作成された Snapshot を、 Element ソフトウェアを実行しているターゲットストレージクラスタにリモートでレプリケートできます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+enableRemoteReplication
+ a| 
+作成した Snapshot をリモートストレージクラスタにレプリケートできるようにします。有効な値は次のとおり
+
+* True ：スナップショットはリモート・ストレージにレプリケートされます
+* 'false': スナップショットはリモート・ストレージにレプリケートされません
+
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+
+
+ a| 
+有効期限
+ a| 
+Snapshot を削除するまでの時間を指定します。保持とともに使用することはできません。元の Snapshot の有効期限または保持期間がどちらも指定されていない場合、 Snapshot は期限切れになりません。時刻の形式は、時間ベースの期限を表す ISO 8601 形式の日付文字列であり、それ以外の場合は期限切れになりません。値を null にすると、 Snapshot が永続的に保持されます。FIFO の値を設定すると、ボリューム上の他の FIFO スナップショットと比較して、 FIFO （ First-In First-Out ）ベースでスナップショットが保持されます。使用可能な FIFO 領域がない場合、 API は失敗します。
+ a| 
+ISO 8601 形式の日付文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+名前
+ a| 
+Snapshot の名前。名前を入力しない場合、 Snapshot の作成日時が使用されます。最大文字数は 255 文字です。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+snapMirrorLabel のことです
+ a| 
+SnapMirror エンドポイントでの Snapshot 保持ポリシーを指定するために SnapMirror ソフトウェアで使用されるラベル。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+Snapshot ID
+ a| 
+Snapshot の識別子。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+スナップショット
+ a| 
+変更された Snapshot の情報を含むオブジェクト。
+ a| 
+xref:reference_element_api_snapshot.adoc[スナップショット]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "ModifySnapshot",
+  "params": {
+    "snapshotID": 3114,
+    "enableRemoteReplication": "true",
+    "name" : "Chicago"
+  },
+  "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "snapshot": {
+      "attributes": {},
+      "checksum": "0x0",
+      "createTime": "2016-04-04T17:26:20Z",
+      "enableRemoteReplication": true,
+      "expirationReason": "None",
+      "expirationTime": null,
+      "groupID": 0,
+      "groupSnapshotUUID": "00000000-0000-0000-0000-000000000000",
+      "name": "test1",
+      "snapshotID": 3114,
+      "snapshotUUID": "5809a671-4ad0-4a76-9bf6-01cccf1e65eb",
+      "status": "done",
+      "totalSize": 5000658944,
+      "virtualVolumeID": null,
+      "volumeID": 1
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

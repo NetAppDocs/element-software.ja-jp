@@ -1,0 +1,76 @@
+---
+permalink: api/reference_element_api_cancelgroupclone.html 
+sidebar: sidebar 
+keywords:  
+summary: CancelGroupClone メソッドを使用すると、ボリュームのグループで実行中のクローンプロセスを停止できます。グループクローン操作をキャンセルすると、システムは処理に関連付けられた asyncHandle を完了させ、削除します。 
+---
+= CancelGroupClone
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+CancelGroupClone メソッドを使用すると、ボリュームのグループで実行中のクローンプロセスを停止できます。グループクローン処理をキャンセルすると、処理に関連付けられた asyncHandle が完了して削除されます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+groupCloneID
+ a| 
+進行中のクローンプロセスのクローン ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "CancelGroupClone",
+   "params": {
+      "cloneID" : 5,
+   },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

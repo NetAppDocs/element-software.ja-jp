@@ -1,0 +1,140 @@
+---
+permalink: api/reference_element_api_fibrechannelport.html 
+sidebar: sidebar 
+keywords: object,objects,fibreChannelPort 
+summary: fibreChannelPort オブジェクトには、ノード上の個別のポートまたはクラスタ内のノード全体に関する情報が含まれます。この情報は、 ListNodeFibreChannelPortInfo メソッドを使用して取得できます。 
+---
+= fibreChannelPort
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+fibreChannelPort オブジェクトには、ノード上の個別のポートまたはクラスタ内のノード全体に関する情報が含まれます。この情報は 'ListNodeFibreChannelPortInfo' メソッドを使用して取得できます
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ファームウェア
+ a| 
+Fibre Channel ポートにインストールされたファームウェアのバージョン。
+ a| 
+整数
+
+
+
+ a| 
+hbaPort
+ a| 
+個別の Host Bus Adapter （ HBA ；ホストバスアダプタ）ポートの ID 。
+ a| 
+整数
+
+
+
+ a| 
+モデル
+ a| 
+ポートの HBA のモデル。
+ a| 
+文字列
+
+
+
+ a| 
+nPortID
+ a| 
+一意のポートノード ID 。
+ a| 
+文字列
+
+
+
+ a| 
+pciSlot （ pciSlot
+ a| 
+Fibre Channel ノードシャーシの PCI カードが装着されたスロット。
+ a| 
+整数
+
+
+
+ a| 
+Serial （シリアル）
+ a| 
+Fibre Channel ポートのシリアル番号。
+ a| 
+文字列
+
+
+
+ a| 
+スピード
+ a| 
+ポートの HBA の速度。
+ a| 
+文字列
+
+
+
+ a| 
+状態
+ a| 
+有効な値は次のとおり
+
+* 不明です
+* NotPresent
+* オンライン
+* オフラインです
+* ブロックされました
+* バイパス
+* 診断
+* linkDown
+* エラー
+* ループバック
+* 削除済み
+
+ a| 
+文字列
+
+
+
+ a| 
+スイッチ WWN
+ a| 
+Fibre Channel スイッチポートの World Wide Name 。
+ a| 
+文字列
+
+
+
+ a| 
+WWNN
+ a| 
+HBA ノードの World Wide Node Name 。
+ a| 
+文字列
+
+
+
+ a| 
+WWPN
+ a| 
+HBA の物理ポートに割り当てられた World Wide Port Name 。
+ a| 
+文字列
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_listnodefibrechannelportinfo.adoc[ListNodeFibreChannelPortInfo]

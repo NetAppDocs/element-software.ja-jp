@@ -1,0 +1,199 @@
+---
+permalink: api/reference_element_api_hardwareinfo.html 
+sidebar: sidebar 
+keywords: object,objects,hardwareInfo 
+summary: hardwareInfo オブジェクトには、クラスタ内の各ノードのハードウェアとステータスに関する詳細が含まれます。GetHardwareInfo API メソッドを使用すると、以下の情報を取得できます。 
+---
+= hardwareInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+hardwareInfo オブジェクトには、クラスタ内の各ノードのハードウェアとステータスに関する詳細が含まれます。この情報は 'GetHardwareInfo API メソッドを使用して取得できます
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+boardSerial
+ a| 
+DMI ボードのシリアル番号。
+ a| 
+文字列
+
+
+
+ a| 
+バス
+ a| 
+マザーボードのメディアバス情報。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+chassisSerial （シャーシシリアル）
+ a| 
+シャーシのシリアル番号。
+ a| 
+文字列
+
+
+
+ a| 
+driveHardware の略
+ a| 
+ノード内の各ドライブに関する情報のリスト。
+ a| 
+JSON オブジェクトの配列
+
+
+
+ a| 
+fibreChannelPorts
+ a| 
+ノードの Fibre Channel ポートのリスト。
+ a| 
+整数の配列
+
+
+
+ a| 
+ハードウェア構成
+ a| 
+マザーボード周辺機器の設定情報。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+kernelCrashDumpState です
+ a| 
+オペレーティングシステムカーネルのクラッシュダンプ設定。
+ a| 
+文字列
+
+
+
+ a| 
+メモリ
+ a| 
+ファームウェアおよびシステムメモリハードウェアの情報。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+ネットワーク
+ a| 
+ノードの各ネットワークインターフェイスのハードウェアに関する説明。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+ネットワークインターフェイス
+ a| 
+ノードのネットワークインターフェイスのステータス。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+ノードスロット
+ a| 
+HCI プラットフォームで、シャーシのこのノードが設置されたスロットに対応する文字（「 A 」、「 B 」、「 C 」、または「 D 」）。ストレージプラットフォームの場合、値は null です。
+ a| 
+文字列
+
+
+
+ a| 
+NVRAM
+ a| 
+ノードの NVRAM 統計情報。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+原点（ Origin ）
+ a| 
+マザーボードのベンダー。
+ a| 
+文字列
+
+
+
+ a| 
+プラットフォーム
+ a| 
+シャーシプラットフォームの概要。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+Serial （シリアル）
+ a| 
+製品のシリアル番号。
+ a| 
+文字列
+
+
+
+ a| 
+ストレージ
+ a| 
+ストレージコントローラの情報。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+SystemMemory の略
+ a| 
+オペレーティングシステムのメモリ使用状況とパフォーマンス情報。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+システム
+ a| 
+ノードシャーシのタイプ。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+UUID
+ a| 
+ノードの一意の ID 。
+ a| 
+UUID
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_gethardwareinfo.adoc[GetHardwareInfo]

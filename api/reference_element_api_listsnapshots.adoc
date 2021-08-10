@@ -1,0 +1,128 @@
+---
+permalink: api/reference_element_api_listsnapshots.html 
+sidebar: sidebar 
+keywords: snapshot,snapshots,list,listing,attributes,listsnapshots 
+summary: listsnapshots を使用すると、ボリュームで作成された各 Snapshot の属性を取得できます。 
+---
+= Listsnapshots を使用します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+listsnapshots を使用すると ' ボリューム上で作成された各スナップショットの属性を取得できます
+
+このメソッドをソースクラスタから呼び出すと、ターゲットクラスタにある Snapshot の情報がソースクラスタに表示されます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ボリューム ID
+ a| 
+ボリュームの Snapshot を取得します。ボリューム ID を指定しない場合、すべてのボリュームのすべての Snapshot が返されます。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+Snapshot ID
+ a| 
+個々の Snapshot ID の情報を取得します。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+Snapshot
+ a| 
+各ボリュームの各 Snapshot に関する情報。ボリューム ID を指定しない場合、すべてのボリュームのすべての Snapshot が返されます。グループに含まれる Snapshot には、グループ ID が返されます。
+ a| 
+xref:reference_element_api_snapshot.adoc[スナップショット] 配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ListSnapshots",
+   "params": {
+             "volumeID": "1"
+       },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "snapshots": [
+        {
+          "attributes": {},
+          "checksum": "0x0",
+          "createTime": "2015-05-08T13:15:00Z",
+          "enableRemoteReplication": true,
+          "expirationReason": "None",
+          "expirationTime": "2015-05-08T21:15:00Z",
+          "groupID": 0,
+          "groupSnapshotUUID": "00000000-0000-0000-0000-000000000000",
+          "name": "Hourly",
+          "remoteStatuses": [
+              {
+                "remoteStatus": "Present",
+                "volumePairUUID": "237e1cf9-fb4a-49de-a089-a6a9a1f0361e"
+              }
+         ],
+          "snapshotID": 572,
+          "snapshotUUID": "efa98e40-cb36-4c20-a090-a36c48296c14",
+          "status": "done",
+          "totalSize": 10000269312,
+          "volumeID": 1
+        }
+      ]
+    }
+  }
+----
+
+
+== 新規導入バージョン
+
+9.6

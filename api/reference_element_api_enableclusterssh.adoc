@@ -1,0 +1,111 @@
+---
+permalink: api/reference_element_api_enableclusterssh.html 
+sidebar: sidebar 
+keywords: SSH,enabling,enable,cluster,EnableClusterSsh 
+summary: EnableClusterSsh メソッドを使用すると、ストレージクラスタ内のすべてのノードで SSH サービスを有効にすることができます。 
+---
+= EnableClusterSsh
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 EnableClusterSsh 」メソッドを使用すると、ストレージクラスタ内のすべてのノードの SSH サービスを有効にすることができます。
+
+
+NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+期間
+ a| 
+SSH サービスを有効にしておく時間。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+結果
+ a| 
+ストレージクラスタの SSH サービスのステータス、 SSH が無効になるまでの時間、および各ノードの SSH サービスのステータスを含む JSON オブジェクト。
+ a| 
+JSON オブジェクト
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "EnableClusterSsh",
+  "params": {
+      "duration"  : "02:00:00.00"
+  },
+  "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+	"id": 1,
+	"result" : {
+    "enabled": true,
+    "timeRemaining": "00:43:21",
+    "nodes": [
+    {
+        "nodeID": 1,
+        "enabled": true
+    },
+    {
+        "nodeID": 2,
+        "enabled": true
+    },
+    {
+        "nodeID": 3,
+        "enabled": false
+    },
+    {
+        "nodeID": 4,
+        "enabled": false
+    } ]
+			}
+	}
+----
+
+
+== 新規導入バージョン
+
+10.3

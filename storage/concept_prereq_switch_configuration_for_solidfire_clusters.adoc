@@ -1,0 +1,39 @@
+---
+permalink: storage/concept_prereq_switch_configuration_for_solidfire_clusters.html 
+sidebar: sidebar 
+keywords: cluster switch configuration, best practices for switch configuration, optimal storage performance, node hardware, traffic, cluster, Element software, best practices, switches, switch requirements, storage, performance, storage performance 
+summary: NetApp Element ソフトウェアシステムには、スイッチに関する要件と、ストレージパフォーマンスを最適化するためのベストプラクティスがあります。 
+---
+= Element ソフトウェアを実行するクラスタのスイッチ設定
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Element ソフトウェアシステムには、スイッチに関する要件と、ストレージパフォーマンスを最適化するためのベストプラクティスがあります。
+
+ストレージノードには、ノードのハードウェアに応じて、 10GbE または 25GbE のいずれかのイーサネットスイッチが必要です。これらは、 iSCSI ストレージサービスおよびノードのクラスタ内サービスの通信に使用されます。次のタイプのトラフィックには 1GbE スイッチを使用できます。
+
+* クラスタとノードの管理
+* クラスタ内のノード間の管理トラフィック
+* クラスタノードと管理ノード仮想マシンの間のトラフィック
+
+
+|===
+
+
+ a| 
+* ベストプラクティス：クラスタトラフィックに使用するイーサネットスイッチを設定する際には、次のベストプラクティスに従う必要があります。
+
+* クラスタ内の非ストレージトラフィックには、高可用性と負荷分散を実現するために 1GbE スイッチのペアを配置します。
+* ストレージネットワークスイッチでは、スイッチをペアにして配置し、ジャンボフレーム（ MTU サイズ =9216 バイト）を設定して利用します。これにより、インストールが正常に完了し、パケットの断片化によるストレージネットワークエラーが解消されます。
+
+
+|===
+
+
+== を参照してください。
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

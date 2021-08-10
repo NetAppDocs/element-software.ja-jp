@@ -1,0 +1,92 @@
+---
+permalink: api/reference_element_api_protocolendpoint.html 
+sidebar: sidebar 
+keywords: object,objects,protocolEndpoint 
+summary: protocolEndpoint オブジェクトには、プロトコルエンドポイントの属性が含まれます。ListProtocolEndpoints API メソッドを使用すると、クラスタ内のすべてのプロトコルエンドポイントに関する以下の情報を取得できます。 
+---
+= ProtocolEndpoint
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+protocolEndpoint オブジェクトには、プロトコルエンドポイントの属性が含まれます。「 ListProtocolEndpoints 」 API メソッドを使用すると、クラスタ内のすべてのプロトコルエンドポイントに関する以下の情報を取得できます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+primaryProviderID
+ a| 
+プロトコルエンドポイントのプライマリプロバイダオブジェクトの ID 。
+ a| 
+整数
+
+
+
+ a| 
+protocolEndpointID
+ a| 
+プロトコルエンドポイントの一意の ID 。
+ a| 
+UUID
+
+
+
+ a| 
+protocolEndpointState
+ a| 
+プロトコルエンドポイントのステータス。有効な値は次のとおり
+
+* Active ：プロトコルエンドポイントは使用中です。
+* Start ：プロトコルエンドポイントが起動中です。
+* Failover ：プロトコルエンドポイントはフェイルオーバーしました。
+* Reserved ：プロトコルエンドポイントはリザーブされています。
+
+ a| 
+文字列
+
+
+
+ a| 
+プロバイダタイプ（ providerType ）
+ a| 
+プロトコルエンドポイントプロバイダのタイプ。有効な値は次のとおり
+
+* プライマリ
+* セカンダリ
+
+ a| 
+文字列
+
+
+
+ a| 
+scsiNAADeviceID
+ a| 
+NAA IEEE Registered Extended Format のプロトコルエンドポイントのグローバル一意 SCSI デバイス ID 。
+ a| 
+文字列
+
+
+
+ a| 
+secondaryProviderID
+ a| 
+プロトコルエンドポイントのセカンダリプロバイダオブジェクトの ID 。
+ a| 
+整数
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_listprotocolendpoints.adoc[ListProtocolEndpoints を指定します]

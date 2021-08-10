@@ -1,0 +1,54 @@
+---
+permalink: storage/task_data_manage_vvol_enable_virtual_volumes.html 
+sidebar: sidebar 
+keywords: virtual volumes, enable, functionality on the cluster, vvols 
+summary: NetApp Element ソフトウェアを使用して、 vSphere Virtual Volumes （ VVol ）機能を手動で有効にする必要があります。Element ソフトウェアシステムの VVol 機能はデフォルトでは無効になっており、新規インストール時やアップグレード時に自動的に有効になることはありません。VVol 機能の有効化は 1 度だけ実行します。 
+---
+= 仮想ボリュームを有効にします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Element ソフトウェアを使用して、 vSphere Virtual Volumes （ VVol ）機能を手動で有効にする必要があります。Element ソフトウェアシステムの VVol 機能はデフォルトでは無効になっており、新規インストール時やアップグレード時に自動的に有効になることはありません。VVol 機能の有効化は 1 度だけ実行します。
+
+.必要なもの
+* クラスタで Element 9.0 以降が実行されている必要があります。
+* クラスタが VVol に対応した ESXi 6.0 以降の環境に接続されている必要があります。
+* Element 11.3 以降を使用している場合は、クラスタを ESXi 6.0 Update 3 以降の環境に接続する必要があります。
+
+
+
+IMPORTANT: vSphere Virtual Volumes 機能を有効にすると、 Element ソフトウェアの設定が永続的に変更されます。クラスタが VMware ESXi VVol に対応した環境に接続されている場合にのみ、 VVol 機能を有効にしてください。VVol 機能を無効にしてデフォルト設定に戻すには、クラスタを工場出荷時のイメージに戻す必要があります。これにより、システム上のデータがすべて削除されます。
+
+.手順
+. [ * クラスタ * ] > [ * 設定 * ] を選択します。
+. Virtual Volumes 用のクラスタ固有の設定を探します。
+. 仮想ボリュームを有効にする * をクリックします。
+. [ はい ] をクリックして、仮想ボリュームの構成変更を確認します。
++
+Element UI に * VVols * タブが表示されます。
+
++
+
+NOTE: VVol 機能を有効にすると、 SolidFire クラスタは VASA Provider を起動して VASA トラフィック用のポート 8444 を開き、 vCenter およびすべての ESXi ホストから検出可能なプロトコルエンドポイントを作成します。
+
+. VASA Provider の URL を * クラスタ * > * 設定 * の仮想ボリューム（ vVol ）設定からコピーします。この URL は、 VASA Provider を vCenter に登録する際に使用します。
+. VVol * > * Storage Containers * でストレージコンテナを作成します。
++
+
+NOTE: VVol データストアに対して VM をプロビジョニングできるようにするには、ストレージコンテナを少なくとも 1 つ作成する必要があります。
+
+. 「 * VVOL* > * Protocol Endpoints * 」を選択します。
+. クラスタ内のノードごとにプロトコルエンドポイントが作成されていることを確認します。
++
+
+NOTE: vSphere で追加の設定が必要です。vCenter への VASA Provider の登録、 VVol データストアの作成と管理、およびポリシーに基づくストレージの管理を行うには、 VMware vSphere Virtual Volumes for SolidFire ストレージ構成ガイドを参照してください。
+
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+https://www.netapp.com/us/media/tr-4642.pdf["『 VMware vSphere Virtual Volumes for SolidFire Storage Configuration Guide 』を参照してください"]

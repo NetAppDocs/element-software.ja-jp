@@ -1,0 +1,13 @@
+---
+permalink: concepts/concept_solidfire_concepts_initiators.html 
+sidebar: sidebar 
+keywords: netapp, element, initiator, storage volume, element volume, access group 
+summary: イニシエータの概要、およびイニシエータを使用してボリュームアクセスグループ内のストレージへのアクセスを許可する方法について説明します。 
+---
+= イニシエータ
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+イニシエータはクライアントとボリューム間の通信のエントリポイントとして機能し、外部クライアントからクラスタ内のボリュームへのアクセスを可能にします。ストレージボリュームへのアカウントベースのアクセスではなく、 CHAP ベースのアクセスにイニシエータを使用できます。1 つのイニシエータをボリュームアクセスグループに追加すると、ボリュームアクセスグループのメンバーは認証なしでグループに追加されたすべてのストレージボリュームにアクセスできるようになります。1 つのイニシエータは 1 つのアクセスグループにのみ属することができます。

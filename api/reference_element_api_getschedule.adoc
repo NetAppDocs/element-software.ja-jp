@@ -1,0 +1,115 @@
+---
+permalink: api/reference_element_api_getschedule.html 
+sidebar: sidebar 
+keywords: snapshot,schedule,get,getting,getschedule 
+summary: GetSchedule を使用すると、スケジュールされた Snapshot に関する情報を取得できます。 
+---
+= GetSchedule
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetSchedule を使用すると ' スケジュールされたスナップショットに関する情報を取得できます
+
+システムに多数の Snapshot スケジュールがある場合は、特定のスケジュールに関する情報を表示できます。また、 scheduleID パラメータに複数の ID を指定して、複数のスケジュールに関する情報を取得します。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+scheduleID です
+ a| 
+表示するスケジュールの一意の ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+スケジュール
+ a| 
+スケジュール属性の配列。
+ a| 
+xref:reference_element_api_schedule.adoc[スケジュール] 配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+"method": "GetSchedule",
+  "params": {
+              "scheduleID" : 2
+      },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "schedule": {
+      "attributes": {
+        "frequency": "Time Interval"
+      },
+       "hasError": false,
+       "hours": 0,
+       "lastRunStatus": "Success",
+       "lastRunTimeStarted": "2015-03-23T21:25:00Z",
+       "minutes": 2,
+       "monthdays": [],
+       "paused": false,
+       "recurring": true,
+       "runNextInterval": false,
+       "scheduleID": 2,
+       "scheduleInfo": {
+          "name": "MCA2",
+          "volumeID": "3"
+       },
+       "scheduleName": "MCAsnapshot2",
+       "scheduleType": "Snapshot",
+       "startingDate": "2015-03-23T19:28:57Z",
+       "toBeDeleted": false,
+       "weekdays": []
+      }
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

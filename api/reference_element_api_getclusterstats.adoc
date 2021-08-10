@@ -1,0 +1,97 @@
+---
+permalink: api/reference_element_api_getclusterstats.html 
+sidebar: sidebar 
+keywords: cluster,stats,statistics,get,getting,getclusterstats 
+summary: GetClusterStats メソッドを使用すると、クラスタのアクティビティ測定値の概要を取得できます。戻り値は、クラスタを作成したときからの累積値です。 
+---
+= GetClusterStats から参照できます
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetClusterStats メソッドを使用すると、クラスタのアクティビティ測定値の概要を取得できます。戻り値は、クラスタを作成したときからの累積値です。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+clusterStats
+ a| 
+クラスタのアクティビティ情報。
+ a| 
+xref:reference_element_api_clusterstats.adoc[clusterStats]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "GetClusterStats",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "clusterStats": {
+      "actualIOPS": 9376,
+      "averageIOPSize": 4198,
+      "clientQueueDepth": 8,
+      "clusterUtilization": 0.09998933225870132,
+      "latencyUSec": 52,
+      "normalizedIOPS": 15000,
+      "readBytes": 31949074432,
+      "readBytesLastSample": 30883840,
+      "readLatencyUSec": 27,
+      "readLatencyUSecTotal": 182269319,
+      "readOps": 1383161,
+      "readOpsLastSample": 3770,
+      "samplePeriodMsec": 500,
+      "servicesCount": 3,
+      "servicesTotal": 3,
+      "timestamp": "2017-09-09T21:15:39.809332Z",
+      "unalignedReads": 0,
+      "unalignedWrites": 0,
+      "writeBytes": 8002002944,
+      "writeBytesLastSample": 7520256,
+      "writeLatencyUSec": 156,
+      "writeLatencyUSecTotal": 231848965,
+      "writeOps": 346383,
+      "writeOpsLastSample": 918
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

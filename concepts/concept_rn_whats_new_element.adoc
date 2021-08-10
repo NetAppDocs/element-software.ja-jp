@@ -1,0 +1,141 @@
+---
+permalink: concepts/concept_rn_whats_new_element.html 
+sidebar: sidebar 
+keywords: netapp, solidfire, element, storage 
+summary: ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。 
+---
+= の新機能
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。Element 12.3 では、ソフトウェアによる保存データの暗号化の機能強化、セキュリティの強化、ストレージファームウェアのアップデート、スナップショット機能の強化、障害ドライブの動作の改善が導入されています。
+
+
+
+== NetApp Bugs Online には、既知の問題と解決済みの問題があります
+
+Element 12.3 以降では、 NetApp Bugs Online ツールに既知の問題と解決済みの問題が表示されるようになりました。これらの問題は Element およびその他の製品で参照できます から https://mysupport.netapp.com/site/products/all/details/solidfire-elementos/bugsonline-tab["NetApp Bugs Online では"]。
+
+
+
+== FIFO スナップショット・キューのサポート
+
+Element 12.3 では、ボリュームスナップショットの First-In First-Out （ FIFO ）キューを作成できます。Element API を使用すると、ボリュームの作成時に予約する FIFO スナップショットスロットの最小数と最大数を指定できます。ボリュームの FIFO スナップショットキューがいっぱいになると、そのボリュームに次に作成するスナップショットは、そのボリュームの最も古いスナップショットをシステムから削除します。FIFO スナップショットと非 FIFO スナップショットはどちらも、ボリューム上の使用可能なスナップショットスロットの同じプールを使用します。
+
+次の Element API メソッドは、 FIFO スナップショットに関連しています （を参照してください link:../api/index.html["Element API のドキュメント"] 各 API メソッドの詳細については、を参照してください）。
+
+* CreateGroupSnapshot を作成します
+* スケジュールの作成
+* CreateSnapshot の更新
+* CreateVolume を使用します
+* ModifyGroupSnapshot の追加
+* ModifySchedule の追加
+* ModifySnapshot の追加
+* ModifyVolume の追加
+* ModifyVolumes の場合に使用でき
+
+
+
+
+== スナップショットシリアル化のサポート
+
+Element 12.3 では、シリアル化スナップショットの作成がサポートされてElement API を使用して新しい Snapshot を作成する際、以前の Snapshot レプリケーションがまだ実行中の場合は Snapshot を作成しないように指定できます。
+
+次の Element API メソッドは、スナップショットのシリアル化に関連しています （を参照してください link:../api/index.html["Element API のドキュメント"] 各 API メソッドの詳細については、を参照してください）。
+
+* CreateGroupSnapshot を作成します
+* スケジュールの作成
+* CreateSnapshot の更新
+* ModifySchedule の追加
+
+
+
+
+== Snapshot 保持のサポート
+
+Element 12.3 では、スナップショットの保存期間を指定できます。Snapshot の保持期限または有効期限を指定しない場合、 Snapshot は無期限に保持されます。
+
+Snapshot の保持には次の Element API メソッドが関連します （を参照してください link:../api/index.html["Element API のドキュメント"] 各 API メソッドの詳細については、を参照してください）。
+
+* CreateGroupSnapshot を作成します
+* スケジュールの作成
+* CreateSnapshot の更新
+* ModifyGroupSnapshot の追加
+* ModifySchedule の追加
+* ModifySnapshot の追加
+
+
+
+
+== ソフトウェアによる保存データの暗号化の機能拡張
+
+ソフトウェア保存時の暗号化機能では、 Element 12.3 に外部キー管理（ EKM ）とソフトウェア暗号化マスターキーのキー変更機能が導入されています。ストレージクラスタの作成時に保存データのソフトウェア暗号化を有効にすることができます。SolidFire エンタープライズ SDS ストレージクラスタを作成すると、保存データのソフトウェア暗号化がデフォルトで有効になります。この機能では、ストレージノード内の SSD に格納されているすべてのデータが暗号化され、クライアント IO のパフォーマンスへの影響は非常に小さく（最大 2% ）すぎません。
+
+ソフトウェア暗号化に関連する Element API メソッドは次のとおりです 休止状態（を参照） link:../api/index.html["Element API のドキュメント"] 各 API メソッドの詳細については、を参照してください）。
+
+* クラスタを作成
+* DisableEncryptionAtRest
+* EnableEncryptionAtRest
+* GetSoftwareEncryptionAtRestInfo
+* RekeySoftwareEncryptionAtRestMasterKey
+
+
+
+
+== ストレージノードのファームウェアの更新
+
+Element 12.3 では、ストレージノード用のファームウェアの更新が含まれています。 link:../concepts/concept_rn_relatedrn_element.html#storage-firmware["詳細はこちら。"]。
+
+
+
+== セキュリティの機能拡張
+
+Element 12.3 では、ストレージノードおよび管理ノードのセキュリティの脆弱性を解決します。 https://security.netapp.com/["詳細はこちら。"] これらのセキュリティ機能拡張について
+
+
+
+== ドライブ障害時の動作が改善されました
+
+Element 12.3 は、ドライブの SMART ヘルスデータを使用して、 SolidFire アプライアンスドライブの定期的なヘルスチェックを実行します。SMART ヘルスチェックに失敗したドライブは、障害に近い可能性があります。ドライブが SMART ヘルスチェックに失敗すると、ドライブは「 Failed * 」状態に移行し、重大度が「 D rive with serial ： <serial number> in slot ： <node slot><drive slot> has failed the Smart overall health check. 」という重大なクラスタエラーが表示されます。この問題を解決するには ' ドライブを交換してください
+
+
+
+== SolidFire エンタープライズ SDS の新機能
+
+SolidFire ESDS の新機能は次のとおりです。
+
+
+
+=== 新しいサーバのサポート
+
+SolidFire ESDS が Dell R640 サーバーで利用できるようになりました。を参照してください https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^] サポートされている構成の詳細については、を参照してください。
+
+
+
+=== 新しいドキュメント
+
+SolidFire ESDS には、次の新しいドキュメントが用意されています。
+
+* https://docs.netapp.com/us-en/element-software/esds/task_esds_r640_drive_repl.html["Dell R640 のドライブを交換します"^]: Dell R640 サーバーのドライブを交換する手順について説明します。
+* https://kb.netapp.com/Special:Search?query=solidfire+enterprise+SDS&type=wiki["ナレッジベースの記事（ログインが必要）"^]： SolidFire ESDS システムの問題のトラブルシューティングについて説明します。
+
+
+
+
+=== 既知の問題の新しい場所
+
+で既知の問題を検索できるようになりました https://mysupport.netapp.com/site/products/all/details/solidfire-enterprise-sds/bugsonline-tab["Bugs Online のツール（ログインが必要）"^]。
+
+[discrete]
+== 詳細については、こちらをご覧ください
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["『 NetApp Hybrid Cloud Control and Management Services Release Notes 』を参照してください"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"^]
+* http://docs.netapp.com/sfe-122/index.jsp["以前のバージョン用の SolidFire および Element ソフトウェアドキュメントセンター"^]
+* https://www.netapp.com/us/documentation/hci.aspx["NetApp HCI のリソースページ"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software["NetApp HCI および NetApp Element のファームウェアとドライバのバージョン ソフトウェア"^]
+

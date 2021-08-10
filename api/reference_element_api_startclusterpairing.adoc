@@ -1,0 +1,89 @@
+---
+permalink: api/reference_element_api_startclusterpairing.html 
+sidebar: sidebar 
+keywords: cluster,pair,pairing,start,starting,startclusterpairing 
+summary: StartClusterPairing メソッドを使用すると、クラスタからエンコードされたキーを作成できます。このキーを使用して別のクラスタとペアリングできます。この API で作成されるキーは、 CompleteClusterPairing メソッドでクラスタペアリングを確立するために使用されます。1 つのクラスタを最大で 4 つの他のクラスタとペアリングできます。 
+---
+= StartClusterPairing を参照してください
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 artClusterPairing 」メソッドを使用すると、クラスタからエンコードされたキーを作成できます。このキーを使用して別のクラスタとペアリングできます。この API メソッドで作成されるキーは、「 CompleteClusterPairing 」メソッドでクラスタペアリングを確立するために使用されます。1 つのクラスタを最大で 4 つの他のクラスタとペアリングできます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+clusterPairingKey を使用します
+ a| 
+によって使用される文字列 xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing] API メソッド。
+ a| 
+文字列
+
+
+
+ a| 
+clusterPairID
+ a| 
+クラスタペアの一意の識別子。
+ a| 
+整数
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "StartClusterPairing",
+   "params": {
+      },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+     "clusterPairID": 1,
+     "clusterPairingKey": "7b22636c7573746572506169724944223a312c22636c75737465725061697255554944223a2231636561313336322d346338662d343631612d626537322d373435363661393533643266222c22636c7573746572556e697175654944223a2278736d36222c226d766970223a223139322e3136382e3133392e313232222c226e616d65223a224175746f54657374322d63307552222c2270617373776f7264223a22695e59686f20492d64774d7d4c67614b222c22727063436f6e6e656374696f6e4944223a3931333134323634392c22757365726e616d65223a225f5f53465f706169725f50597a796647704c7246564432444a42227d"
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing]

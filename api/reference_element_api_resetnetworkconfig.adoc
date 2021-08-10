@@ -1,0 +1,54 @@
+---
+permalink: api/reference_element_api_resetnetworkconfig.html 
+sidebar: sidebar 
+keywords: network,config,configuration,reset,restetting,factory,default,resetnetworkconfig 
+summary: ResetNetworkConfig メソッドを使用すると、個々のノードのネットワーク設定の問題を解決できます。このメソッドは、個々のノードのネットワーク設定を工場出荷時のデフォルト設定にリセットします。 
+---
+= ResetNetworkConfig （リセット）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ResetNetworkConfig 」メソッドを使用すると、個々のノードのネットワーク設定の問題を解決できます。このメソッドは、個々のノードのネットワーク設定を工場出荷時のデフォルト設定にリセットします。
+
+
+NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ResetNetworkConfig",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドは応答を返しません。
+
+
+
+== 新規導入バージョン
+
+11.0

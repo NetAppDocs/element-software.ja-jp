@@ -1,0 +1,59 @@
+---
+permalink: api/reference_element_api_fipsnodereport.html 
+sidebar: sidebar 
+keywords: objects,object,fipsNodeReport 
+summary: fipsNodeReport オブジェクトには、ストレージクラスタ内の単一ノードの FIPS 140-2 サポートに関する情報が含まれます。GetFipsReport メソッドを使用すると、この情報を取得できます。 
+---
+= fipsNodeReport
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+fipsNodeReport オブジェクトには、ストレージクラスタ内の単一ノードの FIPS 140-2 サポートに関する情報が含まれます。この情報は 'GetFipsReport' メソッドを使用して取得できます
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ノード ID
+ a| 
+情報を報告しているノードの ID 。
+ a| 
+整数
+
+
+
+ a| 
+fipsDrives
+ a| 
+このノードで FIPS 140-2 ドライブ暗号化が有効になっているかどうか。有効な値は次のとおり
+
+* None ：このノードは FIPS ドライブ暗号化に対応していません。
+* Partial ：ノードは FIPS ドライブ暗号化に対応していますが、ノード内の一部のドライブが FIPS 対応ドライブではありません。
+* Ready ：ノードは FIPS ドライブ暗号化に対応しており、ノード内のすべてのドライブが FIPS 対応ドライブであるか、ドライブが存在しません。
+
+ a| 
+FipsDrivesStatusType
+
+
+
+ a| 
+https ： Enabled （ https 有効
+ a| 
+このノードで FIPS 140-2 の HTTPS 暗号化が有効になっているかどうか。有効な値は次のとおり
+
+* true ：有効
+* false ：無効
+
+ a| 
+ブール値
+
+|===

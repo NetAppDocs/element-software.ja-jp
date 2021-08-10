@@ -1,0 +1,86 @@
+---
+permalink: api/reference_element_api_getntpinfo.html 
+sidebar: sidebar 
+keywords: ntp,info,get,getting,getntpinfo 
+summary: GetNtpInfo メソッドを使用すると、現在のネットワークタイムプロトコル（ NTP ）設定情報を取得できます。 
+---
+= GetNtpInfo を使用します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetNtpInfo メソッドを使用すると、現在のネットワークタイムプロトコル（ NTP ）設定情報を取得できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+サーバ
+ a| 
+NTP サーバのリスト。
+ a| 
+文字列の配列
+
+
+
+ a| 
+ブロードキャストクライアント
+ a| 
+クラスタ内のノードがブロードキャスト NTP メッセージをリスンしているかどうかを示します。有効な値は次のとおり
+
+* 正しいです
+* いいえ
+
+ a| 
+ブール値
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "GetNtpInfo",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {
+    "broadcastclient" : false,
+    "servers" : [ "us.pool.ntp.org" ]
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

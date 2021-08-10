@@ -1,0 +1,25 @@
+---
+permalink: storage/task_data_protection_delete_a_snapshot.html 
+sidebar: sidebar 
+keywords: snapshot, delete, volume snapshot, storage cluster, remove snapshot 
+summary: Element ソフトウェアを実行しているストレージクラスタからボリューム Snapshot を削除できます。Snapshot を削除すると、システムはただちに削除します。 
+---
+= Snapshot を削除します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element ソフトウェアを実行しているストレージクラスタからボリューム Snapshot を削除できます。Snapshot を削除すると、システムはただちに削除します。
+
+レプリケート中の Snapshot をソースクラスタから削除できます。ターゲットクラスタと同期中の Snapshot を削除すると、同期レプリケーションが完了した時点でソースクラスタから Snapshot が削除されます。ターゲットクラスタからは Snapshot は削除されません。
+
+ターゲットにレプリケート済みの Snapshot をターゲットクラスタから削除することもできます。削除した Snapshot は、ターゲットがソースクラスタで Snapshot が削除されたことを検知するまで、ターゲットの削除済み Snapshot のリストに保持されます。ソース Snapshot が削除されたことをターゲットが検知すると、ターゲットはその Snapshot のレプリケーションを停止します。
+
+ソースクラスタから Snapshot を削除しても、ターゲットクラスタの Snapshot には影響はありません（逆も同じ）。
+
+. [ * データ保護 *>* スナップショット * ] をクリックします。
+. 削除するスナップショットの * アクション * アイコンをクリックします。
+. 表示されたメニューで、 * 削除 * を選択します。
+. 操作を確定します。
+

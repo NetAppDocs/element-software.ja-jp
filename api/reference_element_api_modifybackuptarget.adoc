@@ -1,0 +1,106 @@
+---
+permalink: api/reference_element_api_modifybackuptarget.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,backup,target,modifybackuptarget 
+summary: ModifyBackupTarget メソッドを使用すると、バックアップターゲットの属性を変更できます。 
+---
+= ModifyBackupTarget
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+バックアップターゲットの属性を変更するには、「 ModyBackupTarget 」メソッドを使用します。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+backupTargetID
+ a| 
+変更するターゲットの一意の ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON オブジェクト
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+名前
+ a| 
+バックアップターゲットの新しい名前。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ModifyBackupTarget",
+   "params": {
+      "backupTargetID" : 1,
+      "name": "yourtargetS3"
+      "attributes" : {
+          "size" : 500,
+      }
+   },
+  "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

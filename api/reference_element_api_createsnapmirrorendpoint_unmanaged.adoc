@@ -1,0 +1,74 @@
+---
+permalink: api/reference_element_api_createsnapmirrorendpoint_unmanaged.html 
+sidebar: sidebar 
+keywords: SnapMirror,endpoint,unmanaged,create,creating,CreateSnapMirrorEndpointUnmanaged 
+summary: Element ソフトウェアストレージシステムでは、 CreateSnapMirrorEndpointUnmanaged メソッドを使用して、リモートの管理対象外 SnapMirror エンドポイントが Element ストレージクラスタと通信できるようにします。管理対象外のエンドポイントは、 Element SnapMirror API では管理できません。ONTAP 管理ソフトウェアまたは API で管理する必要があります。 
+---
+= CreateSnapMirrorEndpointUnmanaged
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element ソフトウェアストレージシステムは、「 CreateSnapMirrorEndpointUnmanaged 」メソッドを使用して、リモートの管理対象外 SnapMirror エンドポイントが Element ストレージクラスタと通信できるようにします。管理対象外のエンドポイントは、 Element SnapMirror API では管理できません。ONTAP 管理ソフトウェアまたは API で管理する必要があります。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+クラスタ名
+ a| 
+エンドポイントの名前。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+IP アドレス
+ a| 
+この Element ストレージクラスタと通信する必要がある ONTAP ストレージシステムクラスタの IP アドレスのリスト。
+ a| 
+文字列の配列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorEndpoint のことです
+ a| 
+新たに作成された SnapMirror エンドポイント。
+ a| 
+xref:reference_element_api_snapmirrorendpoint.adoc[snapMirrorEndpoint のことです]
+
+|===
+
+
+== 新規導入バージョン
+
+10.3

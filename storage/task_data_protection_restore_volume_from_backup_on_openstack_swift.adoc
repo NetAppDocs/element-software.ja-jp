@@ -1,0 +1,35 @@
+---
+permalink: storage/task_data_protection_restore_volume_from_backup_on_openstack_swift.html 
+sidebar: sidebar 
+keywords: volume restore, openstack swift object store 
+summary: OpenStack Swift オブジェクトストア上のバックアップからボリュームをリストアできます。 
+---
+= OpenStack Swift オブジェクトストア上のバックアップからボリュームをリストアします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OpenStack Swift オブジェクトストア上のバックアップからボリュームをリストアできます。
+
+. [*Reporting*>*Event Log] をクリックします。
+. リストアする必要のあるバックアップを作成したバックアップイベントを探します。
+. イベントの *Details* 列で、 *Show Details* をクリックします。
+. マニフェスト情報をクリップボードにコピーします。
+. [* 管理 *>* ボリューム *] をクリックします。
+. リストアするボリュームの操作アイコンをクリックします。
+. 表示されたメニューで、 * リストア元 * をクリックします。
+. [ * 統合リストア * ] ダイアログボックスの [ * リストア元 * ] で、 [* Swift* ] を選択します。
+. バックアップに一致するオプションを * Data Format * ：
++
+** * Native * ： SolidFire ストレージシステムのみが読み取り可能な圧縮形式。
+** * Uncompressed * ：他のシステムと互換性がある非圧縮形式。
+
+
+. オブジェクトストアへのアクセスに使用する URL を * url * フィールドに入力します。
+. [* ユーザー名 *] フィールドにアカウントのユーザー名を入力します。
+. [* Authentication Key* （認証キー * ） ] フィールドにアカウントの認証キーを入力します。
+. バックアップを格納するコンテナの名前を「 * Container * 」フィールドに入力します。
+. マニフェスト情報を * Manifest * フィールドに貼り付けます。
+. 「 * 書き込みを開始」をクリックします。
+

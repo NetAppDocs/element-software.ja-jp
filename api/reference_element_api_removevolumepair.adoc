@@ -1,0 +1,77 @@
+---
+permalink: api/reference_element_api_removevolumepair.html 
+sidebar: sidebar 
+keywords: volume,pair,volumes,remove,removing,removevolumepair 
+summary: RemoveVolumePair メソッドを使用すると、 2 つのボリューム間のリモートペアリングを削除できます。ペアリングされているソースボリュームとターゲットボリュームの両方でこのメソッドを使用します。ボリュームペアリング情報を削除すると、ボリュームとの間でデータがレプリケートされなくなります。 
+---
+= RemoveVolumePair を使用します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RemoveVolumePair メソッドを使用すると、 2 つのボリューム間のリモートペアリングを削除できます。ペアリングされているソースボリュームとターゲットボリュームの両方でこのメソッドを使用します。ボリュームペアリング情報を削除すると、ボリュームとの間でデータがレプリケートされなくなります。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ボリューム ID
+ a| 
+レプリケーションプロセスを停止するボリュームの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "RemoveVolumePair",
+   "params": {
+      "volumeID": 5
+   "id" : 1
+   }
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

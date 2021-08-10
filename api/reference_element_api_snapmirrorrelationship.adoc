@@ -1,0 +1,242 @@
+---
+permalink: api/reference_element_api_snapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorRelationship 
+summary: snapMirrorRelationship オブジェクトに、 Element ボリュームと ONTAP ボリュームの間の SnapMirror 関係の情報が含まれています。 
+---
+= snapMirrorRelationship のこと
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorRelationship オブジェクトに、 Element ボリュームと ONTAP ボリュームの間の SnapMirror 関係の情報が含まれています。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+デスティネーション ONTAP システムの ID 。
+ a| 
+整数
+
+
+
+ a| 
+snapMirrorRelationshipID
+ a| 
+ListSnapMirrorRelationships で返される配列内の snapMirrorRelationship オブジェクトごとの一意の識別子。この UUID は、 ONTAP システムで作成されて返されます。
+ a| 
+文字列
+
+
+
+ a| 
+sourceVolume 」と入力します
+ a| 
+ソースボリュームを示すオブジェクト。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+
+
+
+ a| 
+デスティネーションボリューム
+ a| 
+デスティネーションボリュームを示すオブジェクト。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+
+
+
+ a| 
+currentMaxTransferRate です
+ a| 
+ソースボリュームとデスティネーションボリュームの間の現在の最大転送速度（ 1 秒あたりのキロバイト数）。
+ a| 
+整数
+
+
+
+ a| 
+isHealthy
+ a| 
+関係が正常であるかどうか。有効な値は次のとおり
+
+* true ：関係は正常です。
+* false ：関係は正常ではありません。原因としては、手動更新やスケジュールされた更新の失敗または中止、あるいは前回のスケジュールされた更新の遅延が考えられます。
+
+ a| 
+ブール値
+
+
+
+ a| 
+ラーグタイム
+ a| 
+デスティネーションボリュームのデータがソースボリュームのデータより遅延している時間（秒）。
+ a| 
+整数
+
+
+
+ a| 
+lastTransferDuration の説明
+ a| 
+前回の転送が完了するまでにかかった時間（秒）。
+ a| 
+整数
+
+
+
+ a| 
+lastTransferError のことです
+ a| 
+前回の転送エラーの原因を示すメッセージ。
+ a| 
+文字列
+
+
+
+ a| 
+lastTransferSize の順にクリックします
+ a| 
+前回の転送で転送された総バイト数。
+ a| 
+整数
+
+
+
+ a| 
+lastTransferEndTimestamp のように入力し
+ a| 
+前回の転送の終了タイムスタンプ。
+ a| 
+ISO 8601 形式の日付文字列
+
+
+
+ a| 
+lastTransferType
+ a| 
+関係での前回の転送のタイプ。
+ a| 
+文字列
+
+
+
+ a| 
+最大転送速度
+ a| 
+ボリューム間の最大データ転送率を KB/ 秒単位で指定します。デフォルト値の 0 は無制限を意味し、使用可能なネットワーク帯域幅を SnapMirror 関係がフルに活用できるようにします。
+ a| 
+整数
+
+
+
+ a| 
+ミラー状態
+ a| 
+SnapMirror 関係のミラー状態。有効な値は次のとおり
+
+* uninitialized ：デスティネーションボリュームが初期化されていません。
+* snapmirrored ：デスティネーションボリュームは初期化され、 SnapMirror 更新を受信できる状態です。
+* broken-off ：デスティネーションボリュームは読み書き可能な状態にあり、 Snapshot が存在します。
+
+ a| 
+文字列
+
+
+
+ a| 
+newestSnapshot の作成
+ a| 
+デスティネーションボリューム上の最新の Snapshot コピーの名前。
+ a| 
+文字列
+
+
+
+ a| 
+実行します
+ a| 
+関係の ONTAP SnapMirror ポリシーの名前を指定します。使用可能なポリシーのリストは、 ListSnapMirrorPolicies を使用して取得できます。値の例としては、「 `M irrorLatest 」や「 M irrorF所 」などがあります。
+ a| 
+文字列
+
+
+
+ a| 
+ポリシータイプ
+ a| 
+関係の ONTAP SnapMirror ポリシーのタイプ。「 ListSnapMirrorPolicies 」を参照してください。たとえば、「 async 」や「 mire_vault 」などです。
+ a| 
+文字列
+
+
+
+ a| 
+関係の進捗状況
+ a| 
+関係の現在のアクティビティに対してこれまでに処理された合計バイト数。このバイト数は relationship-status で返されます。「 relationshipStatus 」メンバーでアクティビティが進行中であることが示されている場合にのみ設定されます。
+ a| 
+整数
+
+
+
+ a| 
+関係ステータス
+ a| 
+SnapMirror 関係のステータス。有効な値は次のとおり
+
+* アイドル
+* 転送中です
+* チェック中です
+* 休止中です
+* 休止中です
+* キューに登録され
+* 準備中
+* 最終処理中です
+* 中止しています
+* 解除します
+
+ a| 
+文字列
+
+
+
+ a| 
+関係タイプ
+ a| 
+SnapMirror 関係のタイプ。Element ソフトウェアを実行しているストレージクラスタの場合、この値は常に「 extended_data_protection 」です。
+ a| 
+文字列
+
+
+
+ a| 
+スケジュール名
+ a| 
+SnapMirror 関係を更新する際に使用される、 ONTAP システム上の既存の cron スケジュールの名前。使用可能なスケジュールのリストは、 ListSnapMirrorSchedules で取得できます。
+ a| 
+文字列
+
+
+
+ a| 
+正常性のない理由
+ a| 
+関係が正常でない理由。
+ a| 
+文字列
+
+|===

@@ -1,0 +1,7 @@
+---
+section: try
+title: ぜひお試しください
+url: "/try/task_try_overview.html"
+entries:
+- title: Element のデモノードを使用してストレージ機能を試します
+  url: "/try/task_use_demonode.html"

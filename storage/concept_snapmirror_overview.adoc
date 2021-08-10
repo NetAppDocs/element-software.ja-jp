@@ -1,0 +1,23 @@
+---
+permalink: storage/concept_snapmirror_overview.html 
+sidebar: sidebar 
+keywords: overview, snapmirror, snapshots, replicating between clusters, managing snapmirror relationships, Element and ONTAP 
+summary: NetApp Element ソフトウェアを実行するシステムでは、 NetApp ONTAP システムとの間での SnapMirror 機能を使用した Snapshot のコピーとリストアがサポートされます。 
+---
+= SnapMirror の概要
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Element ソフトウェアを実行するシステムでは、 NetApp ONTAP システムとの間での SnapMirror 機能を使用した Snapshot のコピーとリストアがサポートされます。
+
+Element を実行するシステムは、 9.3 以降の ONTAP システムの SnapMirror と直接通信できます。NetAppElement API には、クラスタ、ボリューム、 Snapshot で SnapMirror 機能を有効にするメソッドが用意されています。さらに、 Element UI には、 Element ソフトウェアと ONTAP システムの間の SnapMirror 関係を管理するために必要なすべての機能が搭載されています。
+
+機能は限定されますが、特定のユースケースで ONTAP ボリュームを Element ボリュームにレプリケートできます。詳細については、 ONTAP のドキュメントを参照してください。
+
+
+
+== 詳細については、こちらをご覧ください
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-sdbak/home.html["Element ソフトウェアと ONTAP の間のレプリケーション"]

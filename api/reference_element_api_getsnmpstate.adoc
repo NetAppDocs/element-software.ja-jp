@@ -1,0 +1,100 @@
+---
+permalink: api/reference_element_api_getsnmpstate.html 
+sidebar: sidebar 
+keywords: snmp,state,get,getting,getsnmpstate 
+summary: GetSnmpState メソッドを使用すると、 SNMP 機能の現在の状態を取得できます。 
+---
+= GetSnmpState
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 GetSnmpState 」メソッドを使用すると、 SNMP 機能の現在の状態を取得できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+有効
+ a| 
+有効な値は次のとおり
+
+* 正しいです
+* いいえ
+
+
+デフォルト値は false です。クラスタ内のノードが SNMP 用に設定されている場合は true を返します。
+ a| 
+ブール値
+
+
+
+ a| 
+snmpV3Enabled を使用します
+ a| 
+有効な値は次のとおり
+
+* 正しいです
+* いいえ
+
+
+デフォルト値は false です。クラスタ内のノードが SNMP v3 用に設定されている場合は true を返します。
+ a| 
+ブール値
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "GetSnmpState",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {
+   "enabled": true,
+   "snmpV3Enabled": false
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_setsnmpacl.adoc[SetSnmpACL の場合]

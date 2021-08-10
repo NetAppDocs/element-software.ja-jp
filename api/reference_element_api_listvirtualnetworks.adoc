@@ -1,0 +1,183 @@
+---
+permalink: api/reference_element_api_listvirtualnetworks.html 
+sidebar: sidebar 
+keywords: virtual,network,networks,listing,list,listvirtualnetworks 
+summary: ListVirtualNetworks メソッドを使用すると、クラスタのすべての設定済み仮想ネットワークをリストできます。 
+---
+= ListVirtualNetworks のように指定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ListVirtualNetworks 」メソッドを使用すると、クラスタのすべての設定済み仮想ネットワークをリストできます。
+
+このメソッドを使用して、クラスタの仮想ネットワーク設定を検証できます。このメソッドには必須のパラメータはありません。ただし、結果を絞り込むために、 1 つ以上の virtualNetworkID または virtualNetworkTag の値を指定できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+virtualNetworkID
+ a| 
+単一の仮想ネットワークのリストをフィルタリングするためのネットワーク ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+virtualNetworkTag
+ a| 
+単一の仮想ネットワークのリストをフィルタリングするためのネットワークタグ。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+virtualNetworkID
+ a| 
+リストに含めるネットワーク ID 。
+ a| 
+整数の配列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+virtualNetworkTag
+ a| 
+リストに含めるネットワークタグ。
+ a| 
+整数の配列
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+仮想ネットワーク
+ a| 
+仮想ネットワーク IP アドレスを含むオブジェクト。
+ a| 
+xref:reference_element_api_virtualnetwork.adoc[VirtualNetwork]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "ListVirtualNetworks",
+  "params": {
+     "virtualNetworkIDs": [5,6]
+   },
+"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "virtualNetworks": [
+   {
+    "addressBlocks": [
+   {
+    "available": "11000000",
+    "size": 8,
+    "start": "10.26.250.207"
+   }
+ ],
+    "attributes": null,
+    "gateway": "10.26.250.254",
+    "name": "2250",
+    "namespace": false,
+    "netmask": "255.255.255.0",
+    "svip": "10.26.250.200",
+    "virtualNetworkID": 2250
+   },
+   {
+     "addressBlocks": [
+   {
+     "available": "11000000",
+     "size": 8,
+     "start": "10.26.241.207"
+   }
+  ],
+     "attributes": null,
+     "gateway": "10.26.241.254",
+     "name": "2241",
+     "namespace": false,
+     "netmask": "255.255.255.0",
+     "svip": "10.26.241.200",
+     "virtualNetworkID": 2241
+   },
+  {
+     "addressBlocks": [
+  {
+     "available": "11000000",
+     "size": 8,
+     "start": "10.26.240.207"
+   }
+  ],
+     "attributes": null,
+     "gateway": "10.26.240.254",
+     "name": "2240",
+     "namespace": false,
+     "netmask": "255.255.255.0",
+     "svip": "10.26.240.200",
+     "virtualNetworkID": 2240
+    },
+   {
+  }
+ ]
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

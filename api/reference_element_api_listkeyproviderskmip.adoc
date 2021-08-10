@@ -1,0 +1,126 @@
+---
+permalink: api/reference_element_api_listkeyproviderskmip.html 
+sidebar: sidebar 
+keywords: KMIP,key providers,key,provider,retrieving,listing,list,retrieve,listkeyproviderskmip 
+summary: ListKeyProvidersKmip メソッドを使用すると、既存のすべての Key Management Interoperability Protocol\ （ KMIP \ ）キープロバイダのリストを取得できます。追加のパラメータを指定することで、リストをフィルタリングできます。 
+---
+= ListKeyProvidersKmip
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ListKeyProvidersKmip メソッドを使用すると、既存のすべての Key Management Interoperability Protocol （ KMIP ）キープロバイダのリストを取得できます。追加のパラメータを指定することで、リストをフィルタリングできます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+keyProviderIsActive
+ a| 
+アクティブかどうかでフィルタリングした KMIP キーサーバオブジェクトを返します。有効な値は次のとおり
+
+* true ：アクティブな（現在使用中のキーを提供している） KMIP キープロバイダのみを返します。
+* false ：非アクティブな（いずれのキーも提供せず、削除可能な） KMIP キープロバイダのみを返します。
+
+
+省略すると、返される KMIP キープロバイダは、アクティブかどうかでフィルタリングされません。
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+kmipKeyProviderHasServer の署名
+ a| 
+割り当てられた KMIP キーサーバがあるかどうかでフィルタリングされた KMIP キープロバイダが返されます。有効な値は次のとおり
+
+* true ：割り当てられた KMIP キーサーバがある KMIP キープロバイダのみを返します。
+* false ：割り当てられた KMIP キーサーバがない KMIP キープロバイダのみを返します。
+
+
+省略すると、返される KMIP キープロバイダは、割り当てられた KMIP キーサーバがあるかどうかでフィルタリングされません。
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+kmipKeyProviders のマニュアルページです
+ a| 
+作成された KMIP キープロバイダのリスト。
+ a| 
+link:reference_element_api_keyproviderkmip.md#["KeyProviderKmip"] 配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "ListKeyProvidersKmip",
+  "params": {},
+"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+    {
+    "kmipKeyProviders": [
+        {
+            "keyProviderID": 15,
+            "kmipCapabilities": "SSL",
+            "keyProviderIsActive": true,
+            "keyServerIDs": [
+                1
+            ],
+            "keyProviderName": "KeyProvider1"
+        }
+    ]
+}
+}
+----
+
+
+== 新規導入バージョン
+
+11.7

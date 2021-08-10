@@ -1,0 +1,83 @@
+---
+permalink: api/reference_element_api_listnetworkinterfacestats.html 
+sidebar: sidebar 
+keywords: network,interface,stats,statistics,interfaces,list,listing,listnetworkinterfacestats 
+summary: ListNetworkInterfaceStats メソッドを使用すると、ノード上の各ネットワークインターフェイスに関する統計を表示できます。この API メソッドは、個々のノードに対して使用するためのものです。個々のノードにアクセスするには、ユーザ ID とパスワードによる認証が必要です。ただし、メソッド呼び出しで force パラメータの値が true に設定されている場合は、このメソッドをクラスタに対して使用できます。このパラメータをクラスタに対して使用すると、すべてのインターフェイスが表示されます。 
+---
+= ListNetworkInterfaceStats
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ListNetworkInterfaceStats 」メソッドを使用すると、ノード上の各ネットワークインターフェイスのドロップされたパケット数やさまざまな種類のエラーなどの統計を表示できます。この API メソッドは、個々のノードに対して使用するためのものです。個々のノードにアクセスするには、ユーザ ID とパスワードによる認証が必要です。ただし、メソッド呼び出しで force パラメータの値が true に設定されている場合は、このメソッドをクラスタに対して使用できます。パラメータをクラスタに対して使用すると、すべてのインターフェイスのネットワーク統計が表示されます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+| networkInterfaceStats のようになります | ストレージノードの各ネットワークインターフェイスについて、破棄されたパケット数や各種のネットワークエラーなどのネットワーク統計情報のリスト。 | xref:reference_element_api_networkinterfacestats.adoc[networkInterfaceStats のようになります] 配列 
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+"method": "ListNetworkInterfaceStats",
+"params": {},
+"id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+    "networkInterfaceStats": [
+        {
+            "rxErrors": 1,
+            "rxPackets": 1,
+            "txErrors": 1,
+            "rxDropped": 1,
+            "txCarrierErrors": 1,
+            "rxOverErrors": 1,
+            "rxMissedErrors": 1,
+            "txPackets": 1,
+            "name": "if_name",
+            "rxLengthErrors": 1,
+            "collisions": 1,
+            "rxFifoErrors": 1,
+            "txBytes": 1,
+            "rxBytes": 1,
+            "rxFrameErrors": 1,
+            "rxCrcErrors": 1,
+            "txFifoErrors": 1
+        }
+    ]
+}
+----
+
+
+== 新規導入バージョン
+
+12.3

@@ -1,0 +1,154 @@
+---
+permalink: api/reference_element_api_addnodes.html 
+sidebar: sidebar 
+keywords: addnodes,node,add,adding,nodes,cluster 
+summary: AddNodes メソッドを使用すると、 1 つ以上の新しいノードをクラスタに追加できます。 
+---
+= AddNodes
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AddNodes メソッドを使用すると、 1 つ以上の新しいノードをクラスタに追加できます。
+
+設定前のノードを初めて起動した場合、ノードを設定するように求められます。ノードを設定すると、「 Pending 状態のノード」としてクラスタに登録されます。Element ソフトウェアを実行しているストレージクラスタは、ノードをクラスタ上のバージョンに自動で更新します。Pending 状態のノードを追加した場合、メソッドの応答には asyncHandle 値が含まれます。この値を使用して、「 GetAsyncResult 」メソッドで自動更新プロセスのステータスを照会できます。
+
+Fibre Channel ノードを追加するプロセスは、 Element の iSCSI ストレージノードをクラスタに追加するプロセスと同じです。Fibre Channel ノードは、ノード ID を使用してシステムに登録されます。ノードは、アクセス可能になると「 Pending 状態のノード」になります。「 ListAllNodes 」メソッドは、 iSCSI ノードの Pending 状態のノードの ID と、クラスタに追加可能な Fibre Channel ノードの Pending 状態のノードの ID を返します。
+
+仮想ネットワーク用に設定したクラスタにノードを追加する場合は、新しいノードに仮想 IP を割り当てるのに十分な数の仮想ストレージ IP アドレスが必要です。新しいノードに使用できる仮想 IP アドレスがない場合 'AddNode' 操作は失敗します仮想ネットワークにストレージ IP アドレスを追加するには、「 modifyVirtualNetwork 」メソッドを使用します。
+
+ノードを追加すると、ノード上のすべてのドライブを使用できるようになります。また、「 AddDrives 」メソッドを使用してドライブを追加し、クラスタのストレージ容量を増やすことができます。
+
+
+NOTE: 新しいノードを追加してから、そのノードが起動してドライブが使用可能として登録されるまでに数秒かかることがあります。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+自動インストール
+ a| 
+true の場合、を追加するとノードで Return To Factory Image （ RTFI ）が実行されます。デフォルトでは RTFI が実行されます。'cEnableAutoInstall' クラスタ定数が false の場合、このパラメータより優先されます。アップグレードの実行中は、このパラメータの値に関係なく RTFI プロセスが実行されません。
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+pendingNodes
+ a| 
+追加する Pending 状態のノードの ID 。ListPendingNodes メソッドを使用すると、すべての Pending 状態のノードをリストできます。
+ a| 
+整数の配列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+自動インストール
+ a| 
+追加したノードが工場出荷時のイメージに戻されているかどうか。
+ a| 
+ブール値
+
+
+
+ a| 
+ノード
+ a| 
+追加前の「 pendingNodeID 」を「 nodeID 」にマッピングするオブジェクトの配列。互換性のないソフトウェアバージョンを実行している Pending 状態のノードを追加した場合、この配列には asyncHandle 値が含まれます。この値を使用して、 GetAsyncResult メソッドで自動更新プロセスのステータスを照会できます。
+ a| 
+JSON オブジェクトの配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "AddNodes",
+   "params": {
+     "autoInstall" : true,
+     "pendingNodes" : [1]
+   },
+   "id":1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  id: null,
+  result: {
+    autoInstall: true,
+    nodes: [
+      {
+        activeNodeKey: "giAm2ep1hA",
+        assignedNodeID: 6,
+        asyncHandle: 3,
+        cip: "10.10.5.106",
+        mip: "192.168.133.106",
+        pendingNodeID: 2,
+        platformInfo: {
+          chassisType: "R620",
+          cpuModel: "Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz",
+          nodeMemoryGB: 72,
+          nodeType: "SF3010"
+        },
+        sip: "10.10.5.106",
+        softwareVersion: "9.0.0.1077"
+      }
+    ]
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_element_api_adddrives.adoc[AddDrives]
+* xref:reference_element_api_getasyncresult.adoc[GetAsyncResult]
+* xref:reference_element_api_listallnodes.adoc[ListAllNodes]
+* xref:reference_element_api_modifyvirtualnetwork.adoc[ModifyVirtualNetwork]
+

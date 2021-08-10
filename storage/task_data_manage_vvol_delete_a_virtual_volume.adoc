@@ -1,0 +1,25 @@
+---
+permalink: storage/task_data_manage_vvol_delete_a_virtual_volume.html 
+sidebar: sidebar 
+keywords: virtual volume, delete, vvols, use Element UI to delete a vvol 
+summary: 仮想ボリュームの削除は必ず VMware 管理レイヤから実行する必要がありますが、仮想ボリュームを削除する機能自体は Element UI から有効にします。vSphere が SolidFire ストレージ上の仮想ボリュームをクリーンアップできない場合など、どうしても必要な場合以外は、 Element UI から仮想ボリュームを削除しないでください。 
+---
+= 仮想ボリュームを削除します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+仮想ボリュームの削除は必ず VMware 管理レイヤから実行する必要がありますが、仮想ボリュームを削除する機能自体は Element UI から有効にします。vSphere が SolidFire ストレージ上の仮想ボリュームをクリーンアップできない場合など、どうしても必要な場合以外は、 Element UI から仮想ボリュームを削除しないでください。
+
+. 「 * VVOLs * > * Virtual Volumes * 」を選択します。
+. 削除する仮想ボリュームの操作アイコンをクリックします。
+. 表示されたメニューで、 * 削除 * を選択します。
++
+
+IMPORTANT: 削除される前に仮想ボリュームのバインドが正しく解除されるよう、仮想ボリュームは VMware 管理レイヤから削除する必要があります。vSphere が SolidFire ストレージ上の仮想ボリュームをクリーンアップできない場合など、どうしても必要な場合以外は、 Element UI から仮想ボリュームを削除しないでください。Element UI から仮想ボリュームを削除すると、ボリュームはただちにパージされます。
+
+. 操作を確定します。
+. 仮想ボリュームのリストを更新して、仮想ボリュームが削除されたことを確認します。
+. * オプション * ： * Reporting * > * Event Log * を選択して、パージが正常に完了したことを確認します。
+

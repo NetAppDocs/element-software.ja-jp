@@ -1,0 +1,72 @@
+---
+permalink: api/reference_element_api_snmpsendtesttraps.html 
+sidebar: sidebar 
+keywords: snmp,test,send,trap,testing,sending,snmpsendtesttraps 
+summary: SnmpSendTestTraps を使用すると、クラスタの SNMP 機能をテストできます。このメソッドは、クラスタに対して、現在設定されている SNMP マネージャにテスト用の SNMP トラップを送信するよう指示します。 
+---
+= SnmpSendTestTraps のことです
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 nmpSendTestTraps 」を使用すると、クラスタの SNMP 機能をテストできます。このメソッドは、クラスタに対して、現在設定されている SNMP マネージャにテスト用の SNMP トラップを送信するよう指示します。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ステータス
+ a| 
+テストのステータス。
+ a| 
+文字列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+	"method": "SnmpSendTestTraps",
+    "params": {},
+    "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "status": "complete"
+    }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

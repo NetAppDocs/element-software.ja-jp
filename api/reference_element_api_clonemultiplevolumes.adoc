@@ -1,0 +1,205 @@
+---
+permalink: api/reference_element_api_clonemultiplevolumes.html 
+sidebar: sidebar 
+keywords: volume,volumes,clone,cloning,multiple,CloneMultipleVolumes 
+summary: CloneMultipleVolumes メソッドを使用すると、指定したボリュームのグループのクローンを作成できます。複数のボリュームのクローンを一緒に作成する場合、一連の同じ特性を割り当てることができます。 
+---
+= CloneMultipleVolumes
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 CloneMultipleVolumes 」メソッドを使用すると、指定したボリュームのグループのクローンを作成できます。複数のボリュームのクローンを一緒に作成する場合、一連の同じ特性を割り当てることができます。
+
+groupSnapshotID パラメータを使用してグループ Snapshot 内にボリュームのクローンを作成する前に、を使用してグループ Snapshot を作成する必要があります xref:reference_element_api_creategroupsnapshot.adoc[CreateGroupSnapshot を作成します] API メソッドまたは Web UI 。groupSnapshotID の使用は、複数のボリュームのクローンを作成する場合のオプションです。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+にアクセスします
+ a| 
+ボリュームの配列に渡した情報で上書きされない場合の、新しいボリューム用のデフォルトのアクセス方法。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+enableSnapMirrorReplication
+ a| 
+ボリュームを SnapMirror エンドポイントでのレプリケーションに使用できるかどうかを指定します。有効な値は次のとおり
+
+* 正しいです
+* いいえ
+
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+
+
+ a| 
+groupSnapshotID
+ a| 
+クローンのベースとして使用するグループ Snapshot の ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+newAccountID
+ a| 
+ボリュームの配列に渡した情報で上書きされない場合の、ボリュームの新しいアカウント ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+個のボリューム
+ a| 
+新しいボリュームに指定する一連のメンバー。メンバー
+
+* volumeID ：（必須）
+* access ：（オプション） readOnly 、 readWrite 、 locked 、 replicationTarget のいずれか。
+* attributes ：（オプション） JSON オブジェクト形式の名前と値のペアのリスト。
+* name ：（オプション）クローンの新しい名前。
+* newAccountID ：（オプション）新しいボリュームのアカウント ID 。
+* newSize ：（オプション）ボリュームの合計サイズ（バイト）。サイズは最も近い MB 単位に切り上げられます。
+
+
+オプションのメンバーを指定しない場合、値はソースボリュームから継承されます。
+ a| 
+JSON オブジェクトの配列
+ a| 
+なし
+ a| 
+○（ volumeID ）
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+asyncHandle
+ a| 
+非同期メソッドの呼び出しで返された値。
+ a| 
+整数
+
+
+
+ a| 
+groupCloneID
+ a| 
+新しいグループクローンの一意の ID 。
+ a| 
+整数
+
+
+
+ a| 
+メンバー
+ a| 
+ソースとデスティネーションのボリュームペアのボリューム ID のリスト。
+ a| 
+JSON オブジェクトの配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "CloneMultipleVolumes",
+   "params": {
+       "volumes": [
+           {
+              "volumeID": 5
+              "name":"foxhill",
+              "access":"readOnly"
+              },
+           {
+              "volumeID": 18
+              },
+           {
+             "volumeID": 20
+              }
+     ]
+   },
+   "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "asyncHandle": 12,
+    "groupCloneID": 4,
+    "members": [
+     {
+      "srcVolumeID": 5,
+      "volumeID": 29
+     },
+     {
+      "srcVolumeID": 18,
+      "volumeID": 30
+     },
+     {
+      "srcVolumeID": 20,
+      "volumeID": 31
+      }
+    ]
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

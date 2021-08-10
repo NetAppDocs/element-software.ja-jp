@@ -1,0 +1,89 @@
+---
+permalink: api/reference_element_api_listpendingactivenodes.html 
+sidebar: sidebar 
+keywords: cluster,list,listing,pending,active,node,nodes,listpendingactivenodes 
+summary: ListPendingActiveNodes メソッドを使用すると、状態が Pending と Active の間の PendingActive であるクラスタノードをリストできます。この状態のノードは工場出荷時のイメージに戻されたノードです。 
+---
+= ListPendingActiveNodes
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ListPendingActiveNodes 」メソッドを使用すると、状態が Pending と Active の間の PendingActive であるクラスタノードをリストできます。この状態のノードは工場出荷時のイメージに戻されたノードです。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+pendingActiveNodes
+ a| 
+システム内の PendingActive 状態のすべてのノードに関する詳細情報を示すオブジェクトのリストです。
+ a| 
+xref:reference_element_api_pendingactivenode.adoc[pendingActiveNode] 配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ListPendingActiveNodes",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  id: null,
+  result: {
+    pendingActiveNodes: [
+    {
+      activeNodeKey: "5rPHP3lTAO",
+      assignedNodeID: 5,
+      asyncHandle: 2,
+      cip: "10.10.5.106",
+      mip: "192.168.133.106",
+      pendingNodeID: 1,
+      platformInfo: {
+        chassisType: "R620",
+        cpuModel: "Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz",
+        nodeMemoryGB: 72,
+        nodeType: "SF3010"
+      },
+     sip: "10.10.5.106",
+     softwareVersion: "9.0.0.1077"
+    }
+    ]
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

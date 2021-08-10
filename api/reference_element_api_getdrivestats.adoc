@@ -1,0 +1,146 @@
+---
+permalink: api/reference_element_api_getdrivestats.html 
+sidebar: sidebar 
+keywords: drive,drives,stats,get,getting,getdrivestats 
+summary: GetDriveStats メソッドを使用すると、 1 つのドライブのアクティビティ測定値の概要を取得できます。値は、クラスタにドライブを追加したときからの累積値です。一部の値はブロックドライブに固有です。このメソッドを実行すると、ブロックドライブまたはメタデータドライブのいずれかのタイプの統計が返されます。 
+---
+= GetDriveStats
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetDriveStats メソッドを使用すると、 1 つのドライブのアクティビティ測定値の概要を取得できます。値は、クラスタにドライブを追加したときからの累積値です。一部の値はブロックドライブに固有です。このメソッドを実行すると、ブロックドライブまたはメタデータドライブのいずれかのタイプの統計が返されます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+driveID
+ a| 
+要求のドライブの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+driveStats
+ a| 
+指定したドライブ ID のドライブのアクティビティ情報。
+ a| 
+xref:reference_element_api_drivestats.adoc[driveStats]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "GetDriveStats",
+   "params": {
+     "driveID": 3
+   },
+   "id" : 1
+}
+----
+
+
+== 応答例（ブロックドライブ）
+
+このメソッドのブロックドライブに対する応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "driveStats": {
+      "driveID": 10,
+      "failedDieCount": 0,
+      "lifeRemainingPercent": 99,
+      "lifetimeReadBytes": 26471661830144,
+      "lifetimeWriteBytes": 13863852441600,
+      "powerOnHours": 33684,
+      "readBytes": 10600432105,
+      "readOps": 5101025,
+      "reallocatedSectors": 0,
+      "reserveCapacityPercent": 100,
+      "timestamp": "2016-10-17T20:23:45.456834Z",
+      "totalCapacity": 300069052416,
+      "usedCapacity": 6112226545,
+      "usedMemory": 114503680,
+      "writeBytes": 53559500896,
+      "writeOps": 25773919
+    }
+  }
+}
+----
+
+
+== 応答例（ボリュームメタデータドライブ）
+
+このメソッドのボリュームメタデータドライブに対する応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "driveStats": {
+      "activeSessions": 8,
+      "driveID": 12,
+      "failedDieCount": 0,
+      "lifeRemainingPercent": 100,
+      "lifetimeReadBytes": 2308544921600,
+      "lifetimeWriteBytes": 1120986464256,
+      "powerOnHours": 16316,
+      "readBytes": 1060152152064,
+      "readOps": 258826209,
+      "reallocatedSectors": 0,
+      "reserveCapacityPercent": 100,
+      "timestamp": "2016-10-17T20:34:52.456130Z",
+      "totalCapacity": 134994670387,
+      "usedCapacity": null,
+      "usedMemory": 22173577216,
+      "writeBytes": 353346510848,
+      "writeOps": 86266238
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_listdrives.adoc[ListDrives の 2 つのメソッド]

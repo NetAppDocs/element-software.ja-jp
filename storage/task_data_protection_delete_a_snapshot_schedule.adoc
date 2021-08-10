@@ -1,0 +1,19 @@
+---
+permalink: storage/task_data_protection_delete_a_snapshot_schedule.html 
+sidebar: sidebar 
+keywords: snapshot schedule, delete 
+summary: Snapshot スケジュールを削除できます。スケジュールを削除すると、以降のスケジュールされた Snapshot は実行されません。過去にスケジュールで作成された Snapshot はストレージシステム上に保持されます。 
+---
+= Snapshot スケジュールを削除します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snapshot スケジュールを削除できます。スケジュールを削除すると、以降のスケジュールされた Snapshot は実行されません。過去にスケジュールで作成された Snapshot はストレージシステム上に保持されます。
+
+. [ * データ保護 *>* スケジュール * ] をクリックします。
+. 削除するスケジュールの * Actions * アイコンをクリックします。
+. 表示されたメニューで、 * 削除 * をクリックします。
+. 操作を確定します。
+

@@ -1,0 +1,137 @@
+---
+permalink: api/reference_element_api_addinitiatorstovolumeaccessgroup.html 
+sidebar: sidebar 
+keywords: addinitiatorstovolumeaccessgroup,add,adding,initiators,initiator,volume,access,group 
+summary: AddInitiatorsToVolumeAccessGroup メソッドを使用すると、指定したボリュームアクセスグループにイニシエータを追加できます。 
+---
+= AddInitiatorsToVolumeAccessGroup
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AddInitiatorsToVolumeAccessGroup メソッドを使用すると、指定したボリュームアクセスグループにイニシエータを追加できます。
+
+イニシエータ IQN の有効な形式は、 iqn.yyyy-mm です。 y と m は数字で、続けて任意の文字列を指定します。使用できる文字は、数字、小文字のアルファベット、ピリオド、コロン（：）、ダッシュ（ - ）です。次の例を参照してください。
+
+[listing]
+----
+iqn.2010-01.com.solidfire:17oi.solidfire-0.1
+----
+Fibre Channel イニシエータ WWPN の有効な形式は、 Aa ： bB ： CC ： dd ： 11 ： 22 ： 33 ： 44 、または AabBCCdd11223344 です。次の例を参照してください。
+
+[listing]
+----
+21:00:00:0e:1e:11:f1:81
+----
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+イニシエータ
+ a| 
+ボリュームアクセスグループに含めるイニシエータの ID または名前（ IQN および WWPN ）のリスト。イニシエータ名のリストを渡した場合、存在しないイニシエータは作成されます。イニシエータ ID のリストを渡した場合、存在しないイニシエータにはエラーが返されます。
+
+イニシエータ名を渡すことは推奨されていません。可能な場合はイニシエータ ID を使用し
+ a| 
+整数の配列または文字列の配列（非推奨）
+ a| 
+ a| 
+はい。
+
+
+
+ a| 
+ボリュームアクセスグループ ID
+ a| 
+イニシエータを追加するボリュームアクセスグループの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+volumeAccessGroup の場合
+ a| 
+新たに変更されたボリュームアクセスグループの情報を含むオブジェクト。
+ a| 
+xref:reference_element_api_volumeaccessgroup.adoc[volumeAccessGroup の場合]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "id": 13171,
+  "method": "AddInitiatorsToVolumeAccessGroup",
+  "params": {
+    "initiators": [116,117],
+    "volumeAccessGroupID": 96
+  }
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 13171,
+  "result": {
+    "volumeAccessGroup": {
+      "attributes": {},
+      "deletedVolumes": [
+        327
+      ],
+      "initiatorIDs": [
+        116,
+        117
+      ],
+      "initiators": [
+        "iqn.1993-08.org.debian:01:181324777",
+        "iqn.1993-08.org.debian:01:181324888"
+      ],
+      "name": "northbanktest",
+      "volumeAccessGroupID": 96,
+      "volumes": [
+        346
+      ]
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

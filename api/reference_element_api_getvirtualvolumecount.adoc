@@ -1,0 +1,73 @@
+---
+permalink: api/reference_element_api_getvirtualvolumecount.html 
+sidebar: sidebar 
+keywords: volume,volumes,virtual,get,getting,count,GetVirtualVolumeCount 
+summary: GetVirtualVolumeCount メソッドを使用すると、現在システムに存在する仮想ボリュームの数を取得できます。 
+---
+= GetVirtualVolumeCount を実行します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetVirtualVolumeCount メソッドを使用すると、現在システムに存在する仮想ボリュームの数を取得できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+カウント
+ a| 
+現在システムに存在する仮想ボリュームの数。
+ a| 
+整数
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "GetVirtualVolumeCount",
+    "params": {
+    },
+    "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "count": 5
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

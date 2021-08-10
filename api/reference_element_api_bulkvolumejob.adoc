@@ -1,0 +1,154 @@
+---
+permalink: api/reference_element_api_bulkvolumejob.html 
+sidebar: sidebar 
+keywords: bulkVolumeJob,object,objects,read,write,clones,snapshots,clone,snapshot 
+summary: bulkVolumeJob オブジェクトには、クローニングや Snapshot 作成など、ボリュームの一括読み取りまたは書き込み処理に関する情報が含まれます。 
+---
+= bulkVolumeJob
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+bulkVolumeJob オブジェクトには、クローニングや Snapshot 作成など、ボリュームの一括読み取りまたは書き込み処理に関する情報が含まれます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+一括ボリュームジョブの JSON 属性。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+bulkVolumeID
+ a| 
+内部一括ボリュームジョブの ID 。
+ a| 
+整数
+
+
+
+ a| 
+CreateTime をクリックします
+ a| 
+UTC+0 形式の一括ボリュームジョブ用に作成されたタイムスタンプ。
+ a| 
+ISO 8601 形式の日付文字列
+
+
+
+ a| 
+elapsedTime
+ a| 
+ジョブが開始されてからの秒数。
+ a| 
+文字列
+
+
+
+ a| 
+の形式で入力し
+ a| 
+一括ボリューム処理の形式。有効な値は次のとおり
+
+* 圧縮
+* ネイティブ
+
+ a| 
+文字列
+
+
+
+ a| 
+キーを押します
+ a| 
+一括ボリュームセッションで作成された一意のキー。
+ a| 
+文字列
+
+
+
+ a| 
+PercentComplete
+ a| 
+処理によって報告された完了率。
+ a| 
+整数
+
+
+
+ a| 
+残り時間
+ a| 
+推定残り時間（秒）。
+ a| 
+整数
+
+
+
+ a| 
+srcVolumeID
+ a| 
+ソースボリュームの ID 。
+ a| 
+整数
+
+
+
+ a| 
+ステータス
+ a| 
+処理のステータス。有効な値は次のとおり
+
+* 準備中
+* アクティブ
+* 完了しました
+* 失敗しました
+
+ a| 
+文字列
+
+
+
+ a| 
+スクリプト
+ a| 
+スクリプトが指定されている場合は、その名前です。
+ a| 
+文字列
+
+
+
+ a| 
+Snapshot ID
+ a| 
+一括ボリュームジョブのソースにある Snapshot の ID 。
+ a| 
+整数
+
+
+
+ a| 
+を入力します
+ a| 
+一括処理のタイプ。有効な値は次のとおり
+
+* 読み取り
+* 書き込み
+
+ a| 
+文字列
+
+|===

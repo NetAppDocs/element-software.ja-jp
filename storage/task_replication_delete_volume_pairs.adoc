@@ -1,0 +1,19 @@
+---
+permalink: storage/task_replication_delete_volume_pairs.html 
+sidebar: sidebar 
+keywords: volume pairs, delete 
+summary: 2 つのボリューム間のペア関係を解除するには、ボリュームペアを削除します。 
+---
+= ボリュームペアを削除します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+2 つのボリューム間のペア関係を解除するには、ボリュームペアを削除します。
+
+. [ * データ保護 * > * ボリュームペア * ] を選択します。
+. 削除するボリュームペアの操作アイコンをクリックします。
+. [ 削除（ Delete ） ] をクリックします。
+. メッセージを確認します。
+

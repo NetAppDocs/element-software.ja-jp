@@ -1,0 +1,68 @@
+---
+permalink: api/reference_element_api_keyproviderkmip.html 
+sidebar: sidebar 
+keywords: key provider,KMIP,keys 
+summary: keyProviderKmip オブジェクトは、 Key Management Interoperability Protocol\ （ KMIP \ ）キープロバイダの説明を示します。キープロバイダは、保存データの暗号化などのクラスタ機能で使用する認証キーを取得するためのメカニズムと場所の両方を提供します。 
+---
+= keyProviderKmip
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+keyProviderKmip オブジェクトは、 Key Management Interoperability Protocol （ KMIP ）キープロバイダの説明を示します。キープロバイダは、保存データの暗号化などのクラスタ機能で使用する認証キーを取得するためのメカニズムと場所の両方を提供します。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+KeyProviderID
+ a| 
+KMIP キープロバイダの ID 。キープロバイダの作成時にクラスタによって割り当てられる一意の値で、変更できません。
+ a| 
+整数
+
+
+
+ a| 
+keyProviderIsActive
+ a| 
+KMIP キープロバイダがアクティブな場合は true 。作成されたがまだ削除されていないために使用中であるとみなされた未処理のキーがある場合、プロバイダはアクティブであるとみなされます。
+ a| 
+ブール値
+
+
+
+ a| 
+KeyProviderName の略
+ a| 
+KMIP キープロバイダの名前。
+ a| 
+文字列
+
+
+
+ a| 
+キーサーバ ID
+ a| 
+このプロバイダに関連付けられているキーサーバ ID 。プロバイダをアクティブにするには、サーバを追加する必要があります。プロバイダがアクティブな間は、サーバを削除できません。プロバイダごとにサポートされるサーバ ID は 1 つだけです。
+ a| 
+整数の配列
+
+
+
+ a| 
+kmipCapabilities
+ a| 
+基盤となるライブラリ、 FIPS 準拠、 SSL プロバイダなどの詳細を含む、この KMIP キープロバイダの仕様
+ a| 
+文字列
+
+|===

@@ -1,0 +1,30 @@
+---
+permalink: api/concept_element_api_drive_api_methods.html 
+sidebar: sidebar 
+keywords: drive,API,methods,method 
+summary: ドライブ API メソッドを使用すると、ストレージクラスタで使用可能なドライブを追加および管理できます。ストレージノードをストレージクラスタに追加するか既存のストレージノードに新しいドライブをインストールすると、ドライブはストレージクラスタに追加可能な状態になります。 
+---
+= ドライブ API メソッド
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ドライブ API メソッドを使用すると、ストレージクラスタで使用可能なドライブを追加および管理できます。ストレージノードをストレージクラスタに追加するか既存のストレージノードに新しいドライブをインストールすると、ドライブはストレージクラスタに追加可能な状態になります。
+
+* xref:reference_element_api_adddrives.adoc[AddDrives]
+* xref:reference_element_api_getdrivehardwareinfo.adoc[GetDriveHardwareInfo]
+* xref:reference_element_api_getdrivestats.adoc[GetDriveStats]
+* xref:reference_element_api_listdrives.adoc[ListDrives の 2 つのメソッド]
+* xref:reference_element_api_listdrivestats.adoc[ListDriveStats]
+* xref:reference_element_api_removedrives.adoc[RemoveDrives の 2 つのコマンド]
+* xref:reference_element_api_secureerasedrives.adoc[SecureEraseDrives の 2 つの特長を説明]
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire のリソースページ"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
+

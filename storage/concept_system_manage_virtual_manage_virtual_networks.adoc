@@ -1,0 +1,24 @@
+---
+permalink: storage/concept_system_manage_virtual_manage_virtual_networks.html 
+sidebar: sidebar 
+keywords: virtual networks, manage, traffic, clients, vlan tagging 
+summary: SolidFire ストレージの仮想ネットワークを使用すると、別々の論理ネットワークに属する複数のクライアント間のトラフィックを 1 つのクラスタに接続できます。クラスタへの各接続は、 VLAN タギングを使用してネットワークスタック内で分離されます。 
+---
+= 仮想ネットワークを管理する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire ストレージの仮想ネットワークを使用すると、別々の論理ネットワークに属する複数のクライアント間のトラフィックを 1 つのクラスタに接続できます。クラスタへの各接続は、 VLAN タギングを使用してネットワークスタック内で分離されます。
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:task_system_manage_virtual_add_a_virtual_network.adoc[仮想ネットワークを追加]
+* xref:task_system_manage_virtual_enable_virtual_routing_and_forwarding.adoc[仮想ルーティング / 転送を有効にします]
+* xref:task_system_manage_virtual_edit_a_virtual_network.adoc[仮想ネットワークを編集します]
+* xref:task_system_manage_virtual_edit_vrf_vlans.adoc[VRF VLAN を編集します]
+* xref:task_system_manage_virtual_delete_a_virtual_network.adoc[仮想ネットワークを削除します]
+

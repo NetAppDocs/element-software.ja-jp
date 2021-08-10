@@ -1,0 +1,120 @@
+---
+permalink: api/reference_element_api_removevolumesfromvolumeaccessgroup.html 
+sidebar: sidebar 
+keywords: remove,removing,volume,volumes,access,group,removevolumesfromvolumeaccessgroup 
+summary: RemoveVolumesFromVolumeAccessGroup メソッドを使用すると、指定したボリュームアクセスグループからボリュームを削除できます。 
+---
+= RemoveVolumesFromVolumeAccessGroup
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RemoveVolumesFromVolumeAccessGroup メソッドを使用すると、指定したボリュームアクセスグループからボリュームを削除できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ボリュームアクセスグループ ID
+ a| 
+ボリュームを削除するボリュームアクセスグループの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+個のボリューム
+ a| 
+ボリュームアクセスグループから削除するボリュームのボリューム ID 。
+ a| 
+整数の配列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+volumeAccessGroup の場合
+ a| 
+新たに変更されたボリュームアクセスグループの情報を含むオブジェクト。
+ a| 
+xref:reference_element_api_volumeaccessgroup.adoc[volumeAccessGroup の場合]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "RemoveVolumesFromVolumeAccessGroup",
+   "params": {
+      "volumeAccessGroupID": 96,
+      "volumes": [1,2]
+   },
+   "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeAccessGroup": {
+      "attributes": {},
+      "deletedVolumes": [
+        346
+      ],
+      "initiatorIDs": [
+        116,
+        117
+      ],
+      "initiators": [
+        "iqn.1993-08.org.debian:01:181324777",
+        "iqn.1993-08.org.debian:01:181324888"
+      ],
+      "name": "northbanktest",
+      "volumeAccessGroupID": 96,
+      "volumes": []
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

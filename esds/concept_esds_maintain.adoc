@@ -1,0 +1,30 @@
+---
+permalink: esds/concept_esds_maintain.html 
+sidebar: sidebar 
+keywords: solidfire esds, software-defined storage, maintain, troubleshooting, maintenance mode, replace drives, cache drive 
+summary: ここでは、保守モードの使用方法と SolidFire ESDS クラスタ内のドライブの交換方法について説明します。 
+---
+= SolidFire ESDS を管理します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ここでは、保守モードの使用方法と SolidFire ESDS クラスタ内のドライブの交換方法について説明します。
+
+* link:task_esds_get_license_key.html["ライセンスキーを取得します"^]
+* link:reference_esds_use_maintenance_mode.html["SolidFire ESDS クラスタではメンテナンスモードを使用します"^]
+* link:task_esds_dl360_drive_repl.html["HPE DL360 のドライブを交換"^]
+* link:task_esds_r640_drive_repl.html["Dell R640 のドライブを交換します"^]
+* link:reference_esds_containerlogs.html["コンテナログを収集します"^]
+* link:reference_esds_troubleshoot_links.html["トラブルシューティングに関する技術情報アーティクルへのリンク"^]
+* link:reference_esds_sf_sds_config_file.html["sf_sds_config.yaml ファイルの内容"^]*
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire のリソースページ"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
+

@@ -1,0 +1,74 @@
+---
+permalink: api/reference_element_api_networkinterfacestats.html 
+sidebar: sidebar 
+keywords: object,objects,stats,statistics,networkInterfacestats 
+summary: networkInterfaceStats オブジェクトには、ストレージノード上の個々のネットワークインターフェイスのネットワーク統計およびエラー情報が含まれます。 
+---
+= networkInterfaceStats のようになります
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+networkInterfaceStats オブジェクトには、ネットワーク統計、送受信されたパケットの総数、およびストレージノード上の個々のネットワークインターフェイスのエラー情報が含まれます。ストレージノードのネットワークインターフェイスに関するこの情報を表示するには、「 ListNetworkInterfaceStats 」 API メソッドを使用します。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+| 衝突 | 検出されたコリジョン数。 | 整数 
+
+
+| 名前 | ネットワークインターフェイスの名前。 | 文字列 
+
+
+| rxBytes | 受信したバイトの総数。 | 整数 
+
+
+| rxCrcErrors | CRC エラーが発生した受信パケットの数。 | 整数 
+
+
+| rxDropped | ドロップされた受信パケット数。 | 整数 
+
+
+| rxErrors | 受信した不良または不正な形式のパケットの数。 | 整数 
+
+
+| rxFifoErrors | 受信データの FIFO オーバーランエラーの数。 | 整数 
+
+
+| rxFrameErrors | フレームアライメントエラーを含む受信パケットの数。 | 整数 
+
+
+| rxLengthErrors | 長さエラーのある受信パケットの数。 | 整数 
+
+
+| rxMissedErrors | 受信者が受信しなかったパケットの数。 | 整数 
+
+
+| rxOverErrors | このインターフェイスのレシーバリングバッファオーバーフローエラーの数。 | 整数 
+
+
+| rxPackets | 受信パケットの合計数。 | 整数 
+
+
+| txBytes | 送信されたバイトの総数。 | 整数 
+
+
+| txCarrierErrors | 送信側のキャリアエラーの数。 | 整数 
+
+
+| TxErrors | パケット送信エラーの数。 | 整数 
+
+
+| TxFifoErrors | 送信側の FIFO オーバーランエラーの数。 | 整数 
+
+
+| txPackets | 送信されたパケットの合計数。 | 整数 
+|===

@@ -1,0 +1,59 @@
+---
+permalink: api/reference_element_api_listsnapmirrorschedules.html 
+sidebar: sidebar 
+keywords: snapmirror,schedule,schedules,list,listing,listsnapmirrorschedules,ontap 
+summary: Element ソフトウェア Web UI は、 ListSnapMirrorSchedules メソッドを使用して、リモート ONTAP クラスタで使用可能なスケジュールのリストを取得します。 
+---
+= ListSnapMirrorSchedules
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element ソフトウェア Web UI は、「 ListSnapMirrorSchedules 」メソッドを使用して、リモート ONTAP クラスタで使用可能なスケジュールのリストを取得します。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+指定した場合は、指定した SnapMirror エンドポイント ID を持つエンドポイントのスケジュールがリストされます。指定しない場合は、認識されているすべての SnapMirror エンドポイントのスケジュールがリストされます。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorSchedules 」の 2 つ
+ a| 
+リモート ONTAP クラスタ上の SnapMirror スケジュールのリスト。
+ a| 
+xref:reference_element_api_snapmirrorjobschedulecroninfo.adoc[snapMirrorJobScheduleCronInfo] 配列
+
+|===
+
+
+== 新規導入バージョン
+
+10.1

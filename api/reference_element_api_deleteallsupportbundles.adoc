@@ -1,0 +1,60 @@
+---
+permalink: api/reference_element_api_deleteallsupportbundles.html 
+sidebar: sidebar 
+keywords: support,bundle,delete,deleting,DeleteAllSupportBundles 
+summary: DeleteAllSupportBundles メソッドを使用すると、 CreateSupportBundle API メソッドで生成されたすべてのサポートバンドルを削除できます。 
+---
+= DeleteAllSupportBundles
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 CreateSupportBundle'API メソッドで生成されたすべてのサポートバンドルを削除するには、「すべてのサポートバンドル」メソッドを使用します。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "DeleteAllSupportBundles",
+   "params": {}
+  },
+  "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {}
+ }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

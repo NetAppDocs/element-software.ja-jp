@@ -1,0 +1,29 @@
+---
+permalink: storage/task_post_deploy_configure_system_options.html 
+sidebar: sidebar 
+keywords: deployment, post deployment options, credentials, components, FIPS security, passwords, MFA, multifactor authentication, mutli-factor authentication, security, EKM, key management, external key management, FIPS 
+summary: SolidFire システムのセットアップ後、いくつかのオプションのタスクを実行できます。また、多要素認証、外部キー管理、および連邦情報処理標準（ FIPS ）セキュリティの設定も可能です。 
+---
+= 導入後に SolidFire システムのオプションを設定
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire システムのセットアップ後、いくつかのオプションのタスクを実行できます。
+
+システムのクレデンシャルを変更する場合、必要に応じて他のコンポーネントへの影響を確認しておくことができます。
+
+また、多要素認証、外部キー管理、および連邦情報処理標準（ FIPS ）セキュリティの設定も可能です。また、必要に応じてパスワードの更新についても確認してください。
+
+
+
+== 詳細については、こちらをご覧ください
+
+* link:task_post_deploy_credentials.html["NetApp HCI と NetApp SolidFire でクレデンシャルを変更"]
+* link:reference_post_deploy_change_default_ssl_certificate.html["Element ソフトウェアのデフォルトの SSL 証明書を変更"]
+* link:task_post_deploy_credential_change_ipmi_password.html["ノードの IPMI パスワードを変更します"]
+* link:concept_system_manage_mfa_enable_multi_factor_authentication.html["多要素認証を有効にします"]
+* link:concept_system_manage_key_get_started_with_external_key_management.html["外部キー管理の開始"]
+* link:task_system_manage_fips_create_a_cluster_supporting_fips_drives.html["FIPS ドライブをサポートするクラスタを作成します"]
+

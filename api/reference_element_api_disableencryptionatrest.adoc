@@ -1,0 +1,69 @@
+---
+permalink: api/reference_element_api_disableencryptionatrest.html 
+sidebar: sidebar 
+keywords: element, api, encryption, disable, disabling, at rest, rest, DisableEncryptionAtRest 
+summary: DisableEncryptionAtRest メソッドを使用すると、以前に EnableEncryptionAtRest メソッドを使用してクラスタに適用した暗号化を解除できます。このメソッドは非同期で、暗号化が無効になる前に応答を返します。GetClusterInfo メソッドを使用すると、システムをポーリングしてプロセスがいつ完了したかを確認できます。 
+---
+= DisableEncryptionAtRest
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 EnableEncryptionAtRest 」メソッドを使用すると、以前にクラスタに適用された暗号化を解除できます。このメソッドは非同期で、暗号化が無効になる前に応答を返します。GetClusterInfo' メソッドを使用すると ' プロセスが完了したことを確認するためにシステムをポーリングできます
+
+
+NOTE: このメソッドを使用して保存データのソフトウェア暗号化を無効にすることはできません。保存データのソフトウェア暗号化を無効にするには、が必要です link:reference_element_api_createcluster.html["新しいクラスタを作成します。"] ソフトウェアによる保存データの暗号化は無効です。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "DisableEncryptionAtRest",
+   "params": {},
+   "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id" : 1,
+  "result" : {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+[discrete]
+== 詳細については、こちらをご覧ください
+
+* link:api/reference_element_api_getclusterinfo.html["GetClusterInfo を使用します"]
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire のリソースページ"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
+

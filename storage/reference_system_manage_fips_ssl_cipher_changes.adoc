@@ -1,0 +1,145 @@
+---
+permalink: storage/reference_system_manage_fips_ssl_cipher_changes.html 
+sidebar: sidebar 
+keywords: fips, ssl ciphers, 140-2, encryption algorithms 
+summary: SSL 暗号は、ホストがセキュアな通信を確立するために使用する暗号化アルゴリズムです。Element ソフトウェアでサポートされる標準の暗号と、 FIPS 140-2 モードが有効な場合にサポートされる非標準の暗号があります。 
+---
+= SSL 暗号
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SSL 暗号は、ホストがセキュアな通信を確立するために使用する暗号化アルゴリズムです。Element ソフトウェアでサポートされる標準の暗号と、 FIPS 140-2 モードが有効な場合にサポートされる非標準の暗号があります。
+
+以下に、 Element ソフトウェアでサポートされる標準の SSL 暗号と、 FIPS 140-2 モードが有効な場合にサポートされる SSL 暗号を示します。
+
+* * FIPS 140-2 が無効になりました *
++
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 （ dh 2048 ） -A
+
++
+TLS_DHE_RSA_With _AES_128_CMG_SHA256 （ dh 2048 ） - A
+
++
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 （ dh 2048 ） -A
+
++
+TLS_DHE_RSA_With _AES_256_GCM_SH384 （ dh 2048 ） - A
+
++
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 （ secp256r1 ） A
+
++
+TLS_ECDHE_RSA_With _AES_128_CMG_SHA256 （ secp256r1 ） A
+
++
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SH384 （ secp256r1 ） - A
+
++
+TLS_ECDHE_RSA_With _AES_256_GCM_SH384 （ secp256r1 ） - A
+
++
+TLS_RSA_WITH_3DES_EDE_CBC_SHA （ RSA 2048 ） -C
+
++
+TLS_RSA_WITH_AES_128_CBC_SHA （ RSA 2048 ） -A
+
++
+TLS_RSA_WITH_AES_128_CBC_SHA256 （ RSA 2048 ） -A
+
++
+TLS_RSA_With _AES_128_GCM _SHA256 （ RSA 2048 ） A
+
++
+TLS_RSA_WITH_AES_256_CBC_SHA （ RSA 2048 ） -A
+
++
+TLS_RSA_WITH_AES_256_CBC_SHA256 （ RSA 2048 ） -A
+
++
+TLS_RSA_With _AES_256_GCM_SHA384 （ RSA 2048 ） - A
+
++
+TLS_RSA_WITH_Camellia _128_CBC_SHA （ RSA 2048 ） -A
+
++
+TLS_RSA_WITH_Camellia _256_CBC_SHA （ RSA 2048 ） -A
+
++
+TLS_RSA_WITH_idea_CBC_SHA （ RSA 2048 ） -A
+
++
+TLS_RSA_WITH_RC4_128_MD5 （ RSA 2048 ） -C
+
++
+TLS_RSA_WITH_RC4_128_SHA （ RSA 2048 ） -C
+
++
+TLS_RSA_WITH_SED_CBC_SHA （ RSA 2048 ） -A
+
+* * FIPS 140-2 が有効になりました
++
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 （ dh 2048 ） -A
+
++
+TLS_DHE_RSA_With _AES_128_CMG_SHA256 （ dh 2048 ） - A
+
++
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 （ dh 2048 ） -A
+
++
+TLS_DHE_RSA_With _AES_256_GCM_SH384 （ dh 2048 ） - A
+
++
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 （ sectr571r1 ） A
+
++
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 （ secp256r1 ） A
+
++
+TLS_ECDHE_RSA_With _AES_128_CMG_SHA256 （ secp256r1 ） A
+
++
+TLS_ECDHE_RSA_With _AES_128_GG_SHA256 （ sectr571r1 ） A
+
++
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SH384 （ sectr571r1 ） -A
+
++
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SH384 （ secp256r1 ） - A
+
++
+TLS_ECDHE_RSA_With _AES_256_GCM_SH384 （ secp256r1 ） - A
+
++
+TLS_ECDHE_RSA_with _AES_256_GCM_SH384 （ sectr571r1 ） A
+
++
+TLS_RSA_WITH_3DES_EDE_CBC_SHA （ RSA 2048 ） -C
+
++
+TLS_RSA_WITH_AES_128_CBC_SHA （ RSA 2048 ） -A
+
++
+TLS_RSA_WITH_AES_128_CBC_SHA256 （ RSA 2048 ） -A
+
++
+TLS_RSA_With _AES_128_GCM _SHA256 （ RSA 2048 ） A
+
++
+TLS_RSA_WITH_AES_256_CBC_SHA （ RSA 2048 ） -A
+
++
+TLS_RSA_WITH_AES_256_CBC_SHA256 （ RSA 2048 ） -A
+
++
+TLS_RSA_With _AES_256_GCM_SHA384 （ RSA 2048 ） - A
+
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:task_system_manage_fips_enable_fips_140_2_for_https.adoc[クラスタで HTTPS の FIPS 140-2 を有効にしてください]

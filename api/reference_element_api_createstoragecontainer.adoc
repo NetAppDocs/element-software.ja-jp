@@ -1,0 +1,139 @@
+---
+permalink: api/reference_element_api_createstoragecontainer.html 
+sidebar: sidebar 
+keywords: create,creating,storage,container,virtual,volume,volumes,vvol,vvols,CreateStorageContainer 
+summary: CreateStorageContainer メソッドを使用すると、仮想ボリューム（ VVol ）ストレージコンテナを作成できます。ストレージコンテナは、レポートの作成やリソースの割り当てに使用できます。仮想ボリューム機能を使用するには、少なくとも 1 つのストレージコンテナを作成する必要があります。 
+---
+= CreateStorageContainer を作成します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 CreateStorageContainer 」メソッドを使用すると、 Virtual Volume （ VVOL ）ストレージコンテナを作成できます。ストレージコンテナは、レポートの作成やリソースの割り当てに使用できます。仮想ボリューム機能を使用するには、少なくとも 1 つのストレージコンテナを作成する必要があります。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+名前
+ a| 
+ストレージコンテナの名前。Element ソフトウェアアカウントの命名規則に従います。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+アカウント ID
+ a| 
+ストレージコンテナに変換する非ストレージコンテナアカウント。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+イニシエータシークレット
+ a| 
+イニシエータの CHAP 認証用のシークレット。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+targetSecret
+ a| 
+ターゲットの CHAP 認証用のシークレット。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ストレージコンテナ
+ a| 
+新たに作成されたストレージコンテナに関する情報を含むオブジェクト。
+ a| 
+xref:reference_element_api_storagecontainer.adoc[ストレージコンテナ]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "CreateStorageContainer",
+    "params": {
+        "name" : "example"
+    },
+    "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "storageContainer": {
+      "accountID": 8,
+      "initiatorSecret": "rVTOi25^H.d;cP}l",
+      "name": "example",
+      "protocolEndpointType": "SCSI",
+      "status": "active",
+      "storageContainerID": "a9ec1138-e386-4a44-90d7-b9acbbc05176",
+      "targetSecret": "6?AEIxWpvo6,!boM"
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

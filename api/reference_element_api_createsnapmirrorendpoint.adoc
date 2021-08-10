@@ -1,0 +1,87 @@
+---
+permalink: api/reference_element_api_createsnapmirrorendpoint.html 
+sidebar: sidebar 
+keywords: SnapMirror,endpoints,endpoint,creating,create,CreateSnapMirrorEndpoint 
+summary: Element Web UI は、 CreateSnapMirrorEndpoint メソッドを使用して、リモート SnapMirror エンドポイントとの関係を作成します。 
+---
+= CreateSnapMirrorEndpoint
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element Web UI は、「 CreateSnapMirrorEndpoint 」メソッドを使用して、リモート SnapMirror エンドポイントとの関係を作成します。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+管理 IP
+ a| 
+リモート SnapMirror エンドポイントの管理 IP アドレス。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+ユーザ名
+ a| 
+ONTAP システムの管理ユーザ名。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+パスワード
+ a| 
+ONTAP システムの管理パスワード。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorEndpoint のことです
+ a| 
+新たに作成された SnapMirror エンドポイント。
+ a| 
+xref:reference_element_api_snapmirrorendpoint.adoc[snapMirrorEndpoint のことです]
+
+|===
+
+
+== 新規導入バージョン
+
+10.0

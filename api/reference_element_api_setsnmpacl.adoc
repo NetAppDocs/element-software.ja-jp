@@ -1,0 +1,103 @@
+---
+permalink: api/reference_element_api_setsnmpacl.html 
+sidebar: sidebar 
+keywords: setsnmpACL,set,setting,snmp,acl,permissions,access,control,list 
+summary: SetSnmpACL メソッドを使用すると、クラスタノードの SNMP アクセス権限を設定できます。このインターフェイスで設定した値はクラスタ内のすべてのノードに適用され、指定した値により、以前の SetSnmpACL 呼び出しで設定されたすべての値が置き換えられます。また、このインターフェイスで設定した値により、 SetSnmpInfo で設定されたすべてのネットワークまたは usmUsers 値が置き換えられます。 
+---
+= SetSnmpACL の場合
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 SnmpACL 」メソッドを使用すると、クラスタノードの SNMP アクセス権限を設定できます。このインターフェイスで設定した値はクラスタ内のすべてのノードに適用され、指定した値により、以前の「 SnmpACL 」の呼び出しで設定されたすべての値が置き換えられます。また、このインターフェイスで設定した値により、すべてのネットワークまたは usmUsers 値が「 S etSnmpInfo 」メソッドで設定されたすべての値に置き換えられます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ネットワーク
+ a| 
+ネットワーク、およびクラスタノードで実行されている SNMP サーバに対するアクセスタイプのリスト。指定可能なネットワークの値については、 SNMP network オブジェクトを参照してください。このパラメータは、 SNMP v3 が無効になっている場合に必要です。
+ a| 
+xref:reference_element_api_network_snmp.adoc[ネットワーク]
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+usmUsers
+ a| 
+ユーザ、およびクラスタノードで実行されている SNMP サーバに対するアクセスタイプのリスト。このパラメータは、 SNMP v3 が有効になっている場合に必要です。
+ a| 
+xref:reference_element_api_usmuser.adoc[usmUser]
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "SetSnmpACL",
+  "params": {
+    "usmUsers"  : [
+      {
+         "name": "jdoe",
+         "access": "rouser",
+         "secLevel": "priv",
+         "password": "mypassword",
+         "passphrase": "mypassphrase",
+      }
+    ]
+  },
+  "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_setsnmpinfo.adoc[SetSnmpInfo のサービス]

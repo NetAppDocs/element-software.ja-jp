@@ -1,0 +1,82 @@
+---
+permalink: api/reference_element_api_clearclusterfaults.html 
+sidebar: sidebar 
+keywords: cluster,clear,clearing,fault,faults,support bundles,ClearClusterFaults 
+summary: ClearClusterFaults メソッドを使用すると、現在検出されている障害と以前に検出された障害の両方に関する情報を消去できます。解決済みの障害と未解決の障害の両方を消去できます。 
+---
+= ClearClusterFaults
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ClearClusterFaults メソッドを使用すると、現在検出されている障害と以前に検出された障害の両方に関する情報を消去できます。解決済みの障害と未解決の障害の両方を消去できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+フォールトタイプ
+ a| 
+消去する障害のタイプを指定します。有効な値は次のとおり
+
+* 現在：
++
+現在検出されている未解決の障害。
+
+* resolved ：以前に検出された解決済みの障害。
+* all ：現在の障害と解決済みの障害の両方。障害ステータスは、障害オブジェクトの「解決済み」フィールドで確認できます。
+
+ a| 
+文字列
+ a| 
+解決しました
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ClearClusterFaults",
+   "params": {},
+  "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id" : 1,
+    "result" : {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

@@ -1,0 +1,50 @@
+---
+permalink: api/reference_element_api_snapmirrorjobschedulecroninfo.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorJobScheduleCronInfo 
+summary: snapMirrorJobScheduleCronInfo オブジェクトには、 ONTAP システム上の cron ジョブスケジュールの情報が含まれています。 
+---
+= snapMirrorJobScheduleCronInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorJobScheduleCronInfo オブジェクトには、 ONTAP システム上の cron ジョブスケジュールの情報が含まれています。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+デスティネーション ONTAP システムの ID 。
+ a| 
+整数
+
+
+
+ a| 
+ジョブスケジュール名
+ a| 
+ジョブスケジュールの名前。
+ a| 
+文字列
+
+
+
+ a| 
+ジョブスケジュールの説明
+ a| 
+人間が判読できるように自動生成されたスケジュール概要。
+ a| 
+文字列
+
+|===

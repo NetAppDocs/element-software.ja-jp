@@ -1,0 +1,146 @@
+---
+permalink: api/reference_element_api_testlocalconnectivity.html 
+sidebar: sidebar 
+keywords: test,testing,local,connectivity,TestLocalConnectivity 
+summary: TestLocalConnectivity メソッドを使用すると、アクティブなクラスタ内の各ノードのクラスタ IP （ CIP ）に対して ping を実行できます。 
+---
+= TestLocalConnectivity のように表示され
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+TestLocalConnectivity メソッドを使用すると、アクティブなクラスタ内の各ノードのクラスタ IP （ CIP ）に対して ping を実行できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+詳細
+ a| 
+ローカルのアクティブなクラスタ内の各ノードに対する、個々の ping 応答時間。
+ a| 
+JSON オブジェクト
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+    "method": "TestLocalConnectivity",
+    "params": {},
+    "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "id": null,
+   "result": {
+      "details": {
+                 "10.26.86.17": {
+                    individualResponseTimes: [
+                         "00:00:00.006868",
+                         "00:00:00.005933",
+                         "00:00:00.006655",
+                         "00:00:00.006584",
+                         "00:00:00.006334"
+                    ],
+                    individualStatus: [
+                          true,
+                          true,
+                          true,
+                          true,
+                          true
+                    ],
+                    responseTime: "00:00:00.006475",
+                    successful: true
+                       },
+                       "10.26.86.18": {
+                    individualResponseTimes: [
+                         "00:00:00.006201",
+                         "00:00:00.006187",
+                         "00:00:00.005990",
+                         "00:00:00.006029",
+                         "00:00:00.005917"],
+                    individualStatus: [
+                          true,
+                          true,
+                          true,
+                          true,
+                          true
+                     ],
+                     "responseTime": "00:00:00.006065",
+                     "successful": true
+     },
+                       "10.26.86.19": {
+                     individualResponseTimes: [
+                         "00:00:00.005988",
+                         "00:00:00.006948",
+                         "00:00:00.005981",
+                         "00:00:00.005964",
+                         "00:00:00.005942"
+                      ],
+                    individualStatus: [
+                                "true",
+                                "true",
+                          true,
+                          true,
+                          true
+                      ],
+                      responseTime: "00:00:00.006165",
+                      successful: true,
+               },
+                          "10.26.86.20": {
+                    individualResponseTimes: [
+                         "00:00:00.005926",
+                         "00:00:00.006072",
+                         "00:00:00.005675",
+                         "00:00:00.009904",
+                         "00:00:00.006225"
+                      ],
+                              "individualStatus": [
+                          true,
+                          true,
+                          true,
+                          true,
+                          true
+                     ],
+                      responseTime: "00:00:00.006760",
+                      successful: true
+                   }
+             },
+     "duration": "00:00:00.595982",
+     "result": "Passed"
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

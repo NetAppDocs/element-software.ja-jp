@@ -1,0 +1,78 @@
+---
+permalink: api/reference_element_api_clusteradmin.html 
+sidebar: sidebar 
+keywords: objects,object,clusterAdmin 
+summary: clusterAdmin オブジェクトには、現在のクラスタ管理者ユーザの情報が含まれます。GetCurrentClusterAdmin API メソッドを使用すると、管理者ユーザの情報を取得できます。 
+---
+= クラスタ管理者
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+clusterAdmin オブジェクトには、現在のクラスタ管理者ユーザの情報が含まれます。GetCurrentClusterAdmin API メソッドを使用すると、管理者ユーザの情報を取得できます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+にアクセスします
+ a| 
+このクラスタ管理者が使用できるメソッド。
+ a| 
+文字列の配列
+
+
+
+ a| 
+使用します
+ a| 
+クラスタ管理者ユーザが使用する認証のタイプ。有効な値は次のとおり
+
+* LDAP
+* クラスタ
+* ローカル
+
+ a| 
+文字列
+
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+clusterAdminID
+ a| 
+このクラスタ管理者ユーザのクラスタ管理者 ID 。
+ a| 
+整数
+
+
+
+ a| 
+ユーザ名
+ a| 
+このクラスタ管理者のユーザ名。
+ a| 
+文字列
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_getcurrentclusteradmin.adoc[GetCurrentClusterAdmin]

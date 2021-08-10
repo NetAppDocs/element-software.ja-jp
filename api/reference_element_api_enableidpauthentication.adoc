@@ -1,0 +1,74 @@
+---
+permalink: api/reference_element_api_enableidpauthentication.html 
+sidebar: sidebar 
+keywords: IdP,idp,authentication,enable 
+summary: EnableIdpAuthentication メソッドを使用すると、クラスタにサードパーティの IdP を使用した認証のサポートを有効にできます。IdP 認証を有効にすると、 LDAP 管理者およびクラスタ管理者は、サポートされている UI からクラスタにアクセスできなくなり、アクティブな認証されたセッションが無効化 / 切断されます。サポートされている UI からクラスタにアクセスできるのは、サードパーティの IdP で認証されたユーザだけです。 
+---
+= EnableIdpAuthentication の略
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 EnableIdpAuthentication 」メソッドを使用すると、クラスタにサードパーティの IdP を使用した認証のサポートを有効にできます。IdP 認証を有効にすると、 LDAP 管理者およびクラスタ管理者は、サポートされている UI からクラスタにアクセスできなくなり、アクティブな認証されたセッションが無効化 / 切断されます。サポートされている UI からクラスタにアクセスできるのは、サードパーティの IdP で認証されたユーザだけです。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+idpConfigurationID
+ a| 
+サードパーティ IdP 設定の UUID 。IdP 設定が 1 つしかない場合は、その設定がデフォルトで有効になります。IDpConfiguration が 1 つしかない場合は、 idpConfigurationID パラメータを指定する必要はありません。
+ a| 
+UUID
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "EnableIdpAuthentication",
+  "params": {
+    "idpConfigurationID": "f983c602-12f9-4c67-b214-bf505185cfed",
+  }
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+"result": {}
+}
+----
+
+
+== 新規導入バージョン
+
+12.0

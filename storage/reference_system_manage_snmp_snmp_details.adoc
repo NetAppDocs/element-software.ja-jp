@@ -1,0 +1,27 @@
+---
+permalink: storage/reference_system_manage_snmp_snmp_details.html 
+sidebar: sidebar 
+keywords: snmp, overview, reference, mib, settings, trap 
+summary: クラスタタブの SNMP ページでは、次の情報を表示できます。 
+---
+= SNMP の詳細
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クラスタタブの SNMP ページでは、次の情報を表示できます。
+
+* * SNMP MIB*
++
+表示またはダウンロード可能な MIB ファイル。
+
+* * 一般的な SNMP 設定 *
++
+SNMP を有効または無効にすることができます。SNMP を有効にしたら、使用するバージョンを選択できます。バージョン 2 を使用する場合はリクエスタを追加できます。バージョン 3 を使用する場合は USM ユーザをセットアップできます。
+
+* * SNMP トラップ設定 *
++
+キャプチャするトラップを指定できます。トラップ受信者ごとにホスト、ポート、およびコミュニティストリングを設定できます。
+
+

@@ -1,0 +1,78 @@
+---
+permalink: api/reference_element_api_removeclusteradmin.html 
+sidebar: sidebar 
+keywords: cluster,admin,remove,removing,removeclusteradmin 
+summary: RemoveClusterAdmin メソッドを使用すると、クラスタ管理、 LDAP クラスタ管理、またはサードパーティのアイデンティティプロバイダ / （ IdP ）クラスタ管理者を削除できます。「 admin 」クラスタ管理者アカウントを削除することはできません。 
+---
+= RemoveClusterAdmin
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RemoveClusterAdmin メソッドを使用すると、クラスタ管理者、 LDAP クラスタ管理者、またはサードパーティの Identity Provider （ IdP ；アイデンティティプロバイダ）クラスタ管理者を削除できます。「 admin 」クラスタ管理者アカウントを削除することはできません。
+
+
+
+== パラメータ
+
+サードパーティのアイデンティティプロバイダ IdP に関連付けられた認証セッションを含む IdP クラスタ管理者を削除すると、それらのセッションはログアウトされるか、現在のセッションでアクセス権が失われる可能性があります。アクセス権が失われるかどうかは、削除した IdP クラスタ管理者が特定のユーザの SAML 属性に含まれる複数の IdP クラスタ管理者の 1 人に一致したかどうかによって異なります。残りの一致する IdP クラスタ管理者のセットを使用すると、アグリゲートのアクセス権が制限されます。それ以外のタイプのクラスタ管理者ユーザは、クラスタ管理者が削除されるとログアウトされます。
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+clusterAdminID
+ a| 
+削除するクラスタ管理者の ClusterAdminID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "RemoveClusterAdmin",
+   "params": {
+     "clusterAdminID"  : 2
+   },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+ "id" : 1
+ "result" : { }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

@@ -1,0 +1,26 @@
+---
+permalink: storage/task_data_protection_roll_back_a_volume_to_a_snapshot.html 
+sidebar: sidebar 
+keywords: volume to snapshot roll back, snapshot roll back, revert changes 
+summary: ボリュームは以前の Snapshot にいつでもロールバックできます。その Snapshot の作成後にボリュームに対して行われた変更はすべて元に戻ります。 
+---
+= ボリュームを Snapshot にロールバックします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリュームは以前の Snapshot にいつでもロールバックできます。その Snapshot の作成後にボリュームに対して行われた変更はすべて元に戻ります。
+
+.手順
+. [ * データ保護 *>* スナップショット * ] をクリックします。
+. ボリュームのロールバックに使用する Snapshot の * Actions * アイコンをクリックします。
+. 表示されたメニューで、 * スナップショットへのボリュームのロールバック * を選択します。
+. * オプション： Snapshot にロールバックする前にボリュームの現在の状態を保存するには、次のコマンドを入力します。
++
+.. [ * スナップショットへのロールバック * ] ダイアログボックスで、 [ * ボリュームの現在の状態をスナップショットとして保存 * ] を選択します。
+.. 新しい Snapshot の名前を入力します。
+
+
+. [* ロールバックスナップショット * ] をクリックします。
+

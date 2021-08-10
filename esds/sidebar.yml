@@ -1,0 +1,43 @@
+---
+section: esds
+title: SolidFire エンタープライズ SDS をインストールして使用します
+url: "/esds/index.html"
+entries:
+- title: SolidFire ESDS の使用を開始します
+  url: "/esds/concept_get_started_esds.html"
+- title: インストールの前提条件となるタスクを実行します
+  url: "/esds/concept_esds_prerequisite_tasks.html"
+  entries:
+  - title: ネットワーク設定に関する考慮事項
+    url: "/esds/concept_esds_networking_best_practices.html"
+  - title: ホストネットワークを設定します
+    url: "/esds/task_esds_configure_the_interface_config_files.html"
+- title: SolidFire ESDS をインストールします
+  url: "/esds/task_esds_install_using_ansible.html"
+- title: インストール後のタスクを実行
+  url: "/esds/task_esds_postinstallation.html"
+- title: クラスタをアップグレード
+  url: "/esds/task_esds_upgrade_cluster.html"
+- title: クラスタを監視
+  url: "/esds/concept_esds_monitor_clusters.html"
+- title: SolidFire ESDS ストレージを管理します
+  url: "/esds/reference_esds_element_links.html"
+- title: SolidFire ESDS をアンインストールします
+  url: "/esds/task_esds_uninstall.html"
+- title: SolidFire ESDS を管理します
+  url: "/esds/concept_esds_maintain.html"
+  entries:
+  - title: ライセンスキーを取得します
+    url: "/esds/task_esds_get_license_key.html"
+  - title: SolidFire ESDS クラスタではメンテナンスモードを使用します
+    url: "/esds/reference_esds_use_maintenance_mode.html"
+  - title: HPE DL360 のドライブを交換
+    url: "/esds/task_esds_dl360_drive_repl.html"
+  - title: Dell R640 のドライブを交換します
+    url: "/esds/task_esds_r640_drive_repl.html"
+  - title: コンテナログを収集します
+    url: "/esds/reference_esds_containerlogs.html"
+  - title: トラブルシューティングに関する技術情報アーティクルへのリンク
+    url: "/esds/reference_esds_troubleshoot_links.html"
+  - title: sf_sds_config.yaml ファイルの内容
+    url: "/esds/reference_esds_sf_sds_config_file.html"

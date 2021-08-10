@@ -1,0 +1,104 @@
+---
+permalink: api/reference_element_api_getvolumeaccessgrouplunassignments.html 
+sidebar: sidebar 
+keywords: volume,access,group,groups,LUN,mapping,assignment,get,getting,GetVolumeAccessGroupLunAssignments 
+summary: GetVolumeAccessGroupLunAssignments メソッドを使用すると、指定したボリュームアクセスグループの LUN マッピングの詳細を取得できます。 
+---
+= GetVolumeAccessGroupLunAssignments というエラーが発生しました
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 GetVolumeAccessGroupLunAssignments 」メソッドを使用すると、指定したボリュームアクセスグループの LUN マッピングの詳細を取得できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ボリュームアクセスグループ ID
+ a| 
+情報の取得に使用する一意のボリュームアクセスグループ ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ボリュームアクセスグループの LunAssignments
+ a| 
+すべての物理 Fibre Channel ポートのリスト、または単一のノードの場合はそのポート。
+ a| 
+JSON オブジェクト
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "GetVolumeAccessGroupLunAssignments",
+   "params": {
+      "volumeAccessGroupID": 5
+    },
+  "id" : 1
+   }
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {
+    "volumeAccessGroupLunAssignments" : {
+       "volumeAccessGroupID" : 5,
+       "lunAssignments" : [
+          {"volumeID" : 5, "lun" : 0},
+          {"volumeID" : 6, "lun" : 1},
+          {"volumeID" : 7, "lun" : 2},
+          {"volumeID" : 8, "lun" : 3}
+       ],
+       "deletedLunAssignments" : [
+           {"volumeID" : 44, "lun" : 44}
+       ]
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

@@ -1,0 +1,159 @@
+---
+permalink: api/reference_element_api_pendingnode.html 
+sidebar: sidebar 
+keywords: object,objects,pendingNode 
+summary: pendingNode オブジェクトには、クラスタに追加できるノードの情報が含まれます。ListPendingNodes API メソッドを使用すると、すべての Pending 状態のノードに関するこの情報のリストが返されます。AddNodes API メソッドを使用すると、リストに含まれるノードをクラスタに追加できます。 
+---
+= pendingNode
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+pendingNode オブジェクトには、クラスタに追加できるノードの情報が含まれます。「 ListPendingNodes 」 API メソッドを使用すると、すべての Pending 状態のノードに関するこの情報のリストが返されます。AddNodes API メソッドを使用すると、リストされているノードをクラスタに追加できます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+シピ
+ a| 
+ノードに割り当てられたクラスタ IP アドレス。
+ a| 
+文字列
+
+
+
+ a| 
+activeNodeKey です
+ a| 
+ソフトウェアのインストール完了後にノードが自動的にクラスタに追加されるようにする一意のキー。
+ a| 
+文字列
+
+
+
+ a| 
+割り当てられたノード ID
+ a| 
+ノードに割り当てられたノード ID 。
+ a| 
+文字列
+
+
+
+ a| 
+asyncHandle
+ a| 
+処理のステータスの照会に使用できる非同期メソッドのハンドル。
+ a| 
+整数
+
+
+
+ a| 
+シャーシ名
+ a| 
+シャーシを一意に識別します。同じシャーシ内のすべてのノードで同じです。
+ a| 
+文字列
+
+
+
+ a| 
+CIP （ CIP ）
+ a| 
+ノードに割り当てられたクラスタ IP アドレス。
+ a| 
+文字列
+
+
+
+ a| 
+MIP
+ a| 
+ノードに割り当てられた管理 IP アドレス。
+ a| 
+文字列
+
+
+
+ a| 
+ノードスロット
+ a| 
+HCI プラットフォームで、シャーシのこのノードが設置されたスロットに対応する文字（「 A 」、「 B 」、「 C 」、または「 D 」）。ストレージプラットフォームの場合、値は null です。
+ a| 
+文字列
+
+
+
+ a| 
+pendingActiveNodeID
+ a| 
+ノードの Pending 状態のノード ID 。
+ a| 
+整数
+
+
+
+ a| 
+プラットフォーム情報
+ a| 
+ノードのハードウェア情報。メンバー
+
+* chassisType ：ノードのハードウェアプラットフォーム。
+* cpuModel ：ハードウェアプラットフォームの CPU モデル。
+* nodeMemoryGB ：物理プラットフォームに取り付けられているメモリの量（ GB ）。
+* nodeType ：ノードのモデル名。
+* platformConfigVersion ：このノードのハードウェアに設定されているソフトウェアのバージョン。
+
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+ロール
+ a| 
+クラスタにおけるノードのロール。有効な値は次のとおり
+
+* 管理
+* ストレージ
+* コンピューティング
+* 監視
+
+ a| 
+
+
+
+ a| 
+SIP
+ a| 
+ノードに割り当てられたストレージ（ iSCSI ） IP アドレス。
+ a| 
+文字列
+
+
+
+ a| 
+ソフトウェアレヴェーション
+ a| 
+ノードで実行している Element ソフトウェアの現在のバージョン。
+ a| 
+文字列
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_element_api_addnodes.adoc[AddNodes]
+* xref:reference_element_api_listpendingnodes.adoc[ListPendingNodes]
+

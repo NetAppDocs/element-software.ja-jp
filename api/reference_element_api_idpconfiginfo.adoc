@@ -1,0 +1,77 @@
+---
+permalink: api/reference_element_api_idpconfiginfo.html 
+sidebar: sidebar 
+keywords: objects,object,idpConfigInfo 
+summary: idpConfigInfo オブジェクトには、サードパーティのアイデンティティプロバイダ \ （ IdP \ ）に関する設定および統合の詳細が含まれます。 
+---
+= idpConfigInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+idpConfigInfo オブジェクトには、サードパーティのアイデンティティプロバイダ（ IdP ）に関する設定と統合の詳細が含まれます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+有効
+ a| 
+このサードパーティの IDPconfiguration を有効にするかどうかを指定します。
+ a| 
+ブール値
+
+
+
+ a| 
+idpConfigurationID
+ a| 
+サードパーティ IdP 設定の UUID 。
+ a| 
+UUID
+
+
+
+ a| 
+idpMetadata のことです
+ a| 
+SAML 2.0 シングルサインオンの設定および統合の詳細用メタデータ。
+ a| 
+文字列
+
+
+
+ a| 
+idpName
+ a| 
+SAML 2.0 シングルサインオンの IdP プロバイダを取得するための名前。
+ a| 
+文字列
+
+
+
+ a| 
+serviceProviderCertificate
+ a| 
+この IdP との通信に使用する PEM 形式 Base64 エンコード PKCS#10 X.509 証明書。
+ a| 
+文字列
+
+
+
+ a| 
+SPMetadataUrl
+ a| 
+信頼関係を確立するためにクラスタから IdP に提供するサービスプロバイダ（ SP ）メタデータを取得するための URL 。
+ a| 
+文字列
+
+|===

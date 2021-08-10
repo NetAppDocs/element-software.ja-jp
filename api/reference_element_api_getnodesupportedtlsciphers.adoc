@@ -1,0 +1,108 @@
+---
+permalink: api/reference_element_api_getnodesupportedtlsciphers.html 
+sidebar: sidebar 
+keywords: tls,cipher,ciphers,get,getting,supported,getnodesupportedtlsciphers 
+summary: 単一のノードで GetNodeSupportedTlsCiphers メソッドを使用すると、そのノードで現在サポートされている TLS 暗号のリストを取得できます。このメソッドは、管理ノードとストレージノードで使用できます。 
+---
+= GetNodeSupportedTlsCiphers
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+単一のノードで「 GetNodeSupportedTlsCiphers 」メソッドを使用すると、そのノードで現在サポートされている TLS 暗号のリストを取得できます。このメソッドは、管理ノードとストレージノードで使用できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+データ暗号化
+ a| 
+ノードの必須 TLS 暗号スイートのリスト。ノードで常にアクティブな暗号です。
+ a| 
+文字列
+
+
+
+ a| 
+defaultCipheralCiphers
+ a| 
+ノードのデフォルトの追加 TLS 暗号スイートのリスト。補足暗号は、 ResetNodeJassentalTlsCiphers API メソッドを実行すると、このリストに復元されます。
+ a| 
+文字列
+
+
+
+ a| 
+「 SupportedCiphers 」を参照してください
+ a| 
+SetNodeJassentalTlsCiphers API メソッドを使用して設定できる追加 TLS 暗号スイートのリスト。
+ a| 
+文字列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "GetNodeSupportedTlsCiphers",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {
+	"defaultSupplementalCiphers": [
+		"DHE-RSA-AES128-SHA256",
+		"DHE-RSA-AES128-GCM-SHA256",
+		"ECDHE-RSA-AES128-SHA256",
+		"ECDHE-RSA-AES128-GCM-SHA256"
+	],
+	"mandatoryCiphers": [
+		"DHE-RSA-AES256-SHA256",
+		"DHE-RSA-AES256-GCM-SHA384",
+		"ECDHE-RSA-AES256-SHA384",
+		"ECDHE-RSA-AES256-GCM-SHA384"
+	],
+	"supportedSupplementalCiphers": [
+		"DHE-RSA-AES128-SHA256",
+		"DHE-RSA-AES128-GCM-SHA256",
+		"ECDHE-RSA-AES128-SHA256",
+		"ECDHE-RSA-AES128-GCM-SHA256",
+		"DHE-RSA-AES256-SHA",
+		"ECDHE-RSA-AES256-SHA",
+		"DHE-RSA-CAMELLIA256-SHA",
+		"DHE-RSA-AES128-SHA",
+		"ECDHE-RSA-AES128-SHA",
+		"DHE-RSA-CAMELLIA128-SHA"
+	]
+}
+}
+----

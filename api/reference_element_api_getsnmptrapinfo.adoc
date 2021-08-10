@@ -1,0 +1,118 @@
+---
+permalink: api/reference_element_api_getsnmptrapinfo.html 
+sidebar: sidebar 
+keywords: snmp,trap,get,getting,info,getsnmptrapinfo 
+summary: GetSnmpTrapInfo メソッドを使用すると、現在の SNMP トラップの設定情報を取得できます。 
+---
+= GetSnmpTrapInfo をクリックします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 GetSnmpTrapInfo 」メソッドを使用すると、現在の SNMP トラップの設定情報を取得できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+trapRecipients
+ a| 
+クラスタによって生成されたトラップを受信するホストのリスト。
+ a| 
+xref:reference_element_api_snmptraprecipient.adoc[snmpTrapRecipient のこと] 配列
+
+
+
+ a| 
+clusterFaultTrapsEnabled
+ a| 
+true の場合、クラスタ障害が記録されたときにトラップ受信者リストに solidFireClusterFaultNotification が送信されるように設定されています。
+ a| 
+ブール値
+
+
+
+ a| 
+clusterFaultResolvedTrapsEnabled
+ a| 
+true の場合、クラスタ障害が解決したときにトラップ受信者リストに solidFireClusterFaultResolvedNotification が送信されるように設定されています。
+ a| 
+ブール値
+
+
+
+ a| 
+clusterEventTrapsEnabled を選択します
+ a| 
+true の場合、クラスタイベントが記録されたときにトラップ受信者リストに solidFireClusterEventNotification が送信されるように設定されています。
+ a| 
+ブール値
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method":"GetSnmpTrapInfo"
+   "params":{},
+   "id":1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "clusterEventTrapsEnabled": true,
+    "clusterFaultResolvedTrapsEnabled": true,
+    "clusterFaultTrapsEnabled": true,
+    "trapRecipients": [
+     {
+      "community": "public",
+      "host": "192.168.151.60",
+      "port": 162
+     },
+     {
+      "community": "solidfireAlerts",
+      "host": "NetworkMonitor",
+      "port": 162
+     },
+     {
+      "community": "wakeup",
+      "host": "PhoneHomeAlerter",
+      "port": 1008
+     }
+   ]
+ }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

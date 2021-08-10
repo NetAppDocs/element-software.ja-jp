@@ -1,0 +1,144 @@
+---
+permalink: api/reference_element_api_listinitiators.html 
+sidebar: sidebar 
+keywords: initiators,initiator,list,listing,listinitiators,iqn,wwpn,iqns,wwpns 
+summary: ListInitiators メソッドを使用すると、イニシエータの IQN または World Wide Port Name （ WWPN ）のリストを取得できます。 
+---
+= ListInitiators の 1 つです
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ListInitiators メソッドを使用すると、イニシエータの IQN または World Wide Port Name （ WWPN ）のリストを取得できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+イニシエータ
+ a| 
+取得するイニシエータ ID のリスト。このパラメータまたは startInitiatorID パラメータのどちらか一方を指定できますが、両方を指定することはできません。
+ a| 
+整数の配列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+startInitiatorID
+ a| 
+表示する最初のイニシエータ ID 。このパラメータまたはイニシエータパラメータを指定できますが、両方を指定することはできません。
+ a| 
+整数
+ a| 
+0
+ a| 
+いいえ
+
+
+
+ a| 
+制限（ Limit ）
+ a| 
+返されるイニシエータオブジェクトの最大数。
+ a| 
+整数
+ a| 
+無制限
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+イニシエータ
+ a| 
+イニシエータ情報のリスト。
+ a| 
+xref:reference_element_api_initiator.adoc[イニシエータ] 配列
+
+|===
+
+
+== 例外
+
+このメソッドでは、次の例外が発生する可能性があります。
+
+|===
+
+
+| 名前 | 説明 
+
+
+ a| 
+xInvalidParameter
+ a| 
+同一のメソッド呼び出しに startInitiatorID と initiators パラメータの両方を含めるとスローされます。
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ListInitiators",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "initiators": [
+      {
+        "alias": "",
+        "attributes": {},
+        "initiatorID": 2,
+        "initiatorName": "iqn.1993-08.org.debian:01:c84ffd71216",
+        "volumeAccessGroups": [
+          1
+        ]
+      }
+    ]
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

@@ -1,0 +1,76 @@
+---
+permalink: api/reference_element_api_deleteclusterinterfacepreference.html 
+sidebar: sidebar 
+keywords: cluster,interface,preferences,delete,deleting,DeleteClusterInterfacePreference 
+summary: DeleteClusterInterfacePreference メソッドを使用すると、 Element ソフトウェアを実行するストレージクラスタと統合されたシステムで、既存のクラスタインターフェイス設定を削除できます。このメソッドは内部で使用されます。 
+---
+= DeleteClusterInterfacePreference の値
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 DEleClusterInterfacePreference 」メソッドを使用すると、 Element ソフトウェアを実行するストレージクラスタと統合されたシステムで、既存のクラスタインターフェイス設定を削除できます。このメソッドは内部で使用されます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+名前
+ a| 
+削除するクラスタインターフェイス設定の名前。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+	"method": "DeleteClusterInterfacePreference",
+	"params": {
+		"name": "prefname"
+		},
+	"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {}
+}
+----
+
+
+== 新規導入バージョン
+
+11.0

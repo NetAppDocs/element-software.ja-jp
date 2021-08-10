@@ -1,0 +1,93 @@
+---
+permalink: api/reference_element_api_listclusterpairs.html 
+sidebar: sidebar 
+keywords: cluster,pair,pairs,paired,list,listing,listclusterpairs 
+summary: ListClusterPairs メソッドを使用すると、現在のクラスタとペアリングされているすべてのクラスタを表示できます。このメソッドは、アクティブまたは保留状態のクラスタペアリングに関する情報を返します。たとえば、現在のペアリングについての統計データのほか、クラスタペアリングの接続やレイテンシについての情報（ミリ秒）が含まれます。 
+---
+= ListClusterPairs
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ListClusterPairs 」メソッドを使用すると、現在のクラスタとペアリングされているすべてのクラスタを表示できます。このメソッドは、アクティブまたは保留状態のクラスタペアリングに関する情報を返します。たとえば、現在のペアリングについての統計データのほか、クラスタペアリングの接続やレイテンシ（ミリ秒）の情報が含まれます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+クラスタペア
+ a| 
+ペアリングされている各クラスタに関する情報。
+ a| 
+xref:reference_element_api_clusterpair.adoc[クラスタペア] 配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ListClusterPairs",
+   "params": {
+      },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+ "id": 1,
+ "result": {
+   "clusterPairs": [
+     {
+      "clusterName": "cluster2",
+      "clusterPairID": 3,
+      "clusterPairUUID": "9866fbeb-c2f8-4df3-beb9-58a5c4e49c9b",
+      "clusterUUID": 5487,
+      "latency": 1,
+      "mvip": "172.1.1.5",
+      "status": "Connected"
+      "version": "8.0.0.1361"
+     },
+     {
+      "clusterName": "cluster3",
+      "clusterPairID": 2,
+      "clusterPairUUID": "8132a699-ce82-41e0-b406-fb914f976042",
+      "clusterUUID": 1383,
+      "latency": 1,
+      "mvip": "172.1.1.6",
+      "status": "Connected"
+      "version": "8.0.0.1361"
+     }
+   ]
+ }
+----
+
+
+== 新規導入バージョン
+
+9.6

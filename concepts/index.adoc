@@ -1,0 +1,32 @@
+---
+permalink: concepts/index.html 
+sidebar: sidebar 
+keywords: element, security, clusters, protection, qos 
+summary: Element ソフトウェアに関連する基本的な概念を確認できます。 
+---
+= 概念
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element ソフトウェアに関連する基本的な概念を確認できます。
+
+* link:concept_intro_product_overview.html["製品の概要"]
+* xref:concept_solidfire_concepts_solidfire_architecture_overview.adoc[SolidFire アーキテクチャの概要]
+* xref:concept_solidfire_concepts_nodes.adoc[ノード]
+* xref:concept_intro_clusters.adoc[クラスタ]
+* link:concept_solidfire_concepts_security.html["セキュリティ"]
+* xref:concept_solidfire_concepts_accounts_and_permissions.adoc[アカウントと権限]
+* link:concept_solidfire_concepts_volumes.html["個のボリューム"]
+* xref:concept_solidfire_concepts_data_protection.adoc[データ保護]
+* xref:concept_data_manage_volumes_solidfire_quality_of_service.adoc[パフォーマンスと QoS]
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/["SolidFire オールフラッシュストレージの概要"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+

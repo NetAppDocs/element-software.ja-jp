@@ -1,0 +1,72 @@
+---
+permalink: api/reference_element_api_listsnapmirrorluns.html 
+sidebar: sidebar 
+keywords: snapmirror,lun,luns,list,listing,listsnapmirrorluns 
+summary: Element ソフトウェア Web UI は、 ListSnapMirrorLuns メソッドを使用して、リモート ONTAP クラスタからの SnapMirror 関係の LUN 情報を一覧表示します。 
+---
+= ListSnapMirrorLuns
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element ソフトウェア Web UI は「 ListSnapMirrorLuns 」メソッドを使用して、リモート ONTAP クラスタからの SnapMirror 関係の LUN 情報を一覧表示します。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+指定したエンドポイント ID に関連付けられている LUN 情報のみをリストします。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+デスティネーションボリューム
+ a| 
+SnapMirror 関係のデスティネーションボリューム。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorLunInfos
+ a| 
+SnapMirror LUN の情報を含むオブジェクトのリスト。
+ a| 
+xref:reference_element_api_snapmirrorluninfo.adoc[snapMirrorLunInfo の追加] 配列
+
+|===
+
+
+== 新規導入バージョン
+
+10.1

@@ -1,0 +1,28 @@
+---
+permalink: storage/task_intro_use_basic_options_in_the_element_software_ui.html 
+sidebar: sidebar 
+keywords: user interface, UI, API commands, SolidFire system 
+summary: NetApp Element ソフトウェア Web ユーザインターフェイス（ Element UI ）を使用して、 SolidFire システムの一般的なタスクを監視および実行することができます。 
+---
+= Element ソフトウェア UI の基本オプションを使用
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Element ソフトウェア Web ユーザインターフェイス（ Element UI ）を使用して、 SolidFire システムの一般的なタスクを監視および実行することができます。
+
+基本的なオプションには、 UI アクティビティによってアクティブ化された API コマンドの表示とフィードバックがあります。
+
+* link:task_intro_view_api_activity_in_real_time.html["API アクティビティを表示します"]
+* link:reference_intro_icon_reference.html["Element インターフェイスのアイコン"]
+* link:task_intro_provide_feedback.html["フィードバックを提供する"]
+
+
+
+
+== を参照してください。
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

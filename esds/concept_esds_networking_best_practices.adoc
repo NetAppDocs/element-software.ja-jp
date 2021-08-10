@@ -1,0 +1,63 @@
+---
+permalink: esds/concept_esds_networking_best_practices.html 
+sidebar: sidebar 
+keywords: solidfire esds, software-defined storage, networks, linux host routing, networking 
+summary: SolidFire ESDS をインストールする前に、 RHEL を実行するストレージノードに必要なネットワークをセットアップする必要があります。環境内のネットワークルーティングは、ユーザが行う必要があります。フレームワークとして提供されているベストプラクティスを使用できます。 
+---
+= ネットワーク設定に関する考慮事項
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire ESDS をインストールする前に、 RHEL を実行するストレージノードに必要なネットワークをセットアップする必要があります。環境内のネットワークルーティングは、ユーザが行う必要があります。フレームワークとして提供されているベストプラクティスを使用できます。
+
+[IMPORTANT]
+====
+* 結合またはチーミングされたインターフェースを使用します
+* クラスタ内のすべてのノードで同じインターフェイス名を使用します（例：各ノードの管理インターフェイスで team mgt 、各ノードのストレージインターフェイスで team stg ）。
+* NetworkManager が実行されていることを確認します。
+* ポリシーベースルーティングのために、 NetworkManager-dispatcher-routing-rules パッケージがすべてのストレージノードにインストールされていることを確認します。
+* を参照してください https://www.netapp.com/us/media/tr-4763.pdf["『 Best Practices for Networking and Network Maintenance on NetApp SolidFire Storage Systems 』を参照してください"]。
+* ボンドまたはチーム構成を通じて複数の冗長な物理インターフェイスを使用するように、各ノードの管理ネットワークとストレージネットワークを設定します。
+
+
+====
+ネットワークチーミングの詳細については、を参照してください https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/ch-configure_network_teaming["ネットワークチーミングを設定します"^]。デフォルトでは、すべてのストレージノードの 10GbE インターフェイスが有効になっており、最大伝送ユニット（ MTU ）は 9 、 000 バイトです。最適なパフォーマンスを確保するには、サーバ側のすべてのストレージインターフェイスについて、 NetApp SolidFire ストレージノードと同じ MTU を設定します。ジャンボフレームのオーバーヘッドを考慮し、ネットワークを適切に転送するために、少なくとも 9016 バイトの MTU をサポートするようにネットワークスイッチを設定する必要があります。この設定を変更して低い MTU 設定をサポートする場合は、ネットアップサポートにお問い合わせください。
+
+SolidFire ESDS でさまざまなタイプのトラフィックに必要なストレージおよび管理ネットワークの詳細については、次の表を参照してください。
+
+[cols="2*"]
+|===
+| ネットワークのタイプ | 説明 
+
+
+ a| 
+ストレージネットワーク
+ a| 
+* すべてのストレージ / iSCSI トラフィックを含みます。
+* 別のレイヤ 3 ネットワークに配置されたホストからマウントする場合や、クラスタ間でデータをレプリケートする場合は、ルーティングが可能です。
+* 同じレイヤ 2 ブロードキャストドメインにネットワークインターフェイスを設定します。
+
+
+
+
+ a| 
+管理ネットワーク
+ a| 
+* すべての管理トラフィックが含まれます。
+* 別のレイヤ 3 ネットワークからクラスタの API や UI にアクセスする場合は、ルーティングが可能です。
+* 同じレイヤ 2 ブロードキャストドメインにネットワークインターフェイスを設定します。
+
+
+|===
+
+TIP: ホストネットワークの設定例とヒントについては、を参照してください link:task_esds_configure_the_interface_config_files.adoc["こちらをご覧ください"^]。
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire のリソースページ"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
+

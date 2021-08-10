@@ -1,0 +1,23 @@
+---
+permalink: storage/task_data_manage_volumes_assign_luns_to_fibre_channel_volumes.html 
+sidebar: sidebar 
+keywords: volumes, fc, luns, access group, assign 
+summary: ボリュームアクセスグループ内の Fibre Channel ボリュームに対する LUN の割り当てを変更できます。ボリュームアクセスグループを作成するときに、 Fibre Channel ボリュームに LUN を割り当てることもできます。 
+---
+= Fibre Channel ボリュームに LUN を割り当てます
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリュームアクセスグループ内の Fibre Channel ボリュームに対する LUN の割り当てを変更できます。ボリュームアクセスグループを作成するときに、 Fibre Channel ボリュームに LUN を割り当てることもできます。
+
+新しい Fibre Channel LUN の割り当ては高度な機能であり、接続しているホストで想定外の状況が生じる可能性があります。たとえば、新しい LUN ID を自動的に検出できないホストでは、新しい LUN ID を検出するために再スキャンが必要となります。
+
+. [* 管理 *>] > [* アクセスグループ *] を選択します。
+. 編集するアクセスグループの [ アクション ] アイコンをクリックします。
+. 表示されたメニューで、 ** Edit ** を選択します。
+. Edit Volume Access Group * （ボリューム・アクセス・グループの編集）ダイアログ・ボックスの * Assign LUN ID* （ LUN ID の割り当て * ）で、 * LUN Assignments * （ LUN の割り当て * ）リストの矢印をクリックします。
+. LUN を割り当てるボリュームのリストで、対応する * LUN * フィールドに新しい値を入力します。
+. [ 変更の保存 *] をクリックします。
+

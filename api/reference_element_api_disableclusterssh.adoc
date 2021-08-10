@@ -1,0 +1,94 @@
+---
+permalink: api/reference_element_api_disableclusterssh.html 
+sidebar: sidebar 
+keywords: SSH,disable,disabling,cluster,DisableClusterSsh 
+summary: DisableClusterSsh メソッドを使用して、ストレージクラスタ全体の SSH サービスを無効にすることができます。ストレージクラスタにノードを追加すると、新しいノードにはこのクラスタ全体の設定が継承されます。 
+---
+= DisableClusterSsh
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 DisableClusterSsh 」メソッドを使用して、ストレージクラスタ全体の SSH サービスを無効にすることができます。ストレージクラスタにノードを追加すると、新しいノードにはこのクラスタ全体の設定が継承されます。
+
+
+NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+結果
+ a| 
+ストレージクラスタの SSH サービスのステータス、 SSH が無効になるまでの時間、および各ノードの SSH サービスのステータスを含む JSON オブジェクト。
+ a| 
+JSON オブジェクト
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "DisableClusterSsh",
+  "params": {
+      },
+  "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+	"id": 1,
+	"result" : {
+    "enabled": true,
+    "timeRemaining": "00:43:21",
+    "nodes": [
+    {
+        "nodeID": 1,
+        "enabled": true
+    },
+    {
+        "nodeID": 2,
+        "enabled": true
+    },
+    {
+        "nodeID": 3,
+        "enabled": false
+    },
+    {
+        "nodeID": 4,
+        "enabled": false
+    } ]
+			}
+	}
+----
+
+
+== 新規導入バージョン
+
+10.3

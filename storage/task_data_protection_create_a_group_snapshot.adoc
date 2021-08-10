@@ -1,0 +1,43 @@
+---
+permalink: storage/task_data_protection_create_a_group_snapshot.html 
+sidebar: sidebar 
+keywords: group snapshot, create, volumes, schedule, automate group snapshots 
+summary: ボリュームグループの Snapshot を作成できます。また、グループ Snapshot スケジュールを作成して、グループ Snapshot の作成を自動化することもできます。1 つのグループ Snapshot には、一度に最大 32 個のボリュームの Snapshot を含めることができます。 
+---
+= グループ Snapshot を作成しています
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリュームグループの Snapshot を作成できます。また、グループ Snapshot スケジュールを作成して、グループ Snapshot の作成を自動化することもできます。1 つのグループ Snapshot には、一度に最大 32 個のボリュームの Snapshot を含めることができます。
+
+.手順
+. [* 管理 *>* ボリューム *] をクリックします。
+. チェックボックスを使用して、ボリュームグループに含めるボリュームを選択します。
+. [ 一括操作 * ] をクリックします。
+. [ グループ Snapshot * ] をクリックします。
+. Create Group Snapshot of Volumes （ボリュームのグループ Snapshot の作成）ダイアログボックスに、新しいグループ Snapshot 名を入力します。
+. * オプション： * 親ボリュームがペアリングされている場合、各 Snapshot がレプリケーションにキャプチャされるようにするには、 * Include each Group Snapshot Member in Replication when paired * チェックボックスを選択します。
+. グループ Snapshot の保持オプションを選択します。
++
+** 「 * Forever * 」をクリックして、 Snapshot をシステム上に無期限に保持します。
+** [ * 保存期間の設定 * ] をクリックし、日付スピンボックスを使用して、システムがスナップショットを保持する期間を選択します。
+
+
+. 単一の Snapshot を今すぐ作成するには、次の手順を実行します。
++
+.. Take Group Snapshot Now* をクリックします。
+.. [ グループ Snapshot の作成 *] をクリックします。
+
+
+. スケジュールを設定してあとで Snapshot を作成するには、次の手順を実行します。
++
+.. Create Group Snapshot Schedule （グループ Snapshot スケジュールの作成） * をクリックします。
+.. 新しいスケジュール名 * を入力します。
+.. リストから * スケジュールタイプ * を選択します。
+.. * オプション：定期的にスケジュールされたスナップショットを繰り返すには、 * Recurring Schedule * チェックボックスをオンにします。
+.. [ スケジュールの作成 *] をクリックします。
+
+
+

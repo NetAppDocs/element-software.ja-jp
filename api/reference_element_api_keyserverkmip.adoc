@@ -1,0 +1,95 @@
+---
+permalink: api/reference_element_api_keyserverkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key server,keys 
+summary: keyServerKmip オブジェクトは、 Key Management Interoperability Protocol\ （ KMIP \ ）キーサーバの詳細を示します。このキーサーバから、保存データの暗号化などのクラスタ機能で使用する認証キーを取得できます。 
+---
+= KeyServerKmip
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+keyServerKmip オブジェクトは、 Key Management Interoperability Protocol （ KMIP ）キーサーバの詳細を示します。このキーサーバから、保存データの暗号化などのクラスタ機能で使用する認証キーを取得できます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+KeyProviderID
+ a| 
+KMIP キーサーバがプロバイダに割り当てられている場合、このメンバーには、割り当て先の KMIP キープロバイダの ID が含まれます。それ以外の場合、このメンバーは null です。
+ a| 
+整数
+
+
+
+ a| 
+KeyServerID
+ a| 
+KMIP キーサーバの ID 。キーサーバの作成時にクラスタによって割り当てられる一意の値です。この値は変更できません。
+ a| 
+整数
+
+
+
+ a| 
+kmipAssignedProviderIsActive のいずれかです
+ a| 
+KMIP キーサーバがプロバイダに割り当てられている場合（ keyProviderID が null でない場合）、このメンバーは、そのプロバイダがアクティブ（現在使用中のキーを提供している）かどうかを示します。それ以外の場合、このメンバーは null です。
+ a| 
+ブール値
+
+
+
+ a| 
+kmipCaCertificate
+ a| 
+外部キーサーバのルート CA の公開鍵証明書。これは、 TLS 通信で外部キーサーバから提示された証明書を検証するために使用されます。個々のサーバが異なる CA を使用するキーサーバクラスタの場合、このメンバーには、すべての CA のルート証明書の連結文字列が含まれます。
+ a| 
+文字列
+
+
+
+ a| 
+kmipClientCertificate
+ a| 
+Element ストレージ KMIP クライアントで使用される、 PEM 形式 Base64 エンコード PKCS#10 X.509 証明書。
+ a| 
+文字列
+
+
+
+ a| 
+kmipKeyServerHostName のように指定します
+ a| 
+KMIP キーサーバに関連付けられているホスト名または IP アドレス。
+ a| 
+文字列の配列
+
+
+
+ a| 
+kmipKeyServerName
+ a| 
+KMIP キーサーバの名前。この名前は表示目的でのみ使用され、一意である必要はありません。
+ a| 
+文字列
+
+
+
+ a| 
+kmipKeyServerPort の 1 つです
+ a| 
+KMIP キーサーバに関連付けられているポート番号（通常は 5696 ）。
+ a| 
+整数
+
+|===

@@ -1,0 +1,94 @@
+---
+permalink: api/reference_element_api_snapmirrornode.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorNode 
+summary: snapMirrorNode オブジェクトには、 SnapMirror 関係にあるデスティネーション ONTAP クラスタのノードに関する情報が含まれます。 
+---
+= snapMirrorNode の略
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorNode オブジェクトには、 SnapMirror 関係にあるデスティネーション ONTAP クラスタのノードに関する情報が含まれます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+デスティネーション ONTAP システムの ID 。
+ a| 
+整数
+
+
+
+ a| 
+名前
+ a| 
+ONTAP ノードの名前。
+ a| 
+文字列
+
+
+
+ a| 
+モデル
+ a| 
+ONTAP ノードのモデル。
+ a| 
+文字列
+
+
+
+ a| 
+シリアル番号
+ a| 
+ONTAP ノードのシリアル番号。
+ a| 
+文字列
+
+
+
+ a| 
+製品バージョン（ ProductVersion ）
+ a| 
+ONTAP 製品のバージョン。
+ a| 
+文字列
+
+
+
+ a| 
+isNodeHealthy
+ a| 
+ONTAP クラスタ内のノードの健常性。有効な値は次のとおり
+
+* 正しいです
+* いいえ
+
+ a| 
+文字列
+
+
+
+ a| 
+isNodeEligible のように表示
+ a| 
+ノードを ONTAP クラスタに追加できるかどうか。有効な値は次のとおり
+
+* 正しいです
+* いいえ
+
+ a| 
+文字列
+
+|===

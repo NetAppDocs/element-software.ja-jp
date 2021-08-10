@@ -1,0 +1,64 @@
+---
+permalink: api/reference_element_api_qospolicy.html 
+sidebar: sidebar 
+keywords: object,objects,QoSPolicy,QoS,policy,policies 
+summary: QoSPolicy オブジェクトには、 Element ソフトウェアを実行しているストレージクラスタの QoS ポリシーに関する情報が含まれます。 
+---
+= QoSPolicy のように表示
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+QoSPolicy オブジェクトには、 Element ソフトウェアを実行しているストレージクラスタの QoS ポリシーに関する情報が含まれます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+qosPolicyID
+ a| 
+QoSPolicy に対してストレージクラスタから自動的に割り当てられる一意の整数の識別子。
+ a| 
+整数
+
+
+
+ a| 
+名前
+ a| 
+QoS ポリシーの名前。例： gold 、 platinum 、 silver
+ a| 
+文字列
+
+
+
+ a| 
+QoS
+ a| 
+このポリシーが表す QoS 設定。
+ a| 
+xref:reference_element_api_qos.adoc[QoS]
+
+
+
+ a| 
+ボリューム ID
+ a| 
+このポリシーに関連付けられているボリュームのリスト。
+ a| 
+整数の配列
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_getqospolicy.adoc[GetQoSPolicy を参照してください]

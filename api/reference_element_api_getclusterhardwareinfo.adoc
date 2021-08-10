@@ -1,0 +1,99 @@
+---
+permalink: api/reference_element_api_getclusterhardwareinfo.html 
+sidebar: sidebar 
+keywords: get,getting,cluster,hardware,getclusterhardwareinfo 
+summary: GetClusterHardwareInfo メソッドを使用すると、クラスタ内のすべての Fibre Channel ノード、 iSCSI ノード、およびドライブのハードウェアステータスと情報を取得できます。通常は、メーカー、ベンダー、バージョン、およびその他の関連するハードウェア識別情報が含まれます。 
+---
+= GetClusterHardwareInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 GetClusterHardwareInfo 」メソッドを使用すると、クラスタ内のすべての Fibre Channel ノード、 iSCSI ノード、およびドライブのハードウェアステータスと情報を取得できます。通常は、メーカー、ベンダー、バージョン、およびその他の関連するハードウェア識別情報が含まれます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+を入力します
+ a| 
+応答に含めるハードウェア情報のタイプを指定します。有効な値は次のとおり
+
+* ドライブ：
++
+応答にドライブ情報のみをリストします。
+
+* nodes ：応答にノード情報のみをリストします。
+* all ：応答にドライブとノードの両方の情報を含めます。
+
+
+このパラメータを省略すると、 type は all とみなされます。
+ a| 
+文字列
+ a| 
+すべて
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+クラスタ HardwareInfo
+ a| 
+クラスタ内のすべてのノードとドライブのハードウェア情報。この出力の各オブジェクトには、指定したノードの ID が表示されます。
+ a| 
+xref:reference_element_api_hardwareinfo.adoc[hardwareInfo]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "GetClusterHardwareInfo",
+    "params": {
+        "type": "all"
+    },
+    "id": 1
+}
+----
+
+
+== 応答例
+
+この応答例は分量が多いため、補足のトピックに記載しています。
+
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_response_example_getclusterhardwareinfo.adoc[GetClusterHardwareInfo]

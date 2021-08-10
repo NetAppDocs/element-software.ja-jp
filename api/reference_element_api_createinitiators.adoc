@@ -1,0 +1,153 @@
+---
+permalink: api/reference_element_api_createinitiators.html 
+sidebar: sidebar 
+keywords: create,creating,initiator,CreateInitiators,WWPN,IQN,initiators 
+summary: CreateInitiators を使用すると、複数の新しいイニシエータ IQN または World Wide Port Name （ WWPN ）を作成し、オプションでエイリアスと属性を割り当てることができます。CreateInitiators を使用して新しいイニシエータを作成すると同時に、作成したイニシエータをボリュームアクセスグループに追加することもできます。 
+---
+= イニシエータを作成する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+CreateInitiators を使用すると、複数の新しいイニシエータ IQN または World Wide Port Name （ WWPN ）を作成し、オプションでエイリアスと属性を割り当てることができます。CreateInitiators を使用して新しいイニシエータを作成すると、ボリュームアクセスグループに追加することもできます。
+
+パラメータで指定されたイニシエータのいずれかの作成に失敗した場合、メソッドからエラーが返され、イニシエータは作成されません（一部だけを完了することはできません）。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+イニシエータ
+ a| 
+新しい各イニシエータの特性を含むオブジェクトのリスト。オブジェクト：
+
+* `alias` ：（任意）このイニシエータに割り当てるフレンドリ名。文字列
+* `attributes` ：（任意）このイニシエータに割り当てる一連の JSON 属性。（ JSON オブジェクト）。
+* chapUsername ：（オプション）このイニシエータの一意の CHAP ユーザ名作成時に指定せず、 requireChap が true の場合、イニシエータ名（ IQN ）が使用されます文字列
+* initiatorSecret ：（オプション）イニシエータの認証に使用する CHAP シークレット作成時に指定せず、 requireChap が true の場合、ランダムに生成されたシークレットが使用されます文字列
+* `name` ：（必須）作成するイニシエータ（ IQN または WWPN ）の名前。文字列
+* `re quireChap`: ( オプション ) このイニシエータのセッションログイン時に CHAP が必要な場合は 'Trueブール値
+* targetSecret ：（オプション）ターゲットの認証に使用される CHAP シークレット（相互 CHAP 認証を使用する場合）作成時に指定せず、 requireChap が true の場合、ランダムに生成されたシークレットが使用されます文字列
+* 「 virtualNetworkID 」：（任意）このイニシエータに関連付けられた仮想ネットワーク ID のリスト。仮想ネットワークを定義した場合、このイニシエータはそれらの仮想ネットワークにしかログインできません。仮想ネットワークを定義しない場合、このイニシエータはすべてのネットワークにログインできます。
+* volumeAccessGroupID ：（オプション）作成した新しいイニシエータを追加するボリュームアクセスグループの ID整数
+
+ a| 
+JSON オブジェクトの配列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+イニシエータ
+ a| 
+作成された新しいイニシエータの詳細を示すオブジェクトのリスト。
+ a| 
+xref:reference_element_api_initiator.adoc[イニシエータ] 配列
+
+|===
+
+
+== エラー
+
+このメソッドでは、次のエラーが返されることがあります。
+
+|===
+
+
+| 名前 | 説明 
+
+
+ a| 
+xInitiatorExists の一例です
+ a| 
+選択したイニシエータ名がすでに存在する場合に返されます。
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "id": 3291,
+  "method": "CreateInitiators",
+  "params": {
+    "initiators": [
+      {
+        "name": "iqn.1993-08.org.debian:01:288170452",
+        "alias": "example1"
+      },
+      {
+        "name": "iqn.1993-08.org.debian:01:297817012",
+        "alias": "example2"
+      }
+    ]
+  }
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 3291,
+  "result": {
+    "initiators": [
+      {
+        "alias": "example1",
+        "attributes": {},
+        "initiatorID": 145,
+        "initiatorName": "iqn.1993-08.org.debian:01:288170452",
+        "volumeAccessGroups": []
+      },
+      {
+        "alias": "example2",
+        "attributes": {},
+        "initiatorID": 146,
+        "initiatorName": "iqn.1993-08.org.debian:01:297817012",
+        "volumeAccessGroups": []
+      }
+    ]
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_listinitiators.adoc[ListInitiators の 1 つです]

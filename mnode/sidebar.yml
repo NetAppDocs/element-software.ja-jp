@@ -1,0 +1,56 @@
+---
+section: mnode
+title: 管理ノードを操作します
+entries:
+- title: 管理ノードの概要
+  url: "/mnode/task_mnode_work_overview.html"
+- title: 管理ノードをインストールまたはリカバリします
+  entries:
+  - title: 管理ノードをインストール
+    url: "/mnode/task_mnode_install.html"
+  - title: vCenter で NetApp HCC ロールを作成します
+    url: "/mnode/task_mnode_create_netapp_hcc_role_vcenter.html"
+  - title: ストレージネットワークインターフェイスコントローラ（ NIC ）の設定
+    url: "/mnode/task_mnode_install_add_storage_NIC.html"
+  - title: 管理ノードをリカバリ
+    url: "/mnode/task_mnode_recover.html"
+- title: 管理ノードにアクセスします
+  url: "/mnode/task_mnode_access_ui.html"
+- title: 管理ノード UI の操作
+  entries:
+  - title: 管理ノード UI の概要
+    url: "/mnode/task_mnode_work_overview_UI.html"
+  - title: アラートの監視を設定
+    url: "/mnode/task_mnode_enable_alerts.html"
+  - title: 管理ノードのネットワーク、クラスタ、およびシステムの設定を変更してテストする
+    url: "/mnode/task_mnode_settings.html"
+  - title: 管理ノードからシステムユーティリティを実行します
+    url: "/mnode/task_mnode_run_system_utilities.html"
+- title: 管理ノード REST API の操作
+  entries:
+  - title: 管理ノードの REST API UI の概要
+    url: "/mnode/task_mnode_work_overview_API.html"
+  - title: REST API を使用するための許可を取得する
+    url: "/mnode/task_mnode_api_get_authorizationtouse.html"
+  - title: Active IQ とネットアップによる監視を有効にします
+    url: "/mnode/task_mnode_enable_activeIQ.html"
+  - title: NetApp Hybrid Cloud Control を複数の vCenter に設定する
+    url: "/mnode/task_mnode_multi_vcenter_config.html"
+  - title: 管理ノードにコントローラアセットを追加します
+    url: "/mnode/task_mnode_add_assets.html"
+  - title: ストレージクラスタアセットを作成および管理する
+    url: "/mnode/task_mnode_manage_storage_cluster_assets.html"
+  - title: 既存のコントローラアセットを表示または編集する
+    url: "/mnode/task_mnode_edit_vcenter_assets.html"
+  - title: プロキシサーバを設定します
+    url: "/mnode/task_mnode_configure_proxy_server.html"
+  - title: 管理ノードの OS とサービスのバージョンを確認
+    url: "/mnode/task_mnode_api_find_mgmt_svcs_version.html"
+  - title: 管理サービスからログを取得しています
+    url: "/mnode/task_mnode_logs.html"
+- title: サポート接続を管理します
+  entries:
+  - title: リモートのネットアップサポートセッションを開始します
+    url: "/mnode/task_mnode_enable_remote_support_connections.html"
+  - title: 管理ノードで SSH 機能を管理します
+    url: "/mnode/task_mnode_ssh_management.html"

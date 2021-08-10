@@ -1,0 +1,120 @@
+---
+permalink: api/reference_element_api_checkproposednodeadditions.html 
+sidebar: sidebar 
+keywords: proposed,node,additions,CheckProposedNodeAdditions,storage,checking 
+summary: CheckProposedNodeAdditions メソッドを使用すると、一連のストレージノードをテストして、エラーやベストプラクティスの違反なしでストレージクラスタに追加できるかどうかを確認できます。 
+---
+= CheckProposedNodeAdditions
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 CheckProposedNodeAdditions 」メソッドを使用すると、一連のストレージノードをテストして、エラーやベストプラクティスの違反なしでストレージクラスタに追加できるかどうかを確認できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ノード
+ a| 
+ストレージクラスタに追加する準備ができているストレージノードのストレージ IP アドレスのリスト。
+ a| 
+文字列の配列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+提案されたクラスタ ID
+ a| 
+提示されたストレージノードで有効なストレージクラスタを構成できるかどうか。有効な値は次のとおり
+
+* 正しいです
+* いいえ
+
+ a| 
+ブール値
+
+
+
+ a| 
+提案されたクラスタエラー
+ a| 
+提示されたストレージノードを使用してストレージクラスタを作成した場合に発生するエラー。エラーコードは次のとおりです。
+
+* nodesNoCapacity ：ノードに使用可能な容量がありません。
+* nodesTooLarge ：アクティブな保護方式に対してクラスタ容量に占めるノードの割合が大きすぎます。
+* nodesConnectFailed ：ノードに接続できず ' ハードウェア構成を照会できません
+* nodesQueryFailed: ノードにハードウェア構成を照会できません。
+* nodesClusterMember ：ノードの IP アドレスがクラスタですでに使用されています。
+* nonFipsNodeCapable ： FIPS 140-2 ドライブ暗号化機能が有効になっているため ' ストレージ・クラスタに FIPS 非対応ノードを追加できません
+* 「 nonFipsDrivesCapable 」： FIPS 140-2 ドライブ暗号化機能が有効になっているため、クラスタに FIPS 非対応のドライブを含むノードを追加できません。
+
+ a| 
+文字列の配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+	"method": "CheckProposedNodeAdditions",
+	"params": {
+	"nodes": [
+		"192.168.1.11",
+		"192.168.1.12",
+		"192.168.1.13",
+		"192.168.1.14"
+	]
+},
+	"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"proposedClusterValid": true,
+		"proposedClusterErrors": [ ]
+	}
+}
+----
+
+
+== 新規導入バージョン
+
+11.0

@@ -1,0 +1,154 @@
+---
+permalink: api/reference_element_api_virtualvolume.html 
+sidebar: sidebar 
+keywords: object,objects,virtualVolume 
+summary: virtualVolume オブジェクトには、仮想ボリュームの情報と仮想ボリュームの Snapshot の情報が含まれます。稼働情報や使用状況に関する情報は含まれません。ListVirtualVolumes メソッドを使用すると、クラスタのこの情報を取得できます。 
+---
+= virtualVolume
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+virtualVolume オブジェクトには、仮想ボリュームの情報と仮想ボリュームの Snapshot の情報が含まれます。稼働情報や使用状況に関する情報は含まれません。ListVirtualVolumes メソッドを使用すると、クラスタのこの情報を取得できます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+バインド
+ a| 
+この仮想ボリュームのバインド ID のリスト。
+ a| 
+UUID の配列
+
+
+
+ a| 
+子供
+ a| 
+この仮想ボリュームの子である仮想ボリューム UUID のリスト。
+ a| 
+UUID の配列
+
+
+
+ a| 
+子孫
+ a| 
+ListVirtualVolumes メソッドに recursive ： true を渡すと、この仮想ボリュームの子である仮想ボリューム UUID のリストを含みます。
+ a| 
+UUID の配列
+
+
+
+ a| 
+メタデータ
+ a| 
+仮想ボリュームタイプやゲスト OS タイプなど、仮想ボリュームメタデータのキーと値のペア。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+parentVirtualVolumeID を指定します
+ a| 
+親仮想ボリュームの仮想ボリューム ID 。ID がすべてゼロの場合は、親へのリンクのない独立した仮想ボリュームです。
+ a| 
+UUID
+
+
+
+ a| 
+Snapshot ID
+ a| 
+基盤となるボリューム Snapshot の ID 。仮想ボリュームが Snapshot でない場合、この値は「 0 」です。
+ a| 
+整数
+
+
+
+ a| 
+Snapshot 情報
+ a| 
+関連する Snapshot の Snapshot オブジェクト（存在しない場合は null ）。
+ a| 
+xref:reference_element_api_snapshot.adoc[スナップショット]
+
+
+
+ a| 
+ステータス
+ a| 
+仮想ボリュームの現在のステータス。有効な値は次のとおり
+
+* cloning ：仮想ボリュームはクローンまたは Snapshot の処理に応じて処理されています。
+* waiting ：仮想ボリュームは Snapshot 処理が完了するのを待機しています。
+* ready ：仮想ボリュームは通常の用途で使用可能です。
+
+ a| 
+文字列
+
+
+
+ a| 
+ストレージコンテナ
+ a| 
+この仮想ボリュームを所有するストレージコンテナの詳細を示すオブジェクト。
+ a| 
+xref:reference_element_api_storagecontainer.adoc[ストレージコンテナ]
+
+
+
+ a| 
+virtualVolumeID
+ a| 
+仮想ボリュームの一意の ID 。
+ a| 
+UUID
+
+
+
+ a| 
+virtualVolumeType
+ a| 
+仮想ボリュームのタイプ。
+ a| 
+文字列
+
+
+
+ a| 
+ボリューム ID
+ a| 
+基盤となるボリュームの ID 。
+ a| 
+整数
+
+
+
+ a| 
+ボリューム情報
+ a| 
+ListVirtualVolumes メソッドに details ： true を渡すと、このメンバーはボリュームの詳細を示します。
+ a| 
+xref:reference_element_api_volume.adoc[ボリューム]
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_element_api_listvirtualvolumes.adoc[ListVirtualVolumes の場合]
+* xref:reference_element_api_snapshot.adoc[スナップショット]
+* xref:reference_element_api_storagecontainer.adoc[ストレージコンテナ]
+* xref:reference_element_api_volume.adoc[ボリューム]
+

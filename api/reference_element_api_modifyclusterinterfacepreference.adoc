@@ -1,0 +1,92 @@
+---
+permalink: api/reference_element_api_modifyclusterinterfacepreference.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,cluster,interface,preference,modifyclusterinterfacepreference 
+summary: ModifyClusterInterfacePreference メソッドを使用すると、 Element ソフトウェアを実行するストレージクラスタと統合されたシステムで、既存のクラスタインターフェイス設定を変更できます。このメソッドは内部で使用されます。 
+---
+= ModifyClusterInterfacePreference のこと
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 modifyClusterInterfacePreference メソッド」を使用すると、 Element ソフトウェアを実行するストレージクラスタと統合されたシステムで、既存のクラスタインターフェイス設定を変更できます。このメソッドは内部で使用されます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+名前
+ a| 
+変更するクラスタインターフェイス設定の名前。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+価値
+ a| 
+クラスタインターフェイス設定の新しい値。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+	"method": "ModifyClusterInterfacePreference",
+	"params": {
+	"name": "testname",
+	"value": "newvalue"
+},
+	"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {}
+}
+----
+
+
+== 新規導入バージョン
+
+11.0

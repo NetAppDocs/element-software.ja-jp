@@ -1,0 +1,121 @@
+---
+permalink: api/reference_element_api_listprotocolendpoints.html 
+sidebar: sidebar 
+keywords: protocol,endpoints,endpoint,list,listing,listprotocolendpoints 
+summary: ListProtocolEndpoints メソッドを使用すると、クラスタ内のすべてのプロトコルエンドポイントに関する情報を取得できます。プロトコルエンドポイントは、関連付けられた仮想ボリュームストレージコンテナへのアクセスを管理します。 
+---
+= ListProtocolEndpoints を指定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ListProtocolEndpoints 」メソッドを使用すると、クラスタ内のすべてのプロトコルエンドポイントに関する情報を取得できます。プロトコルエンドポイントは、関連付けられた仮想ボリュームストレージコンテナへのアクセスを管理します。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+protocolEndpointID
+ a| 
+情報を取得するプロトコルエンドポイント ID のリスト。このパラメータを省略すると、メソッドはすべてのプロトコルエンドポイントに関する情報を返します。
+ a| 
+protocolEndpointID UUID の配列
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+protocolEndpoints を指定します
+ a| 
+システム内の各プロトコルエンドポイントの情報を含むオブジェクトのリスト。
+ a| 
+xref:reference_element_api_protocolendpoint.adoc[ProtocolEndpoint] 配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "method": "ListProtocolEndpoints",
+  "params": {}
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "protocolEndpoints": [
+      {
+        "primaryProviderID": 1,
+        "protocolEndpointID": "1387e257-d2e3-4446-be6d-39db71583e7b",
+        "protocolEndpointState": "Active",
+        "providerType": "Primary",
+        "scsiNAADeviceID": "6f47acc2000000016970687200000000",
+        "secondaryProviderID": 2
+      },
+      {
+        "primaryProviderID": 2,
+        "protocolEndpointID": "1f16ed86-3f31-4c76-b004-a1251187700b",
+        "protocolEndpointState": "Active",
+        "providerType": "Primary",
+        "scsiNAADeviceID": "6f47acc2000000026970687200000000",
+        "secondaryProviderID": 3
+      },
+      {
+        "primaryProviderID": 4,
+        "protocolEndpointID": "c6458dfe-9803-4350-bb4e-68a3feb7e830",
+        "protocolEndpointState": "Active",
+        "providerType": "Primary",
+        "scsiNAADeviceID": "6f47acc2000000046970687200000000",
+        "secondaryProviderID": 1
+      },
+      {
+        "primaryProviderID": 3,
+        "protocolEndpointID": "f3e7911d-0e86-4776-97db-7468c272213f",
+        "protocolEndpointState": "Active",
+        "providerType": "Primary",
+        "scsiNAADeviceID": "6f47acc2000000036970687200000000",
+        "secondaryProviderID": 4
+      }
+    ]
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

@@ -1,0 +1,36 @@
+---
+permalink: storage/task_data_manage_vol_access_group_view_individual_access_group_details.html 
+sidebar: sidebar 
+keywords: access group details, view, view details, initiators 
+summary: 接続されているボリュームやイニシエータなど、個々のアクセスグループの詳細をグラフ形式で表示できます。 
+---
+= 個々のアクセスグループの詳細を表示します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+接続されているボリュームやイニシエータなど、個々のアクセスグループの詳細をグラフ形式で表示できます。
+
+. [* 管理 *>* アクセスグループ *] をクリックします。
+. アクセスグループの [ アクション ] アイコンをクリックします。
+. [ * 詳細の表示 * ] をクリックします。
+
+
+
+
+== ボリュームアクセスグループの詳細
+
+ボリュームアクセスグループについては、 Management （管理）タブの Access Groups （アクセスグループ）ページで確認できます。
+
+次の情報が表示されます。
+
+* *ID*: システムによって生成されたアクセスグループの ID 。
+* * 名前 * ：アクセスグループの作成時に指定した名前。
+* * Active Volumes * ：アクセスグループ内のアクティブボリュームの数。
+* * Compression * ：アクセスグループの圧縮による削減率。
+* * 重複排除 * ：アクセスグループの重複排除による削減率。
+* * Thin Provisioning * ：アクセスグループのシンプロビジョニングによる削減率。
+* * 全体的な削減率 * ：アクセスグループ全体の削減率。
+* * Initiators * ：アクセスグループに接続されているイニシエータの数。
+

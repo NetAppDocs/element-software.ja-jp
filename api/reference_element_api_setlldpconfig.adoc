@@ -1,0 +1,117 @@
+---
+permalink: api/reference_element_api_setlldpconfig.html 
+sidebar: sidebar 
+keywords: lldp,config,configure,set,setting,setlldpconfig 
+summary: SetLldpConfig メソッドを使用すると、ストレージクラスタのリンクレイヤ検出プロトコル（ LLDP ）を設定できます。 
+---
+= SetLldpConfig
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 setLldpConfig 」メソッドを使用すると、ストレージクラスタの Link Layer Discovery Protocol （ LLDP ）を設定できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+enableOtherProtocols
+ a| 
+CDP 、 FDP 、 EDP 、および SONMP の他の検出プロトコルの自動使用をイネーブルにします。
+ a| 
+ブール値
+ a| 
+正しいです
+ a| 
+いいえ
+
+
+
+ a| 
+イネーブル化
+ a| 
+Media Endpoint Discovery （ LLDP-MED ）を有効にします。
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+
+
+ a| 
+enableLldp
+ a| 
+LLDP を有効または無効にします
+ a| 
+ブール値
+ a| 
+正しいです
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+lldpConfig
+ a| 
+新しく変更された設定を含む、ストレージクラスタの現在の LLDP 設定に関する情報。
+ a| 
+JSON オブジェクト
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "id": 3920,
+  "method":"SetLldpConfig",
+    "params": {
+        "lldpConfig": {
+            "enableMed": true
+        }
+    }
+  }
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 3920,
+  "result": {
+    "lldpConfig": {
+        "enableLldp": true,
+        "enableMed": true,
+        "enableOtherProtocols": true
+     }
+  }
+}
+----

@@ -1,0 +1,41 @@
+---
+permalink: storage/task_snapmirror_create_an_endpoint.html 
+sidebar: sidebar 
+keywords: endpoints, create, snapmirror, ui 
+summary: 関係を作成する前に、 NetApp Element UI で SnapMirror エンドポイントを作成する必要があります。 
+---
+= SnapMirror エンドポイントを作成します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+関係を作成する前に、 NetApp Element UI で SnapMirror エンドポイントを作成する必要があります。
+
+SnapMirror エンドポイントは、 Element ソフトウェアを実行するクラスタのレプリケーションターゲットとして機能する ONTAP クラスタです。SnapMirror 関係を作成する前に、まず SnapMirror エンドポイントを作成します。
+
+Element ソフトウェアを実行しているストレージクラスタでは、 SnapMirror エンドポイントを最大 4 つまで作成して管理することができます。
+
+
+NOTE: API を使用して作成され、クレデンシャルが保存されていない既存のエンドポイントは、 Element UI には表示されて存在を確認することはできますが、 Element UI で管理することはできません。このエンドポイントを管理するには、 Element API を使用する必要があります。
+
+API メソッドの詳細については、を参照してください link:../api/index.html["Element API を使用してストレージを管理します"]。
+
+.必要なもの
+* ストレージクラスタの Element UI で SnapMirror を有効にしておく必要があります。
+* エンドポイントの ONTAP クレデンシャルを確認しておきます。
+
+
+.手順
+. [ * データ保護 * > * SnapMirror エンドポイント * ] をクリックします。
+. [ エンドポイントの作成 *] をクリックします。
+. Create a New Endpoint * ダイアログボックスで、 ONTAP システムのクラスタ管理 IP アドレスを入力します。
+. エンドポイントに関連付ける ONTAP 管理者クレデンシャルを入力します。
+. 追加の詳細を確認します。
++
+** ONTAP ： Element との通信に使用されるクラスタ間 LIF の論理インターフェイスを表示します。
+** Status ： SnapMirror エンドポイントの現在のステータスが表示されます。指定可能な値は、 connected 、 disconnected 、および unmanaged です。
+
+
+. [ エンドポイントの作成 *] をクリックします。
+

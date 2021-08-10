@@ -1,0 +1,90 @@
+---
+permalink: api/reference_element_api_createclusterinterfacepreference.html 
+sidebar: sidebar 
+keywords: cluster,interface,preferences,create,creating,CreateClusterInterfacePreference 
+summary: CreateClusterInterfacePreference メソッドを使用すると、 Element ソフトウェアを実行するストレージクラスタと統合されたシステムで、ストレージクラスタに任意の情報を作成して格納できます。このメソッドは内部で使用されます。 
+---
+= CreateClusterInterfacePreference
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+CreateClusterInterfacePreference メソッドを使用すると、 Element ソフトウェアを実行するストレージクラスタと統合されたシステムで、ストレージクラスタ上に任意の情報を作成して保存できます。このメソッドは内部で使用されます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+名前
+ a| 
+クラスタインターフェイス設定の名前。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+価値
+ a| 
+クラスタインターフェイス設定の値。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+		"method": "CreateClusterInterfacePreference",
+		"params": {
+			"name": "prefname",
+			"value": "testvalue"
+		},
+	"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {}
+}
+----
+
+
+== 新規導入バージョン
+
+11.0

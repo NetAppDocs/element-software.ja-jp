@@ -1,0 +1,22 @@
+---
+permalink: storage/task_system_manage_cluster_terms_disable_the_terms_of_use_banner.html 
+sidebar: sidebar 
+keywords: terms of use banner, disable 
+summary: 利用条件のバナーを無効にすることができます。バナーを無効にすると、ユーザが Element UI を使用する際に利用条件の同意を求められなくなります。 
+---
+= 利用条件のバナーを無効にします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+利用条件のバナーを無効にすることができます。バナーを無効にすると、ユーザが Element UI を使用する際に利用条件の同意を求められなくなります。
+
+* 利用条件を設定するには、クラスタ管理者の権限が必要です。
+* 利用条件が有効になっていることを確認します。
++
+.. [*Users*>*Terms of Use] をクリックします。
+.. [*Disable*] をクリックします。
+
+
+

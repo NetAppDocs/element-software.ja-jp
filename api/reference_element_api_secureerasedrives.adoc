@@ -1,0 +1,98 @@
+---
+permalink: api/reference_element_api_secureerasedrives.html 
+sidebar: sidebar 
+keywords: drive,drives,secure,erase,reset,resetting,encryption,key,secureerasedrives 
+summary: SecureEraseDrives メソッドを使用すると、ステータスが「 available 」のドライブに残っているデータをすべて削除できます。機密データが含まれていてサービス寿命の終わりに近づいているドライブを交換するときに、このメソッドを使用できます。このメソッドは、 Security Erase Unit コマンドを使用して事前に設定されたパターンをドライブに書き込み、ドライブの暗号化キーをリセットします。この非同期メソッドが完了するまでに数分かかることがあります。 
+---
+= SecureEraseDrives の 2 つの特長を説明
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ecureEraseDrives 」メソッドを使用すると、ステータスが「 available 」のドライブに残っているデータをすべて削除できます。機密データが含まれていてサービス寿命の終わりに近づいているドライブを交換するときに、このメソッドを使用できます。このメソッドは、 Security Erase Unit コマンドを使用して事前に設定されたパターンをドライブに書き込み、ドライブの暗号化キーをリセットします。この非同期メソッドが完了するまでに数分かかることがあります。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ドライブ
+ a| 
+完全消去の対象となるドライブ ID のリスト。
+ a| 
+整数の配列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+asyncHandle
+ a| 
+処理結果の取得に使用されるハンドル値。
+ a| 
+整数
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "SecureEraseDrives",
+   "params": {
+     "drives"  : [3, 4, 5]
+   },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id" : 1
+   "result" : {
+     "asyncHandle" : 1
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_element_api_getasyncresult.adoc[GetAsyncResult]
+* xref:reference_element_api_listdrives.adoc[ListDrives の 2 つのメソッド]
+

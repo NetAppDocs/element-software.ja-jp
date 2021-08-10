@@ -1,0 +1,299 @@
+---
+permalink: api/reference_element_api_getclusterfullthreshold.html 
+sidebar: sidebar 
+keywords: cluster,get,getting,full,threshold,level,fullness,storage,capacity,getclusterfullthreshold 
+summary: GetClusterFullThreshold メソッドを使用すると、クラスタフルレベルに設定された各ステージを表示できます。このメソッドは、すべてのクラスタフル指標を返します。 
+---
+= 「 getClusterFullThreshold 」
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetClusterFullThreshold メソッドを使用すると、クラスタフルレベルに設定されたステージを表示できます。このメソッドは、すべてのクラスタフル指標を返します。
+
+
+NOTE: クラスタがブロッククラスタフルの Error ステージに達すると、クラスタが Critical ステージに近づくにつれて、すべてのボリュームの最大 IOPS がボリュームの最小 IOPS へと直線的に引き下げられます。これにより、クラスタがブロッククラスタフルの Critical ステージに達するのを防ぐことができます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+blockFullness
+ a| 
+クラスタの現在のブロックフルレベル。
+
+* stage1Happy ：アラートまたはエラー状態はありません。Web UI の「 * Healthy * 」状態に相当します。
+* stage2Aware ：アラートまたはエラー状態はありません。Web UI の「 * Healthy * 」状態に相当します。
+* stage3Low ： 2 つのノードで時間をおいて障害が発生した場合、冗長データ保護は提供されません。Web UI の * Warning * 状態に相当します。このレベルは Web UI で設定できます（デフォルトでは、このアラートは Error 状態の 3% 下の容量でトリガーされます）。
+* stage4Critical ： 1 つのノードの障害からの冗長データ保護は提供されません。新しいボリュームやクローンを作成することはできません。Element UI の * Error * 状態に相当します。
+* stage5CompletelyConsumed ：すべての容量が消費されています。クラスタは読み取り専用になり、 iSCSI 接続は維持されますが、書き込みはすべて中断されます。Element UI の * Critical * 状態に相当します。
+
+ a| 
+文字列
+
+
+
+ a| 
+使用率
+ a| 
+「 blockFullness 」と「 metadataFullness 」のうち、より容量が不足している方の値が反映されます。
+ a| 
+文字列
+
+
+
+ a| 
+最大 MetadataOverProvisionFactor
+ a| 
+使用可能なスペースに対して、メタデータスペースをプロビジョニングできる回数。たとえば、 100TiB 分のボリュームを格納するのに十分なメタデータスペースがある場合、この数値を「 5 」に設定すると、 500TiB 分のボリュームを作成できます。
+ a| 
+整数
+
+
+
+ a| 
+メタデータの容量が不足しています
+ a| 
+クラスタの現在のメタデータフルレベル。
+
+* stage1Happy ：アラートまたはエラー状態はありません。Web UI の「 * Healthy * 」状態に相当します。
+* stage2Aware ：アラートまたはエラー状態はありません。Web UI の「 * Healthy * 」状態に相当します。
+* stage3Low ： 2 つのノードで時間をおいて障害が発生した場合、冗長データ保護は提供されません。Web UI の * Warning * 状態に相当します。このレベルは Web UI で設定できます（デフォルトでは、このアラートは Error 状態の 3% 下の容量でトリガーされます）。
+* stage4Critical ： 1 つのノードの障害からの冗長データ保護は提供されません。新しいボリュームやクローンを作成することはできません。Element UI の * Error * 状態に相当します。
+* stage5CompletelyConsumed ：すべての容量が消費されています。クラスタは読み取り専用になり、 iSCSI 接続は維持されますが、書き込みはすべて中断されます。Element UI の * Critical * 状態に相当します。
+
+ a| 
+文字列
+
+
+
+ a| 
+sliceReserveUsedThresholdPct を使用します
+ a| 
+エラー状態。予約済みスライス使用率がこの値を超えると、システムアラートがトリガーされます。
+ a| 
+整数
+
+
+
+ a| 
+stage2AwareThreshold の値
+ a| 
+認識状態。ステージ 2 のクラスタしきい値レベルに設定された値。
+ a| 
+整数
+
+
+
+ a| 
+stage2BlockThresholdBytes
+ a| 
+ステージ 2 の状態が存在するクラスタで使用されているバイト数。
+ a| 
+整数
+
+
+
+ a| 
+stage2MetadataThresholdBytes
+ a| 
+ステージ 2 のスペース不足が発生するクラスタで使用されているメタデータのバイト数。
+ a| 
+
+
+
+ a| 
+stage3BlockThresholdBytes
+ a| 
+クラスタで使用されているストレージバイトのうち、「ステージ 3 のスペース不足」状態になるストレージバイトの数。
+ a| 
+整数
+
+
+
+ a| 
+stage3BlockThresholdPercent
+ a| 
+ステージ 3 に設定されたパーセント値。この割合に達すると、アラートログに警告が記録されます。
+ a| 
+整数
+
+
+
+ a| 
+stage3LowThreshold をクリックします
+ a| 
+エラー状態。クラスタの容量低下が原因でシステムアラートが作成されるしきい値。
+ a| 
+整数
+
+
+
+ a| 
+stage3MetadataThresholdBytes
+ a| 
+ステージ 3 のスペース不足状態になる、クラスタで使用されているメタデータのバイト数。
+ a| 
+整数
+
+
+
+ a| 
+stage3MetadataThresholdPercent
+ a| 
+メタデータフルの「ステージ 3 」に設定されたパーセント値。この割合に達すると、アラートログに警告が記録されます。
+ a| 
+整数
+
+
+
+ a| 
+stage4BlockThresholdBytes
+ a| 
+ステージ 4 のスペース不足が発生する、クラスタで使用されているストレージのバイト数。
+ a| 
+整数
+
+
+
+ a| 
+stage4CriticalThreshold
+ a| 
+エラー状態。クラスタの容量の深刻な低下を警告するためにシステムアラートが作成されるしきい値。
+ a| 
+整数
+
+
+
+ a| 
+stage4MetadataThresholdBytes
+ a| 
+ステージ 4 のスペース不足状態になる、クラスタで使用されているメタデータのバイト数。
+ a| 
+整数
+
+
+
+ a| 
+stage5BlockThresholdBytes
+ a| 
+ステージ 5 のスペース不足が発生する、クラスタで使用されているストレージのバイト数。
+ a| 
+整数
+
+
+
+ a| 
+stage5MetadataThresholdBytes
+ a| 
+ステージ 5 のスペース不足状態になる、クラスタで使用されているメタデータのバイト数。
+ a| 
+整数
+
+
+
+ a| 
+sumTotalClusterBytes
+ a| 
+クラスタの物理容量（バイト単位）。
+ a| 
+整数
+
+
+
+ a| 
+sumTotalMetadataClusterBytes
+ a| 
+メタデータの格納に使用できるスペースの総容量。
+ a| 
+整数
+
+
+
+ a| 
+sumUsedClusterBytes の値
+ a| 
+クラスタで使用されているストレージのバイト数。
+ a| 
+整数
+
+
+
+ a| 
+sumUsedMetadataClusterBytes
+ a| 
+ボリュームドライブでメタデータの格納に使用されているスペースの量。
+ a| 
+整数
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method" : "GetClusterFullThreshold",
+   "params" : {},
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id":1,
+  "result":{
+    "blockFullness":"stage1Happy",
+    "fullness":"stage3Low",
+    "maxMetadataOverProvisionFactor":5,
+    "metadataFullness":"stage3Low",
+    "sliceReserveUsedThresholdPct":5,
+    "stage2AwareThreshold":3,
+    "stage2BlockThresholdBytes":2640607661261,
+    "stage3BlockThresholdBytes":8281905846682,
+    "stage3BlockThresholdPercent":5,
+    "stage3LowThreshold":2,
+    "stage4BlockThresholdBytes":8641988709581,
+    "stage4CriticalThreshold":1,
+    "stage5BlockThresholdBytes":12002762096640,
+    "sumTotalClusterBytes":12002762096640,
+    "sumTotalMetadataClusterBytes":404849531289,
+    "sumUsedClusterBytes":45553617581,
+    "sumUsedMetadataClusterBytes":31703113728
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_modifyclusterfullthreshold.adoc[ModifyClusterFullThreshold のでした]

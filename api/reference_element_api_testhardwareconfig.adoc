@@ -1,0 +1,107 @@
+---
+permalink: api/reference_element_api_testhardwareconfig.html 
+sidebar: sidebar 
+keywords: node,test,testing,hardware,config,configuration,testhardwareconfig 
+summary: TestHardwareConfig メソッドを使用すると、ノードでハードウェアテストを実行できます。テストオプションには、ハードウェア構成やファームウェアバージョンの確認、すべてのドライブが存在することの確認が含まれます。 
+---
+= TestHardwareConfig
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 TestHardwareConfig 」メソッドを使用すると、ノードでハードウェアテストを実行できます。テストオプションには、ハードウェア構成やファームウェアバージョンの確認、すべてのドライブが存在することの確認が含まれます。
+
+
+
+== パラメータ
+
+
+NOTE: このテストは、ハードウェア障害の検出を目的としたものではありません。
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+清潔
+ a| 
+ハードウェア構成テストをクリーンなキャッシュで開始します。有効な値は次のとおり
+
+* true ：キャッシュされたテスト結果ファイルを削除し、テストを再実行します。
+* false ：キャッシュされたテスト結果を取得します。
+
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+
+
+ a| 
+[-force]
+ a| 
+ノードをリセットするには、このメソッドに force パラメータを含める必要があります。
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+詳細
+ a| 
+ハードウェア構成の詳細。
+ a| 
+JSON オブジェクト
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "TestHardwareConfig",
+   "params": {
+      "force": true
+     },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+この応答例は分量が多いため、補足のトピックに記載しています。
+
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_response_example_testhardwareconfig.adoc[TestHardwareConfig]

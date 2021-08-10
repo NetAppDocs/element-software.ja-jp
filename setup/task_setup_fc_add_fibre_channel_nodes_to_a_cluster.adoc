@@ -1,0 +1,42 @@
+---
+permalink: setup/task_setup_fc_add_fibre_channel_nodes_to_a_cluster.html 
+sidebar: sidebar 
+keywords:  
+summary: ストレージの追加が必要になったとき、またはクラスタ作成時に、クラスタに Fibre Channel ノードを追加できます。Fibre Channel ノードは、初回の電源投入時に初期設定を行う必要があります。設定が完了したノードは保留状態のノードのリストに表示され、クラスタに追加できます。 
+---
+= クラスタに Fibre Channel ノードを追加します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージの追加が必要になったとき、またはクラスタ作成時に、クラスタに Fibre Channel ノードを追加できます。Fibre Channel ノードは、初回の電源投入時に初期設定を行う必要があります。設定が完了したノードは保留状態のノードのリストに表示され、クラスタに追加できます。
+
+クラスタ内の各 Fibre Channel ノードは、互換性のあるソフトウェアバージョンを実行している必要があります。クラスタに Fibre Channel ノードを追加すると、必要に応じて新しいノードに Element のクラスタバージョンがインストールされます。
+
+.手順
+. [* Cluster*>* Nodes] を選択します。
+. 保留中のノードのリストを表示するには、 * Pending * をクリックします。
+. 次のいずれかを実行します。
++
+** 個々のノードを追加するには、追加するノードの * Actions * アイコンをクリックします。
+** 複数のノードを追加するには、追加するノードのチェックボックスをオンにし、 * Bulk Actions * を実行します。
++
+
+NOTE: 追加するノードの Element のバージョンがクラスタで実行されているバージョンと異なる場合は、クラスタマスターで実行されている Element のバージョンに非同期的に更新されます。更新されたノードは、自動的にクラスタに追加されます。この非同期プロセスの実行中、ノードの状態は pendingActive になります。
+
+
+
+. [ 追加（ Add ） ] をクリックします。
++
+ノードがアクティブノードのリストに表示されます。
+
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

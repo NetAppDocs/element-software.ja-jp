@@ -1,0 +1,104 @@
+---
+permalink: api/reference_element_api_deleteauthsessionsbyclusteradmin.html 
+sidebar: sidebar 
+keywords: auth sessions,cluster,admin,delete,authentication sessions 
+summary: DeleteAuthSessionsByClusterAdmin メソッドを使用すると、指定した ClusterAdminID に関連付けられているすべての認証セッションを削除できます。指定した ClusterAdminID がユーザのグループにマッピングされている場合、そのグループのすべてのメンバーのすべての認証セッションが削除されます。削除可能なセッションのリストを表示するには、 ClusterAdminID パラメータを指定して ListAuthSessionsByClusterAdmin メソッドを使用します。 
+---
+= DeleteAuthSessionsByClusterAdmin
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 D eleteAuthSessionsByClusterAdmin 」メソッドを使用すると、指定した「 ClusterAdminID 」に関連付けられているすべての認証セッションを削除できます。指定した ClusterAdminID がユーザのグループにマッピングされている場合、そのグループのすべてのメンバーのすべての認証セッションが削除されます。削除可能なセッションのリストを表示するには 'ClusterAdminID' パラメータを指定して ListAuthSessionsByClusterAdmin メソッドを使用します
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+clusterAdminID
+ a| 
+クラスタ管理者の一意の識別子。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+セッション
+ a| 
+削除された認証セッションのセッション情報。
+ a| 
+link:reference_element_api_authsessioninfo.md#GUID-FF0CE38C-8F99-4F23-8A6F-F6EA4487E808["authSessionInfo"]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "DeleteAuthSessionsByClusterAdmin",
+  "params": {
+    "clusterAdminID": 1
+  }
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+"sessions": [
+      {
+        "accessGroupList": [
+          "administrator"
+        ],
+        "authMethod": "Cluster",
+        "clusterAdminIDs": [
+          1
+        ],
+        "finalTimeout": "2020-03-14T19:21:24Z",
+        "idpConfigVersion": 0,
+        "lastAccessTimeout": "2020-03-11T19:51:24Z",
+        "sessionCreationTime": "2020-03-11T19:21:24Z",
+        "sessionID": "b12bfc64-f233-44df-8b9f-6fb6c011abf7",
+        "username": "admin"
+      }
+    ]
+}
+----
+
+
+== 新規導入バージョン
+
+12.0

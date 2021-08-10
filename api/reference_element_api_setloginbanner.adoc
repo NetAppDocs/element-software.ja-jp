@@ -1,0 +1,124 @@
+---
+permalink: api/reference_element_api_setloginbanner.html 
+sidebar: sidebar 
+keywords: terms,use,banner,configure,set,setting,setloginbanner,login 
+summary: SetLoginBanner メソッドを使用すると、ユーザが Element Web インターフェイスにログインしたときに表示される利用条件バナーを設定できます。 
+---
+= SetLoginBanner
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 setLoginBanner 」メソッドを使用すると、ユーザが Element Web インターフェイスにログインしたときに表示される利用条件バナーを設定できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+バナー
+ a| 
+利用条件バナーに表示するテキスト。最大文字数は 4 、 096 文字です。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+有効
+ a| 
+利用条件バナーのステータス。有効な値は次のとおり
+
+* 「 true 」： Web インターフェイスにログインしたときに利用条件バナーが表示されます。
+* `false` ：利用条件バナーは、 Web インターフェイスのログイン時に表示されません。
+
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+バナー
+ a| 
+利用条件バナーの現在のテキスト。この値には、バナーが無効になっている場合でもテキストが含まれます。
+ a| 
+文字列
+
+
+
+ a| 
+有効
+ a| 
+利用条件バナーのステータス。有効な値は次のとおり
+
+* true ： Web インターフェイスにログインしたときに利用条件バナーが表示されます。
+* false ： Web インターフェイスにログインしたときに利用条件バナーが表示されません。
+
+ a| 
+ブール値
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "id": 3920,
+  "method": "SetLoginBanner",
+  "params": {
+    "banner": "Welcome to NetApp!",
+    "enabled": true
+  }
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 3920,
+  "result": {
+    "loginBanner": {
+      "banner": "Welcome to NetApp!",
+      "enabled": true
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+10.0

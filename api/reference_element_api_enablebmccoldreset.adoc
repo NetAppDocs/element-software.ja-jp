@@ -1,0 +1,93 @@
+---
+permalink: api/reference_element_api_enablebmccoldreset.html 
+sidebar: sidebar 
+keywords: BMC cold reset,BMC reset,enable BMC 
+summary: EnableBmcColdReset メソッドを使用すると、クラスタ内のすべてのノードのベースボード管理コントローラ \ （ BMC\ ）を定期的にリセットするバックグラウンドタスクを有効にできます。 
+---
+= EnableBmcColdReset
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 EnableBmcColdReset 」メソッドを使用すると、クラスタ内のすべてのノードのベースボード管理コントローラ（ BMC ）を定期的にリセットするバックグラウンドタスクを有効にできます。
+
+
+NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+タイムアウト
+ a| 
+BMC のリセット処理の間隔（分）。
+ a| 
+整数
+ a| 
+20160 分
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+cBmcResetDurationMinutes
+ a| 
+リセット間隔の時間を返します。この間隔は、コマンドの完了後は常に 0 にする必要があります。
+ a| 
+整数
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+    "method": "EnableBmcColdReset",
+    "params": {
+                "timeout": 36000
+    },
+    "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "cBmcResetDurationMinutes": 36000
+    }
+}
+----
+
+
+== 新規導入バージョン
+
+12.0

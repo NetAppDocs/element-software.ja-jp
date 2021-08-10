@@ -1,0 +1,157 @@
+---
+permalink: api/reference_element_api_resetnode.html 
+sidebar: sidebar 
+keywords:  
+summary: ResetNode メソッドを使用すると、ノードを工場出荷時の設定にリセットできます。このメソッドを呼び出すと、すべてのデータ、パッケージ \ （ソフトウェアアップグレードなど）、設定、およびログファイルがノードから削除されます。ただし、ノードのネットワーク設定は、この処理の実行中も維持されます。クラスタに参加しているノードは工場出荷時の設定にリセットされません。 
+---
+= ResetNode サービスの略
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ResetNode メソッドを使用すると、ノードを工場出荷時の設定にリセットできます。このメソッドを呼び出すと、すべてのデータ、パッケージ（ソフトウェアアップグレードなど）、設定、およびログファイルがノードから削除されます。ただし、ノードのネットワーク設定は、この処理の実行中も維持されます。クラスタに参加しているノードは工場出荷時の設定にリセットされません。
+
+
+NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
+
+
+
+== パラメータ
+
+ResetNode API は、「 Available 」状態のノードでのみ使用できます。クラスタで「 Active 」状態のノードや「 Pending 」状態のノードでは使用できません。
+
+注意
+
+このメソッドは、ノード上のすべての顧客データをクリアします。
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+構築
+ a| 
+ノードをリセットするリモート Element ソフトウェアイメージの URL を指定します。
+ a| 
+URL
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+[-force]
+ a| 
+true に設定すると、ノードがリセットされます。
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+オプション（ Options ）
+ a| 
+リセット処理を実行するための詳細を入力します。詳細が必要な場合は、ネットアップサポートにお問い合わせください。
+ a| 
+JSON オブジェクト
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ResetNode",
+   "params": {
+      "build" : "file:///sf/rtfi/image/filesystem.squashfs",
+      "force" : true
+              },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": null,
+  "result": {
+    "rtfiInfo": {
+      "build": "file:///sf/rtfi/image/filesystem.squashfs",
+      "generation": "9",
+      "options": {
+        "edebug": "",
+        "sf_auto": "0",
+        "sf_bond_mode": "ActivePassive",
+        "sf_check_hardware": "0",
+        "sf_disable_otpw": "0",
+        "sf_fa_host": "",
+        "sf_hostname": "SF-FA18",
+        "sf_inplace": "1",
+        "sf_inplace_die_action": "kexec",
+        "sf_inplace_safe": "0",
+        "sf_keep_cluster_config": "0",
+        "sf_keep_data": "0",
+        "sf_keep_hostname": "0",
+        "sf_keep_network_config": "0",
+        "sf_keep_paths": "\"/var/log/hardware.xml\"",
+        "sf_max_archives": "5",
+        "sf_nvram_size": "",
+        "sf_oldroot": "",
+        "sf_postinst_erase_root_drive": "0",
+        "sf_root_drive": "",
+        "sf_rtfi_cleanup_state": "",
+        "sf_secure_erase": "1",
+        "sf_secure_erase_retries": "5",
+        "sf_slice_size": "",
+        "sf_ssh_key": "1",
+        "sf_ssh_root": "1",
+        "sf_start_rtfi": "1",
+        "sf_status_httpserver": "1",
+        "sf_status_httpserver_stop_delay": "5m",
+        "sf_status_inject_failure": "",
+        "sf_status_json": "0",
+        "sf_support_host": "sfsupport.solidfire.com",
+        "sf_test_hardware": "0",
+        "sf_upgrade": "0",
+        "sf_upgrade_firmware": "0",
+        "sf_upload_logs_url": ""
+     },
+      "statusUrlAll": "http://192.168.130.20/status/all.json",
+      "statusUrlCurrent": "http://192.168.130.20/status/current.json"
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

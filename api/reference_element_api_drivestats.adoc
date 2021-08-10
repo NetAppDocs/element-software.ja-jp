@@ -1,0 +1,190 @@
+---
+permalink: api/reference_element_api_drivestats.html 
+sidebar: sidebar 
+keywords: object,objects,driveStats 
+summary: driveStats オブジェクトには、 1 つのドライブのアクティビティ測定値の概要が含まれます。API メソッド GetDriveStats を使用すると、測定情報を取得できます。 
+---
+= driveStats
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+driveStats オブジェクトには、 1 つのドライブのアクティビティ測定値の概要が含まれます。API メソッドの GetDriveStats を使用すると ' 測定情報を取得できます
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ActiveSessions （アクティブセッション）
+ a| 
+このドライブを現在使用している iSCSI セッションの数（メタデータドライブの場合にのみ表示）。
+ a| 
+整数
+
+
+
+ a| 
+driveID
+ a| 
+クラスタ内のドライブの一意の ID 。
+ a| 
+整数
+
+
+
+ a| 
+failedDieCount （失敗したディーカウント
+ a| 
+障害が発生したドライブハードウェアの数。
+ a| 
+整数
+
+
+
+ a| 
+lifeRemainingPercent （ライフリミンセント）
+ a| 
+ドライブメディア摩耗インジケータ。
+ a| 
+整数
+
+
+
+ a| 
+lifetimeReadBytes
+ a| 
+ドライブの寿命を通じてこのドライブから読み込んだ総バイト数。
+ a| 
+整数
+
+
+
+ a| 
+lifetimeWriteBytes
+ a| 
+ドライブの寿命を通じてこのドライブに書き込まれた総バイト数。
+ a| 
+整数
+
+
+
+ a| 
+PowerOnHours
+ a| 
+このドライブの電源をオンにしている時間。
+ a| 
+整数
+
+
+
+ a| 
+readBytes
+ a| 
+クライアント処理によりドライブから読み取られた総バイト数。
+ a| 
+整数
+
+
+
+ a| 
+readOps
+ a| 
+クライアント処理によりドライブに対して実行された読み取り処理の合計回数。
+ a| 
+整数
+
+
+
+ a| 
+再割り当て済みセレクタ
+ a| 
+このドライブで置き換えられた不良セクター数。
+ a| 
+整数
+
+
+
+ a| 
+reserveCapacityPercent
+ a| 
+ドライブの使用可能なリザーブ容量。
+ a| 
+整数
+
+
+
+ a| 
+タイムスタンプ
+ a| 
+現在の時刻（ UTC+0 形式）。
+ a| 
+ISO 8601 形式の日付文字列
+
+
+
+ a| 
+合計容量
+ a| 
+ドライブの総容量（バイト）。
+ a| 
+整数
+
+
+
+ a| 
+修正不可能なエラー
+ a| 
+ドライブの Self-Monitoring 、 Analysis and Reporting Technology （ SMART ）監視システムから報告された修正不可能なエラーの値。
+ a| 
+整数
+
+
+
+ a| 
+使用容量
+ a| 
+ドライブの使用済み容量（バイト）。
+ a| 
+整数
+
+
+
+ a| 
+usedMemory の略
+ a| 
+このドライブをホストするノードで現在使用されているメモリの量。
+ a| 
+整数
+
+
+
+ a| 
+writeBytes のこと
+ a| 
+クライアントアクティビティによってドライブに書き込まれた総バイト数。
+ a| 
+整数
+
+
+
+ a| 
+writeOps
+ a| 
+クライアントアクティビティによりドライブに対して実行された書き込み処理の合計回数。
+ a| 
+整数
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_getdrivestats.adoc[GetDriveStats]

@@ -1,0 +1,129 @@
+---
+permalink: api/reference_element_api_modifystoragecontainer.html 
+sidebar: sidebar 
+keywords: virtual,volume,storage,container,vvol,modify,modifying,change,changing,edit,editing 
+summary: ModifyStorageContainer メソッドを使用すると、既存の仮想ボリュームストレージコンテナに変更を加えることができます。 
+---
+= ModifyStorageContainer の追加
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 modifyStorageContainer 」メソッドを使用すると、既存の仮想ボリュームストレージコンテナに変更を加えることができます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+storageContainerID です
+ a| 
+変更する仮想ボリュームストレージコンテナの一意の ID 。
+ a| 
+UUID
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+イニシエータシークレット
+ a| 
+イニシエータの CHAP 認証用の新しいシークレット。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+targetSecret
+ a| 
+ターゲットの CHAP 認証用の新しいシークレット。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ストレージコンテナ
+ a| 
+新たに作成されたストレージコンテナに関する情報。
+ a| 
+xref:reference_element_api_storagecontainer.adoc[ストレージコンテナ]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "ModifyStorageContainer",
+    "params": {
+      "storageContainerID": "6c95e24f-9f0b-4793-affb-5a4bc6c3d7e1",
+      "targetSecret": "O,IM;tOQdn9$JJ*8"
+    },
+    "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "storageContainer": {
+      "accountID": 8,
+      "initiatorSecret": "T$|5TO>2IY5sk4@k",
+      "name": "doctest1",
+      "protocolEndpointType": "SCSI",
+      "status": "active",
+      "storageContainerID": "6c95e24f-9f0b-4793-affb-5a4bc6c3d7e1",
+      "targetSecret": "O,IM;tOQdn9$JJ*8"
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

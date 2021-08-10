@@ -1,0 +1,55 @@
+---
+permalink: api/reference_element_api_protectiondomainlevel.html 
+sidebar: sidebar 
+keywords: object,objects,protectionDomainLevel 
+summary: protectionDomainLevel オブジェクトには、ストレージクラスタの現在の許容レベルおよび耐障害性レベルに関する情報が含まれます。トレランスレベルは、障害が発生した場合にクラスタがデータの読み取りと書き込みを継続できるかどうかを示し、耐障害性レベルは、関連付けられたタイプの保護ドメイン内の 1 つ以上の障害からクラスタを自動的に修復できるかどうかを示します。 
+---
+= protectionDomainLevel の値
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+protectionDomainLevel オブジェクトには、ストレージクラスタの現在のトレランスレベルと耐障害性レベルに関する情報が含まれます。トレランスレベルは障害が発生した際にクラスタがデータの読み取りと書き込みを続行できるかどうか、耐障害性レベルは関連付けられたタイプの保護ドメイン内の 1 つ以上の障害からクラスタが自動で自己回復できるかどうかを示します。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+protectionDomainType
+ a| 
+トレランスと耐障害性が関連付けられている保護ドメインのタイプ。有効な値は次のとおり
+
+* Node ：個々のノード。
+* Chassis ：単一のシャーシ内の個々のノードまたはすべてのストレージノード。
+* カスタム：お客様が定義した単一の保護ドメイン内のすべてのストレージノード。
+
+ a| 
+文字列
+
+
+
+ a| 
+耐障害性
+ a| 
+この保護ドメインタイプから見た、このクラスタの現在の耐障害性。
+ a| 
+xref:reference_element_api_protectiondomainresiliency.adoc[protectionDomainResiliency]
+
+
+
+ a| 
+公差（ Tolerance ）
+ a| 
+この保護ドメインタイプから見た、このクラスタの現在のトレランス。
+ a| 
+xref:reference_element_api_protectiondomaintolerance.adoc[protectionDomainTolerance]
+
+|===

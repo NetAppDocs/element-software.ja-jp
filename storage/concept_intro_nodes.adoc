@@ -1,0 +1,13 @@
+---
+permalink: storage/concept_intro_nodes.html 
+sidebar: sidebar 
+keywords: sf-series nodes, nodes, block storage, storage nodes, fibre channel nodes, fc, FC 
+summary: ノードは個別のハードウェアコンポーネントで、クラスタにグループ化され、ブロックストレージとしてアクセスされます。SolidFire ストレージシステムには、ストレージノードと Fibre Channel ノードの 2 種類のノードがあります。 
+---
+= ノード
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ノードは個別のハードウェアコンポーネントで、クラスタにグループ化され、ブロックストレージとしてアクセスされます。SolidFire ストレージシステムには、ストレージノードと Fibre Channel ノードの 2 種類のノードがあります。

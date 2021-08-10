@@ -1,0 +1,44 @@
+---
+permalink: storage/reference_post_deploy_change_default_ssl_certificate.html 
+sidebar: sidebar 
+keywords: ssl certificate, SSL, private key, self-signed, cluster, nodes, user-defined certificate, API, change default certificate, certificate, Element API 
+summary: NetApp Element API を使用して、クラスタ内のストレージノードのデフォルト SSL 証明書と秘密鍵を変更できます。 
+---
+= Element ソフトウェアのデフォルトの SSL 証明書を変更
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetAppElement API を使用して、クラスタ内のストレージノードのデフォルト SSL 証明書と秘密鍵を変更できます。
+
+NetApp Element ソフトウェアクラスタを作成すると、一意の自己署名 Secure Sockets Layer （ SSL ）証明書と、 Element UI 、ノード UI 、またはノード API を介したすべての HTTPS 通信に使用される秘密鍵が作成されます。Element ソフトウェアは、自己署名証明書に加え、信頼できる認証局（ CA ）が発行して検証する証明書をサポートします。
+
+次の API メソッドを使用して、デフォルトの SSL 証明書に関する詳細情報を取得し、変更を加えることができます。
+
+各メソッドの詳細については、を参照してください link:../api/index.html["NetApp Element ソフトウェア API リファレンス"]。
+
+* * GetSSLCertificate*
++
+このメソッドを使用すると、すべての証明書の詳細を含む、現在インストールされている SSL 証明書に関する情報を取得できます。
+
+* * SetSSLCertificate*
++
+クラスタおよび各ノードに独自の SSL 証明書と秘密鍵を設定できます。証明書と秘密鍵はシステムで検証されるため、無効な証明書が適用されることはありません。
+
+* * RemoveSSLCertificate *
++
+このメソッドは、現在インストールされている SSL 証明書と秘密鍵を削除します。そのあと、クラスタで新しい自己署名証明書と秘密鍵が生成されます。
+
+
+
+
+NOTE: クラスタの SSL 証明書は、クラスタに追加される新しいノードに自動的に適用されます。クラスタから削除したノードの証明書は自己署名証明書に戻され、ユーザが定義した証明書とキーの情報はすべてノードから削除されます。
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

@@ -1,0 +1,158 @@
+---
+permalink: api/reference_element_api_updateidpconfiguration.html 
+sidebar: sidebar 
+keywords: IdP,idp,configuration,update 
+summary: UpdateIdpConfiguration メソッドを使用すると、クラスタの既存の設定をサードパーティ IdP で更新できます。 
+---
+= UpdateIdpConfiguration
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 UpdateIdpConfiguration 」メソッドを使用すると、クラスタの既存の構成をサードパーティ IdP で更新できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+GenerateNewCertificate
+ a| 
+true を指定すると、新しい SAML キーと証明書が生成されて既存のペアが置き換えられます。メモ：既存の証明書を交換すると、 IdP でクラスタのサービスプロバイダメタデータがリロードされるまで、クラスタと IdP 間の確立された信頼が損なわれます。指定しない場合や false に設定した場合、 SAML 証明書とキーは変更されません。
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+idpConfigurationID
+ a| 
+サードパーティ IdP 設定の UUID 。
+ a| 
+UUID
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+idpMetadata のことです
+ a| 
+SAML 2.0 シングルサインオンの設定および統合の詳細用の IdP メタデータ。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+idpName
+ a| 
+SAML 2.0 シングルサインオンの IdP プロバイダを識別して取得するための名前。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+newIdpName の略
+ a| 
+この名前を指定すると、古い IdP 名が置き換えられます。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+idpConfigInfo
+ a| 
+サードパーティ IdP 設定に関する情報。
+ a| 
+link:reference_element_api_idpconfiginfo.md#GUID-7DAF8B5D-7803-417F-822B-F5B1A4E3EA93["idpConfigInfo"]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+"method": "UpdateIdpConfiguration",
+"params": {
+        "idpConfigurationID": "f983c602-12f9-4c67-b214-bf505185cfed",
+        "generateNewCertificate": true
+    }
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+    "result": {
+        "idpConfigInfo": {
+        "enabled": true,
+        "idpConfigurationID": "f983c602-12f9-4c67-b214-bf505185cfed",
+        "idpMetadata": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n
+        <EntityDescriptor xmlns=\"urn:oasis:names:tc:SAML:2.0:metadata\"\r\n
+        xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\"\r\n
+        xmlns:shibmd=\"urn:mace:shibboleth:metadata:1.0\"\r\n
+        xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\r\n
+        ...</Organization>\r\n
+        </EntityDescriptor>",
+        "idpName": "https://privider.name.url.com",
+        "serviceProviderCertificate": "-----BEGIN CERTIFICATE-----\n
+        MI...BHi\n
+        -----END CERTIFICATE-----\n",
+        "spMetadataUrl": "https://10.193.100.100/auth/ui/saml2"
+        }
+    }
+}
+----
+
+
+== 新規導入バージョン
+
+12.0

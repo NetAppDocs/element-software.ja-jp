@@ -1,0 +1,538 @@
+---
+permalink: api/reference_element_api_createschedule.html 
+sidebar: sidebar 
+keywords: CreateSchedule,create,creating,schedule,schedules,snapshot,snapshots,scheduling,automatic,volume,volumes 
+summary: CreateSchedule を使用すると、ボリュームの Snapshot のスケジュールを設定し、指定した間隔で Snapshot を自動的に作成できます。 
+---
+= スケジュールの作成
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'createschedule' を使用して ' 定義した間隔でボリュームのスナップショットを自動的に作成するようにスケジュールできます
+
+作成した Snapshot をあとでバックアップまたはロールバックとして使用すると、 Snapshot を作成した時点でのボリュームまたはボリュームグループのデータの整合性を確保できます。Snapshot のスケジュールを 5 分以外の間隔で設定した場合、 Snapshot は 5 分単位に繰り上げた時間で実行されます。たとえば、 12 ： 42 ： 00 UTC に実行するように Snapshot のスケジュールを設定した場合、 12 ： 45 ： 00 UTC に実行されます。Snapshot のスケジュールを 5 分未満の間隔で実行するように設定することはできません。
+
+
+NOTE: Snapshot を作成できるのは、クラスタフルが「ステージ 1 」、「ステージ 2 」、または「ステージ 3 」の場合です。ステージが 4 または 5 に達すると、 Snapshot を作成できなくなります。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+「 attributes 」
+ a| 
+「 frequency 」文字列を使用して、スナップショットの頻度を指定します。有効な値は次のとおり
+
+* 「週の日」
+* 「月の日」
+* 「時間間隔」
+
+ a| 
+JSON オブジェクト
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+| 「 hasError 」 | * 必要な概要の助け * | ブール値 | 「偽」 | いいえ 
+
+
+ a| 
+「時間」
+ a| 
+スナップショットが曜日または月の日モードで実行される GMT 時間で、スナップショットが繰り返し作成される時間数。有効な値は 0~23 です。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+| 「 lastRunStatus 」を参照してください | 最後にスケジュールされた Snapshot の作成結果またはステータス。 | 文字列 | なし | いいえ 
+
+
+ a| 
+「 name 」
+ a| 
+Snapshot の名前。名前を入力しない場合、グループ Snapshot の作成日時が使用されます。最大文字数は 244 文字です。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+「規約」
+ a| 
+スナップショットが繰り返し作成されるまでの分数または GMT 時間で、スナップショットが曜日または月日モードで実行される時間（分単位）。有効な値は 5~59 です。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+「一時停止」
+ a| 
+スケジュールを一時停止するかどうか。有効な値：
+
+* 「真」
+* 「偽」
+
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+「巻き取り」
+ a| 
+スケジュールを繰り返すかどうか。有効な値は次のとおりです。
+
+* 「真」
+* 「偽」
+
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+| runNextInterval  a| 
+スケジューラが次回アクティブになったときに Snapshot を実行するかどうかを指定します。true に設定すると、次にスケジューラがアクティブになったときにスケジュールされた Snapshot が作成され、 false にリセットされます。有効な値は次のとおりです。
+
+* 「真」
+* 「偽」
+
+| ブール値 | 「偽」 | いいえ 
+
+
+ a| 
+'scheduleName'
+ a| 
+スケジュールの一意の名前。最大文字数は 244 文字です。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+'scheduleType'
+ a| 
+作成するスケジュールのタイプ。有効な値は snapshot です。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+'scheduleInfo'
+ a| 
+スケジュールに指定した一意の名前、作成された Snapshot の保持期間、 Snapshot 作成元のボリュームのボリューム ID 。有効な値：
+
+* volumeID ： Snapshot に含めるボリュームの ID整数
+* `volums` ：グループ Snapshot に含めるボリューム ID のリスト。（整数の配列）。
+* `name` ：使用するスナップショット名。文字列
+* enableRemoteReplication ：リモート・レプリケーションにスナップショットを含めるかどうかを指定しますブール値
+* `Retention` ： HH ： mm ： ss 形式での、 Snapshot を保持する時間空の場合、 Snapshot は無期限に保持されます。文字列
+* FIFO ：スナップショットは FIFO （ First-In First-Out ）ベースで保持されます。文字列
+* 「 ensireSerialCreation 」：以前のスナップショット複製が進行中の場合に、新しいスナップショットの作成を許可するかどうかを指定します。ブール値
+
+ a| 
+JSON オブジェクト
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+「 MirrorLabel 」を参照してください
+ a| 
+SnapMirror エンドポイントでの Snapshot 保持ポリシーを指定するために SnapMirror ソフトウェアで使用されるラベル。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+'tartingDate'
+ a| 
+スケジュールを実行する時刻。設定しない場合、スケジュールはただちに開始されます。形式は UTC 時間形式です。
+ a| 
+ISO 8601 形式の日付文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+| 「 toBeDeleted 」と入力します | Snapshot の作成が完了したあとに Snapshot スケジュールを削除します。 | ブール値 | 「偽」 | いいえ 
+
+
+ a| 
+「日」
+ a| 
+Snapshot を作成する特定の日にち。有効な値は 1~31 です。
+ a| 
+整数の配列
+ a| 
+なし
+ a| 
+○（日にちでスケジュール設定する場合）
+
+
+
+ a| 
+「平日」
+ a| 
+Snapshot を作成する曜日。必要な値は次のとおりです（使用する場合）。
+
+* 「 D 」： 0 ～ 6 （日曜日 ～ 土曜日）
+* オフセット：月の各週に 1 ～ 6 （ 1 より大きい場合は、週の N ～ 1 日にのみ一致します）。たとえば、「 offset ： 3 for Sunday 」は月の第 3 日曜日、「 offset ： 4 for Wednesday 」は月の第 4 水曜日を意味します。offset ： 0 は、アクションが実行されないことを意味します。offset ： 1 （デフォルト）は、 Snapshot が毎月のどこに配置されるかに関係なく、この曜日に作成されることを意味します。
+
+ a| 
+JSON オブジェクトの配列
+ a| 
+なし
+ a| 
+○（曜日でスケジュール設定する場合）
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+scheduleID です
+ a| 
+作成されたスケジュールの ID 。
+ a| 
+整数
+
+
+
+ a| 
+スケジュール
+ a| 
+作成されたスケジュールの情報を含むオブジェクト。
+ a| 
+xref:reference_element_api_schedule.adoc[スケジュール]
+
+|===
+
+
+== 要求例 1
+
+次のパラメータを含むスケジュールの例を次に示します。
+
+* 可能なかぎり午前 0 時（ 00 ： 00 ： 00Z ）近くにスケジュールが開始されるように、開始時間または分は指定しません。
+* 繰り返し作成されません（一度だけ実行されます）。
+* 2015 年 6 月 1 日 UTC 19 ： 17 ： 15z 以降の最初の日曜日または水曜日（いずれか早い日）に一度だけ実行されます。
+* 1 つのボリューム（ボリューム ID = 1 ）のみが含まれます。
+
+
+[listing]
+----
+{
+  "method":"CreateSchedule",
+  "params":{
+    "hours":0,
+    "minutes":0,
+    "paused":false,
+    "recurring":false,
+    "scheduleName":"MCAsnapshot1",
+    "scheduleType":"snapshot",
+    "attributes":{
+      "frequency":"Days Of Week"
+    },
+    "scheduleInfo":{
+      "volumeID":"1",
+      "name":"MCA1"
+    },
+    "monthdays":[],
+    "weekdays":[
+      {
+        "day":0,
+        "offset":1
+      },
+      {
+        "day":3,
+        "offset":1
+      }
+    ],
+    "startingDate":"2015-06-01T19:17:54Z"
+  },
+   "id":1
+}
+}
+}
+----
+
+
+== 応答例 1
+
+上記の要求に対する応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "schedule": {
+      "attributes": {
+        "frequency": "Days Of Week"
+      },
+      "hasError": false,
+      "hours": 0,
+      "lastRunStatus": "Success",
+      "lastRunTimeStarted": null,
+      "minutes": 0,
+      "monthdays": [],
+      "paused": false,
+      "recurring": false,
+      "runNextInterval": false,
+      "scheduleID": 4,
+      "scheduleInfo": {
+        "name": "MCA1",
+        "volumeID": "1"
+      },
+      "scheduleName": "MCAsnapshot1",
+      "scheduleType": "Snapshot",
+      "startingDate": "2015-06-01T19:17:54Z",
+      "toBeDeleted": false,
+      "weekdays": [
+        {
+          "day": 0,
+          "offset": 1
+        },
+        {
+          "day": 3,
+          "offset": 1
+        }
+      ]
+    },
+    "scheduleID": 4
+  }
+}
+----
+
+
+== 要求例 2.
+
+次のパラメータを含むスケジュールの例を次に示します。
+
+* 繰り返し作成されます（指定した日にちのスケジュールされた間隔で指定した時刻に実行されます）。
+* 開始日以降の毎月 1 日、 10 日、 15 日、 30 日に実行されます。
+* スケジュールされた各日にちの午後 12 ： 15 に実行されます。
+* 1 つのボリューム（ボリューム ID = 1 ）のみが含まれます。
+
+
+[listing]
+----
+{
+  "method":"CreateSchedule",
+    "params":{
+      "hours":12,
+      "minutes":15,
+      "paused":false,
+      "recurring":true,
+      "scheduleName":"MCASnapshot1",
+      "scheduleType":"snapshot",
+      "attributes":{
+        "frequency":"Days Of Month"
+      },
+      "scheduleInfo":{
+        "volumeID":"1"
+      },
+      "weekdays":[
+      ],
+      "monthdays":[
+        1,
+        10,
+        15,
+        30
+      ],
+      "startingDate":"2015-04-02T18:03:15Z"
+    },
+    "id":1
+}
+----
+
+
+== 応答例 2
+
+上記の要求に対する応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "schedule": {
+      "attributes": {
+        "frequency": "Days Of Month"
+      },
+      "hasError": false,
+      "hours": 12,
+      "lastRunStatus": "Success",
+      "lastRunTimeStarted": null,
+      "minutes": 15,
+      "monthdays": [
+        1,
+        10,
+        15,
+        30
+      ],
+      "paused": false,
+      "recurring": true,
+      "runNextInterval": false,
+      "scheduleID": 5,
+      "scheduleInfo": {
+        "volumeID": "1"
+      },
+      "scheduleName": "MCASnapshot1",
+      "scheduleType": "Snapshot",
+      "startingDate": "2015-04-02T18:03:15Z",
+      "toBeDeleted": false,
+      "weekdays": []
+    },
+      "scheduleID": 5
+  }
+}
+----
+
+
+== 要求例 3
+
+次のパラメータを含むスケジュールの例を次に示します。
+
+* 2015 年 4 月 2 日にスケジュールされた間隔で 5 分以内に開始されます。
+* 繰り返し作成されます（指定した日にちのスケジュールされた間隔で指定した時刻に実行されます）。
+* 開始日以降の毎月 2 日、 3 日、 4 日に実行されます。
+* スケジュールされた各日にちの午後 14 ： 45 に実行されます。
+* ボリュームのグループが含まれています（ボリューム 1 および 2 ）。
+
+
+[listing]
+----
+{
+  "method":"CreateSchedule",
+  "params":{
+    "hours":14,
+    "minutes":45,
+    "paused":false,
+    "recurring":true,
+    "scheduleName":"MCASnapUser1",
+    "scheduleType":"snapshot",
+    "attributes":{
+      "frequency":"Days Of Month"
+    },
+    "scheduleInfo":{
+      "volumes":[1,2]
+    },
+    "weekdays":[],
+    "monthdays":[2,3,4],
+    "startingDate":"2015-04-02T20:38:23Z"
+  },
+  "id":1
+}
+----
+
+
+== 応答例 3
+
+上記の要求に対する応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "schedule": {
+      "attributes": {
+        "frequency": "Days Of Month"
+      },
+      "hasError": false,
+      "hours": 14,
+      "lastRunStatus": "Success",
+      "lastRunTimeStarted": null,
+      "minutes": 45,
+      "monthdays": [
+        2,
+        3,
+        4
+      ],
+      "paused": false,
+      "recurring": true,
+      "runNextInterval": false,
+      "scheduleID": 6,
+      "scheduleInfo": {
+        "volumes": [
+          1,
+          2
+        ]
+      },
+      "scheduleName": "MCASnapUser1",
+      "scheduleType": "Snapshot",
+      "startingDate": "2015-04-02T20:38:23Z",
+      "toBeDeleted": false,
+      "weekdays": []
+    },
+    "scheduleID": 6
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

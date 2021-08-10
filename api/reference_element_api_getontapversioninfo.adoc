@@ -1,0 +1,59 @@
+---
+permalink: api/reference_element_api_getontapversioninfo.html 
+sidebar: sidebar 
+keywords: ontap,version,info,information,get,getting,api,support,getontapversioninfo 
+summary: Element Web UI は、 GetOntapVersionInfo を使用して、 SnapMirror 関係にある ONTAP クラスタから API バージョンのサポートに関する情報を取得します。 
+---
+= GetOntapVersionInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element Web UI は、「 GetOntapVersionInfo 」を使用して、 SnapMirror 関係にある ONTAP クラスタから API バージョンのサポートに関する情報を取得します。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+指定した snapMirrorEndpointID のエンドポイントのバージョン情報がリストされます。指定しない場合は、認識されているすべての SnapMirror エンドポイントのバージョン情報がリストされます。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ontapVersionInfo
+ a| 
+ONTAP エンドポイントのソフトウェアバージョン情報。
+ a| 
+xref:reference_element_api_ontapversioninfo.adoc[ontapVersionInfo] 配列
+
+|===
+
+
+== 新規導入バージョン
+
+10.1

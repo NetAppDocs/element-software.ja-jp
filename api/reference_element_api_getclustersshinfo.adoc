@@ -1,0 +1,90 @@
+---
+permalink: api/reference_element_api_getclustersshinfo.html 
+sidebar: sidebar 
+keywords: ssh,service,status,get,getting,cluster,info,getclustersshinfo 
+summary: GetClusterSshInfo メソッドを使用すると、ストレージクラスタ全体の SSH サービスのステータスを照会できます。 
+---
+= GetClusterSshInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetClusterSshInfo' メソッドを使用すると、ストレージクラスタ全体の SSH サービスのステータスを照会できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+結果
+ a| 
+ストレージクラスタの SSH サービスのステータス、 SSH が無効になるまでの時間、および各ノードの SSH サービスのステータスを含む JSON オブジェクト。
+ a| 
+JSON オブジェクト
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "GetClusterSshInfo",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+	"id": 1,
+	"result" : {
+    “enabled”: “true”,
+    “timeRemaining”: "00:43:21",
+    "nodes": [
+    {
+        "nodeID": 1,
+        "enabled": true
+    },
+    {
+        "nodeID": 2,
+        "enabled": true
+    },
+    {
+        "nodeID": 3,
+        "enabled": false
+    },
+    {
+        "nodeID": 4,
+        "enabled": false
+    } ]
+			}
+	}
+----
+
+
+== 新規導入バージョン
+
+10.3

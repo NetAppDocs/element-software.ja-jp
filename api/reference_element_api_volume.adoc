@@ -1,0 +1,302 @@
+---
+permalink: api/reference_element_api_volume.html 
+sidebar: sidebar 
+keywords: object,objects,volume 
+summary: volume オブジェクトには、ペアリングされていないボリュームまたはペアリングされているボリュームの設定情報が含まれこの情報には、実行時や使用状況に関する情報は含まれず、また仮想ボリュームに関する情報も含まれません。 
+---
+= ボリューム
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+volume オブジェクトには、ペアリングされていないボリュームまたはペアリングされているボリュームの設定情報が含まれこの情報には、実行時や使用状況に関する情報は含まれず、また仮想ボリュームに関する情報も含まれません。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+にアクセスします
+ a| 
+ボリュームに対して許可されているアクセスのタイプ。有効な値は次のとおり
+
+* `re adOnly` ：読み取り操作のみが許可されます。
+* 「 readWrite 」：読み取りと書き込みが可能です。
+* 'locked] ：読み取りや書き込みは許可されません。
+* ReplicationTarget ：レプリケートされたボリュームペアのターゲットボリュームとして指定されます。
+
+ a| 
+文字列
+
+
+
+ a| 
+アカウント ID
+ a| 
+ボリュームを含むアカウントの ID 。
+ a| 
+整数
+
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+ブロックサイズ
+ a| 
+ボリューム上のブロックのサイズ。
+ a| 
+整数
+
+
+
+ a| 
+CreateTime をクリックします
+ a| 
+ボリュームの作成時の UTC+0 形式。
+ a| 
+ISO 8601 形式の文字列
+
+
+
+ a| 
+現在の ProtectionScheme
+ a| 
+このボリュームに使用されている保護方式。ボリュームを別の保護方式に変換中の場合、このメンバーにはボリュームの変換後の保護方式が反映されます。
+ a| 
+文字列
+
+
+
+ a| 
+削除時間
+ a| 
+ボリュームが削除されたときの UTC+0 形式の時間。
+ a| 
+ISO 8601 形式の文字列
+
+
+
+ a| 
+enable512e
+ a| 
+true に設定した場合、ボリュームは 512 バイトのセクターエミュレーションを提供します。
+ a| 
+ブール値
+
+
+
+ a| 
+enableSnapMirrorReplication
+ a| 
+ボリュームを SnapMirror エンドポイントでのレプリケーションに使用できるかどうか。
+ a| 
+ブール値
+
+
+
+| 50 サイズ | FIFO （ First-In First-Out ）スナップショット保持モードを使用する場合に、同時に保持するボリュームのスナップショットの最大数を指定します。 | 整数 
+
+
+ a| 
+IQN
+ a| 
+ボリュームの iSCSI 修飾名。
+ a| 
+文字列
+
+
+
+ a| 
+lastAccessTime の 2 つのパラメータが
+ a| 
+ボリュームへのアクセス（ I/O を含む）が最後に発生した時刻（ UTC+0 形式）。最終アクセス時刻が不明な場合、この値は null です。
+ a| 
+ISO 8601 形式の文字列
+
+
+
+ a| 
+lastAccessTimeIO
+ a| 
+ボリュームへの I/O が最後に発生した時刻（ UTC+0 形式）。最終アクセス時刻が不明な場合、この値は null です。
+ a| 
+ISO 8601 形式の文字列
+
+
+
+| minFifoSize | FIFO （ First-In First-Out ）スナップショット保持モードを使用する場合、ボリュームによって同時に予約される FIFO （ First-In-First-Out ）スナップショット・スロットの最小数を指定します。 | 整数 
+
+
+ a| 
+名前
+ a| 
+作成時に指定したボリュームの名前。
+ a| 
+文字列
+
+
+
+ a| 
+previousProtectionScheme
+ a| 
+ボリュームを別の保護方式に変換中の場合、このメンバーにはボリュームの変換前の保護方式が反映されます。このメンバーは、変換が開始されるまで変更されません。ボリュームが一度も変換されていない場合、このメンバーは null です。
+ a| 
+文字列
+
+
+
+ a| 
+PURGETIME
+ a| 
+UTC+0 形式のボリュームがシステムからパージされた時刻。
+ a| 
+ISO 8601 形式の文字列
+
+
+
+ a| 
+QoS
+ a| 
+このボリュームの QoS 設定。
+ a| 
+xref:reference_element_api_qos.adoc[QoS]
+
+
+
+ a| 
+qosPolicyID
+ a| 
+ボリュームに関連付けられている QoS ポリシーの ID 。ボリュームがポリシーに関連付けられていない場合、値は null です。
+ a| 
+整数
+
+
+
+ a| 
+scsiEUIDeviceID
+ a| 
+EUI-64 ベースの 16 バイト形式でのボリュームのグローバル一意な SCSI デバイス ID 。
+ a| 
+文字列
+
+
+
+ a| 
+scsiNAADeviceID
+ a| 
+NAA IEEE Registered Extended 形式のボリュームのグローバル一意 SCSI デバイス ID 。
+ a| 
+文字列
+
+
+
+ a| 
+SiceCount （スライスカウント）
+ a| 
+ボリュームのスライスの数。この値は常に「 1 」です。
+ a| 
+整数
+
+
+
+ a| 
+ステータス
+ a| 
+ボリュームの現在のステータス。有効な値は次のとおり
+
+* init ：初期化中で、接続の準備が完了していないボリューム。
+* active ：接続の準備が完了したアクティブなボリューム。
+* deleted ：削除用にマークされているが、まだパージされていないボリューム。
+
+ a| 
+文字列
+
+
+
+ a| 
+合計サイズ
+ a| 
+プロビジョニングされた容量の総バイト数。
+ a| 
+整数
+
+
+
+ a| 
+virtualVolumeID
+ a| 
+ボリュームに関連付けられた一意の仮想ボリューム ID （存在する場合）。
+ a| 
+UUID
+
+
+
+ a| 
+volumeAccessGroups
+ a| 
+ボリュームが属するボリュームアクセスグループの ID のリスト。ボリュームがボリュームアクセスグループに属していない場合は空になります。
+ a| 
+整数の配列
+
+
+
+ a| 
+volumeConsistencyGroupUUID
+ a| 
+ボリュームが属しているボリューム整合性グループの UUID 。
+ a| 
+UUID
+
+
+
+ a| 
+ボリューム ID
+ a| 
+ボリュームの一意の ID 。
+ a| 
+整数
+
+
+
+ a| 
+ボリュームペア
+ a| 
+ペアリングされているボリュームの情報。ボリュームがペアリングされている場合にのみ表示されます。ボリュームがペアリングされていない場合は空のリストになります。
+ a| 
+xref:reference_element_api_volumepair.adoc[ボリュームペア] 配列
+
+
+
+ a| 
+ボリューム UUID
+ a| 
+ボリュームの UUID 。
+ a| 
+UUID
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_element_api_listactivevolumes.adoc[ListActiveVolumes の場合]
+* xref:reference_element_api_listdeletedvolumes.adoc[ListDeletedVolumes の場合]
+* xref:reference_element_api_listvolumes.adoc[ListVolumes の場合]
+* xref:reference_element_api_listvolumesforaccount.adoc[ListVolumesForAccount を実行します]
+* xref:reference_element_api_qos.adoc[QoS]
+

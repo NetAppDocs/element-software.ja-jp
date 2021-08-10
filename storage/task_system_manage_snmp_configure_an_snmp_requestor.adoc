@@ -1,0 +1,34 @@
+---
+permalink: storage/task_system_manage_snmp_configure_an_snmp_requestor.html 
+sidebar: sidebar 
+keywords: SNMP requestor, config, enable, disable, snmp requests 
+summary: SNMP バージョン 2 が有効な場合は、リクエスタを有効または無効にできるほか、許可された SNMP 要求を受信するリクエスタを設定できます。 
+---
+= SNMP リクエスタを設定します
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SNMP バージョン 2 が有効な場合は、リクエスタを有効または無効にできるほか、許可された SNMP 要求を受信するリクエスタを設定できます。
+
+. [Menu] ( メニュー ) 、 [Cluster] [SNMP] の順にクリックします
+. [*General SNMP Settings*]( 一般的な SNMP 設定 ) で、 [*Yes*]( はい ) をクリックして SNMP を有効
+. [* バージョン ] リストから、 [* バージョン 2*] を選択します。
+. 「 * Requeeors * 」セクションに「 * Community String * 」および「 * Network * 」情報を入力します。
++
+
+NOTE: デフォルトでは、コミュニティストリングは public に、ネットワークは localhost に設定されます。これらのデフォルト設定は変更できます。
+
+. * オプション： * 別のリクエスタを追加するには、 * リクエスト者の追加 * をクリックし、 * コミュニティストリング * および * ネットワーク * 情報を入力します。
+. [ 変更の保存 *] をクリックします。
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:task_system_manage_snmp_configure_snmp_traps.adoc[SNMP トラップを設定する]
+* xref:task_system_manage_snmp_view_managed_object_data.adoc[管理情報ベースファイルを使用して管理対象オブジェクトデータを表示します]
+

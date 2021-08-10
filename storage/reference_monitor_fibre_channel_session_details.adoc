@@ -1,0 +1,49 @@
+---
+permalink: storage/reference_monitor_fibre_channel_session_details.html 
+sidebar: sidebar 
+keywords: fibre channel sessions, fc, FC, sessions 
+summary: ここでは、クラスタに接続されているアクティブな Fibre Channel （ FC ）セッションに関する情報を示します。 
+---
+= Fibre Channel セッションの詳細
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クラスタに接続されているアクティブな Fibre Channel （ FC ）セッションに関する情報を確認できます。
+
+クラスタに接続されている FC セッションに関する情報は次のとおりです。
+
+* * ノード ID *
++
+接続のセッションをホストしているノード。
+
+* * ノード名 *
++
+システムによって生成されたノード名。
+
+* * イニシエータ ID *
++
+システムによって生成されたイニシエータの ID 。
+
+* * イニシエータ WWPN *
++
+イニシエータの World Wide Port Name 。
+
+* * イニシエータエイリアス *
++
+イニシエータが多数ある場合に特定のイニシエータを見つけやすくするための別名。
+
+* * ターゲット WWPN *
++
+ターゲットの World Wide Port Name 。
+
+* * ボリュームアクセスグループ *
++
+セッションが属するボリュームアクセスグループの名前。
+
+* * ボリュームアクセスグループ ID *
++
+システムによって生成されたアクセスグループの ID 。
+
+

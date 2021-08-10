@@ -1,0 +1,137 @@
+---
+permalink: api/reference_element_api_task_virtual_volumes.html 
+sidebar: sidebar 
+keywords: object,objects,task 
+summary: task オブジェクトには、システム内で現在実行中または完了済みの仮想ボリュームタスクに関する情報が含まれます。ListVirtualVolumeTasks メソッドを使用すると、すべての仮想ボリュームタスクに関する以下の情報を取得できます。 
+---
+= task （仮想ボリューム）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+task オブジェクトには、システム内で現在実行中または完了済みの仮想ボリュームタスクに関する情報が含まれます。ListVirtualVolumeTasks メソッドを使用すると、すべての仮想ボリュームタスクに関する以下の情報を取得できます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+キャンセルされました
+ a| 
+タスクがキャンセルされたかどうかを示します。有効な値は次のとおり
+
+* 正しいです
+* いいえ
+
+ a| 
+ブール値
+
+
+
+ a| 
+cloneVirtualVolumeID を実行します
+ a| 
+クローニング中の仮想ボリュームの、一意の仮想ボリューム ID （クローニングタスク用）。
+ a| 
+UUID
+
+
+
+ a| 
+parentMetadata の指定
+ a| 
+仮想ボリュームをクローニングする、または仮想ボリュームの Snapshot を作成するタスクの親のメタデータを含むオブジェクト。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+parentTotalSize
+ a| 
+クローニングタスクまたは Snapshot 作成タスクの親で使用可能な合計スペース（バイト数）。
+ a| 
+整数
+
+
+
+ a| 
+parentUsedSize のようになりました
+ a| 
+クローニングタスクまたは Snapshot 作成タスクの親の使用済みスペース（バイト数）。
+ a| 
+整数
+
+
+
+ a| 
+操作
+ a| 
+タスクが実行している処理のタイプ。有効な値は次のとおり
+
+* unknown ：不明なタスク処理です。
+* prepare ：タスクは仮想ボリュームを準備中です。
+* snapshot ：タスクは仮想ボリュームの Snapshot の作成中です。
+* rollback ：タスクは仮想ボリュームを Snapshot にロールバック中です。
+* clone ：タスクは仮想ボリュームのクローンを作成中です。
+* fastClone ：タスクは仮想ボリュームの高速クローンを作成中です。
+* copyDiffs ：タスクは仮想ボリュームに異なるブロックをコピー中です。
+
+ a| 
+文字列
+
+
+
+ a| 
+ステータス
+ a| 
+仮想ボリュームタスクの現在のステータス。有効な値は次のとおり
+
+* Error ：タスクは失敗し、エラーが返されました。
+* Queued ：タスクは実行待ちです。
+* Running ：タスクは現在実行中です。
+* 成功：タスクは正常に完了しました。
+
+ a| 
+文字列
+
+
+
+ a| 
+virtualVolumeHostID
+ a| 
+タスクを開始したホストの一意の ID 。
+ a| 
+UUID
+
+
+
+ a| 
+virtualVolumeID
+ a| 
+一意の新しい仮想ボリューム ID （新しい仮想ボリュームを作成するタスク用）。
+ a| 
+UUID
+
+
+
+ a| 
+virtualVolumeTaskID
+ a| 
+タスクの一意の ID 。
+ a| 
+UUID
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_listvirtualvolumetasks.adoc[ListVirtualVolumeTasks を実行します]

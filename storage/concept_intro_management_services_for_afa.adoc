@@ -1,0 +1,13 @@
+---
+permalink: storage/concept_intro_management_services_for_afa.html 
+sidebar: sidebar 
+keywords: management services, aff 
+summary: 管理サービスは、 SolidFire オールフラッシュストレージに幅広い管理機能を一元的に提供します。管理サービスには、 Active IQ システムテレメトリ、ログ、サービスの更新、および Element Plug-in for vCenter の QoSSIOC サービスが含まれます。 
+---
+= SolidFire オールフラッシュストレージの管理サービス
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理サービスは、 SolidFire オールフラッシュストレージに幅広い管理機能を一元的に提供します。管理サービスには、 Active IQ システムテレメトリ、ログ、サービスの更新、および Element Plug-in for vCenter の QoSSIOC サービスが含まれます。

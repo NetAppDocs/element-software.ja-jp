@@ -1,0 +1,22 @@
+---
+permalink: storage/task_snapmirror_perform_failback_to_element.html 
+sidebar: sidebar 
+keywords: failback, perform a failbacl, Element, snapmirror 
+summary: プライマリ側の問題が軽減されたら、元のソースボリュームを再同期し、 NetApp Element ソフトウェアへのフェイルバックを実行する必要があります。実行する手順は、元のソースボリュームがまだ存在しているか、あるいは新たに作成したボリュームへのフェイルバックが必要かによって異なります。 
+---
+= Element へのフェイルバックを実行します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+プライマリ側の問題が軽減されたら、元のソースボリュームを再同期し、 NetApp Element ソフトウェアへのフェイルバックを実行する必要があります。実行する手順は、元のソースボリュームがまだ存在しているか、あるいは新たに作成したボリュームへのフェイルバックが必要かによって異なります。
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:task_snapmirror_perform_failback_when_source_volume_exists.adoc[ソースボリュームが存在する場合は、フェイルバックを実行します]
+* xref:task_snapmirror_performing_failback_when_source_volume_no_longer_exists.adoc[ソースボリュームが存在しない場合にフェイルバックを実行します]
+* xref:concept_snapmirror_failback_scenarios.adoc[SnapMirror フェイルバックのシナリオ]
+

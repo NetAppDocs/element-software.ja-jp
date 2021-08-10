@@ -1,0 +1,247 @@
+---
+permalink: api/reference_element_api_checkpingonvlan.html 
+sidebar: sidebar 
+keywords: VLAN,pre-deployment,network,validation,validate,validating,check,checking,CheckPingOnVlan 
+summary: CheckPingOnVlan メソッドを使用すると、導入前のネットワーク検証時に一時的な VLAN でネットワーク接続をテストできます。CheckPingOnVlan は一時的な VLAN インターフェイスを作成し、その VLAN インターフェイスを使用してストレージクラスタ内のすべてのノードに ICMP パケットを送信し、そのインターフェイスを削除します。 
+---
+= CheckPingOnVlan が実行されます
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+配備前のネットワーク検証を実行する場合は 'CheckPingOnVlan' メソッドを使用して ' 一時的な VLAN 上でネットワーク接続をテストできます「 CheckPingOnVlan 」は一時的な VLAN インターフェイスを作成し、 VLAN インターフェイスを使用してストレージクラスタ内のすべてのノードに ICMP パケットを送信し、そのインターフェイスを削除します。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+試行回数
+ a| 
+ping テストを繰り返す回数を指定します。
+ a| 
+整数
+ a| 
+5.
+ a| 
+いいえ
+
+
+
+ a| 
+ホスト
+ a| 
+ping を実行するデバイスのアドレスまたはホスト名をカンマで区切って指定します。
+ a| 
+文字列
+ a| 
+クラスタ内のノード
+ a| 
+いいえ
+
+
+
+ a| 
+インターフェイス
+ a| 
+ping の送信元となる既存の（ベース）インターフェイス。有効な値は次のとおり
+
+* Bond10G ： Bond10G インターフェイスから ping を送信します。
+* Bond1G ： Bond1G インターフェイスから ping を送信します。
+
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+パケットサイズ
+ a| 
+各 IP に送信される ICMP パケットで送信するバイト数を指定します。ネットワーク設定で指定されている最大 MTU より小さい値を指定する必要があります。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+pingTimeoutMsec
+ a| 
+個々の ping 応答を待機する時間をミリ秒単位で指定します。
+ a| 
+整数
+ a| 
+500 ミリ秒
+ a| 
+いいえ
+
+
+
+ a| 
+禁止断片化
+ a| 
+ICMP パケットの DF （ Do not Fragment ）フラグを有効にします。
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+
+
+ a| 
+sourceAddressV4
+ a| 
+ICMP ping パケットで使用する送信元 IPv4 アドレス。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+sourceAddressV6 と入力します
+ a| 
+ICMP ping パケットで使用する送信元 IPv6 アドレス。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+totalTimeoutSec
+ a| 
+ping の次の試行を発行するかプロセスを終了するまでに、 ping がシステム応答を待機する時間を秒単位で指定します。
+ a| 
+整数
+ a| 
+5.
+ a| 
+いいえ
+
+
+
+ a| 
+virtualNetworkTag
+ a| 
+ping パケットの送信時に使用する VLAN ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+詳細
+ a| 
+ノードが通信できた各 IP のリストと ping 応答の統計情報。
+ a| 
+JSON オブジェクト
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+    "method": "CheckPingOnVlan",
+    "params": {
+        "interface": "Bond10G",
+        "virtualNetworkTag": 4001,
+        "sourceAddressV4": "192.168.41.4",
+        "hosts": "192.168.41.2"
+},
+"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "details": {
+      "192.168.41.2": {
+        "individualResponseCodes": [
+          "Success",
+          "Success",
+          "Success",
+          "Success",
+          "Success"
+        ],
+        "individualResponseTimes": [
+          "00:00:00.000373",
+          "00:00:00.000098",
+          "00:00:00.000097",
+          "00:00:00.000074",
+          "00:00:00.000075"
+        ],
+        "individualStatus": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "interface": "Bond10G",
+        "responseTime": "00:00:00.000143",
+        "sourceAddressV4": "192.168.41.4",
+        "successful": true,
+        "virtualNetworkTag": 4001
+      }
+    },
+    "duration": "00:00:00.244379",
+    "result": "Passed"
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+11.1

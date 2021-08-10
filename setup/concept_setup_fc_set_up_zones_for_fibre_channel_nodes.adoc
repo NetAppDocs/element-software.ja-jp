@@ -1,0 +1,23 @@
+---
+permalink: setup/concept_setup_fc_set_up_zones_for_fibre_channel_nodes.html 
+sidebar: sidebar 
+keywords:  
+summary: Fibre Channel ノードと SolidFire ストレージノードを含む新しいクラスタを作成すると、ノードの World Wide Port Name （ WWPN ）アドレスが Web UI で使用できるようになります。WWPN アドレスを使用して、 Fibre Channel スイッチをゾーニングできます。 
+---
+= Fibre Channel ノードのゾーンをセットアップします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Fibre Channel ノードと SolidFire ストレージノードを含む新しいクラスタを作成すると、ノードの World Wide Port Name （ WWPN ）アドレスが Web UI で使用できるようになります。WWPN アドレスを使用して、 Fibre Channel スイッチをゾーニングできます。
+
+WWPN は、ノードを含む新しいクラスタの作成時にシステムに登録されます。Element UI では、 FC Ports タブの WWPN 列から WWPN アドレスを確認できます。これらの列には、 Cluster タブからアクセスできます。
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

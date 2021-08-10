@@ -1,0 +1,26 @@
+---
+permalink: storage/concept_contact_netapp_support.html 
+sidebar: sidebar 
+keywords: contact,support 
+summary: ネットアップ製品に関するサポートのご依頼、ご意見やご要望については、ネットアップサポートまでお問い合わせください。 
+---
+= ネットアップサポートにお問い合わせください
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ネットアップ製品に関するサポートのご依頼、ご意見やご要望については、ネットアップサポートまでお問い合わせください。
+
+* ウェブ：
++
+http://mysupport.netapp.com["mysupport.netapp.com"]
+
+* 電話
++
+** 888.4.NETAPP （ 888.463.8277 ）（米国およびカナダ）
+** 00.800.44.638277 （ EMEA / ヨーロッパ）
+** +800.80080.800 （アジア太平洋）
+
+
+

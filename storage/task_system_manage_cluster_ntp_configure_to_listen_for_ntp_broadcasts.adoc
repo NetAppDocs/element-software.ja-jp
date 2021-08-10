@@ -1,0 +1,34 @@
+---
+permalink: storage/task_system_manage_cluster_ntp_configure_to_listen_for_ntp_broadcasts.html 
+sidebar: sidebar 
+keywords: ntp, broadcasts, server, config, server list, broadcast client 
+summary: ブロードキャストモードを使用すると、クラスタ内の各ノードが特定のサーバからのネットワークタイムプロトコル（ NTP ）ブロードキャストメッセージをネットワーク上でリスンするように設定できます。 
+---
+= NTP ブロードキャストをリスンするようにクラスタを設定する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ブロードキャストモードを使用すると、クラスタ内の各ノードが特定のサーバからの Network Time Protocol （ NTP ；ネットワークタイムプロトコル）ブロードキャストメッセージをネットワーク上でリスンするように設定できます。
+
+.必要なもの
+* この設定を行うには、クラスタ管理者の権限が必要です。
+* ネットワーク上の NTP サーバをブロードキャストサーバとして設定する必要があります。
+
+
+.手順
+. [* クラスタ *>] > [* 設定 ] をクリックします。
+. ブロードキャストモードを使用している NTP サーバをサーバリストに入力します。
+. [ ネットワークタイムプロトコルの設定 ] で、 [ はい ] を選択してブロードキャストクライアントを使用します。
+. ブロードキャストクライアントを設定するには、 [*Server*] フィールドに、ブロードキャストモードで設定した NTP サーバを入力します。
+. [ 変更の保存 *] をクリックします。
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

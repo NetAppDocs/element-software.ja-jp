@@ -1,0 +1,31 @@
+---
+permalink: storage/task_data_protection_back_up_a_volume_snapshot_to_an_amazon_s3_object_store.html 
+sidebar: sidebar 
+keywords: volume snapshot, backup, amazon S3 object store 
+summary: Amazon S3 と互換性のある外部のオブジェクトストアに SolidFire Snapshot をバックアップできます。 
+---
+= Amazon S3 オブジェクトストアにボリューム Snapshot をバックアップします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Amazon S3 と互換性のある外部のオブジェクトストアに SolidFire Snapshot をバックアップできます。
+
+. [** データ保護 **>*Snapshots*] をクリックします。
+. バックアップするスナップショットの * アクション * アイコンをクリックします。
+. 表示されたメニューで、 * Backup to * をクリックします。
+. [ * バックアップ先 * ] の下の [ 統合バックアップ * ] ダイアログボックスで、 [* S3 * ] を選択します。
+. [ データフォーマット *] でオプションを選択します。
++
+** * Native * ： SolidFire ストレージシステムのみが読み取り可能な圧縮形式。
+** * Uncompressed * ：他のシステムと互換性がある非圧縮形式。
+
+
+. [*Hostname*] フィールドに、オブジェクトストアへのアクセスに使用するホスト名を入力します。
+. [* アクセスキー ID*] フィールドに、アカウントのアクセスキー ID を入力します。
+. アカウントのシークレットアクセスキーを * Secret Access Key * フィールドに入力します。
+. バックアップを格納する S3 バケットを「 * S3 Bucket * 」フィールドに入力します。
+. * オプション * ：「 * Nametag * 」フィールドにプレフィックスに追加するネームタグを入力します。
+. [ 読み取り開始 ] をクリックします。
+

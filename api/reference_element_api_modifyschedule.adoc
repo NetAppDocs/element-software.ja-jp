@@ -1,0 +1,348 @@
+---
+permalink: api/reference_element_api_modifyschedule.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,snapshot,schedule,scheduled,delete,pause,modifyschedule 
+summary: ModifySchedule を使用すると、スケジュールされた Snapshot が作成される間隔を変更できます。スケジュールを削除または一時停止することもできます。 
+---
+= ModifySchedule の追加
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「変更スケジュール」を使用して、スケジュールされたスナップショットが発生する間隔を変更できます。スケジュールを削除または一時停止することもできます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+Snapshot の作成頻度。有効な値は次のとおり
+
+* 「週の日」
+* 「月の日」
+* 「時間間隔」
+
+ a| 
+JSON オブジェクト
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+時間
+ a| 
+Snapshot を作成する日数または時間数。この時間を経過すると、 Days of Week モードまたは Days of Month モードになります。有効な値は 0~24 です。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+名前
+ a| 
+Snapshot の名前。名前を入力しない場合、グループ Snapshot の作成日時が使用されます。最大文字数は 244 文字です。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+分
+ a| 
+スナップショットが実行される間隔（分単位）。スナップショットは、曜日モードまたは日数モードで実行されます。有効な値は 0~59 です。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+| lastRunStatus の順にクリックします | 最後にスケジュールされた Snapshot の作成結果またはステータス。 | 文字列 | なし | いいえ 
+
+
+ a| 
+一時停止中
+ a| 
+スケジュールを一時停止するかどうか。有効な値：
+
+* 「真」
+* 「偽」
+
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+繰り返し
+ a| 
+スケジュールを繰り返すかどうか。有効な値は次のとおりです。
+
+* 「真」
+* 「偽」
+
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+RunNextInterval をクリックします
+ a| 
+スケジューラが次回アクティブになったときに Snapshot を実行するかどうか。有効な値：
+
+* 「真」
+* 「偽」
+
+
+true に設定すると、次にスケジューラがアクティブになったときにスケジュールされた Snapshot が作成され、その後 false にリセットされます。
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+
+
+ a| 
+scheduleID です
+ a| 
+スケジュールの一意の ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+スケジュール名
+ a| 
+スケジュールの一意の名前。最大文字数は 244 文字です。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+スケジューラの種類
+ a| 
+作成するスケジュールのタイプ。サポートされている値は「スナップショット」のみです。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+'scheduleInfo'
+ a| 
+スケジュールに指定した一意の名前、作成された Snapshot の保持期間、 Snapshot 作成元のボリュームのボリューム ID 。有効な値：
+
+* volumeID ： Snapshot に含めるボリュームの ID整数
+* `volums` ：グループ Snapshot に含めるボリューム ID のリスト。（整数の配列）。
+* `name` ：使用するスナップショット名。文字列
+* enableRemoteReplication ：リモート・レプリケーションにスナップショットを含めるかどうかを指定しますブール値
+* `Retention` ： HH ： mm ： ss 形式での、 Snapshot を保持する時間空の場合、 Snapshot は無期限に保持されます。文字列
+* FIFO ：スナップショットは FIFO （ First-In First-Out ）ベースで保持されます。文字列
+* 「 ensireSerialCreation 」：以前のスナップショット複製が進行中の場合に、新しいスナップショットの作成を許可するかどうかを指定します。ブール値
+
+ a| 
+link:reference_element_api_schedule.html["スケジュール"^]
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+snapMirrorLabel のことです
+ a| 
+SnapMirror エンドポイントでの Snapshot 保持ポリシーを指定するために SnapMirror ソフトウェアで使用されるラベル。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+To BeDeleted
+ a| 
+スケジュールを削除対象としてマークするかどうか。有効な値：
+
+* 「真」
+* 「偽」
+
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+開始日
+ a| 
+スケジュールが最初に開始された日、または開始される日。
+ a| 
+ISO 8601 形式の日付文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+月日
+ a| 
+Snapshot を作成する特定の日にち。有効な値は 1~31 です。
+ a| 
+整数の配列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+平日
+ a| 
+Snapshot を作成する曜日。曜日は日曜の「 0 」から始まり、オフセットは「 1 」です。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+スケジュール
+ a| 
+変更されたスケジュール属性を含むオブジェクト。
+ a| 
+xref:reference_element_api_schedule.adoc[スケジュール]
+
+|===
+
+
+== 要求例
+
+[listing]
+----
+{
+  "method": "ModifySchedule",
+  "params": {
+    "scheduleName" : "Chicago",
+    "scheduleID" : 3
+    },
+  "id": 1
+}
+----
+
+
+== 応答例
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "schedule": {
+      "attributes": {
+        "frequency": "Days Of Week"
+            },
+      "hasError": false,
+      "hours": 5,
+      "lastRunStatus": "Success",
+      "lastRunTimeStarted": null,
+      "minutes": 0,
+      "monthdays": [],
+      "paused": false,
+      "recurring": true,
+      "runNextInterval": false,
+      "scheduleID": 3,
+      "scheduleInfo": {
+        "volumeID": "2"
+            },
+      "scheduleName": "Chicago",
+      "scheduleType": "Snapshot",
+      "startingDate": null,
+      "toBeDeleted": false,
+      "weekdays": [
+        {
+          "day": 2,
+          "offset": 1
+      }
+      ]
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

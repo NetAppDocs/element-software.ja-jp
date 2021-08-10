@@ -1,0 +1,76 @@
+---
+permalink: api/reference_element_api_restoredeletedvolume.html 
+sidebar: sidebar 
+keywords: restore,active,restoring,deleted,volume,volumes,restoredeletedvolume 
+summary: RestoreDeletedVolume メソッドを使用すると、削除したボリュームを再びアクティブとしてマークできます。この操作により、ボリュームはただちに iSCSI 接続で使用できるようになります。 
+---
+= RestoreDeletedVolume
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 RestoreDeletedVolume 」メソッドを使用すると、削除したボリュームを再びアクティブとしてマークできます。この操作により、ボリュームはただちに iSCSI 接続で使用できるようになります。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ボリューム ID
+ a| 
+リストアする削除済みボリュームの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "RestoreDeletedVolume",
+   "params": {
+      "volumeID"  : 5
+   },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id" : 1,
+  "result": {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

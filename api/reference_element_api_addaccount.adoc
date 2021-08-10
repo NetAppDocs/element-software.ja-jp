@@ -1,0 +1,171 @@
+---
+permalink: api/reference_element_api_addaccount.html 
+sidebar: sidebar 
+keywords: addaccount,add,adding,account,accounts 
+summary: AddAccount を使用して、新しいアカウントをシステムに追加できます。アカウントの作成時に、このメソッドを使用して新しいアカウントに新しいボリュームを作成することもできます。アカウントに指定したチャレンジハンドシェイク認証プロトコル \ （ CHAP \ ）設定は、アカウントが所有するすべてのボリュームに適用されます。 
+---
+= 追加アカウント
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 AddAccount 」を使用して、新しいアカウントをシステムに追加できます。アカウントの作成時に、このメソッドを使用して新しいアカウントに新しいボリュームを作成することもできます。アカウントに指定した Challenge Handshake Authentication Protocol （ CHAP ；チャレンジハンドシェイク認証プロトコル）の設定は、アカウントが所有するすべてのボリュームに適用されます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+「 attributes 」
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON オブジェクト
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+enableChap
+ a| 
+イニシエータがボリュームへのアクセスに CHAP アカウントのクレデンシャルを使用できるかどうかを指定します。
+ a| 
+ブール値
+ a| 
+正しいです
+ a| 
+いいえ
+
+
+
+ a| 
+「 initiatorSecret 」
+ a| 
+イニシエータに使用する CHAP シークレット。このシークレットは 12~16 文字で、推測されにくいものにしてください。イニシエータ CHAP シークレットは一意にする必要があり、ターゲット CHAP シークレットと同じにすることはできません。指定しない場合は、ランダムシークレットが作成されます。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+targetSecret
+ a| 
+ターゲット（相互 CHAP 認証）に使用する CHAP シークレット。このシークレットは 12~16 文字で、推測されにくいものにしてください。ターゲット CHAP シークレットは一意にする必要があり、イニシエータ CHAP シークレットと同じにすることはできません。指定しない場合は、ランダムシークレットが作成されます。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+「ユーザ名」
+ a| 
+このアカウントの一意なユーザ名。（ 1~64 文字）。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+アカウント：
+ a| 
+作成されたアカウントの情報を含むオブジェクト。
+ a| 
+xref:reference_element_api_account.adoc[アカウント：]
+
+
+
+ a| 
+アカウント ID
+ a| 
+作成されたアカウントオブジェクトの ID 。
+ a| 
+整数
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+	"method": "AddAccount",
+    "params": {
+     "username"  : "bobsmith",
+     "initiatorSecret" : "168[#5A757ru268)",
+     "targetSecret" : "tlt&lt;,8TUYa7bC",
+     "attributes" : {
+       "billingcode" : 2345
+     }
+   },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "account": {
+      "accountID": 90,
+      "attributes": {
+        "billingcode": 2345
+      },
+      "initiatorSecret": "168[#5A757ru268)",
+      "status": "active",
+      "storageContainerID": "00000000-0000-0000-0000-000000000000",
+      "targetSecret": "tlt&lt;,8TUYa7bC",
+      "username": "bobsmith",
+      "volumes": [],
+      "enableChap": true
+    },
+    "accountID": 90
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

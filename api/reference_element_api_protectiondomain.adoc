@@ -1,0 +1,45 @@
+---
+permalink: api/reference_element_api_protectiondomain.html 
+sidebar: sidebar 
+keywords: object,objects,protection domains 
+summary: protectionDomain オブジェクトには、保護ドメインの名前とタイプの詳細が含まれます。 
+---
+= protectionDomain の略
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+protectionDomain オブジェクトには、保護ドメインの名前とタイプの詳細が含まれます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+protectionDomainName の略
+ a| 
+保護ドメインの名前。
+ a| 
+文字列
+
+
+
+ a| 
+protectionDomainType
+ a| 
+保護ドメインのタイプ。有効な値は次のとおり
+
+* Chassis ：すべてのストレージノードを 1 台のシャーシに配置します。
+* カスタム：お客様が定義した単一の保護ドメイン内のすべてのストレージノード。
+
+ a| 
+文字列
+
+|===

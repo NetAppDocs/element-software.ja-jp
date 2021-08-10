@@ -1,0 +1,41 @@
+---
+permalink: api/reference_element_api_snapmirrorvserveraggregateinfo.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorVserverAggregateInfo 
+summary: snapMirrorVserverAggregateInfo オブジェクトには、デスティネーション ONTAP クラスタで使用可能なデータ Storage Virtual Machine （別名 Vservers ）に関する情報が含まれます。 
+---
+= snapMirrorVserverAggregateInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorVserverAggregateInfo オブジェクトには、デスティネーション ONTAP クラスタで使用可能なデータ Storage Virtual Machine （ SVM ）に関する情報が含まれます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+aggrname を指定します
+ a| 
+SVM に割り当てられているアグリゲートの名前。
+ a| 
+文字列
+
+
+
+ a| 
+aggrAvailable サイズです
+ a| 
+割り当てられているアグリゲートの利用可能なサイズ。
+ a| 
+整数
+
+|===

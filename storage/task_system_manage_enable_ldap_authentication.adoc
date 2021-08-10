@@ -1,0 +1,65 @@
+---
+permalink: storage/task_system_manage_enable_ldap_authentication.html 
+sidebar: sidebar 
+keywords:  
+summary: ストレージシステムと既存の LDAP サーバの統合を設定できます。これにより、 LDAP 管理者はストレージシステムへのユーザアクセスを一元管理できます。 
+---
+= Element ユーザインターフェイスで LDAP 認証を有効にします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージシステムと既存の LDAP サーバの統合を設定できます。これにより、 LDAP 管理者はストレージシステムへのユーザアクセスを一元管理できます。
+
+LDAP の設定には、 Element ユーザインターフェイスまたは Element API を使用できます。この手順では、 Element UI を使用して LDAP を設定する方法について説明します。
+
+次に、 SolidFire で LDAP 認証を設定し、認証タイプとして「 S earchAndBind 」を使用する例を示します。この例では、 1 つの Windows Server 2012 R2 Active Directory サーバを使用します。
+
+. [*Cluster*>*LDAP*] をクリックします。
+. [* Yes* （はい） ] をクリックして、 LDAP 認証を有効
+. [ サーバーの追加 ] をクリックします。
+. ホスト名 /IP アドレス * を入力します。
++
+
+NOTE: オプションのカスタムポート番号を入力することもできます。
+
++
+たとえば、カスタムポート番号を追加するには、 <host name or IP address> ： <port number> と入力します
+
+. [Use LDAPS Protocol] を選択します。
+. 「一般設定」に必要な情報を入力します。
++
+link:reference_system_manage_ldap_details.md#["LDAP の詳細"]
+
++
+image::../media/element_new_ldap_servers.jpg[Element の新しい LDAP サーバ]
+
+. [*LDAP を有効にする *] をクリックします
+. ユーザーのサーバーアクセスをテストする場合は、 [ ユーザー認証のテスト ] をクリックします。
+. あとでクラスタ管理者を作成するときに使用できるように、表示された識別名とユーザグループの情報をコピーします。
+. [Save Changes] をクリックして、新しい設定を保存します。
+. 誰でもログインできるようにこのグループにユーザを作成するには、次の手順を実行します。
++
+.. [* ユーザー * （ * User * ） ] > [* 表示（ * View ） ]
++
+image::../media/element_new_cluster_admin.jpg[Element の新しいクラスタ管理者]
+
+.. 新しいユーザーの場合は、 [ ユーザータイプ ] の [*LDAP] をクリックし、 [ 識別名 ] フィールドにコピーしたグループを貼り付けます。
+.. 権限を選択します。通常はすべての権限が選択されます。
+.. エンドユーザライセンス契約までスクロールダウンし、 [* I accept （同意します） ] をクリックします。
+.. Create Cluster Admin をクリックします。
++
+これで、 Active Directory グループの値を持つユーザが作成されました。
+
+
+
+
+
+この問題をテストするには、 Element UI からログアウトし、そのグループにユーザとして再度ログインします。
+
+* 関連情報 *
+
+xref:task_system_manage_create_a_cluster_administrator_account.adoc[クラスタ管理者アカウントを作成]
+
+xref:reference_system_manage_ldap_details.adoc[LDAP の詳細]

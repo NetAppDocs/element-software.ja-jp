@@ -1,0 +1,222 @@
+---
+permalink: api/reference_element_api_getasyncresult.html 
+sidebar: sidebar 
+keywords: async,asynchronous,results,result,get,getting,GetAsyncResult 
+summary: GetAsyncResult を使用すると、非同期メソッドの呼び出し結果を取得できます。一部のメソッドの呼び出しには時間がかかり、システムが初期応答を送信したときに完了していない場合があります。メソッド呼び出しのステータスまたは結果を取得するには、 GetAsyncResult を使用してメソッドから返される asyncHandle の値をポーリングします。 
+---
+= GetAsyncResult
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 GetAsyncResult 」を使用すると、非同期メソッド呼び出しの結果を取得できます。一部のメソッドの呼び出しには時間がかかり、システムが初期応答を送信したときに完了していない場合があります。メソッド呼び出しのステータスまたは結果を取得するには、「 GetAsyncResult 」を使用してメソッドから返される asyncHandle の値をポーリングします。
+
+GetAsyncResult は、処理の全般的なステータス ( 処理中、完了、またはエラー ) を標準的な方法で返しますが、実際に処理で返されるデータは元のメソッド呼び出しによって異なります。戻りデータについては各メソッドに記載されています。
+
+keepResult パラメータが見つからないか「 false 」の場合、 asyncHandle は結果が返されると非アクティブになり、あとから asyncHandle がエラーを返しているかを照会しようとします。keepResult パラメータを true に設定すると、今後照会するときのために asyncHandle をアクティブな状態で維持できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+asyncHandle
+ a| 
+元の非同期メソッドの呼び出しで返された値。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+keepResult
+ a| 
+「 true 」の場合、 GetAsyncResult は値を返すときに非同期結果を削除しないため、以降も同じ asyncHandle に照会できます。
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ステータス
+ a| 
+非同期メソッド呼び出しのステータス。有効な値は次のとおり
+
+* running ：メソッドはまだ実行中です。
+* complete ：メソッドは完了しており、結果またはエラーを入手可能です。
+
+ a| 
+文字列
+
+
+
+ a| 
+結果
+ a| 
+非同期メソッドが正常に完了した場合、これが非同期処理の結果になります。非同期処理が失敗した場合、このメンバーは表示されません。
+ a| 
+文字列
+
+
+
+ a| 
+エラー
+ a| 
+ステータスが complete で非同期メソッドが失敗した場合、このメンバーにはエラーの詳細が含まれます。非同期処理が成功した場合、このメンバーは表示されません。
+ a| 
+文字列
+
+
+
+ a| 
+resultType
+ a| 
+非同期メソッド呼び出しが実行中または実行中の処理のタイプ。
+ a| 
+文字列
+
+
+
+ a| 
+詳細
+ a| 
+ステータスが「 running 」の場合、このメンバーにはメソッドの現在の処理に関連する情報が含まれます。非同期メソッドが実行されていない場合、このメンバーは表示されません。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+CreateTime をクリックします
+ a| 
+非同期メソッドが呼び出された時刻（ UTC+0 形式）。
+ a| 
+ISO 8601 形式の日付文字列
+
+
+
+ a| 
+LastUpdateTime （最終アップデート時間）
+ a| 
+非同期メソッドのステータスが最後に更新された時刻（ UTC+0 形式）。
+ a| 
+ISO 8601 形式の日付文字列
+
+|===
+* 注： * GetAsyncResult の戻り値は、基本的には標準的な JSON 応答にステータスフィールドを追加してネストしたものです。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "GetAsyncResult",
+  "params": {
+      "asyncHandle" : 389
+},
+"id" : 1
+}
+----
+
+
+== 応答例：エラー終了したメソッド
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "error": {
+      "code": 500,
+      "message": "DBClient operation requested on a non-existent path at [/asyncresults/1]",
+      "name": "xDBNoSuchPath"
+   },
+   "id": 1
+}
+----
+「 response 」が GetAsyncResult 呼び出しの JSON 応答オブジェクトだった場合、「 response.error 」は GetAsyncResult メソッド自体のエラー（存在しない asyncHandle の照会など）に対応しています。
+
+
+
+== 応答例：エラー終了した非同期タスク
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+     "createTime": "2016-01-01T02:05:53Z",
+     "error": {
+       "bvID": 1,
+       "message": "Bulk volume job failed",
+       "name": "xBulkVolumeScriptFailure",
+       "volumeID": 34
+     },
+     "lastUpdateTime": "2016-01-21T02:06:56Z",
+     "resultType": "BulkVolume",
+     "status": "complete"
+   }
+}
+----
+「 `respondse.result.error` 」は、元のメソッド呼び出しのエラー結果に対応します。
+
+
+
+== 応答例：成功した非同期タスク
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+     "createTime": "2016-01-01T22:29:18Z",
+     "lastUpdateTime": "2016-01-01T22:45:51Z",
+     "result": {
+       "cloneID": 25,
+       "message": "Clone complete.",
+       "volumeID": 47
+     },
+     "resultType": "Clone",
+     "status": "complete"
+   }
+}
+----
+呼び出しが正常に完了した場合の元のメソッド呼び出しの戻り値は、「 `respond.result.result` 」です。
+
+
+
+== 新規導入バージョン
+
+9.6

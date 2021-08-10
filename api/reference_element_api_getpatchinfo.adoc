@@ -1,0 +1,94 @@
+---
+permalink: api/reference_element_api_getpatchinfo.html 
+sidebar: sidebar 
+keywords: get,patch,info,patches,getpatchinfo 
+summary: GetPatchInfo メソッドを使用すると、ノードにインストールされているパッチに関する情報を取得できます。 
+---
+= GetPatchInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetPatchInfo メソッドを使用すると ' ストレージノードにインストールされている Element ソフトウェアのパッチに関する情報を取得できます
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+| 「フォース」  a| 
+メソッドをストレージクラスタ内のすべてのノードに対して強制的に実行します。この処理が必要になるのは、 API を単一のノードではなくクラスタの IP アドレスに問題する場合のみです。有効な値は次のとおり
+
+* 「真」
+* 「偽」
+
+| ブール値 | 「偽」 | いいえ 
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+| パッチ | このノードにインストールされているパッチの情報を含むオブジェクト。 | JSON オブジェクト 
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "GetPatchInfo",
+   "params": {
+      "force": false,
+      },
+   "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "patches": {
+          "SUST936": {
+          "date": "Wed 09 Dec 2020 10:41:59 PM UTC",
+          "description": "BMC fixes",
+          "newFiles": [
+              "None"
+          ],
+          "patchedFiles": [
+              "Patched_file_1.bin",
+              "Patched_file_2.dat",
+              "Patched_file_3.tgz"
+          ]
+          }
+        }
+    }
+}
+
+----
+
+
+== 新規導入バージョン
+
+12.3

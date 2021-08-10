@@ -1,0 +1,39 @@
+---
+permalink: api/concept_element_api_about_the_api.html 
+sidebar: sidebar 
+keywords: SolidFire,API,overview,about,Element 
+summary: Element API は、 HTTPS 経由の JSON-RPC プロトコルに基づいています。JSON-RPC は、軽量な JSON データ交換形式をベースにした単純なテキストベースの RPC プロトコルです。クライアントライブラリは、すべての主要なプログラミング言語で使用できます。 
+---
+= Element ソフトウェア API の概要
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element API は、 HTTPS 経由の JSON-RPC プロトコルに基づいています。JSON-RPC は、軽量な JSON データ交換形式をベースにした単純なテキストベースの RPC プロトコルです。クライアントライブラリは、すべての主要なプログラミング言語で使用できます。
+
+API エンドポイントに対して HTTPS POST 要求経由で API 要求を行うことができます。POST 要求の本文は JSON-RPC 要求オブジェクトです。この API は、現在バッチ要求（単一 POST 内の複数の要求オブジェクト）をサポートしていません。API 要求を送信する場合は、要求のコンテンツタイプとして「 application/json-rpc 」を使用し、本文がフォームエンコードされていないことを確認する必要があります。
+
+
+NOTE: Element Web UI は、本ドキュメントに記載された API メソッドを使用します。UI で API 処理を監視するには、 API ログを有効にします。これにより、システムに対して実行されているメソッドを確認できます。要求と応答の両方を有効にすると、実行したメソッドに対するシステムの応答を確認できます。
+
+特に指定がないかぎり、 API 応答内のすべての日付文字列は UTC+0 形式です。
+
+
+NOTE: ストレージクラスタの負荷が高い場合や、多数の連続した API 要求を間隔を空けずに送信した場合は、メソッドが失敗してエラー「 xDBVersionMismatch 」を返すことがあります。この場合は、メソッドの呼び出しを再試行してください。
+
+* xref:reference_element_api_request_object_members.adoc[要求オブジェクトメンバー]
+* xref:reference_element_api_response_object_members.adoc[応答オブジェクトメンバー]
+* xref:concept_element_api_request_endpoints.adoc[要求エンドポイント]
+* xref:concept_element_api_authentication.adoc[API 認証]
+* xref:concept_element_api_asynchronous_methods.adoc[非同期メソッド]
+* xref:reference_element_api_attributes.adoc[属性（ Attributes ）]
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire のリソースページ"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
+

@@ -1,0 +1,113 @@
+---
+permalink: api/reference_element_api_listsnapmirrorrelationships.html 
+sidebar: sidebar 
+keywords: snapmirror,endpoints,endpoint,list,listing,listsnapmirrorrelationships 
+summary: Element ソフトウェア Web UI は、 ListSnapMirrorRelationships メソッドを使用して、 Element ストレージクラスタ上の 1 つまたはすべての SnapMirror 関係をリストします。 
+---
+= ListSnapMirrorRelationships] をクリックします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element ソフトウェア Web UI は、「 ListSnapMirrorRelationships 」メソッドを使用して、 Element ストレージクラスタ上の 1 つまたはすべての SnapMirror 関係をリストします。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+指定したエンドポイント ID に関連付けられている関係のみをリストします。エンドポイント ID を指定しない場合は、認識されているすべての SnapMirror エンドポイントの関係がリストされます。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+デスティネーションボリューム
+ a| 
+指定したデスティネーションボリュームに関連付けられている関係をリストします。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+sourceVolume 」と入力します
+ a| 
+指定したソースボリュームに関連付けられている関係をリストします。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+Vserver
+ a| 
+指定した SVM 上の関係をリストします。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+関係 ID
+ a| 
+指定した関係 ID に関連付けられている関係をリストします。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorRelationships の場合
+ a| 
+SnapMirror 関係の情報を含むオブジェクトのリスト。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationship のこと] 配列
+
+|===
+
+
+== 新規導入バージョン
+
+10.1

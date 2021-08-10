@@ -1,0 +1,197 @@
+---
+permalink: api/reference_element_api_rollbacktosnapshot.html 
+sidebar: sidebar 
+keywords: rollbacktosnapshot,snapshot,creating,create,roll,back,rollback,roll back,existing 
+summary: RollbackToSnapshot メソッドを使用すると、アクティブなボリュームイメージの既存の Snapshot を作成できます。このメソッドは、既存の Snapshot から新しい Snapshot を作成します。 
+---
+= RollbackToSnapshot
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 RollbackToSnapshot 」メソッドを使用すると、アクティブボリュームイメージの既存のスナップショットを作成できます。このメソッドは、既存の Snapshot から新しい Snapshot を作成します。
+
+新しい Snapshot がアクティブになり、既存の Snapshot は手動で削除するまで保持されます。saveCurrentState パラメータを true に設定しないかぎり、以前にアクティブだった Snapshot は削除されます。
+
+* cluster_Full*
+
+
+NOTE: Snapshot を作成できるのは、クラスタフルが「ステージ 1 」、「ステージ 2 」、または「ステージ 3 」の場合です。ステージが 4 または 5 に達すると、 Snapshot を作成できなくなります。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ボリューム ID
+ a| 
+ボリュームの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON 属性
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+名前
+ a| 
+Snapshot の名前。名前を指定しない場合、ロールバックされる Snapshot の名前の末尾に「 - copy 」が追加されます。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+Snapshot ID
+ a| 
+指定したボリュームで以前に作成された Snapshot の ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+saveCurrentState
+ a| 
+以前のアクティブボリュームイメージを保存するかどうかを指定します。有効な値：
+
+* true ：以前のアクティブボリュームイメージは保持されます。
+* false ：以前のアクティブボリュームイメージは削除されます。
+
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+チェックサム
+ a| 
+格納された Snapshot のデータを表す短い文字列。
+ a| 
+文字列
+
+
+
+ a| 
+Snapshot ID
+ a| 
+saveCurrentState が false に設定されている場合、この値は null です。
+
+saveCurrentState が true に設定された場合、新しく作成された Snapshot の一意の ID 。
+ a| 
+整数
+
+
+
+ a| 
+スナップショット
+ a| 
+saveCurrentState が false に設定されている場合、この値は null です。
+
+saveCurrentState が true に設定されている場合、新しく作成された Snapshot に関する情報を含むオブジェクト。
+ a| 
+xref:reference_element_api_snapshot.adoc[スナップショット]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+ "method": "RollbackToSnapshot",
+ "params": {
+    "volumeID": 1,
+    "snapshotID": 3114,
+    "saveCurrentState": true
+  },
+  "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "checksum": "0x0",
+    "snapshot": {
+      "attributes": {},
+      "checksum": "0x0",
+      "createTime": "2016-04-04T17:27:32Z",
+      "enableRemoteReplication": false,
+      "expirationReason": "None",
+      "expirationTime": null,
+      "groupID": 0,
+      "groupSnapshotUUID": "00000000-0000-0000-0000-000000000000",
+      "name": "test1-copy",
+      "snapshotID": 1,
+      "snapshotUUID": "30d7e3fe-0570-4d94-a8d5-3cc8097a6bfb",
+      "status": "done",
+      "totalSize": 5000658944,
+      "virtualVolumeID": null,
+      "volumeID": 1
+    },
+    "snapshotID": 1
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

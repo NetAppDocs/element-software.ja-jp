@@ -1,0 +1,25 @@
+---
+permalink: api/concept_element_api_virtual_network_naming_conventions.html 
+sidebar: sidebar 
+keywords: storage,system,naming,convention,virtual,network 
+summary: NetApp Element ストレージシステムでは、システム内のすべてのオブジェクトに対する一意の識別子として、 1 つずつ増分する数値を使用します。 
+---
+= 仮想ネットワークの命名規則
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Element ストレージシステムでは、システム内のすべてのオブジェクトに対する一意の識別子として、 1 つずつ増分する数値を使用します。
+
+新しいボリュームを作成すると、新しいボリュームの ID はちょうど「 1 」増分されます。この規則は、 Element ソフトウェアを実行しているストレージクラスタの仮想ネットワークにも適用されます。Element クラスタで作成する最初の仮想ネットワークの VirtualNetworkID は「 1 」です。この ID は、 VLAN タグ番号と同じものではありません。
+
+API メソッドに明記されていれば、 VirtualNetworkID と VirtualNetworkTag （ VLAN タグ）のどちらかを使用できます。
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire のリソースページ"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
+

@@ -1,0 +1,61 @@
+---
+permalink: api/reference_element_api_listsnapmirroraggregates.html 
+sidebar: sidebar 
+keywords: snapmirror,aggregate,aggregates,list,listing,listsnapmirroraggregates 
+summary: Element ソフトウェア Web UI は、 ListSnapMirrorAggregates メソッドを使用して、リモート ONTAP システムで使用可能なすべての SnapMirror アグリゲートをリストします。アグリゲートは、物理ストレージリソースの集まりです。 
+---
+= ListAggregSnapMirrorates
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element ソフトウェア Web UI は、「 ListSnapMirrorAggregates 」メソッドを使用して、リモート ONTAP システムで使用可能なすべての SnapMirror アグリゲートを一覧表示します。アグリゲートは、物理ストレージリソースの集まりです。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+指定したエンドポイント ID に関連付けられているアグリゲートのみを返します。エンドポイント ID を指定しない場合は、認識されているすべての SnapMirror エンドポイントのアグリゲートがリストされます。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorAggregates
+ a| 
+ONTAP ストレージシステムで使用可能なアグリゲートのリスト。
+ a| 
+xref:reference_element_api_snapmirroraggregate.adoc[snapMirrorAggregate] 配列
+
+|===
+
+
+== 新規導入バージョン
+
+10.1

@@ -1,0 +1,51 @@
+---
+permalink: storage/reference_data_manage_vvol_protocol_endpoints_details.html 
+sidebar: sidebar 
+keywords: protocol endpoints, details, vvols, state, type, id 
+summary: VVOL タブのプロトコルエンドポイントのページには、プロトコルエンドポイントの情報が表示されます。 
+---
+= プロトコルエンドポイントの詳細
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VVOL タブのプロトコルエンドポイントのページには、プロトコルエンドポイントの情報が表示されます。
+
+* * 一次プロバイダ ID *
++
+プライマリプロトコルエンドポイントプロバイダの ID 。
+
+* * 二次プロバイダ ID *
++
+セカンダリプロトコルエンドポイントプロバイダの ID 。
+
+* * プロトコルエンドポイント ID *
++
+プロトコルエンドポイントの UUID 。
+
+* * プロトコルエンドポイントの状態 *
++
+プロトコルエンドポイントのステータス。有効な値は次のとおりです。
+
++
+** Active ：プロトコルエンドポイントは使用中です。
+** Start ：プロトコルエンドポイントが起動中です。
+** Failover ：プロトコルエンドポイントはフェイルオーバーしました。
+** Reserved ：プロトコルエンドポイントはリザーブされています。
+
+
+* * プロバイダタイプ *
++
+プロトコルエンドポイントプロバイダのタイプ。有効な値は次のとおりです。
+
++
+** プライマリ
+** セカンダリ
+
+
+* * SCSI NAA デバイス ID *
++
+NAA IEEE Registered Extended Format のプロトコルエンドポイントのグローバル一意 SCSI デバイス ID 。
+
+

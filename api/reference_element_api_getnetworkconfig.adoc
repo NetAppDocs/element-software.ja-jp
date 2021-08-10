@@ -1,0 +1,69 @@
+---
+permalink: api/reference_element_api_getnetworkconfig.html 
+sidebar: sidebar 
+keywords: network,config,configuration,get,getting,getnetworkconfig 
+summary: GetNetworkConfig メソッドを使用して、ノードのネットワーク設定情報を表示できます。 
+---
+= GetNetworkConfig （ GetNetworkConfig ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 GetNetworkConfig 」メソッドを使用すると、ノードのネットワーク設定情報を表示できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ネットワーク
+ a| 
+ノードのネットワークインターフェイスごとのネットワーク接続タイプおよび現在の設定。
+ a| 
+xref:reference_element_api_network_all_interfaces.adoc[network （すべてのインターフェイス）]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "GetNetworkConfig",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+この応答例は分量が多いため、補足のトピックに記載しています。
+
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_response_example_getnetworkconfig.adoc[GetNetworkConfig （ GetNetworkConfig ）]

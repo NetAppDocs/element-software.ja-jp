@@ -1,0 +1,235 @@
+---
+permalink: api/reference_element_api_createsnapshot.html 
+sidebar: sidebar 
+keywords: volume,volumes,create,creating,snapshot,snapshots,CreateSnapshot 
+summary: CreateSnapshot を使用して、ボリュームのポイントインタイムコピーを作成できます。任意のボリュームまたは既存の Snapshot から Snapshot を作成できます。 
+---
+= CreateSnapshot の更新
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 CreateSnapshot 」を使用して、ボリュームのポイントインタイムコピーを作成できます。任意のボリュームまたは既存の Snapshot から Snapshot を作成できます。
+
+この API メソッドで Snapshot ID を指定しない場合、ボリュームのアクティブなブランチから Snapshot が作成されます。Snapshot の作成元のボリュームがリモートクラスタにレプリケートされている場合は、 Snapshot も同じターゲットにレプリケートできます。enableRemoteReplication パラメータを使用して、 Snapshot 機能を使用したレプリケーションを有効にします。
+
+
+NOTE: Snapshot を作成できるのは、クラスタフルが「ステージ 1 」、「ステージ 2 」、または「ステージ 3 」の場合です。ステージが 4 または 5 に達すると、 Snapshot を作成できなくなります。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+「 attributes 」
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON オブジェクト
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+enableRemoteReplication
+ a| 
+Snapshot をリモートストレージにレプリケートするかどうかを指定します。有効な値は次のとおり
+
+* True ：スナップショットはリモート・ストレージにレプリケートされます
+* 'false': スナップショットはリモート・ストレージにレプリケートされません
+
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+
+
+| 「 enseireSerialCreation 」  a| 
+以前の Snapshot レプリケーションが実行中の場合に Snapshot を作成しないように指定します。有効な値は次のとおりです。
+
+* True ：これにより ' 一度に 1 つのスナップショットのみがレプリケートされます以前の Snapshot レプリケーションがまだ実行中の場合、新しい Snapshot の作成は失敗します。
+* 'false': デフォルト別の Snapshot レプリケーションがまだ実行中の場合は、この Snapshot を作成できます。
+
+| ブール値 | 「偽」 | いいえ 
+
+
+| 有効期限  a| 
+Snapshot を削除するまでの時間を指定します。「保持」と一緒に使用することはできません。expirationTime または retention のどちらも指定しない場合、 Snapshot は期限切れになりません。時刻の形式は、時間ベースの期限を表す ISO 8601 形式の日付文字列であり、それ以外の場合は期限切れになりません。値が null の場合 ' スナップショットは永続的に保持されます「 fifo 」の値を指定すると、ボリューム上の他の FIFO スナップショットと比較して、スナップショットが先入れ先出しベースで保持されます。使用可能な FIFO 領域がない場合、 API は失敗します。
+| 文字列 | なし | いいえ 
+
+
+ a| 
+「 name 」
+ a| 
+Snapshot の名前。名前を入力しない場合、 Snapshot の作成日時が使用されます。最大文字数は 255 文字です。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+「延長」
+ a| 
+このパラメータは 'expirationTime' パラメータと同じですが ' 時刻の形式は HH:mm:ss です'expirationTime' も '`retention' も指定しない場合 ' スナップショットは期限切れになりません
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+「 MirrorLabel 」を参照してください
+ a| 
+SnapMirror エンドポイントでの Snapshot 保持ポリシーを指定するために SnapMirror ソフトウェアで使用されるラベル。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+'napshotID'
+ a| 
+新しい Snapshot の作成元 Snapshot の一意の ID 。Snapshot ID は、指定したボリュームの Snapshot の ID である必要があります。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+「ボリューム ID 」
+ a| 
+コピー元のボリュームイメージの一意の ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+チェックサム
+ a| 
+保存された Snapshot の正しい数字を表す文字列。このチェックサムを使用して、あとで他の Snapshot と比較してデータ内のエラーを検出できます。
+ a| 
+文字列
+
+
+
+ a| 
+Snapshot ID
+ a| 
+新しい Snapshot の一意の ID 。
+ a| 
+Snapshot ID
+
+
+
+ a| 
+スナップショット
+ a| 
+作成された Snapshot の情報を含むオブジェクト。
+ a| 
+xref:reference_element_api_snapshot.adoc[スナップショット]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "CreateSnapshot",
+   "params": {
+      "volumeID": 1
+   },
+   "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "checksum": "0x0",
+      "snapshot": {
+        "attributes": {},
+        "checksum": "0x0",
+        "createTime": "2016-04-04T17:14:03Z",
+        "enableRemoteReplication": false,
+        "expirationReason": "None",
+        "expirationTime": null,
+        "groupID": 0,
+        "groupSnapshotUUID": "00000000-0000-0000-0000-000000000000",
+        "name": "2016-04-04T17:14:03Z",
+        "snapshotID": 3110,
+        "snapshotUUID": "6f773939-c239-44ca-9415-1567eae79646",
+        "status": "done",
+        "totalSize": 5000658944,
+        "virtualVolumeID": null,
+        "volumeID": 1
+      },
+        "snapshotID": 3110
+  }
+}
+----
+
+
+== 例外
+
+「 createsnapshot 」 API が呼び出され、スナップショットを作成できない場合は、 xNotPrimary 例外が表示されます。これは想定される動作です。CreateSnapshot` API 呼び出しを再試行します。
+
+
+
+== 新規導入バージョン
+
+9.6

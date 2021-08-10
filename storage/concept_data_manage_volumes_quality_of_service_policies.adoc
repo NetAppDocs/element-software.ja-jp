@@ -1,0 +1,82 @@
+---
+permalink: storage/concept_data_manage_volumes_quality_of_service_policies.html 
+sidebar: sidebar 
+keywords: qos policies, manage, volumes, create, edit, delete 
+summary: 標準的なサービス品質設定を QoS ポリシーとして作成および保存して、複数のボリュームに適用することができます。QoS ポリシーは、 Management タブの QoS Policies ページで作成、編集、および削除できます。 
+---
+= QoS ポリシーを管理する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+標準的なサービス品質（ QoS ）設定を QoS ポリシーとして作成および保存して、複数のボリュームに適用することができます。QoS ポリシーは、 Management タブの QoS Policies ページで作成、編集、および削除できます。
+
+
+NOTE: QoS ポリシーを使用している場合は、ボリュームでカスタム QoS を使用しないでください。カスタム QoS は、ボリュームの QoS 設定に対して QoS ポリシーの値を上書きして調整します。
+
+https://www.youtube.com/embed/q9VCBRDtrnI?rel=0["ネットアップのビデオ： SolidFire Quality of Service Policies"]
+
+を参照してください link:../concepts/concept_data_manage_volumes_solidfire_quality_of_service.html["パフォーマンスと QoS"]。
+
+* QoS ポリシーを作成する
+* QoS ポリシーを編集する
+* QoS ポリシーを削除する
+
+
+
+
+== QoS ポリシーを作成する
+
+QoS ポリシーを作成し、ボリュームの作成時に適用することができます。
+
+. [* Management] > [* QoS Policies] を選択します。
+. [Create QoS Policy] をクリックします。
+. 「 * ポリシー名 * 」を入力します。
+. 最小 IOPS ** 、最大 IOPS * 、バースト IOPS * の値を入力します。
+. [Create QoS Policy] をクリックします。
+
+
+
+
+== QoS ポリシーを編集する
+
+既存の QoS ポリシーの名前を変更したり、ポリシーに関連付けられている値を編集したりできます。QoS ポリシーの変更は、そのポリシーに関連付けられているすべてのボリュームに反映されます。
+
+. [* Management] > [* QoS Policies] を選択します。
+. 編集する QoS ポリシーの [Actions] アイコンをクリックします。
+. 表示されたメニューで、 ** Edit ** を選択します。
+. Edit QoS Policy * ダイアログボックスで、必要に応じて次のプロパティを変更します。
++
+** ポリシー名
+** 最小 IOPS
+** 最大 IOPS
+** バースト IOPS
+
+
+. [ 変更の保存 *] をクリックします。
+
+
+
+
+== QoS ポリシーを削除する
+
+不要になった QoS ポリシーを削除できます。QoS ポリシーを削除すると、そのポリシーに関連付けられているすべてのボリュームの QoS 設定は維持されますが、ポリシーとの関連付けは解除されます。
+
+
+NOTE: ボリュームと QoS ポリシーの関連付けを解除する代わりに、そのボリュームの QoS 設定をカスタムに変更できます。
+
+. [* Management] > [* QoS Policies] を選択します。
+. 削除する QoS ポリシーのアクションアイコンをクリックします。
+. 表示されたメニューで、 * 削除 * を選択します。
+. 操作を確定します。
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* link:task_data_manage_volumes_remove_a_qos_policy_association_of_a_volume.html["ボリュームの QoS ポリシーの関連付けを削除します"]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

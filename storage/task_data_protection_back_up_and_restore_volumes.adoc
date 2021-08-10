@@ -1,0 +1,27 @@
+---
+permalink: storage/task_data_protection_back_up_and_restore_volumes.html 
+sidebar: sidebar 
+keywords: volumes, backup and restore 
+summary: 他の SolidFire ストレージ、および Amazon S3 または OpenStack Swift と互換性のあるセカンダリオブジェクトストアに対して、ボリュームのバックアップとリストアを実行できます。 
+---
+= ボリュームのバックアップとリストア
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+他の SolidFire ストレージ、および Amazon S3 または OpenStack Swift と互換性のあるセカンダリオブジェクトストアに対して、ボリュームのバックアップとリストアを実行できます。
+
+OpenStack Swift または Amazon S3 からボリュームをリストアするときは、元のバックアッププロセスのマニフェスト情報が必要です。SolidFire ストレージシステムにバックアップされているボリュームをリストアする場合は、マニフェスト情報は不要です。
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:task_data_protection_back_up_volume_to_amazon_s3.adoc[Amazon S3 オブジェクトストアにボリュームをバックアップします]
+* xref:task_data_protection_back_up_volume_to_openstack_swift.adoc[OpenStack Swift オブジェクトストアにボリュームをバックアップします]
+* xref:task_data_protection_back_up_volume_to_solidfire.adoc[ボリュームを SolidFire ストレージクラスタにバックアップします]
+* xref:task_data_protection_restore_volume_from_backup_on_amazon_s3.adoc[Amazon S3 オブジェクトストア上のバックアップからボリュームをリストアする]
+* xref:task_data_protection_restore_volume_from_backup_on_openstack_swift.adoc[OpenStack Swift オブジェクトストア上のバックアップからボリュームをリストアします]
+* xref:task_data_protection_restore_volume_from_backup_on_solidfire.adoc[SolidFire ストレージクラスタ上のバックアップからボリュームをリストアします]
+

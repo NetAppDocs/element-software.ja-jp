@@ -1,0 +1,23 @@
+---
+permalink: storage/task_data_protection_clone_a_volume_from_a_snapshot.html 
+sidebar: sidebar 
+keywords: clone volume from snapshot, volume snapshots, clone 
+summary: ボリュームの Snapshot から新しいボリュームを作成できます。この処理では、 Snapshot の作成時点でボリュームに含まれていたデータを使用して新しいボリュームをクローニングします。このプロセスでは、ボリュームの他の Snapshot に関する情報が新しく作成されたボリュームに格納されます。 
+---
+= Snapshot からボリュームをクローニングします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリュームの Snapshot から新しいボリュームを作成できます。この処理では、 Snapshot の作成時点でボリュームに含まれていたデータを使用して新しいボリュームをクローニングします。このプロセスでは、ボリュームの他の Snapshot に関する情報が新しく作成されたボリュームに格納されます。
+
+. [ * データ保護 *>* スナップショット * ] をクリックします。
+. ボリュームクローンに使用する Snapshot の * Actions * アイコンをクリックします。
+. 表示されたメニューで、 * Clone Volume from Snapshot* （スナップショットからボリュームをクローニング）をクリックします。
+. [* Clone Volume from Snapshot* （スナップショットからのボリュームのクローン） ] ダイアログボックスに * ボリューム名 * を入力します。
+. 新しいボリュームの合計サイズ * とサイズ単位を選択します。
+. ボリュームの * アクセス * タイプを選択します。
+. 新しいボリュームに関連付ける * アカウント * をリストから選択します。
+. [ クローニングの開始 ] をクリックします。
+

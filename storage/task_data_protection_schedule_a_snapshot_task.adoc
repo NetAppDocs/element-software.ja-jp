@@ -1,0 +1,25 @@
+---
+permalink: storage/task_data_protection_schedule_a_snapshot_task.html 
+sidebar: sidebar 
+keywords: snapshot, schedule, volume snapshots, group snapshots 
+summary: ボリューム Snapshot を指定した間隔で作成するようにスケジュールを設定することで、ボリュームまたはボリュームグループ上のデータを保護できます。1 つのボリューム Snapshot またはグループ Snapshot を自動的に実行するようにスケジュールを設定できます。 
+---
+= Snapshot のスケジュールを設定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリューム Snapshot を指定した間隔で作成するようにスケジュールを設定することで、ボリュームまたはボリュームグループ上のデータを保護できます。1 つのボリューム Snapshot またはグループ Snapshot を自動的に実行するようにスケジュールを設定できます。
+
+Snapshot スケジュールには、曜日または日にちに基づく間隔を設定できます。次の Snapshot を作成するまでの日数、時間、および分を指定することもできます。ボリュームがレプリケートされている場合は、作成された Snapshot をリモートストレージシステムに格納できます。
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:task_data_protection_create_a_snapshot_schedule.adoc[Snapshot スケジュールを作成します]
+* xref:task_data_protection_edit_a_snapshot_schedule.adoc[Snapshot スケジュールを編集します]
+* xref:task_data_protection_delete_a_snapshot_schedule.adoc[Snapshot スケジュールを削除します]
+* xref:task_data_protection_copy_a_snapshot_schedule.adoc[Snapshot スケジュールをコピーします]
+

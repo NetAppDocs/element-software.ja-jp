@@ -1,0 +1,129 @@
+---
+permalink: api/reference_element_api_listvolumestatsbyvolume.html 
+sidebar: sidebar 
+keywords: volumes,volume,stats,list,listing,listvolumestatsbyvolume,activity 
+summary: ListVolumeStatsByVolume メソッドを使用すると、すべてのボリュームのボリュームごとのアクティビティ測定値の概要をリストできます。値は、ボリュームを作成したときからの累積値です。 
+---
+= ListVolumeStatsByVolume を参照してください
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ListVolumeStatsByVolume 」メソッドを使用すると、すべてのボリュームのボリュームごとのアクティビティ測定値の概要をリストできます。値は、ボリュームを作成したときからの累積値です。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+includeVirtualVolumes などです
+ a| 
+デフォルトでは仮想ボリュームは応答に含まれます。仮想ボリュームを除外するには、 false に設定します。
+ a| 
+ブール値
+ a| 
+正しいです
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ボリューム統計
+ a| 
+ボリュームアクティビティ情報のリスト。
+ a| 
+xref:reference_element_api_volumestats.adoc[ボリューム統計] 配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ListVolumeStatsByVolume",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeStats": [
+      {
+        "accountID": 3,
+        "actualIOPS": 0,
+        "asyncDelay": null,
+        "averageIOPSize": 4096,
+        "burstIOPSCredit": 30000,
+        "clientQueueDepth": 0,
+        "desiredMetadataHosts": null,
+        "latencyUSec": 0,
+        "metadataHosts": {
+          "deadSecondaries": [],
+          "liveSecondaries": [
+              16
+          ],
+          "primary": 12
+        },
+        "nonZeroBlocks": 7499205,
+        "readBytes": 159012818944,
+        "readBytesLastSample": 0,
+        "readLatencyUSec": 0,
+        "readOps": 38821489,
+        "readOpsLastSample": 0,
+        "samplePeriodMSec": 500,
+        "throttle": 0,
+        "timestamp": "2016-10-17T20:55:31.087537Z",
+        "unalignedReads": 0,
+        "unalignedWrites": 0,
+        "volumeAccessGroups": [
+          1
+        ],
+        "volumeID": 1,
+        "volumeSize": 53687091200,
+        "volumeUtilization": 0,
+        "writeBytes": 52992585728,
+        "writeBytesLastSample": 0,
+        "writeLatencyUSec": 0,
+        "writeOps": 12937643,
+        "writeOpsLastSample": 0,
+        "zeroBlocks": 5607995
+      }
+    ]
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

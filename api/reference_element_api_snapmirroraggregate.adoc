@@ -1,0 +1,86 @@
+---
+permalink: api/reference_element_api_snapmirroraggregate.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorAggregate 
+summary: snapMirrorAggregate オブジェクトには、ボリュームでストレージとして使用可能なディスクの集合である、使用可能な ONTAP アグリゲートに関する情報が含まれています。この情報は、 ListSnapMirrorAggregates API メソッドを使用して取得できます。 
+---
+= snapMirrorAggregate
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorAggregate オブジェクトには、ボリュームでストレージとして使用可能なディスクの集合である、使用可能な ONTAP アグリゲートに関する情報が含まれています。この情報は、 ListSnapMirrorAggregates API メソッドを使用して取得できます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+デスティネーション ONTAP システムの ID 。
+ a| 
+整数
+
+
+
+ a| 
+アグリゲート名
+ a| 
+アグリゲートの名前。
+ a| 
+文字列
+
+
+
+ a| 
+ノード名
+ a| 
+このアグリゲートを所有する ONTAP ノードの名前。
+ a| 
+文字列
+
+
+
+ a| 
+sizeAvailable です
+ a| 
+アグリゲートに残っている使用可能なバイト数。
+ a| 
+整数
+
+
+
+ a| 
+sizeTotal のように指定します
+ a| 
+アグリゲートの合計サイズ（バイト）。
+ a| 
+整数
+
+
+
+ a| 
+percentUsedCapacity
+ a| 
+現在使用中のディスクスペースの割合。
+ a| 
+整数
+
+
+
+ a| 
+ボリューム数
+ a| 
+アグリゲート内のボリュームの数。
+ a| 
+整数
+
+|===

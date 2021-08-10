@@ -1,0 +1,157 @@
+---
+permalink: api/reference_element_api_createpublicprivatekeypair.html 
+sidebar: sidebar 
+keywords: SSL keys,public and private keys,certificate signing request,creating key pair 
+summary: CreatePublicPrivateKeyPair メソッドを使用すると、パブリック SSL キーとプライベート SSL キーを作成できます。これらのキーを使用して、証明書署名要求を生成できます。各ストレージクラスタで使用できるキーペアは 1 組だけです。このメソッドを使用して既存のキーを置き換える前に、プロバイダがそのキーを使用していないことを確認してください。 
+---
+= CreatePublicPrivateKeyPair
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 CreatePublicPrivateKeyPair 」メソッドを使用して、パブリックおよびプライベート SSL キーを作成できます。これらのキーを使用して、証明書署名要求を生成できます。各ストレージクラスタで使用できるキーペアは 1 組だけです。このメソッドを使用して既存のキーを置き換える前に、プロバイダがそのキーを使用していないことを確認してください。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+CommonName （共通名
+ a| 
+X.509 識別名 * Common Name * フィールド（ CN ）。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+国名
+ a| 
+X.509 識別名 * Country * フィールド（ C ）。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+E メールアドレス
+ a| 
+X.509 識別名 * 電子メールアドレス * フィールド（メール）。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+ローカリティ
+ a| 
+X.509 識別名 *Locality Name * フィールド（ L ）。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+組織
+ a| 
+X.509 識別名 * 組織名 * フィールド（ O ）。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+OrganizationalUnit
+ a| 
+X.509 識別名 * 組織単位名 * フィールド（ OU ）。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+状態
+ a| 
+X.509 識別名 * State * または * Province Name * フィールド（ ST または SP または S ）。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。エラーがなければ、キーの作成は成功したとみなされます。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "CreatePublicPrivateKeyPair",
+  "params": {
+    "commonName": "Name",
+    "country": "US",
+    "emailAddress" : "email@domain.com"
+   },
+"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {}
+}
+----
+
+
+== 新規導入バージョン
+
+11.7

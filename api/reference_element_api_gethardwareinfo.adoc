@@ -1,0 +1,134 @@
+---
+permalink: api/reference_element_api_gethardwareinfo.html 
+sidebar: sidebar 
+keywords: node,hardware,info,get,getting,gethardwareinfo 
+summary: GetHardwareInfo メソッドを使用すると、 1 つのノードのハードウェア情報およびステータスを取得できます。ハードウェア情報には、通常、メーカー、ベンダー、バージョン、ドライブ、およびその他の関連する識別情報が含まれます。 
+---
+= GetHardwareInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetHardwareInfo メソッドを使用すると、 1 つのノードのライブハードウェア情報およびステータスを取得できます。ハードウェア情報には、通常、メーカー、ベンダー、バージョン、ドライブ、およびその他の関連する識別情報が含まれます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+[-force]
+ a| 
+この「 force 」パラメータを true に設定すると、クラスタのすべてのノードに対して実行されます。
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+hardwareInfo
+ a| 
+ノードのハードウェア情報。
+ a| 
+xref:reference_element_api_hardwareinfo.adoc[hardwareInfo]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "GetHardwareInfo",
+   "params": {
+   },
+"id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "hardwareInfo": {
+      "bus": {
+        "core_DMI:0200": {
+          "description": "Motherboard",
+          "physid": "0",
+          "product": "0A47AA",
+          "serial": "..AB123456C12354.",
+          "version": "C07"
+        }
+      },
+      "driveHardware": [
+        {
+          "canonicalName": "sdh",
+          "connected": true,
+          "dev": 2160,
+          "devPath": "/dev/disk/by-path/pci-0000:41:00.0-sas-0x500056b37789abf0-lun-0",
+          "driveEncryptionCapability": "fips",
+          "driveType": "Block",
+          "lifeRemainingPercent": 92,
+          "lifetimeReadBytes": 175436696911872,
+          "lifetimeWriteBytes": 81941097349120,
+          "name": "scsi-SATA_INTEL_SSDSC2BB3BTWL12345686300AAA",
+          "path": "/dev/sdh",
+          "pathLink": "/dev/disk/by-path/pci-0000:41:00.0-sas-0x500056b37789abf0-lun-0",
+          "powerOnHours": 17246,
+          "product": "INTEL SSDAA2AA300A4",
+          "reallocatedSectors": 0,
+          "reserveCapacityPercent": 100,
+          "scsiCompatId": "scsi-SATA_INTEL_SSDSC2BB3BTWL12345686300AAA",
+          "scsiState": "Running",
+          "securityAtMaximum": false,
+          "securityEnabled": false,
+          "securityFrozen": false,
+          "securityLocked": false,
+          "securitySupported": true,
+          "serial": "AAAA33710886300AAA",
+          "size": 300069052416,
+          "slot": 1,
+          "smartSsdWriteCapable": false,
+          "uuid": "aea178b9-c336-6bab-a61d-87b615e8120c",
+          "vendor": "Intel",
+          "version": "D2010370"
+        },
+      ...
+      ]
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

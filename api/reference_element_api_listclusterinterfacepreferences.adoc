@@ -1,0 +1,81 @@
+---
+permalink: api/reference_element_api_listclusterinterfacepreferences.html 
+sidebar: sidebar 
+keywords:  
+summary: ListClusterInterfacePreference メソッドを使用すると、 Element ソフトウェアを実行するストレージクラスタと統合されたシステムで、システムに格納されている既存のクラスタインターフェイス設定をリストできます。このメソッドは内部で使用されます。 
+---
+= ListClusterInterfacePreferences の順に選択します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ListClusterInterfacePreference 」メソッドを使用すると、 Element ソフトウェアを実行するストレージクラスタと統合されたシステムで、システムに格納されている既存のクラスタインターフェイス設定を表示できます。このメソッドは内部で使用されます。
+
+
+NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+プリファレンス（ Preferences ）
+ a| 
+ストレージクラスタに現在格納されているクラスタインターフェイスオブジェクトのリスト。各オブジェクトに設定の名前と値が含まれます。
+ a| 
+JSON オブジェクトの配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+	"method": "ListClusterInterfacePreferences",
+    "params": {
+    },
+    "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"preferences": [
+			{
+				"name": "prefname",
+				"value": "testvalue"
+			}
+		]
+	}
+}
+----
+
+
+== 新規導入バージョン
+
+11.0

@@ -1,0 +1,101 @@
+---
+permalink: api/reference_element_api_createkeyproviderkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key provider,creating,create 
+summary: CreateKeyProviderKmip メソッドを使用すると、指定した名前の Key Management Interoperability Protocol\ （ KMIP \ ）キープロバイダを作成できます。キープロバイダは、認証キーを取得するメカニズムと場所を定義します。KMIP キープロバイダの新規作成時には、そのプロバイダに割り当てられている KMIP キーサーバはありません。KMIP キーサーバを作成するには、 CreateKeyServerKmip メソッドを使用します。プロバイダに割り当てるには、 AddKeyServerToProviderKmip を参照してください。 
+---
+= CreateKeyProviderKmip
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+CreateKeyProviderKmip メソッドを使用すると、指定した名前の Key Management Interoperability Protocol （ KMIP ）キープロバイダを作成できます。キープロバイダは、認証キーを取得するメカニズムと場所を定義します。KMIP キープロバイダの新規作成時には、そのプロバイダに割り当てられている KMIP キーサーバはありません。KMIP キーサーバを作成するには、「 CreateKeyServerKmip 」メソッドを使用します。プロバイダに割り当てるには、「 AddKeyServerToProviderKmip 」を参照してください。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+KeyProviderName の略
+ a| 
+作成する KMIP キープロバイダに関連付ける名前。この名前は表示目的でのみ使用され、一意である必要はありません。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+kmipKeyProvider のいずれかです
+ a| 
+作成されたキープロバイダの詳細を含むオブジェクト。
+ a| 
+link:reference_element_api_keyproviderkmip.md#["KeyProviderKmip"]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "CreateKeyProviderKmip",
+  "params": {
+    "keyProviderName": "ProviderName",
+    },
+"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {
+    "kmipKeyProvider": {
+        "keyProviderName": "ProviderName",
+        "keyProviderIsActive": true,
+        "kmipCapabilities": "SSL",
+        "keyServerIDs": [
+            15
+        ],
+        "keyProviderID": 1
+    }
+}
+}
+----
+
+
+== 新規導入バージョン
+
+11.7

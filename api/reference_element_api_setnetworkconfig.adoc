@@ -1,0 +1,108 @@
+---
+permalink: api/reference_element_api_setnetworkconfig.html 
+sidebar: sidebar 
+keywords: network,config,configuration,set,setting,node,setnetworkconfig 
+summary: SetNetworkConfig メソッドを使用して、ノードのネットワーク設定を設定できます。ノードの現在のネットワーク設定を表示するには、 GetNetworkConfig API メソッドを実行します。 
+---
+= SetNetworkConfig の場合
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 `S etNetworkConfig 」メソッドを使用して、ノードのネットワーク設定を設定できます。ノードの現在のネットワーク設定を表示するには、「 GetNetworkConfig 」 API メソッドを実行します。
+
+
+NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
+
+
+
+== パラメータ
+
+注意
+
+ノードのボンディングモードを変更すると、原因でネットワーク接続が一時的に失われる可能性があります。
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ネットワーク
+ a| 
+変更するノードのネットワーク設定を含むオブジェクト。このメソッドには、変更するフィールドだけをこのパラメータの属性として追加する必要があります。
+ a| 
+xref:reference_element_api_network_all_interfaces.adoc[network （すべてのインターフェイス）]
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ネットワーク
+ a| 
+ノードの新規および既存のネットワーク設定。
+ a| 
+xref:reference_element_api_network_all_interfaces.adoc[network （すべてのインターフェイス）]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+	"method": "SetNetworkConfig",
+		"params": {
+			"network": {
+				"Bond10G": {
+					"bond-mode": "ALB"
+				},
+				"Bond1G": {
+					"netmask": "255.255.224.0"
+				},
+				"eth0": {
+					"method": "bond"
+				},
+				"lo": {
+					"method": "loopback"
+				}
+			}
+		}
+}
+----
+
+
+== 応答例
+
+このメソッドからの応答は、 GetNetworkConfig メソッドからの応答と同じです。メソッドは、各オブジェクトのすべてのメンバーを表示し、変更されたメンバーの新しい値を組み込みます。
+
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_element_api_getnetworkconfig.adoc[GetNetworkConfig （ GetNetworkConfig ）]
+* xref:reference_element_api_response_example_getnetworkconfig.adoc[GetNetworkConfig （ GetNetworkConfig ）]
+

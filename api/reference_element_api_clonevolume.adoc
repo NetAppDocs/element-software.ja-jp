@@ -1,0 +1,298 @@
+---
+permalink: api/reference_element_api_clonevolume.html 
+sidebar: sidebar 
+keywords: volumes,volume,cloning,clone,CloneVolume 
+summary: CloneVolume メソッドを使用して、ボリュームのコピーを作成できます。このメソッドは非同期であり、また完了までの時間はさまざまです。 
+---
+= CloneVolume
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 CloneVolume 」メソッドを使用して、ボリュームのコピーを作成できます。このメソッドは非同期であり、また完了までの時間はさまざまです。
+
+クローン作成プロセスは 'CloneVolume' 要求を行うとすぐに開始され 'API メソッドが発行されたときのボリュームの状態を表しますを使用できます xref:reference_element_api_getasyncresult.adoc[GetAsyncResult] クローニングプロセスがいつ完了し、新しいボリュームが接続可能かを確認する方法。を使用できます xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs] をクリックして、クローン作成の進捗状況を確認します。ボリュームの初期属性と QoS 設定は、クローンの作成元のボリュームから継承されます。これらの設定はで変更できます xref:reference_element_api_modifyvolume.adoc[ModifyVolume の追加]。
+
+
+NOTE: クローンボリュームには、ソースボリュームのボリュームアクセスグループメンバーシップは継承されません。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+にアクセスします
+ a| 
+新しいボリュームに許可するアクセス。値を指定しない場合、アクセス値は変更されません。有効な値は次のとおり
+
+* `re adOnly`: ( オプション ) 読み取り操作のみが許可されます
+* `ReadWrite`: ( オプション ) 読み取りと書き込みが可能です。
+* 'locked] ：（任意）読み取りも書き込みもできません。指定しない場合、クローニングするボリュームのアクセス値が使用されます。
+* `ReplicationTarget`: ( オプション ) ペアリングされたボリュームセットのターゲットボリュームとしてボリュームを指定しますボリュームがペアリングされていない場合、アクセスステータスは locked になります。
+
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON オブジェクト
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+enable512e
+ a| 
+新しいボリュームで 512 バイトのセクターエミュレーションを使用するかどうかを指定します。指定しない場合、クローニングするボリュームの設定が使用されます。
+ a| 
+ブール値
+ a| 
+元のボリュームの設定
+ a| 
+いいえ
+
+
+
+ a| 
+enableSnapMirrorReplication
+ a| 
+ボリュームを SnapMirror エンドポイントでのレプリケーションに使用できるかどうかを指定します。有効な値は次のとおり
+
+* 正しいです
+* いいえ
+
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+
+
+ a| 
+名前
+ a| 
+新しいクローンボリュームの名前。 1~64 文字で指定する必要があります。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+newAccountID
+ a| 
+新しいボリュームの所有者のアカウント ID 。指定しない場合、クローニングするボリュームの所有者のアカウント ID が使用されます。
+ a| 
+整数
+ a| 
+元のボリュームの所有者のアカウント ID
+ a| 
+いいえ
+
+
+
+ a| 
+newSize
+ a| 
+ボリュームの新しいサイズ（バイト）。クローニングするボリュームのサイズより大きくすることも小さくすることもできます。指定しない場合、ボリュームサイズは変更されません。サイズは最も近い 1MB 単位のサイズに切り上げられます。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+Snapshot ID
+ a| 
+クローンのソースとして使用される Snapshot の ID 。ID を指定しない場合は、現在のアクティブボリュームが使用されます。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+ボリューム ID
+ a| 
+クローニングするボリュームの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+asyncHandle
+ a| 
+処理結果の取得に使用されるハンドル値。
+ a| 
+整数
+
+
+
+ a| 
+クローン ID
+ a| 
+新しいクローンボリュームのクローン ID 。
+ a| 
+整数
+
+
+
+ a| 
+カーブ（ Curve ）
+ a| 
+クローンに適用された QoS curve 値。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+ボリューム
+ a| 
+新しいクローンボリュームの情報を含むオブジェクト。
+ a| 
+xref:reference_element_api_volume.adoc[ボリューム]
+
+
+
+ a| 
+ボリューム ID
+ a| 
+新しいクローンボリュームの ID 。
+ a| 
+整数
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "CloneVolume",
+   "params": {
+      "volumeID" : 5,
+      "name"  : "mysqldata-snapshot1",
+      "access" : "readOnly"
+   },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+      "asyncHandle": 42,
+      "cloneID": 37,
+      "volume": {
+          "access": "readOnly",
+          "accountID": 1,
+          "attributes": {},
+          "blockSize": 4096,
+          "createTime": "2016-03-31T22:26:03Z",
+          "deleteTime": "",
+          "enable512e": true,
+          "iqn": "iqn.2010-01.com.solidfire:jyay.mysqldata-snapshot1.680",
+          "name": "mysqldata-snapshot1",
+          "purgeTime": "",
+          "qos": {
+              "burstIOPS": 100,
+              "burstTime": 60,
+              "curve": {
+                  "4096": 100,
+                  "8192": 160,
+                  "16384": 270,
+                  "32768": 500,
+                  "65536": 1000,
+                  "131072": 1950,
+                  "262144": 3900,
+                  "524288": 7600,
+                  "1048576": 15000
+              },
+              "maxIOPS": 100,
+              "minIOPS": 50
+          },
+          "scsiEUIDeviceID": "6a796179000002a8f47acc0100000000",
+          "scsiNAADeviceID": "6f47acc1000000006a796179000002a8",
+          "sliceCount": 0,
+          "status": "init",
+          "totalSize": 1000341504,
+          "virtualVolumeID": null,
+          "volumeAccessGroups": [],
+          "volumeID": 680,
+          "volumePairs": []
+      },
+      "volumeID": 680
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_element_api_getasyncresult.adoc[GetAsyncResult]
+* xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs]
+* xref:reference_element_api_modifyvolume.adoc[ModifyVolume の追加]
+

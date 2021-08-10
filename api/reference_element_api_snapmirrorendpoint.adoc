@@ -1,0 +1,77 @@
+---
+permalink: api/reference_element_api_snapmirrorendpoint.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorEndpoint 
+summary: snapMirrorEndpoint オブジェクトには、 Element ストレージクラスタと通信するリモート SnapMirror ストレージシステムの情報が含まれます。この情報は、 ListSnapMirrorEndpoints API メソッドを使用して取得できます。 
+---
+= snapMirrorEndpoint のことです
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorEndpoint オブジェクトには、 Element ストレージクラスタと通信するリモート SnapMirror ストレージシステムの情報が含まれます。この情報は、 ListSnapMirrorEndpoints API メソッドを使用して取得できます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+ローカルクラスタ内のオブジェクトの一意の識別子。
+ a| 
+整数
+
+
+
+ a| 
+管理 IP
+ a| 
+エンドポイントのクラスタ管理 IP アドレス。
+ a| 
+文字列
+
+
+
+ a| 
+クラスタ名
+ a| 
+ONTAP クラスタ名。この値は、 snapMirrorClusterIdentity オブジェクトの「 clusterName 」の値で自動的に設定されます。
+ a| 
+文字列
+
+
+
+ a| 
+ユーザ名
+ a| 
+ONTAP システムの管理ユーザ名。
+ a| 
+文字列
+
+
+
+ a| 
+IP アドレス
+ a| 
+クラスタ内のすべてのノードのクラスタ間ストレージ IP アドレスのリスト。これらの IP アドレスは、 ListSnapMirrorNetworkInterfaces メソッドを使用して取得できます。
+ a| 
+文字列の配列
+
+
+
+ a| 
+isConnected （接続済み）
+ a| 
+ONTAP クラスタへの制御リンクの接続ステータス。
+ a| 
+ブール値
+
+|===

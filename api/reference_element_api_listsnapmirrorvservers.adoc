@@ -1,0 +1,93 @@
+---
+permalink: api/reference_element_api_listsnapmirrorvservers.html 
+sidebar: sidebar 
+keywords: snapmirror,vserver,vservers,list,listing,listsnapmirrorvservers 
+summary: Element ソフトウェア Web UI は、 ListSnapMirrorVserver メソッドを使用して、リモート ONTAP システムで使用可能なすべての SnapMirror SVM をリストします。 
+---
+= ListSnapMirrorVserver
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element ソフトウェア Web UI は、「 ListSnapMirrorVservers 」メソッドを使用して、リモート ONTAP システムで使用可能なすべての SnapMirror SVM をリストします。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+指定したエンドポイント ID に関連付けられている SVM のみをリストします。エンドポイント ID を指定しない場合は、認識されているすべての SnapMirror エンドポイントの SVM がリストされます。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+vserverType
+ a| 
+指定したタイプの SVM のみをリストします。有効な値は次のとおり
+
+* 管理
+* データ
+* ノード
+* システム
+
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+vserverName の略
+ a| 
+指定した名前の SVM のみをリストします。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorVserver
+ a| 
+ONTAP ストレージシステムで使用可能な SnapMirror SVM のリスト。
+ a| 
+xref:reference_element_api_snapmirrorvserver.adoc[snapMirrorVserver] 配列
+
+|===
+
+
+== 新規導入バージョン
+
+10.1

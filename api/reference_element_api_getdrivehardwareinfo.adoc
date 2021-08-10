@@ -1,0 +1,111 @@
+---
+permalink: api/reference_element_api_getdrivehardwareinfo.html 
+sidebar: sidebar 
+keywords: drive,get,getting,hardware,info,getdrivehardwareinfo 
+summary: GetDriveHardwareInfo メソッドを使用すると、特定のドライブに関するすべてのハードウェア情報を取得できます。通常は、メーカー、ベンダー、バージョン、およびその他の関連するハードウェア識別情報が含まれます。 
+---
+= GetDriveHardwareInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetDriveHardwareInfo メソッドを使用すると、特定のドライブに関するすべてのハードウェア情報を取得できます。通常は、メーカー、ベンダー、バージョン、およびその他の関連するハードウェア識別情報が含まれます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+driveID
+ a| 
+要求のドライブの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+結果
+ a| 
+指定した driveID に対して返されたハードウェア情報。
+ a| 
+xref:reference_element_api_hardwareinfo.adoc[hardwareInfo]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "GetDriveHardwareInfo",
+   "params": {
+     "driveID": 5
+   },
+   "id" : 100
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id" : 100,
+   "result" : {
+     "driveHardwareInfo" : {
+       "description" : "ATA Drive",
+       "dev" : "8:80",
+       "devpath" : "/devices/pci0000:40/0000:40:01.0/0000:41:00.0/host6/port-6:0/expander-6:0/port-6:0:4/end_device-6:0:4/target6:0:4/6:0:4:0/block/sdf",
+       "driveSecurityAtMaximum" : false,
+       "driveSecurityFrozen" : false
+       "driveSecurityLocked" : false,
+       "logicalname" : "/dev/sdf",
+       "product" : "INTEL SSDSA2CW300G3",
+       "securityFeatureEnabled" : false,
+       "securityFeatureSupported" : true,
+       "serial" : "CVPR121400NT300EGN",
+       "size" : "300069052416",
+       "uuid" : "7e1fd5b9-5acc-8991-e2ac-c48f813a3884",
+       "version" : "4PC10362"
+     }
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_listdrives.adoc[ListDrives の 2 つのメソッド]

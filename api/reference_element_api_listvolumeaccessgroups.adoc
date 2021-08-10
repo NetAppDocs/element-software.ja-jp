@@ -1,0 +1,137 @@
+---
+permalink: api/reference_element_api_listvolumeaccessgroups.html 
+sidebar: sidebar 
+keywords: volume,access,group,groups,list,listing,listvolumeaccessgroups 
+summary: ListVolumeAccessGroups メソッドを使用すると、現在システム内に存在するボリュームアクセスグループに関する情報を取得できます。 
+---
+= ListVolumeAccessGroups の実行
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ListVolumeAccessGroups 」メソッドを使用すると、現在システム内に存在するボリュームアクセスグループに関する情報を取得できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+制限（ Limit ）
+ a| 
+返される volumeAccessGroup オブジェクトの最大数。volumeAccessGroups パラメータと同時に指定することはできません。
+ a| 
+整数
+ a| 
+無制限
+ a| 
+いいえ
+
+
+
+ a| 
+startVolumeAccessGroupID
+ a| 
+表示する最初のボリュームアクセスグループの ID 。volumeAccessGroups パラメータと同時に指定することはできません。
+ a| 
+整数
+ a| 
+0
+ a| 
+いいえ
+
+
+
+ a| 
+volumeAccessGroups
+ a| 
+取得するボリュームアクセスグループ ID 値のリスト。startVolumeAccessGroupID および limit パラメータと同時に指定することはできません。
+ a| 
+整数の配列
+ a| 
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+volumeAccessGroups
+ a| 
+各ボリュームアクセスグループの詳細を示すオブジェクトのリスト。
+ a| 
+xref:reference_element_api_volumeaccessgroup.adoc[volumeAccessGroup の場合] 配列
+
+
+
+ a| 
+volumeAccessGroupsNotFound ：ボリュームアクセスグループアクセスグループ
+ a| 
+システムで検出されなかったボリュームアクセスグループのリスト。volumeAccessGroups パラメータを使用していて、 1 つ以上の指定したボリュームアクセスグループが見つからなかった場合に表示されます。
+ a| 
+整数の配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ListVolumeAccessGroups",
+   "params": {
+      "startVolumeAccessGroupID": 3,
+      "limit"   : 1
+   },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeAccessGroups": [
+      {
+        "attributes": {},
+        "deletedVolumes": [],
+        "initiatorIDs": [],
+        "initiators": [],
+        "name": "example1",
+        "volumeAccessGroupID": 3,
+        "volumes": []
+      }
+    ]
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

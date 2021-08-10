@@ -1,0 +1,58 @@
+---
+permalink: api/reference_element_api_resetsupplementaltlsciphers.html 
+sidebar: sidebar 
+keywords: tls,cipher,reset,supplemental,resetsupplementaltlsciphers,restore,restoring,supplemental 
+summary: ResetsendalTlsCiphers メソッドを使用すると、追加 TLS 暗号のリストをデフォルトに戻すことができます。このメソッドは、クラスタ全体に対して使用できます。 
+---
+= ResetentsalTlsCiphers のサポート
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ResetsendalTlsCiphers 」メソッドを使用すると、追加 TLS 暗号のリストをデフォルトに戻すことができます。このメソッドは、クラスタ全体に対して使用できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "ResetSupplementalTlsCiphers",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {}
+}
+----
+
+
+== 新規導入バージョン
+
+11.3

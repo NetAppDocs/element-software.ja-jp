@@ -1,0 +1,119 @@
+---
+permalink: api/reference_element_api_listallnodes.html 
+sidebar: sidebar 
+keywords: cluster,list,listing,node,nodes,all,listallnodes 
+summary: ListAllNodes メソッドを使用すると、クラスタ内の Active 状態および Pending 状態のノードをリストできます。 
+---
+= ListAllNodes
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ListAllNodes 」メソッドを使用すると、クラスタ内の Active 状態および Pending 状態のノードをリストできます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ノード
+ a| 
+クラスタ内の Active 状態のノードを示すオブジェクトのリスト。
+ a| 
+xref:reference_element_api_node.adoc[ノード]
+
+
+
+ a| 
+pendingActiveNodes
+ a| 
+クラスタ内の Pending Active 状態のノードを示すオブジェクトのリスト。
+ a| 
+xref:reference_element_api_pendingactivenode.adoc[pendingActiveNode] 配列
+
+
+
+ a| 
+pendingNodes
+ a| 
+クラスタ内の Pending 状態のノードを示すオブジェクトのリスト。
+ a| 
+xref:reference_element_api_pendingnode.adoc[pendingNode] 配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ListAllNodes",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"nodes": [
+			{
+				"associatedFServiceID": 0,
+				"associatedMasterServiceID": 1,
+				"attributes": {},
+				"chassisName": "CT5TV12",
+				"cip": "10.1.1.1",
+				"cipi": "Bond10G",
+				"fibreChannelTargetPortGroup": null,
+				"mip": "10.1.1.1",
+				"mipi": "Bond1G",
+				"name": "NLABP0704",
+				"nodeID": 1,
+				"nodeSlot": "",
+				"platformInfo": {
+					"chassisType": "R620",
+					"cpuModel": "Intel",
+					"nodeMemoryGB": 72,
+					"nodeType": "SF3010",
+					"platformConfigVersion": "0.0.0.0"
+				},
+				"sip": "10.1.1.1",
+				"sipi": "Bond10G",
+				"softwareVersion": "11.0",
+				"uuid": "4C4C4544-0054",
+				"virtualNetworks": []
+			}
+		],
+		"pendingActiveNodes": [],
+		"pendingNodes": []
+	}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

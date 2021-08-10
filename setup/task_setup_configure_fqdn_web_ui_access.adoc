@@ -1,0 +1,74 @@
+---
+permalink: setup/task_setup_configure_fqdn_web_ui_access.html 
+sidebar: sidebar 
+keywords:  
+summary: NetApp Element ソフトウェア 12.2 以降を搭載した NetApp HCI では、 Fully Qualified Domain Name \ （ FQDN ；完全修飾ドメイン名）を使用してストレージクラスタの Web インターフェイスにアクセスできます。FQDN を使用して、 Element Web UI 、ノード UI 、管理ノード UI などの Web ユーザインターフェイスにアクセスする場合は、クラスタで使用される FQDN を特定するストレージクラスタ設定を最初に追加する必要があります。 
+---
+= 完全修飾ドメイン名 Web UI アクセスを設定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Element ソフトウェア 12.2 以降を搭載した NetApp HCI では、 Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を使用してストレージクラスタの Web インターフェイスにアクセスできます。FQDN を使用して、 Element Web UI 、ノード UI 、管理ノード UI などの Web ユーザインターフェイスにアクセスする場合は、クラスタで使用される FQDN を特定するストレージクラスタ設定を最初に追加する必要があります。
+
+このプロセスにより、クラスタはログインセッションを適切にリダイレクトできるようになり、キー管理ツールやアイデンティティプロバイダなどの外部サービスとの統合が強化されて、多要素認証に対応できるようになります。
+
+.必要なもの
+* この機能を使用するには、 Element 12.2 以降および管理サービスバージョン 2.15 以降が必要です。
+* REST API を使用するには、バージョン 11.5 以降を実行する管理ノードを導入しておく必要があります。
+
+
+.手順
+. 環境で FQDN が解決されるように、 Element ストレージノードと mNode の DNS がネットワーク環境に対して正しく設定されていることを確認します。DNS を設定するには、ストレージノードのノード UI および管理ノードに移動し、 * Network Settings * > * Management Network * を選択します。
++
+.. ストレージ・ノードのノード単位の UI ： https://<storage_node_management_IP>:442`
+.. 管理ノード用のノード単位の UI ： https://<management_node_IP>:442`
+
+
+. Element API にアクセスし、を使用して次のクラスタインターフェイス設定を作成します link:../api/reference_element_api_createclusterinterfacepreference.html["CreateClusterInterfacePreference"] API メソッドにクラスタの MVIP FQDN を挿入し、設定値を指定します。
++
+** 名前 : 「 mvip 」
+** 値： Cluster MVIP の完全修飾ドメイン名
++
+この例では、 FQDN = storagecluster.my.org ：
+
++
+[listing]
+----
+https://<Cluster_MVIP>/json-rpc/12.2?
+method=CreateClusterInterfacePreference&name=mvip_fqdn&value=storagecluster.my.org
+----
+
+
+. 管理ノードで REST API を使用して管理ノードの設定を変更します。
++
+.. 管理ノードの REST API UI にアクセスするには、管理ノードの IP アドレスに「 /mnode/2/」 を続けて入力します。
++
+例：
+
++
+https://<management_node_IP>/mnode/2/`
+
+.. 「 * Authorize * 」またはいずれかのロックアイコンをクリックし、クラスタのユーザ名とパスワードを入力します。
+.. クライアント ID を「 m node-client 」として入力します。
+.. 「 * Authorize * 」（認証）をクリックしてセッションを開始し、ウィンドウを閉じます。
+.. サーバリストから「 `node2 」を選択します。
+.. [*Get/settings] をクリックします。
+.. [* 試してみてください * ] をクリックします。
+.. [* Execute] をクリックします。
+.. 応答の本文に報告されたプロキシ設定をすべて記録します。
+.. [PUT/setttings] をクリックします。
+.. [* 試してみてください * ] をクリックします。
+.. 要求の本文領域で、管理ノードの FQDN を「 `m node_name 」パラメータの値として入力します。
+.. 要求の本文の残りのパラメータに、前の手順で記録したプロキシ設定値を入力します。プロキシパラメータを空のままにするか、または要求の本文にプロキシパラメータを含めない場合、既存のプロキシ設定は削除されます。
+.. [* Execute] をクリックします。
++
+....
+== Find more information
+* https://www.netapp.com/data-storage/solidfire/documentation[SolidFire and Element Resources page^]
+* https://docs.netapp.com/us-en/vcp/index.html[NetApp Element Plug-in for vCenter Server^]
+....
+
+
+

@@ -1,0 +1,231 @@
+---
+permalink: api/reference_element_api_node.html 
+sidebar: sidebar 
+keywords: object,objects,node 
+summary: node オブジェクトには、クラスタ内の各ノードに関する情報が含まれます。この情報を取得するには、 ListActiveNodes メソッドと ListAllNodes メソッドを使用します。 
+---
+= ノード
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+node オブジェクトには、クラスタ内の各ノードに関する情報が含まれます。この情報は 'ListActiveNodes' メソッドと ListAllNodes メソッドを使用して取得できます
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+アソシエティブされた FServiceID
+ a| 
+ノードの Fibre Channel サービス ID 。ノードが Fibre Channel ノード以外の場合は「 0 」。
+ a| 
+整数
+
+
+
+ a| 
+アソシエティブマスター ID
+ a| 
+ノードのマスターサービス ID 。
+ a| 
+整数
+
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+シャーシ名
+ a| 
+シャーシを一意に識別します。同じシャーシ内のすべてのノードで同じです。
+ a| 
+文字列
+
+
+
+ a| 
+CIP （ CIP ）
+ a| 
+ノードに割り当てられたクラスタ IP アドレス。
+ a| 
+文字列
+
+
+
+ a| 
+シピ
+ a| 
+クラスタ通信に使用するネットワークインターフェイス。
+ a| 
+文字列
+
+
+
+ a| 
+customProtectionDomainName
+ a| 
+カスタム保護ドメインを一意に識別します。特定のカスタム保護ドメインに属するすべてのシャーシ内のすべてのストレージノードで、この名前が同じになります。
+ a| 
+文字列
+
+
+
+ a| 
+fibreChannelTargetPortGroup
+ a| 
+このノードに関連付けられたターゲットグループ。ノードが Fibre Channel ノード以外の場合は「 null 」。
+ a| 
+整数
+
+
+
+ a| 
+メンテナンスモード
+ a| 
+ノードが保守用にどのモードになっているかを示します。
+ a| 
+該当なし
+
+
+
+ a| 
+MIP
+ a| 
+ノード管理に使用する IP アドレス。
+ a| 
+文字列
+
+
+
+ a| 
+MIPI
+ a| 
+ノード管理に使用するネットワークインターフェイス。
+ a| 
+文字列
+
+
+
+ a| 
+名前
+ a| 
+ノードのホスト名。
+ a| 
+文字列
+
+
+
+ a| 
+ノード ID
+ a| 
+このノードのノード ID 。
+ a| 
+整数
+
+
+
+ a| 
+ノードスロット
+ a| 
+HCI プラットフォームで、シャーシのこのノードが設置されたスロットに対応する文字（「 A 」、「 B 」、「 C 」、または「 D 」）。ストレージプラットフォームの場合、値は null です。
+ a| 
+文字列
+
+
+
+ a| 
+プラットフォーム情報
+ a| 
+ノードのハードウェア情報。メンバー
+
+* chassisType ：ノードのハードウェアプラットフォーム。
+* cpuModel ：ハードウェアプラットフォームの CPU モデル。
+* nodeMemoryGB ：物理プラットフォームに取り付けられているメモリの量（ GB ）。
+* nodeType ：ノードのモデル名。
+* platformConfigVersion ：このノードのハードウェアに設定されているソフトウェアのバージョン。
+
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+ロール
+ a| 
+クラスタにおけるノードのロール。有効な値は次のとおり
+
+* 管理
+* ストレージ
+* コンピューティング
+* 監視
+
+ a| 
+
+
+
+ a| 
+SIP
+ a| 
+ノードに割り当てられたストレージ IP アドレス。
+ a| 
+文字列
+
+
+
+ a| 
+SIPI
+ a| 
+ストレージトラフィックに使用するネットワークインターフェイス。
+ a| 
+文字列
+
+
+
+ a| 
+ソフトウェアレヴェーション
+ a| 
+ノードで実行している Element ソフトウェアの現在のバージョン。
+ a| 
+文字列
+
+
+
+ a| 
+UUID
+ a| 
+このノードに関連付けられた UUID 。
+ a| 
+文字列
+
+
+
+ a| 
+仮想ネットワーク
+ a| 
+仮想ネットワーク IP アドレスと ID を含むオブジェクト。
+ a| 
+xref:reference_element_api_virtualnetwork.adoc[VirtualNetwork] 配列
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_element_api_listactivenodes.adoc[ListActiveNodes]
+* xref:reference_element_api_listallnodes.adoc[ListAllNodes]
+

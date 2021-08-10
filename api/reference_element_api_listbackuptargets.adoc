@@ -1,0 +1,83 @@
+---
+permalink: api/reference_element_api_listbackuptargets.html 
+sidebar: sidebar 
+keywords: backup,target,targets,info,list,listing,listbackuptargets 
+summary: ListBackupTargets メソッドを使用すると、作成済みのすべてのバックアップターゲットに関する情報を取得できます。 
+---
+= ListBackupTargets を参照します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ListBackupTargets 」メソッドを使用すると、作成済みのすべてのバックアップターゲットに関する情報を取得できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+バックアップターゲット
+ a| 
+各バックアップターゲットに返されるオブジェクト。含まれるオブジェクト：
+
+* attributes ： JSON オブジェクト形式の名前と値のペアのリスト。（ JSON オブジェクト）。
+* backupTargetID ：バックアップターゲットに割り当てられた一意の識別子。整数
+* name ：バックアップターゲットの名前。文字列
+
+ a| 
+JSON オブジェクト
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ListBackupTargets",
+   "params": {},
+   "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+     "backupTargets": [
+       {
+        "attributes" : {},
+        "backupTargetID" : 1,
+        "name" : "mytargetbackup"
+       }
+    ]
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

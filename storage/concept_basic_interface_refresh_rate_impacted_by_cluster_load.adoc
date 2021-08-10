@@ -1,0 +1,17 @@
+---
+permalink: storage/concept_basic_interface_refresh_rate_impacted_by_cluster_load.html 
+sidebar: sidebar 
+keywords: data refresh interval, cluster, interval controls, API requests, heavy load cluster, cluster credentials 
+summary: API の応答時間によっては、表示している NetApp Element ソフトウェアのページの一部に関してクラスタがデータの更新間隔を自動的に調整することがあります。 
+---
+= インターフェイス更新間隔にクラスタの負荷が影響します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+API の応答時間によっては、表示している NetApp Element ソフトウェアのページの一部に関してクラスタがデータの更新間隔を自動的に調整することがあります。
+
+ブラウザでページをリロードすると、更新間隔はデフォルトにリセットされます。ページの右上のクラスタ名をクリックすると、現在の更新間隔を確認できます。この間隔は、データがサーバから返される速さではなく、 API 要求が実行される頻度を制御することに注意してください。
+
+クラスタの負荷が高い場合は、 Element UI からの API 要求がキューに登録されることがあります。ごくまれに、ネットワーク接続が低速でクラスタがビジーな場合など、システム応答が大幅に遅延し、キューに登録されている API 要求に対するシステムの応答に時間がかかる場合、 Element UI からログアウトされることがあります。ログアウト画面にリダイレクトされた場合は、最初のブラウザ認証プロンプトを無視すれば再度ログインできます。概要ページに戻ると、クラスタクレデンシャルがブラウザで保存されていない場合はクレデンシャルの入力を求められることがあります。

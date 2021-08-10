@@ -1,0 +1,42 @@
+---
+permalink: storage/task_intro_view_api_activity_in_real_time.html 
+sidebar: sidebar 
+keywords: solidfire api, element api, element os, element, viewing the API log, viewing API calls 
+summary: Element システムの各種機能は、 NetAppElement API をその基盤として使用します。Element UI では、画面での操作に連動して、システム上のさまざまな種類の API アクティビティをリアルタイムで確認できます。API ログでは、ユーザが開始したバックグラウンドのシステム API アクティビティと、現在表示しているページ上で実行された API 呼び出しを確認できます。 
+---
+= API アクティビティを表示します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element システムの各種機能は、 NetApp Element API をその基盤として使用します。Element UI では、画面での操作に連動して、システム上のさまざまな種類の API アクティビティをリアルタイムで確認できます。API ログでは、ユーザが開始したバックグラウンドのシステム API アクティビティと、現在表示しているページ上で実行された API 呼び出しを確認できます。
+
+API ログを使用すると、特定のタスクにどの API メソッドが使用されるかを特定し、 API のメソッドおよびオブジェクトを使用してカスタムアプリケーションを構築する方法を確認できます。
+
+各メソッドの詳細については、を参照してください link:../api/index.html["Element ソフトウェア API リファレンス"]。
+
+. Element UI ナビゲーションバーで、 * API ログ * をクリックします。
+. API Log ウィンドウに表示される API アクティビティのタイプを変更するには、次の手順を実行します。
++
+.. API 要求トラフィックを表示するには、「 * Requests * 」を選択します。
+.. 「 * Responses * 」を選択して API 応答トラフィックを表示します。
+.. 次のいずれかを選択して、 API トラフィックのタイプをフィルタリングします。
++
+*** * User Initiated * ：この Web UI セッション中のユーザのアクティビティによる API トラフィック。
+*** * Background Polling * ：バックグラウンドシステムアクティビティによって生成される API トラフィック。
+*** * Current Page * ：現在表示しているページ上のタスクによって生成される API トラフィック。
+
+
+
+
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* link:../api/index.html["Element API を使用してストレージを管理する"]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

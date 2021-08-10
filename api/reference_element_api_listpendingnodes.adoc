@@ -1,0 +1,105 @@
+---
+permalink: api/reference_element_api_listpendingnodes.html 
+sidebar: sidebar 
+keywords: cluster,list,listing,pending,nodes,node,listpendingnodes 
+summary: ListPendingNodes メソッドを使用すると、システム内で Pending 状態のストレージノードをリストできます。Pending 状態のノードとは、動作中であり、ストレージクラスタに追加するように設定されているものの、まだ AddNodes API メソッドを使用して追加されていないストレージノードのことです。 
+---
+= ListPendingNodes
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ListPendingNodes 」メソッドを使用すると、システム内の Pending 状態のストレージノードをリストできます。Pending 状態のノードとは、動作中であり、ストレージクラスタに追加するように設定されているものの、まだ AddNodes API メソッドを使用して追加されていないストレージノードのことです。
+
+
+
+== IPv4 と IPv6 の管理アドレス
+
+「 ListPendingNodes 」では、管理 IP アドレス（ MIP ）と管理仮想 IP アドレス（ MVIP ）のアドレスタイプが異なる Pending 状態のノードはリストされません。たとえば、 Pending 状態のノードに IPv6 MVIP と IPv4 MIP が設定されている場合、「 ListPendingNodes 」という名前のノードはその結果に含まれません。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+pendingNodes
+ a| 
+クラスタ内の Pending 状態のノードのリスト。
+ a| 
+xref:reference_element_api_pendingnode.adoc[pendingNode] 配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ListPendingNodes",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 3,
+  "result": {
+    "pendingNodes": [
+      {
+        "assignedNodeID": 0,
+        "cip": "10.26.65.101",
+        "cipi": "Bond10G",
+        "compatible": true,
+        "mip": "172.26.65.101",
+        "mipi": "Bond1G",
+        "name": "VWC-EN101",
+        "pendingNodeID": 1,
+        "platformInfo": {
+          "chassisType": "R620",
+          "cpuModel": "Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz",
+          "nodeMemoryGB": 72,
+          "nodeType": "SF3010"
+        },
+        "sip": "10.26.65.101",
+        "sipi": "Bond10G",
+        "softwareVersion": "9.0.0.1554",
+        "uuid": "4C4C4544-0048-4410-8056-C7C04F395931"
+      }
+    ]
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_addnodes.adoc[AddNodes]

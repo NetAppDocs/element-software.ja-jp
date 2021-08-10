@@ -1,0 +1,140 @@
+---
+permalink: api/reference_element_api_restartservices.html 
+sidebar: sidebar 
+keywords: restart,service,services,restartservices,restarting,node 
+summary: RestartServices メソッドを使用すると、ノードのサービスをリスタートできます。 
+---
+= RestartServices の
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 RestartServices 」メソッドを使用すると、ノードのサービスを再起動できます。
+
+
+
+== パラメータ
+
+注意
+
+このメソッドを実行すると、一時的にノードのサービスが中断さ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+[-force]
+ a| 
+true に設定すると、ノードのサービスが再起動されます。
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+サービス
+ a| 
+再起動するサービス名。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+アクション
+ a| 
+サービスに対して実行するアクション（ start 、 stop 、 restart ）。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+詳細
+ a| 
+サービス再開手順の出力。エラーがある場合はその出力も含まれます。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+期間
+ a| 
+ノードへのサービスの再起動に要した時間（秒）。
+ a| 
+文字列
+
+
+
+ a| 
+結果
+ a| 
+リスタートの結果。
+ a| 
+文字列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "RestartServices",
+   "params": {
+              "force" : true
+              "action" : restart,
+             }
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "details": "solidfire stop/waiting\nsolidfire start/running, process 7284\n",
+    "duration": "00:00:02.541594",
+    "result": "Passed"
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

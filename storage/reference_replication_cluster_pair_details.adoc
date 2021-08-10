@@ -1,0 +1,39 @@
+---
+permalink: storage/reference_replication_cluster_pair_details.html 
+sidebar: sidebar 
+keywords: cluster pairs, replication, data protection 
+summary: Data Protection タブの Cluster Pairs ページには、ペアリングされているクラスタまたはペアリング中のクラスタに関する情報が表示されます。ペアリングと進捗状況を示すメッセージがステータス列に表示されます。 
+---
+= クラスタペアの詳細
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Data Protection タブの Cluster Pairs ページには、ペアリングされているクラスタまたはペアリング中のクラスタに関する情報が表示されます。ペアリングと進捗状況を示すメッセージがステータス列に表示されます。
+
+* *ID*
++
+各クラスタペアにシステムから割り当てられた ID 。
+
+* * リモートクラスタ名 *
++
+ペア内のもう一方のクラスタの名前。
+
+* * リモート MVIP *
++
+ペア内のもう一方のクラスタの管理仮想 IP アドレス。
+
+* * ステータス *
++
+リモートクラスタのレプリケーションステータス
+
+* * ボリュームの複製 *
++
+クラスタ内のレプリケーション用にペアリングされたボリュームの数。
+
+* * UUID *
++
+ペア内の各クラスタに指定された一意の ID 。
+
+

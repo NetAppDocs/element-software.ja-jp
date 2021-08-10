@@ -1,0 +1,157 @@
+---
+permalink: api/reference_element_api_listnetworkinterfaces.html 
+sidebar: sidebar 
+keywords: network,interface,interfaces,list,listing,listnetworkinterfaces 
+summary: ListNetworkInterfaces メソッドを使用すると、ノードの各ネットワークインターフェイスに関する情報をリストできます。この API メソッドは、個々のノードに対して使用するためのものです。個々のノードにアクセスするには、ユーザ ID とパスワードによる認証が必要です。ただし、メソッド呼び出しで force パラメータの値が true に設定されている場合は、このメソッドをクラスタに対して使用できます。このパラメータをクラスタに対して使用すると、すべてのインターフェイスが表示されます。 
+---
+= ListNetworkInterfaces
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ListNetworkInterfaces 」メソッドを使用すると、ノード上の各ネットワークインターフェイスに関する情報をリストできます。この API メソッドは、個々のノードに対して使用するためのものです。個々のノードにアクセスするには、ユーザ ID とパスワードによる認証が必要です。ただし、メソッド呼び出しで force パラメータの値が true に設定されている場合は、このメソッドをクラスタに対して使用できます。このパラメータをクラスタに対して使用すると、すべてのインターフェイスが表示されます。
+
+
+NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+[-force]
+ a| 
+有効な値は次のとおり
+
+* true ：クラスタ内のすべてのネットワークインターフェイスに関する情報が返されます。
+* false ：情報は何も返されません。
+
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+インターフェイス
+ a| 
+ストレージ・ノードの各ネットワーク・インターフェイス（またはストレージ・クラスタ全体）の構成情報のリスト（ force=true' の場合）
+ a| 
+xref:reference_element_api_networkinterface.adoc[NetworkInterface の略] 配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+"method": "ListNetworkInterfaces",
+"params": {},
+"id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"nodes": [
+			{
+				"nodeID": 1,
+				"result": {
+					"interfaces": [
+						{
+							"address": "10.117.80.32",
+							"addressV6": "::",
+							"broadcast": "10.117.95.255",
+							"macAddress": "90:b1:1c:42:e0:1a",
+							"mtu": 9000,
+							"name": "Bond10G",
+							"namespace": false,
+							"netmask": "255.255.240.0",
+							"status": "UpAndRunning",
+							"type": "BondMaster",
+							"virtualNetworkTag": 0
+						},
+						{
+							"address": "10.117.64.32",
+							"addressV6": "::",
+							"broadcast": "10.117.79.255",
+							"macAddress": "90:b1:1c:42:e0:1e",
+							"mtu": 1500,
+							"name": "Bond1G",
+							"namespace": false,
+							"netmask": "255.255.240.0",
+							"status": "UpAndRunning",
+							"type": "BondMaster",
+							"virtualNetworkTag": 0
+						},
+						{
+							"address": "0.0.0.0",
+							"addressV6": "::",
+							"broadcast": "0.0.0.0",
+							"macAddress": "90:b1:1c:42:e0:1a",
+							"mtu": 9000,
+							"name": "eth0",
+							"namespace": false,
+							"netmask": "0.0.0.0",
+							"status": "UpAndRunning",
+							"type": "BondSlave",
+							"virtualNetworkTag": 0
+						},
+						{
+							"address": "127.0.0.1",
+							"addressV6": "::",
+							"broadcast": "0.0.0.0",
+							"macAddress": "00:00:00:00:00:00",
+							"mtu": 0,
+							"name": "lo",
+							"namespace": false,
+							"netmask": "0.0.0.0",
+							"status": "UpAndRunning",
+							"type": "Loopback",
+							"virtualNetworkTag": 0
+						}
+					]
+				}
+			}
+		]
+	}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

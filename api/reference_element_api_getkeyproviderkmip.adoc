@@ -1,0 +1,99 @@
+---
+permalink: api/reference_element_api_getkeyproviderkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key provider,retrieving,get,retrieve 
+summary: GetKeyProviderKmip メソッドを使用すると、指定した Key Management Interoperability Protocol\ （ KMIP \ ）キープロバイダに関する情報を取得できます。 
+---
+= GetKeyProviderKmip
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetKeyProviderKmip メソッドを使用すると、指定した Key Management Interoperability Protocol （ KMIP ）キープロバイダに関する情報を取得できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+KeyProviderID
+ a| 
+取得する KMIP キープロバイダオブジェクトの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+kmipKeyProvider のいずれかです
+ a| 
+要求されたキープロバイダの詳細を含むオブジェクト。
+ a| 
+link:reference_element_api_keyproviderkmip.md#["KeyProviderKmip"]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "GetKeyProviderKmip",
+  "params": {
+    "keyProviderID": 15
+    },
+"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+    {
+    "kmipKeyProvider": {
+        "keyProviderID": 15,
+        "kmipCapabilities": "SSL",
+        "keyProviderIsActive": true,
+        "keyServerIDs": [
+            1
+        ],
+        "keyProviderName": "ProviderName"
+    }
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+11.7

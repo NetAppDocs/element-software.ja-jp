@@ -1,0 +1,106 @@
+---
+permalink: api/reference_element_api_snapmirrorvolume.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorVolume 
+summary: snapMirrorVolume オブジェクトには、 ONTAP ボリュームの情報が含まれています。 
+---
+= snapMirrorVolume
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorVolume オブジェクトには、 ONTAP ボリュームの情報が含まれています。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+デスティネーション ONTAP システムの ID 。
+ a| 
+整数
+
+
+
+ a| 
+名前
+ a| 
+ボリュームの名前。
+ a| 
+文字列
+
+
+
+ a| 
+を入力します
+ a| 
+ボリュームのタイプ。有効な値は次のとおり
+
+* rw ：読み書き可能なボリューム
+* ls ：負荷共有ボリューム
+* dp ：データ保護ボリューム
+
+ a| 
+文字列
+
+
+
+ a| 
+Vserver
+ a| 
+このボリュームを所有する SVM の名前。
+ a| 
+文字列
+
+
+
+ a| 
+aggrname を指定します
+ a| 
+包含アグリゲートの名前。
+ a| 
+文字列
+
+
+
+ a| 
+状態
+ a| 
+ボリュームの状態。有効な値は次のとおり
+
+* オンライン
+* 制限
+* オフラインです
+* 混在
+
+ a| 
+文字列
+
+
+
+ a| 
+サイズ
+ a| 
+ボリュームの合計ファイルシステムサイズ（バイト）。
+ a| 
+文字列
+
+
+
+ a| 
+使用可能なサイズ
+ a| 
+ボリューム内の使用可能なスペースのサイズ（バイト）。
+ a| 
+文字列
+
+|===

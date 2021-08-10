@@ -1,0 +1,21 @@
+---
+permalink: storage/concept_system_manage_nodes_manage_nodes.html 
+sidebar: sidebar 
+keywords: nodes, manage, cluster, capacity rule, pairs, stranded nodes 
+summary: SolidFire ストレージノードと Fibre Channel ノードは、クラスタタブのノードページで管理できます。 
+---
+= ノードを管理
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire ストレージノードと Fibre Channel ノードは、クラスタタブのノードページで管理できます。
+
+新しく追加したノードがクラスタの合計容量の 50% を超えると、容量のルールに準拠するためにこのノードの一部の容量が使用できなくなります（「未使用」）。これは、ストレージが追加されるまで有効です。容量のルールにも違反するような大規模なノードを追加すると、それまでに孤立していたノードは孤立しなくなり、新たに追加したノードが孤立する状態になります。この問題を回避するには、容量を常にペアで追加する必要があります。ノードが孤立すると、該当するクラスタエラーがスローされます。
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:task_system_manage_nodes_adding_a_node_to_a_cluster.adoc[クラスタにノードを追加します]

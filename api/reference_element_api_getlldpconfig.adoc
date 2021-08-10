@@ -1,0 +1,70 @@
+---
+permalink: api/reference_element_api_getlldpconfig.html 
+sidebar: sidebar 
+keywords: lldp,config,configuration,get,getting,getlldpinfo,storage 
+summary: GetLldpConfig メソッドを使用すると、ストレージクラスタの各ノードの Link Layer Discovery Protocol\ （ LLDP ）の設定を取得できます。 
+---
+= GetLldpConfig
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetLldpConfig メソッドを使用すると、ストレージクラスタの各ノードの Link Layer Discovery Protocol （ LLDP ）の設定を取得できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+lldpConfig
+ a| 
+ストレージクラスタの LLDP 設定に関する情報。
+ a| 
+JSON オブジェクト
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "GetLldpConfig",
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+	"id": null,
+		"result": {
+			"lldpConfig": {
+				"enableLldp": true,
+				"enableMed": false,
+				"enableOtherProtocols": true
+		}
+	}
+}
+----

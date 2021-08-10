@@ -1,0 +1,85 @@
+---
+permalink: api/reference_element_api_initializesnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: snapmirror,relationship,relationships,initialize,initializing,initializesnapmirrorrelationship 
+summary: Element ソフトウェア Web UI は、 InitializeSnapMirrorRelationship メソッドを使用して、クラスタ間の最初のベースライン転送を実行することで SnapMirror 関係のデスティネーションボリュームを初期化します。 
+---
+= SnapMirror 関係の初期化
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element ソフトウェア Web UI は、「 InitializeSnapMirrorRelationship 」メソッドを使用して、クラスタ間の最初のベースライン転送を実行することで SnapMirror 関係のデスティネーションボリュームを初期化します。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+リモート ONTAP システムの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+デスティネーションボリューム
+ a| 
+SnapMirror 関係のデスティネーションボリューム。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+最大転送速度
+ a| 
+ボリューム間の最大データ転送率を KB/ 秒単位で指定します。デフォルト値の 0 は無制限を意味し、使用可能なネットワーク帯域幅を SnapMirror 関係がフルに活用できるようにします。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorRelationship のこと
+ a| 
+初期化された SnapMirror 関係の情報。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationship のこと]
+
+|===
+
+
+== 新規導入バージョン
+
+10.1

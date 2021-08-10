@@ -1,0 +1,91 @@
+---
+permalink: api/reference_element_api_listnodestats.html 
+sidebar: sidebar 
+keywords: node,nodes,stats,list,listing,listnodestats 
+summary: ListNodeStats メソッドを使用すると、ストレージクラスタ内のすべてのストレージノードに関するアクティビティ測定値の概要を表示できます。 
+---
+= ListNodeStats の値
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ListNodeStats メソッドを使用すると、ストレージクラスタ内のすべてのストレージノードのアクティビティ測定値の概要を表示できます。
+
+
+NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+nodeStats
+ a| 
+ストレージノードのアクティビティ情報。
+ a| 
+xref:reference_element_api_nodestats.adoc[nodeStats]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ListNodeStats",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+     "nodeStats": {
+       "nodes": [
+         {
+         "cBytesIn": 46480366124,
+         "cBytesOut": 46601523187,
+         "cpu": 0,
+         "mBytesIn": 59934129,
+         "mBytesOut": 41620976,
+         "networkUtilizationCluster": 0,
+         "networkUtilizationStorage": 0,
+         "nodeID": 1,
+         "sBytesIn": 46480366124,
+         "sBytesOut": 46601523187,
+         "timestamp": 1895558254814,
+         "usedMemory": 31608135680
+         }
+       ]
+     }
+ }
+----
+
+
+== 新規導入バージョン
+
+9.6

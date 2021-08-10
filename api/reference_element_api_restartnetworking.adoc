@@ -1,0 +1,82 @@
+---
+permalink: api/reference_element_api_restartnetworking.html 
+sidebar: sidebar 
+keywords: node,restarting,restart,networking,network,service,services,restartnetworking 
+summary: RestartNetworking メソッドを使用すると、ノードのネットワーク関連サービスをリスタートできます。 
+---
+= RestartNetworking
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 RestartNetworking 」メソッドを使用すると、ノードのネットワーキングサービスを再起動できます。
+
+
+NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
+
+注意
+
+このメソッドは、ノードのすべてのネットワークサービスを再起動します。このため、ネットワーク接続が一時的に失われます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+[-force]
+ a| 
+true に設定すると、ノードのネットワーク関連サービスが再起動されます。
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "RestartNetworking",
+   "params": {
+              "force" : true
+             },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{ "id" : 1,
+  "result" : {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

@@ -1,0 +1,15 @@
+---
+permalink: storage/concept_data_manage_vvol_bindings.html 
+sidebar: sidebar 
+keywords: bindings, vvols, bound virtual volumes 
+summary: 仮想ボリュームを使用して I/O 処理を実行するには、最初に ESXi ホストから仮想ボリュームをバインドする必要があります。 
+---
+= バインド
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+仮想ボリュームを使用して I/O 処理を実行するには、最初に ESXi ホストから仮想ボリュームをバインドする必要があります。
+
+SolidFire クラスタは、最適なプロトコルエンドポイントを選択し、 ESXi ホストと仮想ボリュームをプロトコルエンドポイントに関連付けるバインドを作成し、 ESXi ホストにバインドを返します。バインドが完了すると、 ESXi ホストはバインドされた仮想ボリュームを使用して I/O 処理を実行できます。

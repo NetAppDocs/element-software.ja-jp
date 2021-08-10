@@ -1,0 +1,26 @@
+---
+permalink: storage/task_system_manage_fips_enable_encryption_at_rest.html 
+sidebar: sidebar 
+keywords: fips, security, encryption at rest, enable, disable, drives 
+summary: 保存データの暗号化をクラスタ全体で有効または無効にすることができます。この機能はデフォルトでは有効になっていません。FIPS ドライブをサポートするには、保存データの暗号化を有効にする必要があります。 
+---
+= 保存データの暗号化を有効にします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+保存データの暗号化をクラスタ全体で有効または無効にすることができます。この機能はデフォルトでは有効になっていません。FIPS ドライブをサポートするには、保存データの暗号化を有効にする必要があります。
+
+. NetApp Element ソフトウェア UI で、 * クラスタ * > * 設定 * をクリックします。
+. [ 保存データの暗号化を有効にする ] をクリックします。 *
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.adoc[クラスタの暗号化を有効または無効にします]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

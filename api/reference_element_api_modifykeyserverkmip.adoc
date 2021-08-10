@@ -1,0 +1,176 @@
+---
+permalink: api/reference_element_api_modifykeyserverkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key server,modifying,modify,change,edit 
+summary: ModifyKeyServerKmip メソッドを使用すると、既存の Key Management Interoperability Protocol\ （ KMIP \ ）キーサーバを指定した属性に変更できます。必須パラメータは keyServerID だけですが、 keyServerID のみを含む要求は処理を行いません。エラーは返されません。その他のパラメータを指定すると、キーサーバの既存の値が、指定したキーサーバ ID で置き換えられます。キーサーバは、機能していることを確認するために、処理中に接続されます。複数のホスト名または IP アドレスを指定するには、 kmipKeyServerHostnames パラメータを使用します。ただし、キーサーバがクラスタ構成の場合にのみ指定できます。 
+---
+= ModifyKeyServerKmip のように指定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 modyKeyServerKmip 」メソッドを使用して、既存の Key Management Interoperability Protocol （ KMIP ）キーサーバを指定した属性に変更できます。必須パラメータは keyServerID だけですが、 keyServerID のみを含む要求は処理を行いません。エラーは返されません。その他のパラメータを指定すると、キーサーバの既存の値が、指定したキーサーバ ID で置き換えられます。キーサーバは、機能していることを確認するために、処理中に接続されます。複数のホスト名または IP アドレスを指定するには、 kmipKeyServerHostnames パラメータを使用します。ただし、キーサーバがクラスタ構成の場合にのみ指定できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+KeyServerID
+ a| 
+変更する KMIP キーサーバの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+kmipCaCertificate
+ a| 
+外部キーサーバのルート CA の公開鍵証明書。これは、 TLS 通信で外部キーサーバから提示された証明書を検証するために使用されます。個々のサーバが異なる CA を使用するキーサーバクラスタの場合は、すべての CA のルート証明書を含む連結文字列を指定します。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+kmipClientCertificate
+ a| 
+SolidFire KMIP クライアントで使用される PEM 形式 Base64 エンコード PKCS#10 X.509 証明書。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+kmipKeyServerHostName のように指定します
+ a| 
+KMIP キーサーバに関連付けられているホスト名または IP アドレスの配列。キーサーバがクラスタ構成の場合にのみ、複数のホスト名または IP アドレスを指定する必要があります。
+ a| 
+文字列の配列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+kmipKeyServerName
+ a| 
+KMIP キーサーバの名前。この名前は表示目的でのみ使用され、一意である必要はありません。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+kmipKeyServerPort の 1 つです
+ a| 
+KMIP キーサーバに関連付けられているポート番号（通常は 5696 ）。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+kmipKeyServer
+ a| 
+変更されたキーサーバの詳細を含むオブジェクト。
+ a| 
+link:reference_element_api_keyserverkmip.md#["KeyServerKmip"]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "ModifyKeyServerKmip",
+  "params": {
+    "keyServerID": 15
+    "kmipCaCertificate": "CPDCCAaUCEDyRMcsf9tAbDpq40ES/E...",
+    "kmipClientCertificate": "kirWmnWXbj9T/UWZYB2oK0z5...",
+    "kmipKeyServerHostnames" : ["server1.hostname.com", "server2.hostname.com"],
+    "kmipKeyServerName" : "keyserverName",
+    "kmipKeyServerPort" : 5696
+  },
+"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {
+        "kmipKeyServer": {
+            "kmipCaCertificate":"CPDCCAaUCEDyRMcsf9tAbDpq40ES/E...",
+            "kmipKeyServerHostnames":[
+                "server1.hostname.com", "server2.hostname.com"
+            ],
+            "keyProviderID":1,
+            "kmipKeyServerName":"keyserverName",
+            "keyServerID":1
+            "kmipKeyServerPort":1,
+            "kmipClientCertificate":"kirWmnWXbj9T/UWZYB2oK0z5...",
+            "kmipAssignedProviderIsActive":true
+        }
+    }
+}
+----
+
+
+== 新規導入バージョン
+
+11.7

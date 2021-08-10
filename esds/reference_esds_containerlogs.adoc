@@ -1,0 +1,85 @@
+---
+permalink: esds/reference_esds_containerlogs.html 
+sidebar: sidebar 
+keywords: element, solidfire esds, get container logs, sds containers 
+summary: SolidFire ESDS コンテナの詳細と、それらに関連するログの入手先については、こちらを参照してください。ここでは、トラブルシューティングのためのログ収集を開始する際に役立つ情報を示します。ネットアップサポートに問い合わせることを推奨します。トレーニングを受けたエンジニアがログ分析に精通している場合は、問題解決に役立ちます。 
+---
+= コンテナログを収集します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire ESDS コンテナの詳細と、それらに関連するログの入手先については、こちらを参照してください。ここでは、トラブルシューティングのためのログ収集を開始する際に役立つ情報を示します。連携するのが最善です https://www.netapp.com/company/contact-us/support/["ネットアップサポート"^]では、トレーニングを受けたエンジニアがログ分析に精通している場合、問題の解決に役立ちます。
+
+SolidFire ESDS には次のコンテナが含まれています。
+
+* Element container (`element') ：単一のコンテナ内のすべての Element サービスをホストします。
+* Element 認証コンテナ (`element_auth') ：管理 UI 用の多要素認証 (mfa) トークンとセッション認証トークンを提供します
+* ネットワーク watchdog コンテナ（「 netwd 」）：ローカルの Element インスタンスのハートビート監視と仮想 IP （ MVIP と SVIP ）のフェイルオーバーを提供します。
+
+
+ESDS ノードのコンテナに SSH 経由でアクセスするには、ノードの所有者が SSH を有効にし、ログインクレデンシャルを指定する必要があります。ホストシステムへの SSH アクセスが可能になったら、「 podman ps 」コマンドを使用して 1 つ以上のコンテナのステータスを確認できます。以下の例を参照してください。
+
+[listing]
+----
+# podman ps
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+f6b8817c024a localhost/solidfire-element:12.2.0.777 --config /sf/etc/... 11 seconds ago Up 10 seconds ago sfnetwd
+c3fed6141259 localhost/solidfire-auth:12.2.0.777 --config /sf/etc/... 11 seconds ago Up 11 seconds ago element_auth
+1ffa8289c701 localhost/solidfire-element:12.2.0.777 --config /sf/etc/... 12 seconds ago Up 12 seconds ago element
+#
+----
+
+IMPORTANT: いずれかのコンテナが稼働していない場合は、 Podman を使用してコンテナを直接制御（停止または開始）しないでください。Element ソフトウェアは、 SolidFire systemd' サービスユニットを介して制御されます。このサービスは 'elementctl' を使用して '3 つの Element コンテナで実行されるソフトウェアのオーケストレーションを行いますどのノードでも 'systemctl を使用してホスト上の SolidFire サービスを制御することが推奨され ' サポートされている方法ですただし ' 稼働中のクラスタで実行する場合は ' サポートの指示に従ってください
+
+SolidFire ESDS に関連するすべてのログは、ホストの /var/log/solidfire/ にあります。ホストはコンテナインスタンス間で永続化されています。このディレクトリには Element コンテナからのログが含まれ ' それぞれ 'element_auth' コンテナと 'netwd' コンテナからのログを含む 'element_auth' サブディレクトリと 'netwd' サブディレクトリが含まれていますコンテナ内から '/var/log' のコンテナ固有のログにアクセスできます
+
+
+
+=== NetApp Hybrid Cloud Control の UI を使用してログを収集します
+
+ネットアップサポートに送信するログを収集して、 SolidFire ESDS クラスタの問題を診断するのに役立ちます。
+
+ログの収集時には、次の考慮事項に注意してください。
+
+* Podman コマンドを使用してログを収集しないでください。
+* ネットアップサポートは、 1 つの収集をホストログの収集に使用します。最適なサポートを受けるには、収集ツールを 1 つインストールしておく必要があります。
+
+
+.手順
+. Web ブラウザを開き、管理ノードの IP アドレスにアクセスします。例：
++
+[listing]
+----
+https://[management node IP address]
+----
+. ストレージクラスタ管理者のクレデンシャルを指定して NetApp Hybrid Cloud Control にログインします。
+. ダッシュボードの右上にあるメニューを選択します。
+. [*Collect Logs*] を選択します。
+. *Date Range* ドロップダウンメニューで日付範囲を選択し、ログに含める日付を指定します。
++
+カスタムの開始日を指定する場合は、日付範囲を開始する日付を選択できます。ログは、その日付から現時点まで収集されます。
+
+. ［ * ログ収集 * ］ セクションで、ストレージ・クラスタまたは特定のストレージ・ノードを選択します。
+. ログ収集を開始するには、 * Collect Logs * を選択します。
++
+ログ収集がバックグラウンドで実行され、ページに進捗状況が表示されます。
+
++
+
+NOTE: 収集したログによっては、進捗状況バーが数分間一定のパーセンテージで表示されるか、または非常に遅い時点で進行している可能性があります。
+
+. [ ログのダウンロード ] を選択して、ログ・パッケージをダウンロードします。
++
+ログ・パッケージは ' 圧縮された UNIX`.tgz ファイル形式です
+
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire のリソースページ"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
+

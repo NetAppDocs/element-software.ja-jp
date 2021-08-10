@@ -1,0 +1,47 @@
+---
+permalink: api/reference_element_api_remoteclustersnapshotstatus.html 
+sidebar: sidebar 
+keywords: object,objects,remoteClusterSnapshotStatus 
+summary: remoteClusterSnapshotStatus オブジェクトには、リモートストレージクラスタに格納されている Snapshot の UUID とステータスが含まれます。この情報は、 listsnapshots API メソッドまたは ListGroupSnapshots API メソッドを使用して取得できます。 
+---
+= remoteClusterSnapshotStatus の 2 つのグループがあり
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 remoseClusterSnapshotStatus 」オブジェクトには、リモートストレージクラスタに格納されている Snapshot の UUID とステータスが含まれます。この情報は 'listsnapshots' または 'ListGroupSnapshots'API メソッドを使用して取得できます
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+remoteStatus の 2 つのフィールド
+ a| 
+ソースクラスタから見た、ターゲットクラスタ上のリモート Snapshot のレプリケーションステータス。有効な値は次のとおり
+
+* Present ：リモートクラスタに Snapshot が存在します。
+* NotPresent ：リモートクラスタに Snapshot が存在しません。
+* Syncing ：これはターゲットクラスタであり、現在 Snapshot をレプリケートしています。
+* Deleted ：これはターゲットクラスタです。Snapshot は削除済みですが、ソースにはまだ存在しています。
+
+ a| 
+文字列
+
+
+
+ a| 
+volumePairUUID
+ a| 
+ボリュームペアのユニバーサル識別子。
+ a| 
+UUID
+
+|===

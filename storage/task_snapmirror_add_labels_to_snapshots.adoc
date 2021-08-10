@@ -1,0 +1,30 @@
+---
+permalink: storage/task_snapmirror_add_labels_to_snapshots.html 
+sidebar: sidebar 
+keywords: snapmirror labels, add labels to snapshots, specify retention policies, group snapshots 
+summary: SnapMirror ラベルは、 SnapMirror エンドポイントでの Snapshot 保持ポリシーを指定します。ラベルは、 Snapshot およびグループ Snapshot に追加できます。 
+---
+= Snapshot に SnapMirror ラベルを追加します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirror ラベルは、 SnapMirror エンドポイントでの Snapshot 保持ポリシーを指定します。ラベルは、 Snapshot およびグループ Snapshot に追加できます。
+
+追加できるラベルは、既存の SnapMirror 関係ダイアログボックスまたは NetApp ONTAP System Manager で確認できます。
+
+
+IMPORTANT: グループ Snapshot にラベルを追加すると、個々の Snapshot の既存のラベルがすべて上書きされます。
+
+.必要なもの
+* クラスタで SnapMirror を有効にしておきます。
+* 追加するラベルが ONTAP にすでに存在している必要があります。
+
+
+.手順
+. [ * データ保護 *>* スナップショット *] または [ グループスナップショット *] ページをクリックします。
+. SnapMirror ラベルを追加する Snapshot またはグループ Snapshot の * Actions * アイコンをクリックします。
+. Edit Snapshot * （スナップショットの編集）ダイアログボックスで、 * SnapMirror Label * （ SnapMirror ラベル * ）フィールドにテキストを入力します。このラベルは、 SnapMirror 関係に適用されるポリシー内のルールラベルと一致している必要があります。
+. [ 変更の保存 *] をクリックします。
+

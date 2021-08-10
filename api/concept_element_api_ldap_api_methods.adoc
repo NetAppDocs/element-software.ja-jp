@@ -1,0 +1,28 @@
+---
+permalink: api/concept_element_api_ldap_api_methods.html 
+sidebar: sidebar 
+keywords: ldap,api,methods 
+summary: Lightweight Directory Access Protocol （ LDAP ）を使用して、 Element ストレージへのアクセスを認証できます。このセクションで説明する LDAP API メソッドを使用すると、ストレージクラスタへの LDAP アクセスを設定できます。 
+---
+= LDAP API メソッド
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lightweight Directory Access Protocol （ LDAP ）を使用して、 Element ストレージへのアクセスを認証できます。このセクションで説明する LDAP API メソッドを使用すると、ストレージクラスタへの LDAP アクセスを設定できます。
+
+* xref:reference_element_api_addldapclusteradmin.adoc[AddLdapClusterAdmin]
+* xref:reference_element_api_enableldapauthentication.adoc[EnableLdapAuthentication の略]
+* xref:reference_element_api_disableldapauthentication.adoc[DisableLdapAuthentication の略]
+* xref:reference_element_api_getldapconfiguration.adoc[GetLdapConfiguration を実行します]
+* xref:reference_element_api_testldapauthentication.adoc[TestLdapAuthentication の略]
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire のリソースページ"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
+

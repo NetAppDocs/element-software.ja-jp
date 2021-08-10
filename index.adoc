@@ -1,0 +1,10 @@
+---
+layout: astra 
+sidebar: sidebar 
+permalink: index.html 
+lead: A SolidFire all-flash storage system is comprised of hardware components such as drives and nodes that are combined into a pool of storage resources. Using the Element interface, API, or other management tools, you can manage these storage resource clusters with NetApp Element software. 
+summary: SolidFire オールフラッシュストレージシステムは、ドライブやノードなどのハードウェアコンポーネントで構成され、これらのコンポーネントをストレージリソースのプールに統合します。このユニファイドクラスタは、単一のストレージシステムとして NetApp Element ソフトウェアで管理されます。 
+---
+= SolidFire および Element ソフトウェア 12.3 のドキュメント
+
+

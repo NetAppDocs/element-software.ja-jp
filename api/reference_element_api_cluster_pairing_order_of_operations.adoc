@@ -1,0 +1,37 @@
+---
+permalink: api/reference_element_api_cluster_pairing_order_of_operations.html 
+sidebar: sidebar 
+keywords: cluster,pairing,pair,order,operations,clusters 
+summary: リモートレプリケーションを使用する前に、 Element ソフトウェアを実行する 2 つのストレージクラスタ間に接続を確立しておく必要があります。 
+---
+= クラスタペアリングの処理の順序
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+リモートレプリケーションを使用する前に、 Element ソフトウェアを実行する 2 つのストレージクラスタ間に接続を確立しておく必要があります。
+
+次の一連の API メソッドを使用して、クラスタ接続を確立します。
+
+* xref:reference_element_api_startclusterpairing.adoc[StartClusterPairing を参照してください]：
++
+クラスタペアの確立に使用されるペアリングキーを作成して返します。このキーはエンコードされており、クラスタ間の通信の確立に使用する情報が含まれています。1 つのクラスタを最大で 4 つの他のクラスタとペアリングすることができます。ただし、クラスタペアリングごとに新しいキーを生成する必要があります。。 xref:reference_element_api_startclusterpairing.adoc[StartClusterPairing を参照してください] メソッドは、メソッドが呼び出されるたびに新しいキーを生成します。を使用して、一意のキーをそれぞれ使用します xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing] 追加の各クラスタをペアリングする方法。
+
++
+
+NOTE: セキュリティ上の理由から、ペアリングキーを E メール経由で他のユーザに送信しないでください。このキーにはユーザ名とパスワードが含まれています。
+
+* xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing]：
++
+このメソッドでは、で作成したペアリングキーを使用します xref:reference_element_api_startclusterpairing.adoc[StartClusterPairing を参照してください] クラスタペアを作成する API メソッド。問題 xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing] clusterPairingKey パラメータを使用してデスティネーションに対する API メソッド。発行元のクラスタは、キーを作成したクラスタです。
+
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_element_api_startclusterpairing.adoc[StartClusterPairing を参照してください]
+* xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing]
+

@@ -1,0 +1,111 @@
+---
+permalink: api/reference_element_api_deletevolumeaccessgroup.html 
+sidebar: sidebar 
+keywords: volume,access,group,groups,delete,deleting,DeleteVolumeAccessGroup 
+summary: DeleteVolumeAccessGroup を使用すると、ボリュームアクセスグループを削除できます。 
+---
+= DeleteVolumeAccessGroup
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 D eleeteVolumeAccessGroup 」を使用すると、ボリュームアクセスグループを削除できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ボリュームアクセスグループ ID
+ a| 
+削除するボリュームアクセスグループの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+deleteOrphanInitiators
+ a| 
+イニシエータオブジェクトを削除するかどうかを指定します。有効な値は次のとおり
+
+* true ：ボリュームアクセスグループから削除したあとにイニシエータオブジェクトを削除します。
+* false ：ボリュームアクセスグループから削除したあとにイニシエータオブジェクトを削除しません。これがデフォルトです。
+
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+
+
+ a| 
+[-force]
+ a| 
+このフラグを追加すると、仮想ネットワーク ID またはタグが割り当てられている場合でも、ボリュームアクセスグループが強制的に削除されます。有効な値は次のとおり
+
+* true ：ボリュームアクセスグループが削除されます。
+* false ：デフォルト。仮想ネットワーク ID またはタグが割り当てられているボリュームアクセスグループは削除しないでください。
+
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "DeleteVolumeAccessGroup",
+   "params": {
+          "force": true,
+	  "volumeAccessGroupID"  : 3
+   },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id" : 1,
+   "result": {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

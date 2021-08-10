@@ -1,0 +1,56 @@
+---
+permalink: storage/reference_data_protection_snapshot_schedule_details.html 
+sidebar: sidebar 
+keywords: snapshots, snapshot schedules 
+summary: [Data Protection] > [Schedules] ページでは、スナップショットスケジュールのリストに次の情報を表示できます。 
+---
+= Snapshot スケジュールの詳細
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Data Protection > Schedules ページでは、 Snapshot スケジュールのリストに次の情報を表示できます。
+
+* *ID*
++
+システムによって生成された Snapshot の ID 。
+
+* * タイプ *
++
+スケジュールのタイプ。現時点でサポートされているタイプは Snapshot のみです。
+
+* * 名前 *
++
+スケジュールの作成時に指定した名前。Snapshot スケジュール名は最大 223 文字で、使用できる文字は a~z 、 0~9 、およびダッシュ（ - ）です。
+
+* * 周波数 *
++
+スケジュールを実行する頻度。頻度は時間と分、週、または月で設定できます。
+
+* * 繰り返し *
++
+スケジュールが 1 回だけ実行されるか、定期的に実行されるか。
+
+* * 手動で一時停止 *
++
+スケジュールが手動で一時停止されているかどうか。
+
+* * ボリューム ID *
++
+スケジュールの実行時に使用されるボリュームの ID 。
+
+* * 最後の実行 *
++
+最後にスケジュールが実行された日時。
+
+* * 前回の実行ステータス *
++
+スケジュールの前回の実行結果。有効な値は次のとおり
+
++
+** 成功
+** 失敗
+
+
+

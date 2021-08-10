@@ -1,0 +1,110 @@
+---
+permalink: esds/reference_esds_element_links.html 
+sidebar: sidebar 
+keywords: element, solidfire esds, volumes, accounts, snapshots, virtual volumes, remote replication 
+summary: ストレージクラスタに SolidFire ESDS をインストールしたら、 Element UI 、 Element API 、または NetApp Element Plug-in for vCenter Server （ VCP ）を使用してストレージクラスタを管理できます。 
+---
+= SolidFire ESDS ストレージを管理します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージクラスタに SolidFire ESDS をインストールしたら、 Element UI 、 Element API 、または NetApp Element Plug-in for vCenter Server （ VCP ）を使用してストレージクラスタを管理できます。
+
+各種のストレージ管理タスク用のコンテンツへのリンクを次に示します。
+
+* link:../storage/task_intro_use_basic_options_in_the_element_software_ui.html["Element ソフトウェア UI の基本オプションを使用"^]
+* link:../storage/task_data_manage_accounts_work_with_accounts_task.html["ユーザアカウントを操作する"^]
+* link:../storage/task_data_manage_volumes_work_with_volumes_task.html["ボリュームを操作します"^]
++
+また、ボリュームへの QoS ポリシーの適用に関する情報も確認できます。
+
+* link:../storage/concept_data_manage_vvol_work_virtual_volumes.html["仮想ボリュームを操作します"^]
+* link:../storage/concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html["ボリュームアクセスグループとイニシエータを使用する"^]
+* link:../storage/task_data_protection_using_volume_snapshots.html["スナップショットを操作します"^]
+* link:../storage/concept_system_manage_key_get_started_with_external_key_management.html["外部キー管理の開始"^] 新規
+* link:../storage/task_system_manage_key_set_up_external_key_management.html["外部キー管理をセットアップする"^] 新規
+* link:../storage/task_replication_perform_remote_replication_between_element_clusters.html["クラスタ間でリモートレプリケーションを実行"^]
+* link:../storage/task_data_protection_back_up_and_restore_volumes.html["ボリュームのバックアップとリストア"^]
+* link:../api/index.html["Element API を使用してストレージを管理"^]
+* link:../storage/concept_system_monitoring_and_troubleshooting.html["システムのトラブルシューティングを行います"^]
+* https://docs.netapp.com/us-en/vcp/index.html["NetApp Element Plug-in for vCenter Server の概要を参照してください"]
++
+概要ページから特定のタスクに移動できます。
+
+
+
+
+
+== SolidFire ESDS クラスタでは Element API を使用します
+
+* 新機能 * 保存データのソフトウェア暗号化の拡張 * ： Element 12.3 では、保存データのソフトウェア暗号化機能の拡張機能が導入されています。この機能は、 SolidFire エンタープライズ SDS ストレージクラスタの作成時にデフォルトで有効になっています。この機能では、ストレージノード内の SSD に格納されているすべてのデータが暗号化され、クライアント IO のパフォーマンスへの影響は非常に小さく（最大 2% ）すぎません。
+
+
+保存データのソフトウェア暗号化に関連する Element API メソッドを次に示します（を参照） https://docs.netapp.com/us-en/element-software/api/index.html["Element API のドキュメント"^] 各メソッドの詳細については、以下を参照してください）。
+
+* 'CreateCluster'
+* 「 DisableEncryptionAtRest 」
+* EnableEncryptionAtRest
+* GetSoftwareEncryptionAtRestInfo
+* RekeySoftwareEncryptionAtRestMasterKey
+* 新規 * 保持するスナップショットの最大数を定義する機能 * ： Element 12.3 では、スナップショット保持機能が強化されています。この拡張機能をサポートするように次の API が変更されています（を参照） https://docs.netapp.com/us-en/element-software/api/index.html["Element API のドキュメント"^] 各メソッドの詳細については、以下を参照してください）。
+* 'CreateVolume'
+* 「 modifyVolume 」
+* CreateSnapshot の更新
+* 'createschedule'
+* 「 modifyGroupSnapshot 」
+* 「変更スケジュール」
+* 「 modifySnapshot 」
+* 'CreateGroupSnapshot'
+* NEW ！ _ * Element ソフトウェアのパッチに関する情報を入手 * ： Element 12.3 では、 GetPatchInfo メソッドが導入されています。このメソッドを使用すると、ストレージノードにインストールされている Element ソフトウェアのパッチに関する情報を取得できます。を参照してください https://docs.netapp.com/us-en/element-software/api/index.html["Element API のドキュメント"^] を参照してください。
+* New!_*List ノード上の各ネットワークインターフェイスの統計情報 *: Element 12.3 では、「 ListNetworkInterfaceStats 」メソッドが導入されています。このメソッドを使用すると、ノード上の各ネットワークインターフェイスのドロップされたパケット数やさまざまな種類のエラーなどの統計情報をリストできます。この API メソッドは、個々のノードに対して使用するためのものです。個々のノードにアクセスするには、ユーザ ID とパスワードによる認証が必要です。ただし、メソッド呼び出しで force パラメータの値が true に設定されている場合は、このメソッドをクラスタに対して使用できます。パラメータをクラスタに対して使用すると、すべてのインターフェイスのネットワーク統計が表示されます。を参照してください https://docs.netapp.com/us-en/element-software/api/index.html["Element API のドキュメント"^] を参照してください。
+* * SolidFire ESDS* をサポートするために Element 12.2 で導入および更新された API ： SolidFire ESDS クラスタで使用できる新しい API が Element 12.2 で導入されました。
+
+
+Element 12.2 で追加された API の一覧を次に示します。
+
+* link:../api/reference_element_api_getlicensekey.html["「 GetLicenseKey 」をクリックします"^]
+* link:../api/reference_element_api_setlicensekey.html["'setLicenseKey'"^]
+* link:../api/reference_element_api_enablemaintenancemode.html["「 EnableMaintenanceMode 」のように表示されます"^]
+* link:../api/reference_element_api_disablemaintenancemode.html["「 DisableMaintenanceMode 」"^]
+
+
+SolidFire ESDS クラスタをサポートするために、次の 12.2 の API が更新されました。
+
+* link:../api/reference_element_api_addnodes.html["「 AddNodes 」"^]
+* link:../api/reference_element_api_createcluster.html["'CreateCluster'"^]
++
+
+NOTE: Element ソフトウェア 12.2 の「 CreateCluster 」メソッドに、新しいパラメータ「 OrderNumber 」、「 erialNumber 」、および「 enableSoftwareEncryptionAtRest 」が追加されました。SolidFire ESDS のインストール後にクラスタを作成する場合は、この API メソッドを使用してこれらのパラメータを指定する必要があります。
+
+* * Element 12.2 API は SolidFire ESDS クラスタではサポートされていません * 。以下に、 SolidFire ESDS クラスタではサポートされていない Element 12.2 API のリストを示します。
+* 「 ListClusterInterfacePreferences 」
+* 「 ListNodeStats 」
+* 「参照可能な管理者」
+* 「 DisableClusterSsh 」を参照してください
+* EnableClusterSsh
+* 「 EnableSsh 」を参照してください
+* 「 GetIpmiConfig 」
+* 「 GetIpmiInfo 」
+* 「 GetSshInfo( 取得情報 ) 」
+* 「 ListNetworkInterfaces 」を参照してください
+* 「 ResetNode 」と入力します
+* 「 RestartNetworking 」を参照してください
+* 「 ResetNetworkConfig 」
+* 'setConfig'
+* 「 etNetworkConfig 」
+* 「 DisableBmcColdReset 」
+* 'EnableBmcColdReset' のように表示されます
+* 'etNtpInfo'
+* 「 TestAddressAvailability 」
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire のリソースページ"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
+

@@ -1,0 +1,50 @@
+---
+permalink: api/reference_element_api_protectionschemetolerance.html 
+sidebar: sidebar 
+keywords: object,objects,protectionSchemeTolerance 
+summary: protectionSchemeTolerance オブジェクトには、障害発生後もストレージクラスタでデータの読み取りと書き込みを継続できるかどうかの情報が含まれます。 
+---
+= protectionSchemeTolerance のようになりました
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+protectionSchemeTolerance オブジェクトには、障害発生後もストレージクラスタでデータの読み取りと書き込みを継続できるかどうかの情報が含まれます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+保護スキーム
+ a| 
+このストレージクラスタの現在の保護方式。指定できる値は Double Helix のみです。
+ a| 
+文字列
+
+
+
+ a| 
+持続可能な障害 ForBlockData
+ a| 
+現在発生しても、関連する保護方式のブロックデータの可用性が失われることはありません。
+ a| 
+整数
+
+
+
+ a| 
+持続可能な障害フォーメタデータ
+ a| 
+現在発生しても、関連する保護スキームのメタデータが失われることはありません。
+ a| 
+整数
+
+|===

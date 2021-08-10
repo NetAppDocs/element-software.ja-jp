@@ -1,0 +1,124 @@
+---
+permalink: api/reference_element_api_listclusteradmins.html 
+sidebar: sidebar 
+keywords: admin,admins,cluster,list,listing,listclusteradmins 
+summary: ListClusterAdmins メソッドを使用すると、クラスタのすべてのクラスタ管理者のリストを取得できます。 
+---
+= ListClusterAdmins
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ListClusterAdmins 」メソッドを使用すると、クラスタのすべてのクラスタ管理者のリストを取得できます。
+
+権限レベルが異なる複数のクラスタ管理者アカウントが存在できます。プライマリクラスタ管理者はシステムに 1 人しか存在できません。プライマリクラスタ管理者は、クラスタの作成時に作成された管理者です。LDAP 管理者は、クラスタに LDAP システムを設定するときに作成することもできます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ショー非表示
+ a| 
+SNMP 管理者などの非表示のクラスタ管理者ユーザを表示します。
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+clusterAdmin の権限が必要です
+ a| 
+クラスタに存在するすべてのクラスタおよび LDAP 管理者に関する情報。
+ a| 
+xref:reference_element_api_clusteradmin.adoc[クラスタ管理者] 配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ListClusterAdmins",
+   "params": {},
+    "showHidden": true
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+"id":1,
+"result":{
+  "clusterAdmins":[
+     {
+       "access":[
+           "administrator"
+       ],
+       "attributes":null,
+       "authMethod":"Cluster",
+       "clusterAdminID":1,
+       "username":"admin"
+   },
+   {
+       "access":[
+           "read",
+           "administrator"
+       ],
+       "attributes":{
+       },
+       "authMethod":"Ldap",
+       "clusterAdminID":7,
+       "username":"john.smith"
+   },
+   {
+       "access":[
+           "read",
+           "administrator"
+       ],
+       "attributes":{},
+       "authMethod":"Ldap",
+       "clusterAdminID":6,
+       "username":"cn=admin1 jones,ou=ptusers,c=prodtest,dc=solidfire,dc=net"
+       }
+     ]
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

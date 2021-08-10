@@ -1,0 +1,78 @@
+---
+permalink: storage/task_snapmirror_transfer_or_one_time_migration_from_ontap_to_element.html 
+sidebar: sidebar 
+keywords: transfer, perform, source volume, snapmirror, dr, disaster recovery, one-time migration 
+summary: 通常、 NetApp Element ソフトウェアを実行する SolidFire ストレージクラスタから ONTAP ソフトウェアへのディザスタリカバリに SnapMirror を使用する場合、 Element がソースで ONTAP がデスティネーションです。ただし、場合によっては、 ONTAP ストレージシステムをソース、 Element をデスティネーションとして使用できます。 
+---
+= ONTAP から Element への転送または 1 回限りの移行を実行します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通常、 NetApp Element ソフトウェアを実行する SolidFire ストレージクラスタから ONTAP ソフトウェアへのディザスタリカバリに SnapMirror を使用する場合、 Element がソースで ONTAP がデスティネーションです。ただし、場合によっては、 ONTAP ストレージシステムをソース、 Element をデスティネーションとして使用できます。
+
+* 2 つのシナリオがあります。
++
+** 以前のディザスタリカバリ関係が存在しない。この手順のすべての手順を実行します。
+** 以前のディザスタリカバリ関係は存在しますが、今回の移行に使用するボリューム間の関係ではありません。この場合は、手順 3 と 4 のみを実行してください。
+
+
+
+
+.必要なもの
+* Element デスティネーションノードから ONTAP にアクセスできるようにしておく必要があります。
+* Element ボリュームの SnapMirror レプリケーションを有効にしておく必要があります。
+
+
+Element のデスティネーションパスを hostip ： /lun/<id_number> の形式で指定する必要があります。 lun は実際の文字列「 lun 」、 id_number は Element ボリュームの ID です。
+
+.手順
+. ONTAP を使用して、 Element クラスタとの関係を作成します。
++
+[listing]
+----
+snapmirror create -source-path SVM:volume|cluster://SVM/volume
+-destination-path hostip:/lun/name -type XDP -schedule schedule -policy
+    policy
+----
++
+[listing]
+----
+cluster_dst::> snapmirror create -source-path svm_1:volA_dst
+-destination-path 10.0.0.11:/lun/0005 -type XDP -schedule my_daily -policy MirrorLatest
+----
+. snapmirror show コマンドを使用 ONTAP して、 SnapMirror 関係が作成されたことを確認します。
++
+レプリケーション関係の作成については ONTAP のドキュメントを、詳細なコマンド構文については ONTAP のマニュアルページを参照してください。
+
+. 「 ElementCreateVolume 」 API を使用してターゲットボリュームを作成し、ターゲットボリュームアクセスモードを SnapMirror に設定します。
++
+Element API を使用して Element ボリュームを作成します
+
++
+[listing]
+----
+{
+   "method": "CreateVolume",
+   "params": {
+        "name": "SMTargetVolumeTest2",
+        "accountID": 1,
+        "totalSize": 100000000000,
+        "enable512e": true,
+        "attributes": {},
+        "qosPolicyID": 1,
+        "enableSnapMirrorReplication": true,
+        "access": "snapMirrorTarget"
+    },
+    "id": 1
+}
+----
+. ONTAP の「 napmirror initialize 」コマンドを使用して、レプリケーション関係を初期化します。
++
+[listing]
+----
+snapmirror initialize -source-path hostip:/lun/name
+-destination-path SVM:volume|cluster://SVM/volume
+----
+

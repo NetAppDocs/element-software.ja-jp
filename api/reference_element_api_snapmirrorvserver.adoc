@@ -1,0 +1,129 @@
+---
+permalink: api/reference_element_api_snapmirrorvserver.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorVserver 
+summary: snapMirrorVserver オブジェクトに、デスティネーション ONTAP クラスタの Storage Virtual Machines （または Vservers ）の情報が含まれています。 
+---
+= snapMirrorVserver
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorVserver オブジェクトに、デスティネーション ONTAP クラスタでの Storage Virtual Machine （ SVM ）の情報が含まれています。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+デスティネーション ONTAP システムの ID 。
+ a| 
+整数
+
+
+
+ a| 
+vserverName の略
+ a| 
+SVM の名前。
+ a| 
+文字列
+
+
+
+ a| 
+vserverType
+ a| 
+SVM のタイプ。有効な値は次のとおり
+
+* データ
+* 管理
+* システム
+* ノード
+
+ a| 
+文字列
+
+
+
+ a| 
+vserverSubtype
+ a| 
+SVM のサブタイプ。有効な値は次のとおり
+
+* デフォルト
+* DP デスティネーション
+* データ
+* sync_source
+* 同期先
+
+ a| 
+文字列
+
+
+
+ a| 
+rootVolume
+ a| 
+SVM のルートボリューム。
+ a| 
+文字列
+
+
+
+ a| 
+rootVolumeAggregate です
+ a| 
+ルートボリュームが作成されるアグリゲート。
+ a| 
+文字列
+
+
+
+ a| 
+vserverAggregateInfo
+ a| 
+snapMirrorVserverAggregateInfo オブジェクトの配列。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+ADMINSTATE
+ a| 
+SVM の詳細な管理状態。有効な値は次のとおり
+
+* 実行中です
+* 停止しました
+* 開始中です
+* 停止中です
+* 初期化中です
+* 削除
+
+ a| 
+文字列
+
+
+
+ a| 
+operationalState
+ a| 
+SVM の基本的な動作状態。有効な値は次のとおり
+
+* 実行中です
+* 停止しました
+
+ a| 
+文字列
+
+|===

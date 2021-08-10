@@ -1,0 +1,175 @@
+---
+permalink: esds/task_esds_install_using_ansible.html 
+sidebar: sidebar 
+keywords: solidfire esds, installing solidfire esds, ansible role 
+summary: SolidFire ESDS は、 Ansible などの自動化ツールを使用してインストールできます。Ansible に精通している場合は、 SolidFire ESDS のインストールやクラスタの作成などのいくつかのタスクを組み合わせた Ansible プレイブックを作成できます。 
+---
+= Ansible を使用して SolidFire ESDS をインストールします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire ESDS は、 Ansible などの自動化ツールを使用してインストールできます。Ansible に精通している場合は、 SolidFire ESDS のインストールやクラスタの作成などのいくつかのタスクを組み合わせた Ansible プレイブックを作成できます。
+
+.必要なもの
+* 指定された手順に従って、ローカルサーバに Ansible をインストールしておきます https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installation-guide["こちらをご覧ください"^]。
+* Ansible のロールを確認しておきます。を参照してください https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html["こちらをご覧ください"^]。
+* 表示されている前提条件となるタスクをすべて実行しておきます link:concept_esds_prerequisite_tasks.html["こちらをご覧ください"^]。
+* SolidFire ESDS の準拠チェックを実行しました。準拠チェックの実行方法については、を参照してください link:concept_esds_prerequisite_tasks.html["こちらをご覧ください"^]。
+
+
+パスワードなどの機密情報については、プレーンテキストではなく Ansible Vault を使用します。詳細については、次のリンクを参照してください。
+
+* https://docs.ansible.com/ansible/latest/user_guide/playbooks_vault.html["Ansible Vault を使用します"^]
+* https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html["在庫の作成方法"^]
+
+
+
+IMPORTANT: 必要なすべての変数は、プレイブックではなく、インベントリファイルで指定する必要があります。
+
+.手順
+. 'Ansible galxy install コマンドを実行して 'nar_solidfire_sds_install' ロールをインストールします
++
+[listing]
+----
+ansible-galaxy install git+https://github.com/NetApp-Automation/nar_solidfire_sds_install.git
+----
++
+ロールは、からコピーして手動でインストールすることもできます https://github.com/NetApp-Automation["NetApp GitHub リポジトリ"^] そして '~/. epla/roles ディレクトリにロールを配置しますネットアップは README ファイルを提供しています。このファイルには、ロールの実行方法に関する情報が含まれています。
+
++
+
+NOTE: 必ず最新バージョンのロールをダウンロードしてください。
+
+. ダウンロードしたロールを、インストールしたディレクトリから 1 つ上のディレクトリに移動します。
++
+[listing]
+----
+ $ mv ~/.ansible/roles/ansible/nar_solidfire_sds_* ~/.ansible/roles/
+----
+. 「 Ansible galxy role list 」コマンドを実行して、新しい役割を利用するように Ansible が設定されていることを確認します。
++
+[listing]
+----
+ $ ansible-galaxy role list
+ # ~/.ansible/roles
+ - nar_solidfire_sds_install, (unknown version)
+ - nar_solidfire_sds_upgrade, (unknown version)
+ - ansible, (unknown version)
+ - nar_solidfire_sds_compliance, (unknown version)
+----
++
+
+NOTE: ロールに関連付けられている README ファイルには、次に示すように定義する必要がある必須変数とオプション変数のリストが含まれています。
+
++
+image::../media/esds_sample_playbook.png[に、サンプルのプレイブックを示します。]
+
++
+これらの変数は、次の手順で作成するインベントリファイルで定義する必要があります。
+
+. Ansible 作業ディレクトリにインベントリファイルを作成します。
++
+
+TIP: インベントリファイルには、 SolidFire ESDS をインストールするすべてのホスト（ノード）を含める必要があります。インベントリファイルには、複数のホストを 1 つのコマンドで管理するためのプレイブック（次の手順で作成します）が含まれています。また、ストレージノードのユーザ名とパスワード、管理インターフェイスとストレージインターフェイスの名前など、変数も定義する必要があります。
+
++
+[IMPORTANT]
+====
+インベントリファイルの次のガイドラインに従ってください。 ** デバイス名に正しいスペルを使用してください。** ファイルに正しいフォーマットを使用してください。** キャッシュデバイスが 1 台だけであることを確認してください。** リストを使用して 'storage_devices を指定します
+
+====
++
+
+NOTE: ここに示す例では、 HPE サーバのストレージおよび管理インターフェイス名を使用しています。Dell サーバーがある場合、キャッシュデバイス名は nvme1n1 になります。Dell サーバーの場合 'mgmt_iface は team1G で 'volume_iface は team10G です
+
++
+インベントリファイルの例を次に示します。4 つのストレージノードで構成されます。この例では、 * storage node MIP * をストレージノードの MIP アドレスに置き換えて、 ***** を置き換えます ストレージノードのユーザ名とパスワードを入力します。
+
++
+[listing]
+----
+all:
+    hosts:
+        storage node MIP:
+        storage node MIP:
+        storage node MIP:
+        storage node MIP:
+    vars:
+        ansible_connection: ssh
+        ansible_ssh_common_args: -o StrictHostKeyChecking=no
+        ansible_user: *****
+        ansible_ssh_pass: *****
+        solidfire_element_rpm: http://sf-artifactory.solidfire.net/artifactory/crux/solidfire-element-**.*.*.***-*.***.x86_64.rpm
+        mgmt_iface: "team0"
+        storage_iface: "team1"
+        storage_devices:
+          - "/dev/nvme0n1"
+          - "/dev/nvme1n1"
+          - "/dev/nvme2n1"
+          - "/dev/nvme3n1"
+          - "/dev/nvme4n1"
+          - "/dev/nvme5n1"
+          - "/dev/nvme6n1"
+          - "/dev/nvme7n1"
+          - "/dev/nvme8n1"
+        cache_devices:
+          - "/dev/nvme9n1"
+----
+. インベントリファイルで定義したホスト（ノード）に ping を実行して、 Ansible がそれらのホストと通信できることを確認します。
+. Red Hat Package Manager （ RPM ）ファイルを、 Ansible を実行しているサーバとストレージノードからアクセスできるローカル Web サーバ上のファイルディレクトリにダウンロードします。
+. Ansible プレイブックを作成します。プレイブックがすでにある場合は、変更できます。ネットアップの README ファイルにある例を利用できます。
+. 前の手順で作成したプレイブックを実行して、 SolidFire ESDS をインストールします。
++
+[listing]
+----
+ $ ansible-playbook -i inventory.yaml sample_playbook.yaml
+----
++
+*sample_cample.yaml * をプレイブックの名前に置き換え、 *inventory.yaml * をインベントリファイルの名前に置き換えます。プレイブックを実行すると、インベントリファイルに一覧表示されている各ノードに「 f_sds_config.yaml 」ファイルが作成されます。また、各ストレージノードに SolidFire サービスがインストールされて開始されます。'sf_sds_config.yaml ' の詳細については ' を参照してください link:reference_esds_sf_sds_config_file.html["こちらをご覧ください"^]。
+
+. コンソールで Ansible の出力をチェックして、各ノードで SolidFire サービスが開始されていることを確認します。
++
+出力例を次に示します。
+
++
+[listing]
+----
+
+TASK [nar_solidfire_sds_install : Ensure the SolidFire eSDS service is started] *********************************************************************************************
+
+changed: [10.61.68.52]
+
+changed: [10.61.68.54]
+
+changed: [10.61.68.51]
+
+changed: [10.61.68.53]
+
+
+
+PLAY RECAP ******************************************************************************************************************************************************************
+
+10.61.68.51                : ok=12   changed=3    unreachable=0
+failed=0    skipped=10   rescued=0    ignored=0
+
+10.61.68.52                : ok=12   changed=3    unreachable=0
+failed=0    skipped=10   rescued=0    ignored=0
+
+10.61.68.53                : ok=12   changed=3    unreachable=0
+failed=0    skipped=10   rescued=0    ignored=0
+
+10.61.68.54                : ok=12   changed=3    unreachable=0
+failed=0    skipped=10   rescued=0    ignored=0
+----
+. SolidFire サービスが正常に開始されたことを確認するには 'systemctl status SolidFire コマンドを実行し ' 出力で Active ： active （ Exited ） ... を確認します
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire のリソースページ"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
+

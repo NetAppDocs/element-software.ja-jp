@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: element-earlierversions.html 
+keywords: earlier versions, element versions 
+summary: 最新バージョンを実行していない場合は、以前のリリースのドキュメントを参照できます。 
+---
+= 以前のバージョンの SolidFire および NetApp Element ソフトウェアのマニュアル
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+以前のリリースのドキュメントは、ネットアップのドキュメントセンターで入手できます。
+
+* https://docs.netapp.com/sfe-122/index.jsp["Element 12.2 のドキュメント"^]
+* https://docs.netapp.com/sfe-120/index.jsp["Element 12.0 のドキュメント"^]
+* https://docs.netapp.com/sfe-118/index.jsp["Element 11.8 のドキュメント"^]
+* https://docs.netapp.com/sfe-115/index.jsp["Element 11.5 のドキュメント"^]
+* https://docs.netapp.com/sfe-113/index.jsp["Element 11.3 のドキュメント"^]
+
+
+
+
+== を参照してください。
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

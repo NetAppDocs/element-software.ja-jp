@@ -1,0 +1,43 @@
+---
+permalink: storage/concept_troubleshoot_drives.html 
+sidebar: sidebar 
+keywords: troubleshoot, drives, ssd, swappable, solid-state drives 
+summary: 障害が発生したソリッドステートドライブ（ SSD ）を、交換用ドライブに交換できます。SolidFire ストレージノードの SSD はホットスワップ対応です。SSD で障害が発生した疑いがある場合は、ネットアップサポートに障害の検証を依頼し、指示に従って正しい解決策の手順を実行してください。ネットアップサポートは、サービスレベルアグリーメントに従って、交換用ドライブを入手する方法についてもアドバイスします。 
+---
+= ドライブのトラブルシューティング
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+障害が発生したソリッドステートドライブ（ SSD ）を、交換用ドライブに交換できます。SolidFire ストレージノードの SSD はホットスワップ対応です。SSD で障害が発生した疑いがある場合は、ネットアップサポートに障害の検証を依頼し、指示に従って正しい解決策の手順を実行してください。ネットアップサポートは、サービスレベルアグリーメントに従って、交換用ドライブを入手する方法についてもアドバイスします。
+
+ここでのホットスワップ対応とは、障害が発生したドライブをアクティブなノードから取り外し、ネットアップの新しい SSD ドライブと交換できることを意味します。アクティブなクラスタで障害が発生していないドライブを取り外すことは推奨されません。
+
+障害が発生したドライブをただちに交換できるように、ネットアップサポートから提案されたオンサイトスペアを用意しておく必要があります。
+
+
+NOTE: テストの目的でノードからドライブを引き抜いてドライブ障害をシミュレートする場合は、 30 秒待ってからドライブスロットにドライブを再挿入してください。
+
+ドライブで障害が発生すると、 Double Helix によって、そのドライブ上のデータがクラスタ内の残りのノードに再配分されます。Element ソフトウェアでは、データの 2 つのコピーが同じノード上に保存されることはないため、同じノードで複数のドライブ障害が発生しても問題は使用されません。ドライブで障害が発生すると、次のイベントが発生します。
+
+* データはドライブから移行されます。
+* ドライブの容量だけクラスタ全体の容量が減少します。
+* Double Helix データ保護機能により、データの有効なコピーが 2 つ確保されます。
+
+
+
+IMPORTANT: SolidFire ストレージシステムでは、データの移行に必要なストレージ容量を確保できなくなる場合、ドライブの削除はサポートされません。
+
+
+
+== を参照してください。
+
+* xref:task_troubleshoot_remove_failed_drives.adoc[クラスタから障害ドライブを削除します]
+* xref:concept_troubleshoot_basic_mdss_drive_troubleshooting.adoc[基本的な MDSS ドライブのトラブルシューティング]
+* xref:task_troubleshoot_remove_mdss_drives.adoc[MDSS ドライブを削除します]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2844771["SolidFire ストレージノードのドライブの交換"]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2846859["H600S シリーズストレージノードのドライブの交換"]
+* link:hardware/concept_h410s_h610s_info.html["H410S および H610S ハードウェアの情報"]
+* link:hardware/concept_sfseries_info.html["SF シリーズハードウェアの情報"]
+

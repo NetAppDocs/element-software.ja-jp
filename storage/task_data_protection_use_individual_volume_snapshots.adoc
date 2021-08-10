@@ -1,0 +1,27 @@
+---
+permalink: storage/task_data_protection_use_individual_volume_snapshots.html 
+sidebar: sidebar 
+keywords: individual volume snapshots, use, volume, snapshot 
+summary: ボリューム Snapshot は、ボリュームのポイントインタイムコピーです。Snapshot には、ボリュームのグループではなく個々のボリュームを使用できます。 
+---
+= 個々のボリューム Snapshot をデータ保護に使用します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリューム Snapshot は、ボリュームのポイントインタイムコピーです。Snapshot には、ボリュームのグループではなく個々のボリュームを使用できます。
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:task_data_protection_create_a_volume_snapshot.adoc[ボリューム Snapshot を作成します]
+* xref:task_data_protection_edit_snapshot_retention.adoc[Snapshot 保持期間を編集します]
+* xref:task_data_protection_delete_a_snapshot.adoc[Snapshot を削除しています]
+* xref:task_data_protection_clone_a_volume_from_a_snapshot.adoc[Snapshot からボリュームをクローニングする]
+* xref:task_data_protection_roll_back_a_volume_to_a_snapshot.adoc[Snapshot へのボリュームのロールバック]
+* xref:task_data_protection_back_up_a_volume_snapshot_to_an_amazon_s3_object_store.adoc[Amazon S3 オブジェクトストアへのボリューム Snapshot のバックアップ]
+* xref:task_data_protection_back_up_a_volume_snapshot_to_openstack_swift.adoc[OpenStack Swift オブジェクトストアへのボリューム Snapshot のバックアップ]
+* xref:task_data_protection_back_up_volume_snapshot_to_solidfire.adoc[SolidFire クラスタへのボリューム Snapshot のバックアップ]
+

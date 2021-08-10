@@ -1,0 +1,97 @@
+---
+permalink: api/reference_element_api_getaccountbyname.html 
+sidebar: sidebar 
+keywords: accounts,account,name,username,GetAccountByName 
+summary: GetAccountByName を使用すると、ユーザ名を指定して特定のアカウントに関する詳細を取得できます。 
+---
+= GetAccountByName の略
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetAccountByName を使用すると、ユーザ名を指定して特定のアカウントに関する詳細を取得できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ユーザ名
+ a| 
+アカウントのユーザ名。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+アカウント：
+ a| 
+アカウントの詳細。
+ a| 
+xref:reference_element_api_account.adoc[アカウント：]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "GetAccountByName",
+   "params": {
+     "username"  : "jimmyd"
+   },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+    "account": {
+        "attributes": {},
+        "username": "jimmyd",
+        "targetSecret": "targetsecret",
+        "volumes": [],
+        "enableChap": true,
+        "status": "active",
+        "accountID": 1,
+        "storageContainerID": "abcdef01-1234-5678-90ab-cdef01234567",
+        "initiatorSecret": "initiatorsecret"
+    }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

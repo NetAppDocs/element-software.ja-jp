@@ -1,0 +1,124 @@
+---
+permalink: api/reference_element_api_addldapclusteradmin.html 
+sidebar: sidebar 
+keywords: LDAP,cluster,admin,add,adding,addldapclusteradmin 
+summary: AddLdapClusterAdmin を使用すると、新しい LDAP クラスタ管理者ユーザを追加できます。LDAP クラスタ管理者は、 API および管理ツールを使用してクラスタを管理できます。LDAP クラスタ管理者アカウントは、標準のテナントアカウントと完全に別のもので、関連性はありません。 
+---
+= AddLdapClusterAdmin
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AddLdapClusterAdmin を使用すると、新しい LDAP クラスタ管理者ユーザを追加できます。LDAP クラスタ管理者は、 API および管理ツールを使用してクラスタを管理できます。LDAP クラスタ管理者アカウントは、標準のテナントアカウントと完全に別のもので、関連性はありません。
+
+
+
+== パラメータ
+
+このメソッドを使用して、 Active Directory ® で定義されている LDAP グループを追加することもできます。グループに付与されたアクセスレベルが、 LDAP グループの個々のユーザに継承されます。
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+にアクセスします
+ a| 
+このクラスタ管理者が使用できるメソッドを制御します。
+ a| 
+文字列の配列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+アクセトゥーラ
+ a| 
+エンドユーザライセンス契約に同意します。システムにクラスタ管理者アカウントを追加するには、 true に設定します。省略するか false に設定すると、メソッド呼び出しは失敗します。
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON オブジェクト
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+ユーザ名
+ a| 
+新しい LDAP クラスタ管理者のユーザ名。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "AddLdapClusterAdmin",
+  "params": {"username":"cn=mike jones,ou=ptusers,dc=prodtest,dc=solidfire,dc=net",
+    "access": ["administrator", "read"
+    ]
+  },
+"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+ "id": 1,
+ "result": {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_app_b_access_control.adoc[Access Control の略]

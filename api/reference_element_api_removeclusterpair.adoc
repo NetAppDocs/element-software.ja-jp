@@ -1,0 +1,79 @@
+---
+permalink: api/reference_element_api_removeclusterpair.html 
+sidebar: sidebar 
+keywords: cluster,clusters,pair,remove,removing,removeclusterpair 
+summary: RemoveClusterPair メソッドを使用して、 2 つのペアクラスタ間で開いている接続を閉じることができます。 
+---
+= RemoveClusterPair を使用します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RemoveClusterPair メソッドを使用すると、 2 つのペアクラスタ間で開いている接続を閉じることができます。
+
+
+
+== パラメータ
+
+
+NOTE: クラスタペアを削除する前に、 RemoveVolumePair API メソッドを使用してクラスタに対するすべてのボリュームペアリングを削除する必要があります。
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+clusterPairID
+ a| 
+2 つのクラスタのペアリングに使用された一意の識別子。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "RemoveClusterPair",
+   "params": {
+              "clusterPairID": 1
+      },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

@@ -1,0 +1,142 @@
+---
+permalink: api/reference_element_api_getbinassignmentproperties.html 
+sidebar: sidebar 
+keywords: bin assignment,assignment properties,retrieve assignment properties 
+summary: GetBinAssignmentProperties メソッドを使用すると、データベースの bin 割り当てプロパティを取得できます。 
+---
+= GetBinAssignmentProperties のプロパティ
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 GetBinAssignmentProperties 」メソッドを使用すると、データベース内の bin 割り当てプロパティを取得できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+プロパティ
+ a| 
+は、データベース内の現在のすべてのビン割り当てのプロパティを示しています。
+ a| 
+binAssignmentProperties の配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+    "method": "GetBinAssignmentProperties",
+    "params": {
+    },
+    "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "properties": {
+            "algorithmRuntimeMS": 1105,
+            "areReplicasValid": true,
+            "binCount": 65536,
+            "isBalanced": true,
+            "isStable": true,
+            "isWellCoupled": false,
+            "layout": [
+                {
+                    "protectionDomainName": "1",
+                    "services": [
+                        {
+                            "budget": 7281,
+                            "serviceID": 16
+                        },
+                        {
+                            "budget": 7281,
+                            "serviceID": 19
+                        },
+                        {
+                            "budget": 7281,
+                            "serviceID": 24
+                        }
+                    ]
+                },
+                {
+                    "protectionDomainName": "2",
+                    "services": [
+                        {
+                            "budget": 7281,
+                            "serviceID": 17
+                        },
+                        {
+                            "budget": 7281,
+                            "serviceID": 20
+                        },
+                        {
+                            "budget": 7281,
+                            "serviceID": 22
+                        }
+                    ]
+                },
+                {
+                    "protectionDomainName": "3",
+                    "services": [
+                        {
+                            "budget": 7281,
+                            "serviceID": 18
+                        },
+                        {
+                            "budget": 7281,
+                            "serviceID": 21
+                        },
+                        {
+                            "budget": 7281,
+                            "serviceID": 23
+                        }
+                    ]
+                }
+            ],
+            "numSwaps": 0,
+            "numUpdatingBins": 0,
+            "protectionDomainType": "node",
+            "reason": "Final",
+            "replicationCount": 2,
+            "requestRebalance": false,
+            "serviceStrandedCapacities": [],
+            "timePublished": "2020-04-02T18:34:07.807681Z",
+            "validSchemes": []
+        }
+    }
+}
+----
+
+
+== 新規導入バージョン
+
+12.0

@@ -1,0 +1,131 @@
+---
+permalink: api/reference_element_api_addidpclusteradmin.html 
+sidebar: sidebar 
+keywords: IdP,idp,cluster,admin,add,adding,addIdpclusteradmin 
+summary: AddIpdClusterAdmin メソッドを使用して、サードパーティのアイデンティティプロバイダで認証されたクラスタ管理者ユーザ（ IdP ）を追加できます。IdP クラスタ管理者アカウントは、ユーザに関連付けられた IdP の SAML アサーションで指定された SAML 属性値情報に基づいて設定されます。ユーザが IdP で認証され、複数の IdP クラスタ管理アカウントに一致する SAML アサーション内に SAML 属性ステートメントが含まれている場合、そのユーザは一致する IdP クラスタ管理アカウントのアクセスレベルを組み合わせて使用できます。 
+---
+= AddIdpClusterAdmin
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 AddIpdClusterAdmin 」メソッドを使用して、サードパーティのアイデンティティプロバイダ（ IdP ）によって認証されたクラスタ管理者ユーザを追加できます。IdP クラスタ管理者アカウントは、ユーザに関連付けられた IdP の SAML アサーションで指定された SAML の属性と値の情報に基づいて設定されます。ユーザが IdP で認証され、複数の IdP クラスタ管理アカウントに一致する SAML アサーション内に SAML 属性ステートメントが含まれている場合、そのユーザは一致する IdP クラスタ管理アカウントのアクセスレベルを組み合わせて使用できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+にアクセスします
+ a| 
+この IdP クラスタ管理者が使用できるメソッドを制御します。
+ a| 
+文字列の配列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+アクセトゥーラ
+ a| 
+エンドユーザライセンス契約に同意します。システムにクラスタ管理者アカウントを追加するには、 true に設定します。省略するか false に設定すると、メソッド呼び出しは失敗します。
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON オブジェクト
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+ユーザ名
+ a| 
+IdP クラスタ管理者への SAML の属性と値のマッピング（例： email=test@example.com ）。これは、「 NameID 」を使用して特定の SAML サブジェクトを使用するか、「 eduPersonアフィリーション 」などの SAML 属性ステートメントのエントリとして定義できます。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+clusterAdminID
+ a| 
+作成されたクラスタ管理者の一意の識別子。
+ a| 
+整数
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+    "method": "AddIdpClusterAdmin",
+    "params": {
+        "username": "email=test@example.com",
+        "acceptEula": true,
+        "access": ["administrator"]
+    }
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+    "result": {
+        "clusterAdminID": 13
+    }
+}
+----
+
+
+== 新規導入バージョン
+
+12.0

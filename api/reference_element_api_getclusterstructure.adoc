@@ -1,0 +1,70 @@
+---
+permalink: api/reference_element_api_getclusterstructure.html 
+sidebar: sidebar 
+keywords: storage,cluster,structure,config,configuration,info,get,getting,getclusterstructure 
+summary: GetClusterStructure メソッドを使用すると、現在のストレージクラスタ構成情報をバックアップできます。このメソッドの実行中にストレージクラスタ構成が変更された場合、正しい構成がバックアップされる保証はありません。このデータをテキストファイルに保存して、災害発生時に他のクラスタまたは同じクラスタでリストアできます。 
+---
+= GetClusterStructure （ GetClusterStructure ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetClusterStructure メソッドを使用すると ' 現在のストレージ・クラスタ構成情報をバックアップできますこのメソッドの実行中にストレージクラスタ構成が変更された場合、正しい構成がバックアップされる保証はありません。このデータをテキストファイルに保存して、災害発生時に他のクラスタまたは同じクラスタでリストアできます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+結果
+ a| 
+現在のストレージクラスタ構成情報を含む JSON オブジェクト。
+ a| 
+xref:reference_element_api_clusterstructure.adoc[クラスタ構造]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "GetClusterStructure",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+	"id": 1,
+	"result" : <clusterStructure object containing configuration information>
+	}
+----
+
+
+== 新規導入バージョン
+
+10.3

@@ -1,0 +1,23 @@
+---
+permalink: concepts/concept_solidfire_concepts_volume_access_groups.html 
+sidebar: sidebar 
+keywords: volume access groups, volumes, access volumes 
+summary: NetApp SolidFire ストレージのボリュームアクセスグループを使用すると、 iSCSI イニシエータの IQN または Fibre Channel の WWPN でボリュームの集合にアクセスできます。アクセスグループに追加した各 IQN は、 CHAP 認証を使用せずにグループ内の各ボリュームにアクセスできます。アクセスグループに追加した各 WWPN は、アクセスグループ内のボリュームへの Fibre Channel ネットワークアクセスを許可します。 
+---
+= ボリュームアクセスグループ
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリュームアクセスグループを作成して使用することで、一連のボリュームへのアクセスを制御できます。一連のボリュームと一連のイニシエータをボリュームアクセスグループに関連付けると、アクセスグループはそれらのイニシエータにそのボリュームセットへのアクセスを許可します。
+
+NetApp SolidFire ストレージのボリュームアクセスグループを使用すると、 iSCSI イニシエータの IQN または Fibre Channel の WWPN でボリュームの集合にアクセスできます。アクセスグループに追加した各 IQN は、 CHAP 認証を使用せずにグループ内の各ボリュームにアクセスできます。アクセスグループに追加した各 WWPN は、アクセスグループ内のボリュームへの Fibre Channel ネットワークアクセスを許可します。
+
+ボリュームアクセスグループには次の制限があります。
+
+* ボリュームアクセスグループあたり最大 128 個のイニシエータ
+* ボリュームあたり最大 64 個のアクセスグループ。
+* 1 つのアクセスグループに含めることができるボリュームは最大 2 、 000 個です。
+* 1 つの IQN または WWPN が属することのできるボリュームアクセスグループは 1 つだけです。
+

@@ -1,0 +1,226 @@
+---
+permalink: api/reference_element_api_clustercapacity.html 
+sidebar: sidebar 
+keywords: objects,object,clusterCapacity 
+summary: clusterCapacity オブジェクトには、クラスタの容量測定の概要が含まれます。GetClusterCapacity API メソッドを使用すると、クラスタの容量情報を取得できます。オブジェクトメンバーのスペース測定値はバイト単位で計算されます。 
+---
+= clusterCapacity
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+clusterCapacity オブジェクトには、クラスタの容量測定の概要が含まれます。GetClusterCapacity API メソッドを使用すると、クラスタの容量情報を取得できます。オブジェクトメンバーのスペース測定値はバイト単位で計算されます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+activeBlockSpace
+ a| 
+ブロックドライブのスペース容量。これには、クリーンアップ可能なメタデータエントリや容量などの追加情報が含まれます。
+ a| 
+整数
+
+
+
+ a| 
+ActiveSessions （アクティブセッション）
+ a| 
+クラスタと通信するアクティブな iSCSI セッションの数。
+ a| 
+整数
+
+
+
+ a| 
+平均 IOPS
+ a| 
+協定世界時（ UTC ）で午前 0 時以降に発生したクラスタの平均 IOPS 。
+ a| 
+整数
+
+
+
+ a| 
+clusterRecentIOSize を選択します
+ a| 
+クラスタ内のすべてのボリュームに対する IOPS の平均サイズ。
+ a| 
+整数
+
+
+
+ a| 
+現在の IOPS
+ a| 
+直近 5 秒間の、クラスタ内のすべてのボリュームの平均 IOPS 。
+ a| 
+整数
+
+
+
+ a| 
+maxIOPS
+ a| 
+現在のクラスタの推定最大 IOPS 容量。
+ a| 
+整数
+
+
+
+ a| 
+最大オーバープロビジョニングスペース
+ a| 
+プロビジョニング可能なスペースの最大容量。これは計算値です。現在のプロビジョニング済みスペースと新しいボリュームサイズの合計がこの値を超える場合は、新しいボリュームを作成できません。この値は、「 maxOverProvisionableSpace = maxProvisionedSpace * maxMetadataOverProvisionFactor 」のように計算されます
+ a| 
+整数
+
+
+
+ a| 
+最大プロビジョニングスペース
+ a| 
+すべてのボリュームが 100% 使用されている場合（シンプロビジョニングされたメタデータがない場合）のプロビジョニング可能なスペースの総容量。
+ a| 
+整数
+
+
+
+ a| 
+maxUsedMetadataSpace
+ a| 
+メタデータの保存に使用するボリュームドライブのバイト数。
+ a| 
+整数
+
+
+
+ a| 
+maxUsedSpace
+ a| 
+すべてのアクティブなブロックドライブのスペースの総容量。
+ a| 
+整数
+
+
+
+ a| 
+ゼロ以外のブロック
+ a| 
+前回のガベージコレクション完了後、データが含まれる 4KiB ブロックの総数。
+ a| 
+整数
+
+
+
+ a| 
+peakActiveSessions の順にクリックします
+ a| 
+UTC 時間の午前 0 時以降の iSCSI 接続の最大数。
+ a| 
+整数
+
+
+
+ a| 
+ピーク IOPS
+ a| 
+UTC の午前 0 時以降の currentIOPS の最大値。
+ a| 
+整数
+
+
+
+ a| 
+provisionedSpace
+ a| 
+クラスタのすべてのボリュームでプロビジョニングされているスペースの総容量。
+ a| 
+整数
+
+
+
+ a| 
+タイムスタンプ
+ a| 
+このクラスタ容量サンプルが取得された日時（ UTC+0 形式）。
+ a| 
+ISO 8601 形式の文字列
+
+
+
+ a| 
+TotalOps
+ a| 
+クラスタの寿命を通じて実行された I/O 処理の合計数。
+ a| 
+整数
+
+
+
+ a| 
+一意のブロック
+ a| 
+ブロックドライブに格納されたブロックの総数。値にはレプリケートされたブロックが含まれます。
+ a| 
+整数
+
+
+
+ a| 
+uniqueBlocksUsedSpace のです
+ a| 
+一意のブロックがブロックドライブで使用するデータの総容量。この数値と uniqueBlocks 値の関係については、 GetclusterCapacity メソッドを参照してください。
+ a| 
+整数
+
+
+
+ a| 
+usedMetadataSpace
+ a| 
+メタデータの保存に使用するボリュームドライブの総バイト数。
+ a| 
+整数
+
+
+
+ a| 
+usedMetadataSpaceInSnapshots
+ a| 
+Snapshot に一意のデータを保存するために使用するボリュームドライブのバイト数。この値から、システム上のすべての Snapshot を削除することにより、メタデータスペースの再利用可能な量を予測できます。
+ a| 
+整数
+
+
+
+ a| 
+usedSpace
+ a| 
+システムのすべてのブロックドライブで使用されているスペースの総容量。
+ a| 
+整数
+
+
+
+ a| 
+ゼロロック
+ a| 
+前回のガベージコレクション完了後、データが含まれない空の 4KiB ブロックの総数。
+ a| 
+整数
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_getclustercapacity.adoc[GetClusterCapacity]

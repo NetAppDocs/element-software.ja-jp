@@ -1,0 +1,37 @@
+---
+permalink: setup/concept_setup_overview.html 
+sidebar: sidebar 
+keywords: element, solidfire, install, setup, node, cluster 
+summary: 開始する前に、 NetApp Element ソフトウェアのインストールとセットアップの手順を理解しておくことを推奨します。 
+---
+= セットアップの概要
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+この時点で、ハードウェアを設置しておく必要があります。ハードウェアには Element ソフトウェアも含まれています。
+
+次に、ご使用の環境に合わせてストレージシステムをセットアップする必要があります。ストレージノードまたは Fibre Channel ノードを含むクラスタをセットアップし、ラックユニットにノードを設置してケーブル接続し、電源をオンにしたら、 Element ソフトウェアを使用してクラスタを管理できます。
+
+image::../media/sf_and_element_workflow_for_setup_shorter_workflow.png[セットアップのワークフロー図]
+
+.ストレージのセットアップ手順
+. 次のいずれかを選択します。
++
+** link:../setup/task_setup_cluster_with_storage_nodes.html["ストレージノードを含むクラスタをセットアップする"]
+** link:../setup/task_setup_cluster_with_fibre_channel_nodes.html["Fibre Channel ノードを含むクラスタをセットアップします"]
+
+
+. link:../setup/task_setup_determine_which_solidfire_components_to_install.html["インストールする SolidFire コンポーネントを決定します"]
+. link:../setup/task_setup_gh_redirect_set_up_a_management_node.html["管理ノードをセットアップして Active IQ テレメトリを有効にします"]
+. link:../setup/task_setup_configure_fqdn_web_ui_access.html["完全修飾ドメイン名 Web UI アクセスを設定します"]
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* link:../setup/concept_setup_whats_next.html["ストレージを使用するための次のステップを確認してください"]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+

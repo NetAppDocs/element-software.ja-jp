@@ -1,0 +1,96 @@
+---
+permalink: api/reference_element_api_completevolumepairing.html 
+sidebar: sidebar 
+keywords: volume,pairing,CompleteVolumePairing,pair,volumes,complete,completing 
+summary: CompleteVolumePairing を使用すると、 2 つのボリュームのペアリングを完了できます。 
+---
+= CompleteVolumePairing
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 CompleteVolumePairing 」を使用すると、 2 つのボリュームのペアリングを完了できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ボリューム ID
+ a| 
+ボリュームペアリングを完了するボリュームの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+volumePairingKey のように指定します
+ a| 
+から返されたキー xref:reference_element_api_startvolumepairing.adoc[StartVolumePairing を参照してください] API メソッド。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "CompleteVolumePairing",
+   "params": {
+        "volumeID" : 12,
+        "volumePairingKey" : "7b22636c7573746572506169724944223a312c22636c75737465725061697255554944223a2231636561313336322d346338662d343631612d626537322d373435363661393533643266222c22636c7573746572556e697175654944223a2278736d36222c226d766970223a223139322e3136382e3133392e313232222c226e616d65223a224175746f54657374322d63307552222c2270617373776f7264223a22695e59686f20492d64774d7d4c67614b222c22727063436f6e6e656374696f6e4944223a3931333134323634392c22757365726e616d65223a225f5f53465f706169725f50597a796647704c7246564432444a42227d"
+        },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+"id": 1,
+"result": {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_startvolumepairing.adoc[StartVolumePairing を参照してください]

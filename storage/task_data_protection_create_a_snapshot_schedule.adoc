@@ -1,0 +1,38 @@
+---
+permalink: storage/task_data_protection_create_a_snapshot_schedule.html 
+sidebar: sidebar 
+keywords: snapshot schedule, create, volumes, recurring schedule 
+summary: ボリュームの Snapshot のスケジュールを設定して、指定した間隔で Snapshot を自動的に作成できます。 
+---
+= Snapshot スケジュールを作成します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ボリュームの Snapshot のスケジュールを設定して、指定した間隔で Snapshot を自動的に作成できます。
+
+Snapshot スケジュールには、曜日または日にちに基づく間隔を設定できます。繰り返しスケジュールを作成して、次の Snapshot を作成するまでの日数、時間、および分を指定することもできます。
+
+Snapshot のスケジュールを 5 分以外の間隔で設定した場合、 Snapshot は 5 分単位に繰り上げた時間で実行されます。たとえば、 12 ： 42 ： 00 UTC に実行するように Snapshot のスケジュールを設定した場合、 12 ： 45 ： 00 UTC に実行されます。Snapshot のスケジュールを 5 分未満の間隔で実行するように設定することはできません。
+
+.手順
+. [ * データ保護 *>* スケジュール * ] をクリックします。
+. [ スケジュールの作成 *] をクリックします。
+. 「 * Volume IDs CSV * 」フィールドに、 Snapshot 処理に含めるボリューム ID をカンマで区切って入力します。
+. 新しいスケジュール名を入力します。
+. スケジュールタイプを選択し、表示されたオプションからスケジュールを設定します。
+. * オプション： * Recurring Schedule * を選択し、 Snapshot スケジュールを無期限に繰り返します。
+. * オプション： * New Snapshot Name * フィールドに、新しい Snapshot の名前を入力します。
++
+このフィールドを空白のままにすると、 Snapshot の作成日時が名前として使用されます。
+
+. * オプション： * ペアリング時に Snapshot をレプリケーションに含める * チェックボックスをオンにして、親ボリュームがペアリングされている場合に Snapshot をレプリケーションにキャプチャします。
+. Snapshot の保持を設定するには、次のいずれかのオプションを選択します。
++
+** 「 * Forever * 」をクリックして、 Snapshot をシステム上に無期限に保持します。
+** [ * 保存期間の設定 * ] をクリックし、日付スピンボックスを使用して、システムがスナップショットを保持する期間を選択します。
+
+
+. [ スケジュールの作成 *] をクリックします。
+

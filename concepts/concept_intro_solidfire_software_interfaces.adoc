@@ -1,0 +1,121 @@
+---
+permalink: concepts/concept_intro_solidfire_software_interfaces.html 
+sidebar: sidebar 
+keywords:  
+summary: NetApp Element ストレージシステムは、 SolidFire のソフトウェアインターフェイスと統合ユーティリティを使用して管理できます。 
+---
+= SolidFire ソフトウェアインターフェイス
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire ストレージシステムは、 NetApp Element の各種ソフトウェアインターフェイスや統合ユーティリティを使用して管理できます。
+
+.オプション（ Options ）
+* <<NetApp Element software user interface>>
+* <<NetApp Element software API>>
+* <<NetApp Element Plug-in for vCenter Server>>
+* <<NetApp Hybrid Cloud Control>>
+* <<Management node UIs>>
+* <<Additional integration utilities and tools>>
+
+
+
+
+== NetApp Element ソフトウェアのユーザインターフェイス
+
+Element ストレージをセットアップし、クラスタの容量とパフォーマンスを監視できるほか、マルチテナントインフラ全体のストレージアクティビティを管理できます。Element は、 SolidFire クラスタの中核をなすストレージオペレーティングシステムです。Element ソフトウェアはクラスタ内のすべてのノードで独立して動作します。 Element では、クラスタのノードが、単一のストレージシステムとして提供されるリソースを外部クライアントに結合することができます。Element ソフトウェアは、システム全体のすべてのクラスタの調整、拡張、管理を担います。ソフトウェアのインターフェイスは Element API を基盤としています。
+
+link:../storage/index.html["Element ソフトウェアでストレージを管理"]
+
+
+
+== NetApp Element ソフトウェア API
+
+一連のオブジェクト、メソッド、ルーチンを使用して Element ストレージを管理できます。Element API は、 HTTPS 経由の JSON-RPC プロトコルに基づいています。Element UI で API 処理を監視するには、 API ログを有効にします。これにより、システムに対して実行されているメソッドを確認できます。要求と応答の両方を有効にすると、実行したメソッドに対するシステムの応答を確認できます。
+
+link:../api/index.html["Element API を使用してストレージを管理します"]
+
+
+
+== vCenter Server 向け NetApp Element プラグイン
+
+VMware vSphere で Element UI の代わりのインターフェイスを使用して、 Element ソフトウェアを実行するストレージクラスタを設定および管理できます。
+
+https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+
+
+
+== NetApp Hybrid Cloud Control の略
+
+NetApp Hybrid Cloud Control インターフェイスを使用して、 Element ストレージサービスと管理サービスをアップグレードし、ストレージアセットを管理できます。
+
+link:../storage/task_intro_manage_storage_hcc.html["NetApp Hybrid Cloud Control を使用してストレージを管理します"]
+
+
+
+== 管理ノード UI
+
+管理ノードには 2 つの UI が装備されています。 REST ベースのサービスを管理するための UI と、ネットワーク / クラスタ設定の管理とオペレーティングシステムのテスト / ユーティリティを実行するためのノード UI です。REST API UI からは、サービスベースのシステム機能を管理ノードから制御するサービス関連 API のメニューにアクセスできます。
+
+
+
+== その他の統合ユーティリティおよびツール
+
+通常は NetApp Element 、 NetApp Element API 、および NetApp Element Plug-in for vCenter Server を使用してストレージを管理しますが、追加の統合ユーティリティやツールを使用してストレージにアクセスできます。
+
+
+
+=== Element の CLI
+
+https://mysupport.netapp.com/site/tools/tool-eula/elem-cli["Element の CLI"^] Element API を使用せずにコマンドラインインターフェイスを使用して SolidFire ストレージシステムを制御できます。
+
+
+
+=== Element PowerShell ツール
+
+https://mysupport.netapp.com/site/tools/tool-eula/elem-powershell-tools["Element PowerShell ツール"^] SolidFire ストレージシステムの管理に Element API を使用する一連の Microsoft Windows PowerShell 機能を使用できるようにします。
+
+
+
+=== Element SDK
+
+https://mysupport.netapp.com/site/products/all/details/netapphci-solidfire-elementsoftware/tools-tab["Element SDK"^] 次のツールを使用して SolidFire クラスタを管理できます。
+
+* Element Java SDK ： Element API と Java プログラミング言語を統合できます。
+* Element .NET SDK ： Element API を .NET プログラミングプラットフォームに統合できます。
+* Element Python SDK ： Element API と Python プログラミング言語を統合できます。
+
+
+
+
+=== SolidFire Postman API テストスイート
+
+プログラマがのコレクションを使用できるようにします link:https://github.com/solidfire/postman["ポストマン"^] Element API 呼び出しをテストする関数。
+
+
+
+=== SolidFire ストレージレプリケーションアダプタ
+
+https://mysupport.netapp.com/site/products/all/details/elementsra/downloads-tab["SolidFire ストレージレプリケーションアダプタ"^] VMware Site Recovery Manager （ SRM ）と統合して、レプリケートされた SolidFire ストレージクラスタとの通信を可能にし、サポートされているワークフローを実行します。
+
+
+
+=== SolidFire vRO
+
+https://mysupport.netapp.com/site/products/all/details/solidfire-vro/downloads-tab["SolidFire vRO"^] VMware vRealize Orchestrator を使用すると、 Element API を使用して SolidFire ストレージシステムを簡単に管理できます。
+
+
+
+=== SolidFire VSS プロバイダ
+
+https://mysupport.netapp.com/site/products/all/details/solidfire-vss-provider/downloads-tab["SolidFire VSS プロバイダ"^] VSS シャドウコピーを Element の Snapshot およびクローンと統合します。
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

@@ -1,0 +1,25 @@
+---
+permalink: storage/reference_element_rn_find_product_docs.html 
+sidebar: sidebar 
+keywords: HCI documentation, SolidFire documentation 
+summary: NetApp HCI と SolidFire オールフラッシュストレージの使用と管理の詳細については、両方の製品のドキュメントセンターとリソースページで確認できる資料を参照してください。 
+---
+= 製品マニュアルとその他の情報の参照先
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp HCI と SolidFire オールフラッシュストレージの使用と管理の詳細については、両方の製品のドキュメントセンターとリソースページで確認できる資料を参照してください。
+
+ドキュメントセンターでは、ハードウェアの設置とメンテナンスに関する情報、利用可能なその他のコンテンツ、既知の問題と解決済みの問題へのリンク、および最新のリリースノートも参照できます。リソースページには、データシート、テクニカルレポート、ホワイトペーパー、およびビデオへのリンクが掲載されています。
+
+* https://docs.netapp.com/us-en/hci/["NetApp HCI のドキュメント"^]
+* https://www.netapp.com/us/documentation/hci.aspx["NetApp HCI のリソースページ"^]
+* http://docs.netapp.com/sfe-122/index.jsp["SolidFire および Element 12.2 ドキュメントセンター"^]
+* http://docs.netapp.com/sfe-120/index.jsp["SolidFire および Element 12.0 ドキュメントセンター"^]
+* http://docs.netapp.com/sfe-118/index.jsp["SolidFire および Element 11.8 ドキュメントセンター"^]
+* http://docs.netapp.com/sfe-117/index.jsp["SolidFire および Element 11.7 ドキュメントセンター"^]
+* http://docs.netapp.com/sfe-115/index.jsp["SolidFire および Element 11.5 ドキュメントセンター"^]
+* https://www.netapp.com/us/documentation/solidfire.aspx["SolidFire のリソースページ"^]
+

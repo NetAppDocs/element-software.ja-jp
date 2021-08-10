@@ -1,0 +1,70 @@
+---
+permalink: api/reference_element_api_getorigin.html 
+sidebar: sidebar 
+keywords: origin,get,getting,getorigin,certificate 
+summary: GetOrigin メソッドを使用すると、ノードを作成したときの元の証明書を取得できます。 
+---
+= GetOrigin
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetOrigin メソッドを使用すると、ノードが作成された場所の元の証明書を取得できます。
+
+
+
+== パラメータ
+
+
+NOTE: 元の証明書がない場合、このメソッドは「 null 」を返します。
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドは、ベンダーの元の証明書情報を返します。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+ "method": "GetOrigin",
+ "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "integrator": "SolidFire",
+  "<signature>": {
+    "pubkey": [public key info],
+    "version": 1,
+    "data": [signature info]
+  },
+   "contract-id": "none",
+   "location": "Boulder, CO",
+   "organization": "Engineering",
+   "type": "element-x"
+  }
+ ]
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

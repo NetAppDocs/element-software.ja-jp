@@ -1,0 +1,86 @@
+---
+permalink: api/reference_element_api_getremotelogginghosts.html 
+sidebar: sidebar 
+keywords: remote,logging,hosts,host,get,getting,getremotelogginghosts 
+summary: GetRemoteLoggingHosts メソッドを使用すると、現在のログサーバのリストを取得できます。 
+---
+= GetRemoteLoggingHosts
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 GetRemoteLoggingHosts 」メソッドを使用すると、現在のログサーバのリストを取得できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+リモートホスト
+ a| 
+転送されたロギング情報を受信するように設定されているホストの IP アドレスおよびポート情報のリスト。
+ a| 
+xref:reference_element_api_loggingserver.adoc[loggingServer の場合] 配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "id": 3386609,
+   "method": "GetRemoteLoggingHosts",
+   "params": {}
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 3386609,
+   "result": {
+      "remoteHosts": [
+         {
+           "host": "172.16.1.20",
+           "port": 10514
+         },
+         {
+           "host": "172.16.1.25"
+         }
+      ]
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_setremotelogginghosts.adoc[SetRemoteLoggingHosts]

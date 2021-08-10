@@ -1,0 +1,25 @@
+---
+permalink: storage/task_troubleshoot_power_down_a_cluster.html 
+sidebar: sidebar 
+keywords: cluster, power down, mvip 
+summary: ネットアップサポートに連絡して準備手順を完了したら、クラスタ全体の電源をオフにすることができます。 
+---
+= クラスタの電源をオフにします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ネットアップサポートに連絡して準備手順を完了したら、クラスタ全体の電源をオフにすることができます。
+
+次の手順でクラスタをシャットダウンする準備をします。
+
+* すべての I/O を停止します
+* すべての iSCSI セッションを切断します。
++
+.. クラスタの管理仮想 IP アドレス（ MVIP ）に移動して、 Element UI を開きます。
+.. ノードリストに表示されているノードをメモします。
+.. クラスタ内の各ノード ID に対し、 halt オプションを指定して Shutdown API メソッドを実行します。
+
+
+

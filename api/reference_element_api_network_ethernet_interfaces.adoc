@@ -1,0 +1,194 @@
+---
+permalink: api/reference_element_api_network_ethernet_interfaces.html 
+sidebar: sidebar 
+keywords: object,objects,network 
+summary: network\ （イーサネットインターフェイス \ ）オブジェクトには、個々のイーサネットインターフェイスの設定情報が含まれます。GetConfig メソッドと GetNetworkConfig メソッドを使用して、ストレージノードのこの情報を取得できます。 
+---
+= network （イーサネットインターフェイス）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+network （イーサネットインターフェイス）オブジェクトには、個々のイーサネットインターフェイスの設定情報が含まれます。GetConfig メソッドと GetNetworkConfig メソッドを使用して、ストレージノードのこの情報を取得できます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+bond-master
+ a| 
+この物理インターフェイスがボンディングスレーブとして参加しているボンディングインターフェイスを指定します。
+ a| 
+文字列
+
+
+
+ a| 
+ファミリー
+ a| 
+インターフェイスで使用するように設定されているアドレスファミリー。IPv4 の「 inet 」が現在サポートされています。
+ a| 
+文字列
+
+
+
+ a| 
+macAddress
+ a| 
+インターフェイスに割り当てられた、ネットワークが監視する実際の MAC アドレス。
+ a| 
+文字列
+
+
+
+ a| 
+macAddressPermanent
+ a| 
+メーカーがインターフェイスに割り当てた変更不可の MAC アドレス。
+ a| 
+文字列
+
+
+
+ a| 
+メソッド
+ a| 
+インターフェイスの設定に使用する方法。有効な値は次のとおり
+
+* loopback ： IPv4 ループバックインターフェイスを定義する場合に使用します。
+* manual ：自動設定されないインターフェイスを定義する場合に使用します。
+* dhcp ： DHCP 経由で IP アドレスを取得する場合に使用できます。
+* static ： IPv4 アドレスが静的に割り当てられたイーサネットインターフェイスを定義する場合に使用します。
+
+ a| 
+文字列
+
+
+
+ a| 
+ステータス
+ a| 
+インターフェイスの状態。有効な値は次のとおり
+
+* Down ：インターフェイスは非アクティブです。
+* Up ：インターフェイスは準備できていますが、リンクがありません。
+* UpAndRunning ：インターフェイスの準備は完了しており、リンクが確立されています。
+
+ a| 
+文字列
+
+
+
+ a| 
+upAndRunning のようになりました
+ a| 
+インターフェイスの準備が完了していて、リンクがあるかどうかを示します。
+ a| 
+ブール値
+
+|===
+
+
+== メンバーの変更の可否とノードの状態
+
+次の表に、それぞれのノード状態でオブジェクトのパラメータを変更できるかどうかを示します。
+
+|===
+
+
+| パラメータ名 | Available 状態です | Pending 状態 | Active 状態 
+
+
+ a| 
+bond-master
+ a| 
+いいえ
+ a| 
+いいえ
+ a| 
+いいえ
+
+
+
+ a| 
+ファミリー
+ a| 
+いいえ
+ a| 
+いいえ
+ a| 
+いいえ
+
+
+
+ a| 
+macAddress
+ a| 
+システムで設定されます
+ a| 
+該当なし
+ a| 
+該当なし
+
+
+
+ a| 
+macAddressPermanent
+ a| 
+システムで設定されます
+ a| 
+該当なし
+ a| 
+該当なし
+
+
+
+ a| 
+メソッド
+ a| 
+いいえ
+ a| 
+いいえ
+ a| 
+いいえ
+
+
+
+ a| 
+ステータス
+ a| 
+はい。
+ a| 
+はい。
+ a| 
+はい。
+
+
+
+ a| 
+upAndRunning のようになりました
+ a| 
+システムで設定されます
+ a| 
+該当なし
+ a| 
+該当なし
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_element_api_getconfig.adoc[設定]
+* xref:reference_element_api_getnetworkconfig.adoc[GetNetworkConfig （ GetNetworkConfig ）]
+

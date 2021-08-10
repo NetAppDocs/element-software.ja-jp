@@ -1,0 +1,58 @@
+---
+permalink: storage/reference_data_protection_group_snapshot_details.html 
+sidebar: sidebar 
+keywords: snapshots, group snapshots, volumes, replication 
+summary: [ データ保護 ] タブの [ グループスナップショット ] ページには、グループスナップショットに関する情報が表示されます。 
+---
+= グループ Snapshot の詳細
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+[ データ保護 ] タブの [ グループスナップショット ] ページには、グループスナップショットに関する情報が表示されます。
+
+* *ID*
++
+システムによって生成されたグループ Snapshot の ID 。
+
+* * UUID *
++
+グループ Snapshot の一意の ID 。
+
+* * 名前 *
++
+ユーザが定義したグループ Snapshot の名前。
+
+* * 作成時間 *
++
+グループ Snapshot が作成された時刻。
+
+* * ステータス *
++
+Snapshot の現在のステータス。有効な値は次のとおり
+
++
+** Preparing ： Snapshot は使用準備中で、まだ書き込みができません。
+** Done ： Snapshot の準備が完了し、使用可能な状態です。
+** Active ： Snapshot はアクティブです。
+
+
+* * ボリューム数 *
++
+グループ内のボリュームの数。
+
+* * まで保持 *
++
+Snapshot が削除される日時。
+
+* * リモート・レプリケーション *
++
+リモートの SolidFire クラスタへの Snapshot のレプリケーションが有効かどうか。有効な値は次のとおり
+
++
+** Enabled ： Snapshot のリモートレプリケーションが有効です。
+** Disabled ： Snapshot のリモートレプリケーションが無効です。
+
+
+

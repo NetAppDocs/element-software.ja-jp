@@ -1,0 +1,118 @@
+---
+permalink: api/reference_element_api_listasyncresults.html 
+sidebar: sidebar 
+keywords: async,asynchronous,result,results,get,list,listing,listasyncresults 
+summary: ListAsyncResults を使用して、システムで現在実行中および完了済みの非同期メソッドの結果をリストできます。ListAsyncResults を使用原因して非同期結果を照会しても、完了済みの asyncHandles は期限切れになりません。 GetAsyncResult を使用して、 ListAsyncResults から返される任意の asyncHandles を照会できます。 
+---
+= ListAsyncResults
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ListAsyncResults 」を使用して、システムで現在実行中および完了済みの非同期メソッドの結果をリストできます。「 ListAsyncResults 原因」を使用して非同期結果を照会しても、完了済みの asyncHandles は期限切れになりません。「 GetAsyncResult 」を使用して、「 ListAsyncResults 」から返される任意の asyncHandles を照会できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+asyncResultTypes の名前です
+ a| 
+オプションの結果タイプのリストです。このリストを使用して、該当する処理タイプの結果のみをリストできます。有効な値は次のとおり
+
+* DriveAdd ：システムがクラスタにドライブを追加する際の関連処理。
+* BulkVolume ：バックアップやリストアなど、ボリューム間でのコピー処理。
+* Clone ：ボリュームクローニング処理。
+* DriveRemoval ：クラスタからドライブを取り外す準備として、システムがそのドライブからデータをコピーする際の関連処理。
+* RtfiPendingNode ：クラスタにノードを追加する前に、システムがそのノードに互換性のあるソフトウェアをインストールする際の関連処理。
+
+ a| 
+文字列の配列
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+asyncHandles
+ a| 
+シリアル化された非同期メソッドの結果の配列。
+ a| 
+JSON オブジェクトの配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ListAsyncResults",
+   "params": {
+   },
+   "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+     "asyncHandles": [
+       {
+         "asyncResultID": 47,
+         "completed": true,
+         "createTime": "2016-01-01T22:29:19Z",
+         "data": {
+           "cloneID": 26,
+           "message": "Clone complete.",
+           "volumeID": 48
+         },
+         "lastUpdateTime": "2016-01-01T22:45:43Z",
+         "resultType": "Clone",
+         "success": true
+      },
+      ...]
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_getasyncresult.adoc[GetAsyncResult]

@@ -1,0 +1,123 @@
+---
+permalink: api/reference_element_api_deleteauthsessionsbyusername.html 
+sidebar: sidebar 
+keywords: auth sessions,username,delete,authentication sessions 
+summary: DeleteAuthSessionsByUsername メソッドを使用すると、特定のユーザのすべての認証セッションを削除できます。AccessGroup ClusterAdmins/Administrator にない発信者は、自身のセッションだけを削除できます。ClusterAdmins/Administrator 権限を持つ呼び出し側は、任意のユーザに属するセッションを削除できます。削除可能なセッションのリストを表示するには、同じパラメータを指定して ListAuthSessionsByUsername を使用します。削除可能なセッションのリストを表示するには、同じパラメータを指定して ListAuthSessionsByUsername メソッドを使用します。 
+---
+= DeleteAuthSessionsByUsername のように入力します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 deleeteAuthSessionsByUsername 」メソッドを使用して、特定のユーザのすべての認証セッションを削除できます。AccessGroup ClusterAdmins/Administrator にない発信者は、自身のセッションだけを削除できます。ClusterAdmins/Administrator 権限を持つ呼び出し側は、任意のユーザに属するセッションを削除できます。削除可能なセッションのリストを表示するには、同じパラメータで「 ListAuthSessionsByUsername 」を使用します。削除可能なセッションのリストを表示するには ' 同じパラメータを持つ ListAuthSessionsByUsername メソッドを使用します
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+使用します
+ a| 
+削除するユーザセッションの認証方式を指定します。このパラメータを指定できるのは、 ClusterAdmins または Administrator AccessGroup 内の呼び出し元だけです。有効な値は次のとおりです。
+
+* *authMethod=Cluster* は、 ClusterAdmin ユーザ名を指定します。
+* *authMethod=LDAP* には、ユーザの LDAP DN を指定します。
+* * authMethod=IDP * には、ユーザの IdP UUID または NameID を指定します。どちらのオプションも返すように IdP が設定されていない場合は、セッションの作成時に発行されたランダム UUID を指定します。
+
+ a| 
+使用します
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+ユーザ名
+ a| 
+ユーザの一意の識別子。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+セッション
+ a| 
+削除された認証セッションのセッション情報。
+ a| 
+link:reference_element_api_authsessioninfo.md#GUID-FF0CE38C-8F99-4F23-8A6F-F6EA4487E808["authSessionInfo"]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "DeleteAuthSessionsByUsername",
+  "params": {
+    "authMethod": "Cluster",
+    "username": "admin"
+  }
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+"sessions": [
+      {
+        "accessGroupList": [
+          "administrator"
+        ],
+        "authMethod": "Cluster",
+        "clusterAdminIDs": [
+          1
+        ],
+        "finalTimeout": "2020-03-14T19:21:24Z",
+        "idpConfigVersion": 0,
+        "lastAccessTimeout": "2020-03-11T19:51:24Z",
+        "sessionCreationTime": "2020-03-11T19:21:24Z",
+        "sessionID": "b12bfc64-f233-44df-8b9f-6fb6c011abf7",
+        "username": "admin"
+      }
+    ]
+}
+----
+
+
+== 新規導入バージョン
+
+12.0

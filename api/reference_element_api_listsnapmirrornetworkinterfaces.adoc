@@ -1,0 +1,72 @@
+---
+permalink: api/reference_element_api_listsnapmirrornetworkinterfaces.html 
+sidebar: sidebar 
+keywords: snapmirror,interface,interfaces,list,listing,listsnapmirrornetworkinterfaces,ontap 
+summary: Element ソフトウェア Web UI は、 ListSnapMirrorNetworkInterfaces メソッドを使用して、リモート ONTAP システムで使用可能なすべての SnapMirror インターフェイスをリストします。 
+---
+= ListSnapMirrorNetworkInterfaces
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element ソフトウェア Web UI は、「 ListSnapMirrorNetworkInterfaces 」メソッドを使用して、リモート ONTAP システムで使用可能なすべての SnapMirror インターフェイスを一覧表示します。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+指定したエンドポイント ID に関連付けられているネットワークインターフェイスのみを返します。エンドポイント ID を指定しない場合は、認識されているすべての SnapMirror エンドポイントのインターフェイスがリストされます。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+interfaceRole
+ a| 
+指定したロールを提供するネットワークインターフェイスのみをリストします。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorNetworkInterfaces
+ a| 
+リモート ONTAP ストレージシステムで使用可能な SnapMirror ネットワークインターフェイスのリスト。
+ a| 
+xref:reference_element_api_snapmirrornetworkinterface.adoc[snapMirrornetworkInterface の略] 配列
+
+|===
+
+
+== 新規導入バージョン
+
+10.1

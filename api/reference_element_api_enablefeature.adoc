@@ -1,0 +1,85 @@
+---
+permalink: api/reference_element_api_enablefeature.html 
+sidebar: sidebar 
+keywords: SNMP,enable,enabling,EnableFeature,vvols,virtual volumes,FIPS,140-2,SnapMirror 
+summary: EnableFeature メソッドを使用すると、デフォルトでは無効となっている VVOL などのクラスタ機能を有効にできます。 
+---
+= EnableFeature
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+EnableFeature メソッドを使用すると、デフォルトでは無効となっている VVOL などのクラスタ機能を有効にできます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+
+NOTE: Element ソフトウェア 11.x を実行しているシステムで保護ドメインの設定前後に仮想ボリュームを有効にすると、クラスタ保護ドメイン機能はノードレベルでのみ機能します。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+フィーチャー（ Feature ）
+ a| 
+クラスタ機能を有効にします。有効な値は次のとおり
+
+* 「 fips 」： HTTPS 通信の FIPS 140-2 認定暗号化を有効にします。
+* FipsDrives ：ストレージクラスタの FIPS 140-2 ドライブサポートを有効にします。
+* 「 napMirror 」： SnapMirror レプリケーションクラスタ機能を有効にします。
+* 「 vvols 」： Element ソフトウェア VVol クラスタ機能を有効にします。
+
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "EnableFeature",
+    "params": {
+        "feature" : "vvols"
+    },
+    "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

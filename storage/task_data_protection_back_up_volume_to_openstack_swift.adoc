@@ -1,0 +1,31 @@
+---
+permalink: storage/task_data_protection_back_up_volume_to_openstack_swift.html 
+sidebar: sidebar 
+keywords: volume backup, openstack swift object store 
+summary: OpenStack Swift と互換性のある外部のオブジェクトストアにのボリュームをバックアップできます。 
+---
+= OpenStack Swift オブジェクトストアにボリュームをバックアップします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OpenStack Swift と互換性のある外部のオブジェクトストアにのボリュームをバックアップできます。
+
+. [* 管理 *>* ボリューム *] をクリックします。
+. バックアップするボリュームの [Actions] アイコンをクリックします。
+. 表示されたメニューで、 * Backup to * をクリックします。
+. [ * バックアップ先 * ] の下の [ 統合バックアップ * ] ダイアログボックスで、 [* Swift* ] を選択します。
+. * データフォーマット * ：
++
+** * Native * ： SolidFire ストレージシステムのみが読み取り可能な圧縮形式。
+** * Uncompressed * ：他のシステムと互換性がある非圧縮形式。
+
+
+. オブジェクトストアへのアクセスに使用する URL を * url * フィールドに入力します。
+. [* ユーザー名 *] フィールドにアカウントのユーザー名を入力します。
+. [* Authentication Key* （認証キー * ） ] フィールドにアカウントの認証キーを入力します。
+. [ * Container * ] フィールドに、バックアップを保存するコンテナを入力します。
+. * オプション * ： * Nametag * フィールドに、プレフィックスに付加する名前タグを入力します。
+. [ 読み取り開始 ] をクリックします。
+

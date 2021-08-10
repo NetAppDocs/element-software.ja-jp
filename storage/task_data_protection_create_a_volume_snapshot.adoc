@@ -1,0 +1,47 @@
+---
+permalink: storage/task_data_protection_create_a_volume_snapshot.html 
+sidebar: sidebar 
+keywords: volume snapshot, create, active volume, preserve volume 
+summary: アクティブボリュームの Snapshot を作成すると、任意の時点におけるボリュームイメージを保持できます。1 つのボリュームに最大 32 個の Snapshot を作成できます。 
+---
+= ボリューム Snapshot を作成します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アクティブボリュームの Snapshot を作成すると、任意の時点におけるボリュームイメージを保持できます。1 つのボリュームに最大 32 個の Snapshot を作成できます。
+
+. [* 管理 *>* ボリューム *] をクリックします。
+. Snapshot に使用するボリュームの * Actions * アイコンをクリックします。
+. 表示されたメニューで、 * スナップショット * を選択します。
+. Create Snapshot of Volume * （ボリュームの Snapshot を作成）ダイアログボックスで、新しい Snapshot 名を入力します。
+. * オプション： * ペアリング時に Snapshot をレプリケーションに含める * チェックボックスをオンにして、親ボリュームがペアリングされているときに Snapshot をレプリケーションにキャプチャします。
+. Snapshot の保持を設定するには、次のいずれかのオプションを選択します。
++
+** 「 * Forever * 」をクリックして、 Snapshot をシステム上に無期限に保持します。
+** [ * 保存期間の設定 * ] をクリックし、日付スピンボックスを使用して、システムがスナップショットを保持する期間を選択します。
+
+
+. 単一の Snapshot を今すぐ作成するには、次の手順を実行します。
++
+.. [ 今すぐスナップショットを作成 ] をクリックします。
+.. [** スナップショットの作成 ** ] をクリックします。
+
+
+. スケジュールを設定してあとで Snapshot を作成するには、次の手順を実行します。
++
+.. Create Snapshot Schedule （スナップショットスケジュールの作成） * をクリックします。
+.. 新しいスケジュール名 * を入力します。
+.. リストから * スケジュールタイプ * を選択します。
+.. * オプション：定期的にスケジュールされたスナップショットを繰り返すには、 * Recurring Schedule * チェックボックスをオンにします。
+.. [ スケジュールの作成 *] をクリックします。
+
+
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:task_data_protection_schedule_a_snapshot_task.adoc[Snapshot のスケジュールを設定します]

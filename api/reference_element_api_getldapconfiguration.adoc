@@ -1,0 +1,86 @@
+---
+permalink: api/reference_element_api_getldapconfiguration.html 
+sidebar: sidebar 
+keywords: ldap,config,configuration,get,getting,getldapconfiguration 
+summary: GetLdapConfiguration メソッドを使用すると、クラスタで現在アクティブな LDAP 構成を取得できます。 
+---
+= GetLdapConfiguration を実行します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetLdapConfiguration メソッドを使用すると、クラスタ上で現在アクティブな LDAP 構成を取得できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ldapConfiguration （ ldapConfiguration ）
+ a| 
+現在の LDAP 設定のリスト。この API 呼び出しは、検索アカウントパスワードのプレーンテキストを返しません。* 注： * LDAP 認証が現在無効な場合、返される設定はすべて空です。ただし「 authType 」には「 SearchAndBind 」が、「 groupSearchType 」には「 ActiveDirectory 」が設定されます。
+ a| 
+xref:reference_element_api_ldapconfiguration.adoc[ldapConfiguration （ ldapConfiguration ）]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "GetLdapConfiguration",
+  "params": {},
+  "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "ldapConfiguration": {
+        "authType": "SearchAndBind",
+        "enabled": true,
+        "groupSearchBaseDN": "dc=prodtest,dc=solidfire,dc=net",
+        "groupSearchCustomFilter": "",
+        "groupSearchType": "ActiveDirectory",
+        "searchBindDN": "SFReadOnly@prodtest.solidfire.net",
+        "serverURIs": [
+           "ldaps://111.22.333.444",
+           "ldap://555.66.777.888"
+            ],
+        "userDNTemplate": "",
+        "userSearchBaseDN": "dc=prodtest,dc=solidfire,dc=net",
+        "userSearchFilter": "(&(objectClass=person)(sAMAccountName=%USERNAME%))"
+     }
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

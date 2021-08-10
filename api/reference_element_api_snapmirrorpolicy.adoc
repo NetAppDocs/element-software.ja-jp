@@ -1,0 +1,112 @@
+---
+permalink: api/reference_element_api_snapmirrorpolicy.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorPolicy 
+summary: snapMirrorPolicy オブジェクトには、 ONTAP システムに格納されている SnapMirror ポリシーの情報が含まれます。 
+---
+= snapMirrorPolicy
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorPolicy オブジェクトには、 ONTAP システムに格納されている SnapMirror ポリシーの情報が含まれます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+デスティネーション ONTAP システムの ID 。
+ a| 
+整数
+
+
+
+ a| 
+実行します
+ a| 
+ポリシーに割り当てられた一意の名前。
+ a| 
+文字列
+
+
+
+ a| 
+ポリシータイプ
+ a| 
+ポリシーのタイプ。有効な値は次のとおり
+
+* async_mirro を参照してください
+* mirror-vault のように指定します
+
+ a| 
+文字列
+
+
+
+ a| 
+コメント（ Comment ）
+ a| 
+SnapMirror ポリシーに関連付けられている、人間が判読できる概要。
+ a| 
+文字列
+
+
+
+ a| 
+転送優先度
+ a| 
+SnapMirror 転送を実行する優先順位。有効な値は次のとおり
+
+* normal ：デフォルトの優先順位。この優先順位の転送は、ほとんどの low 優先順位の転送よりも前にスケジュールされ
+* low ：この転送は優先順位が最も低く、ほとんどの normal 優先順位の転送よりもあとにスケジュールされます。
+
+ a| 
+文字列
+
+
+
+ a| 
+PolicyRules の実行
+ a| 
+ポリシールールを記述するオブジェクトのリスト。
+ a| 
+xref:reference_element_api_snapmirrorpolicyrule.adoc[snapMirrorPolicyRule] 配列
+
+
+
+ a| 
+totalKeepCount
+ a| 
+ポリシー内のすべてのルールの合計保持数。
+ a| 
+整数
+
+
+
+ a| 
+TotalRules を示します
+ a| 
+ポリシー内のルールの総数。
+ a| 
+整数
+
+
+
+ a| 
+vserverName の略
+ a| 
+SnapMirror ポリシーの SVM の名前。
+ a| 
+文字列
+
+|===

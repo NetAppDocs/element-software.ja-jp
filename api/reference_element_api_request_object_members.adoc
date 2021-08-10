@@ -1,0 +1,56 @@
+---
+permalink: api/reference_element_api_request_object_members.html 
+sidebar: sidebar 
+keywords: request,object,members 
+summary: Element ソフトウェアの各 API 要求の基本要素は次のとおりです。 
+---
+= 要求オブジェクトメンバー
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element ソフトウェアの各 API 要求の基本要素は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+メソッド
+ a| 
+実行するメソッドの名前。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+パラメータ
+ a| 
+実行するメソッドへのパラメータを含むオブジェクト。名前付きパラメータは必須です。位置パラメータ（配列として渡される）は許可されません。
+ a| 
+JSON オブジェクト
+ a| 
+｛ ｝
+ a| 
+いいえ
+
+
+
+ a| 
+ID
+ a| 
+要求と応答の一致に使用する ID で、結果として返されます。
+ a| 
+文字列または整数
+ a| 
+｛ ｝
+ a| 
+いいえ
+
+|===

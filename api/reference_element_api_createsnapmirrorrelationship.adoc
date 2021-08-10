@@ -1,0 +1,139 @@
+---
+permalink: api/reference_element_api_createsnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: SnapMirror,relationship,relationships,create,creating,CreateSnapMirrorRelationship 
+summary: Element Web UI は、 CreateSnapMirrorRelationship メソッドを使用して、ソースエンドポイントとデスティネーションエンドポイントの間に SnapMirror 拡張データ保護関係を作成します。 
+---
+= CreateSnapMirrorRelationship 」をクリックします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element Web UI は、「 CreateSnapMirrorRelationship 」メソッドを使用して、ソースエンドポイントとデスティネーションエンドポイントの間に SnapMirror 拡張データ保護関係を作成します。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+Element ストレージクラスタと通信するリモート ONTAP ストレージシステムのエンドポイント ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+sourceVolume 」と入力します
+ a| 
+関係のソースボリューム。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+デスティネーションボリューム
+ a| 
+関係のデスティネーションボリューム。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+関係タイプ
+ a| 
+関係のタイプ。Element ソフトウェアを実行しているストレージ・システムの場合 ' この値は常に "extended_data_protecting" です
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+実行します
+ a| 
+関係の ONTAP SnapMirror ポリシーの名前を指定します。指定しない場合のデフォルトのポリシー名は、 MirrorLatest です。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+スケジュール名
+ a| 
+SnapMirror 関係を更新する際に使用される、 ONTAP システム上の既存の cron スケジュールの名前。スケジュールを指定しない場合は、 SnapMirror 更新がスケジュールされないため、手動で更新する必要があります。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+最大転送速度
+ a| 
+ボリューム間の最大データ転送率を KB/ 秒単位で指定します。デフォルト値の 0 は無制限を意味し、使用可能なネットワーク帯域幅を SnapMirror 関係がフルに活用できるようにします。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorRelationship のこと
+ a| 
+新たに作成された SnapMirror 関係の情報。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationship のこと]
+
+|===
+
+
+== 新規導入バージョン
+
+10.1

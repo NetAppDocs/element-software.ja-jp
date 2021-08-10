@@ -1,0 +1,69 @@
+---
+permalink: api/reference_element_api_enablessh.html 
+sidebar: sidebar 
+keywords: SSH,enable,enabling,single,node,EnableSSH 
+summary: EnableSsh メソッドを使用すると、 1 つのノードに対して SSH サービスを有効にすることができます。このメソッドはクラスタ全体の SSH タイムアウト期間には影響せず、グローバルな SSH タイムアウトによって SSH が無効になると、当該ノードの SSH も無効になります。 
+---
+= EnableSsh
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 EnableSsh 」メソッドを使用すると、 1 つのノードに対して Secure Shell （ SSH ）サービスを有効にすることができます。このメソッドはクラスタ全体の SSH タイムアウト期間には影響せず、グローバルな SSH タイムアウトによって SSH が無効になると、当該ノードの SSH も無効になります。
+
+
+NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+有効
+ a| 
+このノードの SSH サービスのステータス。
+ a| 
+ブール値
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "EnableSsh",
+  "params": {
+     },
+  "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {"enabled": true}
+}
+----

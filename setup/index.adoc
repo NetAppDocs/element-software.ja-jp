@@ -1,0 +1,48 @@
+---
+permalink: setup/index.html 
+sidebar: sidebar 
+keywords: set up storage, storage system, set up, configure node, configuring storage node, add drives, fibre channel, create cluster 
+summary: ご使用の環境に合わせてストレージシステムをセットアップする方法について説明します。 
+---
+= ストレージをセットアップする
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ご使用の環境に合わせてストレージシステムをセットアップする方法について説明します。
+
+* xref:concept_setup_overview.adoc[ストレージをセットアップする]
++
+** xref:task_setup_cluster_with_storage_nodes.adoc[ストレージノードで構成されたクラスタをセットアップ]
++
+*** xref:concept_setup_configure_a_storage_node.adoc[ストレージノードを設定]
+*** xref:task_setup_create_a_storage_cluster.adoc[ストレージクラスタを作成]
+*** xref:task_post_deploy_access_the_element_software_user_interface.adoc[Element ソフトウェアのユーザインターフェイスにログインします]
+*** xref:task_setup_add_drives_to_a_cluster.adoc[クラスタにドライブを追加]
+
+
+** xref:task_setup_cluster_with_fibre_channel_nodes.adoc[Fibre Channel ノードを含むクラスタをセットアップします]エントリ：
++
+*** xref:concept_setup_fc_configure_a_fibre_channel_node.adoc[Fibre Channel ノードを設定]
+*** xref:task_setup_fc_add_fibre_channel_nodes_to_a_cluster.adoc[クラスタに Fibre Channel ノードを追加します]
+*** xref:task_setup_fc_create_a_new_cluster_with_fibre_channel_nodes.adoc[Fibre Channel ノードを含む新しいクラスタを作成します]
+*** xref:concept_setup_fc_set_up_zones_for_fibre_channel_nodes.adoc[Fibre Channel ノードのゾーンをセットアップします]
+*** xref:task_setup_create_a_volume_access_group_for_fibre_channel_clients.adoc[Fibre Channel クライアントのボリュームアクセスグループを作成します]
+
+
+** xref:task_setup_determine_which_solidfire_components_to_install.adoc[インストールする SolidFire コンポーネントを決定します]
+** xref:/task_setup_gh_redirect_set_up_a_management_node.adoc[管理ノードをセットアップ]
+** xref:task_setup_configure_fqdn_web_ui_access.adoc[完全修飾ドメイン名 Web UI アクセスを設定します]
+** xref:concept_setup_whats_next.adoc[次の手順]
+
+
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/["SolidFire オールフラッシュストレージの概要"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+

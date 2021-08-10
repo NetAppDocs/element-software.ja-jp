@@ -1,0 +1,71 @@
+---
+permalink: api/reference_element_api_network_snmp.html 
+sidebar: sidebar 
+keywords: object,objects,network 
+summary: SNMP network オブジェクトには、クラスタノードの SNMP v3 の設定に関する情報が含まれます。 
+---
+= ネットワーク（ SNMP ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SNMP network オブジェクトには、クラスタノードの SNMP v3 の設定に関する情報が含まれます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+にアクセスします
+ a| 
+SNMP 情報要求で許可されるアクセスのタイプ。有効な値は次のとおり
+
+* ro ：読み取り専用アクセス。
+* rw ：読み取り / 書き込みアクセス。
+* rosys ：制限された一連のシステム情報に対する読み取り専用アクセス。
+
+ a| 
+文字列
+
+
+
+ a| 
+CIDR
+ a| 
+CIDR ネットワークマスク。このネットワークマスクには、 0 以上 32 以下の整数を指定する必要があります。また、 31 以外の値を指定する必要があります。
+ a| 
+整数
+
+
+
+ a| 
+コミュニティ
+ a| 
+SNMP コミュニティストリング。
+ a| 
+文字列
+
+
+
+ a| 
+ネットワーク
+ a| 
+このメンバーと CIDR メンバーは、どのネットワークをアクセスとコミュニティストリングの適用先とするかを制御します。特別な値「 default 」を使用して、環境のすべてのネットワークのエントリを指定します。CIDR マスクは、このメンバーがホスト名または「 default 」の場合は無視されます。
+ a| 
+文字列
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_getsnmpinfo.adoc[GetSnmpInfo を追加します]

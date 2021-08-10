@@ -1,0 +1,72 @@
+---
+permalink: api/reference_element_api_resumesnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: ResumeSnapMirrorRelationship,resume,SnapMirror,relationship,resuming 
+summary: Element ソフトウェア Web UI は、 ResumeSnapMirrorRelationship メソッドを使用して、休止されている SnapMirror 関係の以降の転送を有効にします。 
+---
+= ResumeSnapMirrorRelationship のコマンドを実行しまし
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element ソフトウェア Web UI は、「 ResumeSnapMirrorRelationship 」メソッドを使用して、休止されている SnapMirror 関係の以降の転送を有効にします。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+Element ストレージクラスタと通信するリモート ONTAP ストレージシステムのエンドポイント ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+デスティネーションボリューム
+ a| 
+SnapMirror 関係のデスティネーションボリューム。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeinfo の追加データです]
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorRelationship のこと
+ a| 
+再開された SnapMirror 関係の情報を含むオブジェクト。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationship のこと]
+
+|===
+
+
+== 新規導入バージョン
+
+10.1

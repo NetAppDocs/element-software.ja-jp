@@ -1,0 +1,148 @@
+---
+permalink: api/reference_element_api_modifyqospolicy.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,qos,policy,policies,modifyqospolicy 
+summary: ModifyQoSPolicy メソッドを使用すると、システムの既存の QoS ポリシーを変更できます。 
+---
+= ModifyQoSPolicy のように変更します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 modifyQoSPolicy 」メソッドを使用して、システム上の既存の QoS ポリシーを変更できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+qosPolicyID
+ a| 
+変更するポリシーの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+名前
+ a| 
+指定した場合、 QoS ポリシーの名前（ gold 、 platinum 、 silver など）がこの値に変更されます。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+QoS
+ a| 
+指定した場合、このポリシーの QoS 設定がこれらの設定に変更されます。指定できる QoS 値は一部だけで、一部の QoS 設定のみを変更できます。
+ a| 
+QoS オブジェクト
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+QoSPolicy のように表示
+ a| 
+変更後の新しい QoS ポリシーの詳細。
+ a| 
+xref:reference_element_api_qospolicy.adoc[QoSPolicy のように表示]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "id": 1950,
+  "method": "ModifyQoSPolicy",
+  "params": {
+    "qosPolicyID": 2,
+    "qos": {
+      "minIOPS": 51,
+      "maxIOPS": 15002,
+      "burstIOPS": 15002
+    }
+  }
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1950,
+  "result": {
+    "qosPolicy": {
+      "name": "bronze",
+      "qos": {
+        "burstIOPS": 15002,
+        "burstTime": 60,
+        "curve": {
+          "4096": 100,
+          "8192": 160,
+          "16384": 270,
+          "32768": 500,
+          "65536": 1000,
+          "131072": 1950,
+          "262144": 3900,
+          "524288": 7600,
+          "1048576": 15000
+        },
+        "maxIOPS": 15002,
+        "minIOPS": 51
+      },
+      "qosPolicyID": 2,
+      "volumeIDs": [
+        2
+      ]
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+10.0

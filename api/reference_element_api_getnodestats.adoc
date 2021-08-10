@@ -1,0 +1,102 @@
+---
+permalink: api/reference_element_api_getnodestats.html 
+sidebar: sidebar 
+keywords: node,get,getting,stats,getnodestats 
+summary: GetNodeStats メソッドを使用すると、単一のノードのアクティビティ測定値の概要を取得できます。 
+---
+= GetNodeStats
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 GetNodeStats 」メソッドを使用すると、単一ノードのアクティビティ測定値の概要を取得できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ノード ID
+ a| 
+統計を返すノードの ID を指定します。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+nodeStats
+ a| 
+ノードのアクティビティ情報。
+ a| 
+xref:reference_element_api_nodestats.adoc[nodeStats]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "GetNodeStats",
+   "params": {
+     "nodeID": 5
+   },
+   "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" : {
+     "nodeStats" : {
+       "cBytesIn" : 9725856460404,
+       "cBytesOut" : 16730049266858,
+       "cpu" : 98,
+       "mBytesIn" : 50808519,
+       "mBytesOut" : 52040158,
+       "networkUtilizationCluster" : 84,
+       "networkUtilizationStorage" : 0,
+       "sBytesIn" : 9725856460404,
+       "sBytesOut" : 16730049266858,
+       "timestamp" : "2012-05-16T19:14:37.167521Z",
+       "usedMemory" : 41195708000
+     }
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

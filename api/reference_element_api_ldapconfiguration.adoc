@@ -1,0 +1,131 @@
+---
+permalink: api/reference_element_api_ldapconfiguration.html 
+sidebar: sidebar 
+keywords: object,objects,ldapConfiguration 
+summary: ldapConfiguration オブジェクトには、ストレージシステムの LDAP 構成に関する情報が含まれます。GetLdapConfiguration API メソッドを使用すると、 LDAP 情報を取得できます。 
+---
+= ldapConfiguration （ ldapConfiguration ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ldapConfiguration オブジェクトには、ストレージシステムの LDAP 構成に関する情報が含まれます。「 GetLdapConfiguration 」 API メソッドを使用すると、 LDAP 情報を取得できます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+authType
+ a| 
+使用するユーザ認証方式を指定します。有効な値は次のとおり
+
+* DirectBind の場合
+* SearchAndBind の場合
+
+ a| 
+文字列
+
+
+
+ a| 
+有効
+ a| 
+システムが LDAP 用に設定されているかどうかを示します。有効な値は次のとおり
+
+* 正しいです
+* いいえ
+
+ a| 
+ブール値
+
+
+
+ a| 
+groupSearchBaseDN
+ a| 
+グループ検索を開始するツリーのベース DN （ここからサブツリー検索を実行）。
+ a| 
+文字列
+
+
+
+ a| 
+groupSearchCustomFilter のように指定します
+ a| 
+使用するカスタム検索フィルタ。
+ a| 
+文字列
+
+
+
+ a| 
+GroupSearchType
+ a| 
+使用されるデフォルトのグループ検索フィルタを制御します。有効な値は次のとおり
+
+* NoGroups ：グループのサポートなし。
+* ActiveDirectory ：あるユーザの AD グループをすべてネストしたメンバーシップ。
+* MemberDN ： MemberDN 形式のグループ（シングルレベル）。
+
+ a| 
+文字列
+
+
+
+ a| 
+searchBindDN
+ a| 
+ユーザの LDAP 検索を実行するためにログインで使用する完全修飾 DN （ LDAP ディレクトリへの読み取りアクセスが必要）。
+ a| 
+文字列
+
+
+
+ a| 
+serverURI
+ a| 
+LDAP サーバ URI のカンマ区切りのリスト (LDAP://1.2.3.4' および ldaps://1.2.3.4 :123`)
+ a| 
+文字列
+
+
+
+ a| 
+userDNTemplate
+ a| 
+完全修飾ユーザ DN を形成するための文字列。
+ a| 
+文字列
+
+
+
+ a| 
+userSearchBaseDN のことです
+ a| 
+検索を開始するツリーのベース DN （ここからサブツリー検索を実行）。
+ a| 
+文字列
+
+
+
+ a| 
+userSearchFilter のように入力します
+ a| 
+使用する LDAP フィルタ。
+ a| 
+文字列
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_getldapconfiguration.adoc[GetLdapConfiguration を実行します]

@@ -1,0 +1,50 @@
+---
+permalink: api/reference_element_api_protectiondomainresiliency.html 
+sidebar: sidebar 
+keywords: object,objects,protectionDomainResiliency 
+summary: protectionDomainResiliency オブジェクトには、このストレージクラスタの耐障害性ステータスを含みます。復元力とは、関連付けられた保護ドメインタイプの単一の保護ドメイン内の 1 つ以上の障害から、ストレージクラスタが自動的に自己修復できる能力を示します。ストレージクラスタは、単一のストレージノードに障害が発生した場合（ノードトレランス \ ）、データの読み取りと書き込みを継続できる場合に修復されたとみなされます。 
+---
+= protectionDomainResiliency
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+protectionDomainResiliency オブジェクトには、このストレージクラスタの耐障害性ステータスを含みます。耐障害性とは、関連付けられた保護ドメインタイプの単一の保護ドメイン内で 1 つ以上の障害が発生したときにストレージクラスタが自動的に自己修復できる機能です。ストレージクラスタは、単一のストレージノード（ノードトレランス）で障害が発生してもデータの読み取りと書き込みを継続できる場合、修復されたとみなされます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+protectionSchemeResiliencies
+ a| 
+関連する保護ドメインの障害の耐障害性情報を含むオブジェクト（保護方式ごとに 1 つ）のリスト。
+ a| 
+xref:reference_element_api_protectionschemeresiliency.adoc[protectionSchemeResiliency の] 配列
+
+
+
+ a| 
+singleFailureThresholdBytesForBlockData
+ a| 
+ノードのトレランスの状態に自動的に修復できなくなるまでにストレージクラスタに格納できる最大バイト数。
+ a| 
+整数
+
+
+
+ a| 
+持続可能な障害フォーアンサンブル
+ a| 
+自動でアンサンブルクォーラムのノード許容値の状態に回復できなくなることなく同時に発生する可能性のある障害の予測数。
+ a| 
+整数
+
+|===

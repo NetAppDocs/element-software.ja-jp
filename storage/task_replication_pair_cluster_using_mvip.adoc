@@ -1,0 +1,35 @@
+---
+permalink: storage/task_replication_pair_cluster_using_mvip.html 
+sidebar: sidebar 
+keywords: pair clusters, mvip, connection 
+summary: 一方のクラスタの MVIP を使用してもう一方のクラスタとの接続を確立することにより、リアルタイムレプリケーション用に 2 つのクラスタをペアリングできます。この方法を使用するには、両方のクラスタに対するクラスタ管理者アクセスが必要です。クラスタをペアリングする前に、クラスタ管理者のユーザ名とパスワードを使用してクラスタアクセスを認証します。 
+---
+= MVIP を使用してクラスタをペアリング
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+一方のクラスタの MVIP を使用してもう一方のクラスタとの接続を確立することにより、リアルタイムレプリケーション用に 2 つのクラスタをペアリングできます。この方法を使用するには、両方のクラスタに対するクラスタ管理者アクセスが必要です。クラスタをペアリングする前に、クラスタ管理者のユーザ名とパスワードを使用してクラスタアクセスを認証します。
+
+. ローカルクラスタで、 * Data Protection * > * Cluster Pairs * を選択します。
+. * クラスタのペアリング * をクリックします。
+. Start Pairing * をクリックし、 * Yes * をクリックして、リモートクラスタへのアクセス権を持っていることを示します。
+. リモートクラスタの MVIP アドレスを入力します。
+. リモートクラスタでのペアリングの完了 * をクリックします。
++
+[* Authentication Required* ] ウィンドウで、リモートクラスタのクラスタ管理者のユーザ名とパスワードを入力します。
+
+. リモートクラスタで、 * データ保護 * > * クラスタ・ペア * を選択します。
+. * クラスタのペアリング * をクリックします。
+. [ 完全ペアリング ] をクリックします。
+. 完全ペアリング * ボタンをクリックします。
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:task_replication_pair_cluster_using_pairing_key.adoc[ペアリングキーを使用してクラスタをペアリングします]
+* https://www.youtube.com/watch?v=HbKxPZnNvn4&feature=youtu.be["Pairing Clusters using MVIP （ビデオ）"]
+

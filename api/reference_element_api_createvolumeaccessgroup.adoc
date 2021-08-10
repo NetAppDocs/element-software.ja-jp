@@ -1,0 +1,177 @@
+---
+permalink: api/reference_element_api_createvolumeaccessgroup.html 
+sidebar: sidebar 
+keywords: volume,access,groups,group,create,creating,CreateVolumeAccessGroup 
+summary: CreateVolumeAccessGroup を使用すると、新しいボリュームアクセスグループを作成できます。ボリュームアクセスグループを作成するときは、名前を指定する必要があります。必要に応じて、イニシエータとボリュームを入力することもできます。 
+---
+= CreateVolumeAccessGroup
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+CreateVolumeAccessGroup を使用すると、新しいボリュームアクセスグループを作成できます。ボリュームアクセスグループを作成するときは、名前を指定する必要があります。必要に応じて、イニシエータとボリュームを入力することもできます。
+
+ボリュームアクセスグループに追加したイニシエータ IQN は、 CHAP 認証なしでグループ内のすべてのボリュームにアクセスできます。
+
+
+NOTE: クローンボリュームには、ソースボリュームのボリュームアクセスグループメンバーシップは継承されません。
+
+ボリュームアクセスグループを作成する際は、次の点に注意してください。
+
+* ボリュームアクセスグループには、最大 64 個のイニシエータ IQN を含めることができます。
+* 1 つのイニシエータは 1 つのボリュームアクセスグループにのみ属することができます。
+* ボリュームアクセスグループには、最大 2 、 000 個のボリュームを含めることができます。
+* 各ボリュームアクセスグループは、最大 4 つの他のボリュームアクセスグループに属することができます。
+
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+イニシエータ
+ a| 
+ボリュームアクセスグループに含めるイニシエータの ID または名前（ IQN および WWPN ）のリスト。イニシエータ名のリストを渡した場合、存在しないイニシエータは作成されます。イニシエータ ID のリストを渡した場合、存在しないイニシエータにはエラーが返されます。イニシエータ名を渡すことは推奨されていません。可能な場合はイニシエータ ID を使用し
+ a| 
+整数の配列または文字列の配列（非推奨）
+ a| 
+ a| 
+いいえ
+
+
+
+ a| 
+名前
+ a| 
+ボリュームアクセスグループの名前。固有である必要はありませんが、一意にすることを推奨します1~64 文字で指定します。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+個のボリューム
+ a| 
+ボリュームアクセスグループに含めるボリューム ID のリスト。
+ a| 
+整数の配列
+ a| 
+ a| 
+いいえ
+
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON オブジェクト
+ a| 
+｛ ｝
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+volumeAccessGroup の場合
+ a| 
+新たに作成されたボリュームアクセスグループの情報を含むオブジェクト。
+ a| 
+xref:reference_element_api_volumeaccessgroup.adoc[volumeAccessGroup の場合]
+
+
+
+ a| 
+ボリュームアクセスグループ ID
+ a| 
+新たに作成されたボリュームアクセスグループの ID 。
+ a| 
+整数
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "CreateVolumeAccessGroup",
+   "params": {
+      "name": "myaccessgroup",
+      "initiators": ["iqn.1993-08.org.debian: 01: a31b1d799d5c"],
+      "volumes": [327],
+      "attributes": {}
+   }
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": null,
+  "result": {
+    "volumeAccessGroup": {
+      "attributes": {},
+      "deletedVolumes": [],
+      "initiatorIDs": [
+        95
+      ],
+      "initiators": [
+        "iqn.1993-08.org.debian: 01: a31b1d799d5c"
+      ],
+      "name": "myaccessgroup",
+      "volumeAccessGroupID": 96,
+      "volumes": [
+        327
+      ]
+    },
+    "volumeAccessGroupID": 96
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_element_api_getasyncresult.adoc[GetAsyncResult]
+* xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs]
+* xref:reference_element_api_modifyvolume.adoc[ModifyVolume の追加]
+

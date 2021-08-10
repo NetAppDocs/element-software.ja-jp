@@ -1,0 +1,146 @@
+---
+permalink: api/reference_element_api_listvolumestats.html 
+sidebar: sidebar 
+keywords: volumes,volume,stats,list,listing,listvolumestats,activity 
+summary: ListVolumeStats メソッドを使用すると、単一のボリューム、ボリュームのリスト、またはすべてのボリュームのアクティビティ測定値の概要を取得できます（ボリューム ID パラメータを省略した場合）。測定値は、ボリュームを作成したときからの累積値です。 
+---
+= ListVolumeStats の値
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ListVolumeStats 」メソッドを使用すると、単一のボリューム、ボリュームのリスト、またはすべてのボリューム（ボリューム ID パラメータを省略した場合）のアクティビティ測定値の概要を取得できます。測定値は、ボリュームを作成したときからの累積値です。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+includeVirtualVolumes などです
+ a| 
+デフォルトでは仮想ボリュームは応答に含まれます。仮想ボリュームを除外するには、 false に設定します。
+ a| 
+ブール値
+ a| 
+正しいです
+ a| 
+いいえ
+
+
+
+ a| 
+ボリューム ID
+ a| 
+アクティビティ情報を取得するボリュームのリスト。
+ a| 
+整数の配列
+ a| 
+いいえ
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ボリューム統計
+ a| 
+ボリュームアクティビティ情報のリスト。
+ a| 
+xref:reference_element_api_volumestats.adoc[ボリューム統計] 配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "ListVolumeStats",
+    "params": {
+        "volumeIDs": [1]
+    },
+    "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeStats": [
+      {
+        "accountID": 1,
+        "actualIOPS": 0,
+        "asyncDelay": null,
+        "averageIOPSize": 0,
+        "burstIOPSCredit": 30000,
+        "clientQueueDepth": 0,
+        "desiredMetadataHosts": null,
+        "latencyUSec": 0,
+        "metadataHosts": {
+          "deadSecondaries": [],
+          "liveSecondaries": [
+            47
+          ],
+          "primary": 33
+        },
+        "nonZeroBlocks": 22080699,
+        "readBytes": 657262370816,
+        "readBytesLastSample": 0,
+        "readLatencyUSec": 0,
+        "readOps": 160464446,
+        "readOpsLastSample": 0,
+        "samplePeriodMSec": 500,
+        "throttle": 0,
+        "timestamp": "2016-03-09T19:39:15.771697Z",
+        "unalignedReads": 0,
+        "unalignedWrites": 0,
+        "volumeAccessGroups": [
+          1
+        ],
+        "volumeID": 1,
+        "volumeSize": 107374182400,
+        "volumeUtilization": 0,
+        "writeBytes": 219117547520,
+        "writeBytesLastSample": 0,
+        "writeLatencyUSec": 0,
+        "writeOps": 53495495,
+        "writeOpsLastSample": 0,
+        "zeroBlocks": 4133701
+      }
+    ]
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

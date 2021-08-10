@@ -1,0 +1,27 @@
+---
+section: upgrade
+title: SolidFire システムをアップグレードします
+entries:
+- title: アップグレードの概要
+  url: "/upgrade/concept_element_upgrade_overview.html"
+- title: Element 12.3 で NetApp SolidFire オールフラッシュストレージシステムをアップグレードします
+  url: "/upgrade/task_sf_upgrade_all.html"
+- title: システムのアップグレード手順
+  entries:
+  - title: 管理サービスを更新
+    url: "/upgrade/task_hcc_update_management_services.html"
+  - title: 最新の HealthTools にアップグレードします
+    url: "/upgrade/task_upgrade_element_latest_healthtools.html"
+  - title: ストレージをアップグレードする前に、 Element ストレージの健全性チェックを実行します
+    url: "/upgrade/task_hcc_upgrade_element_prechecks.html"
+  - title: Element ソフトウェアをアップグレードします
+    url: "/upgrade/task_hcc_upgrade_element_software.html"
+  - title: ストレージファームウェアをアップグレードします
+    url: "/upgrade/task_hcc_upgrade_storage_firmware.html"
+  - title: 管理ノードをアップグレードします
+    url: "/upgrade/task_hcc_upgrade_management_node.html"
+  - title: Element Plug-in for vCenter Server をアップグレードします
+    url: "/upgrade/task_vcp_upgrade_plugin.html"
+- title: NetApp SolidFire ストレージシステムの vSphere コンポーネントをアップグレードします を使用： Element Plug-in
+    for vCenter Server
+  url: "/upgrade/task_sf_upgrade_all_vsphere.html"

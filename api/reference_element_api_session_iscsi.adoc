@@ -1,0 +1,224 @@
+---
+permalink: api/reference_element_api_session_iscsi.html 
+sidebar: sidebar 
+keywords: object,objects,session 
+summary: session\ （ iSCSI\ ）オブジェクトには、各ボリュームの iSCSI セッションに関する詳細情報が含まれます。ListISCSISessions API メソッドを使用すると、 iSCSI セッション情報を取得できます。 
+---
+= セッション（ iSCSI ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+session （ iSCSI ）オブジェクトには、各ボリュームの iSCSI セッションの詳細な情報が含まれます。iSCSI セッション情報は 'ListISCSISessions` API メソッドを使用して取得できます
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+アカウント ID
+ a| 
+CHAP 認証に使用するアカウントのアカウント ID （存在する場合）。
+ a| 
+整数
+
+
+
+ a| 
+アカウント名
+ a| 
+CHAP 認証に使用するアカウントの名前（存在する場合）。
+ a| 
+文字列
+
+
+
+ a| 
+CreateTime をクリックします
+ a| 
+iSCSI セッションが作成された時刻（ UTC+0 形式）。
+ a| 
+ISO 8601 形式の日付文字列
+
+
+
+ a| 
+driveID
+ a| 
+セッションをホストする転送サービスに関連付けられたドライブ ID 。
+ a| 
+整数
+
+
+
+ a| 
+ドライブ ID
+ a| 
+障害を報告するドライブの ID 。該当しない場合は空のリスト。
+ a| 
+整数の配列
+
+
+
+ a| 
+イニシエータ
+ a| 
+この iSCSI セッションのサーバイニシエータに関する情報。メンバー
+
+* alias ：イニシエータに割り当てられたフレンドリ名。
+* attributes ：このイニシエータの属性。
+* initiatorID ：このイニシエータの ID 。
+* initiatorName ：このイニシエータの名前。
+* volumeAccessGroups ：このイニシエータに関連付けられたボリュームアクセスグループのリスト。
+
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+一方、 IP
+ a| 
+iSCSI サーバイニシエータの IP アドレスとポート番号。
+ a| 
+文字列
+
+
+
+ a| 
+イニシエータ名
+ a| 
+iSCSI サーバイニシエータの iSCSI Qualified Name （ IQN ）。
+ a| 
+文字列
+
+
+
+ a| 
+イニシエータポート名
+ a| 
+イニシエータセッション ID を組み合わせたイニシエータ名。イニシエータポートを識別します。
+ a| 
+文字列
+
+
+
+ a| 
+イニシエータセッション ID
+ a| 
+イニシエータに属する iSCSI セッションを識別するイニシエータから提供された 48 ビット ID 。
+ a| 
+整数
+
+
+
+ a| 
+msSincLastIscsiPDU
+ a| 
+このセッションで最後に iSCSI PDU を受信してからの経過時間（ミリ秒）。
+ a| 
+整数
+
+
+
+ a| 
+msSincLastScsiCommand の略
+ a| 
+このセッションで最後の SCSI コマンドが受信されてからの経過時間（ミリ秒単位）。
+ a| 
+整数
+
+
+
+ a| 
+ノード ID
+ a| 
+セッションをホストする転送サービスに関連付けられたノード ID 。
+ a| 
+整数
+
+
+
+ a| 
+サービス ID
+ a| 
+セッションをホストする転送サービスの ID 。
+ a| 
+整数
+
+
+
+ a| 
+SessionID
+ a| 
+iSCSI セッション ID 。
+ a| 
+整数
+
+
+
+ a| 
+TargetIP
+ a| 
+iSCSI ストレージターゲットの IP アドレスとポート番号。
+ a| 
+文字列
+
+
+
+ a| 
+TargetName の略
+ a| 
+iSCSI ターゲットの IQN 。
+ a| 
+文字列
+
+
+
+ a| 
+targetPortName の略
+ a| 
+ターゲットポータルグループタグを組み合わせたターゲット名。ターゲットポートを識別します。
+ a| 
+文字列
+
+
+
+ a| 
+virtualNetworkID
+ a| 
+セッションに関連付けられた仮想ネットワーク ID 。
+ a| 
+整数
+
+
+
+ a| 
+ボリューム ID
+ a| 
+セッションに関連付けられているボリュームの ID （存在する場合）。
+ a| 
+整数
+
+
+
+ a| 
+ボリュームインスタンス
+ a| 
+iSCSI セッションに関連付けられているボリュームオブジェクト（存在する場合）を示します。
+ a| 
+整数
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_listiscsisessions.adoc[ListISCSISessions]

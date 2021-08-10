@@ -1,0 +1,100 @@
+---
+permalink: api/reference_element_api_resyncsnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: SnapMirror,relationship,resync,resyncing,ResyncSnapMirrorRelationship 
+summary: Element ソフトウェア Web UI は、 ResyncSnapMirrorRelationship メソッドを使用して、ソースエンドポイントとデスティネーションエンドポイント間のミラー関係を確立または再確立します。関係を再同期すると、共通の Snapshot コピーよりも新しいデスティネーションボリューム上の Snapshot が削除され、共通の Snapshot コピーをエクスポート済み Snapshot コピーとし、デスティネーションボリュームがデータ保護ボリュームとしてマウントされます。 
+---
+= SnapMirror 関係を再構築します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element ソフトウェア Web UI は、「 ResyncSnapMirrorRelationship 」メソッドを使用して、ソースエンドポイントとデスティネーションエンドポイント間のミラー関係を確立または再確立します。関係を再同期すると、共通の Snapshot コピーよりも新しいデスティネーションボリューム上の Snapshot が削除され、共通の Snapshot コピーをエクスポート済み Snapshot コピーとし、デスティネーションボリュームがデータ保護ボリュームとしてマウントされます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+Element ストレージクラスタと通信するリモート ONTAP ストレージシステムのエンドポイント ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+デスティネーションボリューム
+ a| 
+SnapMirror 関係のデスティネーションボリューム。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeinfo の追加データです]
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+最大転送速度
+ a| 
+ボリューム間の最大データ転送率を KB/ 秒単位で指定します。デフォルト値の 0 は無制限を意味し、使用可能なネットワーク帯域幅を SnapMirror 関係がフルに活用できるようにします。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+sourceVolume 」と入力します
+ a| 
+SnapMirror 関係のソースボリューム。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeinfo の追加データです]
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorRelationship のこと
+ a| 
+再同期された SnapMirror 関係の情報を含むオブジェクト。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationship のこと]
+
+|===
+
+
+== 新規導入バージョン
+
+10.1

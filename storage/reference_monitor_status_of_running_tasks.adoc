@@ -1,0 +1,18 @@
+---
+permalink: storage/reference_monitor_status_of_running_tasks.html 
+sidebar: sidebar 
+keywords: running tasks, view progress of 
+summary: ListSyncJobs および ListBulkVolumeJobs API メソッドが報告する、実行中のタスクの進捗状況と完了ステータスを Web UI で確認できます。実行中のタスクページには、 Element UI のレポートタブからアクセスできます。 
+---
+= 実行中のタスクのステータスを表示します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ListSyncJobs および ListBulkVolumeJobs API メソッドが報告する、実行中のタスクの進捗状況と完了ステータスを Web UI で確認できます。実行中のタスクページには、 Element UI のレポートタブからアクセスできます。
+
+タスクが多数ある場合は、それらのタスクがキューに登録されてバッチで実行されることがあります。Running Tasks ページに、現在同期中のサービスが表示されます。完了したタスクはリストから消え、キューに登録された次の同期タスクが表示されます。同期化タスクは、完了するタスクがなくなるまで、 [ 実行中のタスク ] ページに表示され続ける場合があります。
+
+
+NOTE: レプリケーションを実行中のボリュームのレプリケーション同期データは、ターゲットボリュームを含むクラスタの Running Tasks ページで確認できます。

@@ -1,0 +1,117 @@
+---
+permalink: api/reference_element_api_groupsnapshot.html 
+sidebar: sidebar 
+keywords: object,objects,groupSnapshot 
+summary: groupSnapshot オブジェクトには、ボリュームのグループ Snapshot の情報が含まれます。ListGroupSnapshots API メソッドを使用すると、グループ Snapshot 情報を取得できます。 
+---
+= groupSnapshot
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+groupSnapshot オブジェクトには、ボリュームのグループ Snapshot の情報が含まれます。「 ListGroupSnapshots 」 API メソッドを使用すると、グループ Snapshot 情報を取得できます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+CreateTime をクリックします
+ a| 
+UTC+0 形式のグループ Snapshot が作成された日時。
+ a| 
+ISO 8601 形式の日付文字列
+
+
+
+ a| 
+enableRemoteReplication
+ a| 
+Snapshot のリモートレプリケーションが有効かどうかを示します。
+ a| 
+ブール値
+
+
+
+ a| 
+groupSnapshotID
+ a| 
+グループ Snapshot の一意の ID 。
+ a| 
+整数
+
+
+
+ a| 
+groupSnapshotUUID
+ a| 
+グループ Snapshot の UUID 。
+ a| 
+文字列
+
+
+
+ a| 
+メンバー
+ a| 
+グループ Snapshot の各メンバーの情報を含むオブジェクトの配列。
+ a| 
+xref:reference_element_api_snapshot.adoc[スナップショット] 配列
+
+
+
+ a| 
+名前
+ a| 
+グループ Snapshot の名前。指定しなかった場合は、 UTC 形式の Snapshot の作成日時。
+ a| 
+文字列または ISO 8601 形式の日付文字列
+
+
+
+ a| 
+remoteStatsuses
+ a| 
+ソースクラスタから見た、ターゲットクラスタ上の各リモート Snapshot のユニバーサル識別子とレプリケーションステータスを含む配列。
+ a| 
+xref:reference_element_api_remoteclustersnapshotstatus.adoc[remoteClusterSnapshotStatus の 2 つのグループがあり] 配列
+
+
+
+ a| 
+ステータス
+ a| 
+Snapshot の現在のステータス。有効な値は次のとおり
+
+* unknown ： Snapshot のステータスを取得するときにエラーが発生しました。
+* Preparing ：この Snapshot は使用準備中で、まだ書き込みができません。
+* RemoteSyncing ：この Snapshot はリモートクラスタからレプリケート中です。
+* Done ： Snapshot の準備またはレプリケーションが完了し、使用可能な状態です。
+* Active ：この Snapshot はアクティブブランチです。
+* cloning ：この Snapshot は CopyVolume 処理に関連します。
+
+ a| 
+文字列
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_listgroupsnapshots.adoc[ListGroupSnapshots を参照してください]

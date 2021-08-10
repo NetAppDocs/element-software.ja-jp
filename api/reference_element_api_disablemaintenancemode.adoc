@@ -1,0 +1,135 @@
+---
+permalink: api/reference_element_api_disablemaintenancemode.html 
+sidebar: sidebar 
+keywords: disable,maintenance,mode 
+summary: DisableMaintenanceMode メソッドを使用して、ストレージノードをメンテナンスモードから解除できます。メンテナンスモードは、メンテナンスが完了してノードがオンラインになったあとにのみ無効にしてください。 
+---
+= DisableMaintenanceMode のようになります
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 DisableMaintenanceMode 」メソッドを使用すると、ストレージノードをメンテナンスモードから解除できます。メンテナンスモードは、メンテナンスが完了してノードがオンラインになったあとにのみ無効にしてください。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ノード
+ a| 
+メンテナンスモードから解除するストレージノード ID のリスト。
+ a| 
+整数の配列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+asyncHandle
+ a| 
+GetAsyncResult メソッドを使用してこの asyncHandle を取得し、メンテナンスモードの移行が完了したかどうかを判断できます。
+ a| 
+整数
+
+
+
+ a| 
+currentMode です
+ a| 
+ノードの現在の保守モードの状態。有効な値は次のとおり
+
+* 無効：メンテナンスは要求されていません。
+* FailedToRecover ：ノードのメンテナンスモードからのリカバリに失敗しました。
+* Unexpected ：ノードがオフラインであることが検出されましたが、無効モードでした。
+* RecoveringFromMaintenance ：ノードはメンテナンスモードからリカバリ中です。
+* 準備メンテナンス：ノードのメンテナンスを実施するための準備作業を実施します。
+* ReadyForMaintenance ：ノードのメンテナンスを実行できる状態です。
+
+ a| 
+MaintenanceMode ( 文字列 )
+
+
+
+ a| 
+requestedMode
+ a| 
+ノードに対して要求されたメンテナンスモードの状態。有効な値は次のとおり
+
+* 無効：メンテナンスは要求されていません。
+* FailedToRecover ：ノードのメンテナンスモードからのリカバリに失敗しました。
+* Unexpected ：ノードがオフラインであることが検出されましたが、無効モードでした。
+* RecoveringFromMaintenance ：ノードはメンテナンスモードからリカバリ中です。
+* 準備メンテナンス：ノードのメンテナンスを実施するための準備作業を実施します。
+* ReadyForMaintenance ：ノードのメンテナンスを実行できる状態です。
+
+ a| 
+MaintenanceMode ( 文字列 )
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "DisableMaintenanceMode",
+  "params": {
+    "nodes": [6]
+  },
+"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {
+        "requestedMode": "Disabled",
+        "asyncHandle": 1,
+        "currentMode": "Enabled"
+    }
+}
+----
+
+
+== 新規導入バージョン
+
+12.2
+
+
+
+== 詳細については、こちらをご覧ください
+
+http://docs.netapp.com/us-en/hci/docs/concept_hci_storage_maintenance_mode.html["NetApp HCI ストレージメンテナンスモードの概念"^]

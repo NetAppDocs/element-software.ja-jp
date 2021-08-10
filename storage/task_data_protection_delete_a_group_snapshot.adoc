@@ -1,0 +1,27 @@
+---
+permalink: storage/task_data_protection_delete_a_group_snapshot.html 
+sidebar: sidebar 
+keywords: group snapshot, delete 
+summary: システムからグループ Snapshot を削除できます。グループ Snapshot を削除するときに、グループに関連付けられているすべての Snapshot について、削除するか個別の Snapshot として保持するかを選択できます。 
+---
+= グループ Snapshot を削除しています
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+システムからグループ Snapshot を削除できます。グループ Snapshot を削除するときに、グループに関連付けられているすべての Snapshot について、削除するか個別の Snapshot として保持するかを選択できます。
+
+グループ Snapshot に含まれているボリュームまたは Snapshot を削除すると、そのグループ Snapshot にロールバックできなくなります。ただし、各ボリュームを個別にロールバックすることは可能です。
+
+. [ * データ保護 *>* グループスナップショット * ] をクリックします。
+. 削除する Snapshot のアクションアイコンをクリックします。
+. 表示されたメニューで、 * 削除 * をクリックします。
+. 確認のダイアログボックスで、次のいずれかのオプションを選択します。
++
+** グループ Snapshot とすべてのメンバー Snapshot を削除するには、 * グループ Snapshot とすべてのグループ Snapshot メンバーの削除 * をクリックします。
+** グループ Snapshot メンバーを個々の Snapshot として保持 * をクリックして、グループ Snapshot を削除しますが、すべてのメンバー Snapshot は保持します。
+
+
+. 操作を確定します。
+

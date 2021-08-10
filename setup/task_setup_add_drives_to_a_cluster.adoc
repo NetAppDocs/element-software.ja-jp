@@ -1,0 +1,36 @@
+---
+permalink: setup/task_setup_add_drives_to_a_cluster.html 
+sidebar: sidebar 
+keywords:  
+summary: クラスタにノードを追加したり、既存のノードに新しいドライブを設置すると、ドライブが自動的に Available として登録されます。ドライブがクラスタに参加できるようにするためには、 Element UI または API を使用してドライブをクラスタに追加する必要があります。 
+---
+= クラスタにドライブを追加
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クラスタにノードを追加したり、既存のノードに新しいドライブを設置すると、ドライブが自動的に Available として登録されます。ドライブがクラスタに参加できるようにするためには、 Element UI または API を使用してドライブをクラスタに追加する必要があります。
+
+次の条件に該当する場合、ドライブは使用可能ドライブのリストに表示されません。
+
+* ドライブが Active 、 Removing 、 Erasing 、 Failed のいずれかの状態である。
+* ドライブが含まれているノードが Pending 状態である。
+
+
+.手順
+. Element ユーザインターフェイスで、 * Cluster * > * Drives * を選択します。
+. 使用可能なドライブのリストを表示するには、 * Available * をクリックします。
+. 次のいずれかを実行します。
++
+** ドライブを個別に追加するには、追加するドライブの * Actions * アイコンをクリックし、 * Add * をクリックします。
+** 複数のドライブを追加するには、追加するドライブのチェックボックスを選択し、 * Bulk Actions * をクリックし、 * Add * をクリックします。
++
+....
+== Find more information
+* https://www.netapp.com/data-storage/solidfire/documentation[SolidFire and Element Resources page^]
+* https://docs.netapp.com/us-en/vcp/index.html[NetApp Element Plug-in for vCenter Server^]
+....
+
+
+

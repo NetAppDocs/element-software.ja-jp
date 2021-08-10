@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: upgrade/concept_element_upgrade_overview.html 
+summary: このセクションの内容では、 NetApp SolidFire オールフラッシュストレージシステムのコンポーネントに推奨されるアップグレード順序を紹介します。 
+keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgrade 
+---
+= アップグレードの概要
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+:keywords: solidfire, cloud, onprem, documentation, help
+
+
+[role="lead"]
+このセクションの内容では、 NetApp SolidFire オールフラッシュストレージシステムのコンポーネントに推奨されるアップグレード順序を紹介します。とは
+
+
+
+== システムのアップグレード順序
+
+システムのアップグレード手順の内容には、 SolidFire オールフラッシュストレージシステムのアップグレードを完了するために必要な作業が記載されています。これらの手順は、単独ででではなく、大きなアップグレード手順の一部として実行することを推奨します。コンポーネントベースのアップグレードまたは更新が必要な場合は、手順の前提条件を参照して、さらに複雑な作業が対処されるようにしてください。
+
+Element 12.3 の NetApp SolidFire オールフラッシュストレージシステムをアップグレードするには、次の手順を実行します。
+
+* link:task_sf_upgrade_all.html["Element 12.3 で NetApp SolidFire オールフラッシュストレージシステムをアップグレードします"]。
+
+
+
+
+== Element Plug-in for vCenter Server を含む vSphere のアップグレード順序
+
+Element Plug-in for vCenter Server を含む vSphere のアップグレードシーケンスでは、 Element Plug-in for vCenter Server を再インストールするために必要な追加のアップグレード前とアップグレード後の手順について説明します。
+
+Element Plug-in for vCenter Server を使用している NetApp SolidFire オールフラッシュストレージシステムの vSphere コンポーネントをアップグレードするには、次の順序に従います。
+
+* link:task_sf_upgrade_all_vsphere.html["NetApp SolidFire ストレージシステムの vSphere コンポーネントをアップグレードします を使用： Element Plug-in for vCenter Server"]。
+
+
+[discrete]
+== 詳細については、こちらをご覧ください
+
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+

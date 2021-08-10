@@ -1,0 +1,138 @@
+---
+permalink: api/reference_element_api_setdefaultqos.html 
+sidebar: sidebar 
+keywords: qos,value,configure,configuring,default,set,setting,setdefaultqos 
+summary: SetDefaultQoS メソッドを使用すると、ボリュームのデフォルトの QoS 値を設定できます。この値は 1 秒あたりの入出力処理数（ IOPS ）で測定されます。 
+---
+= SetDefaultQoS の設定
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「デフォルトの QoS 」メソッドを使用すると、ボリュームのデフォルトの QoS 値（ 1 秒あたりの入出力数、または IOPS で測定）を設定できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+Min IOPS
+ a| 
+クラスタからボリュームに提供される平常時の最小 IOPS 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+maxIOPS
+ a| 
+クラスタからボリュームに提供される平常時の最大 IOPS 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+burstIOPS
+ a| 
+短時間のバースト時に許容される最大 IOPS 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+Min IOPS
+ a| 
+クラスタからボリュームに提供される平常時の最小 IOPS 。
+ a| 
+整数
+
+
+
+ a| 
+maxIOPS
+ a| 
+クラスタからボリュームに提供される平常時の最大 IOPS 。
+ a| 
+整数
+
+
+
+ a| 
+burstIOPS
+ a| 
+短時間のバースト時に許容される最大 IOPS 。
+ a| 
+整数
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "SetDefaultQoS",
+    "params": {
+        "burstIOPS":8000,
+        "maxIOPS":1000,
+        "minIOPS":200
+    },
+    "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+    "id":1,
+    "result": {
+        "burstIOPS":8000,
+        "maxIOPS":1000,
+        "minIOPS":200
+    ​}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

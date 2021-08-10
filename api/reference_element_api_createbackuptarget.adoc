@@ -1,0 +1,105 @@
+---
+permalink: api/reference_element_api_createbackuptarget.html 
+sidebar: sidebar 
+keywords: create,creating,backup,target,CreateBackupTarget 
+summary: CreateBackupTarget を使用すると、バックアップターゲットに関する情報を作成および保存できるため、バックアップを作成するたびに再入力する必要がなくなります。 
+---
+= CreateBackupTarget をクリックします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 CreateBackupTarget 」を使用すると、バックアップターゲット情報を作成および保存できるため、バックアップを作成するたびに再入力する必要がなくなります。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+名前
+ a| 
+バックアップターゲットの名前。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON オブジェクト
+ a| 
+なし
+ a| 
+○（ただし空にすることも可能）
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+backupTargetID
+ a| 
+新しいバックアップターゲットに割り当てられた一意の識別子。
+ a| 
+整数
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "CreateBackupTarget",
+   "params": {
+      "name": "mytargetbackup"
+   },
+"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+      "backupTargetID": 1
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

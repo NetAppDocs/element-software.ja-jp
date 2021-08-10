@@ -1,0 +1,116 @@
+---
+permalink: api/reference_element_api_getfeaturestatus.html 
+sidebar: sidebar 
+keywords: feature,status,cluster,get,getting,getfeaturestatus 
+summary: GetFeatureStatus メソッドを使用すると、クラスタ機能のステータスを取得できます。 
+---
+= GetFeatureStatus の順にクリックします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetFeatureStatus メソッドを使用すると、クラスタ機能のステータスを取得できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+フィーチャー（ Feature ）
+ a| 
+クラスタ機能のステータス。値を指定しない場合は、すべての機能のステータスが返されます。有効な値は次のとおり
+
+* vvols ： VVol クラスタ機能のステータスを取得します。
+* SnapMirror ： SnapMirror レプリケーションクラスタ機能のステータスを取得します。
+* fips ： HTTPS 通信の FIPS 140-2 暗号化機能のステータスを取得します。
+* fipsDrives ： FIPS 140-2 ドライブ暗号化機能のステータスを取得します。
+
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+の機能
+ a| 
+機能名とそのステータスを示す機能オブジェクトの配列。オブジェクトメンバーは次のとおりです
+
+* feature ：（文字列）機能の名前。
+* enabled ：（ブーリアン）機能が有効になっているかどうか。
+
+ a| 
+JSON オブジェクトの配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "GetFeatureStatus",
+    "params": {
+    },
+    "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "features": [
+            {
+                "enabled": true,
+                "feature": "Vvols"
+            },
+            {
+                "enabled": true,
+                "feature": "SnapMirror"
+            },
+            {
+                "enabled": true,
+                "feature": "Fips"
+            },
+            {
+                "enabled": true,
+                "feature": "FipsDrives"
+            }
+        ]
+    }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

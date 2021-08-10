@@ -1,0 +1,128 @@
+---
+permalink: api/reference_element_api_testldapauthentication.html 
+sidebar: sidebar 
+keywords: ldap,auth,authentication,test,testing,testldapauthentication 
+summary: TestLdapAuthentication メソッドを使用すると、現在有効な LDAP 認証設定を検証できます。設定が正しい場合、 API 呼び出しはテストしたユーザのグループメンバーシップを返します。 
+---
+= TestLdapAuthentication の略
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 TestLdapAuthentication 」メソッドを使用すると、現在有効な LDAP 認証設定を検証できます。設定が正しい場合、 API 呼び出しはテストしたユーザのグループメンバーシップを返します。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ユーザ名
+ a| 
+テストするユーザ名。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+パスワード
+ a| 
+テストするユーザ名のパスワード。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+ldapConfiguration （ ldapConfiguration ）
+ a| 
+テストする ldapConfiguration オブジェクト。このパラメータを指定した場合、 LDAP 認証が現在無効であっても、指定した設定がテストされます。
+ a| 
+xref:reference_element_api_ldapconfiguration.adoc[ldapConfiguration （ ldapConfiguration ）]
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+グループ
+ a| 
+テストしたユーザが属している LDAP グループのリスト。
+ a| 
+配列
+
+
+
+ a| 
+ユーザ DN
+ a| 
+テストしたユーザの完全 LDAP 識別名。
+ a| 
+文字列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+"method": "TestLdapAuthentication",
+"params": {"username":"admin1",
+           "password":"admin1PASS"
+      },
+  "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+ "id": 1,
+ "result": {
+    "groups": [
+        "CN=StorageMgmt,OU=PTUsers,DC=prodtest,DC=solidfire,DC=net"
+      ],
+        "userDN": "CN=Admin1 Jones,OU=PTUsers,DC=prodtest,DC=solidfire,DC=net"
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

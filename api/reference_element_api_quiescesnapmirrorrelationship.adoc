@@ -1,0 +1,72 @@
+---
+permalink: api/reference_element_api_quiescesnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: snapmirror,relationship,relationships,quiesce,quiescing,quiescescnapmirrorrelationship 
+summary: Element ソフトウェア Web UI は、 QuiesSnapMirrorRelationship メソッドを使用して、 SnapMirror 関係の以降のデータ転送を無効にします。転送が実行中の場合、転送が完了するまで関係のステータスは「休止」になります。現在の転送を中止した場合、転送は再開されません。関係のデータ転送を再び有効にするには、 ResumeSnapMirrorRelationship API メソッドを使用します。 
+---
+= 休止 SnapMirror 関係
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element ソフトウェア Web UI は、「 QuiesSnapMirrorRelationship 」メソッドを使用して、 SnapMirror 関係の以降のデータ転送を無効にします。転送が実行中の場合、転送が完了するまで関係のステータスは「休止」になります。現在の転送を中止した場合、転送は再開されません。関係のデータ転送を再度有効にするには、「 ResumeSnapMirrorRelationship 」 API メソッドを使用します。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+Element ストレージクラスタと通信するリモート ONTAP ストレージシステムのエンドポイント ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+デスティネーションボリューム
+ a| 
+SnapMirror 関係のデスティネーションボリューム。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeinfo の追加データです]
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorRelationship のこと
+ a| 
+休止された SnapMirror 関係の情報を含むオブジェクト。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationship のこと]
+
+|===
+
+
+== 新規導入バージョン
+
+10.1

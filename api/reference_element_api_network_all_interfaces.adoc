@@ -1,0 +1,68 @@
+---
+permalink: api/reference_element_api_network_all_interfaces.html 
+sidebar: sidebar 
+keywords: object,objects,network 
+summary: network\ （すべてのインターフェイス \ ）オブジェクトは、ストレージノードのネットワークインターフェイス設定に関する情報を収集します。GetConfig メソッドと GetNetworkConfig メソッドを使用して、ストレージノードのこの情報を取得できます。 
+---
+= network （すべてのインターフェイス）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+network （すべてのインターフェイス）オブジェクトは、ストレージノードのネットワークインターフェイス設定に関する情報を収集します。GetConfig メソッドと GetNetworkConfig メソッドを使用して、ストレージノードのこの情報を取得できます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+Bond10G です
+ a| 
+Bond10G ボンディングインターフェイスの設定情報。
+ a| 
+xref:reference_element_api_network_bonded_interfaces.adoc[network （ボンディングインターフェイス）]
+
+
+
+ a| 
+Bond1G
+ a| 
+Bond1G ボンディングインターフェイスの設定情報。
+ a| 
+xref:reference_element_api_network_bonded_interfaces.adoc[network （ボンディングインターフェイス）]
+
+
+
+ a| 
+eth0-5
+ a| 
+ストレージノードのイーサネットインターフェイスごとに 1 つのオブジェクト。インターフェイスの設定情報を記述します。これらのオブジェクトには、インターフェイス名と一致するように 0 ～ 5 の番号が付けられています。
+ a| 
+xref:reference_element_api_network_ethernet_interfaces.adoc[network （イーサネットインターフェイス）]
+
+
+
+ a| 
+ロー
+ a| 
+ループバックインターフェイスの設定情報。
+ a| 
+xref:reference_element_api_network_local_interfaces.adoc[network （ローカルインターフェイス）]
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_element_api_getconfig.adoc[設定]
+* xref:reference_element_api_getnetworkconfig.adoc[GetNetworkConfig （ GetNetworkConfig ）]
+

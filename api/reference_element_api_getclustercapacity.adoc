@@ -1,0 +1,116 @@
+---
+permalink: api/reference_element_api_getclustercapacity.html 
+sidebar: sidebar 
+keywords: cluster,capacity,getting,get,measurements,measure,deduplication,GetClusterCapacity 
+summary: GetClusterCapacity を使用すると、ストレージクラスタ全体の容量測定値の概要を取得できます。このメソッドが返すフィールドを使用すると、 Element Web UI に表示される削減率を計算できます。効率性の計算式をスクリプトで使用して、シンプロビジョニング、重複排除、圧縮、および全体的な効率性の削減率を取得できます。 
+---
+= GetClusterCapacity
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetClusterCapacity を使用すると、ストレージクラスタ全体の容量測定値の概要を取得できます。このメソッドが返すフィールドを使用すると、 Element Web UI に表示される削減率を計算できます。効率性の計算式をスクリプトで使用して、シンプロビジョニング、重複排除、圧縮、および全体的な効率性の削減率を取得できます。
+
+
+
+== 削減率の計算
+
+シンプロビジョニング、重複排除、および圧縮を計算するには、次の式を使用します。これらの式は Element 8.2 以降に適用されます。
+
+* thinProvisioningFactor = （ゼロ以外のロック + ゼロロック） / ゼロ以外のロック
+* deDuplicationFactor = （ nonZeroBlocks + snapshotNonZeroBlocks ） / uniqueBlocks
+* 圧縮係数 = （ uniqueBlocks * 4096 ） / （ uniqueBlocksUsedSpace * 0.93 ）
+
+
+
+
+== 全体的な削減率の計算
+
+シンプロビジョニング、重複排除、および圧縮の削減率に関する計算結果を使用してクラスタ全体の削減率を計算するには、次の式を使用します。
+
+* efficiencyFactor = thinProvisioningFactor * deDuplicationFactor * による圧縮係数
+
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+clusterCapacity
+ a| 
+ストレージクラスタの容量データ。
+ a| 
+xref:reference_element_api_clustercapacity.adoc[clusterCapacity]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "GetClusterCapacity",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "clusterCapacity": {
+      "activeBlockSpace": 236015557096,
+      "activeSessions": 20,
+      "averageIOPS": 0,
+      "clusterRecentIOSize": 0,
+      "currentIOPS": 0,
+      "maxIOPS": 150000,
+      "maxOverProvisionableSpace": 259189767127040,
+      "maxProvisionedSpace": 51837953425408,
+      "maxUsedMetadataSpace": 404984011161,
+      "maxUsedSpace": 12002762096640,
+      "nonZeroBlocks": 310080350,
+      "peakActiveSessions": 20,
+      "peakIOPS": 0,
+      "provisionedSpace": 1357931085824,
+      "snapshotNonZeroBlocks": 0,
+      "timestamp": "2016-10-17T21:24:36Z",
+      "totalOps": 1027407650,
+      "uniqueBlocks": 108180156,
+      "uniqueBlocksUsedSpace": 244572686901,
+      "usedMetadataSpace": 8745762816,
+      "usedMetadataSpaceInSnapshots": 8745762816,
+      "usedSpace": 244572686901,
+      "zeroBlocks": 352971938
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

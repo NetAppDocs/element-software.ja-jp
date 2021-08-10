@@ -1,0 +1,23 @@
+---
+permalink: storage/task_data_protection_copy_a_snapshot_schedule.html 
+sidebar: sidebar 
+keywords: snapshot schedule, copy, maintain, schedule attributes 
+summary: スケジュールをコピーして、現在の設定を維持できます。 
+---
+= Snapshot スケジュールをコピーします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+スケジュールをコピーして、現在の設定を維持できます。
+
+. [ * データ保護 *>* スケジュール * ] をクリックします。
+. コピーするスケジュールの [Actions] アイコンをクリックします。
+. 表示されたメニューで、 * コピーを作成 * をクリックします。
++
+[ スケジュールの作成 *] ダイアログボックスが開き、スケジュールの現在の属性が表示されます。
+
+. * オプション： * 新しいスケジュールの名前と設定を入力します。
+. [ スケジュールの作成 *] をクリックします。
+

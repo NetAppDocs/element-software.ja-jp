@@ -1,0 +1,113 @@
+---
+permalink: api/reference_element_api_getqospolicy.html 
+sidebar: sidebar 
+keywords: qos,policy,policies,get,getting,getqospolicy 
+summary: GetQoSPolicy メソッドを使用して、システムから特定の QoS ポリシーに関する詳細を取得できます。 
+---
+= GetQoSPolicy を参照してください
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetQoSPolicy メソッドを使用すると、システムから特定の QoS ポリシーの詳細を取得できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+qosPolicyID
+ a| 
+取得するポリシーの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+QoSPolicy のように表示
+ a| 
+要求した QoS ポリシーの詳細。
+ a| 
+xref:reference_element_api_qospolicy.adoc[QoSPolicy のように表示]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+	"method": "GetQoSPolicy",
+    "params": {
+    	"qosPolicyID": 2
+    },
+    "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "qosPolicy": {
+      "name": "bronze",
+      "qos": {
+        "burstIOPS": 15002,
+        "burstTime": 60,
+        "curve": {
+          "4096": 100,
+          "8192": 160,
+          "16384": 270,
+          "32768": 500,
+          "65536": 1000,
+          "131072": 1950,
+          "262144": 3900,
+          "524288": 7600,
+          "1048576": 15000
+        },
+        "maxIOPS": 15002,
+        "minIOPS": 51
+      },
+      "qosPolicyID": 2,
+      "volumeIDs": [
+          2
+      ]
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+10.0

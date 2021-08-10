@@ -1,0 +1,153 @@
+---
+permalink: api/reference_element_api_setsnmpinfo.html 
+sidebar: sidebar 
+keywords: snmp,info,setting,set,setsnmpinfo 
+summary: SetSnmpInfo メソッドを使用すると、クラスタノードで SNMP バージョン 2 およびバージョン 3 を設定できます。このインターフェイスで設定した値はクラスタ内のすべてのノードに適用され、指定した値により、以前の SetSnmpInfo 呼び出しで設定されたすべての値が置き換えられます。 
+---
+= SetSnmpInfo のサービス
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 SnmpInfo 」メソッドを使用すると、クラスタノードで SNMP バージョン 2 およびバージョン 3 を設定できます。このインターフェイスで設定した値はクラスタ内のすべてのノードに適用され、指定した値により、以前の「 SnmpInfo 」の呼び出しで設定されたすべての値が置き換えられます。
+
+
+
+== パラメータ
+
+
+NOTE: SetSnmpInfo は、 Element バージョン 6.0 以降では廃止されています。を使用します xref:reference_element_api_enablesnmp.adoc[EnableSnmp] および xref:reference_element_api_setsnmpacl.adoc[SetSnmpACL の場合] 代わりにメソッドを使用します
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ネットワーク
+ a| 
+ネットワーク、およびクラスタノードで実行されている SNMP サーバに対するアクセスタイプのリスト。SNMP を参照してください xref:reference_element_api_network_snmp.adoc[ネットワーク] 指定可能な値のオブジェクト。このパラメータは SNMP v2 の場合のみ必要です。
+ a| 
+xref:reference_element_api_network_snmp.adoc[ネットワーク] 配列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+有効
+ a| 
+true に設定すると、クラスタ内の各ノードで SNMP が有効になります。
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+
+
+ a| 
+snmpV3Enabled を使用します
+ a| 
+true に設定すると、クラスタ内の各ノードで SNMP v3 が有効になります。
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+
+
+ a| 
+usmUsers
+ a| 
+SNMP v3 を有効にする場合は、 networks パラメータの代わりにこの値を指定する必要があります。このパラメータは、 SNMP v3 の場合のみ必要です。
+ a| 
+xref:reference_element_api_usmuser.adoc[usmUser]
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例 - SNMP v3 を有効にした場合
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+"method":"SetSnmpInfo",
+"params":{
+    "enabled":true,
+    "snmpV3Enabled":true,
+    "usmUsers":[
+      {
+        "name":"user1",
+        "access":"rouser",
+        "secLevel":"auth",
+        "password":"namex1",
+        "passphrase":"yourpassphrase"
+      }
+    ]
+  },
+ "id":1
+}
+----
+
+
+== SNMP v2 を有効にした場合の要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+"method":"SetSnmpInfo",
+"params":{
+    "enabled":true,
+    "snmpV3Enabled":false,
+    "networks":[
+      {
+        "community":"public",
+        "access":"ro",
+        "network":"localhost",
+      }
+    ]
+  },
+  "id":1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id" : 1
+  "result" :{
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

@@ -1,0 +1,87 @@
+---
+permalink: api/reference_element_api_listfibrechannelsessions.html 
+sidebar: sidebar 
+keywords: list,listing,fibre,channel,session,sessions,listfibrechannelsessions 
+summary: ListFibreChannelSessions メソッドを使用すると、クラスタでの Fibre Channel セッションに関する情報をリストできます。 
+---
+= ListFibreChannelSessions
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ListFibreChannelSessions 」メソッドを使用すると、クラスタの Fibre Channel セッションに関する情報をリストできます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+セッション
+ a| 
+クラスタでアクティブな Fibre Channel セッションの詳細を示すオブジェクトのリスト。
+ a| 
+xref:reference_element_api_session_fibre_channel.adoc[セッション] 配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ListFibreChannelSessions",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {
+     "sessions" : [
+    {
+       "initiatorWWPN" : "21:00:00:0e:1e:14:af:40",
+       "nodeID" : 5,
+       "serviceID" : 21,
+       "targetWWPN": "5f:47:ac:c0:00:00:00:10",
+       "volumeAccessGroupID": 7
+    },
+    {
+       "initiatorWWPN" : "21:00:00:0e:1e:14:af:40",
+       "nodeID" : 1,
+       "serviceID" : 22,
+       "targetWWPN": "5f:47:ac:c0:00:00:00:11",
+       "volumeAccessGroupID": 7
+    }
+    ]
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

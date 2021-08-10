@@ -1,0 +1,187 @@
+---
+permalink: api/reference_element_api_modifyaccount.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,accounts,settings,modifyaccount 
+summary: ModifyAccount メソッドを使用すると、既存アカウントを変更できます。 
+---
+= ModifyAccount の場合
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 ModyAccount 」メソッドを使用して、既存のアカウントを変更できます。
+
+アカウントをロックすると、そのアカウントからの既存の接続はただちに切断されます。アカウントの CHAP 設定を変更しても、既存の接続はすべてアクティブなままで、以降の接続や再接続には新しい CHAP 設定が使用されます。アカウントの属性をクリアするには、 attributes パラメータに ｛ ｝ を指定してください。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+アカウント ID
+ a| 
+変更するアカウントの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON オブジェクト
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+enableChap
+ a| 
+イニシエータがボリュームへのアクセスに CHAP アカウントのクレデンシャルを使用できるかどうかを指定します。
+ a| 
+ブール値
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+イニシエータシークレット
+ a| 
+イニシエータに使用する CHAP シークレット。このシークレットは 12~16 文字で、推測されにくいものにしてください。イニシエータ CHAP シークレットは一意にする必要があり、ターゲット CHAP シークレットと同じにすることはできません。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+ステータス
+ a| 
+アカウントのステータス。有効な値は次のとおり
+
+* active ：アカウントはアクティブで、接続は許可されます。
+* locked ：アカウントはロックされており、接続は拒否されます。
+
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+targetSecret
+ a| 
+ターゲット（相互 CHAP 認証）に使用する CHAP シークレット。このシークレットは 12~16 文字で、推測されにくいものにしてください。ターゲット CHAP シークレットは一意にする必要があり、イニシエータ CHAP シークレットと同じにすることはできません。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+ユーザ名
+ a| 
+アカウントに関連付けられているユーザ名を変更する場合に使用します。（ 1~64 文字）。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+アカウント：
+ a| 
+変更されたアカウントの情報を含むオブジェクト。
+ a| 
+xref:reference_element_api_account.adoc[アカウント：]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。この例では、属性は ｛ ｝ でクリアされています。
+
+[listing]
+----
+{
+   "method": "ModifyAccount",
+   "params": {
+     "accountID"  : 25,
+     "status"   : "locked",
+     "attributes" : {}
+   },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+    "account": {
+        "storageContainerID": "abcdef01-1234-5678-90ab-cdef01234567",
+        "username": "user1",
+        "accountID": 1,
+        "volumes": [
+        ],
+        "enableChap": true,
+        "initiatorSecret": "txz123456q890",
+        "attributes": {
+        },
+        "status": active",
+        "targetSecret": "rxe123b567890"
+    }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

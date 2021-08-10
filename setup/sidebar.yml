@@ -1,0 +1,37 @@
+---
+section: setup
+title: ストレージをセットアップする
+url: "/setup/concept_setup_overview.html"
+entries:
+- title: ストレージノードで構成されたクラスタをセットアップ
+  url: "/setup/task_setup_cluster_with_storage_nodes.html"
+  entries:
+  - title: ストレージノードを設定
+    url: "/setup/concept_setup_configure_a_storage_node.html"
+  - title: ストレージクラスタを作成
+    url: "/setup/task_setup_create_a_storage_cluster.html"
+  - title: Element ソフトウェアのユーザインターフェイスにログインします
+    url: "/setup/task_post_deploy_access_the_element_software_user_interface.html"
+  - title: クラスタにドライブを追加
+    url: "/setup/task_setup_add_drives_to_a_cluster.html"
+- title: Fibre Channel ノードを含むクラスタをセットアップします
+  url: "/setup/task_setup_cluster_with_fibre_channel_nodes.html"
+  entries:
+  - title: Fibre Channel ノードを設定
+    url: "/setup/concept_setup_fc_configure_a_fibre_channel_node.html"
+  - title: Fibre Channel ノードを含む新しいクラスタを作成します
+    url: "/setup/task_setup_fc_create_a_new_cluster_with_fibre_channel_nodes.html"
+  - title: クラスタに Fibre Channel ノードを追加します
+    url: "/setup/task_setup_fc_add_fibre_channel_nodes_to_a_cluster.html"
+  - title: Fibre Channel ノードのゾーンをセットアップします
+    url: "/setup/concept_setup_fc_set_up_zones_for_fibre_channel_nodes.html"
+  - title: Fibre Channel クライアントのボリュームアクセスグループを作成します
+    url: "/setup/task_setup_create_a_volume_access_group_for_fibre_channel_clients.html"
+- title: インストールする SolidFire コンポーネントを決定します
+  url: "/setup/task_setup_determine_which_solidfire_components_to_install.html"
+- title: 管理ノードをセットアップ
+  url: "/setup/task_setup_gh_redirect_set_up_a_management_node.html"
+- title: 完全修飾ドメイン名 Web UI アクセスを設定します
+  url: "/setup/task_setup_configure_fqdn_web_ui_access.html"
+- title: 次の手順
+  url: "/setup/concept_setup_whats_next.html"

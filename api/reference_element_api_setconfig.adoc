@@ -1,0 +1,120 @@
+---
+permalink: api/reference_element_api_setconfig.html 
+sidebar: sidebar 
+keywords: config,configuration,set,setting,node,setconfig,network,cluster 
+summary: SetConfig メソッドを使用すると、ノードのネットワークとクラスタの情報を設定できます。このメソッドでは、 SetClusterConfig メソッドと SetNetworkConfig メソッドの両方を使用して設定できる単一の API メソッドで同じ設定を使用できます。このメソッドには、変更するフィールドだけを指定する必要があります。 
+---
+= SetConfig
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 Config 」メソッドを使用すると、ノードのネットワークおよびクラスタ情報を設定できます。このメソッドには、「 S etClusterConfig 」メソッドと「 S etNetworkConfig 」メソッドの両方を使用して使用できる単一の API メソッドと同じ設定が含まれます。このメソッドには、変更するフィールドだけを指定する必要があります。
+
+
+NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
+
+
+
+== パラメータ
+
+注意
+
+ノードのボンディングモードを変更すると、原因でネットワーク接続が一時的に失われる可能性があります。
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+クラスタ
+ a| 
+ストレージノードとノードに関連付けられたストレージクラスタの通信方法を示すクラスタ情報。
+ a| 
+xref:reference_element_api_cluster.adoc[クラスタ]
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+ネットワーク
+ a| 
+ノードのネットワークインターフェイスごとのネットワーク接続タイプおよび現在の設定。
+ a| 
+xref:reference_element_api_network_all_interfaces.adoc[network （すべてのインターフェイス）]
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+構成
+ a| 
+ノードの新規および既存の設定。このオブジェクトの内容は次のとおりです
+
+* xref:reference_element_api_cluster.adoc[クラスタ]：ストレージノードとノードに関連付けられたストレージクラスタの通信方法を示すクラスタ情報。
+* xref:reference_element_api_network_all_interfaces.adoc[network （すべてのインターフェイス）]：ノードのネットワークインターフェイスごとのネットワーク接続タイプおよび現在の設定。
+
+ a| 
+JSON オブジェクト
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+	"method": "SetConfig",
+	"params": {
+		"cluster": {
+			"name": "MyHostname"
+		},
+		"network": {
+			"Bond10G": {
+				"bond-mode": "ALB"
+			}
+		}
+	}
+}
+----
+
+
+== 応答例
+
+このメソッドからの応答は GetConfig メソッドの戻り値と同じです。SetConfig を使用すると、オブジェクトのすべてのフィールドに更新後の値が表示されます。
+
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_element_api_setclusterconfig.adoc[SetClusterConfig の場合]
+* xref:reference_element_api_setnetworkconfig.adoc[SetNetworkConfig の場合]
+* xref:reference_element_api_response_example_getconfig.adoc[設定]
+

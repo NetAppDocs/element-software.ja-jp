@@ -1,0 +1,27 @@
+---
+section: hardware
+title: ハードウェアを設置して保守する
+url: "/hardware/index.html"
+entries:
+- title: H410S および H610S ハードウェアの情報
+  url: "/hardware/concept_h410s_h610s_info.html"
+  entries:
+  - title: H410S および H610S ノードを設置します
+    url: "/hardware/task_h410s_h610s_install.html"
+  - title: H410S ノードを交換します
+    url: "/hardware/task_h410s_repl.html"
+  - title: H610S ノードを交換してください
+    url: "/hardware/task_h610s_repl.html"
+  - title: ドライブを交換
+    url: "/hardware/task_hseries_driverepl.html"
+  - title: 電源装置を交換してください
+    url: "/hardware/task_psu_repl.html"
+- title: SF シリーズハードウェアの情報
+  url: "/hardware/concept_sfseries_info.html"
+  entries:
+  - title: シャーシを交換します
+    url: "/hardware/task_sfseries_chassisrepl.html"
+  - title: ドライブを交換
+    url: "/hardware/task_sfseries_driverepl.html"
+  - title: 電源装置を交換してください
+    url: "/hardware/task_sfseries_psurepl.html"

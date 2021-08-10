@@ -1,0 +1,69 @@
+---
+permalink: api/reference_element_api_disablessh.html 
+sidebar: sidebar 
+keywords: SSH,disable,disabling,node,DisableSsh 
+summary: DisableSsh メソッドを使用して、 1 つのストレージノードの SSH サービスを無効にすることができます。このメソッドは、クラスタ全体の SSH サービスタイムアウト時間には影響しません。 
+---
+= DisableSsh （無効化
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 DisableSsh 」メソッドを使用して、 1 つのストレージノードの SSH サービスを無効にすることができます。このメソッドは、クラスタ全体の SSH サービスタイムアウト時間には影響しません。
+
+
+NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+有効
+ a| 
+このノードの SSH サービスのステータス。
+ a| 
+ブール値
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "DisableSsh",
+  "params": {
+      },
+  "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {"enabled": false}
+}
+----

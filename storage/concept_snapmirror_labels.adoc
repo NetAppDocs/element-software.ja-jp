@@ -1,0 +1,17 @@
+---
+permalink: storage/concept_snapmirror_labels.html 
+sidebar: sidebar 
+keywords: labels, snapmirror, retention rules 
+summary: SnapMirror ラベルは、指定した Snapshot を関係の保持ルールに従って転送するためのマーカーとして機能します。 
+---
+= SnapMirror ラベル
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirror ラベルは、指定した Snapshot を関係の保持ルールに従って転送するためのマーカーとして機能します。
+
+Snapshot にラベルを適用すると、その Snapshot が SnapMirror レプリケーションのターゲットとしてマークされます。関係の役割は、データ転送にルールを適用するために、一致するラベルの付いた Snapshot を選択してデスティネーションボリュームにコピーし、正しい数のコピーが保持されるようにすることです。関係では、ポリシーを参照して保持数と保持期間が特定されます。ポリシーには任意の数のルールを含めることができ、各ルールにはラベルが付けられます。このラベルは、 Snapshot と保持ルールの間のリンクとして機能します。
+
+この SnapMirror ラベルによって、選択した Snapshot 、グループ Snapshot 、またはスケジュールに適用されるルールが指定されます。

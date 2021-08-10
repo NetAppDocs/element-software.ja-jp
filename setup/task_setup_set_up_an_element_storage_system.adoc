@@ -1,0 +1,13 @@
+---
+permalink: setup/task_setup_set_up_an_element_storage_system.html 
+sidebar: sidebar 
+keywords:  
+summary: NetApp Element ソフトウェアストレージシステムのセットアップでは、ストレージノードを設定し、ストレージクラスタを作成し、クラスタにドライブを追加します。Fibre Channel ネットワークを使用する場合は、 Fibre Channel ノードを設定できます。 
+---
+= Element ストレージシステムをセットアップする
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Element ソフトウェアストレージシステムのセットアップでは、ストレージノードを設定し、ストレージクラスタを作成し、クラスタにドライブを追加します。Fibre Channel ネットワークを使用する場合は、 Fibre Channel ノードを設定できます。

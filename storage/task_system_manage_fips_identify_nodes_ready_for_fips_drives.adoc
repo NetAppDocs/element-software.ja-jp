@@ -1,0 +1,46 @@
+---
+permalink: storage/task_system_manage_fips_identify_nodes_ready_for_fips_drives.html 
+sidebar: sidebar 
+keywords: fips, security, federal information processing standards, 140-2 
+summary: NetApp Element ソフトウェアの GetFipsReport API メソッドを使用して、ストレージクラスタ内のすべてのノードが FIPS ドライブに対応しているかどうかを確認する必要があります。 
+---
+= ノードが FIPS ドライブ機能に対応しているかどうかを確認します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Element ソフトウェアの GetFipsReport API メソッドを使用して、ストレージクラスタ内のすべてのノードが FIPS ドライブに対応しているかどうかを確認する必要があります。
+
+生成されるレポートには、次のいずれかのステータスが表示されます。
+
+* None ：ノードは FIPS ドライブ機能に対応していません。
+* Partial ：ノードは FIPS に対応していますが、一部のドライブが FIPS ドライブではありません。
+* Ready ：ノードは FIPS に対応しており、すべてのドライブが FIPS ドライブであるか、ドライブが存在しません。
+
+
+.手順
+. Element API で次のように入力し、ストレージクラスタ内のノードとドライブが FIPS ドライブに対応しているかどうかを確認します。
++
+「 GetFipsReport 」
+
+. 結果を確認し、ステータスが「 Ready 」になっていないノードを確認します。
+. ステータスが「 Ready 」になっていないノードについて、ドライブが FIPS ドライブ機能に対応しているかどうかを確認します。
++
+** Element API を使用して、「 GetHardwareList 」と入力します
+** DriveEncryptionCapabilityType* の値を確認します。値が「 fips 」の場合、そのハードウェアは FIPS ドライブ機能に対応しています。
++
+の「 GetFipsReport 」または「 ListDriveHardware 」の詳細を参照してください link:../api/index.html["Element API リファレンス"]。
+
+
+
+. ドライブが FIPS ドライブ機能に対応していない場合は、ハードウェア（ノードまたはドライブ）を FIPS 対応のハードウェアに交換します。
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

@@ -1,0 +1,78 @@
+---
+permalink: concepts/concept_solidfire_concepts_security.html 
+sidebar: sidebar 
+keywords: solidfire security, element security, encryption at rest, software encryption at rest, external key management, fips 140-2, mfa 
+summary: NetApp Element ソフトウェアを使用すると、業界標準のセキュリティプロトコルでデータが保護されます。 
+---
+= セキュリティ
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire オールフラッシュストレージシステムを使用すると、業界標準のセキュリティプロトコルでデータが保護されます。
+
+
+
+== 保存データの暗号化（ハードウェア）
+
+ストレージノード内のドライブはいずれも、ドライブレベルの暗号化機能で AES 256 ビット暗号化を利用できます。各ドライブには、ドライブが最初に初期化されたときに作成される、専用の暗号化キーがあります。暗号化機能を有効にすると、クラスタ全体のパスワードが作成され、複数のチャンクとしてクラスタ内のすべてのノードに配信されます。どのノードにもパスワード全体が格納されることはありません。このパスワードを使用して、ドライブへのすべてのアクセスが保護されます。ドライブのロックを解除するにはパスワードが必要です。ドライブの電源がオフになっているかドライブがロックされている場合以外は、パスワードは必要ありません。
+
+link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["保存データのハードウェア暗号化機能の有効化"] クラスタのパフォーマンスや効率には影響しません。Element API または Element UI を使用してクラスタの設定から暗号化が有効なドライブまたはノードを削除すると、保存データの暗号化がドライブで無効になります。ドライブを削除した後、「 ecureEraseDrives 」 API メソッドを使用してドライブを安全に消去できます。物理ドライブまたはノードが強制的に削除された場合でも、データはクラスタ全体のパスワードおよびドライブごとの暗号化キーによって引き続き保護されます。
+
+
+
+== 保存データの暗号化（ソフトウェア）
+
+保存データを暗号化するソフトウェア暗号化機能のもう 1 つのタイプを使用すると、ストレージクラスタ内の SSD に書き込まれるすべてのデータを暗号化できます。 link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["有効にすると"]ソフトウェアで自動的に読み取られたすべてのデータを暗号化し、復号化します。ソフトウェア暗号化保存データは、ハードウェアに実装された自己暗号化ドライブ（ SED ）をミラーリングして、データセキュリティを SED なしで提供します。
+
+保存データのソフトウェア暗号化は、すべての SolidFire エンタープライズ SDS ノードでデフォルトで使用できます。保存データのソフトウェア暗号化は、自己暗号化ドライブ（ SED ）を含まない SolidFire エンタープライズ SDS ノードでデータセキュリティ暗号化の主要なソフトウェアレイヤを提供します。
+
+ソフトウェアベースとハードウェアベースの保存データの暗号化機能は、どちらも単独で使用することも、相互に組み合わせて使用することもできます。
+
+
+
+== 外部キー管理
+
+サードパーティの KMIP 準拠キー管理サービス（ KMS ）を使用してストレージクラスタの暗号化キーを管理するように Element ソフトウェアを設定できます。この機能を有効にすると、ストレージクラスタ全体のドライブアクセスパスワード暗号化キーが KMS によって指定した値で管理されます。
+
+Element では、次のキー管理サービスを使用できます。
+
+* Gemalto SafeNet KeySecure の各コマンドを入力します
+* SafeNet at KeySecure の指定
+* HyTrust KeyControl の略
+* Vormetric データセキュリティ Manager の略
+* IBM Security Key Lifecycle Manager の略
+
+
+外部キー管理の設定の詳細については、を参照してください link:../storage/concept_system_manage_key_get_started_with_external_key_management.html["外部キー管理の概要"] ドキュメント
+
+
+
+== 多要素認証
+
+多要素認証（ MFA ）を使用することで、ログイン時に NetApp Element Web UI またはストレージノード UI で認証するためのさまざまな種類の証拠をユーザに提示する必要があります。既存のユーザ管理システムおよびアイデンティティプロバイダと統合されたログインに対して多要素認証のみを受け入れるように Element を設定できます。Element を既存の SAML 2.0 アイデンティティプロバイダと統合するように設定できます。これにより、パスワードとテキストメッセージ、パスワードと E メールメッセージ、その他の方法など、複数の認証方式を適用できます。
+
+多要素認証を、 Microsoft Active Directory Federation Services （ ADFS ）や Shibboleth など、 SAML 2.0 対応の一般的なアイデンティティプロバイダ（ IdP ）とペアリングできます。
+
+MFA を設定するには、を参照してください link:../storage/concept_system_manage_mfa_enable_multi_factor_authentication.html["多要素認証の有効化"] ドキュメント
+
+
+
+== HTTPS 向けの FIPS 140-2 と保存データ暗号化
+
+NetApp SolidFire ストレージクラスタでは、暗号モジュールに関する Federal Information Processing Standard （ FIPS ；連邦情報処理標準） 140-2 の要件に準拠した暗号化がサポートされています。SolidFire クラスタで HTTPS 通信とドライブ暗号化の両方に対して FIPS 140-2 準拠を有効にすることができます。
+
+クラスタで FIPS 140-2 動作モードを有効にすると、クラスタは NetApp Cryptographic Security Module （ NCSM ）をアクティブ化し、 NetApp Element UI および API との HTTPS を介したすべての通信に FIPS 140-2 レベル 1 認定の暗号化を利用します。FIPS 140-2 HTTPS 暗号化をイネーブルにするには 'EnableFeature` Element API を 'fips' パラメータとともに使用しますFIPS 対応ハードウェアを搭載したストレージクラスタでは、「 EnableFeature` Element API 」パラメータを「 FipsDrives 」パラメータとともに使用して、保存データの FIPS ドライブ暗号化を有効にすることもできます。
+
+新しいストレージクラスタでの FIPS 140-2 暗号化の準備の詳細については、を参照してください link:../storage/task_system_manage_fips_create_a_cluster_supporting_fips_drives.html["FIPS ドライブをサポートするクラスタを作成します"]。
+
+既存の準備が完了したクラスタで FIPS 140-2 を有効にする方法の詳細については、を参照してください link:../api/reference_element_api_enablefeature.html["EnableFeature Element API"]。
+
+
+
+== を参照してください。
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

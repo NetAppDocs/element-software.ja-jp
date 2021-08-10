@@ -1,0 +1,59 @@
+---
+permalink: api/reference_element_api_listsnapmirrorpolicies.html 
+sidebar: sidebar 
+keywords: snapmirror,policy,policies,list,listing,ontap,listsnapmirrorpolicies 
+summary: Element ソフトウェア Web UI は、 ListSnapMirrorPolicies メソッドを使用して、リモート ONTAP システム上のすべての SnapMirror ポリシーをリストします。 
+---
+= ListSnapMirrorPolicies の順にクリックします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element ソフトウェア Web UI は「 ListSnapMirrorPolicies 」メソッドを使用して、リモート ONTAP システム上のすべての SnapMirror ポリシーをリストします。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+指定したエンドポイント ID に関連付けられているポリシーのみをリストします。エンドポイント ID を指定しない場合は、認識されているすべての SnapMirror エンドポイントのポリシーがリストされます。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorPolicies のページです
+ a| 
+ONTAP ストレージシステム上の SnapMirror ポリシーのリスト。
+ a| 
+xref:reference_element_api_snapmirrorpolicy.adoc[snapMirrorPolicy] 配列
+
+|===
+
+
+== 新規導入バージョン
+
+10.1

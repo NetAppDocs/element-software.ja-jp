@@ -1,0 +1,83 @@
+---
+permalink: api/reference_element_api_removeaccount.html 
+sidebar: sidebar 
+keywords: account,accounts,remove,removing,deleting,delete,purge,volume,volumes,removeaccount 
+summary: RemoveAccount メソッドを使用すると、既存アカウントを削除できます。アカウントを削除する前に、 DeleteVolume を使用して、そのアカウントに関連付けられているすべてのボリュームを削除およびパージする必要があります。アカウントのボリュームの削除が保留になっている間は、 RemoveAccount を使用してアカウントを削除することはできません。 
+---
+= RemoveAccount を使用します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RemoveAccount メソッドを使用すると、既存アカウントを削除できます。アカウントを削除する前に、「削除ボリューム」を使用してアカウントに関連付けられているすべてのボリュームを削除およびパージする必要があります。アカウントのボリュームが削除待ちのままの場合は、「 RemoveAccount 」を使用してアカウントを削除することはできません。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+アカウント ID
+ a| 
+削除するアカウントの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "RemoveAccount",
+   "params": {
+     "accountID"  : 25
+   },
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+
+{
+ "id" : 1,
+ "result" : { }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_deletevolume.adoc[DeleteVolume]

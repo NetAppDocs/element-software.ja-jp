@@ -1,0 +1,92 @@
+---
+permalink: api/reference_element_api_addkeyservertoproviderkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key server,assigning to key provider,assign,addkeyservertoproviderkmip 
+summary: AddKeyServerToProviderKmip メソッドを使用すると、指定したキープロバイダに Key Management Interoperability Protocol\ （ KMIP \ ）キーサーバを割り当てることができます。割り当て中に、サーバに接続して機能を確認します。指定したキーサーバが指定したキープロバイダにすでに割り当てられている場合、処理は実行されず、エラーは返されません。RemoveKeyServerFromProviderKmip メソッドを使用して、割り当てを削除できます。 
+---
+= AddKeyServerToProviderKmip のように指定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AddKeyServerToProviderKmip メソッドを使用すると、指定したキープロバイダに Key Management Interoperability Protocol （ KMIP ）キーサーバを割り当てることができます。割り当て中に、サーバに接続して機能を確認します。指定したキーサーバが指定したキープロバイダにすでに割り当てられている場合、処理は実行されず、エラーは返されません。「 RemoveKeyServerFromProviderKmip 」メソッドを使用して、割り当てを削除できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+KeyProviderID
+ a| 
+キーサーバを割り当てるキープロバイダの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+KeyServerID
+ a| 
+割り当てるキーサーバの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。エラーが返されないかぎり、割り当ては成功したとみなされます。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "AddKeyServerToProviderKmip",
+  "params": {
+    "keyProviderID": 1,
+    "keyServerID": 15
+    },
+"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {}
+    }
+}
+----
+
+
+== 新規導入バージョン
+
+11.7

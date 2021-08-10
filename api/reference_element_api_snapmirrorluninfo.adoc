@@ -1,0 +1,111 @@
+---
+permalink: api/reference_element_api_snapmirrorluninfo.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorLunInfo 
+summary: snapMirrorLunInfo オブジェクトには、 ONTAP の LUN オブジェクトに関する情報が含まれます。 
+---
+= snapMirrorLunInfo の追加
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorLunInfo オブジェクトには、 ONTAP の LUN オブジェクトに関する情報が含まれます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+デスティネーション ONTAP システムの ID 。
+ a| 
+整数
+
+
+
+ a| 
+作成タイムスタンプ
+ a| 
+LUN の作成時刻。
+ a| 
+ISO 8601 形式の日付文字列
+
+
+
+ a| 
+LunName の略
+ a| 
+LUN の名前。
+ a| 
+文字列
+
+
+
+ a| 
+パス
+ a| 
+LUN のパス。
+ a| 
+文字列
+
+
+
+ a| 
+サイズ
+ a| 
+LUN のサイズ（バイト単位）。
+ a| 
+整数
+
+
+
+ a| 
+サイズは使用されません
+ a| 
+LUN で使用されているバイト数。
+ a| 
+整数
+
+
+
+ a| 
+状態
+ a| 
+LUN の現在のアクセス状態。有効な値は次のとおり
+
+* オンライン
+* オフラインです
+* foreign_lun_error
+* NVFail
+* スペースエラーです
+
+ a| 
+文字列
+
+
+
+ a| 
+ボリューム
+ a| 
+LUN が含まれているボリュームの名前。
+ a| 
+文字列
+
+
+
+ a| 
+Vserver
+ a| 
+LUN が含まれている SVM 。
+ a| 
+文字列
+
+|===

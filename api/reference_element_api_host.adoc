@@ -1,0 +1,82 @@
+---
+permalink: api/reference_element_api_host.html 
+sidebar: sidebar 
+keywords: object,objects,host 
+summary: host オブジェクトには、仮想ボリュームホストに関する情報が含まれます。ListVirtualVolumeHosts メソッドを使用すると、すべての仮想ボリュームホストに関する以下の情報を取得できます。 
+---
+= host カソウホリユウム
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+host オブジェクトには、仮想ボリュームホストに関する情報が含まれます。ListVirtualVolumeHosts メソッドを使用すると、すべての仮想ボリュームホストに関する以下の情報を取得できます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+バインド
+ a| 
+仮想ボリュームホストのバインディングの詳細を示すオブジェクトのリスト。
+ a| 
+整数の配列
+
+
+
+ a| 
+クラスタ ID
+ a| 
+このホストが関連付けられているクラスタの一意の ID 。
+ a| 
+UUID
+
+
+
+ a| 
+ホストアドレス
+ a| 
+仮想ボリュームホストの IP アドレスまたは DNS 名。
+ a| 
+文字列
+
+
+
+ a| 
+イニシエータ名
+ a| 
+仮想ボリュームホストのイニシエータ IQN のリスト。
+ a| 
+文字列の配列
+
+
+
+ a| 
+virtualVolumeHostID
+ a| 
+この仮想ボリュームホストの一意の ID 。
+ a| 
+UUID
+
+
+
+ a| 
+visibleProtocolEndpointID
+ a| 
+このホストが認識できるプロトコルエンドポイントの ID のリスト。
+ a| 
+UUID の配列
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_listvirtualvolumehosts.adoc[ListVirtualVolumeHosts を指定します]

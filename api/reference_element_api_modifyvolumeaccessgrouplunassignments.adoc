@@ -1,0 +1,135 @@
+---
+permalink: api/reference_element_api_modifyvolumeaccessgrouplunassignments.html 
+sidebar: sidebar 
+keywords: volumes,volume,defining,define,modify,modifying,edit,editing,change,changing,modifyvolumeaccessgrouplunassignments,access,group,lun,assignment 
+summary: ModifyVolumeAccessGroupLunAssignments メソッドを使用すると、特定のボリュームにカスタムの LUN の割り当てを定義できます。 
+---
+= ModifyVolumeAccessGroupLunAssignments
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 modifyVolumeAccessGroupLunAssignments 」メソッドを使用すると、特定のボリュームにカスタムの LUN の割り当てを定義できます。
+
+このメソッドでは、ボリュームアクセスグループ内の lunAssignments パラメータに設定された LUN 値のみを変更します。他のすべての LUN の割り当ては変更されません。
+
+LUN の割り当て値は、ボリュームアクセスグループ内のボリュームで一意である必要があります。ボリュームアクセスグループ内で重複する LUN 値を定義することはできません。ただし、別々のボリュームアクセスグループで同じ LUN 値を使用することはできます。
+
+
+NOTE: 有効な LUN 値は 0~16 、 383 です。この範囲外の LUN 値を渡すと例外が発生します。例外がある場合、指定した LUN の割り当ては変更されません。
+
+注意
+
+アクティブな I/O のあるボリュームの LUN の割り当てを変更すると、 I/O が中断される可能性があります。ボリュームの LUN の割り当てを変更する前に、サーバの設定を変更してください。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ボリュームアクセスグループ ID
+ a| 
+LUN の割り当てを変更する一意のボリュームアクセスグループ ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+lunAssignments を参照します
+ a| 
+ボリューム ID と新しい LUN の値。
+ a| 
+整数の配列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+ボリュームアクセスグループの LunAssignments
+ a| 
+ボリュームアクセスグループの変更後の LUN の割り当ての詳細を含むオブジェクト。
+ a| 
+JSON オブジェクト
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "ModifyVolumeAccessGroupLunAssignments",
+   "params": {
+       "volumeAccessGroupID" : 218,
+       "lunAssignments" : [
+           {"volumeID" : 832, "lun" : 0},
+           {"volumeID" : 834, "lun" : 1}
+        ]
+    },
+    "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeAccessGroupLunAssignments": {
+      "deletedLunAssignments": [],
+      "lunAssignments": [
+        {
+          "lun": 0,
+          "volumeID": 832
+        },
+        {
+          "lun": 1,
+          "volumeID": 834
+        }
+      ],
+      "volumeAccessGroupID": 218
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

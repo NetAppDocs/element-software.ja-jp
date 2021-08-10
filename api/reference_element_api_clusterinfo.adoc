@@ -1,0 +1,207 @@
+---
+permalink: api/reference_element_api_clusterinfo.html 
+sidebar: sidebar 
+keywords: element, api, object, objects, clusterInfo 
+summary: clusterInfo オブジェクトには、ノードとクラスタの通信で使用される情報が含まれます。GetClusterInfo API メソッドを使用すると、この情報を取得できます。 
+---
+= clusterInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+clusterInfo オブジェクトには、ノードとクラスタの通信で使用される情報が含まれます。GetClusterInfo API メソッドを使用すると、この情報を取得できます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+defaultProtectionScheme
+ a| 
+で保護方式を指定しないかぎり、新しいボリュームにデフォルトで使用される保護方式 xref:reference_element_api_createvolume.adoc[CreateVolume を使用します] メソッドの呼び出し。この保護方式は、常に有効な保護方式のセットに含まれている必要があります。
+ a| 
+文字列
+
+
+
+ a| 
+enableProtectionSchemes
+ a| 
+このストレージクラスタで有効になっているすべての保護方式のリスト。
+ a| 
+文字列の配列
+
+
+
+ a| 
+encryptionAtRestState
+ a| 
+保存データの暗号化機能の状態。有効な値は次のとおり
+
+* Enabling ：保存データの暗号化を有効にしています。
+* Enabled ：保存データの暗号化は有効です。
+* Disabling ：保存データの暗号化を無効にしています。
+* Disabled ：保存データの暗号化は無効です。
+
+ a| 
+文字列
+
+
+
+ a| 
+アンサンブル
+ a| 
+クラスタに参加しているノード。
+ a| 
+文字列の配列
+
+
+
+ a| 
+MVIP
+ a| 
+管理ネットワークのクラスタのフローティング（仮想） IP アドレス。
+ a| 
+文字列
+
+
+
+ a| 
+mvipInterface の略
+ a| 
+MVIP アドレスに関連付けられた物理インターフェイス。
+ a| 
+文字列
+
+
+
+ a| 
+mvipNodeID
+ a| 
+マスター MVIP アドレスを保持するノード。
+ a| 
+整数
+
+
+
+ a| 
+mvipVlanTag
+ a| 
+MVIP アドレスの VLAN 識別子。
+ a| 
+文字列
+
+
+
+ a| 
+名前
+ a| 
+一意のクラスタ名。
+ a| 
+文字列
+
+
+
+ a| 
+repCount （再カウント）
+ a| 
+クラスタに格納する各データのレプリカ数。有効な値は「 2 」です。
+ a| 
+整数
+
+
+
+ a| 
+ソフトウェア暗号化属性再起動状態
+ a| 
+ソフトウェアベースの保存データ暗号化ステート。
+ a| 
+文字列
+
+
+
+ a| 
+supportedProtectionSchemes
+ a| 
+このストレージクラスタでサポートされるすべての保護方式のリスト。
+ a| 
+文字列の配列
+
+
+
+ a| 
+svip
+ a| 
+ストレージ（ iSCSI ）ネットワークのクラスタのフローティング（仮想） IP アドレス。
+ a| 
+文字列
+
+
+
+ a| 
+svipInterface の略
+ a| 
+マスター SVIP アドレスに関連付けられた物理インターフェイス。
+ a| 
+文字列
+
+
+
+ a| 
+svipNodeID
+ a| 
+マスター SVIP アドレスを保持するノード。
+ a| 
+整数
+
+
+
+ a| 
+svipVlanTag
+ a| 
+マスター SVIP アドレスの VLAN 識別子。
+ a| 
+文字列
+
+
+
+ a| 
+UniqueID
+ a| 
+クラスタの一意の ID 。
+ a| 
+文字列
+
+
+
+ a| 
+UUID
+ a| 
+クラスタの一意の識別子。
+ a| 
+UUID
+
+|===
+[discrete]
+== 詳細については、こちらをご覧ください
+
+* link:../api/reference_element_api_getclusterinfo.html["GetClusterInfo を使用します"]
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire のリソースページ"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
+

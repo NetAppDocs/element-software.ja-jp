@@ -1,0 +1,50 @@
+---
+permalink: api/reference_element_api_protectionschemeresiliency.html 
+sidebar: sidebar 
+keywords: object,objects,protectionSchemeResiliency 
+summary: protectionSchemeResiliency オブジェクトには、特定の保護スキームについて、関連する protectionDomainType 内の 1 つ以上の障害からストレージクラスタが自動的に自己修復できるかどうかの情報が含まれます。ストレージクラスタは、単一のストレージノードに障害が発生した場合（ノードトレランス \ ）、データの読み取りと書き込みを継続できる場合に修復されたとみなされます。 
+---
+= protectionSchemeResiliency の
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+protectionSchemeResiliency オブジェクトには、特定の保護スキームについて、関連する protectionDomainType 内の 1 つ以上の障害からストレージクラスタが自動的に自己修復できるかどうかの情報が含まれます。ストレージクラスタは、単一のストレージノード（ノードトレランス）で障害が発生してもデータの読み取りと書き込みを継続できる場合、修復されたとみなされます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+保護スキーム
+ a| 
+このストレージクラスタの現在の保護方式。指定できる値は Double Helix のみです。
+ a| 
+文字列
+
+
+
+ a| 
+持続可能な障害 ForBlockData
+ a| 
+データのノードトレランスの状態に自動的に修復できなくなることなく同時に発生する可能性がある障害の予測数。
+ a| 
+整数
+
+
+
+ a| 
+持続可能な障害フォーメタデータ
+ a| 
+メタデータのノードトレランスの状態に自動的に修復できなくなることなく同時に発生する可能性がある障害の予測数。
+ a| 
+整数
+
+|===

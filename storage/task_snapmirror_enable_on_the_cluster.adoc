@@ -1,0 +1,28 @@
+---
+permalink: storage/task_snapmirror_enable_on_the_cluster.html 
+sidebar: sidebar 
+keywords: snapmirror, enable, cluster, ui, manually enable 
+summary: SnapMirror 機能は、 NetAppElement UI を使用してクラスタレベルで手動で有効にする必要があります。SnapMirror 機能はデフォルトでは無効になっており、新規インストール時やアップグレード時に自動的に有効になることはありません。SnapMirror 機能の有効化は 1 度だけ実行します。 
+---
+= クラスタで SnapMirror を有効にします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirror 機能は、 NetAppElement UI を使用してクラスタレベルで手動で有効にする必要があります。SnapMirror 機能はデフォルトでは無効になっており、新規インストール時やアップグレード時に自動的に有効になることはありません。SnapMirror 機能の有効化は 1 度だけ実行します。
+
+SnapMirror は、 Element ソフトウェアを実行しているクラスタで NetApp ONTAP システムのボリュームが使用されている場合にのみ有効にすることができます。クラスタが NetApp ONTAP ボリュームを使用する目的で接続されている場合にのみ、 SnapMirror 機能を有効にしてください。
+
+ストレージクラスタで NetApp Element ソフトウェアが実行されている必要があります。
+
+.手順
+. [ * クラスタ * ] 、 [ * 設定 * ] の順にクリックします。
+. クラスタ用の SnapMirror 設定を探します。
+. Enable SnapMirror * をクリックします。
++
+
+NOTE: SnapMirror 機能を有効にすると、 Element ソフトウェアの設定が永続的に変更されます。SnapMirror 機能を無効にしてデフォルト設定に戻すには、クラスタを工場出荷時のイメージに戻す必要があります。
+
+. 「 * Yes 」をクリックして、 SnapMirror 設定の変更を確認します。
+

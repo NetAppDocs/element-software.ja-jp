@@ -1,0 +1,1109 @@
+---
+permalink: api/reference_element_api_app_b_access_control.html 
+sidebar: sidebar 
+keywords: access,control,type 
+summary: Element API メソッドを使用できるかどうかは、設定するアクセスのタイプによって異なります。 
+---
+= Access Control の略
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element API メソッドを使用できるかどうかは、設定するアクセスのタイプによって異なります。
+
+
+
+== アカウント
+
+accounts アクセスタイプで使用できるメソッドは次のとおりです。
+
+|===
+
+
+ a| 
+追加アカウント
+
+
+
+ a| 
+GetAccountByID
+
+
+
+ a| 
+ModifyAccount の場合
+
+
+
+ a| 
+GetAccountByName の略
+
+
+
+ a| 
+ListAccounts の 2 つのグループ
+
+
+
+ a| 
+GetAccountEfficiency
+
+
+
+ a| 
+RemoveAccount を使用します
+
+|===
+
+
+== 管理者
+
+administrator アクセスタイプでは、すべてのメソッドを使用できます。
+
+
+
+== クラスタ管理者
+
+cluster admin アクセスタイプで使用できるメソッドは次のとおりです。
+
+|===
+
+
+ a| 
+AddClusterAdmin
+
+
+
+ a| 
+ListBackupTargets を参照します
+
+
+
+ a| 
+AddInitiatorsToVolumeAccessGroup
+
+
+
+ a| 
+ListBulkVolumeJobs
+
+
+
+ a| 
+AddLdapClusterAdmin
+
+
+
+ a| 
+ListClusterAdmins
+
+
+
+ a| 
+AddVirtualNetwork
+
+
+
+ a| 
+ListClusterPairs
+
+
+
+ a| 
+AddVirtualNetwork
+
+
+
+ a| 
+ListNodeFibreChannelPortInfo
+
+
+
+ a| 
+AddVolumeetoVolumeAccessGroup
+
+
+
+ a| 
+ListBackupTargets を参照します
+
+
+
+ a| 
+CloneMultipleVolumes
+
+
+
+ a| 
+ListDriveHardware の略
+
+
+
+ a| 
+CompleteClusterPairing
+
+
+
+ a| 
+ListFibreChannelSessions
+
+
+
+ a| 
+CompleteVolumePairing
+
+
+
+ a| 
+ListFibreChannelPortInfo
+
+
+
+ a| 
+CreateBackupTarget をクリックします
+
+
+
+ a| 
+ListGroupSnapshots を参照してください
+
+
+
+ a| 
+スケジュールの作成
+
+
+
+ a| 
+ListActivePairedVolumes
+
+
+
+ a| 
+CreateSnapshot の更新
+
+
+
+ a| 
+ModifyBackupTarget
+
+
+
+ a| 
+CreateSupportBundle を作成します
+
+
+
+ a| 
+ModifyClusterAdmin
+
+
+
+ a| 
+CreateClusterSupportBundle を作成します
+
+
+
+ a| 
+ModifyGroupSnapshot の追加
+
+
+
+ a| 
+CreateGroupSnapshot を作成します
+
+
+
+ a| 
+ModifyClusterFullThreshold のでした
+
+
+
+ a| 
+CreateVolumeAccessGroup
+
+
+
+ a| 
+ModifyVolumeAccessGroup の作成
+
+
+
+ a| 
+DeleteAllSupportBundles
+
+
+
+ a| 
+ModifyVolumeAccessGroupLunAssignments
+
+
+
+ a| 
+Snapshot を削除します
+
+
+
+ a| 
+ModifyVolumePair を使用します
+
+
+
+ a| 
+DeleteGroupSnapshot
+
+
+
+ a| 
+ModifyVirtualNetwork
+
+
+
+ a| 
+DeleteVolumeAccessGroup
+
+
+
+ a| 
+RemoveClusterAdmin
+
+
+
+ a| 
+DisableEncryptionAtRest
+
+
+
+ a| 
+RemoveVolumePair を使用します
+
+
+
+ a| 
+DisableLdapAuthentication の略
+
+
+
+ a| 
+RemoveVirtualNetwork
+
+
+
+ a| 
+DisableSnmp
+
+
+
+ a| 
+RemoveVolumesFromVolumeAccessGroup
+
+
+
+ a| 
+EnableEncryptionAtRest
+
+
+
+ a| 
+RemoveInitiatorsFromVolumeAccessGroup
+
+
+
+ a| 
+EnableLdapAuthentication の略
+
+
+
+ a| 
+RollbackToSnapshot
+
+
+
+ a| 
+EnableSnmp
+
+
+
+ a| 
+RollbackToGroupSnapshot
+
+
+
+ a| 
+GetBackupTarget
+
+
+
+ a| 
+SetLoginSessionInfo
+
+
+
+ a| 
+「 getClusterFullThreshold 」
+
+
+
+ a| 
+SetNtpInfo の値を指定します
+
+
+
+ a| 
+GetClusterMasterNodeID
+
+
+
+ a| 
+SetSnmpACL の場合
+
+
+
+ a| 
+GetHardwareConfig の実行
+
+
+
+ a| 
+SetSnmpInfo のサービス
+
+
+
+ a| 
+GetLdapConfiguration を実行します
+
+
+
+ a| 
+SetSnmpTrapInfo の順にクリックしてください
+
+
+
+ a| 
+GetLoginSessionInfo
+
+
+
+ a| 
+SetRemoteLoggingHosts
+
+
+
+ a| 
+GetNtpInfo を使用します
+
+
+
+ a| 
+シャットダウン
+
+
+
+ a| 
+GetNvramInfo をクリックします
+
+
+
+ a| 
+StartBulkVolumeRead
+
+
+
+ a| 
+GetRawStats
+
+
+
+ a| 
+StartBulkVolumeWrite
+
+
+
+ a| 
+GetSnmpACL を追加します
+
+
+
+ a| 
+StartClusterPairing を参照してください
+
+
+
+ a| 
+GetVolumeAccessGroupEfficiency の更新
+
+
+
+ a| 
+StartVolumePairing を参照してください
+
+
+
+ a| 
+GetVolumeAccessLunAssignments というエラーが発生しました
+
+
+
+ a| 
+TestLdapAuthentication の略
+
+
+
+ a| 
+GetVirtualNetwork
+
+
+
+ a| 
+
+|===
+
+
+== ドライブ
+
+drives アクセスタイプで使用できるメソッドは次のとおりです。
+
+|===
+
+
+ a| 
+ListDrives の 2 つのメソッド
+
+
+
+ a| 
+RemoveDrives の 2 つのコマンド
+
+
+
+ a| 
+AddDrives
+
+
+
+ a| 
+SecureEraseDrives の 2 つの特長を説明
+
+|===
+
+
+== ノード
+
+nodes アクセスタイプで使用できるメソッドは次のとおりです。
+
+|===
+
+
+ a| 
+AddNodes
+
+
+
+ a| 
+ListPendingNodes
+
+
+
+ a| 
+ListActiveNodes
+
+
+
+ a| 
+RemoveNodes
+
+|===
+
+
+== 読み取り
+
+read アクセスタイプで使用できるメソッドは次のとおりです。
+
+|===
+
+
+ a| 
+GetAccountByID
+
+
+
+ a| 
+ListCloneJobs
+
+
+
+ a| 
+GetAccountByName の略
+
+
+
+ a| 
+ListDeletedVolumes の場合
+
+
+
+ a| 
+GetAsyncResult
+
+
+
+ a| 
+ListDriveHardware の略
+
+
+
+ a| 
+GetClusterCapacity
+
+
+
+ a| 
+ListDrives の 2 つのメソッド
+
+
+
+ a| 
+GetDefaultQoS の設定
+
+
+
+ a| 
+ListEvents の場合
+
+
+
+ a| 
+GetDriveStats
+
+
+
+ a| 
+ListISCSISessions
+
+
+
+ a| 
+GetSoftwareUpgrade
+
+
+
+ a| 
+ListPendingNodes
+
+
+
+ a| 
+GetVolumeStats
+
+
+
+ a| 
+ListSyncJobs
+
+
+
+ a| 
+ListAccounts の 2 つのグループ
+
+
+
+ a| 
+ListVolumeAccessGroups の実行
+
+
+
+ a| 
+ListActiveNodes
+
+
+
+ a| 
+ListVolumeStatsByAccount
+
+
+
+ a| 
+ListActiveNodes
+
+
+
+ a| 
+ListVolumeStatsByVolume を参照してください
+
+
+
+ a| 
+ListActiveVolumes の場合
+
+
+
+ a| 
+ListVolumeStatsByVolumeAccessGroup
+
+
+
+ a| 
+ListAllNodes
+
+
+
+ a| 
+ListVolumesForAccount を実行します
+
+
+
+ a| 
+ListBackupTargets を参照します
+
+|===
+
+
+== レポート作成
+
+reporting アクセスタイプで使用できるメソッドは次のとおりです。
+
+|===
+
+
+ a| 
+ClearClusterFaults
+
+
+
+ a| 
+GetVolumeEfficiency を使用します
+
+
+
+ a| 
+GetAccountEfficiency
+
+
+
+ a| 
+GetVolumeStats
+
+
+
+ a| 
+GetClusterCapacity
+
+
+
+ a| 
+ListCloneJobs
+
+
+
+ a| 
+GetClusterHardwareInfo
+
+
+
+ a| 
+ListClusterFaults
+
+
+
+ a| 
+GetClusterInfo を使用します
+
+
+
+ a| 
+ListClusterPairs
+
+
+
+ a| 
+GetClusterMasterNodeID
+
+
+
+ a| 
+ListDriveHardware の略
+
+
+
+ a| 
+GetClusterStats から参照できます
+
+
+
+ a| 
+ListEvents の場合
+
+
+
+ a| 
+GetDriveHardwareInfo
+
+
+
+ a| 
+ListISCSISessions
+
+
+
+ a| 
+GetDriveStats
+
+
+
+ a| 
+ListSchedules （リストスケジュール
+
+
+
+ a| 
+GetNetworkConfig （ GetNetworkConfig ）
+
+
+
+ a| 
+ListServices の場合
+
+
+
+ a| 
+GetNodeHardwareInfo
+
+
+
+ a| 
+ListSyncJobs
+
+
+
+ a| 
+GetNodeStats
+
+
+
+ a| 
+ListVirtualNetworks のように指定します
+
+
+
+ a| 
+GetSnmpInfo を追加します
+
+
+
+ a| 
+ListVolumeStatsByAccount
+
+
+
+ a| 
+GetSnmpTrapInfo をクリックします
+
+
+
+ a| 
+ListVolumeStatsByVolume を参照してください
+
+
+
+ a| 
+GetVolumeAccessGroupEfficiency の更新
+
+
+
+ a| 
+ListVolumeStatsByVolumeAccessGroup
+
+|===
+
+
+== リポジトリ
+
+repositories アクセスタイプでは、 ListAllNodes メソッドを使用できます。
+
+
+
+== 個のボリューム
+
+volumes アクセスタイプで使用できるメソッドは次のとおりです。
+
+|===
+
+
+ a| 
+CreateVolume を使用します
+
+
+
+ a| 
+DeleteVolume
+
+
+
+ a| 
+ModifyBackupTarget
+
+
+
+ a| 
+CloneVolume
+
+
+
+ a| 
+DeleteVolumePairing
+
+
+
+ a| 
+ModifyVolumes の場合に使用でき
+
+
+
+ a| 
+CloneMultipleVolumes
+
+
+
+ a| 
+GetBackupTarget
+
+
+
+ a| 
+ModifyVolumePair を使用します
+
+
+
+ a| 
+CreateBackupTarget をクリックします
+
+
+
+ a| 
+GetDefaultQoS の設定
+
+
+
+ a| 
+PurgeDeletedVolume のこと
+
+
+
+ a| 
+CreateSnapshot の更新
+
+
+
+ a| 
+ListActiveVolumes の場合
+
+
+
+ a| 
+RemoveBackupTarget
+
+
+
+ a| 
+CreateGroupSnapshot を作成します
+
+
+
+ a| 
+ListBackupTarget を参照してください
+
+
+
+ a| 
+RemoveVolumePair を使用します
+
+
+
+ a| 
+CompleteVolumePairing
+
+
+
+ a| 
+ListGroupSnapshots を参照してください
+
+
+
+ a| 
+RestoreDeletedVolume
+
+
+
+ a| 
+CloneMultipleVolumes
+
+
+
+ a| 
+ListVolumesForAccount を実行します
+
+
+
+ a| 
+RollbackToGroupSnapshot
+
+
+
+ a| 
+DeleteGroupSnapshot
+
+
+
+ a| 
+ListDeletedVolumes の場合
+
+
+
+ a| 
+RollbackToSnapshot
+
+
+
+ a| 
+Snapshot を削除します
+
+
+
+ a| 
+ListGroupSnapshots を参照してください
+
+
+
+ a| 
+StartBulkVolumeRead
+
+
+
+ a| 
+StartBulkVolumeWrite
+
+
+
+ a| 
+StartVolumePairing を参照してください
+
+
+
+ a| 
+UpdateBulkVolumeStatus
+
+|===
+
+
+== 書き込み
+
+write アクセスタイプで使用できるメソッドは次のとおりです。
+
+|===
+
+
+ a| 
+AddDrives
+
+
+
+ a| 
+RemoveNodes
+
+
+
+ a| 
+AddNodes
+
+
+
+ a| 
+RemoveAccount を使用します
+
+
+
+ a| 
+追加アカウント
+
+
+
+ a| 
+RemoveVolumesFromVolumeAccessGroup
+
+
+
+ a| 
+AddVolumeToVolumeAccessGroup
+
+
+
+ a| 
+RemoveInitiatorsFromVolumeAccessGroup
+
+
+
+ a| 
+AddInitiatorsToVolumeAccessGroup
+
+
+
+ a| 
+DeleteVolumeAccessGroup
+
+
+
+ a| 
+CreateVolumeAccessGroup
+
+
+
+ a| 
+DeleteVolume
+
+
+
+ a| 
+ModifyVolumeAccessGroup の作成
+
+
+
+ a| 
+RestoreDeletedVolume
+
+
+
+ a| 
+ModifyAccount の場合
+
+
+
+ a| 
+PurgeDeletedVolume のこと
+
+
+
+ a| 
+CreateVolume を使用します
+
+
+
+ a| 
+ModifyVolume の追加
+
+
+
+ a| 
+CloneVolume
+
+
+
+ a| 
+GetAsyncResult
+
+
+
+ a| 
+RemoveDrives の 2 つのコマンド
+
+|===

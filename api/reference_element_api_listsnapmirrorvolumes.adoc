@@ -1,0 +1,105 @@
+---
+permalink: api/reference_element_api_listsnapmirrorvolumes.html 
+sidebar: sidebar 
+keywords: snapmirror,volume,list,listing,volumes,listsnapmirrorvolumes,ontap 
+summary: Element ソフトウェア Web UI は、 ListSnapMirrorVolumes メソッドを使用して、リモート ONTAP システムで使用可能なすべての SnapMirror ボリュームをリストします。 
+---
+= ListSnapMirrorVolumes
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element ソフトウェア Web UI は、「 ListSnapMirrorVolumes 」メソッドを使用して、リモート ONTAP システムで使用可能なすべての SnapMirror ボリュームを一覧表示します。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+指定したエンドポイント ID に関連付けられているボリュームのみをリストします。エンドポイント ID を指定しない場合は、認識されているすべての SnapMirror エンドポイントのボリュームがリストされます。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+Vserver
+ a| 
+指定した SVM でホストされているボリュームをリストします。SVM のタイプが「 data 」である必要があります。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+名前
+ a| 
+指定した名前の ONTAP ボリュームのみをリストします。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+
+
+ a| 
+を入力します
+ a| 
+指定したタイプの ONTAP ボリュームのみをリストします。有効な値は次のとおり
+
+* rw ：読み書き可能なボリューム
+* ls ：負荷共有ボリューム
+* dp ：データ保護ボリューム
+
+ a| 
+文字列
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+snapMirrorVolumes のことです
+ a| 
+ONTAP ストレージシステムで使用可能な SnapMirror ボリュームのリスト。
+ a| 
+xref:reference_element_api_snapmirrorvolume.adoc[snapMirrorVolume] 配列
+
+|===
+
+
+== 新規導入バージョン
+
+10.1

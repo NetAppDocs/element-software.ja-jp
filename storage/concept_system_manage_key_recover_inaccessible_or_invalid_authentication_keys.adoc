@@ -1,0 +1,34 @@
+---
+permalink: storage/concept_system_manage_key_recover_inaccessible_or_invalid_authentication_keys.html 
+sidebar: sidebar 
+keywords: slice drive error, cluster fault, authentication keys 
+summary: 場合によっては、ユーザの介入を必要とするエラーが発生することがあります。エラーが発生すると、クラスタ障害が生成されます。ここでは、最も可能性の高い 2 つのケースについて説明します。 
+---
+= アクセス不可または無効な認証キーをリカバリします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+場合によっては、ユーザの介入を必要とするエラーが発生することがあります。エラーが発生すると、クラスタ障害（クラスタ障害コードと呼ばれる）が生成されます。ここでは、最も可能性の高い 2 つのケースについて説明します。
+
+
+
+== 「 KmipServerFault 」クラスタエラーが原因で、クラスタがドライブのロックを解除できません。
+
+これは、クラスタの初回ブート時にキーサーバにアクセスできないか、必要なキーを使用できない場合に発生します。
+
+. クラスタ障害コードのリカバリ手順に従います（該当する場合）。
+
+
+
+
+== メタデータドライブが障害としてマークされ、「 Available 」状態になっているため、 sliceServiceUnhealthy エラーが表示される場合があります。
+
+クリアする手順：
+
+. ドライブを再度追加します。
+. 3 ～ 4 分後に 'lseServiceUnhealthy の障害がクリアされていることを確認します
+
+
+を参照してください link:reference_monitor_cluster_fault_codes.html["クラスタ障害コード"] を参照してください。

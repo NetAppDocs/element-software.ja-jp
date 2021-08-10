@@ -1,0 +1,126 @@
+---
+permalink: api/reference_element_api_createidpconfiguration.html 
+sidebar: sidebar 
+keywords: IdP,idp,configuration,create,creating 
+summary: CreateIpdConfiguration メソッドを使用すると、クラスタにサードパーティのアイデンティティプロバイダ \ （ IdP \ ）を使用して認証用の信頼関係を作成できます。IdP 通信には SAML サービスプロバイダ証明書が必要です。この証明書は必要に応じて生成され、この API 呼び出しで返されます。 
+---
+= CreateIdpConfiguration を実行します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 CreateIpdConfiguration 」メソッドを使用すると、クラスタにサードパーティのアイデンティティプロバイダ（ IdP ）を使用して認証の信頼関係を作成できます。IdP 通信には SAML サービスプロバイダ証明書が必要です。この証明書は必要に応じて生成され、この API 呼び出しで返されます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+idpMetadata のことです
+ a| 
+保存する IdP メタデータ。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+
+
+ a| 
+idpName
+ a| 
+SAML 2.0 シングルサインオンの IdP プロバイダを識別するための名前。
+ a| 
+文字列
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+idpConfigInfo
+ a| 
+サードパーティのアイデンティティプロバイダ（ IdP ）の設定に関する情報。
+ a| 
+link:reference_element_api_idpconfiginfo.md#GUID-7DAF8B5D-7803-417F-822B-F5B1A4E3EA93["idpConfigInfo"]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+    "method": "CreateIdpConfiguration",
+    "params": {
+        "idpMetadata": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+             <EntityDescriptor
+               xmlns=\"urn:oasis:names:tc:SAML:2.0:metadata\"
+               xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\"
+               xmlns:shibmd=\"urn:mace:shibboleth:metadata:1.0\"
+               xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"
+               ...</Organization>
+             </EntityDescriptor>",
+        "idpName": "https://provider.name.url.com"
+    },
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+    "result": {
+        "idpConfigInfo": {
+        "enabled": false,
+        "idpConfigurationID": "f983c602-12f9-4c67-b214-bf505185cfed",
+        "idpMetadata": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n
+        <EntityDescriptor xmlns=\"urn:oasis:names:tc:SAML:2.0:metadata\"\r\n
+        xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\"\r\n
+        xmlns:shibmd=\"urn:mace:shibboleth:metadata:1.0\"\r\n
+        xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\r\n
+        ... </Organization>\r\n
+        </EntityDescriptor>",
+        "idpName": "https://privider.name.url.com",
+        "serviceProviderCertificate": "-----BEGIN CERTIFICATE-----\n
+        MIID...SlBHi\n
+        -----END CERTIFICATE-----\n",
+        "spMetadataUrl": "https://10.193.100.100/auth/ui/saml2"
+        }
+    }
+}
+----
+
+
+== 新規導入バージョン
+
+12.0

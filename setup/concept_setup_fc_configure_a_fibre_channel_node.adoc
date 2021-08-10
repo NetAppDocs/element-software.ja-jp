@@ -1,0 +1,37 @@
+---
+permalink: setup/concept_setup_fc_configure_a_fibre_channel_node.html 
+sidebar: sidebar 
+keywords:  
+summary: Fibre Channel ノードを使用すると、クラスタを Fibre Channel ネットワークファブリックに接続できます。Fibre Channel ノードはペアで追加され、アクティブ / アクティブモードで動作します（すべてのノードがクラスタのトラフィックをアクティブに処理します）。Element ソフトウェアバージョン 9.0 以降を実行しているクラスタは、最大 4 つのノードをサポートします。以前のバージョンを実行しているクラスタは、最大 2 つのノードをサポートします。 
+---
+= Fibre Channel ノードを設定
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Fibre Channel ノードを使用すると、クラスタを Fibre Channel ネットワークファブリックに接続できます。Fibre Channel ノードはペアで追加され、アクティブ / アクティブモードで動作します（すべてのノードがクラスタのトラフィックをアクティブに処理します）。Element ソフトウェアバージョン 9.0 以降を実行しているクラスタは、最大 4 つのノードをサポートします。以前のバージョンを実行しているクラスタは、最大 2 つのノードをサポートします。
+
+Fibre Channel ノードを設定する前に、次の条件を満たしていることを確認する必要があります。
+
+* 少なくとも 2 つの Fibre Channel ノードが Fibre Channel スイッチに接続されている。
+* すべての SolidFire ファイバチャネルポートをファイバチャネルファブリックに接続する必要があります。4 つの SolidFire Bond10G ネットワーク接続を、スイッチレベルで 1 つの LACP ボンドグループに接続する必要があります。これにより、 Fibre Channel システム全体で最高のパフォーマンスを実現できます。
+* ネットアップの技術情報アーティクルに記載されているファイバチャネルクラスタのベストプラクティスをすべて確認し、検証してください。
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/SolidFire_FC_cluster_best_practice["SolidFire FC クラスタのベストプラクティス"]
+
+
+
+ネットワークとクラスタの設定手順は、 Fibre Channel ノードとストレージノードで同じです。
+
+Fibre Channel ノードと SolidFire ストレージノードを含む新しいクラスタを作成すると、ノードの World Wide Port Name （ WWPN ）アドレスが Element UI で使用できるようになります。WWPN アドレスを使用して、 Fibre Channel スイッチをゾーニングできます。
+
+WWPN は、ノードを含む新しいクラスタの作成時にシステムに登録されます。Element UI では、 FC Ports タブの WWPN 列から WWPN アドレスを確認できます。これらの列には、 Cluster タブからアクセスできます。
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:task_setup_fc_add_fibre_channel_nodes_to_a_cluster.adoc[クラスタに Fibre Channel ノードを追加します]
+
+xref:task_setup_fc_create_a_new_cluster_with_fibre_channel_nodes.adoc[Fibre Channel ノードを含む新しいクラスタを作成します]

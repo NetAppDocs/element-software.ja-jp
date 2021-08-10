@@ -1,0 +1,58 @@
+---
+permalink: api/reference_element_api_disableldapauthentication.html 
+sidebar: sidebar 
+keywords: LDAP,authentication,auth,disable,disabling,DisableLdapAuthentication 
+summary: DisableLdapAuthentication メソッドを使用すると、 LDAP 認証を無効にし、すべての LDAP 構成設定を削除できます。ユーザまたはグループに対する設定済みのクラスタ管理者アカウントは削除されません。LDAP 認証を無効にすると、 LDAP 認証を使用するように設定されているクラスタ管理者はクラスタにアクセスできなくなります。 
+---
+= DisableLdapAuthentication の略
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 DisableLdapAuthentication 」メソッドを使用すると、 LDAP 認証を無効にし、すべての LDAP 設定を削除できます。ユーザまたはグループに対する設定済みのクラスタ管理者アカウントは削除されません。LDAP 認証を無効にすると、 LDAP 認証を使用するように設定されているクラスタ管理者はクラスタにアクセスできなくなります。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "DisableLdapAuthentication",
+  "params": {},
+"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+"id": 1,
+"result": {}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

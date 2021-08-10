@@ -1,0 +1,125 @@
+---
+permalink: api/reference_element_api_enableencryptionatrest.html 
+sidebar: sidebar 
+keywords: encryption,enable,enabling,EnableEncryptionAtRest 
+summary: EnableEncryptionAtRest メソッドを使用すると、クラスタの保存データの Advanced Encryption Standard\ （ AES\ ） 256 ビット暗号化を有効にできます。これにより、各ノードのドライブで使用される暗号化キーをクラスタで管理できるようになります。この機能はデフォルトでは有効になっていません。 
+---
+= EnableEncryptionAtRest
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+EnableEncryptionAtRest メソッドを使用すると、クラスタの保存データの Advanced Encryption Standard （ AES ） 256 ビット暗号化を有効にできます。これにより、各ノードのドライブで使用される暗号化キーをクラスタで管理できるようになります。この機能はデフォルトでは有効になっていません。
+
+
+NOTE: この方法では、保存データのソフトウェア暗号化は有効になりません。これは、を使用した場合にのみ実行できます link:../api/reference_element_api_createcluster.html["クラスタメソッドを作成します"] enableSoftwareEncryptionAtRest を「 true 」に設定します。
+
+保存データの暗号化を有効にすると、クラスタ内の各ノードのドライブについて、暗号化キーがクラスタ内部で自動的に管理されます。
+
+keyProviderID を指定すると、キープロバイダのタイプに応じてパスワードが生成され、取得されます。KMIP キープロバイダの場合は、通常 Key Management Interoperability Protocol （ KMIP ）キーサーバが使用されます。この処理の実行後、指定したプロバイダはアクティブとみなされ、「 D isableEncryptionAtRest 」メソッドを使用して保存データの暗号化を無効にするまで削除できません。
+
+
+NOTE: モデル番号が「 -NE 」で終わるノードタイプでは、「 EnableEncryptionAtRest 」メソッド呼び出しが「 Encryption not allowed.Cluster detected non-encryptable node. 」という応答で失敗します。
+
+
+NOTE: 暗号化を有効または無効にできるのは、クラスタが正常な状態で稼働している場合のみです。必要に応じて、必要に応じて暗号化を有効または無効にすることができます。
+
+
+NOTE: このプロセスは非同期であり、暗号化が有効になる前に応答を返します。GetClusterInfo メソッドを使用すると、システムをポーリングしてプロセスがいつ完了したかを確認できます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+KeyProviderID
+ a| 
+使用する KMIP キープロバイダの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "EnableEncryptionAtRest",
+   "params": {},
+   "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの EnableEncryptionAtRest メソッドの応答例を次に示します。レポートする結果はありません。
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {}
+}
+----
+GetClusterInfo でクラスタの保存データの暗号化を有効にしている間、保存データの暗号化の状態（「 encryptionAtRestState 」）は「 enabling 」と出力されます。保存データの暗号化の有効化が完了すると、返される状態は「 enabled 」に変わります。
+
+[listing]
+----
+{
+   "id": 1,
+      "result": {
+         "clusterInfo": {
+            "attributes": { },
+               "encryptionAtRestState": "enabling",
+            "ensemble": [
+               "10.10.5.94",
+               "10.10.5.107",
+               "10.10.5.108"
+            ],
+            "mvip": "192.168.138.209",
+            "mvipNodeID": 1,
+            "name": "Marshall",
+            "repCount": 2,
+            "svip": "10.10.7.209",
+            "svipNodeID": 1,
+            "uniqueID": "91dt"
+      }
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+[discrete]
+== 詳細については、こちらをご覧ください
+
+* link:reference_element_api_secureerasedrives.html["SecureEraseDrives の 2 つの特長を説明"]
+* link:reference_element_api_getclusterinfo.html["GetClusterInfo を使用します"]
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire のリソースページ"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
+

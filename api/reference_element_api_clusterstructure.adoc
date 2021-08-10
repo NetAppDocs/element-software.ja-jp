@@ -1,0 +1,47 @@
+---
+permalink: api/reference_element_api_clusterstructure.html 
+sidebar: sidebar 
+keywords: objects,cluster,structure,clusterStructure,object 
+summary: clusterStructure オブジェクトには、 GetClusterStructure メソッドで作成されたクラスタ構成のバックアップ情報が保持されます。SetClusterStructure メソッドを使用すると、再構築中のストレージクラスタにこの情報をリストアできます。 
+---
+= クラスタ構造
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+clusterStructure オブジェクトには、 GetClusterStructure メソッドで作成されたクラスタ構成のバックアップ情報が保持されます。SetClusterStructure メソッドを使用すると、再構築中のストレージクラスタにこの情報をリストアできます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトには、次のメソッドから返された情報がすべて格納されます。
+
+* xref:reference_element_api_getclusterinfo.adoc[GetClusterInfo を使用します]
+* xref:reference_element_api_listaccounts.adoc[ListAccounts の 2 つのグループ]
+* xref:reference_element_api_listinitiators.adoc[ListInitiators の 1 つです]
+* xref:reference_element_api_listvolumes.adoc[ListVolumes の場合] (includeVirtualVolumes=false)
+* xref:reference_element_api_listvolumeaccessgroups.adoc[ListVolumeAccessGroups の実行]
+* xref:reference_element_api_liststoragecontainers.adoc[ListStorageContainers]
+* xref:reference_element_api_listqospolicies.adoc[ListQoSPolicies の順にクリックします]
+* xref:reference_element_api_getsnmpinfo.adoc[GetSnmpInfo を追加します]
+* xref:reference_element_api_getntpinfo.adoc[GetNtpInfo を使用します]
+* xref:reference_element_api_listvirtualnetworks.adoc[ListVirtualNetworks のように指定します]
+* xref:reference_element_api_listclusteradmins.adoc[ListClusterAdmins]
+* xref:reference_element_api_listschedules.adoc[ListSchedules （リストスケジュール]
+* xref:reference_element_api_listsnapmirrorendpoints.adoc[ListSnapMirrorEndpoints を指定します]
+* xref:reference_element_api_getfeaturestatus.adoc[GetFeatureStatus の順にクリックします]
+* xref:reference_element_api_getldapconfiguration.adoc[GetLdapConfiguration を実行します]
+* xref:reference_element_api_getremotelogginghosts.adoc[GetRemoteLoggingHosts]
+* xref:reference_element_api_getdefaultqos.adoc[GetDefaultQoS の設定]
+* xref:reference_element_api_getvolumeaccessgrouplunassignments.adoc[GetVolumeAccessGroupLunAssignments というエラーが発生しました]
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* xref:reference_element_api_getclusterstructure.adoc[GetClusterStructure （ GetClusterStructure ）]
+* xref:reference_element_api_setclusterstructure.adoc[SetClusterStructure の場合]
+

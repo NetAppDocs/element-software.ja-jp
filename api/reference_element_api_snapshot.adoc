@@ -1,0 +1,222 @@
+---
+permalink: api/reference_element_api_snapshot.html 
+sidebar: sidebar 
+keywords: object,objects,snapshot 
+summary: snapshot オブジェクトには、ボリューム用に作成した Snapshot の情報が含まれます。listsnapshots API メソッドを使用すると、 1 つまたはすべてのボリュームの Snapshot 情報のリストを取得できます。オブジェクトには、アクティブな Snapshot とボリューム用に作成した各 Snapshot の情報が含まれます。 
+---
+= スナップショット
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapshot オブジェクトには、ボリューム用に作成した Snapshot の情報が含まれます。listsnapshots API メソッドを使用すると ' ボリュームまたはすべてのボリュームのスナップショット情報のリストを取得できますオブジェクトには、アクティブな Snapshot とボリューム用に作成した各 Snapshot の情報が含まれます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+属性（ Attributes ）
+ a| 
+JSON オブジェクト形式の名前と値のペアのリスト。
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
+チェックサム
+ a| 
+格納された Snapshot のデータを表す短い文字列。このチェックサムを使用して、あとで他の Snapshot と比較してデータ内のエラーを検出できます。
+ a| 
+文字列
+
+
+
+ a| 
+CreateTime をクリックします
+ a| 
+UTC+0 形式のスナップショットが作成された時刻。
+ a| 
+ISO 8601 形式の日付文字列
+
+
+
+ a| 
+enableRemoteReplication
+ a| 
+Snapshot のリモートレプリケーションが有効かどうかを示します。
+ a| 
+ブール値
+
+
+
+ a| 
+有効期限の理由
+ a| 
+スナップショットの有効期限がどのように設定されているかを示します有効な値は次のとおり
+
+* Api ：有効期限は API を使用して設定されています。
+* None ：有効期限は設定されていません。
+* Test ：有効期限はテスト用に設定されています。
+* FIFO ：期限切れは、ファースト・イン・ファースト・アウト・ベースで発生します。
+
+ a| 
+文字列
+
+
+
+ a| 
+有効期限
+ a| 
+この Snapshot の有効期限が終了し、クラスタからパージされる時刻。
+ a| 
+ISO 8601 形式の日付文字列
+
+
+
+ a| 
+グループ ID
+ a| 
+グループ ID （ Snapshot がグループ Snapshot のメンバーである場合）。
+ a| 
+整数
+
+
+
+ a| 
+groupsnapshotUUID
+ a| 
+グループ内の各 Snapshot の情報が含まれます。各メンバーには、 Snapshot の UUID に対する UUID パラメータが指定されます。
+ a| 
+文字列
+
+
+
+ a| 
+instanceCreateTime です
+ a| 
+ローカルクラスタで Snapshot が作成された時刻。
+ a| 
+ISO 8601 形式の日付文字列
+
+
+
+ a| 
+instanceSnapshotUUID
+ a| 
+ローカルクラスタ上の Snapshot の UUID 。この ID は他のクラスタにレプリケートされません。
+ a| 
+文字列
+
+
+
+ a| 
+名前
+ a| 
+Snapshot に割り当てられた一意の名前。名前を指定しない場合、名前は UTC+0 形式の、 Snapshot 作成時のタイムスタンプになります。
+ a| 
+文字列
+
+
+
+ a| 
+remoteStatsuses
+ a| 
+ソースクラスタから見た、ターゲットクラスタ上の各リモート Snapshot のユニバーサル識別子とレプリケーションステータスを含む配列。
+ a| 
+xref:reference_element_api_remoteclustersnapshotstatus.adoc[remoteClusterSnapshotStatus の 2 つのグループがあり] 配列
+
+
+
+ a| 
+snapMirrorLabel のことです
+ a| 
+SnapMirror エンドポイントでの Snapshot 保持ポリシーを指定するために SnapMirror ソフトウェアで使用されるラベル。設定されていない場合、この値は null です。
+ a| 
+文字列
+
+
+
+ a| 
+Snapshot ID
+ a| 
+既存の Snapshot の一意の ID 。
+ a| 
+文字列
+
+
+
+ a| 
+Snapshot UUID
+ a| 
+既存の Snapshot の UUID 。この ID は、クラスタ間で Snapshot がレプリケートされるときに一緒にレプリケートされ、クラスタ間で Snapshot を識別するために使用されます。
+ a| 
+文字列
+
+
+
+ a| 
+ステータス
+ a| 
+Snapshot の現在のステータス。有効な値は次のとおり
+
+* unknown ： Snapshot のステータスを取得するときにエラーが発生しました。
+* Preparing ：この Snapshot は使用準備中で、まだ書き込みができません。
+* RemoteSyncing ：この Snapshot はリモートクラスタからレプリケート中です。
+* Done ： Snapshot の準備またはレプリケーションが完了し、使用可能な状態です。
+* Active ：この Snapshot はアクティブブランチです。
+* cloning ：この Snapshot は CopyVolume 処理に関連します。
+
+ a| 
+文字列
+
+
+
+ a| 
+合計サイズ
+ a| 
+Snapshot の合計サイズ（バイト）。
+ a| 
+整数
+
+
+
+ a| 
+virtualVolumeID
+ a| 
+この Snapshot に関連付けられた仮想ボリュームの ID 。
+ a| 
+UUID
+
+
+
+ a| 
+ボリューム ID
+ a| 
+Snapshot の作成元のボリュームの ID 。
+ a| 
+整数
+
+
+
+ a| 
+ボリューム名
+ a| 
+Snapshot が作成された時点でのボリュームの名前。
+ a| 
+文字列
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_listsnapshots.adoc[Listsnapshots を使用します]

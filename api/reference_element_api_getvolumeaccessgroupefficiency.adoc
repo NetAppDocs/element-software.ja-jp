@@ -1,0 +1,132 @@
+---
+permalink: api/reference_element_api_getvolumeaccessgroupefficiency.html 
+sidebar: sidebar 
+keywords: volume,volumes,get,getting,access,group,efficiency,GetVolumeAccessGroupEfficiency 
+summary: GetVolumeAccessGroupEfficiency メソッドを使用すると、ボリュームアクセスグループの効率性に関する情報を取得できます。容量の計算には、この API メソッドのパラメータとして指定したボリュームアクセスグループのみが使用されます。 
+---
+= GetVolumeAccessGroupEfficiency の更新
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 GetVolumeAccessGroupEfficiency 」メソッドを使用すると、ボリュームアクセスグループの効率性に関する情報を取得できます。容量の計算には、この API メソッドのパラメータとして指定したボリュームアクセスグループのみが使用されます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+ボリュームアクセスグループ ID
+ a| 
+容量を計算するボリュームアクセスグループを指定します。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+
+
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+圧縮
+ a| 
+ボリュームアクセスグループ内のすべてのボリュームの、データ圧縮によって削減された容量。値は比率で示され、「 1 」はデータが圧縮されずに格納されたことを意味します。
+ a| 
+浮動小数点
+
+
+
+ a| 
+重複排除
+ a| 
+ボリュームアクセスグループ内のすべてのボリュームの、データの重複排除によって削減された容量。比率として示されます。
+ a| 
+浮動小数点
+
+
+
+ a| 
+シンプロビジョニング
+ a| 
+使用済みスペースとデータの格納用に割り当てられたスペースの比率。比率として示されます。
+ a| 
+浮動小数点
+
+
+
+ a| 
+タイムスタンプ
+ a| 
+前回、ガベージコレクション後に効率性のデータが収集された時刻。
+ a| 
+ISO 8601 形式の日付文字列
+
+
+
+ a| 
+missingVolumes
+ a| 
+効率性に関するデータを照会できなかったボリューム。原因としては、前回のガベージコレクションからあまり時間が経過していない、一時的なネットワーク接続の切断、またはガベージコレクションサイクル後のサービスの再起動があります。
+ a| 
+整数の配列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "GetVolumeAccessGroupEfficiency",
+   "params": {
+      "volumeAccessGroupID": 1
+   },
+   "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+       "compression": 2.006012925331075,
+       "deduplication": 1,
+       "missingVolumes": [],
+       "thinProvisioning": 1.009861932938856,
+       "timestamp": "2014-03-10T17:05:27Z"
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

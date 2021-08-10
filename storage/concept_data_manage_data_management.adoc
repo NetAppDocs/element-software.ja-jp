@@ -1,0 +1,26 @@
+---
+permalink: storage/concept_data_manage_data_management.html 
+sidebar: sidebar 
+keywords: virtual volumes, volumes, manage 
+summary: Element ソフトウェアを実行しているクラスタのデータは、 Element UI の管理タブで管理できます。実行可能なクラスタ管理機能には、データボリューム、ユーザアカウント、ボリュームアクセスグループ、イニシエータ、および QoS ポリシーの作成と管理などがあります。 
+---
+= ボリュームと仮想ボリュームを管理します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element ソフトウェアを実行しているクラスタのデータは、 Element UI の管理タブで管理できます。使用可能なクラスタ管理機能には、データボリューム、ボリュームアクセスグループ、イニシエータ、および QoS ポリシーの作成と管理などがあります。
+
+* link:task_data_manage_volumes_work_with_volumes_task.html["ボリュームを操作します"]
+* link:concept_data_manage_vvol_work_virtual_volumes.html["仮想ボリュームを操作します"]
+* link:concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html["ボリュームアクセスグループとイニシエータを使用する"]
+
+
+
+
+== を参照してください。
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+

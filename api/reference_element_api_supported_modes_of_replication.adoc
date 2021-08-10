@@ -1,0 +1,18 @@
+---
+permalink: api/reference_element_api_supported_modes_of_replication.html 
+sidebar: sidebar 
+keywords: supported,replication,modes,clusters,paired,pair,pairs 
+summary: ペアクラスタでは、次のレプリケーションモードがサポートされます。 
+---
+= ペアクラスタでサポートされるレプリケーションモード
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ペアクラスタでは、次のレプリケーションモードがサポートされます。
+
+* データの非同期レプリケーション：レプリケーションターゲットボリュームに送信されるデータは非同期で送信され、システムは、確認応答が送信されるのを待たずにデータを書き込みます。
+* データの同期レプリケーション：レプリケーションターゲットボリュームに送信されるデータは、同期的に送信されます。ホストから送信された I/O 処理をシステムが確認した時点で、確認応答がホストに返され、データがレプリケーションターゲットボリュームに送信されます。
+* データの Snapshot のみのレプリケーション：ボリューム Snapshot のみがターゲットクラスタにレプリケートされます。
+

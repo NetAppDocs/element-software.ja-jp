@@ -1,0 +1,29 @@
+---
+permalink: storage/task_data_manage_volumes_remove_a_qos_policy_association_of_a_volume.html 
+sidebar: sidebar 
+keywords: remove qos policy, disassociate from a volume, modify 
+summary: カスタム QoS 設定を選択すると、ボリュームへの QoS ポリシーの関連付けを解除できます。 
+---
+= ボリュームの QoS ポリシーの関連付けを削除します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+カスタム QoS 設定を選択すると、ボリュームへの QoS ポリシーの関連付けを解除できます。
+
+変更するボリュームに QoS ポリシーを関連付ける必要があります。
+
+. [* Management] > [* Volumes] を選択します。
+. 変更する QoS ポリシーが含まれているボリュームの操作アイコンをクリックします。
+. [ 編集（ Edit ） ] をクリックします。
+. 表示されるメニューの [* Quality of Service* （サービス品質 * ） ] で、 [* Custom Settings （カスタム設定） ] をクリックします。
+. Min IOPS * 、 * Max IOPS * 、 * Burst IOPS * を変更するか、またはデフォルトの設定をそのまま使用します。
+. [ 変更の保存 *] をクリックします。
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:task_data_manage_volumes_deleting_a_qos_policy.adoc[QoS ポリシーを削除する]

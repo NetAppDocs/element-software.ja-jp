@@ -1,0 +1,106 @@
+---
+permalink: api/reference_element_api_clusterpair.html 
+sidebar: sidebar 
+keywords: objects,object,clusterPair 
+summary: clusterPair オブジェクトには、ローカルクラスタとペアリングされているクラスタに関する情報が含まれます。ListClusterPairs メソッドを使用して、ローカルクラスタの clusterPair オブジェクトのリストを取得できます。 
+---
+= クラスタペア
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+clusterPair オブジェクトには、ローカルクラスタとペアリングされているクラスタに関する情報が含まれます。ListClusterPairs メソッドを使用して、ローカルクラスタの clusterPair オブジェクトのリストを取得できます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+クラスタ名
+ a| 
+ペア内のもう一方のクラスタの名前。
+ a| 
+文字列
+
+
+
+ a| 
+clusterPairID
+ a| 
+ペア内の各クラスタに指定された一意の ID 。
+ a| 
+整数
+
+
+
+ a| 
+clusterPairUUID
+ a| 
+クラスタペアの UUID 。
+ a| 
+文字列
+
+
+
+ a| 
+UUID
+ a| 
+クラスタペアのリモートクラスタの一意の識別子。
+ a| 
+整数
+
+
+
+ a| 
+レイテンシ
+ a| 
+クラスタ間のレイテンシ（ミリ秒）。
+ a| 
+整数
+
+
+
+ a| 
+MVIP
+ a| 
+ペアリングされているクラスタの管理接続の IP アドレス。
+ a| 
+文字列
+
+
+
+ a| 
+ステータス
+ a| 
+ペアリングされているクラスタ間の接続のステータス。有効な値は次のとおり
+
+* 未構成
+* 接続しました
+* 誤設定
+* 切断しました
+
+ a| 
+文字列
+
+
+
+ a| 
+バージョン
+ a| 
+ペア内のもう一方のクラスタの Element のバージョン。
+ a| 
+文字列
+
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_listclusterpairs.adoc[ListClusterPairs]

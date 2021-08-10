@@ -1,0 +1,32 @@
+---
+permalink: storage/task_system_manage_virtual_enable_virtual_routing_and_forwarding.html 
+sidebar: sidebar 
+keywords: virtual routing, forwarding, enable, vrf, storage networks, create a vlan 
+summary: 仮想ルーティング / 転送（ VRF ）を有効にすることができます。これにより、ルーティングテーブルの複数のインスタンスをルータ内に共存させ、同時に動作させることができます。この機能はストレージネットワークでのみ使用できます。 
+---
+= 仮想ルーティング / 転送を有効にします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+仮想ルーティング / 転送（ VRF ）を有効にすることができます。これにより、ルーティングテーブルの複数のインスタンスをルータ内に共存させ、同時に使用することができます。この機能はストレージネットワークでのみ使用できます。
+
+VRF を有効にできるのは、 VLAN の作成時だけです。非 VRF に戻す場合は、 VLAN を削除して再作成する必要があります。
+
+. [*Cluster*>*Network*] をクリックします。
+. 新しい VLAN で VRF を有効にするには、 * VLAN の作成 * を選択します。
++
+.. 新しい VRF / VLAN に関連する情報を入力します。仮想ネットワークの追加を参照してください。
+.. [Enable VRF*] チェックボックスをオンにします。
+.. * オプション * ：ゲートウェイを入力します。
+
+
+. [Create VLAN] をクリックします。
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:task_system_manage_virtual_add_a_virtual_network.adoc[仮想ネットワークを追加]

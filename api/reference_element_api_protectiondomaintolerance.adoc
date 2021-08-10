@@ -1,0 +1,41 @@
+---
+permalink: api/reference_element_api_protectiondomaintolerance.html 
+sidebar: sidebar 
+keywords: object,objects,protectionDomainTolerance 
+summary: protectionDomainTolerance オブジェクトには、関連付けられた保護ドメインタイプの単一の保護ドメイン内で 1 つ以上の障害が発生した場合に、ストレージクラスタがデータの読み取りおよび書き込みを継続できるかどうかの情報が含まれます。 
+---
+= protectionDomainTolerance
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+protectionDomainTolerance オブジェクトには、関連付けられた保護ドメインタイプの単一の保護ドメイン内で 1 つ以上の障害が発生した場合に、ストレージクラスタがデータの読み取りおよび書き込みを継続できるかどうかの情報が含まれます。
+
+
+
+== オブジェクトメンバー
+
+このオブジェクトのメンバーは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+protectionSchemeTolerances
+ a| 
+関連する保護ドメインタイプの許容誤差情報を含むオブジェクト（保護方式ごとに 1 つ）のリスト。
+ a| 
+xref:reference_element_api_protectionschemetolerance.adoc[protectionSchemeTolerance のようになりました] 配列
+
+
+
+ a| 
+持続可能な障害フォーアンサンブル
+ a| 
+関連付けられた保護ドメインタイプで同時に発生してもアンサンブルのクォーラムを維持できる障害数。
+ a| 
+整数
+
+|===

@@ -1,0 +1,80 @@
+---
+permalink: api/reference_element_api_getloginsessioninfo.html 
+sidebar: sidebar 
+keywords: cluster,get,getting,login,session,info,getloginsessioninfo 
+summary: GetLoginSessionInfo メソッドを使用すると、ログインシェルと TUI の両方でログイン認証セッションが有効な期間を取得できます。 
+---
+= GetLoginSessionInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 GetLoginSessionInfo 」メソッドを使用すると、ログインシェルと TUI の両方でログイン認証セッションが有効な期間を返すことができます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+loginSessionInfo
+ a| 
+認証の有効期限を含むオブジェクト。返されるオブジェクトは次のとおりです。
+
+* タイムアウト
++
+このセッションがタイムアウトして期限切れになるまでの時間（分単位）。形式は H ： mm ： ss ですたとえば、 1 ： 30 ： 00 、 20 ： 00 、 5 ： 00 などです。入力したタイムアウトの形式に関係なく、先頭のゼロとコロンはすべて削除されます。
+
+
+ a| 
+JSON オブジェクト
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "GetLoginSessionInfo",
+    "params": {},
+  "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+"id": 1,
+  "result" : {
+    "loginSessionInfo" : {
+      "timeout" : "30:00"
+    }
+  }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6

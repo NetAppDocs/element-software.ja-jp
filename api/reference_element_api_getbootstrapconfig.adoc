@@ -1,0 +1,172 @@
+---
+permalink: api/reference_element_api_getbootstrapconfig.html 
+sidebar: sidebar 
+keywords: cluster,getting,bootstrap,information,node,GetBootstrapConfig 
+summary: GetBootstrapConfig メソッドを使用すると、ブートストラップ構成ファイルからクラスタおよびノードの情報を取得できます。個々のノードをクラスタに追加する前に、この API メソッドを使用してください。このメソッドが返す情報は、クラスタを作成するときにクラスタ構成インターフェイスで使用されます。 
+---
+= GetBootstrapConfig
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetBootstrapConfig メソッドを使用すると、ブートストラップ構成ファイルからクラスタおよびノードの情報を取得できます。個々のノードをクラスタに追加する前に、この API メソッドを使用してください。このメソッドが返す情報は、クラスタを作成するときにクラスタ構成インターフェイスで使用されます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+クラスタ名
+ a| 
+クラスタの名前。
+ a| 
+文字列
+
+
+
+ a| 
+MVIP
+ a| 
+クラスタの MVIP アドレス。ノードがクラスタに含まれていない場合は空です。
+ a| 
+文字列
+
+
+
+ a| 
+ノード名
+ a| 
+ノードの名前。
+ a| 
+文字列
+
+
+
+ a| 
+ノード
+ a| 
+クラスタへの追加を待機中の各ノードに関する情報のリスト。有効な値は次のとおり
+
+* chassisType ：（文字列）ノードのハードウェアプラットフォーム。
+* cip ：（文字列）ノードのクラスタ IP アドレス。
+* compatible ：（ブーリアン）ノードに API 呼び出しの実行対象ノードとの互換性があるかどうか。
+* hostname ：（文字列）ノードのホスト名。
+* mip ：（文字列）ノードの IPv4 管理 IP アドレス。
+* mipV6 ：（文字列）ノードの IPv6 管理 IP アドレス。
+* nodeType ：（文字列）ノードのモデル名。
+* version ：（文字列）ノードに現在インストールされているソフトウェアのバージョン。
+
+ a| 
+JSON オブジェクトの配列
+
+
+
+ a| 
+svip
+ a| 
+クラスタの SVIP アドレス。ノードがクラスタの一部でない場合は null 。
+ a| 
+文字列
+
+
+
+ a| 
+バージョン
+ a| 
+この API メソッドで呼び出されたノードに現在インストールされている Element ソフトウェアのバージョン。
+ a| 
+文字列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "GetBootstrapConfig",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+	"id":1,
+	"result":{
+		"clusterName":"testname",
+		"nodeName":"testnode",
+		"svip": "10.117.1.5",
+		"mvip": "10.117.1.6",
+		"nodes":[
+			{
+				"chassisType":"R630",
+				"cip":"10.117.115.16",
+				"compatible":true,
+				"hostname":"NLABP1132",
+				"mip":"10.117.114.16",
+				"mipV6":"fd20:8b1e:b256:45a::16",
+				"nodeType":"SF2405",
+				"role":"Storage",
+				"version":"11.0"
+			},
+			{
+				"chassisType":"R630",
+				"cip":"10.117.115.17",
+				"compatible":true,
+				"hostname":"NLABP1133",
+				"mip":"10.117.114.17",
+				"mipV6":"fd20:8b1e:b256:45a::17",
+				"nodeType":"SF2405",
+				"role":"Storage",
+				"version":"11.0"
+			},
+			{
+				"chassisType":"R630",
+				"cip":"10.117.115.18",
+				"compatible":true,
+				"hostname":"NLABP1134",
+				"mip":"10.117.114.18",
+				"mipV6":"fd20:8b1e:b256:45a::18",
+				"nodeType":"SF2405",
+				"role":"Storage",
+				"version":"11.0"
+			}
+		],
+		"version":"11.0"
+	}
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
+
+
+
+== 詳細については、こちらをご覧ください
+
+xref:reference_element_api_createcluster.adoc[クラスタを作成]

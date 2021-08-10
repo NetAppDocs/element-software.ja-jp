@@ -1,0 +1,78 @@
+---
+permalink: api/reference_element_api_testkeyproviderkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key provider,testing,test 
+summary: TestKeyProviderKmip メソッドを使用すると、指定した Key Management Interoperability Protocol\ （ KMIP \ ）キープロバイダがアクセス可能で、正常に機能しているかどうかをテストできます。 
+---
+= TestKeyProviderKmip
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「 TestKeyProviderKmip 」メソッドを使用すると、指定した Key Management Interoperability Protocol （ KMIP ）キープロバイダがアクセス可能で、正常に機能しているかどうかをテストできます。
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+KeyProviderID
+ a| 
+テストするキープロバイダの ID 。
+ a| 
+整数
+ a| 
+なし
+ a| 
+はい。
+
+|===
+
+
+== 戻り値
+
+このメソッドには戻り値はありません。エラーが返されないかぎり、テストは成功したとみなされます。
+
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+  "method": "TestKeyProviderKmip",
+  "params": {
+    "keyProviderID": 15
+  },
+"id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {}
+    }
+}
+----
+
+
+== 新規導入バージョン
+
+11.7

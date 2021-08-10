@@ -1,0 +1,86 @@
+---
+permalink: api/reference_element_api_getdefaultqos.html 
+sidebar: sidebar 
+keywords: qos,values,default,get,getting,getdefaultqos 
+summary: GetDefaultQoS メソッドを使用すると、作成したボリュームのデフォルトの QoS 値を取得できます。 
+---
+= GetDefaultQoS の設定
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetDefaultQoS メソッドを使用すると、新しく作成したボリュームのデフォルトの QoS 値を取得できます。
+
+
+
+== パラメータ
+
+このメソッドには入力パラメータはありません。
+
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+QoS
+ a| 
+デフォルトの QoS 値。
+ a| 
+xref:reference_element_api_qos.adoc[QoS]
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+   "method": "GetDefaultQoS",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" : {
+      "burstIOPS" : 15000,
+      "burstTime" : 60,
+      "curve" : {
+         "1048576" : 15000,
+         "131072" : 1900,
+         "16384" : 270,
+         "262144" : 3000,
+         "32768" : 500,
+         "4096" : 100,
+         "524288" : 7500,
+         "65536" : 1000,
+         "8192" : 160
+      },
+      "maxIOPS" : 15000,
+      "minIOPS" : 100
+   }
+}
+----
+
+
+== 新規導入バージョン
+
+9.6
