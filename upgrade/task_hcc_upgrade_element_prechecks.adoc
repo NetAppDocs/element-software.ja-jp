@@ -74,7 +74,7 @@ REST API を使用して、ストレージクラスタをアップグレード�
 +
 [listing]
 ----
-https://[management node IP]/inventory/1/
+https://[management node IP]/mnode
 ----
 .. 「 * Authorize * 」（認証）を選択して、次の手順を実行
 +
@@ -84,15 +84,26 @@ https://[management node IP]/inventory/1/
 ... 承認ウィンドウを閉じます。
 
 
-.. REST API UI から、 * GET / Installations * を選択します。
+.. REST API UI から 'get/assets' を選択します
 .. [* 試してみてください * ] を選択します。
 .. [* Execute] を選択します。
-.. 応答から、インストールアセット ID （「 id 」）をコピーします。
-.. REST API UI から、 * GET / Installations / ｛ id ｝ * を選択します。
-.. [* 試してみてください * ] を選択します。
-.. インストールアセット ID を *id* フィールドに貼り付けます。
-.. [* Execute] を選択します。
-.. 応答から ' アップグレードの準備状況を確認するクラスタのストレージ・クラスタ ID （ ID ）をコピーして保存します
+.. 応答から ' アップグレードの準備状況を確認するクラスタのストレージセクションから 'id' をコピーします
++
+
+NOTE: このセクションの「親」の値は、ストレージクラスタの ID ではなく、管理ノードの ID であるため使用しないでください。
+
++
+[listing, subs="+quotes"]
+----
+"config": {},
+"credentialid": "12bbb2b2-f1be-123b-1234-12c3d4bc123e",
+"host_name": "SF_DEMO",
+*"id": "12cc3a45-e6e7-8d91-a2bb-0bdb3456b789",*
+"ip": "10.123.12.12",
+"parent": "d123ec42-456e-8912-ad3e-4bd56f4a789a",
+"sshcredentialid": null,
+"ssl_certificate": null
+----
 
 
 . ストレージクラスタで健全性チェックを実行します。
@@ -113,7 +124,7 @@ https://[management node IP]/storage/1/
 
 .. [* POST/Health-Checks （ POST / ヘルスチェック） ] を選択します。
 .. [* 試してみてください * ] を選択します。
-.. パラメータフィールドにストレージクラスタ ID を入力します。
+.. パラメータフィールドに、手順 1 で取得したストレージクラスタ ID を入力します。
 +
 [listing]
 ----
@@ -155,25 +166,32 @@ https://[management node IP]/storage/1/
 .. パラメータフィールドにヘルスチェック ID を入力します。
 .. [* Execute] を選択します。
 .. 応答の本文の一番下までスクロールします。
-
-
-. 「メッセージ」が「クラスタの正常性」に問題があることを示している場合は、次の手順を実行します。
 +
-.. 各問題について記載されている特定の技術情報アーティクルに移動するか、指定された対処方法を実行します。
-.. KB を指定した場合は、関連する技術情報アーティクルに記載されているプロセスを完了します。
-.. クラスタの問題を解決したら、 * Get Sagain/health-checksRuns/｛ healthCheckId ｝ * を再度実行します。
-
-
-
-
 すべての健全性チェックが成功した場合の出力例を次に示します。
 
++
 [listing]
 ----
 "message": "All checks completed successfully.",
 "percent": 100,
 "timestamp": "2020-03-06T00:03:16.321621Z"
 ----
+
+
+. 「メッセージ」が「クラスタの正常性」に問題があることを示している場合は、次の手順を実行します。
++
+.. [* Get Singges/health-checksSries/｛ healthCheckId}/log* ] を選択します
+.. [* 試してみてください * ] を選択します。
+.. パラメータフィールドにヘルスチェック ID を入力します。
+.. [* Execute] を選択します。
+.. 特定のエラーを確認し、関連する KB 記事のリンクを取得します。
+.. 各問題について記載されている特定の技術情報アーティクルに移動するか、指定された対処方法を実行します。
+.. KB を指定した場合は、関連する技術情報アーティクルに記載されているプロセスを完了します。
+.. クラスタの問題を解決したら、 * Get Sedges/health-checksRunges/｛ healthCheckId ｝ /log * を再度実行します。
+
+
+
+
 
 
 == 前に HealthTools を使用して Element ストレージの健全性チェックを実行してください ストレージをアップグレードする

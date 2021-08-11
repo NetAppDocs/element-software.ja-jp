@@ -2,7 +2,7 @@
 permalink: storage/reference_snapmirror_relationship_actions.html 
 sidebar: sidebar 
 keywords: relationships, snapmirror, actions, configure relationships 
-summary: 関係は、データ保護タブの SnapMirror 関係ページで設定できます。ここでは、 [ アクション（ Actions ） ] アイコンのオプションについて説明します。 
+summary: '関係は、データ保護タブの SnapMirror 関係ページで設定できます。ここでは、 [ アクション（ Actions ） ] アイコンのオプションについて説明します。' 
 ---
 = SnapMirror 関係の操作
 :icons: font

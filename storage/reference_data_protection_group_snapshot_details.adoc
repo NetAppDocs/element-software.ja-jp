@@ -2,7 +2,7 @@
 permalink: storage/reference_data_protection_group_snapshot_details.html 
 sidebar: sidebar 
 keywords: snapshots, group snapshots, volumes, replication 
-summary: [ データ保護 ] タブの [ グループスナップショット ] ページには、グループスナップショットに関する情報が表示されます。 
+summary: '[ データ保護 ] タブの [ グループスナップショット ] ページには、グループスナップショットに関する情報が表示されます。' 
 ---
 = グループ Snapshot の詳細
 :icons: font

@@ -2,7 +2,7 @@
 permalink: storage/reference_data_protection_snapshot_schedule_details.html 
 sidebar: sidebar 
 keywords: snapshots, snapshot schedules 
-summary: [Data Protection] > [Schedules] ページでは、スナップショットスケジュールのリストに次の情報を表示できます。 
+summary: '[Data Protection] > [Schedules] ページでは、スナップショットスケジュールのリストに次の情報を表示できます。' 
 ---
 = Snapshot スケジュールの詳細
 :icons: font
