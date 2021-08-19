@@ -57,7 +57,7 @@ NOTE: ノード UI からクラスタ内のアクティブノードにアクセ�
 
 権限のあるユーザアカウントは、 NetApp Hybrid Cloud Control の右上のメニューでユーザ管理オプションを使用して管理しています。
 
-。 https://docs.netapp.com/us-en/hci/docs/concept_hci_clusters.html#authoritative-storage-clusters["信頼できるストレージクラスタです"^] は、 NetApp Hybrid Cloud Control がユーザの認証に使用するストレージクラスタです。
+。 link:../concepts/concept_intro_clusters.html#authoritative-storage-clusters["信頼できるストレージクラスタです"] は、 NetApp Hybrid Cloud Control がユーザの認証に使用するストレージクラスタです。
 
 信頼できるストレージクラスタで作成されたすべてのユーザが、 NetApp Hybrid Cloud Control にログインできます。他のストレージクラスタで作成されたユーザは、 Hybrid Cloud Control にログインできません。
 

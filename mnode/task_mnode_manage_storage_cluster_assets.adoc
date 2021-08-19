@@ -97,7 +97,7 @@ REST API を使用して、管理ノードインベントリに新しいスト�
 
 .必要なもの
 * をコピーしました <<Retrieve the installation ID and cluster ID of a storage cluster asset,ストレージクラスタ ID とインストール ID>> をクリックします。
-* 複数のストレージノードを追加する場合は、の制限を確認しておく必要があります link:https://docs.netapp.com/us-en/hci/docs/concept_hci_clusters.html#authoritative-storage-clusters["権限のあるクラスタです"^] 複数のストレージクラスタをサポート
+* 複数のストレージノードを追加する場合は、の制限を確認しておく必要があります link:../concepts/concept_intro_clusters.html#authoritative-storage-clusters["権限のあるクラスタです"] 複数のストレージクラスタをサポート
 +
 
 NOTE: 信頼できるクラスタで定義されたすべてのユーザは、 NetApp Hybrid Cloud Control インスタンスに関連付けられている他のすべてのクラスタのユーザとして定義されています。
@@ -239,7 +239,7 @@ https://[management node IP]/storage/1/
 [discrete]
 == 詳細については、こちらをご覧ください
 
-* link:https://docs.netapp.com/us-en/hci/docs/concept_hci_clusters.html#authoritative-storage-clusters["権限のあるクラスタです"^]
+* link:../concepts/concept_intro_clusters.html#authoritative-storage-clusters["権限のあるクラスタです"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
 * https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
 

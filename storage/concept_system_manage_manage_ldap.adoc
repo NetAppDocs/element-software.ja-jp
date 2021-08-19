@@ -253,9 +253,7 @@ LDAP を設定したら、 Element UI または Element API の TestLdapAuthenti
 
 
  a| 
-....
-xLDAPUserNotFound
-.... a| 
+ xLDAPUserNotFound a| 
 *** テスト対象のユーザが、設定された「 userSearchBaseDN 」サブツリーに見つかりませんでした。
 *** 「 userSearchFilter 」が正しく設定されていません。
 
@@ -263,9 +261,7 @@ xLDAPUserNotFound
 
 
  a| 
-....
-xLDAPBindFailed (Error: Invalid credentials)
-.... a| 
+ xLDAPBindFailed (Error: Invalid credentials) a| 
 *** テスト中のユーザ名は有効な LDAP ユーザですが、入力したパスワードは正しくありません。
 *** テスト中のユーザ名は有効な LDAP ユーザですが、アカウントが現在無効になっています。
 
@@ -273,33 +269,25 @@ xLDAPBindFailed (Error: Invalid credentials)
 
 
  a| 
-....
-xLDAPSearchBindFailed (Error: Can't contact LDAP server)
-.... a| 
+ xLDAPSearchBindFailed (Error: Can't contact LDAP server) a| 
 LDAP サーバの URI が正しくありません。
 
 
 
  a| 
-....
-xLDAPSearchBindFailed (Error: Invalid credentials)
-.... a| 
+ xLDAPSearchBindFailed (Error: Invalid credentials) a| 
 読み取り専用のユーザ名またはパスワードが正しく設定されていません。
 
 
 
  a| 
-....
-xLDAPSearchFailed (Error: No such object)
-.... a| 
+ xLDAPSearchFailed (Error: No such object) a| 
 「 userSearchBaseDN 」は、 LDAP ツリー内の有効な場所ではありません。
 
 
 
  a| 
-....
-xLDAPSearchFailed (Error: Referral)
-.... a| 
+ xLDAPSearchFailed (Error: Referral) a| 
 *** 「 userSearchBaseDN 」は、 LDAP ツリー内の有効な場所ではありません。
 *** 「 userSearchBaseDN 」と「 groupSearchBaseDN 」は、ネストされた OU に含まれます。これにより、原因権限の問題が発生する可能性が回避策は ' ユーザーおよびグループのベース DN エントリに OU を含めます ( 例 : ou=storage'cn=company'cn=com')
 
