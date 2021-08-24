@@ -444,7 +444,7 @@ firewall-cmd –-reload
 
 
 .<strong> ホストネットワークを設定 </strong>
-* を使用してホストネットワークを設定します link:concept_esds_networking_best_practices.adoc["ベストプラクティス"^] 提供されます。
+* を使用してホストネットワークを設定します link:task_esds_configure_the_interface_config_files.html["ベストプラクティス"^] 提供されます。
 +
 
 IMPORTANT: SolidFire ESDS を正常にインストールするには、ホストネットワークを設定する手順を実行する必要があります。

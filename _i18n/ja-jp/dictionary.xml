@@ -11128,7 +11128,6 @@
   <block id="0cb585626379a70b87a0e3ee14309e3b" category="list-text">上記のポートを開くには、次のコマンドを使用します。</block>
   <block id="95f75258f8b33664eeaf8b541ff97858" category="list-title">&lt;strong&gt; ホストネットワークを設定 &lt;/strong&gt;</block>
   <block id="78ff65afbf92a15cd30dea91aefc1e9b" category="inline-link-macro">ベストプラクティス</block>
-  <block id="7ce9d81cd2c84bfd18a8cc4e11544a69" category="list-text">を使用してホストネットワークを設定します <block ref="49b106c258db22079b3997b2744f1544" category="inline-link-macro-rx"></block> 提供されます。</block>
   <block id="9fe0e0876a07d2247ecb84a994e87a77" category="admonition">SolidFire ESDS を正常にインストールするには、ホストネットワークを設定する手順を実行する必要があります。</block>
   <block id="fb96b65afb5d2a139a12f87e3171372c" category="list-title">&lt;strong&gt; 追加要件を満たす &lt;/strong&gt;</block>
   <block id="d5272d5ecd1fe99c7097dfcca90c8f7d" category="list-text">1 つの Collect をインストールします。この収集は、ネットアップサポートがホストログを収集するために使用します。から収集したデータは 1 つインストールできます<block ref="d3b16539387c5c512d10064586f79c65" category="inline-link-rx"></block>。ダウンロードにアクセスするには、ネットアップアカウントが必要です。『 Collect Installation Guide 』と『 Release Notes 』も同じ場所にあります。</block>
@@ -11734,8 +11733,6 @@
   <block id="b837bae0f441ebacd86887d737939282" category="sidebar">システムのアップグレード手順</block>
   <block id="e558a93d8af634916bae37b7136be1d2" category="sidebar">GetSoftwareEncryptionAtRestInfo</block>
   <block id="7312c371e606c4ef84d0e890d014f53f" category="sidebar">SolidFire ESDS の使用を開始します</block>
-  <block id="8e521df91ef9005e3fee44e3ea166df7" category="inline-link">Element ソフトウェアを実行する SolidFire ストレージクラスタの Element ソフトウェアアップグレードパッケージ</block>
-  <block id="3d966c94d309efc963daa1021b64c0e5" category="paragraph"><block ref="3d966c94d309efc963daa1021b64c0e5" category="inline-link-rx"></block></block>
   <block id="630786bd9beca178276e5be4414d5e18" category="list-text">REST API UI から 'get/assets' を選択します</block>
   <block id="358e464420222396ce0269f2426db9e8" category="list-text">応答から ' アップグレードの準備状況を確認するクラスタのストレージセクションから 'id' をコピーします</block>
   <block id="01bae82379747eef8fcb4ed570670706" category="admonition">このセクションの「親」の値は、ストレージクラスタの ID ではなく、管理ノードの ID であるため使用しないでください。</block>
@@ -11758,4 +11755,7 @@
   <block id="f5395c9793af8a11b406ca7c1ac70da9" category="inline-link">詳細はこちら。</block>
   <block id="73f6f247f92d43dc1a02705cd9cb72df" category="admonition">ネットアップは現在、 NetApp Hybrid Cloud Control の自動アップグレードワークフローをサポートするソフトウェアとファームウェアのバンドルのダウンロードをホストするオンラインリポジトリを再構築しています。<block ref="d8be8d6cc7cc728c856f13214fa255cd" category="inline-link-rx"></block></block>
   <block id="983c91027e090f85708d6c62fd362220" category="list-text">https://netappdownloads.jfrog.io:443`</block>
+  <block id="106cc5a0e6a0bb3c0776b3ba8fb64337" category="inline-link">SolidFire ストレージクラスタの Element ソフトウェアアップグレードパッケージ（ .tar.gz</block>
+  <block id="49e349363aad0972c82ddaf25dd30f70" category="paragraph"><block ref="49e349363aad0972c82ddaf25dd30f70" category="inline-link-rx"></block></block>
+  <block id="f433801b7b771eb645906990697cb40d" category="list-text">を使用してホストネットワークを設定します <block ref="d5d50f06af9eb06fd5c8afba97ab5274" category="inline-link-macro-rx"></block> 提供されます。</block>
 </blocks>
