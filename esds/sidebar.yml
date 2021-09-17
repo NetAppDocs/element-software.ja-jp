@@ -31,6 +31,8 @@ entries:
     url: "/esds/task_esds_get_license_key.html"
   - title: SolidFire ESDS クラスタではメンテナンスモードを使用します
     url: "/esds/reference_esds_use_maintenance_mode.html"
+  - title: HPE DL380 のドライブを交換
+    url: "/esds/task_esds_dl380_drive_repl.html"
   - title: HPE DL360 のドライブを交換
     url: "/esds/task_esds_dl360_drive_repl.html"
   - title: Dell R640 のドライブを交換します

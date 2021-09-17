@@ -4,7 +4,7 @@ permalink: upgrade/task_sf_upgrade_all.html
 summary: NetApp SolidFire オールフラッシュストレージシステムとそのすべてのコンポーネントをアップグレードできます。 
 keywords: netapp, solidfire, cluster, upgrade, element 
 ---
-= Element 12.3 で NetApp SolidFire オールフラッシュストレージシステムをアップグレードします
+= Element 12.3.x 用の NetApp SolidFire オールフラッシュストレージシステムをアップグレードします
 
 
 [role="lead"]

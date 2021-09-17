@@ -1,7 +1,7 @@
 ---
 permalink: concepts/concept_rn_relatedrn_element.html 
 sidebar: sidebar 
-keywords:  
+keywords: release information,previous,current,updates 
 summary: ここでは、 Element ストレージ環境のさまざまなコンポーネントに関する最新リリースノートと以前のリリースノートへのリンクを記載します。 
 ---
 = 最新および以前のリリース情報
@@ -19,7 +19,8 @@ NOTE: ネットアップサポートのクレデンシャルでログインす�
 
 == NetApp Element ソフトウェア
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2876498["NetApp Element ソフトウェア 12.3 リリースノート"] 新規
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2878089["NetApp Element ソフトウェア 12.3.1 リリースノート"] 新規
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2876498["NetApp Element ソフトウェア 12.3 リリースノート"]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2877210["NetApp Element ソフトウェア 12.2.1 リリースノート"]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2873789["NetApp Element ソフトウェア 12.2 リリースノート"]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2877208["NetApp Element ソフトウェア 12.0.1 リリースノート"]

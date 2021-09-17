@@ -4,7 +4,7 @@ title: SolidFire システムをアップグレードします
 entries:
 - title: アップグレードの概要
   url: "/upgrade/concept_element_upgrade_overview.html"
-- title: Element 12.3 で NetApp SolidFire オールフラッシュストレージシステムをアップグレードします
+- title: Element 12.3.x 用の NetApp SolidFire オールフラッシュストレージシステムをアップグレードします
   url: "/upgrade/task_sf_upgrade_all.html"
 - title: システムのアップグレード手順
   entries:

@@ -1,7 +1,7 @@
 ---
 permalink: concepts/concept_rn_whats_new_element.html 
 sidebar: sidebar 
-keywords: netapp, solidfire, element, storage 
+keywords: netapp, solidfire, element, storage, solidfire enterprise sds 
 summary: ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。 
 ---
 = の新機能
@@ -29,7 +29,43 @@ image:bol_filters.PNG["BOL フィルタ、「センター」の位置合わせ"]
 
 
 
-== FIFO スナップショット・キューのサポート
+== Element 12.3.1
+
+Element 12..1 の新機能の詳細については、こちらを参照してください。
+
+
+
+=== ストレージファームウェアバンドル 2.99.2
+
+Element 12.3.1 リリースには、ストレージファームウェアバンドルバージョン 2.99.2 が含まれています。ストレージクラスタがすでに Element 12.3 にある場合は、新しい 2.99.2 ファームウェアバンドルをインストールするだけで済みます。
+
+
+
+=== SolidFire エンタープライズ SDS の動的ノード評価
+
+ノードの動的な評価により、プラットフォーム上のコア数に応じてパフォーマンスを拡張できます。リリース 12..1 では、コア数が 16 より大きい場合、 IOPS は 100K に制限されます。
+
+
+
+=== SolidFire ESDS のシングルボンドネットワーク構成がサポートされます
+
+SolidFire ESDS を使用して、ホストに単一ボンドネットワーク構成を使用できるようになりました。
+
+
+
+=== SolidFire エンタープライズ SDS での新しいサーバーのサポート
+
+SolidFire ESDS が HPE DL380 サーバで利用可能になりました。を参照してください https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^] サポートされている構成の詳細については、を参照してください。
+
+
+
+== Element 12.3
+
+Element 12.3 の新機能について詳しくは、こちらをご覧ください。
+
+
+
+=== FIFO スナップショット・キューのサポート
 
 Element 12.3 では、ボリュームスナップショットの First-In First-Out （ FIFO ）キューを作成できます。Element API を使用すると、ボリュームの作成時に予約する FIFO スナップショットスロットの最小数と最大数を指定できます。ボリュームの FIFO スナップショットキューがいっぱいになると、そのボリュームに次に作成するスナップショットは、そのボリュームの最も古いスナップショットをシステムから削除します。FIFO スナップショットと非 FIFO スナップショットはどちらも、ボリューム上の使用可能なスナップショットスロットの同じプールを使用します。
 
@@ -48,7 +84,7 @@ Element 12.3 では、ボリュームスナップショットの First-In First-
 
 
 
-== スナップショットシリアル化のサポート
+=== スナップショットシリアル化のサポート
 
 Element 12.3 では、シリアル化スナップショットの作成がサポートされてElement API を使用して新しい Snapshot を作成する際、以前の Snapshot レプリケーションがまだ実行中の場合は Snapshot を作成しないように指定できます。
 
@@ -62,7 +98,7 @@ Element 12.3 では、シリアル化スナップショットの作成がサポ�
 
 
 
-== Snapshot 保持のサポート
+=== Snapshot 保持のサポート
 
 Element 12.3 では、スナップショットの保存期間を指定できます。Snapshot の保持期限または有効期限を指定しない場合、 Snapshot は無期限に保持されます。
 
@@ -78,7 +114,7 @@ Snapshot の保持には次の Element API メソッドが関連します （を
 
 
 
-== ソフトウェアによる保存データの暗号化の機能拡張
+=== ソフトウェアによる保存データの暗号化の機能拡張
 
 ソフトウェア保存時の暗号化機能では、 Element 12.3 に外部キー管理（ EKM ）とソフトウェア暗号化マスターキーのキー変更機能が導入されています。ストレージクラスタの作成時に保存データのソフトウェア暗号化を有効にすることができます。SolidFire エンタープライズ SDS ストレージクラスタを作成すると、保存データのソフトウェア暗号化がデフォルトで有効になります。この機能では、ストレージノード内の SSD に格納されているすべてのデータが暗号化され、クライアント IO のパフォーマンスへの影響は非常に小さく（最大 2% ）すぎません。
 
@@ -93,37 +129,31 @@ Snapshot の保持には次の Element API メソッドが関連します （を
 
 
 
-== ストレージノードのファームウェアの更新
+=== ストレージノードのファームウェアの更新
 
 Element 12.3 では、ストレージノード用のファームウェアの更新が含まれています。 link:../concepts/concept_rn_relatedrn_element.html#storage-firmware["詳細はこちら。"]。
 
 
 
-== セキュリティの機能拡張
+=== セキュリティの機能拡張
 
 Element 12.3 では、ストレージノードおよび管理ノードのセキュリティの脆弱性を解決します。 https://security.netapp.com/["詳細はこちら。"] これらのセキュリティ機能拡張について
 
 
 
-== ドライブ障害時の動作が改善されました
+=== ドライブ障害時の動作が改善されました
 
-Element 12.3 は、ドライブの SMART ヘルスデータを使用して、 SolidFire アプライアンスドライブの定期的なヘルスチェックを実行します。SMART ヘルスチェックに失敗したドライブは、障害に近い可能性があります。ドライブが SMART ヘルスチェックに失敗すると、ドライブは「 Failed * 」状態に移行し、重大度が「 D rive with serial ： <serial number> in slot ： <node slot><drive slot> has failed the Smart overall health check. 」という重大なクラスタエラーが表示されます。この問題を解決するには ' ドライブを交換してください
-
-
-
-== SolidFire エンタープライズ SDS の新機能
-
-SolidFire ESDS の新機能は次のとおりです。
+Element 12.3 は、ドライブの SMART ヘルスデータを使用して、 SolidFire アプライアンスドライブの定期的なヘルスチェックを実行します。SMART ヘルスチェックに失敗したドライブは、障害に近い可能性があります。ドライブが SMART ヘルスチェックに失敗すると、ドライブは「 Failed * 」状態に移行し、重大度が「 D rive with serial ： <serial number> in slot ： <node slot><drive slot> has failed the Smart overall health check. 」という重大なクラスタエラーが表示されます。この問題を解決するには、ドライブを交換してください
 
 
 
-=== 新しいサーバのサポート
+=== SolidFire エンタープライズ SDS での新しいサーバーのサポート
 
 SolidFire ESDS が Dell R640 サーバーで利用できるようになりました。を参照してください https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^] サポートされている構成の詳細については、を参照してください。
 
 
 
-=== 新しいドキュメント
+=== SolidFire ESDS の新しいドキュメント
 
 SolidFire ESDS には、次の新しいドキュメントが用意されています。
 
@@ -133,7 +163,7 @@ SolidFire ESDS には、次の新しいドキュメントが用意されてい�
 
 
 
-=== 既知の問題の新しい場所
+=== SolidFire ESDS の既知の問題の新しい場所
 
 で既知の問題を検索できるようになりました https://mysupport.netapp.com/site/products/all/details/solidfire-enterprise-sds/bugsonline-tab["Bugs Online のツール（ログインが必要）"^]。
 

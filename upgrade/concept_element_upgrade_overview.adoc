@@ -22,9 +22,9 @@ keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgra
 
 システムのアップグレード手順の内容には、 SolidFire オールフラッシュストレージシステムのアップグレードを完了するために必要な作業が記載されています。これらの手順は、単独ででではなく、大きなアップグレード手順の一部として実行することを推奨します。コンポーネントベースのアップグレードまたは更新が必要な場合は、手順の前提条件を参照して、さらに複雑な作業が対処されるようにしてください。
 
-Element 12.3 の NetApp SolidFire オールフラッシュストレージシステムをアップグレードするには、次の手順を実行します。
+Element 12.3.x 用の NetApp SolidFire オールフラッシュストレージシステムをアップグレードするには、次の順序に従います。
 
-* link:task_sf_upgrade_all.html["Element 12.3 で NetApp SolidFire オールフラッシュストレージシステムをアップグレードします"]。
+* link:task_sf_upgrade_all.html["Element 12.3.x 用の NetApp SolidFire オールフラッシュストレージシステムをアップグレードします"]。
 
 
 

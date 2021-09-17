@@ -21,7 +21,7 @@ NOTE: を使用できます link:https://github.com/NetApp-Automation/nar_solidf
 その結果、ノードのドライブからクラスタ内の他のドライブへデータが移行されます。このプロセスにかかる時間は、移行が必要なデータの量によって異なります。
 
 . Element UI またはを使用して、クラスタからノードを削除します https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removenodes.html["「 RemoveNodes 」"^] API メソッド。
-. インベントリファイルで定義したホスト（ノード）に ping を実行して、 Ansible がそれらのホストと通信できることを確認します。
+. クラスタから削除したノードに SSH を使用して接続します。
 . 次のように、ノードから SolidFire ESDS を削除します。
 +
 [listing]

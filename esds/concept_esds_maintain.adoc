@@ -14,11 +14,12 @@ summary: ここでは、保守モードの使用方法と SolidFire ESDS クラ�
 
 * link:task_esds_get_license_key.html["ライセンスキーを取得します"^]
 * link:reference_esds_use_maintenance_mode.html["SolidFire ESDS クラスタではメンテナンスモードを使用します"^]
+* link:task_esds_dl380_drive_repl.html["HPE DL380 のドライブを交換"^]
 * link:task_esds_dl360_drive_repl.html["HPE DL360 のドライブを交換"^]
 * link:task_esds_r640_drive_repl.html["Dell R640 のドライブを交換します"^]
 * link:reference_esds_containerlogs.html["コンテナログを収集します"^]
 * link:reference_esds_troubleshoot_links.html["トラブルシューティングに関する技術情報アーティクルへのリンク"^]
-* link:reference_esds_sf_sds_config_file.html["sf_sds_config.yaml ファイルの内容"^]*
+* link:reference_esds_sf_sds_config_file.html["sf_sds_config.yaml ファイルの内容"^]
 
 
 

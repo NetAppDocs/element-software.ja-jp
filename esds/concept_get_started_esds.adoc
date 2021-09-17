@@ -1,7 +1,7 @@
 ---
 permalink: esds/concept_get_started_esds.html 
 sidebar: sidebar 
-keywords: solidfire esds,software-defined storage 
+keywords: solidfire esds,software-defined storage, dynamic node rating 
 summary: NetApp SolidFire エンタープライズ SDS （ ESDS ）は、 SolidFire スケールアウトテクノロジと NetApp Element ソフトウェアデータサービスのメリットを、 SolidFire ESDS のリファレンス構成を満たす任意のハードウェア上で提供します。SolidFire ESDS は、基盤となるハードウェアに依存しない NetApp Element ソフトウェアを提供します。これにより、ネットアップブランドのアプライアンスまたは汎用サーバの Element 機能をすべて使用できるようになります。このサーバは、ネットアップのリファレンス構成に準拠します。 
 ---
 = NetApp SolidFire エンタープライズ SDS の導入を始めましょう
@@ -153,13 +153,23 @@ Active IQ
 |===
 
 
-=== インストールの概要
+== インストールの概要
 
 SolidFire ESDS は、 Ansible などの自動化ツールを使用してインストールできます。
 
 以下は Ansible を使用したインストールの概要です。
 
 image::../media/esds_installation_workflow.png[に、インストールワークフローを示します。]
+
+
+
+== 動的ノード定格（ Element 12.3.1! の新機能）
+
+動的ノード定格は、 Element 12..1 の新機能です。この機能を使用すると、現在のプラットフォームごとに 1 つの CPU モデルではなく、 ESDS プラットフォームごとに 24 個のサポートされている CPU を利用できます。
+
+動的ノード評価は、現在 ESDS でサポートされているすべてのプラットフォーム（ DL360 、 DL380 、 R640 ）でサポートされています。
+
+ノードの動的な評価の初回リリースでは、どのノードでも最大 IOPS 定格は 100K です。
 
 
 

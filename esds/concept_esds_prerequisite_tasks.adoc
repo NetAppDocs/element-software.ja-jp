@@ -26,6 +26,9 @@ SolidFire ESDS をインストールする前に、必要なチェックを実�
 NOTE: デフォルトでは 'RHEL は ' 手動で作成するパーティションのデフォルト・ファイル・システムとして xfs を選択しますこれは '/boot' パーティションと 'swap' パーティションを除いて 'ext4 に変更する必要がありますあなたの「 /boot 」パーティションは「 ext2 」を使うべきです。
 
 +
+SATA ディスクに 250GB がある場合は、次の推奨パーティションに従ってください。SATA ディスクの空き容量が大きい場合は、 /opt と /var パーティションのサイズを大きくできます。
+
++
 [cols="2*"]
 |===
 | パーティション | サイズ 
@@ -67,38 +70,16 @@ NOTE: デフォルトでは 'RHEL は ' 手動で作成するパーティショ�
 
 
  a| 
-/ および /usr
- a| 
-残りのスペースを分割します
-
-|===
-+
-パーティションの最小必要レイアウトは次のとおりです。
-
-+
-[cols="2*"]
-|===
-| パーティション | サイズ 
-
-
- a| 
-/opt
- a| 
-40GB
-
-
-
- a| 
-/var
- a| 
-40GB
-
-
-
- a| 
 /
  a| 
-10Gb （ RedHat を推奨）
+10Gb 以上
+
+
+
+ a| 
+/usr
+ a| 
+10Gb 以上
 
 |===
 +
@@ -125,7 +106,11 @@ rhel-7-server-extras-rpms
 
 
 .<strong> 必要なソフトウェアをインストールする </strong>
-* Ansible 、 Git 、 Python 3.0 をインストールする。
+* Ansible 、 Git 、 Podman 、 Python 3.0 をインストールします。
++
+
+NOTE: Element 12.3 でサポートされている Podman のバージョンは 1.1.6 です。
+
 
 
 .<strong>SolidFire ESDS をインストールするための NetApp の要件と構成が一致していることを確認します </strong>
@@ -159,12 +144,12 @@ NOTE: 必ず最新バージョンのロールをダウンロードしてくだ�
 +
 [listing]
 ----
- $ ansible-galaxy role list
- # ~/.ansible/roles
  - nar_solidfire_sds_install, (unknown version)
  - nar_solidfire_sds_upgrade, (unknown version)
  - ansible, (unknown version)
  - nar_solidfire_sds_compliance, (unknown version)
+ - nar_solidfire_cluster_config, (unknown version)
+ - nar_solidfire_sds_uninstall, (unknown version)
 ----
 .. 準拠チェックに使用するプレイブックを作成します。
 .. 次の例に示すように、準拠チェックプレイブックを実行します。

@@ -58,6 +58,8 @@ NOTE: 必ず最新バージョンのロールをダウンロードしてくだ�
  - nar_solidfire_sds_upgrade, (unknown version)
  - ansible, (unknown version)
  - nar_solidfire_sds_compliance, (unknown version)
+ - nar_solidfire_cluster_config, (unknown version)
+ - nar_solidfire_sds_uninstall, (unknown version)
 ----
 +
 

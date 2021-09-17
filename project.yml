@@ -1,7 +1,7 @@
 ---
 sidebar:
   entries:
-  - title: SolidFire および Element ソフトウェア 12.3 のドキュメント
+  - title: SolidFire および Element ソフトウェア 12.3.x のドキュメント
     url: "/index.html"
   - title: リリースノート
     url: "/concepts/concept_rn_relatedrn_element.html"
@@ -31,7 +31,7 @@ sidebar:
   - title: 以前のバージョン
     url: "/element-earlierversions.html"
   - title: 法的通知
-    url: "/element-legal.html"
+    url: "/legal-notices.html"
 homepage:
   tiles:
   - title: はじめに
