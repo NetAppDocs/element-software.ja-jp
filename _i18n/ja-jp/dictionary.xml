@@ -5496,7 +5496,6 @@
   <block id="befd59adbc7ca9bef6a93304fb2e0271" category="list-text">ストレージファームウェアのアップグレードを実行します。</block>
   <block id="3432017bf3450950cff9ebeb57b007b7" category="summary">Element デモノードは、 VMware 仮想マシン版の Element ソフトウェアで、 NetApp HCI 製品と SolidFire 製品の主要なストレージ機能の多くを簡単にデモできます。</block>
   <block id="94f8a49e22a4517b4cd55d1fa39ec58e" category="doc">Element のデモノードを使用してストレージ機能を試します</block>
-  <block id="b28f18b66e64507c4c51104f6adcd7e4" category="paragraph">Element デモノードは、 VMware の Virtual Machine （ VM ；仮想マシン）バージョンの Element ソフトウェアで、 NetApp HCI 製品と SolidFire 製品の主要なストレージ機能の多くを簡単にデモできます。開発者は、デモノードを使用することで、物理ハードウェアを必要とせずに Element API に対してコードを実行できます。VMware の導入を容易にする OVA ファイルとしてパッケージ化されています。</block>
   <block id="8673fcc1737e79ba7a57b2088403942f" category="section-title">サポートされる機能：</block>
   <block id="e18400f1ee8b698f638dd69ae96b4185" category="paragraph">Element デモノードは、デモおよび開発用のツールとしてのみ使用します。デモノードを使用する前に、次の機能上の制限事項に注意してください。</block>
   <block id="f7be0764ce798d8b8d03c13b5d4f1a3f" category="list-text">Element デモノードはクラスタリングをサポートしていません。シングルノードクラスタとしてのみ機能します。</block>
@@ -11820,4 +11819,8 @@
   <block id="26c74f7a8ac6a7c8cdb0def0e876263d" category="inline-link-macro">管理ノード 12.3.1 の通知です</block>
   <block id="047152327178a19c354a2a92281da90f" category="list-text"><block ref="047152327178a19c354a2a92281da90f" category="inline-link-macro-rx"></block></block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">カスタムの保護ドメインを設定する</block>
+  <block id="c099da1e7198d2f1407d45eef0d02a48" category="inline-link">Element デモノード</block>
+  <block id="fae634e54f6a24eca87a92f1d78df928" category="paragraph"><block ref="e1baf480e2c2d0517c80b4748e50de89" category="inline-link-rx"></block> は、 VMware の Virtual Machine （ VM ；仮想マシン）バージョンの Element ソフトウェアであり、 NetApp HCI と SolidFire 製品の主要なストレージ機能の多くを簡単にデモできます。開発者は、デモノードを使用することで、物理ハードウェアを必要とせずに Element API に対してコードを実行できます。VMware の導入を容易にする OVA ファイルとしてパッケージ化されています。</block>
+  <block id="baae0a76ecbb6b197350ee0618576960" category="inline-link">Element のデモノードのダウンロードページ（ログインが必要）</block>
+  <block id="7339950c613f331c048f6f76171dd00d" category="list-text"><block ref="7339950c613f331c048f6f76171dd00d" category="inline-link-rx"></block></block>
 </blocks>

@@ -10,7 +10,7 @@ summary: Element デモノードは、 VMware 仮想マシン版の Element ソ�
 
 
 [role="lead"]
-Element デモノードは、 VMware の Virtual Machine （ VM ；仮想マシン）バージョンの Element ソフトウェアで、 NetApp HCI 製品と SolidFire 製品の主要なストレージ機能の多くを簡単にデモできます。開発者は、デモノードを使用することで、物理ハードウェアを必要とせずに Element API に対してコードを実行できます。VMware の導入を容易にする OVA ファイルとしてパッケージ化されています。
+https://mysupport.netapp.com/site/tools/tool-eula/element-demonode/download["Element デモノード"^] は、 VMware の Virtual Machine （ VM ；仮想マシン）バージョンの Element ソフトウェアであり、 NetApp HCI と SolidFire 製品の主要なストレージ機能の多くを簡単にデモできます。開発者は、デモノードを使用することで、物理ハードウェアを必要とせずに Element API に対してコードを実行できます。VMware の導入を容易にする OVA ファイルとしてパッケージ化されています。
 
 
 
@@ -132,4 +132,5 @@ Element デモノードは、ベストエフォート型のボランティアベ
 == 詳細については、こちらをご覧ください
 
 * https://www.netapp.com/data-storage/solidfire/documentation/["SolidFire オールフラッシュストレージのリソースページ"^]
+* https://mysupport.netapp.com/site/tools/tool-eula/element-demonode/download["Element のデモノードのダウンロードページ（ログインが必要）"^]
 
