@@ -979,22 +979,16 @@
   <block id="87043baf81d739284bd0146e19728ce7" category="inline-link">NetApp Element ソフトウェア 11.3P1 リリースノート</block>
   <block id="7489b0d15edbdfa5b0e6ec6795aba52c" category="list-text"><block ref="7489b0d15edbdfa5b0e6ec6795aba52c" category="inline-link-rx"></block></block>
   <block id="6b85e8fee9865d4ab62dcfcd4f941582" category="inline-link">管理サービスリリースノート</block>
-  <block id="c229f444eeb73b82bdd6f90d47b7addb" category="list-text"><block ref="c229f444eeb73b82bdd6f90d47b7addb" category="inline-link-rx"></block></block>
   <block id="8cf0a7fd902364db0eaa5ec60ad654f3" category="inline-link">vCenter Plug-in 4.7 リリースノート</block>
   <block id="c9973d0a1ee56161c6330507362f4803" category="list-text"><block ref="c9973d0a1ee56161c6330507362f4803" category="inline-link-rx"></block></block>
   <block id="433d4496073903d35ad99448cf921f95" category="inline-link">vCenter Plug-in 4.6 リリースノート</block>
-  <block id="46e9f8c5e971e16b17c94df1888921c9" category="list-text"><block ref="46e9f8c5e971e16b17c94df1888921c9" category="inline-link-rx"></block></block>
   <block id="94b0602cd5f2851627f6bfecb97b96e6" category="inline-link">vCenter Plug-in 4.5 リリースノート</block>
-  <block id="4f1efa9f69add9f0c71e4963ae747950" category="list-text"><block ref="4f1efa9f69add9f0c71e4963ae747950" category="inline-link-rx"></block></block>
   <block id="578c07c950972d7b078fc954eef38508" category="inline-link">『 vCenter Plug-in 4.4 Release Notes 』を参照してください</block>
-  <block id="566ef7cda3b398c844389fe77c144fca" category="list-text"><block ref="566ef7cda3b398c844389fe77c144fca" category="inline-link-rx"></block></block>
   <block id="e6f04bc267aa8b790e8358fbcafd13da" category="inline-link">vCenter Plug-in 4.3 リリースノート</block>
-  <block id="f94aef7fdb1d34c6764ffb66c5feda58" category="list-text"><block ref="f94aef7fdb1d34c6764ffb66c5feda58" category="inline-link-rx"></block></block>
   <block id="002e74c06881f6eef90f201bb310bbfa" category="section-title">ストレージファームウェア</block>
   <block id="e2b165ab46734aee4acaaada05a4c247" category="inline-link">ストレージファームウェアバンドル 2.99.2 リリースノート（最新）</block>
   <block id="f1de80703dd5c9a1cd53931752c56274" category="list-text"><block ref="f1de80703dd5c9a1cd53931752c56274" category="inline-link-rx"></block></block>
   <block id="826ed2a2fd875eeb127f73e48856de14" category="inline-link">ストレージファームウェアバンドル 2.76 リリースノート</block>
-  <block id="f445236a4780b4c2e901a3b37fda9c5e" category="list-text"><block ref="f445236a4780b4c2e901a3b37fda9c5e" category="inline-link-rx"></block></block>
   <block id="7c4a6e26b432f1ad131564bc6dc6e32d" category="inline-link">ストレージファームウェアバンドル 2.27 リリースノート</block>
   <block id="a0b768ade98ef6cf3df956008c966806" category="list-text"><block ref="a0b768ade98ef6cf3df956008c966806" category="inline-link-rx"></block></block>
   <block id="af149d844cc5e37dba5faa0cc28a9285" category="inline-link-macro">H610S BMC 3.84.07 リリースノート</block>
@@ -5323,11 +5317,8 @@
   <block id="03efd38b0802e06b31537f557cd0421f" category="paragraph">既存の vSphere 環境に NetApp Element Plug-in for vCenter Server （ VCP ）が登録されている場合は、プラグインサービスを含む管理サービスパッケージを最初に更新したあとで、プラグインの登録を更新できます。</block>
   <block id="e6c04958395a323ddbc02c929b4dfdf0" category="paragraph">登録ユーティリティを使用して、 vCenter Server Virtual Appliance （ vCSA ）または Windows でプラグインの登録を更新できます。vCenter Plug-in の登録変更は、プラグインを使用するすべての vCenter Server で行う必要があります。</block>
   <block id="badb045d93b6de2fe8d2a1a664b92d6f" category="paragraph">このアップグレード手順では、次のアップグレードシナリオについて説明します。</block>
-  <block id="82dc7b5ec9eb57183dbaa5e4c571a1d4" category="list-text">VCP 4.7 、 4.6 、 4.5 、または 4.4 にアップグレードする。</block>
   <block id="a6a18366932bfeffc2341cc7aa5fe09d" category="list-text">7.0 、 6.7 、または 6.5 の HTML5 vSphere Web Client にアップグレードする。</block>
-  <block id="5b6d9704f325d32d3d101a44b2042d60" category="list-text">6.7 または 6.5 の Flash vSphere Web Client にアップグレードする。</block>
   <block id="26f2f1d140c70238a07a5f09e846fd82" category="inline-link">プラグインのバージョン</block>
-  <block id="7f943040514a282ac3afd634a6f2d742" category="admonition">このプラグインは、 Flash 用の vSphere Web Client バージョン 6.7 U2 、 Flash および HTML5 用の 6.7 U3 、および 7.0 U1 に対応しています。このプラグインは、 HTML5 vSphere Web Client バージョン 6.7 U2 とは互換性がありません。サポートされる vSphere のバージョンの詳細については、のリリースノートを参照してください<block ref="52a3661120ba33cd100cafc9c9d568e0" category="inline-link-rx"></block>。</block>
   <block id="d7be3f2367f28daeaac07c2967977074" category="list-text">* 管理者権限 * ：プラグインをインストールするための vCenter Administrator ロールの権限があります。</block>
   <block id="7df6c84beb4c7f9c0109ea10accef1ed" category="list-text">* vSphere のアップグレード * ： NetApp Element Plug-in for vCenter Server をアップグレードする前に、必要な vCenter のアップグレードを実行しておきます。以下の手順は、 vCenter のアップグレードが完了していることを前提としています。</block>
   <block id="c60238cb58d95b456566853e62db1d18" category="list-text">* vCenter Server * ： vCenter Plug-in バージョン 4.x が vCenter Server に登録されている。登録ユーティリティ（「 https://[management node ip: 9443 」）から「 * Registration Status * 」を選択し、必要なフィールドに入力して「 * Check Status * 」を選択し、 vCenter Plug-in がすでに登録されていること、および現在のインストールのバージョン番号を確認します。</block>
@@ -5335,7 +5326,6 @@
   <block id="4c02ebe342ea429a0d2a2a23be2ddd19" category="inline-link-macro">アップグレード済み</block>
   <block id="27c25a67c147529824177fc694e7fd19" category="list-text">* 管理ノードのアップグレード * ：以前に実行されていた管理ノードを実行します <block ref="23cc83378d4b0551eef4ac573737e008" category="inline-link-macro-rx"></block> バージョン 11.3 以降。vCenter Plug-in 4.4 以降では、個別のサービスを提供するモジュラアーキテクチャを備えた 11.3 以降の管理ノードが必要です。管理ノードの電源をオンにして IP アドレスまたは DHCP アドレスを設定しておく必要があります。</block>
   <block id="7d3b6b8e2540bf5435b3b6984ad1f702" category="list-text">* Element ストレージのアップグレード * ： NetApp Element ソフトウェア 11.3 以降を実行しているクラスタが必要です。</block>
-  <block id="87bf19c91a33b243a6cbe84fbed9d33b" category="list-text">* vSphere Web Client * ： vSphere 6.5 および 6.7 では、プラグインのアップグレードを開始する前に vSphere Web Client からログアウトしています。これらのバージョンの Web Client からログアウトしないと、このプロセスで行ったプラグインへの更新が認識されません。vSphere 7.0 では、 Web Client からログアウトする必要はありません。</block>
   <block id="c13fa68b55894aaf612067aa7455ac53" category="list-text">ブラウザに管理ノードの IP アドレスを入力します。登録用の TCP ポート「 https://[management node ip 」： 9443 でこのプラグインの登録ユーティリティ UI が開き、「 Manage QoSSIOC Service Credentials * 」ページが表示されます。</block>
   <block id="26fc450c5cd9b7f28b10cff7659b479d" category="image-alt">は、プラグインの登録ユーティリティの UI です</block>
   <block id="0bd0c7dc69df55cee394b64eebcd27ab" category="list-text">vCenter Plug-in Registration * を選択します。</block>
@@ -5349,12 +5339,10 @@
   <block id="daa4768416116e6634bf75e379507244" category="admonition">HTTP または HTTPS サーバ（ダークサイト）を使用している場合、または ZIP ファイル名やネットワーク設定を変更した場合は、「 * Custom URL * 」を選択して URL をカスタマイズできます。URL をカスタマイズする場合の追加の設定手順については、社内（ダークサイト）の HTTP サーバの vCenter プロパティの変更に関する Element Plug-in for vCenter Server のドキュメントを参照してください。</block>
   <block id="35165f9b14f6cde03fa7f6f9b03732ba" category="list-text">「 * Update * 」を選択します。</block>
   <block id="14b68e07a69ae90b19c2bd823797ff21" category="paragraph">登録が完了すると、登録ユーティリティの UI にバナーが表示されます。</block>
-  <block id="5ae25e6c6213c07c6bff7afd727100dd" category="list-text">（ vSphere 6.5 および 6.7 ユーザ） vCenter Administrator として vSphere Web Client にログインします。</block>
   <block id="f523905d48a1db956815565365a5a6ad" category="admonition">この操作により、新しいデータベースが作成され、 vSphere Web Client でのインストールが完了します。</block>
   <block id="9b572df8237d34b7c32142ac15f1325f" category="list-text">vSphere Web Client で、タスクモニタで次のタスクが完了していることを確認します。「ダウンロードプラグイン」および「デプロイプラグイン」。</block>
   <block id="c4676996d8b51da422f5ab619c54ae01" category="list-text">NetApp Element の設定および管理拡張ポイントが vSphere Web Client の * Shortcuts * タブとサイドパネルに表示されていることを確認します。</block>
   <block id="342171073fda0fd2cec612dc41323bdb" category="image-alt">は、アップグレードまたはが正常に完了したあとのプラグインの拡張ポイントを示しています をインストールします</block>
-  <block id="1b2f3dab0786bdecf8b964c824625843" category="admonition">vCenter Plug-in のアイコンが表示されない場合は、プラグインのトラブルシューティングに関する Element Plug-in for vCenter Server のドキュメントを参照してください。</block>
   <block id="b9e50e6a339819ad9d12906b29e978ca" category="list-text">プラグインの * NetApp Element 構成 * 拡張ポイントの * バージョン情報 * タブでバージョンの変更を確認します。</block>
   <block id="a2b39afbde860c9c0fc759f3772e2dd2" category="paragraph">次のバージョンの詳細またはより新しいバージョンの詳細が表示されます。</block>
   <block id="4715e0cc20eb79c52c1f181ce0f6afb0" category="admonition">vCenter Plug-in には、オンラインヘルプが用意されています。ヘルプの最新のコンテンツが読み込まれるようにするために、プラグインをアップグレードしたあとにブラウザキャッシュをクリアしてください。</block>
@@ -8997,7 +8985,6 @@
   <block id="98adf771bd3157bdd04e3f1978841819" category="summary">ModifyVolumeAccessGroup メソッドを使用すると、イニシエータを更新し、ボリュームアクセスグループのボリュームを追加または削除できます。</block>
   <block id="3320206590de3f064fed7744a569234a" category="paragraph">「 modyVolumeAccessGroup 」メソッドを使用すると、イニシエータを更新し、ボリュームアクセスグループのボリュームを追加または削除できます。</block>
   <block id="7dd365ea588afbcc68b92a986ecab63e" category="paragraph">指定したイニシエータまたはボリュームが既存のものと重複している場合、ボリュームアクセスグループはそのまま維持されます。ボリュームまたはイニシエータの値を指定しない場合、イニシエータとボリュームの現在のリストは変更されません。</block>
-  <block id="24c20f7cf517768167b671de982cf860" category="paragraph">仮想ネットワークをボリュームアクセスグループに関連付けることもできます。この関連付けにより、ボリュームアクセスグループ内のすべてのボリュームが環境として関連付けられます。</block>
   <block id="917d2a878442a3f03fe637c1d26d9213" category="paragraph">変更するボリュームアクセスグループの ID 。</block>
   <block id="cd5cbac0deed04944581bcd4eedf92d2" category="paragraph">このボリュームアクセスグループの新しい名前。</block>
   <block id="ae6458dd661ed45d8d5540c11eaafff9" category="paragraph">変更するボリュームのボリューム ID のリスト。</block>
@@ -11511,10 +11498,7 @@
   <block id="1d6434e72af827d0e2579d4135db7976" category="summary">ストレージの追加が必要になったとき、またはクラスタ作成時に、クラスタに Fibre Channel ノードを追加できます。Fibre Channel ノードは、初回の電源投入時に初期設定を行う必要があります。設定が完了したノードは保留状態のノードのリストに表示され、クラスタに追加できます。</block>
   <block id="ba27cf991d8ba0a2e1f9025c73487b29" category="paragraph">クラスタ内の各 Fibre Channel ノードは、互換性のあるソフトウェアバージョンを実行している必要があります。クラスタに Fibre Channel ノードを追加すると、必要に応じて新しいノードに Element のクラスタバージョンがインストールされます。</block>
   <block id="0ea901d7b93f28d47c82fed86571582f" category="admonition">追加するノードの Element のバージョンがクラスタで実行されているバージョンと異なる場合は、クラスタマスターで実行されている Element のバージョンに非同期的に更新されます。更新されたノードは、自動的にクラスタに追加されます。この非同期プロセスの実行中、ノードの状態は pendingActive になります。</block>
-  <block id="c391dcd392e5ebad4ef80e28bc812433" category="summary">NetApp Element ソフトウェア 12.2 以降を搭載した NetApp HCI では、 Fully Qualified Domain Name \ （ FQDN ；完全修飾ドメイン名）を使用してストレージクラスタの Web インターフェイスにアクセスできます。FQDN を使用して、 Element Web UI 、ノード UI 、管理ノード UI などの Web ユーザインターフェイスにアクセスする場合は、クラスタで使用される FQDN を特定するストレージクラスタ設定を最初に追加する必要があります。</block>
-  <block id="c5fbf87d9c25b39cfdb5b8463af2d089" category="paragraph">NetApp Element ソフトウェア 12.2 以降を搭載した NetApp HCI では、 Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を使用してストレージクラスタの Web インターフェイスにアクセスできます。FQDN を使用して、 Element Web UI 、ノード UI 、管理ノード UI などの Web ユーザインターフェイスにアクセスする場合は、クラスタで使用される FQDN を特定するストレージクラスタ設定を最初に追加する必要があります。</block>
   <block id="f3543d67082450a361031983a82f89a9" category="paragraph">このプロセスにより、クラスタはログインセッションを適切にリダイレクトできるようになり、キー管理ツールやアイデンティティプロバイダなどの外部サービスとの統合が強化されて、多要素認証に対応できるようになります。</block>
-  <block id="f6508635f3756abd14bc9da2e61edac3" category="list-text">この機能を使用するには、 Element 12.2 以降および管理サービスバージョン 2.15 以降が必要です。</block>
   <block id="41ecc6e699ee0ce770ba47374acb53d6" category="list-text">REST API を使用するには、バージョン 11.5 以降を実行する管理ノードを導入しておく必要があります。</block>
   <block id="e1cba8b911318c24680ce3a7164e3734" category="list-text">環境で FQDN が解決されるように、 Element ストレージノードと mNode の DNS がネットワーク環境に対して正しく設定されていることを確認します。DNS を設定するには、ストレージノードのノード UI および管理ノードに移動し、 * Network Settings * &gt; * Management Network * を選択します。</block>
   <block id="8066f3268908f1500f8292ad17cf16c4" category="list-text">ストレージ・ノードのノード単位の UI ： https://&lt;storage_node_management_IP&gt;:442`</block>
@@ -11831,4 +11815,74 @@
   <block id="e7538fbaab3148e24ff8ae41d09df5ce" category="list-text">[[[[suf_install_config_time_sync]] ハイパーバイザーを介したホストとの時間同期を無効にします（ VMware の例を次に示します）。</block>
   <block id="2d80cb22364fea2daaca797ae1d938cb" category="inline-link-macro">Setup コマンド</block>
   <block id="a482c646f7f8199c69090c0d13cac33b" category="admonition">の実行時は NTP に影響するため、時刻の同期設定の完了後は NTP を編集しないでください <block ref="418ec8b5cff4068b256dfd7e9fc5ded7" category="inline-link-macro-rx"></block> 管理ノード。</block>
+  <block id="394e1ee42fe49c664653cce821c59bc2" category="inline-link-macro">管理サービス 2.19 に関する注意事項</block>
+  <block id="54bd6026e83ef252dbfce1e3b805d9c1" category="list-text"><block ref="54bd6026e83ef252dbfce1e3b805d9c1" category="inline-link-macro-rx"></block></block>
+  <block id="3b79e75f8bb7342984eec3a3fd95ccf6" category="list-text"><block ref="3b79e75f8bb7342984eec3a3fd95ccf6" category="inline-link-rx"></block></block>
+  <block id="3b34803433d83528840d8e729af0e8bc" category="inline-link">vCenter Plug-in 4.8 リリースノート</block>
+  <block id="c561b7d92736e6c451a661a0a5da7586" category="list-text"><block ref="c561b7d92736e6c451a661a0a5da7586" category="inline-link-rx"></block></block>
+  <block id="6323ff2aac002ae06fc68e7a1a709554" category="list-text"><block ref="6323ff2aac002ae06fc68e7a1a709554" category="inline-link-rx"></block></block>
+  <block id="82bb8287cc89bff9a860feb380d60b2b" category="list-text"><block ref="82bb8287cc89bff9a860feb380d60b2b" category="inline-link-rx"></block></block>
+  <block id="05276a54c5c5ace9b292548354112919" category="list-text"><block ref="05276a54c5c5ace9b292548354112919" category="inline-link-rx"></block></block>
+  <block id="b2a1b69fb08bccdb5677884b0a061505" category="list-text"><block ref="b2a1b69fb08bccdb5677884b0a061505" category="inline-link-rx"></block></block>
+  <block id="c8de9bc8a027f0e5864fb603489b44fd" category="list-text"><block ref="c8de9bc8a027f0e5864fb603489b44fd" category="inline-link-rx"></block></block>
+  <block id="4c0d90c9ada6ab81f16f3446180ab3a1" category="inline-link-macro">vCenter リンクモード</block>
+  <block id="03474279d3fc9d2a56fdc80404029d49" category="admonition">NetApp Element Plug-in for vCenter Server を使用して他の vCenter Server のクラスタリソースを管理する方法については、を参照してください <block ref="7b02ca43ff4544fd4c29159c11bae6d5" category="inline-link-macro-rx"></block> はローカルストレージクラスタのみに制限されます。</block>
+  <block id="4c671b547a1a811f45797247ec5747c3" category="list-text">VCP 4.8 、 4.7 、 4.6 、 4.5 、または 4.4 にアップグレードする。</block>
+  <block id="10d52a77bc99042d3e815ba24e48132b" category="admonition">このプラグインは、 VMware vCenter Server 6.5 for VCP 4.7 以降と互換性がありません。</block>
+  <block id="f171584692be059c88cbbda35827f299" category="list-text">6.7 Flash vSphere Web Client にアップグレードする。</block>
+  <block id="2acbddec1a60b854691b264d7efa1855" category="admonition">このプラグインは、 Flash 用の vSphere Web Client バージョン 6.7 U2 、 Flash および HTML5 用の 6.7 U3 、および 7.0 U1 に対応しています。このプラグインは、 HTML5 vSphere Web Client バージョン 6.7 U2 ビルド 13007421 および更新 2a より前にリリースされたその他の 6.7 U2 ビルド（ビルド 13643870 ）とは互換性がありません。サポートされる vSphere のバージョンの詳細については、のリリースノートを参照してください<block ref="52a3661120ba33cd100cafc9c9d568e0" category="inline-link-rx"></block>。</block>
+  <block id="12a6ece51476e2d3feae5dff01704e58" category="list-text">* vSphere Web Client * ：プラグインのアップグレードを開始する前に vSphere Web Client からログアウトしました。Web Client からログアウトしないと、このプロセスで行ったプラグインへの更新が認識されません。</block>
+  <block id="2bfb7d51aea637d48bf5bca4afcb46a1" category="list-text">vSphere Web Client に vCenter Administrator としてログインします。vSphere Web Client にすでにログインしている場合は、ログアウトし、 2~3 分待ってから再度ログインする必要があります。</block>
+  <block id="a0abd6db969f497b63a29f8fbd1771df" category="inline-link-macro">vCenter Server 向け Element プラグイン</block>
+  <block id="3cc243a697de25c61818bc316cea4e98" category="paragraph">vCenter Plug-in のアイコンが表示されない場合は、を参照してください <block ref="f9851c8aa620f0cd00ac6d51cd4290b1" category="inline-link-macro-rx"></block> プラグインのトラブルシューティングに関するドキュメント。</block>
+  <block id="65dc103da0aa4a7822d43218290b7b8d" category="paragraph">VMware vCenter Server 6.7U1 を使用して VCP 4.8 にアップグレードしたあとに、ストレージクラスタが表示されないか、 NetApp Element 構成の「クラスタ * 」および「 QoSSIOC 設定 * 」のセクションにサーバエラーが表示されます。を参照してください <block ref="107c2c097bec52fadb44d9536d1a3a46" category="inline-link-macro-rx"></block> これらのエラーのトラブルシューティングに関するドキュメント。</block>
+  <block id="95044d6cb92a8dcd9435a8d6518710be" category="inline-link">Element 11.7 のドキュメント</block>
+  <block id="ef4ff55196c56aee6ea12eb45472f816" category="list-text"><block ref="ef4ff55196c56aee6ea12eb45472f816" category="inline-link-rx"></block></block>
+  <block id="be03f79fc587170366cede6d4134dfb1" category="summary">システム FQDN Web UI アクセスを設定、削除、およびトラブルシューティングする方法について説明します。</block>
+  <block id="5e5ab1bde060e7f97b5535a714ffa948" category="paragraph">NetApp Element ソフトウェア 12.2 以降を搭載した SolidFire オールフラッシュストレージでは、 Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を使用してストレージクラスタの Web インターフェイスにアクセスできます。FQDN を使用して、 Element Web UI 、ノード UI 、管理ノード UI などの Web ユーザインターフェイスにアクセスする場合は、クラスタで使用される FQDN を特定するストレージクラスタ設定を最初に追加する必要があります。</block>
+  <block id="42a05652b1d8f46c5d7ec916a7236c03" category="list-text">この機能を使用するには、 Element 12.2 以降が必要です。</block>
+  <block id="8dce7fd8c170fdeedc532a5b2c311924" category="list-text">NetApp Hybrid Cloud Control REST API を使用してこの機能を設定するには、管理サービス 2.15 以降が必要です。</block>
+  <block id="e74f594376d0584776f0477e752d0b7e" category="list-text">NetApp Hybrid Cloud Control の UI を使用してこの機能を設定するには、管理サービス 2.19 以降が必要です。</block>
+  <block id="5b0c57013cf9f92572d48550d25f086a" category="list-text">管理ノードおよび各ストレージクラスタの IP アドレスに正しく解決されるように、管理ノードと各ストレージクラスタの IP アドレスを完全修飾ドメイン名する必要があります。</block>
+  <block id="e4a8be6aa5d097088c93be7ecd84f03d" category="paragraph">NetApp Hybrid Cloud Control と REST API を使用して、 FQDN Web UI アクセスを設定または削除できます。正しく設定されていない FQDN をトラブルシューティングすることもできます。</block>
+  <block id="6164fb23c4ed373eb19472cc46b29353" category="list-text"><block ref="913dc194dc282bfdc5ad8649f0ac6f96" category="inline-xref-macro-rx"></block></block>
+  <block id="12ec86af0ca7bcb30dd18a25192db8d9" category="list-text"><block ref="214ba53f3aeb43360fee77bd88315260" category="inline-xref-macro-rx"></block></block>
+  <block id="6c1944e9fc1c36aabd8da07192af83ee" category="list-text"><block ref="dabfc5098b7a62ae79139f381e66effe" category="inline-xref-macro-rx"></block></block>
+  <block id="fcdb7833c38a0e654bbabf60efed0034" category="list-text"><block ref="a79218900f77de904e0cf4c3bd095bed" category="inline-xref-macro-rx"></block></block>
+  <block id="8dd1e649c7d67d09651573366bf71c6a" category="list-text"><block ref="b8d6197b9bef06ed2b702fdbca989df8" category="inline-xref-macro-rx"></block></block>
+  <block id="a869d99c04861ce28cc308ce663f7b3c" category="section-title">NetApp Hybrid Cloud Control を使用して、 FQDN Web UI アクセスを設定します</block>
+  <block id="0bde0c3d1eee962104c26a4017e0cd26" category="list-text">ページの右上にあるメニューアイコンを選択します。</block>
+  <block id="c4eb224b20c8201b8b2872700d6ecb90" category="list-text">「 * Configure * 」を選択します。</block>
+  <block id="fa7ae89343ce5a342938ec19c45b4268" category="list-text">[ 完全修飾ドメイン名 *] ペインで、 [ セットアップ *] を選択します。</block>
+  <block id="ff8c1f10230075662fcb18fb31c8ddc4" category="list-text">表示されたウィンドウで、管理ノードおよび各ストレージクラスタの FQDN を入力します。</block>
+  <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">[ 保存（ Save ） ] を選択します。</block>
+  <block id="17427b98119362b81a678fe79a4229bd" category="paragraph">「 * Fully Qualified Domain Names * 」ペインには、各ストレージクラスタとその MVIP および FQDN が表示されます。</block>
+  <block id="c476be111c63e1d8d9e3035c635c3a5b" category="admonition">FQDN が設定されている接続されたストレージクラスタのみが、「 * Fully Qualified Domain Names * 」ペインに表示されます。</block>
+  <block id="243306bdc7845f244f8f471abc69bb30" category="section-title">REST API を使用して FQDN Web UI アクセスを設定します</block>
+  <block id="2e04039ce2a497a8b570505a4afe0e89" category="list-text">Element API を使用してストレージクラスタの設定を変更します。</block>
+  <block id="3c32d87ef0c6c7f990553ba657e19ecf" category="section-title">NetApp Hybrid Cloud Control を使用して、 FQDN Web UI アクセスを削除します</block>
+  <block id="f00e56e7d7364746a65aa316c2ee3573" category="paragraph">この手順を使用して、管理ノードとストレージクラスタの FQDN Web アクセスを削除できます。</block>
+  <block id="7a6f8a9a343f0db394dc3c6cb7d404c9" category="list-text">[ 完全修飾ドメイン名 *] ペインで、 [ 編集 *] を選択します。</block>
+  <block id="a72a7630c332682f1cc96507b7d29cfd" category="list-text">表示されたウィンドウで、 *FQDN* テキストフィールドの内容を削除します。</block>
+  <block id="4a38cac861e52a17da7da9aa6ecfd847" category="paragraph">ウィンドウが閉じ、 [*Fully Qualified Domain Names] ペインに FQDN が表示されなくなります。</block>
+  <block id="529997f479def01864b30e17b4a4f774" category="section-title">REST API を使用して FQDN Web UI アクセスを削除します</block>
+  <block id="0dbd41855131f120c306733f9557b3db" category="list-text">Element API にアクセスし、「 D eleteClusterInterfacePreference 」 API メソッドを使用して次のクラスタインターフェイス設定を削除します。</block>
+  <block id="5b5cf5322dfd97da05c0d560ee29c72e" category="list-text">管理ノードの REST API UI にアクセスするには、管理ノードの IP アドレスに「 /mnode/2/」 を続けて入力します。例：</block>
+  <block id="ccc0cb81c193c9775f8a7736de44f514" category="list-text">「 * Authorize * 」またはロックアイコンを選択し、 Element クラスタのユーザ名とパスワードを入力します。</block>
+  <block id="c89467915fdcfb342110da355f0d1639" category="list-text">要求の本文領域では、「 m node_fqdn 」パラメータに値を入力しないでください。また 'use_proxy' パラメータにプロキシを使用するかどうかを指定します ('true' または 'false')</block>
+  <block id="231cf4c70d866b616c21baddaeed0696" category="section-title">トラブルシューティング</block>
+  <block id="7e8bbdf6c43ca3e9bb8d4526cad81894" category="paragraph">FQDN が正しく設定されていないと、管理ノード、ストレージクラスタ、またはその両方へのアクセスで問題が発生する可能性があります。問題のトラブルシューティングを行うには、次の情報を参照してください。</block>
+  <block id="642facf67e0ad311eee88b3ab8381590" category="cell">問題</block>
+  <block id="50fc9b91746bb8d34fa385d9324741ed" category="cell">原因</block>
+  <block id="d61ffac7c9885fafd30b4c875bacc49e" category="list-text">FQDN を使用して管理ノードまたはストレージクラスタにアクセスしようとするとブラウザエラーが表示されます。</block>
+  <block id="390c9209df4a10276a0d5f79ba599662" category="list-text">IP アドレスを使用して管理ノードまたはストレージクラスタにログインすることはできません。</block>
+  <block id="96b59a42afc40a22e7a4d6dbd1c66255" category="cell">管理ノードの FQDN とストレージクラスタ FQDN の両方が正しく設定されていません。</block>
+  <block id="170d5a0e964822a8e8b59c8af1e2e1da" category="cell">このページの REST API の手順を使用して、管理ノードとストレージクラスタの FQDN 設定を削除して設定し直します。</block>
+  <block id="04aa39fcf2e8f115c9ab94074614c632" category="list-text">ストレージクラスタ FQDN にアクセスしようとするとブラウザエラーが表示されます。</block>
+  <block id="dddc5470633c825730c12f220c6436f5" category="cell">管理ノード FQDN が正しく設定されていますが、ストレージクラスタ FQDN が正しく設定されていません。</block>
+  <block id="84135c8bcbce9830fcc18e8a7c1e62b3" category="cell">このページの REST API の手順を使用して、ストレージクラスタの FQDN 設定を削除して再度設定します。</block>
+  <block id="9c0870aaeab2e4c318ef933b99e6de63" category="list-text">管理ノード FQDN にアクセスしようとするとブラウザエラーが表示されます。</block>
+  <block id="ac770607cee2fa35e51afff28368f6b1" category="list-text">IP アドレスを使用して管理ノードとストレージクラスタにログインできます。</block>
+  <block id="6edb83a92e7e3bdd1f85b71efde5fd92" category="cell">管理ノード FQDN の設定に誤りがありますが、ストレージクラスタ FQDN が正しく設定されています。</block>
+  <block id="5ce6d31ea955677457253f18be8d07b1" category="cell">NetApp Hybrid Cloud Control にログインして UI で管理ノードの FQDN 設定を修正するか、このページの REST API の手順を使用して設定を修正します。</block>
 </blocks>
