@@ -51,7 +51,7 @@ https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Eleme
 
 NetApp Hybrid Cloud Control インターフェイスを使用して、 Element ストレージサービスと管理サービスをアップグレードし、ストレージアセットを管理できます。
 
-link:../storage/task_intro_manage_storage_hcc.html["NetApp Hybrid Cloud Control を使用してストレージを管理します"]
+link:../hccstorage/index.html["NetApp Hybrid Cloud Control の概要を使用してストレージを管理および監視します"]
 
 
 

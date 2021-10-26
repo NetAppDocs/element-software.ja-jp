@@ -14,9 +14,8 @@ SolidFire ESDS クラスタのパフォーマンスを監視し、 NetApp Hybrid
 
 以下は、 NetApp Hybrid Cloud Control の UI でのクラスタの監視に関する情報へのリンクです。
 
-* https://docs.netapp.com/us-en/hci/docs/task_hcc_nodes.html["ノードページでインベントリを表示します"^]
-* https://docs.netapp.com/us-en/hci/docs/task_hcc_volumes.html["ストレージクラスタのボリュームを監視する"^]
-* https://docs.netapp.com/us-en/hci/docs/task_hcc_activeiq.html["SolidFire Active IQ を使用して、パフォーマンス、容量、クラスタの健全性を監視できます"^]
+* link:hccstorage/task-hcc-nodes.html["ノードページでインベントリを表示します"]
+* link:hccstorage/task-hcc-volumes.html["ストレージクラスタのボリュームを監視する"]
 
 
 

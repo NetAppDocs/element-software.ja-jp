@@ -872,8 +872,6 @@
   <block id="d8ac4fdc9abb74552f869693e6472bb3" category="paragraph"><block ref="d8ac4fdc9abb74552f869693e6472bb3" category="inline-link-macro-rx"></block></block>
   <block id="f90ae56c2176eeabe04447830a02ed90" category="paragraph">VMware vSphere で Element UI の代わりのインターフェイスを使用して、 Element ソフトウェアを実行するストレージクラスタを設定および管理できます。</block>
   <block id="942aa97d02365106026f9b517428bb74" category="paragraph">NetApp Hybrid Cloud Control インターフェイスを使用して、 Element ストレージサービスと管理サービスをアップグレードし、ストレージアセットを管理できます。</block>
-  <block id="8008efd121240ad0c223101f587b1202" category="inline-link-macro">NetApp Hybrid Cloud Control を使用してストレージを管理します</block>
-  <block id="fc399acf0ddf7b4469961c44884fb1e7" category="paragraph"><block ref="fc399acf0ddf7b4469961c44884fb1e7" category="inline-link-macro-rx"></block></block>
   <block id="e5c09ae98ad7a6293c57c48ffda701a3" category="section-title">管理ノード UI</block>
   <block id="486041861981709d6eda4a218a232ed2" category="paragraph">管理ノードには 2 つの UI が装備されています。 REST ベースのサービスを管理するための UI と、ネットワーク / クラスタ設定の管理とオペレーティングシステムのテスト / ユーティリティを実行するためのノード UI です。REST API UI からは、サービスベースのシステム機能を管理ノードから制御するサービス関連 API のメニューにアクセスできます。</block>
   <block id="70489b8d2c3a8e276f930ccd1b7d6450" category="section-title">その他の統合ユーティリティおよびツール</block>
@@ -1669,20 +1667,12 @@
   <block id="2062fedb7b40edb831de2c57874f133c" category="list-text">[ 現在の保持期間 * ] の横の [ * 編集 * ] をクリックします。</block>
   <block id="03c68839d6658e59ea0a88edb01f5ae0" category="list-text">グループ Snapshot の保持オプションを選択します。</block>
   <block id="e3a5996517060126b1802e74bf040498" category="list-text">[ * 保存期間の設定 * ] をクリックし、日付スピンボックスを使用して、システムがスナップショットを保持する期間を選択します。</block>
-  <block id="63f59c546b90837827b11a94f8170f95" category="summary">NetApp Hybrid Cloud Control を使用してストレージアセットを管理できます。</block>
-  <block id="a3f64bf828932918ad4a6f29dd8d97de" category="doc">NetApp Hybrid Cloud Control を使用してストレージを管理します</block>
   <block id="bd6dca3f6f8d28ce081bb3957040368d" category="inline-link">ユーザアカウントを作成および管理します</block>
-  <block id="a116ef071fba525c744e53b6407c7c5a" category="list-text"><block ref="a116ef071fba525c744e53b6407c7c5a" category="inline-link-rx"></block></block>
   <block id="7dbe0101a0bdae6a1bce082dbf9d19bc" category="inline-link">ストレージクラスタを追加および管理する</block>
-  <block id="6f0fccaccdc6ac383d0e1dea82497b69" category="list-text"><block ref="6f0fccaccdc6ac383d0e1dea82497b69" category="inline-link-rx"></block></block>
   <block id="e84ad4b7c9a88875c043f3cb7fb7b985" category="inline-link">ボリュームを作成および管理する</block>
-  <block id="99e1ebf5b2990e0253a5d29388f6430d" category="list-text"><block ref="99e1ebf5b2990e0253a5d29388f6430d" category="inline-link-rx"></block></block>
   <block id="43c95975fceac67e14abe3895f6650b5" category="inline-link">ボリュームアクセスグループを作成および管理します</block>
-  <block id="c909cb09018247a15e6e317417db384d" category="list-text"><block ref="c909cb09018247a15e6e317417db384d" category="inline-link-rx"></block></block>
   <block id="067dc4be0fd4af30d6f12cb91408d3a6" category="inline-link">イニシエータを作成および管理する</block>
-  <block id="0992b5b93b9d577f28f41d143c3cd673" category="list-text"><block ref="0992b5b93b9d577f28f41d143c3cd673" category="inline-link-rx"></block></block>
   <block id="50ee1f895e7e284e9dd0f8f045bc11a2" category="inline-link">ボリュームの QoS ポリシーの作成と管理</block>
-  <block id="bb57cb5196c35b15c459360713baef80" category="list-text"><block ref="bb57cb5196c35b15c459360713baef80" category="inline-link-rx"></block></block>
   <block id="78085602422976a39a4bdab84ee83958" category="summary">OpenStack Swift オブジェクトストア上のバックアップからボリュームをリストアできます。</block>
   <block id="00ce01d1b5c130a0cb290b999af24cae" category="doc">OpenStack Swift オブジェクトストア上のバックアップからボリュームをリストアします</block>
   <block id="9ebf41a5d789da90fd024c17df42c656" category="list-text">[*Reporting*&gt;*Event Log] をクリックします。</block>
@@ -4719,7 +4709,6 @@
   <block id="177512b9add0b40c38dad61838bf7d79" category="section-title">資産管理</block>
   <block id="e578d1edd1f3c874d49e1c9e76becbbc" category="list-text"><block ref="e578d1edd1f3c874d49e1c9e76becbbc" category="inline-link-macro-rx"></block></block>
   <block id="6740b5cf3dc8479800bac9edc86cd31a" category="inline-link-macro">REST API を使用して Element システムログを収集します</block>
-  <block id="f8953225944bd6c9aeaae2dc6aa03934" category="list-text"><block ref="f8953225944bd6c9aeaae2dc6aa03934" category="inline-link-macro-rx"></block></block>
   <block id="c9676e9b030c94e7e828a060b343f3db" category="list-text"><block ref="c9676e9b030c94e7e828a060b343f3db" category="inline-link-macro-rx"></block></block>
   <block id="a5790b06c6321c773eca064d8f8b323a" category="inline-link-macro">管理サービスからログを取得しています</block>
   <block id="b8ce529cfc2b9255a783e211ddb57996" category="list-text"><block ref="b8ce529cfc2b9255a783e211ddb57996" category="inline-link-macro-rx"></block></block>
@@ -11257,11 +11246,7 @@
   <block id="78454d8f2c03ced65f015c33ba638846" category="paragraph">SolidFire ESDS クラスタのパフォーマンスを監視し、 NetApp Hybrid Cloud Control の UI を使用してインベントリを表示できます。NetApp Hybrid Cloud Control の UI を使用して、トラブルシューティング用のログを収集することもできます。</block>
   <block id="ba2a6751f94ecc83e1287220cb1dbd46" category="paragraph">以下は、 NetApp Hybrid Cloud Control の UI でのクラスタの監視に関する情報へのリンクです。</block>
   <block id="1587f6667afe5b768dfe958cc33c0348" category="inline-link">ノードページでインベントリを表示します</block>
-  <block id="5cb577b83b6bb4fc2e51b14da7c10ab4" category="list-text"><block ref="5cb577b83b6bb4fc2e51b14da7c10ab4" category="inline-link-rx"></block></block>
   <block id="b1fdadb278bc33692729c07d84b4d900" category="inline-link">ストレージクラスタのボリュームを監視する</block>
-  <block id="2e740eead38edf84a569257e80dedbf9" category="list-text"><block ref="2e740eead38edf84a569257e80dedbf9" category="inline-link-rx"></block></block>
-  <block id="28762672a455f549e8e672cf4945c35c" category="inline-link">SolidFire Active IQ を使用して、パフォーマンス、容量、クラスタの健全性を監視できます</block>
-  <block id="819a8ecabe1c986d5275ef4292083160" category="list-text"><block ref="819a8ecabe1c986d5275ef4292083160" category="inline-link-rx"></block></block>
   <block id="0eb9b9f84b979ff83ea24e744f09373c" category="summary">ネットアップサポートに問い合わせて問題のトラブルシューティングを依頼する前に、 SolidFire ESDS クラスタのライセンスキー情報を入手しておく必要があります。SolidFire ESDS クラスタのライセンスキーは、クラスタの注文番号とシリアル番号で構成されます。</block>
   <block id="833ff59058bc8c9d93ecc7cabf2547ba" category="paragraph">ネットアップサポートに問い合わせて問題のトラブルシューティングを依頼する前に、 SolidFire ESDS クラスタのライセンスキー情報を入手しておく必要があります。SolidFire ESDS クラスタのライセンスキーは、クラスタの注文番号とシリアル番号で構成されます。</block>
   <block id="41b5c7ac96acb3c1ef2799ee7df58ea3" category="paragraph">GetLicenseKey メソッドを使用すると、 SolidFire ESDS ストレージクラスタのライセンスキー情報を取得できます。GetLicenseKey メソッドには、入力パラメータはありません。このメソッドの戻り値は次のとおりです。</block>
@@ -11447,7 +11432,6 @@
   <block id="1b85b8a3895b460e5f081dab072bd9d0" category="inline-link-macro">管理ノードをセットアップして Active IQ テレメトリを有効にします</block>
   <block id="d8c4d8938bb8651e8c24cbdab9136a8d" category="list-text"><block ref="d8c4d8938bb8651e8c24cbdab9136a8d" category="inline-link-macro-rx"></block></block>
   <block id="f07716c21a1e0093dd84ea5f67d36cc5" category="inline-link-macro">完全修飾ドメイン名 Web UI アクセスを設定します</block>
-  <block id="b130be731e40e9f821beba22155f7a23" category="list-text"><block ref="b130be731e40e9f821beba22155f7a23" category="inline-link-macro-rx"></block></block>
   <block id="05d9e40123f6f142637640b0336b5ad9" category="inline-link-macro">ストレージを使用するための次のステップを確認してください</block>
   <block id="89ac45ddd741f3910f1d1667e69f48cb" category="list-text"><block ref="89ac45ddd741f3910f1d1667e69f48cb" category="inline-link-macro-rx"></block></block>
   <block id="2fca2de2ec3347ae2ad2757bae53a038" category="summary">ボリュームアクセスグループによって、 Fibre Channel クライアントと SolidFire ストレージシステム上のボリューム間の通信が可能になります。Fibre Channel クライアントのイニシエータ（ WWPN ）をボリュームアクセスグループ内のボリュームにマッピングすることで、 Fibre Channel ネットワークと SolidFire ボリュームの間の安全なデータ I/O 通信が実現します。</block>
@@ -11542,7 +11526,6 @@
   <block id="1c45fd215e6dc295350e4f4f5e2e7e41" category="list-text"><block ref="1c45fd215e6dc295350e4f4f5e2e7e41" category="inline-xref-macro-rx"></block></block>
   <block id="a8d3424ca67e2754569ae54982c009df" category="list-text"><block ref="a8d3424ca67e2754569ae54982c009df" category="inline-xref-macro-rx"></block></block>
   <block id="f17bdc3100242be6aa20374cb07b1e01" category="list-text"><block ref="f17bdc3100242be6aa20374cb07b1e01" category="inline-xref-macro-rx"></block></block>
-  <block id="3c75476427c35615b2ee7092ff951f6f" category="list-text"><block ref="3c75476427c35615b2ee7092ff951f6f" category="inline-xref-macro-rx"></block></block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="inline-xref-macro">次の手順</block>
   <block id="6b758c6baa8d819395041efcb30c549d" category="list-text"><block ref="6b758c6baa8d819395041efcb30c549d" category="inline-xref-macro-rx"></block></block>
   <block id="cf96e05831f60485e4f0560344047617" category="doc">Element ストレージノードを含むクラスタをセットアップする</block>
@@ -11553,7 +11536,6 @@
   <block id="9738ee176de57bd30fad400e77513ebf" category="list-text"><block ref="9738ee176de57bd30fad400e77513ebf" category="inline-link-macro-rx"></block></block>
   <block id="2655566b8a75d4f0fab58d6811d73554" category="list-text"><block ref="2655566b8a75d4f0fab58d6811d73554" category="inline-link-macro-rx"></block></block>
   <block id="3d18292283ccfb28019195f177ca1327" category="list-text"><block ref="3d18292283ccfb28019195f177ca1327" category="inline-link-macro-rx"></block></block>
-  <block id="dd1a8e2f14dda16865803c9eea0d39f4" category="list-text"><block ref="dd1a8e2f14dda16865803c9eea0d39f4" category="inline-link-macro-rx"></block></block>
   <block id="4e918d6a3b1bcdd5b4c5e580abae0d2f" category="summary">NetApp Element ソフトウェア管理ノード（ mNode ）をインストールして、アップグレードやシステムサービスの提供、クラスタのアセットと設定の管理、システムテストとユーティリティの実行、ネットアップサポートへのアクセスをトラブルシューティングに利用できます。</block>
   <block id="f865d301a6fd50d6c84b80609c81f582" category="paragraph">NetApp Element ソフトウェア管理ノード（ mNode ）をインストールして、アップグレードやシステムサービスの提供、クラスタのアセットと設定の管理、システムテストとユーティリティの実行、ネットアップサポートへのアクセスをトラブルシューティングに利用することができます。</block>
   <block id="db18ba512afe885e8489d3d8b3aaa0d4" category="list-text">を参照してください <block ref="69e4d07f7c9e6594925797cc7a86619f" category="inline-link-macro-rx"></block> ドキュメント</block>
@@ -11885,4 +11867,512 @@
   <block id="ac770607cee2fa35e51afff28368f6b1" category="list-text">IP アドレスを使用して管理ノードとストレージクラスタにログインできます。</block>
   <block id="6edb83a92e7e3bdd1f85b71efde5fd92" category="cell">管理ノード FQDN の設定に誤りがありますが、ストレージクラスタ FQDN が正しく設定されています。</block>
   <block id="5ce6d31ea955677457253f18be8d07b1" category="cell">NetApp Hybrid Cloud Control にログインして UI で管理ノードの FQDN 設定を修正するか、このページの REST API の手順を使用して設定を修正します。</block>
+  <block id="2b0fe7090c295442b520e1c431f5b990" category="section-title">ボリュームアカウント</block>
+  <block id="d88a2e3b7b7d5ca1d7f837546cb3b31f" category="paragraph">ボリューム固有のアカウントは、アカウントを作成したストレージクラスタにのみ固有です。これらのアカウントには、ネットワーク全体で特定のボリュームに対する権限を設定できますが、設定したボリューム以外に影響はありません。</block>
+  <block id="682faa8b9dab1247bb831425cb9ffc7e" category="paragraph">ボリュームアカウントは、 NetApp Hybrid Cloud Control Volumes の表で管理されます。</block>
+  <block id="65eec389aadc16bae85fa92b991e9f2b" category="inline-link-macro">NetApp Hybrid Cloud Control の概要を使用してストレージを管理および監視します</block>
+  <block id="998b6d06ff9f69c71a1b5ac158e5ddf4" category="paragraph"><block ref="998b6d06ff9f69c71a1b5ac158e5ddf4" category="inline-link-macro-rx"></block></block>
+  <block id="e6f552ff8b981823a09e603dcf005093" category="list-text"><block ref="e6f552ff8b981823a09e603dcf005093" category="inline-link-macro-rx"></block></block>
+  <block id="9945963a24fd155d6f6f9b3f0f1ed826" category="list-text"><block ref="9945963a24fd155d6f6f9b3f0f1ed826" category="inline-link-macro-rx"></block></block>
+  <block id="935bf4b062c3ce99ec15122fe03bd5f8" category="list-text"><block ref="935bf4b062c3ce99ec15122fe03bd5f8" category="inline-link-macro-rx"></block></block>
+  <block id="1905fad06cd2d678f65488599a009f2a" category="summary">Hybrid Cloud Control Nodes ページを使用すると、システムのストレージアセットを表示できます。</block>
+  <block id="4abf133407ea4fa2eda3059f56e2940f" category="paragraph">システムのストレージアセットを表示し、それらの IP アドレス、名前、およびソフトウェアバージョンを確認することができます。</block>
+  <block id="f0a87811e8be55bf94672bdc19729182" category="inline-link-macro">カスタムの保護ドメイン</block>
+  <block id="8878bca1837d19741db0f2ca4d2fcd17" category="paragraph">複数ノードシステムのストレージ情報を表示できます。状況 <block ref="057a38bb36aa6e1dcaf6f6415a6c21ab" category="inline-link-macro-rx"></block> が割り当てられている場合、特定のノードに割り当てられている保護ドメインを確認できます。</block>
+  <block id="9985a6faeb51ef9840d329f5a5454de1" category="paragraph">SolidFire エンタープライズ SDS ノードの場合、 [ ストレージ ] タブでインベントリを監視できます。</block>
+  <block id="9914f7f20d19a7ce30054796ca280e28" category="list-text">SolidFire オールフラッシュストレージクラスタ管理者のクレデンシャルを指定して NetApp Hybrid Cloud Control にログインします。</block>
+  <block id="f7b8cd7786f2f0ba8b3271684ef8f6ff" category="list-text">左側のナビゲーションで、 * ノード * を選択します。</block>
+  <block id="8b5d2fc18afcde2525a65fcaae38a752" category="image-alt">Hybrid Cloud Control Nodes ページの画像</block>
+  <block id="c7c5f161602908065ca8367c0fc4a392" category="admonition">新しい NetApp Hybrid Cloud Control セッションを初めて起動したときは、管理ノードで多数のクラスタを管理しているときに NetApp Hybrid Cloud Control Nodes ページのロードに時間がかかることがあります。ロードにかかる時間は、管理ノードでアクティブに管理されているクラスタの数によって異なります。その後の起動では、読み込み時間が短縮されます。</block>
+  <block id="ca177ff7003fa005307783f6eda5b560" category="list-text">Nodes ページの * Storage * タブで、次の情報を確認します。</block>
+  <block id="bba6ff4de72fbd471b9a078701043a0f" category="list-text">2 ノードクラスタ： [Storage] タブには [2 ノード ] ラベルが表示され、関連する監視ノードが表示されます。</block>
+  <block id="98e5ccf1268ed0ff6afddedb966badd9" category="list-text">3 ノードクラスタ：ストレージノードと関連する監視ノードが表示されます。3 ノードクラスタでは、ノード障害が発生した場合の高可用性を維持するために、監視ノードがスタンバイに導入されます。</block>
+  <block id="a66093a330e1d8687e85da3891000dc3" category="list-text">4 ノード以上のクラスタ： 4 ノード以上のクラスタに関する情報が表示されます。監視ノードは適用されません。2 つまたは 3 つのストレージノードから開始してノードを追加しても、監視ノードは表示されたままです。指定しない場合、監視ノードのテーブルは表示されません。</block>
+  <block id="eba8819218ae82b685ce979fe252faec" category="list-text">ファームウェアバンドルバージョンは 2.14 以降です。 Element 12.0 以降を実行しているクラスタがある場合は、これらのクラスタのファームウェアバンドルバージョンを確認できます。クラスタ内のノードでファームウェアバージョンが異なる場合は、「 * Firmware Bundle Version * 」列に「 * multiple * 」と表示されます。</block>
+  <block id="c1ecaea7fa6a6815242524f00425d6cc" category="list-text">カスタム保護ドメイン：カスタムの保護ドメインがクラスタで使用されている場合、クラスタ内の各ノードのカスタムの保護ドメインの割り当てを確認できます。カスタムの保護ドメインが有効になっていない場合は、この列は表示されません。</block>
+  <block id="2a9112913d8a59f14166a6a445dc5716" category="list-text">これらのページの情報は、いくつかの方法で操作できます。</block>
+  <block id="a3f80a11a41db4bb28300495fbe36197" category="list-text">結果の項目のリストをフィルタするには、 * フィルタ * アイコンを選択してフィルタを選択します。フィルタのテキストを入力することもできます。</block>
+  <block id="ab51a081808aa07ea3ce8b5d42133346" category="list-text">列を表示または非表示にするには、 * 列の表示 / 非表示 * アイコンを選択します。</block>
+  <block id="0208b823da0a2a8f27c3ba52ae221803" category="list-text">テーブルをダウンロードするには、 * ダウンロード * アイコンを選択します。</block>
+  <block id="f56c3110cef01e71867b7c4f6edec5fd" category="inline-link-macro">HCC ダッシュボードを使用してストレージリソースを監視する</block>
+  <block id="66278339199dae6c4b2e95551f642895" category="admonition">ストレージの数を確認するには、 NetApp Hybrid Cloud Control （ HCC ）ダッシュボードを参照します。を参照してください <block ref="0a9115f7de2ac145a876f0d35260860a" category="inline-link-macro-rx"></block>。</block>
+  <block id="05d14d15c61f8460098991c3993e400b" category="summary">外部クライアントと Element ストレージボリューム間の通信を可能にするイニシエータを追加して管理する方法について説明します。</block>
+  <block id="7e974a884a831b57d3770c920d7e0bce" category="paragraph">を使用できます <block ref="e387c80499cf4abbdb7201d3a78b27d4" category="inline-link-macro-rx"></block> ボリュームへのアカウントベースのアクセスではなく、 CHAP ベースのアクセスの場合。イニシエータを作成および削除したり、管理やボリュームアクセスを簡単にするためにわかりやすいエイリアスを指定したりできます。ボリュームアクセスグループに追加されたイニシエータは、グループ内のすべてのボリュームにアクセスできるようになります。</block>
+  <block id="23d954acc193cc9d7d1ca46f3b04fdbe" category="list-text">クラスタ管理者のクレデンシャルが必要です。</block>
+  <block id="3e05afda286ee2429e397b068c797489" category="list-text">管理サービスをバージョン 2.17 以上にアップグレードしておきます。NetApp Hybrid Cloud Control のイニシエータ管理は、それよりも前のバージョンのサービスバンドルでは使用できません。</block>
+  <block id="a011375fc85243d621da5116f4e1e4c7" category="list-text"><block ref="096ed742d913cd0e554ff1296202e022" category="inline-xref-macro-rx"></block></block>
+  <block id="c8f0542e06a1f63c00d8891cf7260713" category="list-text"><block ref="4cbcb3e83b1f9e86541c787d2d5d8c9e" category="inline-xref-macro-rx"></block></block>
+  <block id="65924bf7526f28a4b45b5c2e13a7358a" category="list-text"><block ref="367c1ef285033e51fbcf7c5d4189044d" category="inline-xref-macro-rx"></block></block>
+  <block id="d33afe99dfaacb65f4d370858e8dd318" category="list-text"><block ref="f4e560bec183b592826a7e60a2a5156c" category="inline-xref-macro-rx"></block></block>
+  <block id="2142c8e92a87f8c8946f4ea6ae66b5b9" category="paragraph">イニシエータ IQN の有効な形式は、「 iqn.yyyy-mm 」です。 y と m は数字で、続けて任意の文字列を指定します。使用できる文字は、数字、小文字のアルファベット、ピリオド（ ` ）、コロン（ ` ）、またはダッシュ（「 - 」）だけです。形式の例を次に示します。</block>
+  <block id="19394356913276e97e1ddb2877ec6882" category="paragraph">Fibre Channel イニシエータ WWPN の有効な形式は、「 :AA:BB:CC:dd:11:22:33:44' または「 AabBCCdd11223344 」です。形式の例を次に示します。</block>
+  <block id="99bac9773cb941b6880c32a2d2d89329" category="list-text">Element ストレージクラスタ管理者のクレデンシャルを指定して NetApp Hybrid Cloud Control にログインします。</block>
+  <block id="40484af79e21481dd8f17dd04c735486" category="list-text">ダッシュボードの左側のナビゲーションメニューで、ストレージクラスタの名前を展開します。</block>
+  <block id="41b72eabf272ca47d5edcc73075ce5bd" category="list-text">[* Volumes （ボリューム） ] を選択します</block>
+  <block id="e826abaaeece346c4058cfacfa18bd46" category="list-text">イニシエータ * タブを選択します。</block>
+  <block id="1c73368f641c522735a8636c78c6b595" category="list-text">イニシエータの作成 * ボタンを選択します。</block>
+  <block id="9ba8b7c3808955299894c7651343ced4" category="cell">1 つ以上のイニシエータを作成します</block>
+  <block id="2f316a309e6d72ff5ffe91b49822f590" category="list-text">（オプション） Add Initiator * を選択して新しいイニシエータフィールドを開くか、代わりに bulk create オプションを使用します。</block>
+  <block id="33ead8fa543f9e174e1e445181b99f34" category="list-text">イニシエータの作成 * を選択します。</block>
+  <block id="deedacd5c12baaea4b2d1814fca68613" category="cell">イニシエータを一括作成します</block>
+  <block id="e10b7cfce1583b9eb9d9faa848063e19" category="list-text">「 * Bulk Add IQs/WWPN * 」を選択します。</block>
+  <block id="b2fa3e7ca7a9d9f1bb911cceffc7c294" category="list-text">IQN または WWPN のリストをテキストボックスに入力します。各 IQN または WWPN は、カンマまたはスペースで区切って指定するか、または独自の行に入力する必要があります。</block>
+  <block id="a3527c983d00046277a11d44176abe8d" category="list-text">[ * IQN / WWPN の追加 * ] を選択します。</block>
+  <block id="521e8d50e5ee3137de550c638c520b4d" category="list-text">（オプション）各イニシエータに一意のエイリアスを追加します。</block>
+  <block id="d9bb5f89a8db34ae71e793e8249e9619" category="list-text">インストール環境にすでに存在する可能性のあるイニシエータをリストから削除します。</block>
+  <block id="6c332aad495d6c74b50fc31fda93345e" category="section-title">ボリュームアクセスグループにイニシエータを追加します</block>
+  <block id="59193ce664bca1c065dd8c1c8194563c" category="paragraph">ボリュームアクセスグループにイニシエータを追加できます。イニシエータをボリュームアクセスグループに追加すると、そのイニシエータはそのボリュームアクセスグループ内のすべてのボリュームにアクセスできるようになります。</block>
+  <block id="5fd36ced937dae9d450689040aee0208" category="list-text">追加するイニシエータを 1 つ以上選択します。</block>
+  <block id="25c956ecda64ebceae5c3b772f157147" category="list-text">［ * アクション ］ &gt; ［ アクセスグループに追加 * ］ を選択します。</block>
+  <block id="54fda0997de19b9ecd72213e154b7024" category="list-text">アクセスグループを選択します。</block>
+  <block id="9cbfe94fe79e020ed655057803a01cfe" category="list-text">[ イニシエータの追加 ] を選択して変更を確認します。</block>
+  <block id="287424be624153aa66ea86226d1f4938" category="section-title">イニシエータエイリアスを変更します</block>
+  <block id="5f8aa33814fa5eea0d90da2e33205689" category="list-text">[*Actions] 列で、イニシエータのオプション・メニューを展開します。</block>
+  <block id="a925899abfc9aa71ff86ac1223cf662b" category="list-text">エイリアスに必要な変更を加えるか、新しいエイリアスを追加します。</block>
+  <block id="489b0408b757a2a70e9e1b6bc2b0689d" category="section-title">イニシエータを削除する</block>
+  <block id="a7802f128fc1ca3dd248d3b6b16ec2ba" category="paragraph">1 つ以上のイニシエータを削除できます。イニシエータを削除すると、関連付けられているすべてのボリュームアクセスグループから削除されます。イニシエータを使用した接続は、接続をリセットするまでは有効なままです。</block>
+  <block id="d667eac75449780555c1e210912f98a8" category="list-text">1 つ以上のイニシエータを削除します。</block>
+  <block id="ba2f8330cdd1510dd295608737c287d2" category="list-text">削除するイニシエータを 1 つ以上選択します。</block>
+  <block id="92f5672bfad53304017aefd6324493a6" category="list-text">[ * アクション &gt; 削除（ * Actions &gt; Delete * ） ] を選択</block>
+  <block id="e984e6e5e79a4f62c039f33332d1bc5b" category="list-text">削除操作を確定し、 * はい * を選択します。</block>
+  <block id="e9af127a726ca755ecdd7c7247d97220" category="inline-link-macro">イニシエータについて学習する</block>
+  <block id="4d28cd63ceff6b8ae010d31ae2722ca7" category="list-text"><block ref="4d28cd63ceff6b8ae010d31ae2722ca7" category="inline-link-macro-rx"></block></block>
+  <block id="99c850b82f45e568828f2a8c5ab8f94d" category="inline-link-macro">ボリュームアクセスグループについて学習する</block>
+  <block id="305404f131cd68bdf692eb046a161981" category="list-text"><block ref="305404f131cd68bdf692eb046a161981" category="inline-link-macro-rx"></block></block>
+  <block id="65ff0ea978ae80d3482154f506bed1ea" category="summary">新しいボリュームアクセスグループを追加して SolidFire オールフラッシュストレージボリュームを操作する方法、システムからボリュームアクセスグループを削除する方法、既存のボリュームアクセスグループを編集する方法、およびボリュームアクセスグループの詳細を表示する方法について説明します。</block>
+  <block id="aa1879f62910b82f0a9cf5d153809311" category="paragraph">NetApp Hybrid Cloud Control を使用して、新しいボリュームアクセスグループを作成したり、名前、関連付けられているイニシエータ、またはアクセスグループの関連付けられているボリュームを変更したり、既存のボリュームアクセスグループを削除したりできます。</block>
+  <block id="f5ab5d1795f905395233afbc135daad2" category="list-text">この SolidFire オールフラッシュストレージシステムの管理者クレデンシャルが必要です。</block>
+  <block id="6c36a0ce570aff271a471fce8fec514c" category="list-text">管理サービスをバージョン 2.15.28 以上にアップグレードしておきます。NetApp Hybrid Cloud Control のストレージ管理は、それよりも前のバージョンのサービスバンドルでは利用できません。</block>
+  <block id="4775176ac81c23781a6e6e9bc2754f51" category="list-text">ボリュームアクセスグループの論理的な命名規則があることを確認します。</block>
+  <block id="c4ce0ad2db6a0fb7bb0b3b322b2e9c2d" category="section-title">ボリュームアクセスグループを追加</block>
+  <block id="d684aa2ad91c6dde7b66fccea1828234" category="paragraph">NetApp Hybrid Cloud Control を使用して、ストレージクラスタにボリュームアクセスグループを追加できます。</block>
+  <block id="0b2d64df280429e52b941395a9f4f619" category="list-text">[* アクセスグループ *] タブを選択します。</block>
+  <block id="f4d645ff831751ccf4720de69a3bc9d7" category="list-text">[ アクセスグループの作成 *] ボタンを選択します。</block>
+  <block id="4f40c5daffbe37e62ec83fdf92a7b666" category="list-text">表示されたダイアログで、新しいボリュームアクセスグループの名前を入力します。</block>
+  <block id="e5c0c3433b1f93835df94f10c5f4d07d" category="list-text">（オプション）「 * Initiators * 」セクションで、新しいボリュームアクセスグループに関連付けるイニシエータを 1 つ以上選択します。</block>
+  <block id="72b39eaf31350d4be4f2583a194aba79" category="paragraph">イニシエータをボリュームアクセスグループに関連付けると、そのイニシエータはグループ内の各ボリュームに認証なしでアクセスできます。</block>
+  <block id="c79193d095693584f43ffb12b4c0eca2" category="list-text">（オプション） * Volumes * セクションで、このボリュームアクセスグループに含めるボリュームを 1 つ以上選択します。</block>
+  <block id="e37452a63b6a38c9ac11b25a1b6b8e2c" category="list-text">[ アクセスグループの作成 *] を選択します。</block>
+  <block id="81028e1a5a48f5253b50998a0f4ad419" category="section-title">ボリュームアクセスグループを編集します</block>
+  <block id="594cfb8daf9fc1f971e2e1798812b369" category="paragraph">NetApp Hybrid Cloud Control を使用して、既存のボリュームアクセスグループのプロパティを編集できます。アクセスグループの名前、関連付けられているイニシエータ、または関連付けられているボリュームを変更できます。</block>
+  <block id="c8f6b6e89eceb7fdc80ed9b54ced5f03" category="list-text">アクセスグループテーブルの *Actions * 列で、編集する必要があるアクセスグループのオプションメニューを展開します。</block>
+  <block id="3bc3c3eb82d1e0d6de9aa6b805b9a1d9" category="list-text">オプションメニューで、 * 編集 * を選択します。</block>
+  <block id="effd3fceca15c4df40f28f0e70a5c7d4" category="list-text">名前、関連付けられているイニシエータ、または関連付けられているボリュームに必要な変更を加えます。</block>
+  <block id="86521e07482dbaed057d5744d41313d1" category="list-text">[ 保存（ Save ） ] を選択して変更を確認します。</block>
+  <block id="f8bbc4c39631370e79334cad49b34d34" category="list-text">*Access Groups* テーブルで、アクセスグループに変更が反映されていることを確認します。</block>
+  <block id="40d56451b75c6162a0869ae0ea68a33a" category="section-title">ボリュームアクセスグループを削除する</block>
+  <block id="a9f3f34020a0f3611b816ff94c66334f" category="paragraph">NetApp Hybrid Cloud Control を使用してボリュームアクセスグループを削除し、同時にこのアクセスグループに関連付けられているイニシエータをシステムから削除することができます。</block>
+  <block id="4c78000f3b24bbaf965dbf44014d516f" category="list-text">アクセスグループテーブルの *Actions * 列で、削除するアクセスグループのオプションメニューを展開します。</block>
+  <block id="ff6746b48d80d00890fc0391f4480787" category="list-text">オプションメニューで、 * 削除 * を選択します。</block>
+  <block id="a0dbfc6421ac7f3330bd394e75a2ca56" category="list-text">アクセスグループに関連付けられているイニシエータを削除しない場合は、「 * このアクセスグループ内のイニシエータを削除する * 」チェックボックスの選択を解除します。</block>
+  <block id="06495c97bbbf91e86c5a8d8faca342a3" category="list-text">[ はい ] を選択して、削除操作を確認します。</block>
+  <block id="eb77433334e32533e94a49552c96564e" category="inline-link-macro">ボリュームアクセスグループにイニシエータを追加します</block>
+  <block id="49408f1caf9e26c17e76e2a1be56a1de" category="list-text"><block ref="49408f1caf9e26c17e76e2a1be56a1de" category="inline-link-macro-rx"></block></block>
+  <block id="5ffbddc6871ea17252ba04957698f0fd" category="summary">QoS ポリシーを設定および変更して、ストレージクラスタ内のボリュームに適用することができます。</block>
+  <block id="aa59f10f28f46853d1287bf8c57a1896" category="paragraph">標準的なサービス品質設定を QoS ポリシーとして作成および保存して、複数のボリュームに適用することができます。QoS ポリシーを使用するには、 Element 10.0 以降のクラスタを選択する必要があります。 10.0 より前のクラスタでは QoS ポリシーを使用できません。</block>
+  <block id="fd5b8a1e489418eeebdae8e03584293d" category="admonition">の使用の詳細については、 SolidFire オールフラッシュストレージの概念に関するコンテンツを参照してください <block ref="00a10e09dbb8809056e27aacd44cabd1" category="inline-link-macro-rx"></block> 個々のボリュームではなく <block ref="7569c2934721f60746962fd0a2d806b7" category="inline-link-macro-rx"></block>。</block>
+  <block id="1cb441690a3ac7dd95d502a953d2917b" category="paragraph">NetApp Hybrid Cloud Control を使用すると、次のタスクを実行して QoS ポリシーを作成および管理できます。</block>
+  <block id="5065e2a427fab966fffb5b565b4c48a6" category="list-text"><block ref="9a5253f025f03565600537b7b0e22833" category="inline-xref-macro-rx"></block></block>
+  <block id="707ef86c0ea9a16ae456a3a98f0aecd3" category="list-text"><block ref="558256ec765f845788b5f653c619e2ed" category="inline-xref-macro-rx"></block></block>
+  <block id="2ca8f1dd80334dead5a7c954e34af5a0" category="list-text"><block ref="e1295cdaa7541a4430da08fa0f7328de" category="inline-xref-macro-rx"></block></block>
+  <block id="5a9eaaab224fd9dfea62135de21dca2a" category="list-text"><block ref="4740e9361b6d29612a5e4069b786c2d4" category="inline-xref-macro-rx"></block></block>
+  <block id="bbb18d810947941753f84e9e21457301" category="list-text"><block ref="03478ece9bf4b055aff84a0a3e10f6b2" category="inline-xref-macro-rx"></block></block>
+  <block id="b407815be71c0d92a377dbdef604d656" category="paragraph">QoS ポリシーを作成し、同等のパフォーマンスが必要なボリュームに適用することができます。</block>
+  <block id="5718f34e82f426103fdc67f6c937836c" category="list-text">ダッシュボードで、ストレージクラスタのメニューを展開します。</block>
+  <block id="de3893e07e69d058e4cd437897fbd297" category="list-text">Storage &gt; Volumes （ストレージ）を選択します。</block>
+  <block id="5e0a1abcd9117493b9af2311f0802a72" category="list-text">[* QoS Policies] タブを選択します。</block>
+  <block id="41025e9c551610edae39a167ecbe1b73" category="list-text">[ * ポリシーの作成 * ] を選択します。</block>
+  <block id="aa3092f44db77b61ef60baff858f4b9a" category="admonition">わかりやすい名前のベストプラクティスを使用してください。これは、環境で複数のクラスタや vCenter Server を使用している場合に特に重要です。</block>
+  <block id="ad52fd97ca14a162caa5e9f724725f5f" category="list-text">最小 IOPS 、最大 IOPS 、バースト IOPS の値を入力します。</block>
+  <block id="6f50a86ffb32acd0315f2da3a1eeb750" category="list-text">[Create QoS Policy] を選択します。</block>
+  <block id="878d473cfb65ed0552d1d5aab78c7dc2" category="paragraph">ポリシーのシステム ID が生成され、そのポリシーが割り当てられた QoS 値を含む QoS ポリシーページに表示されます。</block>
+  <block id="b252d66bd463a934625e31239ed894f3" category="section-title">ボリュームに QoS ポリシーを適用します</block>
+  <block id="a80524b93f4284e437b04f3c0072f2ea" category="paragraph">NetApp Hybrid Cloud Control を使用して、既存の QoS ポリシーをボリュームに割り当てることができます。</block>
+  <block id="e2fa538867c3830a859a5b17ab24644b" category="inline-xref">作成済み</block>
+  <block id="7ad14b4f9668f54c6623f5c325f1a6d6" category="paragraph">割り当てようとしている QoS ポリシーが削除されました <block ref="68a6dfdcb68c5d14334f78394f8f4ebc" category="inline-xref-macro-rx"></block>。</block>
+  <block id="0fec612cd3e9224629d9ed8aa782f4da" category="paragraph">このタスクでは、設定を変更して個々のボリュームに QoS ポリシーを割り当てる方法について説明します。最新バージョンの NetApp Hybrid Cloud Control では、複数のボリュームに一括割り当てオプションはありません。一括割り当てする機能が今後のリリースで提供されるまでは、 Element Web UI または vCenter Plug-in UI を使用して QoS ポリシーを一括で割り当てることができます。</block>
+  <block id="c095adfcf5540e611f76eef1aa1b258e" category="list-text">変更するボリュームの横にある * Actions * （アクション）メニューを選択します。</block>
+  <block id="2662eb7bacef364508bce0e1f00f07bc" category="list-text">ダイアログボックスで、 * QoS ポリシーの割り当て * を有効にし、選択したボリュームに適用する QoS ポリシーをドロップダウンリストから選択します。</block>
+  <block id="907eb33094e242aead2a166362ae22fe" category="admonition">QoS を割り当てると、以前に適用されていた個々のボリュームの QoS 値は上書きされます。</block>
+  <block id="8f67fb07dac3840eac79545507661ef4" category="section-title">ボリュームの QoS ポリシーの割り当てを変更します</block>
+  <block id="21d50ad3f7d81032b249301e462b9002" category="paragraph">ボリュームから QoS ポリシーの割り当てを解除したり、別の QoS ポリシーやカスタム QoS を選択したりできます。</block>
+  <block id="5d98fe9a52e1dd8a00375181b60b1fa8" category="inline-xref">割り当て済み</block>
+  <block id="bca2732f0fdb9f13df209516e69fc188" category="paragraph">変更するボリュームはです <block ref="132176b1c57b457f71aff19304a5eb53" category="inline-xref-macro-rx"></block> QoS ポリシー。</block>
+  <block id="5380aeaf7915bba02bb08db79e798287" category="list-text">ダイアログボックスで、次のいずれかを実行します。</block>
+  <block id="0b74ed396cfb264b912141a771ae4116" category="list-text">QoS ポリシーの割り当てを無効にし、個々のボリュームの QoS の最小 IOPS * 、最大 IOPS * 、バースト IOPS * の値を変更します。</block>
+  <block id="64e134a0c07b4b766bf0aa33354e0ce3" category="admonition">QoS ポリシーが無効な場合、特に変更されていないかぎり、ボリュームはデフォルトの QoS IOPS 値を使用します。</block>
+  <block id="ee972cbc16c94e36b0ca40a3fa8da5f3" category="list-text">選択したボリュームに適用する別の QoS ポリシーをドロップダウンリストから選択してください。</block>
+  <block id="9686e4ac68e5ba7cfa20f22170d859cc" category="paragraph">既存の QoS ポリシーの名前を変更したり、ポリシーに関連付けられている値を編集したりできます。QoS ポリシーのパフォーマンス値を変更すると、そのポリシーに関連付けられているすべてのボリュームの QoS に影響します。</block>
+  <block id="8c3969818d19a10b1fe8613610f97980" category="list-text">変更する QoS ポリシーの横にある * Actions * メニューを選択します。</block>
+  <block id="6143889916a49800f677f954e16086af" category="list-text">[Edit QoS Policy] ダイアログボックスで、次の 1 つ以上を変更します。</block>
+  <block id="8af499d438fc755fde4739092f4029b9" category="list-text">* Name * ： QoS ポリシーのユーザ定義名。</block>
+  <block id="af4c3c609e826e9cd593e898f67b49bf" category="list-text">* Min IOPS * ：ボリュームに対して保証されている最小 IOPS 。デフォルト値は 50 です。</block>
+  <block id="e80dd8d39591bc42d672b5cdad61e2f6" category="list-text">* Max IOPS * ：ボリュームで許可されている最大 IOPS 。デフォルト値は 15 、 000 です。</block>
+  <block id="445afaca083d5891e36edbba748516d7" category="admonition">ポリシーのリンクを選択すると、そのポリシーに割り当てられているボリュームのフィルタリングされたリストを表示できます。</block>
+  <block id="6975c4a7455a0305ff22199dffe5005d" category="paragraph">不要になった QoS ポリシーを削除できます。QoS ポリシーを削除しても、そのポリシーが割り当てられたすべてのボリュームで、それまでにそのポリシーで定義されていた QoS 値が個々のボリュームの QoS 値として維持されます。削除された QoS ポリシーとの関連付けがすべて削除されます。</block>
+  <block id="0f024621e0673f1f4e657983682d6e72" category="list-text">「 * 削除」を選択します。</block>
+  <block id="675d896ff4fd6c84e6b48f1bb67de9f8" category="summary">ボリュームを作成して特定のアカウントに関連付ける方法について説明します。</block>
+  <block id="ab25945de4e1b322e51d67719ecd58e1" category="doc">NetApp Hybrid Cloud Control を使用してボリュームを作成および管理する</block>
+  <block id="3827185ea08dc72170f30a87035c52fb" category="paragraph">ボリュームを作成して、指定したアカウントに関連付けることができます。アカウントにボリュームを関連付けると、アカウントは iSCSI イニシエータおよび CHAP クレデンシャルを使用してボリュームにアクセスできるようになります。</block>
+  <block id="f3a947934c8ceb10edae6ff51707036d" category="paragraph">NetApp Hybrid Cloud Control では、次の方法でボリュームを管理できます。</block>
+  <block id="25ab49abcab6d6f4f83310b723c2610b" category="list-text"><block ref="81e9b8d2b04b8286dbcdd825a801f2cd" category="inline-xref-macro-rx"></block></block>
+  <block id="94bc1590d09107027873035bc52540b9" category="list-text"><block ref="6debe3c456f781e50a6162aaf9b90ee1" category="inline-xref-macro-rx"></block></block>
+  <block id="1dc4fbf9eee0eaed820834d9da9db5f1" category="list-text"><block ref="0ce126fcd0c6784d8c4be91176f2a18d" category="inline-xref-macro-rx"></block></block>
+  <block id="6e7f230876d8fa6a5c1e3d6e05b92e13" category="list-text"><block ref="fea711d62737beb5af15d4097904c225" category="inline-xref-macro-rx"></block></block>
+  <block id="f9601ea409452a01f1750bdb8b14849d" category="list-text"><block ref="584afe0d0ddf940f060dd938d3e898e6" category="inline-xref-macro-rx"></block></block>
+  <block id="89da76b5d3778a43c7d0e1bd5aa9fefb" category="list-text"><block ref="4855e07d93ea15f091306b613c4ee511" category="inline-xref-macro-rx"></block></block>
+  <block id="594c26ec08401c29815ae15c54e2d572" category="list-text"><block ref="fe648ad904097434079eb3225ec51438" category="inline-xref-macro-rx"></block></block>
+  <block id="5af227468fd2c98c5dba802a18e58bb4" category="paragraph">NetApp Hybrid Cloud Control を使用してストレージボリュームを作成できます。</block>
+  <block id="7709dfbd009ea390f28542198c51aae1" category="list-text">[* Volumes （ボリューム） *&gt;* Overview （概要） *] タブを選択します。</block>
+  <block id="e328f9ce580644cae3a7ecd40a2e1c8a" category="image-alt">HCC Volumes （ HCC ボリューム）ページ &gt; Overview （概要）タブの画像</block>
+  <block id="a3ca1450796ac53c236cbe43cc9f831c" category="list-text">[Create Volume] を選択します。</block>
+  <block id="ab552939078b7d296d4050bba4420a4b" category="list-text">新しいボリュームの名前を入力します。</block>
+  <block id="c21b5fb9c6f1916ee9505a1bf65315cd" category="admonition">デフォルトで選択されているボリュームサイズの単位は GB です。ボリュームは、 GB または GiB 単位のサイズを使用して作成できます。 1GB = 1 000 000 000 バイト 1GiB = 1 073 741 824 バイト</block>
+  <block id="0b096ab9fc6678723ec38aba1341ca7d" category="list-text">ボリュームのブロックサイズを選択します。</block>
+  <block id="87abb5bffc926c5eb1cd518ed3493570" category="list-text">「 * Account * 」リストから、ボリュームへのアクセスを許可するアカウントを選択します。</block>
+  <block id="a37311b63527375dbd3455cf9f8b4a79" category="paragraph">アカウントが存在しない場合は、「 * 新規アカウントの作成 * 」を選択し、新しいアカウント名を入力して「 * アカウントの作成 * 」を選択します。アカウントが作成され、「 * Account * 」リストに新しいボリュームが関連付けられます。</block>
+  <block id="1349f664f7f709056644d9d685917a35" category="admonition">アカウント数が 50 個を超える場合、リストは表示されません。名前の先頭部分を入力すると、オートコンプリート機能によって、選択可能な値が表示されます。</block>
+  <block id="7f4d685bfd4a118267730bf69c52f554" category="list-text">ボリュームの QoS を設定するには、次のいずれかを実行します。</block>
+  <block id="34ce6dddc4ad4772df75cbe5dee5bca6" category="list-text">QoS 設定 * で、 IOPS の最小値、最大値、バースト値をカスタマイズするか、デフォルトの QoS 値を使用します。</block>
+  <block id="b426e9e50ac2ad214acd94a30b7b2ac7" category="list-text">「サービス品質ポリシーの割り当て」の切り替えを有効にし、表示されたリストから既存の QoS ポリシーを選択して、既存の QoS ポリシーを選択します。</block>
+  <block id="11ab26f8752fb86bd277249c0bf3f9cc" category="list-text">新しい QoS ポリシーを作成して割り当てます。これには、「サービス品質ポリシーの割り当て」 * トグルを有効にし、「新しい QoS ポリシーの作成」 * を選択します。表示されたウィンドウで、 QoS ポリシーの名前を入力し、 QoS 値を入力します。完了したら、 * Create Quality of Service Policy * （サービス品質ポリシーの作成）を選択します。</block>
+  <block id="919b7f1902f5de30ca3c7f022e66d091" category="paragraph">NetApp Hybrid Cloud Control を使用して、既存のストレージボリュームに QoS ポリシーを適用できます。ボリュームに対してカスタムの QoS 値を設定する必要がある場合は、を使用します <block ref="6debe3c456f781e50a6162aaf9b90ee1" category="inline-xref-macro-rx"></block>。新しい QoS ポリシーを作成する手順については、を参照してください <block ref="25afe9cd4148d18a1665bdaf0ae0d9b5" category="inline-link-macro-rx"></block>。</block>
+  <block id="ecd6e101db63c52e68f0e4d8da46a5bf" category="list-text">「 * Volumes * &gt; * Overview * 」を選択します。</block>
+  <block id="96e447a94ac352218573cf134daff7c4" category="list-text">QoS ポリシーに関連付けるボリュームを 1 つ以上選択します。</block>
+  <block id="36dc33dd4c3cdc05adc4d32dd40bf9b1" category="list-text">ボリュームテーブルの上部にある * Actions * ドロップダウンリストを選択し、 * Apply QoS Policy * を選択します。</block>
+  <block id="8b6148b4fd76d2c798f96572e39a071f" category="list-text">表示されたウィンドウで、リストから QoS ポリシーを選択し、 * QoS ポリシーの適用 * を選択します。</block>
+  <block id="d9bc7d10bf73fcd4d89794dad9e456c2" category="admonition">ボリュームで QoS ポリシーを使用している場合は、カスタム QoS を設定して、ボリュームとの QoS ポリシーの所属を削除できます。カスタムの QoS 値は、ボリュームの QoS 設定の QoS ポリシー値よりも優先されます。</block>
+  <block id="c897c040e4b703a715f001b5d494914b" category="section-title">ボリュームを編集します</block>
+  <block id="bae583da11be9404186d293ef01e5826" category="paragraph">NetApp Hybrid Cloud Control を使用して、 QoS 値、ボリュームのサイズ、バイト値の計算単位などのボリューム属性を編集できます。レプリケーションで使用するため、またはボリュームへのアクセスを制限するために、アカウントアクセスを変更することもできます。</block>
+  <block id="2babe3b032ad21e74564bef4ac116f13" category="list-text">Volumes （ボリューム）テーブルの * Actions （アクション） * 列で、ボリュームのメニューを展開し、 * Edit （編集） * を選択します。</block>
+  <block id="78c277ee9b5e70f5067b20cc3628acb6" category="list-text">必要に応じて変更を加えます。</block>
+  <block id="5434fe59b191b189386212d29a5e8306" category="list-text">ボリュームの合計サイズを変更します。</block>
+  <block id="5aa640723e850c8fe85cf37210c2e8e7" category="admonition">レプリケーション用にボリュームサイズを調整する場合は、最初にレプリケーションターゲットとして割り当てられているボリュームのサイズを拡張します。次に、ソースボリュームのサイズを変更します。ターゲットボリュームのサイズは、ソースボリュームと同じかそれ以上のサイズにすることはできますが、ソースボリュームより小さくすることはできません。</block>
+  <block id="e096d82b54cc5df41535131b0ea27c80" category="list-text">別のアカウントアクセスレベルを選択します。</block>
+  <block id="cbe71c808ffd098e342e59c2ce07ea36" category="list-text">ボリュームへのアクセスを許可するアカウントを選択します。</block>
+  <block id="34e122217d3a01ffb701b2743873215f" category="paragraph">名前の先頭部分を入力すると、オートコンプリート機能によって、候補が表示されます。</block>
+  <block id="575fba831789eaca5998452feed5f371" category="paragraph">アカウントが存在しない場合は、「 * 新規アカウントの作成 * 」を選択し、新しいアカウント名を入力して「 * 作成 * 」を選択します。アカウントが作成され、既存のボリュームに関連付けられます。</block>
+  <block id="9569daf1d06251bcffb25e6b05649839" category="list-text">次のいずれかを実行して QoS を変更します。</block>
+  <block id="5bf916a9a57dd5b445c12c45f704295e" category="list-text">既存のポリシーを選択してください。</block>
+  <block id="7de0584150923c36af357f66115e751a" category="list-text">Custom Settings で、 IOPS の最小値、最大値、バースト値を設定するか、またはデフォルト値を使用します。</block>
+  <block id="792b383a1fa9d4143fa7362659da6a07" category="admonition">ボリュームで QoS ポリシーを使用している場合は、カスタム QoS を設定して、ボリュームとの QoS ポリシーの所属を削除できます。カスタム QoS は、ボリュームの QoS 設定の QoS ポリシー値を上書きします。</block>
+  <block id="c4375f958d7d5c5705daf5e5d0900caf" category="admonition">IOPS の値は、 10 または 100 単位で増減する必要があります。入力値には有効な整数を指定する必要があります。ボリュームのバースト値はできるだけ高くします。バースト値を非常に高く設定することで、たまに発生する大規模ブロックのシーケンシャルワークロードを迅速に処理できる一方で、平常時の IOPS は引き続き抑制することができます。</block>
+  <block id="fee2a02b904d6d1f207e959dbd807a75" category="section-title">ボリュームをクローニングする</block>
+  <block id="3ee09eac87998931a09d052cfe0baec7" category="paragraph">単一のストレージボリュームのクローンを作成したり、ボリュームのグループをクローニングしてデータのポイントインタイムコピーを作成したりできます。ボリュームをクローニングすると、ボリュームの Snapshot が作成され、次にその Snapshot が参照しているデータのコピーが作成されます。</block>
+  <block id="2b39b8bb48e01459e34037072a056457" category="list-text">クラスタが少なくとも 1 つ追加されて実行されている必要があります。</block>
+  <block id="89eb0b99dbf33e453cd8c7f596caeecf" category="list-text">少なくとも 1 つのボリュームが作成されている必要があります。</block>
+  <block id="5124aba0bea43f02c564fe2403f40aa0" category="list-text">ユーザアカウントが作成されている必要があります。</block>
+  <block id="25082181be06de7a9284542d5b1e018a" category="list-text">ボリュームのサイズと同じかそれ以上のプロビジョニングされていない利用可能なスペースが必要です。</block>
+  <block id="4d81e52ec962249f279274b52530d811" category="paragraph">クラスタでは、ボリュームあたり一度に実行できるクローン要求は最大 2 つ、アクティブなボリュームのクローン処理は最大 8 件までサポートされます。これらの制限を超える要求はキューに登録され、あとで処理されます。</block>
+  <block id="7d4497788f70cbb381c87c17c6529f4d" category="paragraph">ボリュームクローニングは非同期のプロセスであり、クローニングするボリュームのサイズおよび現在のクラスタの負荷によって所要時間が異なります。</block>
+  <block id="f7a0e60fe45ab37bf9ab49fba85bfa93" category="list-text">[* Volumes （ボリューム） *&gt;* Overview （概要） *] タブを選択します。</block>
+  <block id="831fc8904bd6bf3fbcd6d573f9816aa3" category="list-text">クローニングする各ボリュームを選択します。</block>
+  <block id="2e6eb6bbb654d0c15b98fc12f11eaf51" category="list-text">ボリュームテーブルの上部にある * Actions * （アクション）ドロップダウンリストを選択し、 * Clone * （クローン * ）を選択します。</block>
+  <block id="cc7e3da60b054e9ecb97244c85d221ef" category="list-text">表示されたウィンドウで、次の手順を実行します。</block>
+  <block id="bae76838e5a27301dc17020c2a8e0c7f" category="list-text">ボリューム名のプレフィックスを入力します（これはオプションです）。</block>
+  <block id="9441307ce93e9559877ed3877957cc1a" category="list-text">*Access* リストからアクセスタイプを選択します。</block>
+  <block id="cedf5bacd6b7375d29a0e87ca4e558a2" category="list-text">新しいボリュームクローンに関連付けるアカウントを選択します（デフォルトでは、 * Copy from Volume * が選択され、元のボリュームと同じアカウントが使用されます）。</block>
+  <block id="ac98f94fc9c39630d76a6ef72acb6874" category="list-text">アカウントが存在しない場合は、「 * 新規アカウントの作成 * 」を選択し、新しいアカウント名を入力して「 * アカウントの作成 * 」を選択します。アカウントが作成され、ボリュームに関連付けられます。</block>
+  <block id="f2a57ddf16c8765d8ddfdf4221098d6a" category="admonition">クローンのボリュームサイズを拡張すると、末尾に空きスペースが追加された新しいボリュームが作成されます。ボリュームの使用方法によっては、新しい空きスペースを使用するために、空きスペースでパーティションの拡張または新しいパーティションの作成が必要になる場合があります。</block>
+  <block id="7c5acbeedcd3486c0298e9d3d098717a" category="list-text">[* Clone Volumes] を選択します。</block>
+  <block id="aef7d325fb516fbdf2620ac830fdcaeb" category="admonition">クローニング処理が完了するまでの時間は、ボリュームサイズおよび現在のクラスタの負荷によって異なります。クローンボリュームがボリュームリストに表示されない場合は、ページを更新してください。</block>
+  <block id="9d756be7bedbb25852ac1a45f8959502" category="section-title">ボリュームアクセスグループにボリュームを追加します</block>
+  <block id="ab540540d8a7d0eb745d56268cc11d0b" category="paragraph">ボリュームアクセスグループには、単一のボリュームまたはボリュームのグループを追加できます。</block>
+  <block id="01668af171478208c2260f835f38a86c" category="list-text">ボリュームアクセスグループに関連付けるボリュームを 1 つ以上選択します。</block>
+  <block id="26207d7bf5e25ef98948a69d4df2b94d" category="list-text">ボリュームテーブルの上部にある * Actions * ドロップダウンリストを選択し、 * Add to Access Group * を選択します。</block>
+  <block id="b4f11a23f03464dcb794213501175278" category="list-text">表示されたウィンドウで、 * ボリュームアクセスグループ * リストからボリュームアクセスグループを選択します。</block>
+  <block id="169e200f5675cc6aa192bb4352afc5bc" category="list-text">「 * Add Volume * （ボリュームの追加）」を選択</block>
+  <block id="6210a52f7feaa81b40d295f33022ace3" category="paragraph">削除されたボリュームはすぐにパージされるわけではなく、約 8 時間使用可能な状態のままになります。8 時間が経過すると消去され、利用できなくなります。この間にリストアしたボリュームはオンラインに戻り、 iSCSI 接続が再度確立されます。</block>
+  <block id="fc58fc65dd8146aded8d18432a8ec51e" category="admonition">管理サービスに関連付けられた永続ボリュームが作成され、インストールまたはアップグレード時に新しいアカウントに割り当てられます。永続ボリュームを使用している場合は、ボリュームや関連付けられているアカウントを変更または削除しないでください。これらのボリュームを削除すると、管理ノードが使用できなくなる可能性があります。</block>
+  <block id="8dad2ebfebf893c6e6fd2adb3715344d" category="list-text">削除するボリュームを 1 つ以上選択します。</block>
+  <block id="f4ab78a08786f0fa47194fff21d82bbe" category="list-text">ボリュームテーブルの上部にある * Actions * （アクション）ドロップダウンリストを選択し、 * Delete * （削除）を選択します。</block>
+  <block id="47ec5fdb02480e645dd6ac8044ddfd5e" category="list-text">表示されたウィンドウで、 * はい * を選択して操作を確認します。</block>
+  <block id="fd103148207f3d4765ba9c277e08cc05" category="paragraph">削除したストレージボリュームは、削除後 8 時間以内にリストア可能です。</block>
+  <block id="a704e3f9ac285ad73708c71f1fc121ff" category="list-text">「削除済み」を選択します。</block>
+  <block id="40b4f46ca344c857817d4a753f1baafa" category="list-text">Volumes （ボリューム）テーブルの * Actions （アクション） * 列で、ボリュームのメニューを展開し、 * Restore （リストア） * を選択します。</block>
+  <block id="b7ba240d7bb459312ff8a7e0ad54fe49" category="list-text">[ はい ] を選択してプロセスを確認します。</block>
+  <block id="2ada72cb76695c34a3fd691b65d6170b" category="section-title">削除したボリュームをパージします</block>
+  <block id="cd796611afc4ffc38527b017b474bff1" category="paragraph">削除したストレージボリュームは、約 8 時間は引き続き使用できます。8 時間が経過すると自動的にパージされ、使用できなくなります。8 時間待つ必要がない場合は、を削除します</block>
+  <block id="62dbfafb6a7cccb458ce8a35609c5d0d" category="list-text">パージするボリュームを 1 つ以上選択します。</block>
+  <block id="cea79cdb4c40f88681d65ad8def24b8e" category="list-text">複数のボリュームを選択した場合は、テーブルの上部にある * Purge * クイック・フィルタを選択します。</block>
+  <block id="5c3f3ef6d5a8e1a53cd22a3b2e8ee6cf" category="list-text">1 つのボリュームを選択した場合は、 Volumes （ボリューム）テーブルの * Actions （アクション） * 列で、ボリュームのメニューを展開し、 * Purge * を選択します。</block>
+  <block id="fa494c25aed3f9a8790c164731670139" category="list-text">Volumes （ボリューム）テーブルの * Actions （アクション） * 列で、ボリュームのメニューを展開し、 * Purge * を選択します。</block>
+  <block id="1c4434ab9155d3d4ceecf58cbb5c4969" category="inline-link-macro">ボリュームについて学習する</block>
+  <block id="2d825c309451574e7fad4f799b61834d" category="list-text"><block ref="2d825c309451574e7fad4f799b61834d" category="inline-link-macro-rx"></block></block>
+  <block id="82a86692ca7911d76ba111e636c80fd8" category="summary">NetApp Hybrid Control の UI を使用して、ストレージクラスタのメンテナンスモードを追加、削除、変更、有効化、無効化できます。</block>
+  <block id="ea7fec525051b2aa8cb978a109280dcd" category="doc">NetApp Hybrid Cloud Control を使用してストレージクラスタを追加および管理します</block>
+  <block id="2ff93dd01b5c0e32265f7bcc1f192717" category="paragraph">ストレージクラスタを管理ノードアセットインベントリに追加すると、 NetApp Hybrid Cloud Control （ HCC ）を使用して管理できるようになります。システムセットアップ時に最初に追加されるストレージクラスタは、です デフォルト <block ref="e36a33ccafb1c4b38d6b9113c1dd0ba4" category="inline-link-macro-rx"></block>を使用してクラスタを追加することもできます。</block>
+  <block id="1a5966f47c08b6f886bc5fa986067962" category="paragraph">ストレージクラスタを追加したあと、クラスタのパフォーマンスの監視、管理対象アセットのストレージクラスタクレデンシャルの変更、または HCC を使用して管理する必要がなくなった場合に管理ノードのアセットインベントリからストレージクラスタを削除できます。</block>
+  <block id="3663bc32267b225ac55e52a4e99f2b3c" category="inline-link-macro">メンテナンスモード</block>
+  <block id="128736137ea3bf7bf1a6b7e3b6184b4a" category="paragraph">Element 12.2 以降では、を使用できます <block ref="0e61a13a0652eb503d2f936c42121e2b" category="inline-link-macro-rx"></block> ストレージクラスタノードのメンテナンスモードを有効または無効にする機能オプション。</block>
+  <block id="bb38f75f0e45f3119e7bd198f4c9ea7f" category="list-text">* クラスタ管理者のアクセス許可 *: の管理者としてのアクセス許可があります <block ref="e36a33ccafb1c4b38d6b9113c1dd0ba4" category="inline-link-macro-rx"></block>。信頼できるクラスタとは、システムのセットアップ時に管理ノードインベントリに最初に追加されるクラスタです。</block>
+  <block id="773e93c04ad566aabd322005936de6ef" category="list-text">* Element ソフトウェア * ：ストレージクラスタで NetApp Element ソフトウェア 11.3 以降を実行している必要があります。</block>
+  <block id="08d74685e136a5f8424fd12850ccb10e" category="list-text">* 管理サービス * ：管理サービスのバンドルをバージョン 2.17 以降に更新しました。</block>
+  <block id="83ff7fdaf78dae6d2c660203d13425ab" category="list-text"><block ref="1952b771a692786325e88e46f15ea21a" category="inline-xref-macro-rx"></block></block>
+  <block id="4bab9f3ea5aa271dda7f61b79d50d326" category="list-text"><block ref="df5ca45c39c658113f43f96f6fac546b" category="inline-xref-macro-rx"></block></block>
+  <block id="ad7128e2aa60325fcb5292d39e2bcd5a" category="list-text"><block ref="c8bee611c7120ea5f9d1b31a35a4fad3" category="inline-xref-macro-rx"></block></block>
+  <block id="6fec8a4aac7e0d3fd638bb775c967a6e" category="list-text"><block ref="5692e6f9249528b2ae99dd191ff28615" category="inline-xref-macro-rx"></block></block>
+  <block id="e6236668e9f73ebeda411ceed12fe944" category="list-text"><block ref="8816513c1eba994606b470cda31e78e0" category="inline-xref-macro-rx"></block></block>
+  <block id="a9c885871e5d87d3e8792282826e9850" category="section-title">ストレージクラスタを追加</block>
+  <block id="329a4e63da878f6500e1f377670d915a" category="paragraph">NetApp Hybrid Cloud Control を使用して、管理ノードアセットインベントリにストレージクラスタを追加できます。これにより、 HCC UI を使用してクラスタを管理および監視できます。</block>
+  <block id="3a68815140e897b56719912f0f43b4b4" category="list-text">ストレージクラスタ管理者の正規のクレデンシャルを指定して NetApp Hybrid Cloud Control にログインします。</block>
+  <block id="d0f4ee3cdcb72a55578585cc7cb83c8f" category="list-text">ダッシュボードで右上のオプションメニューを選択し、 * 構成 * を選択します。</block>
+  <block id="2e8a006f6d3b53ef4d4c5f9d076f1771" category="list-text">Storage Clusters * ペインで、 * Storage Cluster Details * を選択します。</block>
+  <block id="277ff96ae990c4d5c2a5c891022fc0d4" category="list-text">Add Storage Cluster （ストレージクラスタの追加） * を選択します。</block>
+  <block id="2c80d3f5692bbddd81bc83e7968f3387" category="list-text">次の情報を入力します。</block>
+  <block id="123f0ddf72ddb77532df21e9a2db425f" category="list-text">ストレージクラスタ管理仮想 IP アドレス</block>
+  <block id="3f62e92f4eb8c51e08e63cebe7aecb35" category="admonition">追加できるのは、管理ノードで現在管理されていないリモートストレージクラスタだけです。</block>
+  <block id="9cd3f7354698337ccc6bd9e015343b20" category="list-text">ストレージクラスタのユーザ名とパスワード</block>
+  <block id="f366aa0e2a76691fb58eb909ea245782" category="admonition">ストレージクラスタを追加したあとにクラスタのインベントリが更新されて新しい追加が表示されるまでに最大 2 分かかることがあります。変更を反映するには、ブラウザでページの更新が必要になる場合があります。</block>
+  <block id="af4bf009c94401bfed8a3763cc825fd2" category="list-text">Element ESDS クラスタを追加する場合は、 SSH 秘密鍵と SSH ユーザアカウントを入力またはアップロードします。</block>
+  <block id="d97fd2f723280f6f16c5d6a4d94da19e" category="section-title">ストレージクラスタのステータスを確認</block>
+  <block id="bc26a117f5efe663d7abd12878c68fbc" category="paragraph">NetApp Hybrid Cloud Control の UI を使用して、ストレージクラスタアセットの接続ステータスを監視できます。</block>
+  <block id="8740ce0f2ed67b985c9dae6e876d693b" category="list-text">インベントリでのストレージクラスタのステータスを確認します。</block>
+  <block id="5024e3e372c4c07c779c54d554d74bdb" category="list-text">Storage Clusters * ペインで、詳細を表示する * Storage Cluster Details * を選択します。</block>
+  <block id="fb10082064498b4e5a9720d45ed230bf" category="section-title">ストレージクラスタクレデンシャルを編集します</block>
+  <block id="43c56f838bb4c0ab179657cbb96a6ff6" category="paragraph">NetApp Hybrid Cloud Control の UI を使用して、ストレージクラスタ管理者のユーザ名とパスワードを編集できます。</block>
+  <block id="f4dd2923d398a0b9fa38eefa215a2383" category="list-text">クラスタの * Actions * メニューを選択し、 * Edit Cluster Credentials * を選択します。</block>
+  <block id="7ac108872e4cf86d6d3009671a5f8ef2" category="list-text">ストレージクラスタのユーザ名とパスワードを更新します。</block>
+  <block id="57b9bf7c0121ab60704dab21a0a121ed" category="section-title">ストレージクラスタを削除</block>
+  <block id="c4bd88b512988d586f28fab234af0926" category="paragraph">NetApp Hybrid Cloud Control からストレージクラスタを削除すると、管理ノードインベントリからクラスタが削除されます。ストレージクラスタを削除すると、そのクラスタは HCC で管理できなくなり、クラスタの管理 IP アドレスに直接移動する場合にのみアクセスできます。</block>
+  <block id="61918a44386b9c109812eb198b14d886" category="admonition">信頼できるクラスタをインベントリから削除することはできません。権限のあるクラスタを確認するには、 * User Management &gt; Users * に移動します。権限のあるクラスタが「 * users * 」という見出しの横に表示されています。</block>
+  <block id="4ec714a407ed4272dde0ccff1c58efa6" category="list-text">クラスタの * Actions * メニューを選択し、 * Remove Storage Cluster * を選択します。</block>
+  <block id="2f891ffd6931f35e9c47bc1339917a0c" category="admonition">「 * Yes * next 」を選択すると、クラスタがインストールから削除されます。</block>
+  <block id="06792155c80e25e25e1011cd7649a230" category="list-text">「 * はい * 」を選択します。</block>
+  <block id="836b0f1a2ed13d27f08b8a4bde36ec11" category="section-title">メンテナンスモードを有効または無効にします</block>
+  <block id="8217c26f2fd68c8d2fe5a9c60cf359ff" category="inline-xref">有効化</block>
+  <block id="0aaa87422396fdd678498793b6d5250e" category="inline-xref">- 無効にします</block>
+  <block id="2d110e2bcef2092d175ef31684c9e0ee" category="paragraph">ソフトウェアのアップグレードやホストの修復などのメンテナンスのためにストレージノードをオフラインにする必要がある場合は、ストレージクラスタの残りの部分に対する I/O の影響を最小限に抑えることができます <block ref="eafaedbc3fb0a68f230418ca88746c3b" category="inline-xref-macro-rx"></block> ノードの保守モードを指定します。いつでも <block ref="82680f05155b11f982e10ac16fa60e77" category="inline-xref-macro-rx"></block> 保守モードでは、ノードが保守モードから移行するために、一定の条件を満たしていることを確認するためにノードが監視されます。</block>
+  <block id="1f21f496d26572d6b4f32e2c4e9eba99" category="inline-link-macro">メンテナンスモードの使用中に発生する可能性があるシナリオ</block>
+  <block id="85855f63d589650a3c733451b8395953" category="paragraph">の情報を参照できます <block ref="0e61a13a0652eb503d2f936c42121e2b" category="inline-link-macro-rx"></block> 機能オプションおよびを有効または無効にします <block ref="caaa262e8632ce32140ce38121478a94" category="inline-link-macro-rx"></block>。</block>
+  <block id="1f3bfd01e455c54b88c3b632aedf44db" category="list-text">* Element ソフトウェア * ：ストレージクラスタで NetApp Element ソフトウェア 12.2 以降を実行している必要があります。</block>
+  <block id="ddc0cd321869cd169e3209c75bea01b5" category="list-text">* 管理ノード * ：バージョン 12.2 以降を実行する管理ノードを導入しておきます。</block>
+  <block id="133da0bffa151ffd8a777f211c47db8a" category="list-text">* 管理サービス * ：管理サービスのバンドルをバージョン 2.19 以降に更新しました。</block>
+  <block id="9bb078cc551cc37260574d344f591041" category="list-text">管理者レベルでログインするためのアクセス権があります。</block>
+  <block id="ed771e228ccbbae92ea23e22311719eb" category="paragraph">次の手順を使用して、ストレージクラスタノードのメンテナンスモードを有効にすることができます。</block>
+  <block id="8ab79c05d5203c3a9f3ab07b91ff43f1" category="admonition">保守モードにできるノードは一度に 1 つだけです。</block>
+  <block id="a4ba50124e2090415d4c80452c793354" category="admonition">メンテナンスモード機能のオプションは、読み取り専用レベルでは無効になります。</block>
+  <block id="1e5d9cc1fdca13f83fd26ab905e60e75" category="list-text">左のナビゲーション青いボックスで、 SolidFire オールフラッシュインストールを選択します。</block>
+  <block id="4fb6f57e3c3084c5505e27100623ac7f" category="list-text">左側のナビゲーションペインで、 * ノード * を選択します。</block>
+  <block id="3737f922cffe786b2c43119131b42f02" category="list-text">ストレージインベントリ情報を表示するには、「 * ストレージ * 」を選択します。</block>
+  <block id="37b9fcb0588ed352ac84996ac99b0056" category="list-text">ストレージノードでメンテナンスモードを有効にします。</block>
+  <block id="18460510c3940464058abd779a0178f7" category="paragraph">ストレージノードのテーブルは、ユーザが開始した操作以外では 2 分ごとに自動的に更新されます。処理の前に、 nodes テーブルの右上にある更新アイコンを使用して nodes テーブルを更新し、最新の状態に更新します。</block>
+  <block id="d7d5e1e72a9040112f19bf94ce966099" category="paragraph"><block ref="d7d5e1e72a9040112f19bf94ce966099" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ae4ac9937fe2124bac1e8af524c0bdc6" category="list-text">[ * アクション * ] で、 [ * メンテナンスモードを有効にする * ] を選択します。</block>
+  <block id="b66e6d3d140b3a6b8af0112f6c915150" category="paragraph">メンテナンスモード * を有効にしている間は、選択したノードおよび同じクラスタ上の他のすべてのノードでメンテナンスモードの操作を実行することはできません。</block>
+  <block id="62ae267478305435d23b7df0f401bb38" category="paragraph">メンテナンスモードを有効にする * が完了すると、 * Node Status * 列にレンチアイコンと、メンテナンスモードになっているノードの「 * Maintenance Mode * 」というテキストが表示されます。</block>
+  <block id="a1572d68c738e66df4f2eba84768fe13" category="paragraph">ノードがメンテナンスモードになると、このノードで * メンテナンスモードを無効にする * アクションを使用できるようになります。メンテナンス中のノードでメンテナンスモードが無効になるまで、他のノードに対する処理は実行できません。</block>
+  <block id="6351ccc6ed60aa5dd025a0b847793a94" category="list-text">保守モードのノードの場合は、 * アクション * で * メンテナンスモードを無効にする * を選択します。</block>
+  <block id="fc081ac4444d21e696896e77aedce790" category="paragraph">メンテナンスモード * を無効にしている間は、選択したノードおよび同じクラスタ上の他のすべてのノードでメンテナンスモードの操作を実行することはできません。</block>
+  <block id="005cdeb2ea576fac716dc868b869e12f" category="paragraph">メンテナンスモードを無効にする * 完了後、 * Node Status * 列に * Active * と表示されます。</block>
+  <block id="5ed14571aea31588b4d5f4d312a50f2b" category="admonition">ノードが保守モードのときは新しいデータは受け入れられません。そのため、メンテナンスモードを終了する前にノードのデータをバックアップしておく必要があるため、メンテナンスモードを無効にするまでに時間がかかることがあります。保守モードでの作業時間が長くなるほど、保守モードを無効にするためにかかる時間が長くなります。</block>
+  <block id="d60c463bb4096f3ed4bd1618626dfe10" category="section-title">トラブルシューティングを行う</block>
+  <block id="bb1ee13c97b91c14c35cebb1dc1cf957" category="paragraph">メンテナンスモードを有効または無効にしているときにエラーが発生した場合は、 nodes テーブルの上部にバナーエラーが表示されます。エラーの詳細については、バナーに表示される「 * 詳細を表示 * 」リンクを選択して、 API が返す内容を確認できます。</block>
+  <block id="616b2ccfed31d3919892b220bf393fea" category="list-text"><block ref="616b2ccfed31d3919892b220bf393fea" category="inline-link-macro-rx"></block></block>
+  <block id="3af536b719ee5751ac17d447f1d645d4" category="summary">NetApp Hybrid Cloud Control を使用して Element のインストールからログを収集し、トラブルシューティングに役立てることができます。</block>
+  <block id="756909f99bc1a720d318a5f5b94eb094" category="doc">トラブルシューティング用にログを収集する</block>
+  <block id="b3915f726abbb4ebe18be9a9e6be5c01" category="paragraph">SolidFire オールフラッシュストレージの設置で問題が発生した場合、ネットアップサポートに送信するログを収集して診断を支援できます。NetApp Hybrid Cloud Control または REST API を使用して、 Element システムのログを収集できます。</block>
+  <block id="89e508c9c469d8ff95e1fb108abb1815" category="list-text"><block ref="2d632c2a1fd4ec3e14fcce683e69fba8" category="inline-xref-macro-rx"></block></block>
+  <block id="49bb8802b863325b48320430fe3cdd58" category="list-text"><block ref="b388600de4e7f25b74b69a50dde7fc46" category="inline-xref-macro-rx"></block></block>
+  <block id="9d10493db6c1c7aad6b3c76111480bc4" category="section-title">NetApp Hybrid Cloud Control を使用してログを収集します</block>
+  <block id="b0a168b72e9303dbfd4fe36f35a281af" category="paragraph">ログ収集領域には、 NetApp Hybrid Cloud Control のダッシュボードからアクセスできます。</block>
+  <block id="51e5c70572e322cbae520ec97f4259cd" category="paragraph">以前にログを収集したことがある場合は、既存のログパッケージをダウンロードするか、新しいログ収集を開始できます。</block>
+  <block id="57d62788ef21776db990ee56b0b4bcaa" category="list-text">［ * ログ収集 * ］ セクションで、ログ・パッケージに含めるログ・ファイルのタイプを選択します。</block>
+  <block id="6a3da8b863d5f7d208a9e12cdc7a79a0" category="paragraph">ストレージログの場合は、ストレージノードのリストを展開し、ログを収集するノード（またはリスト内のすべてのノード）を個別に選択できます。</block>
+  <block id="0cf93229c1e0cd525c0168c0c52b6620" category="paragraph">ログパッケージは、圧縮された unix.tgz ファイル形式です。</block>
+  <block id="22928e7f4b71ec30e3cc6e59ccd9b8b2" category="section-title">REST API を使用してログを収集する</block>
+  <block id="b78ed6209de354e0ac816af751b864bb" category="paragraph">REST API を使用して Element ログを収集できます。</block>
+  <block id="e7c4f44bdf3e9ea34e07f63400ea67ae" category="list-text">Element からログを収集します。</block>
+  <block id="24219019ea17ff8177ed96770b3b9642" category="list-text">「 * POST/BUNDLE * 」を選択します。</block>
+  <block id="09b9c6dcc3c87ca3564b99d52954308b" category="list-text">収集する必要があるログのタイプおよび期間に応じて、「 * Request body * 」フィールドで次のパラメータの値を変更します。</block>
+  <block id="bb2b142ff61f1299f23885c89ca52a65" category="cell">「変更されたシンセ」</block>
+  <block id="ad4a3876a1cbc402ed49d0e282812aac" category="cell">日付文字列</block>
+  <block id="16e504d4b56777525760bbf20160388d" category="cell">この日時以降に変更されたログのみを含めます。たとえば、「 20-07-14T20 ： 19 ： 00.000Z 」という値は、 2020 年 7 月 14 日 20 ： 19 UTC の開始日を定義します。</block>
+  <block id="d177095de451f1afa18d56915d05172e" category="cell">「ムノドノグス」</block>
+  <block id="27226c864bac7454a8504f8edb15d95b" category="cell">ブール値</block>
+  <block id="301e462936c0bfb45495caf217030121" category="cell">管理ノードのログを含めるには、このパラメータを「 true 」に設定します。</block>
+  <block id="b293c296cbd1e744af624acfe4940054" category="cell">「 torageCrashDumps 」を参照してください</block>
+  <block id="a57064a45c07f95ac51837a46c1b17b7" category="cell">ストレージ・ノード・クラッシュ・デバッグ・ログを含めるには、このパラメータを「 true 」に設定します。</block>
+  <block id="794af0344571fb41831e3a17856afef5" category="cell">'torageLogs'</block>
+  <block id="71dfd09f622fcfb3c4291a35e74b9cd0" category="cell">ストレージ・ノード・ログを含めるには、このパラメータを「 true 」に設定します。</block>
+  <block id="5480143467091f8d2d6d0d5f891d8197" category="cell">「 torageNodeIds 」</block>
+  <block id="415bf63fe1e2d4eb6575389eff5e8566" category="cell">「 torageLogs 」が「 true 」に設定されている場合は、ログ収集を特定のストレージノードに制限するために、このパラメータにストレージクラスタのノード ID を入力します。使用可能なすべてのノード ID を表示するには 'get https://[management node ip]/logs/1/bundle/options エンドポイントを使用します</block>
+  <block id="8c051de0a12448c1f19c81e1baecf66f" category="list-text">Execute * を選択してログ収集を開始します。次のような応答が返されます。</block>
+  <block id="764a25f84de190ca17479002aa31687a" category="list-text">ログ収集タスクのステータスを確認します。</block>
+  <block id="a3586fed1356da10b01f052dc03ce3fe" category="list-text">[*Get/Bundle*] を選択します。</block>
+  <block id="7550353604322a54b47fde31ebbe5ff7" category="list-text">収集タスクのステータスを返すには、 * Execute * を選択します。</block>
+  <block id="e72d60e42d2eaa2ed85b3bbfbb1019fe" category="paragraph">コレクションの進行状況を示す「 percentComplete 」属性が表示されます。コレクションが完了すると、「 Download Link 」属性には、ログパッケージのファイル名を含む完全なダウンロードリンクが含まれます。</block>
+  <block id="5077bde966c26e491c699b854ca3c7bd" category="list-text">「 downloadLink 」属性の末尾にファイル名をコピーします。</block>
+  <block id="2197146b8802aa50a2821c8ae9c740b3" category="list-text">収集したログパッケージをダウンロードします。</block>
+  <block id="3b8f96b32bbdbc4174fd2648f56a2b95" category="list-text">[*get/bundle/{filename}*] を選択します。</block>
+  <block id="e40d39c9cb53238ee81060f91df045a4" category="list-text">先ほどコピーしたファイル名を 'filename' パラメータテキストフィールドに貼り付けます</block>
+  <block id="12543475c5e0426295bee8e7103b836f" category="paragraph">実行後、応答の本文領域にダウンロードリンクが表示されます。</block>
+  <block id="94193f43cd06120cb29207486869e2fa" category="list-text">[ ファイルのダウンロード ] を選択し、結果のファイルをコンピューターに保存します。</block>
+  <block id="2c21c71423028f346adca15ddc4fe793" category="summary">Hybrid Cloud Control Volumes のページを使用して、システムのボリュームを監視できます。</block>
+  <block id="ea333cfb83363f2e94893346e3f19cdc" category="paragraph">SolidFire システムは、ボリュームを使用してストレージをプロビジョニングします。ボリュームは、 iSCSI または Fibre Channel クライアントがネットワーク経由でアクセスするブロックデバイスです。ボリュームに関連付けられているアクセスグループ、アカウント、イニシエータ、使用済み容量、 Snapshot データ保護のステータス、 iSCSI セッションの数、およびサービス品質（ QoS ）ポリシーに関する詳細を監視できます。</block>
+  <block id="9651c99a0043fa71721f6c2a3828f8b9" category="paragraph">また、アクティブボリュームと削除されたボリュームの詳細も確認できます。</block>
+  <block id="c9b1d0733cc39783f180f56586ae54aa" category="paragraph">このビューでは、最初に使用済み容量の列を監視することを推奨します。</block>
+  <block id="1656cfda363053a40c1d9975fcfb2179" category="paragraph">この情報にアクセスできるのは、 NetApp Hybrid Cloud Control の管理者権限がある場合のみです。</block>
+  <block id="e703a7d4ca4a2087af2ad247995a9ee7" category="list-text">左側のナビゲーション青いボックスで、 SolidFire オールフラッシュストレージのインストールを選択します。</block>
+  <block id="fc98c74471e61165fd3c900f4ddc2a56" category="list-text">左側のナビゲーションで、クラスタを選択し、 * Storage * &gt; * Volumes * を選択します。</block>
+  <block id="6f1729d89500b0ca33bc8a3d9d437e5c" category="list-text">Volumes （ボリューム）ページで、次のオプションを使用します。</block>
+  <block id="ee05016e7315388a9300578756974c64" category="image-alt">HCC Volumes ページのアイコン</block>
+  <block id="1c412d42bb05b722732b6608a8ed33a1" category="list-text">[ * フィルタ * （ * Filter * ） ] アイコンを選択して、結果をフィルタ処理します。</block>
+  <block id="cc270b5a74794c92df02b23fd120d5ee" category="list-text">列を非表示または表示するには、 * 非表示 / 表示 * アイコンを選択します。</block>
+  <block id="d8d7ff706e0a9b09d238e6295731aee5" category="list-text">[ 更新（ Refresh ） ] アイコンを選択して、データをリフレッシュします。</block>
+  <block id="cb6f4f219c2b41853258b434beb9d0fa" category="list-text">「 * ダウンロード * 」アイコンを選択して CSV ファイルをダウンロードします。</block>
+  <block id="ed846e543cdcc1e06e344e546e527fcc" category="list-text">使用済み容量の列を監視します。警告、エラー、または重大のしきい値に達すると、使用済み容量のステータスが色で示されます。</block>
+  <block id="96b2ee71e702f022d48affb3a2730e39" category="list-text">警告 - 黄色</block>
+  <block id="f5f76733485d050d30396f3e53f3a7c5" category="list-text">エラー - オレンジ</block>
+  <block id="179702b5472816f66d22e3f9cfd35f35" category="list-text">Critical - 赤</block>
+  <block id="a8db86ee0b804fa21fbf29365940d9b2" category="list-text">ボリュームビューでタブを選択し、ボリュームに関するその他の詳細を確認します。</block>
+  <block id="745adb1cc10a3b577e1e1e3c06ae153e" category="list-text">* アクセスグループ * ：イニシエータから一連のボリュームにマッピングされたボリュームアクセスグループを表示して、アクセスを保護できます。</block>
+  <block id="33911b1eec54b4b5a7fbc504e6569989" category="inline-link-macro">ボリュームアクセスグループ</block>
+  <block id="c3ed9eb99e27cd32ec2de4424e320833" category="paragraph">については、を参照してください <block ref="4dce9d951eecbf4e12faf744489a7726" category="inline-link-macro-rx"></block>。</block>
+  <block id="329df05dacdb8b6e4750c0bd72c8286f" category="list-text">* アカウント * ：クライアントがノード上のボリュームに接続できるようにするユーザアカウントを表示できます。ボリュームには、作成時に特定のユーザアカウントが割り当てられます。</block>
+  <block id="7afc85bdc484c29cc7cf10fadacda50b" category="inline-link-macro">SolidFire オールフラッシュストレージシステムのユーザアカウント</block>
+  <block id="930d6c33602f18147e750c4821a1f4fe" category="paragraph">については、を参照してください <block ref="a2505f155e277bf1493cc9808f6c156f" category="inline-link-macro-rx"></block>。</block>
+  <block id="f748be22a637481aae225cff9280e791" category="list-text">* イニシエータ * ：ボリュームの iSCSI イニシエータ IQN または Fibre Channel WWPN を確認できます。アクセスグループに追加された各 IQN は、 CHAP 認証なしでグループ内の各ボリュームにアクセスできます。アクセスグループに追加された各 WWPN は、アクセスグループ内のボリュームへの Fibre Channel ネットワークアクセスを許可します。</block>
+  <block id="c2fb1f46e0a1dd8e660dc2cf928cf263" category="list-text">* QoS ポリシー * ：ボリュームに適用されている QoS ポリシーを確認できます。QoS ポリシーは、最小 IOPS 、最大 IOPS 、バースト時の IOPS の標準的な設定を複数のボリュームに適用します。</block>
+  <block id="a9664f2c069d2936e0d10e7ef1bdf822" category="inline-link-macro">パフォーマンスポリシーと QoS ポリシー</block>
+  <block id="720034173fbae9b2659c1996282d93d0" category="paragraph">については、を参照してください <block ref="e8d17d0920ed613a80faa8c0c8e7d57c" category="inline-link-macro-rx"></block>。</block>
+  <block id="3500be2d6452b665360ea9b308c6c109" category="inline-link">SolidFire および Element のドキュメント</block>
+  <block id="06ace0d3bf47e1a95240223bce9b2125" category="list-text"><block ref="06ace0d3bf47e1a95240223bce9b2125" category="inline-link-rx"></block></block>
+  <block id="f227ec9d2608eaf21a09ac101a29c1d9" category="summary">NetApp SolidFire オールフラッシュストレージを使用すると、 NetApp Hybrid Cloud Control を使用してストレージアセットを管理および監視できます。</block>
+  <block id="510b8ff88dd968b79868e0d7830ee804" category="doc">NetApp Hybrid Cloud Control を使用してストレージを管理および監視します</block>
+  <block id="1e27e6d7158fdadb8e9c69f36679c5b6" category="paragraph">NetApp SolidFire オールフラッシュストレージを使用すると、 NetApp Hybrid Cloud Control を使用して、ストレージアセットの管理と監視、およびストレージシステムのコンポーネントの設定を行うことができます。</block>
+  <block id="763e44d4353c0dfc7240c87539a492ce" category="list-text"><block ref="763e44d4353c0dfc7240c87539a492ce" category="inline-link-macro-rx"></block></block>
+  <block id="f3f991d32b98e3491432c83156ab3a06" category="list-text"><block ref="f3f991d32b98e3491432c83156ab3a06" category="inline-link-macro-rx"></block></block>
+  <block id="0fcbabaa4919b29359cbbd0de21ca1b4" category="list-text"><block ref="0fcbabaa4919b29359cbbd0de21ca1b4" category="inline-link-macro-rx"></block></block>
+  <block id="892b7117c40d6f0c6583345e0a11a8f7" category="list-text"><block ref="892b7117c40d6f0c6583345e0a11a8f7" category="inline-link-macro-rx"></block></block>
+  <block id="5963ea3a054f1370b764250450517468" category="list-text"><block ref="5963ea3a054f1370b764250450517468" category="inline-link-macro-rx"></block></block>
+  <block id="e009396e85dc3318f3571158e688b282" category="list-text"><block ref="e009396e85dc3318f3571158e688b282" category="inline-link-macro-rx"></block></block>
+  <block id="64d5c3fe686f53d16508dbc5873ae440" category="list-text"><block ref="64d5c3fe686f53d16508dbc5873ae440" category="inline-link-macro-rx"></block></block>
+  <block id="f56ed020bfc0f00f0c0d9281657c6d3e" category="inline-link-macro">NetApp Hybrid Cloud Control を使用して SolidFire システムを監視します</block>
+  <block id="23e769d9ea0b7e8b4bd013218622a2c2" category="list-text"><block ref="23e769d9ea0b7e8b4bd013218622a2c2" category="inline-link-macro-rx"></block></block>
+  <block id="c117dac0f1d9f0403b262ef3cb807da5" category="summary">ユーザアカウントを作成してボリュームに関連付ける方法について説明します。</block>
+  <block id="acc33e6579e22155669c1d10e26b08f6" category="doc">ネットアップハイブリッドクラウドを使用してユーザアカウントを作成、管理します 制御</block>
+  <block id="6121fae9c8fc40008ae9116037777b92" category="paragraph">Element ベースのストレージシステムでは、「管理者」または「読み取り専用」のユーザに付与する権限に応じて、権限のあるクラスタユーザを作成して NetApp Hybrid Cloud Control へのログインアクセスを有効にすることができます。クラスタユーザに加えてボリュームアカウントもあり、クライアントはこのアカウントを使用してストレージノード上のボリュームに接続できます。 </block>
+  <block id="79d8d677e704f0e4f76486a1432e743c" category="paragraph">次のタイプのアカウントを管理します。</block>
+  <block id="5ac4e9f2c1e26ad3ad358ba25b8ab79a" category="list-text"><block ref="bd5bf29c4903d0ec00cf66072fbdf9bc" category="inline-xref-macro-rx"></block></block>
+  <block id="3e9e8ea344f13491a95b9b004d576ec7" category="list-text"><block ref="39013e68d1c4c8d9bbf4b51f06e1adbb" category="inline-xref-macro-rx"></block></block>
+  <block id="4bb7448a3f62a77c361903d50b1b0b5e" category="section-title">LDAP を有効にします</block>
+  <block id="b21e2d15b4b4e8248c51bf07bc12178e" category="paragraph">任意のユーザアカウントで LDAP を使用するには、最初に LDAP を有効にする必要があります。</block>
+  <block id="71b3a380c70a07bab1b81996e73622ac" category="list-text">ダッシュボードで右上のオプションアイコンを選択し、 * ユーザー管理 * を選択します。</block>
+  <block id="006b1e4bcfdf41bfc905fac5430e777c" category="list-text">[ ユーザー ] ページで、 *Configure LDAP* を選択します。</block>
+  <block id="3d8cde93ad6557f4906555d90d2c61aa" category="list-text">LDAP 設定を定義します。</block>
+  <block id="1128950bc96f0798991eacfcc8b42014" category="list-text">検索とバインドまたは直接バインドの認証タイプを選択します。</block>
+  <block id="6207076c5c0d239d01d41b3a5c030844" category="list-text">変更を保存する前に、ページ上部の「 * LDAP ログインのテスト * 」を選択し、存在するユーザーのユーザー名とパスワードを入力して、「 * テスト * 」を選択します。</block>
+  <block id="1a2770eeb0cc87a2a0d6b44ffc27f717" category="section-title">権限のあるクラスタアカウントを管理します</block>
+  <block id="f8b0ab52f0fe3bdf8fa10cb76fb74a8f" category="inline-link-macro">権限のあるユーザアカウント</block>
+  <block id="e1fbc174b83ea6a8da4df97cf86e513f" category="paragraph"><block ref="cfce7130c176ee830d5dfc2d45414f7f" category="inline-link-macro-rx"></block> NetApp Hybrid Cloud Control の右上のメニューから User Management オプションを選択して管理します。このタイプのアカウントでは、ノードおよびクラスタの NetApp Hybrid Cloud Control インスタンスに関連付けられているストレージアセットに対して認証を行うことができます。このアカウントを使用すると、すべてのクラスタのボリューム、アカウント、アクセスグループなどを管理できます。</block>
+  <block id="4140d1ccbd02fd4d8717aa476471eebf" category="section-title">権限のあるクラスタアカウントを作成してください</block>
+  <block id="b6fa48c9dcb865a144f0599ddb5ab771" category="paragraph">NetApp Hybrid Cloud Control を使用してアカウントを作成できます。</block>
+  <block id="ec2653a9e5f56d25b8139f7bf88364b0" category="paragraph">このアカウントを使用して、 Hybrid Cloud Control 、クラスタのノード UI 、および NetApp Element ソフトウェアのストレージクラスタにログインできます。</block>
+  <block id="151192226b2ce77c52b0cae955e33608" category="list-text">[Create User] を選択します。</block>
+  <block id="215a042d85a58f44fdfaa05ca0289209" category="list-text">クラスタまたは LDAP の認証タイプを選択します。</block>
+  <block id="7a7a67f1a22dd974fd1deab044310940" category="list-text">次のいずれかを実行します。</block>
+  <block id="f77db2067fed8eeeb4e24dfae9d906ab" category="list-text">LDAP を選択した場合は、 DN を入力します。</block>
+  <block id="f1688f9da727209f5e1dafb8acf6d506" category="admonition">LDAP を使用するには、最初に LDAP または LDAPS を有効にする必要があります。を参照してください <block ref="c82ad0f72eed42c3ba70f545fc683861" category="inline-xref-macro-rx"></block>。</block>
+  <block id="2bbc86895bfcc5ea3c87ec210d2aba16" category="list-text">Auth Type として Cluster を選択した場合は、新しいアカウントの名前とパスワードを入力します。</block>
+  <block id="410f269d82ebf4c22dd1137223fb75bc" category="list-text">管理者権限または読み取り専用権限のいずれかを選択します。</block>
+  <block id="cbb53c367e458d0eba3dee4dfc521189" category="admonition">NetApp Element ソフトウェアからアクセス許可を表示するには、 [ 従来のアクセス許可を表示する *] を選択します。これらの権限のサブセットを選択すると、そのアカウントには読み取り専用権限が割り当てられます。すべてのレガシー権限を選択した場合、そのアカウントには管理者権限が割り当てられます。</block>
+  <block id="e4822810b1ee34e1ec90d9fc7f188ec4" category="admonition">グループのすべての子が権限を継承するようにするには、 LDAP サーバで DN 組織管理者グループを作成します。そのグループのすべての子アカウントは、これらの権限を継承します。</block>
+  <block id="67da138a3ea228935d2c49a94130fbee" category="list-text">「ネットアップのエンドユーザライセンス契約を読んで同意します」というボックスをオンにします。</block>
+  <block id="a584f0ddcde7ea7abbc5e852a77e7d75" category="section-title">権限のあるクラスタアカウントを編集してください</block>
+  <block id="a52e1cb9d40097e307df171745debc1e" category="paragraph">NetApp Hybrid Cloud Control を使用して、ユーザアカウントの権限またはパスワードを変更できます。</block>
+  <block id="160c9ad18ca822c8a1efa063d58b0839" category="list-text">ダッシュボードで右上のアイコンを選択し、 * ユーザー管理 * を選択します。</block>
+  <block id="7c728cb75c02903a221f7e216551afbb" category="list-text">必要に応じて、 * Cluster * 、 * LDAP * 、または * IDP * を選択して、ユーザアカウントのリストをフィルタリングします。</block>
+  <block id="ae14fc9475c44527b9c01d30f4b8f816" category="paragraph">ストレージクラスタで LDAP を使用してユーザを設定している場合、それらのアカウントのユーザタイプは「 LDAP 」と表示されます。 IdP を使用してストレージクラスタにユーザを設定した場合、設定したアカウントのユーザタイプは「 IDP 」と表示されます。</block>
+  <block id="807697a5e7f515855b49ee4a6b0cad17" category="list-text">テーブルの * アクション * 列で、アカウントのメニューを展開し、 * 編集 * を選択します。</block>
+  <block id="4a5f8d7531af8ae51b938b0a2e124882" category="list-text">必要に応じて変更します。</block>
+  <block id="398ef124c93905a55de2ae05946d4f39" category="list-text">NetApp Hybrid Cloud Control からログアウトします。</block>
+  <block id="e8e2c9108b1759c47e5fa31cd5041a45" category="admonition">NetApp Hybrid Cloud Control の UI でインベントリの更新に最大 2 分かかる場合があります。インベントリを手動で更新するには、 REST API UI インベントリサービスの「 https://[management node ip]/inventory/1/` にアクセスし、クラスタに対して「 get/installationsationsationsationsationsationsationsationsations/{ id} 」を実行します。</block>
+  <block id="ca124b02616237bbef3964caefc759b3" category="list-text">NetApp Hybrid Cloud Control にログインします。</block>
+  <block id="cd82ca422709f87e3679be395ce0ed68" category="section-title">権限のあるユーザアカウントを削除します</block>
+  <block id="4fa99af864373b3e38f8c25fe9af9f52" category="paragraph">不要になったアカウントを削除できます。LDAP ユーザアカウントを削除できます。</block>
+  <block id="93d9db3a249ffceea45f0fa796f97498" category="paragraph">権限のあるクラスタのプライマリ管理者ユーザアカウントを削除することはできません。</block>
+  <block id="8845db81f68862ada9d92977dea1d3f4" category="list-text">ユーザーテーブルの * アクション * 列で、アカウントのメニューを展開し、 * 削除 * を選択します。</block>
+  <block id="e1405e8e4ad33b435ef47fa22e892b65" category="list-text">[ はい ] を選択して、削除を確認します。</block>
+  <block id="4b74f283f83e06dcf51bb850f80c6bcd" category="section-title">ボリュームアカウントを管理する</block>
+  <block id="c9d2cfc01f26b029a8249085cddadcd7" category="paragraph"><block ref="bb00f274d2766ee7da745df471fb96eb" category="inline-link-macro-rx"></block> NetApp Hybrid Cloud Control Volumes の表で管理します。これらのアカウントは、アカウントを作成したストレージクラスタにのみ固有です。これらのタイプのアカウントでは、ネットワーク上のボリュームにアクセス許可を設定できますが、設定したボリューム以外には影響しません。</block>
+  <block id="ef3f35e375c8c7ad37edad5c7c73d17b" category="paragraph">ボリュームアカウントには、そのボリュームにアクセスするために必要な CHAP 認証が含まれています。</block>
+  <block id="415a00d1851b70075305d5c22f281bc9" category="section-title">ボリュームアカウントを作成します</block>
+  <block id="0edf498d21efe0a2cce9d688115374f5" category="paragraph">このボリュームに固有のアカウントを作成します。</block>
+  <block id="d6dad0ae85d4fb0bb14709943a9b1afb" category="list-text">ダッシュボードで、 * ストレージ * &gt; * ボリューム * を選択します。</block>
+  <block id="63097a79a8eabb4548086075d249394c" category="list-text">「 * アカウント * 」タブを選択します。</block>
+  <block id="463f88f338f10b4384f315f5824ae953" category="list-text">「 * アカウントの作成 * 」ボタンを選択します。</block>
+  <block id="f1a2666d4d57d459848ee257b9188deb" category="list-text">新しいアカウントの名前を入力します。</block>
+  <block id="679cc84b5af8df63eeb9b3a0b4d8113f" category="list-text">CHAP Settings （ CHAP 設定）セクションで、次の情報を入力します。</block>
+  <block id="a257a745337d24fe106798f4181aba28" category="list-text">CHAP ノードセッション認証用のイニシエータシークレット</block>
+  <block id="8cff71956e5a5663bbe39f12422e457f" category="list-text">Target Secret ： CHAP ノードセッション認証</block>
+  <block id="23574a7183f3f218b096ba3df51d68e7" category="admonition">いずれかのパスワードを自動生成する場合は、クレデンシャルのフィールドを空白のままにします。</block>
+  <block id="20653d224bca9fb40181f3916e4f643d" category="list-text">「 * アカウントの作成 * 」を選択します。</block>
+  <block id="4656d9cf0780933ad593af01f67dee9f" category="section-title">ボリュームアカウントを編集します</block>
+  <block id="46d9dd001ba97801db89566a13943768" category="paragraph">CHAP 情報を変更し、アカウントがアクティブであるかロックされているかを変更できます。</block>
+  <block id="faa3f61401f7b343d22bd326854336b2" category="admonition">管理ノードに関連付けられているアカウントを削除またはロックすると、管理ノードにアクセスできなくなります。</block>
+  <block id="03f1071fcaef7e04672872f3c33c774f" category="list-text">テーブルの * アクション * 列で、アカウントのメニューを展開し、 * 編集 * を選択します。</block>
+  <block id="4e10e6338a4e00bf3d0fb833028b03a1" category="list-text">「 * はい * 」を選択して変更を確定します。</block>
+  <block id="308943d47ccc8ed6af3e4c3c69413898" category="section-title">ボリュームアカウントを削除します</block>
+  <block id="b0531a516088cfc0350171d8badb3225" category="paragraph">不要になったアカウントを削除します。</block>
+  <block id="4fc8eaf15bd5749e8c0fb849946e9a82" category="paragraph">ボリュームアカウントを削除する前に、そのアカウントに関連付けられているボリュームを削除およびパージします。</block>
+  <block id="a4da6a7298a51c03437fe8215d4cd7dc" category="admonition">管理サービスに関連付けられた永続ボリュームは、インストールまたはアップグレード時に新しいアカウントに割り当てられます。永続ボリュームを使用している場合は、ボリュームや関連付けられているアカウントを変更または削除しないでください。これらのアカウントを削除すると、管理ノードが使用できなくなる可能性があります。</block>
+  <block id="b12641981b1007fecfaf498bd16ae5d5" category="list-text">テーブルの * アクション * 列で、アカウントのメニューを展開し、 * 削除 * を選択します。</block>
+  <block id="1326a41ad4b26f3395b0f54dd9172b2b" category="inline-link-macro">アカウントの詳細を確認します</block>
+  <block id="f25165465224e736bc3801bbad7eb5f8" category="list-text"><block ref="f25165465224e736bc3801bbad7eb5f8" category="inline-link-macro-rx"></block></block>
+  <block id="fe0d0db1949183b4fc769561ae8c3f8a" category="list-text"><block ref="fe0d0db1949183b4fc769561ae8c3f8a" category="inline-link-macro-rx"></block></block>
+  <block id="3f9324833c13ae3ed43845b441b05e73" category="summary">ストレージリソースは、 NetApp Hybrid Cloud Control Dashboard で確認できます。また、ストレージ容量とストレージパフォーマンスも監視できます。</block>
+  <block id="a74d2845bf0214173bedd164f5dc18bc" category="doc">Hybrid Cloud Control Dashboard でストレージリソースを監視します</block>
+  <block id="a916121ffd7a7772d450d2d9b32f3aa2" category="paragraph">NetApp Hybrid Cloud Control Dashboard では、すべてのストレージリソースを一目で確認できます。また、ストレージ容量とストレージパフォーマンスも監視できます。</block>
+  <block id="cea09bf20e9c8052a93318b4b5e4abb0" category="admonition">新しい NetApp Hybrid Cloud Control セッションを初めて起動したときに、管理ノードで複数のクラスタを管理しているときに NetApp Hybrid Cloud Control のダッシュボードビューのロードに時間がかかることがあります。ロードにかかる時間は、管理ノードでアクティブに管理されているクラスタの数によって異なります。その後の起動では、読み込み時間が短縮されます。</block>
+  <block id="eebbee9438937d274ced253ec53dc779" category="list-text"><block ref="29bbc8b8d02a084a91e0061040490bb8" category="inline-xref-macro-rx"></block></block>
+  <block id="61c79a77016319e1988be030b0d3a2be" category="list-text"><block ref="8c7e4bda76f852bad89b02b0045dc689" category="inline-xref-macro-rx"></block></block>
+  <block id="418f143a265f6eb352a2401ecf3ee448" category="list-text"><block ref="0ea29633ea986af851bdb8eca3a31753" category="inline-xref-macro-rx"></block></block>
+  <block id="fc96909bcabe32a0c96aefe255e9d74c" category="list-text"><block ref="ae8a33ac595d40bf6a0487018ec9d2f4" category="inline-xref-macro-rx"></block></block>
+  <block id="40318ebd19c2692645e42d149277f885" category="section-title">NetApp HCC ダッシュボードにアクセスします</block>
+  <block id="6e57dcc697ba6c71cc4f6b3057485546" category="list-text">Hybrid Cloud Control Dashboard を表示します。</block>
+  <block id="c3257bacdcedea94621a5149892f5855" category="image-alt">HCC ダッシュボード</block>
+  <block id="fcc6e48145556289e4028cb119a469e3" category="section-title">ストレージリソースを監視する</block>
+  <block id="bf6e8dae8b110e0de6183d9d0e9ffe0a" category="paragraph">「 * ストレージ * 」パネルを使用して、ストレージ環境全体を確認します。ストレージクラスタ、ストレージノード、およびボリュームの総数を監視できます。</block>
+  <block id="d9965724613ccd0e16430d0821d8774b" category="paragraph">詳細を表示するには、 Storage （ストレージ）ペインで * Show Details （詳細の表示） * を選択します。</block>
+  <block id="49ea6572c02d426caf6ed4a9d7e1c224" category="image-alt">ストレージビュー</block>
+  <block id="f0763b49a9c0c857966bb1452b2ec9cb" category="admonition">合計ストレージノード数には、 2 ノードストレージクラスタからの監視ノードは含まれません。監視ノードは、そのクラスタの詳細セクションのノード番号に含まれます。</block>
+  <block id="55fb90f1c9adc15660aced59d795d4d5" category="admonition">最新のストレージクラスタデータを表示するには、ストレージクラスタページを使用します。ダッシュボードよりもポーリングの頻度が高くなります。</block>
+  <block id="197dd02b38b3fef04e1fda0a32926fb3" category="section-title">ストレージ容量を監視</block>
+  <block id="307bbffcce108c392e00bcd90d99080f" category="paragraph">環境のストレージ容量を監視することが重要です。Storage Capacity ペインを使用すると、圧縮、重複排除、シンプロビジョニングの各機能を有効または無効にして、ストレージ容量の効率化による効果を確認できます。</block>
+  <block id="78b6bdd3f4be3c968b82e49a3002ba11" category="paragraph">クラスタ内で使用可能な物理ストレージの合計スペースは、 *raw* タブに表示されます。また、プロビジョニングされたストレージに関する情報は、 *Effective * タブに表示されます。</block>
+  <block id="b7bb7b24b30f160febbfcac5f29e3bad" category="image-alt">HCC ダッシュボード &gt; ストレージ容量ペイン</block>
+  <block id="b8e83e399cee0c940d668ac3e4902e4a" category="list-text">Raw タブを選択して、クラスタ内で使用済みおよび使用可能な物理ストレージの合計容量を表示します。</block>
+  <block id="55b3969b622414751acdc95c64d12be9" category="paragraph">縦の線を見て、使用済み容量が警告、エラー、または重大のしきい値を下回っていないかどうかを確認します。行にカーソルを合わせると詳細が表示されます。</block>
+  <block id="59b61de9ef53528d04c0ac4985281f7a" category="inline-link-macro">クラスタフルしきい値を設定しています</block>
+  <block id="cc7f3cc8b66c7927d9741ced94baa2d9" category="admonition">Warning のしきい値はデフォルトで Error のしきい値の 3% 下に設定できます。エラーしきい値とクリティカルしきい値は事前に設定されており、設計上の設定はできません。Error しきい値は、クラスタに容量が残っているノードが 1 つもないことを示します。しきい値の設定手順については、を参照してください <block ref="484949dd9af3854f5cc5829aceaef369" category="inline-link-macro-rx"></block>。</block>
+  <block id="bfa7fc8868ae0d51b6032a1fdec2b573" category="inline-link-macro">「 getClusterFullThreshold 」</block>
+  <block id="b7faac9d3c1075939da92d3aa8607943" category="inline-link-macro">クラスタフルレベルの概要</block>
+  <block id="be02502009c6d0ad3bba09caa0f8670e" category="admonition">関連するクラスタのしきい値 Element API の詳細については、を参照してください <block ref="384167f02d25ac4806750a6b9d450de9" category="inline-link-macro-rx"></block> を Element ソフトウェア API ドキュメントで参照してください。ブロック容量とメタデータ容量の詳細については、を参照してください <block ref="73a0596c1bbffe742c43b644c639ffa7" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="84cba9178bb8973e0621138efa363dcc" category="list-text">接続されているホストにプロビジョニングされている合計ストレージの情報を表示し、効率性の評価を表示するには、 * Effective * タブを選択します。</block>
+  <block id="ac1728f7558e0204fe429ca349240673" category="list-text">必要に応じて、 [ シンプロビジョニングを含める ] をオンにして、 [ 実効容量 ] 棒グラフでシンプロビジョニングの効率化率を確認します。</block>
+  <block id="20bf0eabfdd805feb7c929ab064f0b28" category="list-text">* 実効容量の棒グラフ * ：縦の線を見て、使用済み容量が警告、エラー、または重大のしきい値を下回っていないかどうかを確認します。「 Raw 」タブと同様に、縦線にカーソルを合わせると詳細を確認できます。</block>
+  <block id="505dcc74e479dd126e18df518f67663f" category="list-text">* 効率性 * ：上記の評価を参考に、圧縮機能、重複排除機能、シンプロビジョニング機能を有効にした場合のストレージ容量効率化の効果を判断してください。たとえば、圧縮率が「 1.3 倍」と表示される場合、圧縮を有効にした場合のストレージ効率は、圧縮を有効にしない場合と比べて 1.3 倍向上します。</block>
+  <block id="8cb9d6aedc37e50b78b5f715092d32da" category="admonition">総削減率は（ maxUsedSpace * efficiency factor ） /2 で、 efficiencyFactor = （ thinProvisioningFactor * deDuplicationFactor * compressionFactor ）です。このチェックボックスをオフにすると、合計効率には含まれません。</block>
+  <block id="c3416faf3cabd15bd7e7f19673361cf8" category="list-text">実効ストレージ容量が Error または Critical のしきい値に近づく場合は、システムのデータをクリアすることを検討してください。</block>
+  <block id="3e9005fa760e228892106c64eed3097c" category="inline-link">NetApp SolidFire Active IQ の詳細</block>
+  <block id="101f6b845f71c73ac7fbf4922f825d17" category="list-text">詳細な分析と履歴のコンテキストについては、を参照してください<block ref="44afd1f3ef2498687a919e55190bfc2d" category="inline-link-rx"></block>。</block>
+  <block id="44755f0fbb788033ad9fcd54884ce16f" category="section-title">ストレージパフォーマンスを監視</block>
+  <block id="2ee536a53d85151ecc2befd3d4024aa2" category="paragraph">Storage Performance ペインを使用すると、クラスタから取得できる IOPS またはスループットを確認できます。このとき、リソースの有用なパフォーマンスを超過することはありません。ストレージパフォーマンスとは、レイテンシの問題が発生する前に利用率を最大限に高めるポイントです。</block>
+  <block id="94938181c864098bf4ebfb7abcf28623" category="paragraph">ストレージパフォーマンスペインでは、ワークロードが増加した場合にパフォーマンスが低下する可能性があるポイントにパフォーマンスが達していないかどうかを確認できます。</block>
+  <block id="9569c3a5e36619a5e0e0342c411f83aa" category="paragraph">このペインの情報は 10 秒ごとに更新され、グラフ上のすべてのポイントの平均値が表示されます。</block>
+  <block id="7e98a44b8457f96e00378234603aaac5" category="paragraph">関連付けられている Element API メソッドの詳細については、を参照してください <block ref="6ea4926a470c2ae91210755714d83096" category="inline-link-macro-rx"></block> メソッド（ _Element ソフトウェア API ドキュメント内）。</block>
+  <block id="0eac8851822f2682589d303382fee544" category="list-text">Storage Performance ペインを表示します。詳細については、グラフのポイントにカーソルを合わせます。</block>
+  <block id="a2845252f09a001bccfc0b8f8ee62f54" category="list-text">* IOPS * タブ： 1 秒あたりの現在の処理数を表示します。データや急増しているデータを探す。たとえば、最大 IOPS が 160K で、そのうち 10 万 IOPS が空き IOPS または使用可能 IOPS であることが確認された場合は、このクラスタにワークロードを追加することを検討してください。一方、使用可能な容量が 140K しかない場合は、ワークロードのオフロードやシステムの拡張を検討してください。</block>
+  <block id="68c69b8e895b69afecf7e9f7f92199fd" category="image-alt">Storage Performance &gt; IOPS タブの順にクリックします</block>
+  <block id="20067555658a401f8d796aaaabf84345" category="list-text">* Throughput * タブ：スループットのパターンまたはスパイクを監視します。また、スループットの値が継続的に高くなっていないかどうかも監視します。リソースの使用率が最大値に近づいていることを示している可能性があります。</block>
+  <block id="30e7c6d37d87480c4ca6804a3c09799d" category="image-alt">Storage Performance &gt; Throughput タブの順にクリックします</block>
+  <block id="c5ef3d7185bfb6cbcc6c20fce7e005b7" category="list-text">* Utilization * タブ： IOPS の利用率を、クラスタレベルで合計した使用可能な合計 IOPS を監視します。</block>
+  <block id="774f4e668d7a66157f867df9c07e2ccc" category="image-alt">Storage Performance &gt; Utilization タブ</block>
+  <block id="7a3f74a4a439a353dac2b787f53f28d8" category="list-text">さらに詳しい分析を行うには、 NetApp Element Plug-in for vCenter Server を使用してストレージのパフォーマンスを確認してください。</block>
+  <block id="b126b8c3ea62d4e05e486584c3e429e7" category="inline-link">NetApp Element Plug-in for vCenter Server に表示されるパフォーマンス</block>
+  <block id="7dcce07eba67a810f05f6b72a7bc76ce" category="paragraph"><block ref="997f70b8f13e5cba5fd5507c9ab58179" category="inline-link-rx"></block>。</block>
+  <block id="ed4186f75217d239b68544e14bbe38c9" category="sidebar">NetApp Hybrid Cloud Control を使用する</block>
+  <block id="2e531c00d20727b760f0fefbb4c65c82" category="sidebar">インベントリは、 NetApp Hybrid のノードのページで確認します Cloud Control の略</block>
+  <block id="767682e703a28fefdc1067e1fcf04243" category="sidebar">ネットアップハイブリッドクラウドでストレージクラスタのボリュームを監視します 制御</block>
 </blocks>

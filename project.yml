@@ -1,4 +1,12 @@
 ---
+settings:
+  name: Element Software
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: true
+    langs: ja-jp,us-en,zh-cn
 sidebar:
   entries:
   - title: SolidFire および Element ソフトウェア 12.3.x のドキュメント
@@ -23,6 +31,7 @@ sidebar:
   - section: esds
   - section: setup
   - section: storage
+  - section: hccstorage
   - section: api
   - title: Element Plug-in for vCenter Server を使用してストレージを管理（リンク）
     url: https://docs.netapp.com/us-en/vcp/
@@ -56,6 +65,8 @@ homepage:
     links:
     - title: Element ソフトウェア UI を使用
       url: "/storage/index.html"
+    - title: NetApp Hybrid Cloud Control を使用する
+      url: "/hccstorage/index.html"
     - title: Element ソフトウェア API を使用
       url: "/api/index.html"
     - title: Element Plug-in for vCenter Server を使用します

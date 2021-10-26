@@ -1,0 +1,29 @@
+---
+section: hccstorage
+title: NetApp Hybrid Cloud Control を使用してストレージを管理および監視します
+url: "/hccstorage/index.html"
+entries:
+- title: NetApp Hybrid Cloud Control を使用してストレージクラスタを追加および管理します
+  url: "/hccstorage/task-hcc-manage-storage-clusters.html"
+- title: 完全修飾ドメイン名 Web UI アクセスを設定します
+  url: "/hccstorage/task-setup-configure-fqdn-web-ui-access.html"
+- title: ネットアップハイブリッドクラウドを使用してユーザアカウントを作成、管理します 制御
+  url: "/hccstorage/task-hcc-manage-accounts.html"
+- title: NetApp Hybrid Cloud Control を使用してボリュームを作成および管理する
+  url: "/hccstorage/task-hcc-manage-vol-management.html"
+- title: ボリュームアクセスグループを作成および管理します
+  url: "/hccstorage/task-hcc-manage-vol-access-groups.html"
+- title: イニシエータを作成および管理する
+  url: "/hccstorage/task-hcc-manage-initiators.html"
+- title: ボリュームの QoS ポリシーの作成と管理
+  url: "/hccstorage/task-hcc-qos-policies.html"
+- title: NetApp Hybrid Cloud Control を使用して SolidFire システムを監視します
+  entries:
+  - title: Hybrid Cloud Control Dashboard でストレージリソースを監視します
+    url: "/hccstorage/task-hcc-dashboard.html"
+  - title: インベントリは、 NetApp Hybrid のノードのページで確認します Cloud Control の略
+    url: "/hccstorage/task-hcc-nodes.html"
+  - title: ネットアップハイブリッドクラウドでストレージクラスタのボリュームを監視します 制御
+    url: "/hccstorage/task-hcc-volumes.html"
+  - title: トラブルシューティング用にログを収集する
+    url: "/hccstorage/task-hcc-collectlogs.html"

@@ -20,7 +20,6 @@ summary: ストレージノードを含むクラスタのセットアップ手�
 . link:../setup/task_setup_create_a_volume_access_group_for_fibre_channel_clients.html["Fibre Channel クライアントのボリュームアクセスグループを作成します"]
 . link:../setup/task_setup_determine_which_solidfire_components_to_install.html["インストールする SolidFire コンポーネントを決定します"]
 . link:../setup/task_setup_gh_redirect_set_up_a_management_node.html["管理ノードをセットアップ"]
-. link:../setup/task_setup_configure_fqdn_web_ui_access.html["完全修飾ドメイン名 Web UI アクセスを設定します"]
 
 
 

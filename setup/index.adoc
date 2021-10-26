@@ -33,7 +33,6 @@ summary: ご使用の環境に合わせてストレージシステムをセッ�
 
 ** xref:task_setup_determine_which_solidfire_components_to_install.adoc[インストールする SolidFire コンポーネントを決定します]
 ** xref:/task_setup_gh_redirect_set_up_a_management_node.adoc[管理ノードをセットアップ]
-** xref:task_setup_configure_fqdn_web_ui_access.adoc[完全修飾ドメイン名 Web UI アクセスを設定します]
 ** xref:concept_setup_whats_next.adoc[次の手順]
 
 
