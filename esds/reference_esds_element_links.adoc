@@ -39,27 +39,29 @@ summary: ストレージクラスタに SolidFire ESDS をインストールし�
 
 == SolidFire ESDS クラスタでは Element API を使用します
 
-* 新機能 * 保存データのソフトウェア暗号化の拡張 * ： Element 12.3 では、保存データのソフトウェア暗号化機能の拡張機能が導入されています。この機能は、 SolidFire エンタープライズ SDS ストレージクラスタの作成時にデフォルトで有効になっています。この機能では、ストレージノード内の SSD に格納されているすべてのデータが暗号化され、クライアント IO のパフォーマンスへの影響は非常に小さく（最大 2% ）すぎません。
+* * 保存中のソフトウェア暗号化の拡張 * ： Element 12.3 には、ソフトウェアの保存データの暗号化機能の拡張機能が導入されています。この機能は、 SolidFire エンタープライズ SDS ストレージクラスタを作成するとデフォルトで有効になります。この機能では、ストレージノード内の SSD に格納されているすべてのデータが暗号化され、クライアント IO のパフォーマンスへの影響は非常に小さく（最大 2% ）すぎません。保存データのソフトウェア暗号化に関連する Element API メソッドを次に示します（を参照） https://docs.netapp.com/us-en/element-software/api/index.html["Element API のドキュメント"^] 各メソッドの詳細については、以下を参照してください）。
++
+** 'CreateCluster'
+** 「 DisableEncryptionAtRest 」
+** EnableEncryptionAtRest
+** GetSoftwareEncryptionAtRestInfo
+** RekeySoftwareEncryptionAtRestMasterKey
 
 
-保存データのソフトウェア暗号化に関連する Element API メソッドを次に示します（を参照） https://docs.netapp.com/us-en/element-software/api/index.html["Element API のドキュメント"^] 各メソッドの詳細については、以下を参照してください）。
+* * 保持するスナップショットの最大数を定義する機能 * ： Element 12.3 では、スナップショット保持機能が強化されています。この拡張機能をサポートするように次の API が変更されています（を参照） https://docs.netapp.com/us-en/element-software/api/index.html["Element API のドキュメント"^] 各メソッドの詳細については、以下を参照してください）。
++
+** 'CreateVolume'
+** 「 modifyVolume 」
+** CreateSnapshot の更新
+** 'createschedule'
+** 「 modifyGroupSnapshot 」
+** 「変更スケジュール」
+** 「 modifySnapshot 」
+** 'CreateGroupSnapshot'
 
-* 'CreateCluster'
-* 「 DisableEncryptionAtRest 」
-* EnableEncryptionAtRest
-* GetSoftwareEncryptionAtRestInfo
-* RekeySoftwareEncryptionAtRestMasterKey
-* 新規 * 保持するスナップショットの最大数を定義する機能 * ： Element 12.3 では、スナップショット保持機能が強化されています。この拡張機能をサポートするように次の API が変更されています（を参照） https://docs.netapp.com/us-en/element-software/api/index.html["Element API のドキュメント"^] 各メソッドの詳細については、以下を参照してください）。
-* 'CreateVolume'
-* 「 modifyVolume 」
-* CreateSnapshot の更新
-* 'createschedule'
-* 「 modifyGroupSnapshot 」
-* 「変更スケジュール」
-* 「 modifySnapshot 」
-* 'CreateGroupSnapshot'
-* NEW ！ _ * Element ソフトウェアのパッチに関する情報を入手 * ： Element 12.3 では、 GetPatchInfo メソッドが導入されています。このメソッドを使用すると、ストレージノードにインストールされている Element ソフトウェアのパッチに関する情報を取得できます。を参照してください https://docs.netapp.com/us-en/element-software/api/index.html["Element API のドキュメント"^] を参照してください。
-* New!_*List ノード上の各ネットワークインターフェイスの統計情報 *: Element 12.3 では、「 ListNetworkInterfaceStats 」メソッドが導入されています。このメソッドを使用すると、ノード上の各ネットワークインターフェイスのドロップされたパケット数やさまざまな種類のエラーなどの統計情報をリストできます。この API メソッドは、個々のノードに対して使用するためのものです。個々のノードにアクセスするには、ユーザ ID とパスワードによる認証が必要です。ただし、メソッド呼び出しで force パラメータの値が true に設定されている場合は、このメソッドをクラスタに対して使用できます。パラメータをクラスタに対して使用すると、すべてのインターフェイスのネットワーク統計が表示されます。を参照してください https://docs.netapp.com/us-en/element-software/api/index.html["Element API のドキュメント"^] を参照してください。
+
+* * Element ソフトウェアのパッチに関する情報を入手する *: Element 12.3 には GetPatchInfo メソッドが導入されています。これにより、ストレージノードにインストールされている Element ソフトウェアのパッチに関する情報を取得できます。を参照してください https://docs.netapp.com/us-en/element-software/api/index.html["Element API のドキュメント"^] を参照してください。
+* * ノード上の各ネットワークインターフェイスの統計情報を表示する *: Element 12.3 では、「 ListNetworkInterfaceStats 」メソッドが導入されています。このメソッドを使用すると、ノード上の各ネットワークインターフェイスのドロップされたパケット数やさまざまな種類のエラーなどの統計情報を表示できます。この API メソッドは、個々のノードに対して使用するためのものです。個々のノードにアクセスするには、ユーザ ID とパスワードによる認証が必要です。ただし、メソッド呼び出しで force パラメータの値が true に設定されている場合は、このメソッドをクラスタに対して使用できます。パラメータをクラスタに対して使用すると、すべてのインターフェイスのネットワーク統計が表示されます。を参照してください https://docs.netapp.com/us-en/element-software/api/index.html["Element API のドキュメント"^] を参照してください。
 * * SolidFire ESDS* をサポートするために Element 12.2 で導入および更新された API ： SolidFire ESDS クラスタで使用できる新しい API が Element 12.2 で導入されました。
 
 

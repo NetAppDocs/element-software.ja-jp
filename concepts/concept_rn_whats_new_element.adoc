@@ -16,7 +16,7 @@ summary: ネットアップでは、 SolidFire および Element ソフトウェ
 
 == NetApp Bugs Online には、既知の問題と解決済みの問題があります
 
-Element 12.3 以降では、 NetApp Bugs Online ツールに既知の問題と解決済みの問題が表示されるようになりました。これらの問題は Element およびその他の製品で参照できます。
+既知の問題と解決済みの問題の一覧が NetApp Bugs Online ツールに表示されるようになりました。これらの問題は Element およびその他の製品で参照できます。
 
 . に進みます https://mysupport.netapp.com/site/products/all/details/solidfire-elementos/bugsonline-tab["NetApp Bugs Online では"^]。
 . [ キーワードで検索（ Search by Keyword ） ] フィールドに製品名（例えば、「エレメント」）を入力します。
@@ -41,10 +41,42 @@ Element 12.3.1 リリースには、ストレージファームウェアバン�
 
 
 
-=== SolidFire エンタープライズ SDS の動的ノード評価
+== SolidFire ESDS ホスト・プラットフォームの動的 CPU ノード定格のサポート
 
-ノードの動的な評価により、プラットフォーム上のコア数に応じてパフォーマンスを拡張できます。リリース 12..1 では、コア数が 16 より大きい場合、 IOPS は 100K に制限されます。
+SolidFire ESDS では、 24 種類のモデルからなるインテル ® Gold および Silver Cascade Lake 世代の CPU を幅広くサポートしています。Dynamic Node Rating 機能は、 CPU に基づいてホストサーバに 5 万 ～ 10 万の QoS IOPS レートを割り当てます。
 
+[cols="100,100"]
+|===
+| CPU コアの数 | ESDS ノードの IOPS レート 
+
+
+ a| 
+8.
+ a| 
+5 万
+
+
+
+ a| 
+10.
+ a| 
+60 万
+
+
+
+ a| 
+12.
+ a| 
+75K
+
+
+
+ a| 
+16 以上
+ a| 
+10 万ドル
+
+|===
 
 
 === SolidFire ESDS のシングルボンドネットワーク構成がサポートされます

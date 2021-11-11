@@ -25,7 +25,7 @@ REST API UI を使用して、管理ノードの設定にコントローラア�
 +
 [listing]
 ----
-https://[management node IP]/inventory/1/
+https://<ManagementNodeIP>/inventory/1/
 ----
 .. 「 * Authorize * 」（認証）を選択して、次の手順を実行
 +
@@ -73,7 +73,7 @@ POST /assets/{asset_id}/controllers
 +
 [listing]
 ----
-https://[management node IP]/mnode
+https://<ManagementNodeIP>/mnode
 ----
 .. 「 * Authorize * 」（認証）を選択して、次の手順を実行
 +

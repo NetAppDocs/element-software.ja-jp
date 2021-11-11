@@ -28,13 +28,13 @@ keywords: netapp, Element, management node, management services, version, bundle
 +
 [listing]
 ----
-curl -X GET "https://<managementNodeIP>/mnode/about" -H  "accept: application/json"
+curl -X GET "https://<ManagementNodeIP>/mnode/about" -H  "accept: application/json"
 ----
 * 管理ノードで実行されている個々のサービスに関するバージョン情報を取得します。
 +
 [listing]
 ----
-curl -X GET "https://<managementNodeIP>/mnode/services?status=running" -H  "accept: */*" -H  "Authorization: ${TOKEN}"
+curl -X GET "https://<ManagementNodeIP>/mnode/services?status=running" -H  "accept: */*" -H  "Authorization: ${TOKEN}"
 ----
 +
 
@@ -50,7 +50,7 @@ NOTE: 注意 : API コマンドで使用されるベアラー $ ｛ token ｝ �
 +
 [listing]
 ----
-https://<managementNodeIP>/mnode/
+https://<ManagementNodeIP>/mnode/
 ----
 . 次のいずれかを実行します。
 +

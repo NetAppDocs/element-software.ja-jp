@@ -626,10 +626,7 @@
   <block id="1a75005c83ba0c4856d5a0dc8856e732" category="section-title">保存データの暗号化（ハードウェア）</block>
   <block id="c62f72fd571b1f51ae201be29d3e8a77" category="paragraph">ストレージノード内のドライブはいずれも、ドライブレベルの暗号化機能で AES 256 ビット暗号化を利用できます。各ドライブには、ドライブが最初に初期化されたときに作成される、専用の暗号化キーがあります。暗号化機能を有効にすると、クラスタ全体のパスワードが作成され、複数のチャンクとしてクラスタ内のすべてのノードに配信されます。どのノードにもパスワード全体が格納されることはありません。このパスワードを使用して、ドライブへのすべてのアクセスが保護されます。ドライブのロックを解除するにはパスワードが必要です。ドライブの電源がオフになっているかドライブがロックされている場合以外は、パスワードは必要ありません。</block>
   <block id="2a3d70b6971e1070fb33b38fff9fb1d6" category="inline-link-macro">保存データのハードウェア暗号化機能の有効化</block>
-  <block id="fbb6469dc86ca9bc800e44a77cd38838" category="paragraph"><block ref="e0aaa0d82b382c0f7bba30d7de10a282" category="inline-link-macro-rx"></block> クラスタのパフォーマンスや効率には影響しません。Element API または Element UI を使用してクラスタの設定から暗号化が有効なドライブまたはノードを削除すると、保存データの暗号化がドライブで無効になります。ドライブを削除した後、「 ecureEraseDrives 」 API メソッドを使用してドライブを安全に消去できます。物理ドライブまたはノードが強制的に削除された場合でも、データはクラスタ全体のパスワードおよびドライブごとの暗号化キーによって引き続き保護されます。</block>
   <block id="a3dc930bbe6478d770946b9c65d858ed" category="section-title">保存データの暗号化（ソフトウェア）</block>
-  <block id="6c5ab1da0869bd1b07e7ca256da346fc" category="inline-link-macro">有効にすると</block>
-  <block id="f90cf66800b6fcc30f5d8aaf3e503fb6" category="paragraph">保存データを暗号化するソフトウェア暗号化機能のもう 1 つのタイプを使用すると、ストレージクラスタ内の SSD に書き込まれるすべてのデータを暗号化できます。 <block ref="e36037b06c154907c9cd57a345962d25" category="inline-link-macro-rx"></block>ソフトウェアで自動的に読み取られたすべてのデータを暗号化し、復号化します。ソフトウェア暗号化保存データは、ハードウェアに実装された自己暗号化ドライブ（ SED ）をミラーリングして、データセキュリティを SED なしで提供します。</block>
   <block id="43b870e499bdb0387c629bf497770155" category="paragraph">保存データのソフトウェア暗号化は、すべての SolidFire エンタープライズ SDS ノードでデフォルトで使用できます。保存データのソフトウェア暗号化は、自己暗号化ドライブ（ SED ）を含まない SolidFire エンタープライズ SDS ノードでデータセキュリティ暗号化の主要なソフトウェアレイヤを提供します。</block>
   <block id="7e65cd9d4a4bf4e916488e5827b847c3" category="paragraph">ソフトウェアベースとハードウェアベースの保存データの暗号化機能は、どちらも単独で使用することも、相互に組み合わせて使用することもできます。</block>
   <block id="370c6dde461cc5827c330619a80ca24b" category="section-title">外部キー管理</block>
@@ -2024,7 +2021,6 @@
   <block id="b631bf7f00d77eddfcbf6feca367bd11" category="inline-link-macro">保存データのハードウェアまたはソフトウェアベースの暗号化</block>
   <block id="d62272ad249849fed29dbcf8e33b4a66" category="paragraph">SolidFire クラスタでは、クラスタドライブに格納されているすべての保存データを暗号化できます。どちらかを使用して、クラスタ全体の自己暗号化ドライブ（ SED ）の保護を有効にすることができます <block ref="4e1c93429537251d700ac9caee965d64" category="inline-link-macro-rx"></block>。</block>
   <block id="118b9b3ce514a868bc27ae35073731c7" category="paragraph">Element UI または API を使用して、保存データのハードウェア暗号化を有効にすることができます。保存データの暗号化機能を有効にしても、クラスタのパフォーマンスや効率には影響しません。Element API でのみ、保存データのソフトウェア暗号化を有効にすることができます。</block>
-  <block id="868c3d3f1b4f3b4fe96399bd48e78c6e" category="paragraph">保存データのハードウェアベースの暗号化は、クラスタの作成時にデフォルトでは有効になりません。また、 Element UI から有効または無効にすることができます。クラスタの作成時に保存データのソフトウェア暗号化を有効にし、クラスタの作成後に無効にすることはできません。</block>
   <block id="fbf0bf350510633ec198d87f496cf0f6" category="list-text">暗号化の設定を有効にしたり変更したりするためのクラスタ管理者権限が必要です。</block>
   <block id="28ebc10ef7c343a4cf32aacf144f1590" category="list-text">保存データのハードウェアベースの暗号化では、暗号化の設定を変更する前にクラスタが正常な状態であることを確認しておきます。</block>
   <block id="53f1251f9f4067bb924700bbc4f4734a" category="list-text">暗号化を無効にする場合は、ドライブの暗号化を無効にするために、 2 つのノードがクラスタに参加している必要があります。</block>
@@ -4431,7 +4427,6 @@
   <block id="5736148b5375720933e71e45f51b20e5" category="section-title">管理ノードにはすでにコントローラアセットが存在します</block>
   <block id="fc19c6595bd8969ef30edf3d5a5b0180" category="paragraph">コントローラアセットが管理ノードにすでに存在する場合は、次の手順を実行して、「 PUT /assets/{asset_id }/controllers /{controller_id } 」を使用してコントローラを設定します。</block>
   <block id="ae4366a31230f9af19c469714f87f6ee" category="list-text">管理ノードの mNode サービス API UI にアクセスします。</block>
-  <block id="8cffe2ec13bf2ab433bf42f4e7f1e2f0" category="paragraph">「 https://[management node ip]/mnode 」</block>
   <block id="71427c2704c6de4d5876235c27517ca4" category="list-text">「 * Authorize * 」を選択し、 API 呼び出しにアクセスするためのクレデンシャルを入力します。</block>
   <block id="22d2ed076037305c1b4f2cbc0eff7128" category="list-text">[get/assets] を選択して、親 ID を取得します。</block>
   <block id="00599f37a415f2f93cf88aab44078222" category="list-text">'put/assets/{asset_id }/controllers /{controller_id }' を選択します</block>
@@ -4641,7 +4636,6 @@
   <block id="6cc910c0977361227d631be0efac7242" category="list-text"><block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block></block>
   <block id="60ab2bd7c82926193a03f5c5a737a700" category="summary">管理ノード UI を使用 <block ref="a7b0ad1acc22482b3121a6ffb43d70b9" category="inline-link-rx"></block>を使用して、ネットワークとクラスタの設定を変更したり、システムテストを実行したり、システムユーティリティを使用したりできます。</block>
   <block id="76aaec2f503ca4060e52d3afcacbf7ac" category="doc">管理ノード UI の概要</block>
-  <block id="5f6a3d453e620c04e86ab8777de65a84" category="paragraph">管理ノード UI （ https://&lt;managementNodeIP&gt;:442` ）を使用すると、ネットワークおよびクラスタの設定を変更したり、システムテストを実行したり、システムユーティリティを使用したりできます。</block>
   <block id="6622311408de951c1b40e6b5bd9c1113" category="paragraph">管理ノード UI で実行できるタスクは次のとおりです。</block>
   <block id="2f0ef0a953d028bdda160b442f2cffa5" category="list-text"><block ref="2f0ef0a953d028bdda160b442f2cffa5" category="inline-link-macro-rx"></block></block>
   <block id="0f693a63463c62015ee0ce70923983df" category="inline-link-macro">管理ノードのネットワーク、クラスタ、およびシステムの設定を変更してテストする</block>
@@ -4696,7 +4690,6 @@
   <block id="b25ed61ac80076a1236ec6c52426771e" category="paragraph">成功すると、 API は空の応答を返します。</block>
   <block id="474c6800f0719d621f24fc2682a27460" category="summary">管理ノード（ mNode ） API を使用して、システムサービスのアップグレード、クラスタのアセットと設定の管理、システムのテストとユーティリティの実行、システム監視用の Active IQ の設定、トラブルシューティング用のネットアップサポートの SSH アクセスの有効化または無効化を行うことができます。</block>
   <block id="b2fc999fbccff4aaaffa26387ba2644f" category="doc">管理ノードの REST API UI の概要</block>
-  <block id="99023d452f9135abf85115869e8e281a" category="paragraph">組み込みの REST API UI （ https://&lt;managementNodeIP&gt;/mnode` ）を使用すると、プロキシサーバの設定、サービスレベルの更新、アセット管理などの管理ノードサービスに関連する API を実行したり、理解したりできます。</block>
   <block id="79ed200d3fdf33f90ac7bacae1bcd0b9" category="paragraph">REST API で実行できるタスクは次のとおりです。</block>
   <block id="9cd8a2455b1839ff98ef70c05b9b5983" category="section-title">承認</block>
   <block id="e0e73a2c694effc8913d40fd32f76302" category="list-text"><block ref="e0e73a2c694effc8913d40fd32f76302" category="inline-link-macro-rx"></block></block>
@@ -5224,7 +5217,6 @@
   <block id="30c2b654de6b157d3965b69e2e973b9c" category="paragraph">アップグレードの開始後は、このページにアップグレードのステータスが表示されます。アップグレードの実行中に NetApp Hybrid Cloud Control との接続が失われ、ログインし直さないとアップグレードの結果が表示されないことがあります。</block>
   <block id="e1ab7975bc85b8e4a805e35bfd948176" category="section-title">管理ノード API を使用して管理サービスを更新する</block>
   <block id="f64b52761fbac72e8bfdd229b3a113f1" category="paragraph">管理サービスの更新は、 NetApp Hybrid Cloud Control から実行することを推奨します。ただし、管理ノードから REST API UI を使用して管理サービスを手動で更新することはできます。</block>
-  <block id="af268dbd6a20b35e8fafa53f0e7acfc3" category="list-text">管理ノードで REST API UI を開きます：「 https://[management node ip]/mnode 」</block>
   <block id="fe1085046bceaf490556bf74e0f01c15" category="list-text">（任意）利用可能な管理ノードサービスのバージョンを確認します。「 get/services/versions</block>
   <block id="0edefa8da79067ac4b94f9b1b2a9af8c" category="list-text">（任意）最新バージョンの詳細情報を取得します。「 get/services/versions/latest</block>
   <block id="b4851bdc860d51294258bcfa6507a2f6" category="list-text">（任意）特定のバージョンに関する詳細情報を取得します。「 get/services/versions/{version}/info`</block>
@@ -5310,12 +5302,10 @@
   <block id="26f2f1d140c70238a07a5f09e846fd82" category="inline-link">プラグインのバージョン</block>
   <block id="d7be3f2367f28daeaac07c2967977074" category="list-text">* 管理者権限 * ：プラグインをインストールするための vCenter Administrator ロールの権限があります。</block>
   <block id="7df6c84beb4c7f9c0109ea10accef1ed" category="list-text">* vSphere のアップグレード * ： NetApp Element Plug-in for vCenter Server をアップグレードする前に、必要な vCenter のアップグレードを実行しておきます。以下の手順は、 vCenter のアップグレードが完了していることを前提としています。</block>
-  <block id="c60238cb58d95b456566853e62db1d18" category="list-text">* vCenter Server * ： vCenter Plug-in バージョン 4.x が vCenter Server に登録されている。登録ユーティリティ（「 https://[management node ip: 9443 」）から「 * Registration Status * 」を選択し、必要なフィールドに入力して「 * Check Status * 」を選択し、 vCenter Plug-in がすでに登録されていること、および現在のインストールのバージョン番号を確認します。</block>
   <block id="a0b278d8005f2dc2b9518ad7c52c1e27" category="list-text">* 管理サービスの更新 * ：を更新しました<block ref="f6e495ec9a99fcd5692d41358780e884" category="inline-link-rx"></block> を最新バージョンに更新します。vCenter プラグインの更新は、ネットアップの SolidFire オールフラッシュストレージに関する製品のメジャーリリース以外でリリースされた管理サービスの更新を使用して配布されます。</block>
   <block id="4c02ebe342ea429a0d2a2a23be2ddd19" category="inline-link-macro">アップグレード済み</block>
   <block id="27c25a67c147529824177fc694e7fd19" category="list-text">* 管理ノードのアップグレード * ：以前に実行されていた管理ノードを実行します <block ref="23cc83378d4b0551eef4ac573737e008" category="inline-link-macro-rx"></block> バージョン 11.3 以降。vCenter Plug-in 4.4 以降では、個別のサービスを提供するモジュラアーキテクチャを備えた 11.3 以降の管理ノードが必要です。管理ノードの電源をオンにして IP アドレスまたは DHCP アドレスを設定しておく必要があります。</block>
   <block id="7d3b6b8e2540bf5435b3b6984ad1f702" category="list-text">* Element ストレージのアップグレード * ： NetApp Element ソフトウェア 11.3 以降を実行しているクラスタが必要です。</block>
-  <block id="c13fa68b55894aaf612067aa7455ac53" category="list-text">ブラウザに管理ノードの IP アドレスを入力します。登録用の TCP ポート「 https://[management node ip 」： 9443 でこのプラグインの登録ユーティリティ UI が開き、「 Manage QoSSIOC Service Credentials * 」ページが表示されます。</block>
   <block id="26fc450c5cd9b7f28b10cff7659b479d" category="image-alt">は、プラグインの登録ユーティリティの UI です</block>
   <block id="0bd0c7dc69df55cee394b64eebcd27ab" category="list-text">vCenter Plug-in Registration * を選択します。</block>
   <block id="5c8b8f78ed09c86ecda3569ee8c3a3f0" category="list-text">Manage vCenter Plug-in * で、 * Update Plug-in * を選択します。</block>
@@ -7133,12 +7123,9 @@
   <block id="dc8dc3bb3de4a4adf49596a9aeb17b5a" category="paragraph"><block ref="dc8dc3bb3de4a4adf49596a9aeb17b5a" category="inline-xref-macro-rx"></block></block>
   <block id="a1c5aa843b544d43737e68bf101cd099" category="summary">EnableEncryptionAtRest メソッドを使用すると、クラスタの保存データの Advanced Encryption Standard\ （ AES\ ） 256 ビット暗号化を有効にできます。これにより、各ノードのドライブで使用される暗号化キーをクラスタで管理できるようになります。この機能はデフォルトでは有効になっていません。</block>
   <block id="f7fbdcd0f959ea03f9c9fe10c1f436f5" category="paragraph">EnableEncryptionAtRest メソッドを使用すると、クラスタの保存データの Advanced Encryption Standard （ AES ） 256 ビット暗号化を有効にできます。これにより、各ノードのドライブで使用される暗号化キーをクラスタで管理できるようになります。この機能はデフォルトでは有効になっていません。</block>
-  <block id="08e683c68442f500782b3d5486530a71" category="admonition">この方法では、保存データのソフトウェア暗号化は有効になりません。これは、を使用した場合にのみ実行できます <block ref="d203a09ebf9d1da1010b557da816049a" category="inline-link-macro-rx"></block> enableSoftwareEncryptionAtRest を「 true 」に設定します。</block>
-  <block id="d64e1958197f563e5d4a6da4967e8dda" category="paragraph">保存データの暗号化を有効にすると、クラスタ内の各ノードのドライブについて、暗号化キーがクラスタ内部で自動的に管理されます。</block>
   <block id="06dd8c5540d025434b69c38d303f3e8a" category="paragraph">keyProviderID を指定すると、キープロバイダのタイプに応じてパスワードが生成され、取得されます。KMIP キープロバイダの場合は、通常 Key Management Interoperability Protocol （ KMIP ）キーサーバが使用されます。この処理の実行後、指定したプロバイダはアクティブとみなされ、「 D isableEncryptionAtRest 」メソッドを使用して保存データの暗号化を無効にするまで削除できません。</block>
   <block id="0a78a222fd5e48d5331001cedecde88d" category="admonition">モデル番号が「 -NE 」で終わるノードタイプでは、「 EnableEncryptionAtRest 」メソッド呼び出しが「 Encryption not allowed.Cluster detected non-encryptable node. 」という応答で失敗します。</block>
   <block id="4a54a4a7259521b88f93480f1f8c1475" category="admonition">暗号化を有効または無効にできるのは、クラスタが正常な状態で稼働している場合のみです。必要に応じて、必要に応じて暗号化を有効または無効にすることができます。</block>
-  <block id="f1231b5d542078f02b94131eb356b0f5" category="admonition">このプロセスは非同期であり、暗号化が有効になる前に応答を返します。GetClusterInfo メソッドを使用すると、システムをポーリングしてプロセスがいつ完了したかを確認できます。</block>
   <block id="6a86ff89129aa530aa27db3c9c307848" category="paragraph">使用する KMIP キープロバイダの ID 。</block>
   <block id="93be4895c86d760e8bbee3a36d256dc1" category="section-title">応答例</block>
   <block id="de2ce72bff2708387d1e10b470c242b0" category="paragraph">このメソッドの EnableEncryptionAtRest メソッドの応答例を次に示します。レポートする結果はありません。</block>
@@ -11273,13 +11260,10 @@
   <block id="c6051cfa3c7828a4f0a2532c70333d32" category="list-text"><block ref="c6051cfa3c7828a4f0a2532c70333d32" category="inline-link-rx"></block></block>
   <block id="cf01dc47ed79267872b62a626969809c" category="paragraph">概要ページから特定のタスクに移動できます。</block>
   <block id="b6da6eab87d65c4c9297f872afd87022" category="section-title">SolidFire ESDS クラスタでは Element API を使用します</block>
-  <block id="3030e71fadafe9b1abef9e78705bb25e" category="list-text">新機能 * 保存データのソフトウェア暗号化の拡張 * ： Element 12.3 では、保存データのソフトウェア暗号化機能の拡張機能が導入されています。この機能は、 SolidFire エンタープライズ SDS ストレージクラスタの作成時にデフォルトで有効になっています。この機能では、ストレージノード内の SSD に格納されているすべてのデータが暗号化され、クライアント IO のパフォーマンスへの影響は非常に小さく（最大 2% ）すぎません。</block>
-  <block id="4a9ed427fc5a83bc638d8bdcbf03a902" category="paragraph">保存データのソフトウェア暗号化に関連する Element API メソッドを次に示します（を参照）<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 各メソッドの詳細については、以下を参照してください）。</block>
   <block id="389945c09cdda9d478adbb3a47413d5c" category="list-text">「 DisableEncryptionAtRest 」</block>
   <block id="a3c5dec02de1b4c52f4ef9ce2d7e0b2a" category="list-text">EnableEncryptionAtRest</block>
   <block id="9474d63d23a163955eb222057663ae5f" category="list-text">GetSoftwareEncryptionAtRestInfo</block>
   <block id="c68a2d9b7e85236a7846e8479df5eb22" category="list-text">RekeySoftwareEncryptionAtRestMasterKey</block>
-  <block id="714cc9347f4b08d67d55a3843a3eaf94" category="list-text">新規 * 保持するスナップショットの最大数を定義する機能 * ： Element 12.3 では、スナップショット保持機能が強化されています。この拡張機能をサポートするように次の API が変更されています（を参照）<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 各メソッドの詳細については、以下を参照してください）。</block>
   <block id="05e99937dbfca39a8e79ec1345dc0caf" category="list-text">'CreateVolume'</block>
   <block id="71a673e3e44f3d66064abf107eecd41b" category="list-text">「 modifyVolume 」</block>
   <block id="16668f69631e97f6454595916b95763c" category="list-text">CreateSnapshot の更新</block>
@@ -11288,8 +11272,6 @@
   <block id="17527882eae9d5d0fe85324be1ab5b68" category="list-text">「変更スケジュール」</block>
   <block id="971735603f1c15fa2aefaf1cdcffcf38" category="list-text">「 modifySnapshot 」</block>
   <block id="b4d38d2cfe8361b4706ee65b48cd47e7" category="list-text">'CreateGroupSnapshot'</block>
-  <block id="0024bcff774378ef692c68a5a85d8a9b" category="list-text">NEW ！ _ * Element ソフトウェアのパッチに関する情報を入手 * ： Element 12.3 では、 GetPatchInfo メソッドが導入されています。このメソッドを使用すると、ストレージノードにインストールされている Element ソフトウェアのパッチに関する情報を取得できます。を参照してください<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> を参照してください。</block>
-  <block id="0c3c4a1b46b5b921108ef9856a80fe9b" category="list-text">New!_*List ノード上の各ネットワークインターフェイスの統計情報 *: Element 12.3 では、「 ListNetworkInterfaceStats 」メソッドが導入されています。このメソッドを使用すると、ノード上の各ネットワークインターフェイスのドロップされたパケット数やさまざまな種類のエラーなどの統計情報をリストできます。この API メソッドは、個々のノードに対して使用するためのものです。個々のノードにアクセスするには、ユーザ ID とパスワードによる認証が必要です。ただし、メソッド呼び出しで force パラメータの値が true に設定されている場合は、このメソッドをクラスタに対して使用できます。パラメータをクラスタに対して使用すると、すべてのインターフェイスのネットワーク統計が表示されます。を参照してください<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> を参照してください。</block>
   <block id="b39b4f606b587cbb01f67a7e70186eea" category="list-text">* SolidFire ESDS* をサポートするために Element 12.2 で導入および更新された API ： SolidFire ESDS クラスタで使用できる新しい API が Element 12.2 で導入されました。</block>
   <block id="463224af5ebc7979ed09e40e54613a35" category="paragraph">Element 12.2 で追加された API の一覧を次に示します。</block>
   <block id="41773f0138486ec234a35d7b9f9a9fbd" category="inline-link-macro">「 GetLicenseKey 」をクリックします</block>
@@ -11643,7 +11625,6 @@
   <block id="2531dd1ed0ade9f475e182123de3f411" category="list-text">[* Get Singges/health-checksSries/｛ healthCheckId}/log* ] を選択します</block>
   <block id="d84036b22a23f84fa8de705bbe508b0b" category="list-text">特定のエラーを確認し、関連する KB 記事のリンクを取得します。</block>
   <block id="ebf662609bd0c670a5048adf12e5dd87" category="list-text">クラスタの問題を解決したら、 * Get Sedges/health-checksRunges/｛ healthCheckId ｝ /log * を再度実行します。</block>
-  <block id="eb9b597f5610631d63cab0f7fb6e45e2" category="paragraph">Element 12.3 以降では、 NetApp Bugs Online ツールに既知の問題と解決済みの問題が表示されるようになりました。これらの問題は Element およびその他の製品で参照できます。</block>
   <block id="6fdef1a96dd1317b8f4387931b94852d" category="list-text">に進みます<block ref="0c12cf8c0cec0405a310594288c146b6" category="inline-link-rx"></block>。</block>
   <block id="06f64729610d29108de18fcd67a1a763" category="list-text">[ キーワードで検索（ Search by Keyword ） ] フィールドに製品名（例えば、「エレメント」）を入力します。</block>
   <block id="768d18144454e6cec5a96d61cb09fd9c" category="inline-image-macro">プラスアイコン</block>
@@ -11673,8 +11654,6 @@
   <block id="adf576ac121282dd87a46368c235ab70" category="paragraph">Element 12..1 の新機能の詳細については、こちらを参照してください。</block>
   <block id="04aa68617927bbc2709638a86a15ad34" category="section-title">ストレージファームウェアバンドル 2.99.2</block>
   <block id="81686da1b9f8be4c89479031f62bbb25" category="paragraph">Element 12.3.1 リリースには、ストレージファームウェアバンドルバージョン 2.99.2 が含まれています。ストレージクラスタがすでに Element 12.3 にある場合は、新しい 2.99.2 ファームウェアバンドルをインストールするだけで済みます。</block>
-  <block id="d69b9e8a4d0238c47265090b6e217622" category="section-title">SolidFire エンタープライズ SDS の動的ノード評価</block>
-  <block id="95fa63557d09485a12e01a06f82d0783" category="paragraph">ノードの動的な評価により、プラットフォーム上のコア数に応じてパフォーマンスを拡張できます。リリース 12..1 では、コア数が 16 より大きい場合、 IOPS は 100K に制限されます。</block>
   <block id="1481eff19800c0874fe76d7649f000f6" category="section-title">SolidFire ESDS のシングルボンドネットワーク構成がサポートされます</block>
   <block id="a00727946846293fe49ce2ad34902fe6" category="paragraph">SolidFire ESDS を使用して、ホストに単一ボンドネットワーク構成を使用できるようになりました。</block>
   <block id="52f03f4718ce263c343918e7d6dc7572" category="section-title">SolidFire エンタープライズ SDS での新しいサーバーのサポート</block>
@@ -12375,4 +12354,41 @@
   <block id="ed4186f75217d239b68544e14bbe38c9" category="sidebar">NetApp Hybrid Cloud Control を使用する</block>
   <block id="2e531c00d20727b760f0fefbb4c65c82" category="sidebar">インベントリは、 NetApp Hybrid のノードのページで確認します Cloud Control の略</block>
   <block id="767682e703a28fefdc1067e1fcf04243" category="sidebar">ネットアップハイブリッドクラウドでストレージクラスタのボリュームを監視します 制御</block>
+  <block id="d999c8f91acdda00b7947df4d88bb296" category="paragraph">既知の問題と解決済みの問題の一覧が NetApp Bugs Online ツールに表示されるようになりました。これらの問題は Element およびその他の製品で参照できます。</block>
+  <block id="605e2776f3071c726f66acc87295d21f" category="section-title">SolidFire ESDS ホスト・プラットフォームの動的 CPU ノード定格のサポート</block>
+  <block id="61356eb323be4d7b821c93b513166119" category="paragraph">SolidFire ESDS では、 24 種類のモデルからなるインテル ® Gold および Silver Cascade Lake 世代の CPU を幅広くサポートしています。Dynamic Node Rating 機能は、 CPU に基づいてホストサーバに 5 万 ～ 10 万の QoS IOPS レートを割り当てます。</block>
+  <block id="dd08ecb51d2567c0f5d500734aca7aa7" category="cell">CPU コアの数</block>
+  <block id="67720d011a8ac675acb512bd68ef1987" category="cell">ESDS ノードの IOPS レート</block>
+  <block id="c9f0f895fb98ab9159f51fd0297e236d" category="paragraph">8.</block>
+  <block id="b548533be6ad1379f80ce604a074ef79" category="paragraph">5 万</block>
+  <block id="1a022ef2ed73e2026bbe5167a998bb93" category="paragraph">60 万</block>
+  <block id="c20ad4d76fe97759aa27a0c99bff6710" category="paragraph">12.</block>
+  <block id="1c43c5df76609d14304dc2d83182bcf0" category="paragraph">75K</block>
+  <block id="aeaa64cd03e3847df06556f5b70e6271" category="paragraph">16 以上</block>
+  <block id="70c7acef529834326f5a880ae840b93b" category="paragraph">10 万ドル</block>
+  <block id="527b815afb2a497e0a4e73961b0b2530" category="paragraph"><block ref="4887d593881fb1b00f6709ff486d4e82" category="inline-link-macro-rx"></block> クラスタのパフォーマンスや効率には影響しません。Element API または Element UI を使用してクラスタの設定から暗号化が有効なドライブまたはノードを削除すると、保存データの暗号化がドライブで無効になります。ドライブを削除した後、「 ecureEraseDrives 」 API メソッドを使用してドライブを安全に消去できます。物理ドライブまたはノードが強制的に削除された場合でも、データはクラスタ全体のパスワードおよびドライブごとの暗号化キーによって引き続き保護されます。</block>
+  <block id="33c5b6122776adc3b7c9d47882391b61" category="inline-link-macro">有効になっている場合</block>
+  <block id="f821a90c9663cfba67e5463eaa9dd50b" category="paragraph">保存データを暗号化するソフトウェア暗号化機能のもう 1 つのタイプを使用すると、ストレージクラスタ内の SSD に書き込まれるすべてのデータを暗号化できます。 <block ref="850adab22a7d3ffe35b638d0df9b6cf6" category="inline-link-macro-rx"></block>ソフトウェアで自動的に読み取られたすべてのデータを暗号化し、復号化します。保存データのソフトウェア暗号化は、 SED （自己暗号化ドライブ）のハードウェアへの実装を反映して、 SED がない場合にデータセキュリティを提供します。</block>
+  <block id="5ddb1cb96e389bf43231140cde9934cd" category="admonition">SolidFire オールフラッシュストレージクラスタの場合、クラスタ作成時に保存データのソフトウェア暗号化を有効にし、クラスタ作成後に無効にすることはできません。</block>
+  <block id="ea9540183556cd61c73cb60851b8401a" category="paragraph">保存データのハードウェアベースの暗号化は、クラスタの作成時にデフォルトでは有効になりません。また、 Element UI から有効または無効にすることができます。</block>
+  <block id="65e41692ce81538235f31feb59da0df9" category="admonition">SolidFire オールフラッシュストレージクラスタの場合、クラスタ作成時に保存データのソフトウェア暗号化を有効にし、クラスタ作成後に無効にすることはできません。SolidFire エンタープライズ SDS （ ESDS ）クラスタでは、保存データのソフトウェア暗号化がデフォルトで有効になっています。</block>
+  <block id="c7f9a749a25add142f440b6abf05f6c6" category="section-title">保存データの暗号化のステータスを確認します</block>
+  <block id="cafb235222dece370f504ef5d0d47b47" category="paragraph">クラスタの保存データの暗号化とソフトウェア暗号化の現在のステータスを確認するには、を使用します <block ref="b94a2f1f88f1b2af0f1632fc6ab0d549" category="inline-link-macro-rx"></block> メソッドを使用できます <block ref="599a2456b2fb227210a4ba9b77591706" category="inline-link-macro-rx"></block> クラスタが保存データの暗号化に使用する情報を取得する方法。</block>
+  <block id="189f9cc5227158e41b6756a4618d70a5" category="admonition">https://&lt;MVIP&gt;/` の Element ソフトウェア UI ダッシュボードには ' 現在 ' ハードウェア・ベースの暗号化の保存中の暗号化ステータスのみが表示されています</block>
+  <block id="0758c5ce5c5ec7a65fa6027b43ac146d" category="paragraph">https://&lt;ManagementNodeIP&gt;/mnode`</block>
+  <block id="be5056c8c31ea39f1a8500e408b72606" category="paragraph">管理ノード UI （ https://&lt;managementNodeIP&gt;:442` ）を使用すると、ネットワークおよびクラスタの設定を変更したり、システムテストを実行したり、システムユーティリティを使用したりできます。</block>
+  <block id="f092926fa32883d124eb34471b6d25b2" category="paragraph">組み込みの REST API UI （ https://&lt;managementNodeIP&gt;/mnode` ）を使用すると、プロキシサーバの設定、サービスレベルの更新、アセット管理などの管理ノードサービスに関連する API を実行したり、理解したりできます。</block>
+  <block id="9a452c7dc2442a21923d0c9fff059919" category="list-text">管理ノードで REST API UI を開きます https://&lt;ManagementNodeIP&gt;/mnode`</block>
+  <block id="4b6a458f5e631f2c6085bd25b3456bdf" category="list-text">* vCenter Server * ： vCenter Plug-in バージョン 4.x が vCenter Server に登録されている。登録ユーティリティ（ https://&lt;ManagementNodeIP&gt;:9443` ）で、 [*Registration Status*] を選択し、必要なフィールドに入力し、 [*Check Status*] を選択して vCenter Plug-in がすでに登録されていること、および現在のインストールのバージョン番号を確認します。</block>
+  <block id="72b711eab7bf0193b651fa7a07068ae1" category="list-text">登録用の TCP ポートを含む管理ノードの IP アドレスをブラウザに入力します。 https://&lt;ManagementNodeIP&gt;:9443` 登録ユーティリティの UI が開き、プラグインの * Manage QoSSIOC Service Credentials * ページが表示されます。</block>
+  <block id="b6da302462725db65b08725e21534c35" category="inline-link-macro">クラスタ情報メソッドを取得します</block>
+  <block id="df55ce8d5994202037ca7f6b8add22fc" category="inline-link-macro">クラスタが保存データの暗号化に使用する情報を取得する方法</block>
+  <block id="8645b3842f2ebbd31ef1556eca13e734" category="admonition">クラスタの保存データの暗号化とソフトウェア暗号化の現在のステータスを確認するには、を使用します <block ref="266af3c6722606b03dffbc748cf8f335" category="inline-link-macro-rx"></block>。GetSoftwareEncryptionAtRestInfo' を使用できます <block ref="71cd4d0c7a8355e8bd1074b7039cdde9" category="inline-link-macro-rx"></block>。</block>
+  <block id="54345a69ac071e42416d101550699426" category="admonition">この方法では、保存データのソフトウェア暗号化は有効になりません。これは、を使用した場合にのみ実行できます <block ref="156163f61ad8e976859b5234666eb7c2" category="inline-link-macro-rx"></block> enableSoftwareEncryptionAtRest を「 true 」に設定します。</block>
+  <block id="79c6818b5a784bd2a9784bba4752ebda" category="paragraph">保存データの暗号化を有効にすると、クラスタ内の各ノードのドライブについて、暗号化キーがクラスタ内部で自動的に管理されます。</block>
+  <block id="489e484d3d1ef6568aa27e2d4d7b4bb2" category="admonition">このプロセスは非同期であり、暗号化が有効になる前に応答を返します。GetClusterInfo' メソッドを使用すると ' プロセスが完了したことを確認するためにシステムをポーリングできます</block>
+  <block id="15f0b4f62899bf3b9a8787207a388277" category="list-text">* 保存中のソフトウェア暗号化の拡張 * ： Element 12.3 には、ソフトウェアの保存データの暗号化機能の拡張機能が導入されています。この機能は、 SolidFire エンタープライズ SDS ストレージクラスタを作成するとデフォルトで有効になります。この機能では、ストレージノード内の SSD に格納されているすべてのデータが暗号化され、クライアント IO のパフォーマンスへの影響は非常に小さく（最大 2% ）すぎません。保存データのソフトウェア暗号化に関連する Element API メソッドを次に示します（を参照）<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 各メソッドの詳細については、以下を参照してください）。</block>
+  <block id="f273afdfc9c8da85f2aa65a9f2472291" category="list-text">* 保持するスナップショットの最大数を定義する機能 * ： Element 12.3 では、スナップショット保持機能が強化されています。この拡張機能をサポートするように次の API が変更されています（を参照）<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 各メソッドの詳細については、以下を参照してください）。</block>
+  <block id="110268879887fb27d1a8394d4bc2030a" category="list-text">* Element ソフトウェアのパッチに関する情報を入手する *: Element 12.3 には GetPatchInfo メソッドが導入されています。これにより、ストレージノードにインストールされている Element ソフトウェアのパッチに関する情報を取得できます。を参照してください<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="ebcdf1544f3d1837d74ac7935921840f" category="list-text">* ノード上の各ネットワークインターフェイスの統計情報を表示する *: Element 12.3 では、「 ListNetworkInterfaceStats 」メソッドが導入されています。このメソッドを使用すると、ノード上の各ネットワークインターフェイスのドロップされたパケット数やさまざまな種類のエラーなどの統計情報を表示できます。この API メソッドは、個々のノードに対して使用するためのものです。個々のノードにアクセスするには、ユーザ ID とパスワードによる認証が必要です。ただし、メソッド呼び出しで force パラメータの値が true に設定されている場合は、このメソッドをクラスタに対して使用できます。パラメータをクラスタに対して使用すると、すべてのインターフェイスのネットワーク統計が表示されます。を参照してください<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> を参照してください。</block>
 </blocks>

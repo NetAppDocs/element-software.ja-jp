@@ -29,7 +29,7 @@ IMPORTANT: このプラグインは、 Flash 用の vSphere Web Client バージ
 .必要なもの
 * * 管理者権限 * ：プラグインをインストールするための vCenter Administrator ロールの権限があります。
 * * vSphere のアップグレード * ： NetApp Element Plug-in for vCenter Server をアップグレードする前に、必要な vCenter のアップグレードを実行しておきます。以下の手順は、 vCenter のアップグレードが完了していることを前提としています。
-* * vCenter Server * ： vCenter Plug-in バージョン 4.x が vCenter Server に登録されている。登録ユーティリティ（「 https://[management node ip: 9443 」）から「 * Registration Status * 」を選択し、必要なフィールドに入力して「 * Check Status * 」を選択し、 vCenter Plug-in がすでに登録されていること、および現在のインストールのバージョン番号を確認します。
+* * vCenter Server * ： vCenter Plug-in バージョン 4.x が vCenter Server に登録されている。登録ユーティリティ（ https://<ManagementNodeIP>:9443` ）で、 [*Registration Status*] を選択し、必要なフィールドに入力し、 [*Check Status*] を選択して vCenter Plug-in がすでに登録されていること、および現在のインストールのバージョン番号を確認します。
 * * 管理サービスの更新 * ：を更新しました https://mysupport.netapp.com/site/products/all/details/mgmtservices/downloads-tab["管理サービスのバンドル"^] を最新バージョンに更新します。vCenter プラグインの更新は、ネットアップの SolidFire オールフラッシュストレージに関する製品のメジャーリリース以外でリリースされた管理サービスの更新を使用して配布されます。
 * * 管理ノードのアップグレード * ：以前に実行されていた管理ノードを実行します link:task_hcc_upgrade_management_node.html["アップグレード済み"] バージョン 11.3 以降。vCenter Plug-in 4.4 以降では、個別のサービスを提供するモジュラアーキテクチャを備えた 11.3 以降の管理ノードが必要です。管理ノードの電源をオンにして IP アドレスまたは DHCP アドレスを設定しておく必要があります。
 * * Element ストレージのアップグレード * ： NetApp Element ソフトウェア 11.3 以降を実行しているクラスタが必要です。
@@ -37,7 +37,7 @@ IMPORTANT: このプラグインは、 Flash 用の vSphere Web Client バージ
 
 
 .手順
-. ブラウザに管理ノードの IP アドレスを入力します。登録用の TCP ポート「 https://[management node ip 」： 9443 でこのプラグインの登録ユーティリティ UI が開き、「 Manage QoSSIOC Service Credentials * 」ページが表示されます。
+. 登録用の TCP ポートを含む管理ノードの IP アドレスをブラウザに入力します。 https://<ManagementNodeIP>:9443` 登録ユーティリティの UI が開き、プラグインの * Manage QoSSIOC Service Credentials * ページが表示されます。
 +
 image::vcp_registration_utility_ui_qossioc.png[は、プラグインの登録ユーティリティの UI です]
 

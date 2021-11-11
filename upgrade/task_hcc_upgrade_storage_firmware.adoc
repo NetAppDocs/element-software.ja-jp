@@ -175,7 +175,7 @@ API を使用して、クラスタ内のストレージノードを最新バー�
 +
 [listing]
 ----
-https://[management node IP]/package-repository/1/
+https://<ManagementNodeIP>/package-repository/1/
 ----
 ... 「 * Authorize * 」（認証）を選択して、次の手順を実行
 +
@@ -211,7 +211,7 @@ https://[management node IP]/package-repository/1/
 +
 [listing]
 ----
-https://[management node IP]/package-repository/1/
+https://<ManagementNodeIP>/package-repository/1/
 ----
 ... 「 * Authorize * 」（認証）を選択して、次の手順を実行
 +
@@ -248,7 +248,7 @@ https://[management node IP]/package-repository/1/
 +
 [listing]
 ----
-https://[management node IP]/inventory/1/
+https://<ManagementNodeIP>/inventory/1/
 ----
 .. 「 * Authorize * 」（認証）を選択して、次の手順を実行
 +
@@ -298,7 +298,7 @@ https://[management node IP]/inventory/1/
 +
 [listing]
 ----
-https://[management node IP]/storage/1/
+https://<ManagementNodeIP>/storage/1/
 ----
 .. 「 * Authorize * 」（認証）を選択して、次の手順を実行
 +

@@ -265,7 +265,7 @@ NOTE: 永続ボリュームには、クラスタ上の既存のアカウント�
 +
 [listing]
 ----
-https://[management node IP]/inventory/1/
+https://<ManagementNodeIP>/inventory/1/
 ----
 .. 「 * Authorize * 」（認証）を選択して、次の手順を実行
 +
@@ -289,7 +289,7 @@ https://[management node IP]/inventory/1/
 +
 [listing]
 ----
-https://[management node IP]/mnode
+https://<ManagementNodeIP>/mnode
 ----
 .. 「 * Authorize * （認証）」または任意のロックアイコンを選択し、次の手順を実行します。
 +
