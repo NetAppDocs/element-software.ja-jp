@@ -29,6 +29,14 @@ image:bol_filters.PNG["BOL フィルタ、「センター」の位置合わせ"]
 
 
 
+== Element 12.3.2
+
+Element 12.3.2 の新機能の詳細を確認してください。
+
+Element ソフトウェア 12.3.2 リリースには、 Apache log4j の脆弱性に対する Element ソフトウェアの影響を軽減する機能が含まれています。Virtual Volumes （ VVol ）機能が有効になっている NetApp SolidFire ストレージクラスタは、この脆弱性の影響を受けやすくなっています。
+
+
+
 == Element 12.3.1
 
 Element 12..1 の新機能の詳細については、こちらを参照してください。

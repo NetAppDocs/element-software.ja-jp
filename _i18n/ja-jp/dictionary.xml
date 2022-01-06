@@ -956,23 +956,14 @@
   <block id="3938cfdbe176bad61cedb25bdb572858" category="section-title">NetApp Element ソフトウェア</block>
   <block id="325c4db41bea4b4c5bc841d336b08e32" category="inline-link">NetApp Element ソフトウェア 12.3 リリースノート</block>
   <block id="c71ec2ef6ee8df4c8ce96c2b779dc917" category="inline-link">NetApp Element ソフトウェア 12.2.1 リリースノート</block>
-  <block id="7b6c2344660bf791251cb170d62d26dc" category="list-text"><block ref="7b6c2344660bf791251cb170d62d26dc" category="inline-link-rx"></block></block>
   <block id="5702596023de56cf8731146604f8837f" category="inline-link">NetApp Element ソフトウェア 12.2 リリースノート</block>
-  <block id="1d9105fcc159d90483aaf59489f00494" category="list-text"><block ref="1d9105fcc159d90483aaf59489f00494" category="inline-link-rx"></block></block>
   <block id="3aa4b17575032362b7124d4aeb9c09f1" category="inline-link">NetApp Element ソフトウェア 12.0.1 リリースノート</block>
-  <block id="948802112ff01dd0135eb1b95727ae31" category="list-text"><block ref="948802112ff01dd0135eb1b95727ae31" category="inline-link-rx"></block></block>
   <block id="1cace3c036a290ab8ee91dddebd361d0" category="inline-link">NetApp Element ソフトウェア 12.0 リリースノート</block>
-  <block id="4530ac947ab244332016237ecd5be386" category="list-text"><block ref="4530ac947ab244332016237ecd5be386" category="inline-link-rx"></block></block>
   <block id="0f0e809fbd346b6319776f0b02355216" category="inline-link">NetApp Element ソフトウェア 11.8.1 リリースノート</block>
-  <block id="74af8720eb38c9567cf35e4e63e54dd8" category="list-text"><block ref="74af8720eb38c9567cf35e4e63e54dd8" category="inline-link-rx"></block></block>
   <block id="c238b8c4c43e1a2c0a7fa4b0128df200" category="inline-link">NetApp Element ソフトウェア 11.8 リリースノート</block>
-  <block id="8e17ada66f25ae507220722cbf209f1a" category="list-text"><block ref="8e17ada66f25ae507220722cbf209f1a" category="inline-link-rx"></block></block>
   <block id="de0f0c49b842adda3c5183c2ee2304e8" category="inline-link">NetApp Element ソフトウェア 11.7 リリースノート</block>
-  <block id="c16491ff91ceba0f9e002a099673aaaa" category="list-text"><block ref="c16491ff91ceba0f9e002a099673aaaa" category="inline-link-rx"></block></block>
   <block id="a287e6799739729404ccb132fbbb1739" category="inline-link">NetApp Element ソフトウェア 11.5.1 リリースノート</block>
-  <block id="1a2d85d4d5e69f892a5e0afcf9449c05" category="list-text"><block ref="1a2d85d4d5e69f892a5e0afcf9449c05" category="inline-link-rx"></block></block>
   <block id="87043baf81d739284bd0146e19728ce7" category="inline-link">NetApp Element ソフトウェア 11.3P1 リリースノート</block>
-  <block id="7489b0d15edbdfa5b0e6ec6795aba52c" category="list-text"><block ref="7489b0d15edbdfa5b0e6ec6795aba52c" category="inline-link-rx"></block></block>
   <block id="6b85e8fee9865d4ab62dcfcd4f941582" category="inline-link">管理サービスリリースノート</block>
   <block id="8cf0a7fd902364db0eaa5ec60ad654f3" category="inline-link">vCenter Plug-in 4.7 リリースノート</block>
   <block id="c9973d0a1ee56161c6330507362f4803" category="list-text"><block ref="c9973d0a1ee56161c6330507362f4803" category="inline-link-rx"></block></block>
@@ -11667,8 +11658,6 @@
   <block id="8f467f2f73a2f03837ba577c12b0bb94" category="inline-link-macro">カスタム保護ドメインのドキュメント</block>
   <block id="3c45efdb8d1c533e78702704c9e1eadb" category="paragraph">カスタムの保護ドメインレイアウトを定義できます。このレイアウトでは、各ノードが 1 つだけのカスタム保護ドメインに関連付けられます。デフォルトでは、各ノードは同じデフォルトのカスタム保護ドメインに割り当てられます。詳細については、を参照してください <block ref="80492064a95c042e9c388ee5f725985c" category="inline-link-macro-rx"></block>。</block>
   <block id="7199e7988a06a61dd6614783601855bd" category="inline-link">NetApp Element ソフトウェア 12.3.1 リリースノート</block>
-  <block id="dcdc1e9a0ffc4276e4a854678f24552e" category="list-text"><block ref="ca40bbd83e0af82b1f5180f506676e8f" category="inline-link-rx"></block> 新規</block>
-  <block id="fddc57c7c9e5e8c37506eaee33bfccd7" category="list-text"><block ref="fddc57c7c9e5e8c37506eaee33bfccd7" category="inline-link-rx"></block></block>
   <block id="d4bb9f19fa4bd6faa9851112c1991e13" category="list-text">イニシエータレベルの CHAP 認証： 1 つのアカウントを 1 つの CHAP にバインドすることなく、特定のイニシエータに一意の CHAP ターゲットとシークレットを割り当てることができます。このイニシエータレベルの CHAP 認証では、アカウントレベルのクレデンシャルが置き換えられます</block>
   <block id="1c99ab1d6f1bd835e71ce34f57021bf2" category="summary">カスタム保護ドメインレイアウトを定義できます。各ノードは 1 つのカスタム保護ドメインのみに関連付けられます。デフォルトでは、各ノードは同じデフォルトのカスタム保護ドメインに割り当てられます。</block>
   <block id="44667d134b93fff726fba8690e829f49" category="doc">カスタムの保護ドメイン</block>
@@ -11715,10 +11704,8 @@
   <block id="dc060618420764cdfc7790fdeb1e33e8" category="paragraph">H610S シリーズノードを Element 12.3.x にアップグレードする場合、ノードで 11.8 よりも前のバージョンの Element が実行されていると、アップグレードプロセスは 2 つのフェーズで構成されます。</block>
   <block id="5e44a1903ec70087cd72eac7efa174b3" category="paragraph">最初に実行するフェーズ 1 では、 Element 12.3.x への標準アップグレードプロセスと同じ手順を実行します。Element ソフトウェアと 5 つすべてのファームウェアの更新を、クラスタ内で一度に 1 つのノードずつローリング形式でインストールします。ファームウェアのペイロードが原因で、 H610S ノードあたりの所要時間は約 1.5 ~ 2 時間と推定されます。これには、各ノードのアップグレード終了時のコールドブートサイクルが 1 回含まれます。</block>
   <block id="0156654ae4dc6b09e871c56632755132" category="doc">Element 12.3.x 用の NetApp SolidFire オールフラッシュストレージシステムをアップグレードします</block>
-  <block id="58d12ba0097eb00a2bf776fb8069836d" category="admonition">Element ソフトウェア 12.3.1 は、 NetApp HealthTools を使用してにアップグレードできる最終バージョンです。Element ソフトウェア 11.3 以降を実行している場合は、 NetApp Hybrid Cloud Control を使用して Element ソフトウェアをアップグレードする必要があります。Element バージョン 11.1 以前は、 NetApp HealthTools を使用してアップグレードできます。</block>
   <block id="46ec2391e9110784c0ae0691c567ad15" category="paragraph">Element 12.3.x 用の NetApp SolidFire オールフラッシュストレージシステムをアップグレードするには、次の順序に従います。</block>
   <block id="0cd7e8b16b69d0465d0cd555180471ad" category="list-text"><block ref="9ab4f30420c80d4c6870d42a969c945d" category="inline-link-macro-rx"></block>。</block>
-  <block id="cb268b6969d2723cec91ec064b52b62a" category="paragraph">管理ノードをバージョン 11.0 以降から管理ノードバージョン 12.3.1 または 12.3 にアップグレードできます。</block>
   <block id="2c191a2c0c7197808c880518728ba922" category="admonition">管理ノード 12..1 では、機能の変更やバグの修正は行われていません。管理ノード 12.3 をすでに実行している場合は、これを 12.3.1 にアップグレードする必要はありません。</block>
   <block id="877752a02a9a723465e45e0699c0408a" category="list-text">管理ノード 12.2 からアップグレードする場合は、次の手順を実行します。<block ref="13ca98900fab2e9dc617ec4e80e5ef22" category="inline-xref-macro-rx"></block></block>
   <block id="c385c319a88b75509bcd9e965511f832" category="list-text">管理ノード 12.0 からアップグレードする場合は、次の手順を実行します。<block ref="837fd47411e60554dd964007e7b1f57c" category="inline-xref-macro-rx"></block></block>
@@ -12425,4 +12412,23 @@
   <block id="f3631eb61fca5f83081c3305746bec62" category="list-text">すべての NetApp HCI データストアをストレージクラスタからローカルにコンピューティングノードに転送し、新しいストレージフォルダに移動します。</block>
   <block id="9caa1c9a8c45be2d5c61600cbaf343e9" category="list-text">新しいストレージフォルダを選択します。</block>
   <block id="b1e270e6370bcaa271189baa59cdc243" category="list-text">「管理者ロール」を選択します</block>
+  <block id="1d9f05f083ca394b7aa3fbee6b4ba1c9" category="paragraph">管理ノードをバージョン 11.0 以降からバージョン 12.3.x にアップグレードできます。</block>
+  <block id="728469310b9db013f8d3ad56547efdaa" category="list-text">管理ノード 12.3.2 には、 Virtual Volumes （ VVol ）機能が有効になっている場合に、ストレージクラスタのセキュリティを軽減する機能が含まれています。ストレージクラスタがすでに Element 12.3 にあり、 VVol 機能が有効になっている場合は、 12.3.2 にアップグレードすることを強く推奨します。</block>
+  <block id="f8945dbfb9c59a4484f33852cc6f95c9" category="admonition">Element ソフトウェア 12.3.2 は、 NetApp HealthTools を使用してにアップグレードできる最終バージョンです。Element ソフトウェア 11.3 以降を実行している場合は、 NetApp Hybrid Cloud Control を使用して Element ソフトウェアをアップグレードする必要があります。Element バージョン 11.1 以前は、 NetApp HealthTools を使用してアップグレードできます。</block>
+  <block id="56570048e2475ec7b64ee91388743714" category="inline-link">NetApp Element ソフトウェア 12.3.2 リリースノート</block>
+  <block id="3903fc6a9f0bcbe1f49608f5110cf661" category="list-text"><block ref="9de5606ae9b23ff6651244b85bd5dae8" category="inline-link-rx"></block> _ 新規 _</block>
+  <block id="9add94ad0bafb6a0c0977e09efa22b79" category="list-text"><block ref="9add94ad0bafb6a0c0977e09efa22b79" category="inline-link-rx"></block></block>
+  <block id="39cb2d043406c59d7a9d49b752c05b48" category="list-text"><block ref="39cb2d043406c59d7a9d49b752c05b48" category="inline-link-rx"></block></block>
+  <block id="59f8389fa12f333264e9b9c7a943546d" category="list-text"><block ref="59f8389fa12f333264e9b9c7a943546d" category="inline-link-rx"></block></block>
+  <block id="640d55cb9494c33f8756387aef98e61d" category="list-text"><block ref="640d55cb9494c33f8756387aef98e61d" category="inline-link-rx"></block></block>
+  <block id="49cbef4a1c4e82dba59d5c67759bce8e" category="list-text"><block ref="49cbef4a1c4e82dba59d5c67759bce8e" category="inline-link-rx"></block></block>
+  <block id="4489a95481ba0e8e951ca2cdc4403b89" category="list-text"><block ref="4489a95481ba0e8e951ca2cdc4403b89" category="inline-link-rx"></block></block>
+  <block id="6ae2e484807ab9e500e1e9aa73aa6354" category="list-text"><block ref="6ae2e484807ab9e500e1e9aa73aa6354" category="inline-link-rx"></block></block>
+  <block id="cd4b0abd6f1976f7d6b641eb6432cebc" category="list-text"><block ref="cd4b0abd6f1976f7d6b641eb6432cebc" category="inline-link-rx"></block></block>
+  <block id="7941eda6d75aeac7fd5d3f88cb08cb39" category="list-text"><block ref="7941eda6d75aeac7fd5d3f88cb08cb39" category="inline-link-rx"></block></block>
+  <block id="84f9569ec486aa9adfb1b73d2a0e3c9f" category="list-text"><block ref="84f9569ec486aa9adfb1b73d2a0e3c9f" category="inline-link-rx"></block></block>
+  <block id="c666b8511317763c38467d5251589d5a" category="list-text"><block ref="c666b8511317763c38467d5251589d5a" category="inline-link-rx"></block></block>
+  <block id="46b078af9bac91704627a9aca75db024" category="section-title">Element 12.3.2</block>
+  <block id="026c4f7e91453952af52a005d7180aec" category="paragraph">Element 12.3.2 の新機能の詳細を確認してください。</block>
+  <block id="a0e08077e5a0fd5b8a4e6778d5172eae" category="paragraph">Element ソフトウェア 12.3.2 リリースには、 Apache log4j の脆弱性に対する Element ソフトウェアの影響を軽減する機能が含まれています。Virtual Volumes （ VVol ）機能が有効になっている NetApp SolidFire ストレージクラスタは、この脆弱性の影響を受けやすくなっています。</block>
 </blocks>
