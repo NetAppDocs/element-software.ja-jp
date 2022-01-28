@@ -38,7 +38,7 @@ curl -X GET "https://<ManagementNodeIP>/mnode/services?status=running" -H  "acce
 ----
 +
 
-NOTE: 注意 : API コマンドで使用されるベアラー $ ｛ token ｝ を見つけることができます link:task_mnode_api_get_authorizationtouse.html["許可します"]。ベアラー '$ ｛ token ｝ ' は curl 応答に含まれています。
+NOTE: API コマンドで使用されるベアラー '$ ｛ token ｝ ' を検索できます link:task_mnode_api_get_authorizationtouse.html["許可します"]。ベアラー '$ ｛ token ｝ ' は curl 応答に含まれています。
 
 
 

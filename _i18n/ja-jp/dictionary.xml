@@ -11634,7 +11634,6 @@
   <block id="49e349363aad0972c82ddaf25dd30f70" category="paragraph"><block ref="49e349363aad0972c82ddaf25dd30f70" category="inline-link-rx"></block></block>
   <block id="f433801b7b771eb645906990697cb40d" category="list-text">を使用してホストネットワークを設定します <block ref="d5d50f06af9eb06fd5c8afba97ab5274" category="inline-link-macro-rx"></block> 提供されます。</block>
   <block id="0c5c43c7900a58a998c872f937ae33ad" category="inline-link-macro">許可します</block>
-  <block id="20971c6fa58dc0af5cdaa3fc64bf3a7b" category="admonition">注意 : API コマンドで使用されるベアラー $ ｛ token ｝ を見つけることができます <block ref="13f13ef2cfa191d3bfde7dc1932402de" category="inline-link-macro-rx"></block>。ベアラー '$ ｛ token ｝ ' は curl 応答に含まれています。</block>
   <block id="085a0793a542f0eebf46d23f033ee424" category="paragraph">管理サービス 2.18 以降の場合：</block>
   <block id="9d5d97be2b35b2991e27e028a5e6269e" category="paragraph">管理サービス 2.17 以前：</block>
   <block id="f5f61ce15f6fc00904ccb602ea18ba4f" category="admonition">API コマンドで使用されるベアラー '$ ｛ token ｝ ' を検索できます <block ref="13f13ef2cfa191d3bfde7dc1932402de" category="inline-link-macro-rx"></block>。ベアラー '$ ｛ token ｝ ' は curl 応答に含まれています。</block>
@@ -12433,4 +12432,5 @@
   <block id="a0e08077e5a0fd5b8a4e6778d5172eae" category="paragraph">Element ソフトウェア 12.3.2 リリースには、 Apache log4j の脆弱性に対する Element ソフトウェアの影響を軽減する機能が含まれています。Virtual Volumes （ VVol ）機能が有効になっている NetApp SolidFire ストレージクラスタは、この脆弱性の影響を受けやすくなっています。</block>
   <block id="4cb04e22051dcc88da6d140ef391aab8" category="list-text">ストレージアダプタのタイプが LSI Logic Parallel に設定されています</block>
   <block id="1fde8564c11be0856ccf9a21a1d1430c" category="admonition">管理ノードのデフォルトは LSI Logic SAS になる場合があります。[ * 新しい仮想マシン * ] ウィンドウで、 [ * ハードウェアのカスタマイズ * &gt; * 仮想ハードウェア * ] を選択して、ストレージ・アダプターの構成を確認します。必要に応じて、 LSI Logic SAS を * LSI Logic Parallel * に変更します。</block>
+  <block id="084f667a768181d2c907c53fa5eba8aa" category="list-text">この手順では、 vSphere 6.7 の場合の手順を説明しています。インストールされている vSphere のバージョンによっては、 vSphere のユーザインターフェイスが多少異なる場合があります。詳細については、 VMware vCenter のドキュメントを参照してください。</block>
 </blocks>
