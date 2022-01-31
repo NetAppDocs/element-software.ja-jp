@@ -432,7 +432,6 @@
   <block id="299374653e8935fcb082b9b5d88e8347" category="list-text"><block ref="299374653e8935fcb082b9b5d88e8347" category="inline-link-macro-rx"></block></block>
   <block id="6908246c62018d977556b618780042f4" category="list-text"><block ref="6908246c62018d977556b618780042f4" category="inline-link-macro-rx"></block></block>
   <block id="242169bc3cfede608a33f18d694f8ac7" category="summary">ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。</block>
-  <block id="b312f45322f166ee041a7a16747fd5c1" category="doc">の新機能</block>
   <block id="038a728ceb0425e8312a168eae48c281" category="paragraph">ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。Element 12.3 では、ソフトウェアによる保存データの暗号化の機能強化、セキュリティの強化、ストレージファームウェアのアップデート、スナップショット機能の強化、障害ドライブの動作の改善が導入されています。</block>
   <block id="0eb91c90051a8280b5d03272245097b3" category="section-title">NetApp Bugs Online には、既知の問題と解決済みの問題があります</block>
   <block id="69893000f4da30e1e42922cbcf8dac0e" category="inline-link">NetApp Bugs Online では</block>
@@ -10882,7 +10881,6 @@
   <block id="35799672184c185a5b76dc14b0e32aa7" category="inline-link">ナレッジベース</block>
   <block id="de0d5a9e0eaf321ca5abc502f4878065" category="paragraph">これは包括的なリストではありません。を検索できます<block ref="07e94f182e062d1aec9ab9b62a09e58c" category="inline-link-rx"></block> を参照してください。</block>
   <block id="2c6f626aa53141940e041d794daa13ab" category="summary">すべてのノードには sf_sds_config.yaml ファイルがあります。このファイルには、 SolidFire ESDS サービスで使用するように指定するハードウェアのリストが含まれています。ドライブを交換したら、ドライブを交換したノードのこのファイルに交換用ドライブの情報を追加する必要があります。このファイルは /opt/sf/sf/ に保存されます。このファイルには、ノード内のドライブに関するすべての情報が含まれます。新しいドライブを追加するたびに、このファイルに新しいドライブの詳細を入力する必要があります。</block>
-  <block id="a7e76582c3a43dbf501ee9ad5e211796" category="doc">&lt;code&gt;sf_sds_config.yaml &lt;/code&gt; ファイルの内容</block>
   <block id="ea216c541b17d0f5b18e7b68619b13a2" category="paragraph">すべてのノードには 'sf_sds_config.yaml ファイルがありますこのファイルには ' SolidFire ESDS サービスで使用するように指定するハードウェアのリストが含まれていますドライブを交換したら、このファイルにドライブを交換するノードの交換用ドライブ情報を追加する必要があります。このファイルは '/opt/sf/` に保存されますこのファイルには、ノード内のドライブに関するすべての情報が含まれます。新しいドライブを追加するたびに、このファイルに新しいドライブの詳細を入力する必要があります。</block>
   <block id="1e2562204971f2df534c7ce2418dd6c9" category="paragraph">ファイルの * 必須 * の内容は次のとおりです。</block>
   <block id="897356954c2cd3d41b221e3f24f99bba" category="cell">キーを押します</block>
@@ -11374,7 +11372,6 @@
   <block id="c04c8f4ee057b9770ef3148a2b7f90b9" category="list-text">[ クラスタの作成 ] をクリックします。</block>
   <block id="fdfc2cea9a0bc6ec4fa8f32ce2b5502b" category="paragraph">クラスタ内のノードの数によっては、クラスタの作成に数分かかることがあります。適切に設定したネットワークで、 5 ノードの小規模なクラスタを作成する場合の所要時間は 1 分未満です。クラスタが作成されると、 Create a New Cluster ウィンドウがクラスタの MVIP URL アドレスにリダイレクトされ、 Element UI が表示されます。</block>
   <block id="4dbf9739b89cc855a36adb8a310e446b" category="summary">開始する前に、 NetApp Element ソフトウェアのインストールとセットアップの手順を理解しておくことを推奨します。</block>
-  <block id="f38fb36bf765a660f4e1848cec9c4858" category="doc">次の内容</block>
   <block id="bbde1cda5233ef3e90656a8c516591d1" category="paragraph">Element ソフトウェアのセットアップ後は、次のいずれかのオプションを実行してストレージを管理します。</block>
   <block id="40fbcf5a102757324058f7fa79b9f9b7" category="list-text"><block ref="40fbcf5a102757324058f7fa79b9f9b7" category="inline-link-macro-rx"></block></block>
   <block id="17c7bc4d0c6040d40f372c983e2ebdfa" category="list-text"><block ref="17c7bc4d0c6040d40f372c983e2ebdfa" category="inline-link-macro-rx"></block></block>
@@ -12433,4 +12430,6 @@
   <block id="4cb04e22051dcc88da6d140ef391aab8" category="list-text">ストレージアダプタのタイプが LSI Logic Parallel に設定されています</block>
   <block id="1fde8564c11be0856ccf9a21a1d1430c" category="admonition">管理ノードのデフォルトは LSI Logic SAS になる場合があります。[ * 新しい仮想マシン * ] ウィンドウで、 [ * ハードウェアのカスタマイズ * &gt; * 仮想ハードウェア * ] を選択して、ストレージ・アダプターの構成を確認します。必要に応じて、 LSI Logic SAS を * LSI Logic Parallel * に変更します。</block>
   <block id="084f667a768181d2c907c53fa5eba8aa" category="list-text">この手順では、 vSphere 6.7 の場合の手順を説明しています。インストールされている vSphere のバージョンによっては、 vSphere のユーザインターフェイスが多少異なる場合があります。詳細については、 VMware vCenter のドキュメントを参照してください。</block>
+  <block id="0a20c90d5270bed19fcaf851778c663b" category="doc">次の手順</block>
+  <block id="490414e0366b091220802d406e52c076" category="doc">新機能</block>
 </blocks>
