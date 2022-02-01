@@ -12432,4 +12432,5 @@
   <block id="084f667a768181d2c907c53fa5eba8aa" category="list-text">この手順では、 vSphere 6.7 の場合の手順を説明しています。インストールされている vSphere のバージョンによっては、 vSphere のユーザインターフェイスが多少異なる場合があります。詳細については、 VMware vCenter のドキュメントを参照してください。</block>
   <block id="0a20c90d5270bed19fcaf851778c663b" category="doc">次の手順</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">新機能</block>
+  <block id="a9cb6e2851847a4da1710748fa322b75" category="list-text">サポートされるクラスタの上限は継続的に 3 、 000 IOPS です。</block>
 </blocks>
