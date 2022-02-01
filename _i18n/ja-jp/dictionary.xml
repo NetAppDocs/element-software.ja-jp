@@ -10713,7 +10713,6 @@
   <block id="2fd83b2ce9b49bb4adb1828a92a6cc82" category="list-text">すべての管理トラフィックが含まれます。</block>
   <block id="d2d3d320feed9dd5e52ec24dd6095045" category="list-text">別のレイヤ 3 ネットワークからクラスタの API や UI にアクセスする場合は、ルーティングが可能です。</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">こちらをご覧ください</block>
-  <block id="f01015a4df43fc3a8244df818269f074" category="admonition">ホストネットワークの設定例とヒントについては、を参照してください <block ref="b45abff0cd326e9aaefb14fb0711236e" category="inline-link-macro-rx"></block>。</block>
   <block id="310c2ddbe3c53ec931b599a811042076" category="summary">SolidFire ESDS クラスタ内のメタデータドライブまたはブロックドライブをプロアクティブに交換する場合は、この手順を実行します。Element UI Cluster &gt; Drives ページに、ドライブ摩耗度情報が表示されます。</block>
   <block id="870cd012c02c921543409316615a4ac1" category="paragraph">ここに記載されている手順に従って、ドライブをプロアクティブに交換し、障害が発生したドライブを交換し、キャッシュドライブを交換します。SolidFire ESDS クラスタ内のメタデータドライブまたはブロックドライブを交換します。Element UI * Cluster &gt; Drives * ページには、ドライブ摩耗度情報が表示されます。</block>
   <block id="93430097bf00cfcc1e94624e0b982cb8" category="list-text"><block ref="745566ec8dec4c1e7c39183752157fd4" category="inline-xref-macro-rx"></block></block>
@@ -12433,4 +12432,6 @@
   <block id="0a20c90d5270bed19fcaf851778c663b" category="doc">次の手順</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">新機能</block>
   <block id="a9cb6e2851847a4da1710748fa322b75" category="list-text">サポートされるクラスタの上限は継続的に 3 、 000 IOPS です。</block>
+  <block id="dcd50d347195658baa61d9ec50d87c54" category="list-text">MTU が 1500 バイト以上のネットワークインターフェイスカードを使用して設定する必要があります。</block>
+  <block id="66eb697af36258704e589ddaa8b1f423" category="admonition">ホストネットワークの設定例とヒントについては、を参照してください <block ref="75f8e7b74dfe828e63d762ff8e0c66a1" category="inline-link-macro-rx"></block>。</block>
 </blocks>
