@@ -1,7 +1,7 @@
 ---
 permalink: concepts/concept_intro_solidfire_software_interfaces.html 
 sidebar: sidebar 
-keywords:  
+keywords: interfaces, integration, user interface, Plug-in, vCenter, API, node UIs, command line, snapshots, shadow copies, Element software, Element, Element UI, UI, manage storage, utilities, integration utilities 
 summary: NetApp Element ストレージシステムは、 SolidFire のソフトウェアインターフェイスと統合ユーティリティを使用して管理できます。 
 ---
 = SolidFire ソフトウェアインターフェイス
