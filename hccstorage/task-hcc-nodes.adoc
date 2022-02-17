@@ -10,7 +10,7 @@ keywords: netapp, element, cluster, inventory, nodes, storage
 [role="lead"]
 システムのストレージアセットを表示し、それらの IP アドレス、名前、およびソフトウェアバージョンを確認することができます。
 
-複数ノードシステムのストレージ情報を表示できます。状況 link:../storage/concept_intro_custom_protection_domains.html["カスタムの保護ドメイン"] が割り当てられている場合、特定のノードに割り当てられている保護ドメインを確認できます。
+複数ノードシステムのストレージ情報を表示できます。状況 link:../concepts/concept_solidfire_concepts_data_protection.html#custom_pd["カスタムの保護ドメイン"] が割り当てられている場合、特定のノードに割り当てられている保護ドメインを確認できます。
 
 SolidFire エンタープライズ SDS ノードの場合、 [ ストレージ ] タブでインベントリを監視できます。
 

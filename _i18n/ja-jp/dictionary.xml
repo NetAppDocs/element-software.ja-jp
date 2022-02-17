@@ -536,14 +536,12 @@
   <block id="c4f7d5f460fa79e3c48a6898d2f12d3e" category="paragraph">シンプロビジョニングされたボリュームまたは LUN では、ストレージが事前に予約されません。代わりに、ストレージは必要に応じて動的に割り当てられます。ボリュームまたは LUN 内のデータが削除されると、空きスペースはストレージシステムに戻されます</block>
   <block id="adb71e77f78f7a989c5ecc7b7065855e" category="section-title">ストレージクラスタのクォーラム</block>
   <block id="db7e900d68f252cf8cb92b8b5fbc7133" category="paragraph">Element ソフトウェアは、選択したノードからストレージクラスタを作成します。これにより、クラスタ構成のレプリケートされたデータベースが保持されます。クラスタの耐障害性を維持するために、クラスタアンサンブルに参加するには、少なくとも 3 つのノードが必要です。</block>
-  <block id="859f5ebe453f3b784a507b4d3183a0f7" category="summary">データ保護機能には、リモートレプリケーション、ボリューム Snapshot 、ボリュームクローニング、保護ドメイン、 Double Helix テクノロジによる高可用性などがあります。</block>
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="doc">データ保護</block>
   <block id="4fcbbf46c76894b32e527dee3ace85d8" category="paragraph">Element ストレージデータ保護の概念は次のとおりです。</block>
   <block id="6c475b6accd823d482c613521889419e" category="list-text"><block ref="95e714e28ad34f47d4347ab1ee96f11e" category="inline-xref-macro-rx"></block></block>
   <block id="6bcd515030aaab5fe75977e20f29a033" category="list-text"><block ref="a37b1887a46fcb243108c291db21c711" category="inline-xref-macro-rx"></block></block>
   <block id="de4ac7bb688f4ca011e20adb677d9497" category="list-text"><block ref="80d71af12585dfa981bf965dd16ec8a2" category="inline-xref-macro-rx"></block></block>
   <block id="216d01067e38abd2d602d08d41b1d7f9" category="list-text"><block ref="c365b7e67fe4aa18b0963a4d429acf59" category="inline-xref-macro-rx"></block></block>
-  <block id="9b0afd4925041d098c4c8723bd75e68f" category="list-text"><block ref="68d4a725c570718d5f33d73ff7777f66" category="inline-xref-macro-rx"></block></block>
   <block id="0e58f474dfb6f5ab7c71af0b57bd1fa2" category="list-text"><block ref="0f2b1255ed3c8740bcacb3e22e6759b2" category="inline-xref-macro-rx"></block></block>
   <block id="558f7ca74859e811e1602cabb542219f" category="section-title">リモートレプリケーションの種類</block>
   <block id="8df4a1464712c3d455a74fb0a723967a" category="paragraph">データのリモートレプリケーションには、次の形式を使用できます。</block>
@@ -601,15 +599,8 @@
   <block id="53ab57ac469b317e4ca572df8797e132" category="list-text">Amazon S3 オブジェクトストア</block>
   <block id="bde027a7a0e31e167b9e69407e438af0" category="list-text">OpenStack Swift オブジェクトストア</block>
   <block id="118c7de537193df669257eb1bbaa9f80" category="paragraph">OpenStack Swift または Amazon S3 からボリュームをリストアするときは、元のバックアッププロセスのマニフェスト情報が必要です。SolidFire ストレージシステムにバックアップされているボリュームをリストアする場合は、マニフェスト情報は不要です。</block>
-  <block id="3fc23f34e36d05f9e3d062c71bacd2f0" category="section-title">保護ドメイン</block>
-  <block id="1336fc0fd6356b267cac8ff67639cab7" category="paragraph">保護ドメインとは、ノードまたはノードセットをグループ化したもので、データの可用性を維持したまま、一部または全部で障害が発生する可能性があります。保護ドメインを使用すると、ストレージクラスタをシャーシ（シャーシアフィニティ）またはドメイン全体（シャーシのグループ）の損失から自動的に修復できます。</block>
-  <block id="bee912c2703817c56cd91c0739ab04f3" category="paragraph">保護ドメインのレイアウトによって、各ノードが特定の保護ドメインに割り当てられます。</block>
-  <block id="bfd0cf529ced32aeb58ef87164fd6f7b" category="paragraph">保護ドメインレベルと呼ばれる 2 種類の保護ドメインレイアウトがサポートされます。</block>
-  <block id="3a87586679ff9e67f084a5afcd817ce0" category="list-text">ノードレベルでは、各ノードがそれぞれ独自の保護ドメインに属します。</block>
-  <block id="3a97f43eb6eef8c815e5cb3a8736c3d6" category="list-text">シャーシレベルでは、 1 つのシャーシを共有するノードのみが同じ保護ドメインに属します。</block>
   <block id="245dea9ce6077b2fa1c519f4e82b0774" category="list-text">シャーシレベルのレイアウトは、ノードをクラスタに追加するときにハードウェアから自動的に決定されます。</block>
   <block id="4955b339c381c3355161ea5b7c1af363" category="list-text">各ノードが別々のシャーシに配置されたクラスタでは、この 2 つのレベルは機能的に同じです。</block>
-  <block id="6cb03c98c76534df27d193a6f33f65b1" category="paragraph">新しいクラスタの作成時に共有シャーシにあるストレージノードを使用する場合は、保護ドメイン機能を使用してシャーシレベルの障害から保護することを検討してください。</block>
   <block id="980179142e595d55f1d5d1281611417d" category="section-title">Double Helix の高可用性</block>
   <block id="53ec645d7f176e7648a168024a6c6662" category="paragraph">Double Helix データ保護は、システム内のすべてのドライブに、少なくとも 2 つのデータの冗長コピーを分散するレプリケーション方法です。「 RAID レス」アプローチにより、システムは、ストレージシステムのあらゆるレベルで同時に発生する複数の障害を吸収し、迅速に修復することができます。</block>
   <block id="de38f9b39645a1819eeb7bfcb11bad84" category="summary">管理ノード（ mNode ）は、 Element ソフトウェアベースの 1 つ以上のストレージクラスタと同時に実行される仮想マシンです。このサービスは、アップグレード後にシステムサービスを提供するために使用されます。これには、監視とテレメトリ、クラスタのアセットと設定の管理、システムテストとユーティリティの実行、トラブルシューティング用のネットアップサポートアクセスの有効化などが含まれます。</block>
@@ -11619,14 +11610,9 @@
   <block id="bc8064d6976a4ae417d9071be509d014" category="paragraph">Element 12.3 は、ドライブの SMART ヘルスデータを使用して、 SolidFire アプライアンスドライブの定期的なヘルスチェックを実行します。SMART ヘルスチェックに失敗したドライブは、障害に近い可能性があります。ドライブが SMART ヘルスチェックに失敗すると、ドライブは「 Failed * 」状態に移行し、重大度が「 D rive with serial ： &lt;serial number&gt; in slot ： &lt;node slot&gt;&lt;drive slot&gt; has failed the Smart overall health check. 」という重大なクラスタエラーが表示されます。この問題を解決するには、ドライブを交換してください</block>
   <block id="b4eb0a7d2f620a735a49d295cf464c57" category="section-title">SolidFire ESDS の新しいドキュメント</block>
   <block id="295216d6678c57d5badf5770238d96b5" category="section-title">SolidFire ESDS の既知の問題の新しい場所</block>
-  <block id="7b9eb7f0ea5f54558e422ae2773566fc" category="paragraph">NetApp Element Plug-in for vCenter Server の NetApp Element Configuration 拡張ポイントを使用して、保護ドメインの監視を手動で有効にすることができます。ノードドメインまたはシャーシドメインに基づいて保護ドメインのしきい値を選択できます。Element API または Web UI を使用して、保護ドメインの監視を有効にすることもできます。</block>
-  <block id="8f467f2f73a2f03837ba577c12b0bb94" category="inline-link-macro">カスタム保護ドメインのドキュメント</block>
-  <block id="3c45efdb8d1c533e78702704c9e1eadb" category="paragraph">カスタムの保護ドメインレイアウトを定義できます。このレイアウトでは、各ノードが 1 つだけのカスタム保護ドメインに関連付けられます。デフォルトでは、各ノードは同じデフォルトのカスタム保護ドメインに割り当てられます。詳細については、を参照してください <block ref="80492064a95c042e9c388ee5f725985c" category="inline-link-macro-rx"></block>。</block>
   <block id="7199e7988a06a61dd6614783601855bd" category="inline-link">NetApp Element ソフトウェア 12.3.1 リリースノート</block>
   <block id="d4bb9f19fa4bd6faa9851112c1991e13" category="list-text">イニシエータレベルの CHAP 認証： 1 つのアカウントを 1 つの CHAP にバインドすることなく、特定のイニシエータに一意の CHAP ターゲットとシークレットを割り当てることができます。このイニシエータレベルの CHAP 認証では、アカウントレベルのクレデンシャルが置き換えられます</block>
-  <block id="1c99ab1d6f1bd835e71ce34f57021bf2" category="summary">カスタム保護ドメインレイアウトを定義できます。各ノードは 1 つのカスタム保護ドメインのみに関連付けられます。デフォルトでは、各ノードは同じデフォルトのカスタム保護ドメインに割り当てられます。</block>
   <block id="44667d134b93fff726fba8690e829f49" category="doc">カスタムの保護ドメイン</block>
-  <block id="5973fb594f77dc8b3479a7d06ec53911" category="paragraph">シャーシおよびノードの特定のレイアウトに一致するカスタム保護ドメインレイアウトを定義できます。</block>
   <block id="76f4b8308924515694d00b6e67394b63" category="paragraph">カスタムの保護ドメインが割り当てられていない場合：</block>
   <block id="615dc19b1563a7a33b749b60a4765c08" category="paragraph">クラスタにカスタムの保護ドメインを設定すると、 Element Web UI ダッシュボードに表示される 3 つのレベルで保護が可能です。</block>
   <block id="db03446c5d87ec34ff0e324a1789d5be" category="list-text">Not protected ：ストレージクラスタ内のカスタムの保護ドメインのいずれかに障害が発生しても、ストレージクラスタは保護されません。これを修正するには、クラスタにストレージ容量を追加するか、クラスタをデータ損失から保護するようにクラスタのカスタムの保護ドメインを再設定します。</block>
@@ -11635,7 +11621,6 @@
   <block id="2d50fad3ab9a441a87882c17c13f0bae" category="paragraph">複数のカスタム保護ドメインが割り当てられている場合、各サブシステムは重複を個別のカスタム保護ドメインに割り当てます。これができない場合は、重複したデータが別のノードに割り当てられます。各サブシステム（ビン、スライス、プロトコルエンドポイントプロバイダ、アンサンブルなど）は、それぞれ独立して機能します。</block>
   <block id="bd77f2754e5c1c371ba7793ef5fe29b4" category="list-text"><block ref="6702e5c49e3601276668962e5917edde" category="inline-link-macro-rx"></block> - 各ノードがどのシャーシに配置されているか、およびどのカスタム保護ドメインが表示されます。</block>
   <block id="1508ab090b8072419802560c24117082" category="list-text"><block ref="c488c3c5d50768a853ca2b4d12fca704" category="inline-link-macro-rx"></block> - 各ノードにカスタム保護ドメインを割り当てることができます。</block>
-  <block id="da55ae5c0f3e2b8fbec3529ced565e0a" category="paragraph"><block ref="da55ae5c0f3e2b8fbec3529ced565e0a" category="inline-link-macro-rx"></block></block>
   <block id="b5a4b64b2aa505bd7c11f79b8a9f458d" category="cell">解決策：</block>
   <block id="7cccd916bcdac08ea30e7c32df58e516" category="admonition">Element ソフトウェアをバージョン 12.3.x にアップグレードする前に、最新の管理サービスバンドルにアップグレードする必要がありますElement ソフトウェアをバージョン 12.3.x に更新する場合は、管理サービス 2.14.60 以降が必要です。</block>
   <block id="18efefbb7dfc549a016b6c88a83bd60d" category="admonition">H610S シリーズノードを Element 12.3.x にアップグレードする場合、ノードで 11.8 よりも前のバージョンの Element が実行されているときは、追加のアップグレード手順（）を実行する必要があります<block ref="705f7add14cc7784392a1a0405b32daa" category="inline-xref-macro-rx"></block>）をクリックします。Element 11.8 以降を実行している場合は、追加のアップグレード手順（フェーズ 2 ）は必要ありません。</block>
@@ -11784,7 +11769,6 @@
   <block id="1905fad06cd2d678f65488599a009f2a" category="summary">Hybrid Cloud Control Nodes ページを使用すると、システムのストレージアセットを表示できます。</block>
   <block id="4abf133407ea4fa2eda3059f56e2940f" category="paragraph">システムのストレージアセットを表示し、それらの IP アドレス、名前、およびソフトウェアバージョンを確認することができます。</block>
   <block id="f0a87811e8be55bf94672bdc19729182" category="inline-link-macro">カスタムの保護ドメイン</block>
-  <block id="8878bca1837d19741db0f2ca4d2fcd17" category="paragraph">複数ノードシステムのストレージ情報を表示できます。状況 <block ref="057a38bb36aa6e1dcaf6f6415a6c21ab" category="inline-link-macro-rx"></block> が割り当てられている場合、特定のノードに割り当てられている保護ドメインを確認できます。</block>
   <block id="9985a6faeb51ef9840d329f5a5454de1" category="paragraph">SolidFire エンタープライズ SDS ノードの場合、 [ ストレージ ] タブでインベントリを監視できます。</block>
   <block id="9914f7f20d19a7ce30054796ca280e28" category="list-text">SolidFire オールフラッシュストレージクラスタ管理者のクレデンシャルを指定して NetApp Hybrid Cloud Control にログインします。</block>
   <block id="f7b8cd7786f2f0ba8b3271684ef8f6ff" category="list-text">左側のナビゲーションで、 * ノード * を選択します。</block>
@@ -12382,4 +12366,17 @@
   <block id="84de930499d735c9f8f12a7a5abd09e2" category="paragraph">次の API メソッドを使用すると、カスタムの保護ドメインを設定できます。</block>
   <block id="0b012f0f130a45a29cb100381b8d8a18" category="inline-link">ストレージファームウェアのバンドルをダウンロードします</block>
   <block id="2860f82003378d24e87a2b07d470efff" category="list-text">管理ノードがインターネットに接続されていない場合は、を使用します<block ref="91eecee6b4dd8708a7b3c9904156a5c7" category="inline-link-rx"></block>。</block>
+  <block id="eeaa8c18b8187d8aa70fe2be2070cd8e" category="paragraph">複数ノードシステムのストレージ情報を表示できます。状況 <block ref="7abc9b197257f801951edc3be4066a26" category="inline-link-macro-rx"></block> が割り当てられている場合、特定のノードに割り当てられている保護ドメインを確認できます。</block>
+  <block id="ce901b945342cdd0d7ba447214c227f7" category="summary">データ保護機能には、リモートレプリケーション、ボリューム Snapshot 、ボリュームクローニング、保護ドメイン、 Double Helix テクノロジによる高可用性などがあります。</block>
+  <block id="ac57cbf4f51794a3a62f6ab5dde63e38" category="list-text"><block ref="9f7efed5e63ef5c9e0640c875716b07a" category="inline-xref-macro-rx"></block></block>
+  <block id="6ac1619fc98de9128467937d386c0dd2" category="list-text"><block ref="88e3b967e3c729325322529e164d36b2" category="inline-xref-macro-rx"></block></block>
+  <block id="9077d0c626c6abe8e5c94e742b66762a" category="section-title">保護ドメイン</block>
+  <block id="5c29df895fc14c6447f1c7b70cab7080" category="paragraph">保護ドメインは、データの可用性を維持したまま、任意の部分またはすべてで障害が発生する可能性があるように、グループ化されたノードまたはノードのセットです。保護ドメインを使用すると、ストレージクラスタをシャーシ（シャーシアフィニティ）またはドメイン全体（シャーシのグループ）の損失から自動的に修復できます。</block>
+  <block id="18e1abcee55f350140acb0013eddc20b" category="paragraph">NetApp Element Plug-in for vCenter Server の NetApp Element Configuration 拡張ポイントを使用して、保護ドメインの監視を手動で有効にすることができます。ノードドメインまたはシャーシドメインに基づいて保護ドメインのしきい値を選択できます。Element API または Web UI を使用して、保護ドメインの監視を有効にすることもできます。</block>
+  <block id="dba802ba43f82abaa07bf96fdb2af6d4" category="paragraph">Protection Domain レイアウトは、各ノードを特定の保護ドメインに割り当てます。</block>
+  <block id="5840ebc65ea6274b299d2e293854fb3a" category="paragraph">保護ドメインレベルと呼ばれる 2 つの異なる保護ドメインレイアウトがサポートされます。</block>
+  <block id="cffb96292124888803b5a99c04eb25a0" category="list-text">ノードレベルでは、各ノードが独自の保護ドメインに存在します。</block>
+  <block id="e0aa3d55a5969b10ddedc6eeb6027dd5" category="list-text">シャーシレベルでは、シャーシを共有するノードのみが同じ保護ドメインに存在します。</block>
+  <block id="24c0657cc5d2d7b53518905f246af2be" category="paragraph">新しいクラスタの作成時に共有シャーシにあるストレージノードを使用する場合は、保護ドメイン機能を使用してシャーシレベルの障害から保護することを検討してください。</block>
+  <block id="dffa7774e7868ad62921ad5e0618ff6f" category="paragraph">特定のシャーシおよびノードレイアウトに一致するカスタム保護ドメインレイアウトを定義し、各ノードが 1 つだけのカスタム保護ドメインに関連付けられるようにすることができます。デフォルトでは、各ノードは同じデフォルトのカスタム保護ドメインに割り当てられます。</block>
 </blocks>
