@@ -19,7 +19,7 @@ Element ストレージデータ保護の概念は次のとおりです。
 * <<Volume clones>>
 * <<Backup and restore process overview for Element storage>>
 * <<Protection Domains>>
-* <<Custom Protection Domains>>
+* <<custom_pd,カスタムの保護ドメイン>>
 * <<Double Helix high availability>>
 
 

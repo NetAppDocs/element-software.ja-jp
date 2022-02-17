@@ -12369,7 +12369,6 @@
   <block id="eeaa8c18b8187d8aa70fe2be2070cd8e" category="paragraph">複数ノードシステムのストレージ情報を表示できます。状況 <block ref="7abc9b197257f801951edc3be4066a26" category="inline-link-macro-rx"></block> が割り当てられている場合、特定のノードに割り当てられている保護ドメインを確認できます。</block>
   <block id="ce901b945342cdd0d7ba447214c227f7" category="summary">データ保護機能には、リモートレプリケーション、ボリューム Snapshot 、ボリュームクローニング、保護ドメイン、 Double Helix テクノロジによる高可用性などがあります。</block>
   <block id="ac57cbf4f51794a3a62f6ab5dde63e38" category="list-text"><block ref="9f7efed5e63ef5c9e0640c875716b07a" category="inline-xref-macro-rx"></block></block>
-  <block id="6ac1619fc98de9128467937d386c0dd2" category="list-text"><block ref="88e3b967e3c729325322529e164d36b2" category="inline-xref-macro-rx"></block></block>
   <block id="9077d0c626c6abe8e5c94e742b66762a" category="section-title">保護ドメイン</block>
   <block id="5c29df895fc14c6447f1c7b70cab7080" category="paragraph">保護ドメインは、データの可用性を維持したまま、任意の部分またはすべてで障害が発生する可能性があるように、グループ化されたノードまたはノードのセットです。保護ドメインを使用すると、ストレージクラスタをシャーシ（シャーシアフィニティ）またはドメイン全体（シャーシのグループ）の損失から自動的に修復できます。</block>
   <block id="18e1abcee55f350140acb0013eddc20b" category="paragraph">NetApp Element Plug-in for vCenter Server の NetApp Element Configuration 拡張ポイントを使用して、保護ドメインの監視を手動で有効にすることができます。ノードドメインまたはシャーシドメインに基づいて保護ドメインのしきい値を選択できます。Element API または Web UI を使用して、保護ドメインの監視を有効にすることもできます。</block>
@@ -12379,4 +12378,5 @@
   <block id="e0aa3d55a5969b10ddedc6eeb6027dd5" category="list-text">シャーシレベルでは、シャーシを共有するノードのみが同じ保護ドメインに存在します。</block>
   <block id="24c0657cc5d2d7b53518905f246af2be" category="paragraph">新しいクラスタの作成時に共有シャーシにあるストレージノードを使用する場合は、保護ドメイン機能を使用してシャーシレベルの障害から保護することを検討してください。</block>
   <block id="dffa7774e7868ad62921ad5e0618ff6f" category="paragraph">特定のシャーシおよびノードレイアウトに一致するカスタム保護ドメインレイアウトを定義し、各ノードが 1 つだけのカスタム保護ドメインに関連付けられるようにすることができます。デフォルトでは、各ノードは同じデフォルトのカスタム保護ドメインに割り当てられます。</block>
+  <block id="da8f75460055661317175529ad22e459" category="list-text"><block ref="df090c4e5f2ab56fd22fc14848bb611c" category="inline-xref-macro-rx"></block></block>
 </blocks>
