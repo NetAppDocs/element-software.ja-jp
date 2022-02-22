@@ -55,7 +55,7 @@ NOTE: Element 12.3.x 管理ノードはオプションのアップグレード�
 
 TIP: 管理ノードのバージョンを確認するには、管理ノードにログインし、ログインバナーに表示される Element のバージョン番号を確認します。
 
-* NetApp Hybrid Cloud Control （ HCC ）を使用して管理サービスバンドルを最新バージョンに更新しておく必要があります。HCC には、次の IP アドレスからアクセスできます： https://<ManagementNodeIP>`
+* NetApp Hybrid Cloud Control を使用して管理サービスバンドルを最新バージョンに更新しておきます。NetApp Hybrid Cloud Control には、 https://<ManagementNodeIP>` からアクセスできます
 * 管理ノードをバージョン 12.3.x に更新する場合は、続行するには管理サービス 2.14.60 以降が必要です。
 * 追加のネットワークアダプタを設定しておきます（必要な場合）。 の手順に従ってください link:../mnode/task_mnode_install_add_storage_NIC.html["追加のストレージ NIC の設定"]。
 +
@@ -67,7 +67,7 @@ NOTE: eth0 を SVIP にルーティングできない場合は、永続ボリュ
 
 .手順
 . SSH またはコンソールアクセスを使用して管理ノード仮想マシンにログインします。
-. の管理ノード ISO をダウンロードします https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["要素（ Element ）"^] ネットアップサポートサイトから管理ノード仮想マシンにソフトウェアをダウンロードします。
+. をダウンロードします https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["管理ノード ISO"^] ネットアップサポートサイトから管理ノード仮想マシンへの Element ソフトウェアの追加。
 +
 
 NOTE: ISO の名前は 'olidfire-fdva-<Element release>-patchX-XXX.X.XXXX.iso' と似ています
@@ -147,7 +147,7 @@ NOTE: Element 12.3.x 管理ノードはオプションのアップグレード�
 
 TIP: 管理ノードのバージョンを確認するには、管理ノードにログインし、ログインバナーに表示される Element のバージョン番号を確認します。
 
-* NetApp Hybrid Cloud Control （ HCC ）を使用して管理サービスバンドルを最新バージョンに更新しておく必要があります。HCC には、次の IP アドレスからアクセスできます： https://<ManagementNodeIP>`
+* NetApp Hybrid Cloud Control を使用して管理サービスバンドルを最新バージョンに更新しておきます。NetApp Hybrid Cloud Control には、 https://<ManagementNodeIP>` からアクセスできます
 * 管理ノードをバージョン 12.3.x に更新する場合は、続行するには管理サービス 2.14.60 以降が必要です。
 * 追加のネットワークアダプタを設定しておきます（必要な場合）。 の手順に従ってください link:../mnode/task_mnode_install_add_storage_NIC.html["追加のストレージ NIC の設定"]。
 +
@@ -166,7 +166,7 @@ NOTE: eth0 を SVIP にルーティングできない場合は、永続ボリュ
 
 
 . SSH またはコンソールアクセスを使用して管理ノード仮想マシンにログインします。
-. の管理ノード ISO をダウンロードします https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["要素（ Element ）"^] ネットアップサポートサイトから管理ノード仮想マシンにソフトウェアをダウンロードします。
+. をダウンロードします https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["管理ノード ISO"^] ネットアップサポートサイトから管理ノード仮想マシンへの Element ソフトウェアの追加。
 +
 
 NOTE: ISO の名前は 'olidfire-fdva-<Element release>-patchX-XXX.X.XXXX.iso' と似ています
@@ -246,7 +246,7 @@ NOTE: Element 12.3.x 管理ノードはオプションのアップグレード�
 
 TIP: 管理ノードのバージョンを確認するには、管理ノードにログインし、ログインバナーに表示される Element のバージョン番号を確認します。
 
-* NetApp Hybrid Cloud Control （ HCC ）を使用して管理サービスバンドルを最新バージョンに更新しておく必要があります。HCC には、次の IP アドレスからアクセスできます： https://<ManagementNodeIP>`
+* NetApp Hybrid Cloud Control を使用して管理サービスバンドルを最新バージョンに更新しておきます。NetApp Hybrid Cloud Control には、 https://<ManagementNodeIP>` からアクセスできます
 * 管理ノードをバージョン 12.3.x に更新する場合は、続行するには管理サービス 2.14.60 以降が必要です。
 * 追加のネットワークアダプタを設定しておきます（必要な場合）。 の手順に従ってください link:../mnode/task_mnode_install_add_storage_NIC.html["追加のストレージ NIC の設定"]。
 +
@@ -265,7 +265,7 @@ NOTE: eth0 を SVIP にルーティングできない場合は、永続ボリュ
 
 
 . SSH またはコンソールアクセスを使用して管理ノード仮想マシンにログインします。
-. の管理ノード ISO をダウンロードします https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["要素（ Element ）"^] ネットアップサポートサイトから管理ノード仮想マシンにソフトウェアをダウンロードします。
+. をダウンロードします https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["管理ノード ISO"^] ネットアップサポートサイトから管理ノード仮想マシンへの Element ソフトウェアの追加。
 +
 
 NOTE: ISO の名前は 'olidfire-fdva-<Element release>-patchX-XXX.X.XXXX.iso' と似ています
@@ -364,7 +364,7 @@ NOTE: eth0 を SVIP にルーティングできない場合は、永続ボリュ
 
 
 . SSH またはコンソールアクセスを使用して管理ノード仮想マシンにログインします。
-. の管理ノード ISO をダウンロードします https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["要素（ Element ）"^] ネットアップサポートサイトから管理ノード仮想マシンにソフトウェアをダウンロードします。
+. をダウンロードします https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["管理ノード ISO"^] ネットアップサポートサイトから管理ノード仮想マシンへの Element ソフトウェアの追加。
 +
 
 NOTE: ISO の名前は 'olidfire-fdva-<Element release>-patchX-XXX.X.XXXX.iso' と似ています

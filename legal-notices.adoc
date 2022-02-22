@@ -24,5 +24,5 @@ link:https://raw.githubusercontent.com/NetAppDocs/common/main/_include/open-sour
 * link:./media/mgmt-214.pdf["管理サービス 2.14 に関する注意事項"^]
 * link:./media/mgmt-213.pdf["管理サービス 2.13 に関する注意事項"^]
 * link:./media/SolidFire_eSDS_12.3.pdf["NetApp SolidFire エンタープライズ SDS に関するお知らせです"^]
-* link:./media/storage_firmware_bundle_2.99_notices.pdf["ストレージファームウェアバンドル 2.99.2 に関する注意事項"^]
+* link:./media/storage_firmware_bundle_2.146_notices.pdf["ストレージファームウェアバンドル 2.146 に関する注意事項"^]
 

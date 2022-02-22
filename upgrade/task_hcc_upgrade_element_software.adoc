@@ -200,7 +200,7 @@ https://<ManagementNodeIP>/package-repository/1/
 | 外部に接続されていないダークサイトに管理ノードが配置されている。  a| 
 .. 管理ノードからアクセス可能なデバイスにストレージアップグレードパッケージをダウンロードします。
 +
-SolidFire ストレージシステムの場合は、 Element ソフトウェアに移動します https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["ページをダウンロードします"^] して最新のストレージノードのイメージをダウンロードしてください。
+Element ソフトウェアに移動します https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["ページをダウンロードします"^] して最新のストレージノードのイメージをダウンロードしてください。
 
 .. ストレージアップグレードパッケージを管理ノードにアップロードします。
 +
@@ -453,7 +453,7 @@ CAUTION: ノードの更新中にクラスタのアップグレードを中止�
 == HealthTools を使用して接続されているサイトで Element ソフトウェアをアップグレードします
 
 .手順
-. ストレージアップグレードパッケージをダウンロードします。SolidFire ストレージシステムの場合は、 Element ソフトウェアに移動します https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["ページをダウンロードします"^] をクリックし、管理ノードではないデバイスに最新のストレージノードイメージをダウンロードします。
+. ストレージアップグレードパッケージをダウンロードします。 Element ソフトウェアにアクセスします https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["ページをダウンロードします"^] をクリックし、管理ノードではないデバイスに最新のストレージノードイメージをダウンロードします。
 +
 
 NOTE: Element ストレージソフトウェアをアップグレードするには、最新バージョンの HealthTools が必要です。
@@ -627,7 +627,7 @@ IMPORTANT: H610S シリーズノードを Element 12.3.x にアップグレー�
 HealthTools ツールスイートを使用して、外部接続がないダークサイトで NetApp Element ソフトウェアを更新できます。
 
 .必要なもの
-. SolidFire ストレージシステムの場合は、 Element ソフトウェアに移動します https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["ページをダウンロードします"^]。
+. Element ソフトウェアに移動します https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["ページをダウンロードします"^]。
 . 適切なソフトウェアリリースを選択し、管理ノードではないコンピュータに最新のストレージノードイメージをダウンロードします。
 +
 

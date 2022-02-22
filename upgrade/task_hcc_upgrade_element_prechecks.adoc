@@ -20,7 +20,7 @@ IMPORTANT: Element ソフトウェアをアップグレードする前に、最�
 * クラスタで NetApp Element ソフトウェア 11.3 以降を実行している必要があります。
 
 
-健全性チェックは、 NetApp Hybrid Cloud Control （ HCC ） UI 、 HCC API 、または HealthTools スイートを使用して実行できます。
+健全性チェックは、 NetApp Hybrid Cloud Control の UI 、 NetApp Hybrid Cloud Control API 、または HealthTools スイートを使用して実行できます。
 
 * <<Use NetApp Hybrid Cloud Control to run Element storage health checks prior to upgrading storage>> （推奨方法）
 * <<Use API to run Element storage health checks prior to upgrading storage>>
@@ -36,7 +36,7 @@ IMPORTANT: Element ソフトウェアをアップグレードする前に、最�
 
 == NetApp Hybrid Cloud Control を使用して Element ストレージの健全性を実行します ストレージをアップグレードする前にチェックします
 
-NetApp Hybrid Cloud Control （ HCC ）を使用して、ストレージクラスタをアップグレードする準備が完了していることを確認できます。
+NetApp Hybrid Cloud Control を使用して、ストレージクラスタをアップグレードする準備が完了していることを確認できます。
 
 .手順
 . Web ブラウザを開き、管理ノードの IP アドレスにアクセスします。

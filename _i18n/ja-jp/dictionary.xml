@@ -960,8 +960,6 @@
   <block id="578c07c950972d7b078fc954eef38508" category="inline-link">『 vCenter Plug-in 4.4 Release Notes 』を参照してください</block>
   <block id="e6f04bc267aa8b790e8358fbcafd13da" category="inline-link">vCenter Plug-in 4.3 リリースノート</block>
   <block id="002e74c06881f6eef90f201bb310bbfa" category="section-title">ストレージファームウェア</block>
-  <block id="e2b165ab46734aee4acaaada05a4c247" category="inline-link">ストレージファームウェアバンドル 2.99.2 リリースノート（最新）</block>
-  <block id="f1de80703dd5c9a1cd53931752c56274" category="list-text"><block ref="f1de80703dd5c9a1cd53931752c56274" category="inline-link-rx"></block></block>
   <block id="826ed2a2fd875eeb127f73e48856de14" category="inline-link">ストレージファームウェアバンドル 2.76 リリースノート</block>
   <block id="7c4a6e26b432f1ad131564bc6dc6e32d" category="inline-link">ストレージファームウェアバンドル 2.27 リリースノート</block>
   <block id="a0b768ade98ef6cf3df956008c966806" category="list-text"><block ref="a0b768ade98ef6cf3df956008c966806" category="inline-link-rx"></block></block>
@@ -4950,8 +4948,6 @@
   <block id="bd91bfdcf4a916f6b8c00c25da13251b" category="list-text">REST API UI から * get/packages* を選択します。</block>
   <block id="92c655ce479b4404b3a51afa0527fd9b" category="list-text">応答から、あとの手順で使用するためにパッケージ ID をコピーして保存します。</block>
   <block id="1ed5061d3b76fa0c219c1f1d3b386470" category="list-text">管理ノードからアクセス可能なデバイスにストレージアップグレードパッケージをダウンロードします。</block>
-  <block id="4876c936414c8b50876cdff810c036bd" category="inline-link">ページをダウンロードします</block>
-  <block id="7ee2de3b0e43f349c3fe9cb7ad971f81" category="paragraph">SolidFire ストレージシステムの場合は、 Element ソフトウェアに移動します<block ref="ad89077eafc4eb6d60327946d6a23ef9" category="inline-link-rx"></block> して最新のストレージノードのイメージをダウンロードしてください。</block>
   <block id="ca9b271bda1fd83c0839a53fe115bfdb" category="list-text">ストレージアップグレードパッケージを管理ノードにアップロードします。</block>
   <block id="382035476e13882c8f8e0dcfdc354d1b" category="list-text">REST API UI から * POST/packages * を選択します。</block>
   <block id="8a125bba55a89fe2c1f9771882004ba9" category="list-text">[* Browse] を選択して、アップグレード・パッケージを選択します。</block>
@@ -4999,7 +4995,6 @@
   <block id="59176eee36815639c56b916d1ee6d2b9" category="list-text">3 時間以内に対処するために、アップグレードを一時的に中止する必要があることがネットアップサポートによって確認されました。サポートは API を使用してアップグレードを中止します。</block>
   <block id="e0cac02c93ade1b7ecc2eb64907171a8" category="admonition">ノードの更新中にクラスタのアップグレードを中止すると、そのノードからドライブが強制的に削除されることがあります。ドライブが強制的に削除された場合、ネットアップサポートに依頼して手動でドライブを元に戻す処理がアップグレード時に必要になります。ノードでファームウェアの更新や更新後の同期処理に時間がかかる可能性があります。アップグレードが停止していると思われる場合は、ネットアップサポートにお問い合わせください。</block>
   <block id="f7cb949e38e4d529492a7a05aae8a9db" category="section-title">HealthTools を使用して接続されているサイトで Element ソフトウェアをアップグレードします</block>
-  <block id="052f51df453585f756b6da91bdefeca1" category="list-text">ストレージアップグレードパッケージをダウンロードします。SolidFire ストレージシステムの場合は、 Element ソフトウェアに移動します<block ref="ad89077eafc4eb6d60327946d6a23ef9" category="inline-link-rx"></block> をクリックし、管理ノードではないデバイスに最新のストレージノードイメージをダウンロードします。</block>
   <block id="2d95a5cefb4bb26e6c4f585e36b7dd0a" category="admonition">Element ストレージソフトウェアをアップグレードするには、最新バージョンの HealthTools が必要です。</block>
   <block id="0ec4573ec12f9825d509316cd1dca61c" category="list-text">ISO ファイルを、 /tmp などのアクセス可能な場所にある管理ノードにコピーします。</block>
   <block id="f2c453451cde52ee9d2593c6e63274eb" category="paragraph">ISO ファイルをアップロードする際には、ファイル名が変更されないようにしてください。変更されていると以降の手順が失敗します。</block>
@@ -5020,7 +5015,6 @@
   <block id="d91b070c7f8d6b290722e056d7aff9ce" category="paragraph">以下は、アップグレードに成功した場合の出力例です。アップグレードイベントを使用して、アップグレードの進捗状況を監視できます。</block>
   <block id="503d85929978f593abfff70c30d833a9" category="section-title">HealthTools を使用してダークサイトで Element ソフトウェアをアップグレードします</block>
   <block id="dda57880ebc4e427f14795d16b1ee0ad" category="paragraph">HealthTools ツールスイートを使用して、外部接続がないダークサイトで NetApp Element ソフトウェアを更新できます。</block>
-  <block id="d11d8f1cb0c9c5bc31a696e290c533d4" category="list-text">SolidFire ストレージシステムの場合は、 Element ソフトウェアに移動します<block ref="ad89077eafc4eb6d60327946d6a23ef9" category="inline-link-rx"></block>。</block>
   <block id="33ff5a5d635fbe38905932dd4b045967" category="list-text">適切なソフトウェアリリースを選択し、管理ノードではないコンピュータに最新のストレージノードイメージをダウンロードします。</block>
   <block id="a6c9e3a7671c1fd9d7328c3be5d107b5" category="inline-link">JSON ファイル</block>
   <block id="cabc168d31fc4c314cb500b86813e131" category="list-text">こちらをダウンロードしてください<block ref="747556e0149f6188670059abaeb4fd3e" category="inline-link-rx"></block> <block ref="53034c8197fc6f1049d26569a56db918" category="inline-link-rx"></block> 管理ノードではないコンピュータのネットアップサポートサイトから、「 metadats.json 」に名前を変更します。</block>
@@ -5057,14 +5051,12 @@
   <block id="a9665a647615566ad8a19d93fbf94aa9" category="list-text">最新の管理サービスバンドル（ 2.10.27 以降）に更新しておきます。</block>
   <block id="1b4d7862ca62ac0691b197c1c4e48017" category="admonition">Element ソフトウェアをアップグレードする前に、最新の管理サービスバンドルにアップグレードする必要があります。</block>
   <block id="d843290a4f160eb5d302fe442b7b62f9" category="list-text">管理ノード 11.3 以降が実行されていることを確認します。</block>
-  <block id="a42a5f062307c65656fb022b1bc38224" category="paragraph">健全性チェックは、 NetApp Hybrid Cloud Control （ HCC ） UI 、 HCC API 、または HealthTools スイートを使用して実行できます。</block>
   <block id="0096c254c62197f713da16cbb8cf17bf" category="list-text"><block ref="43e2712ac16e77262f42113e91f41bfc" category="inline-xref-macro-rx"></block> （推奨方法）</block>
   <block id="c0ce03ffdb1b2eaf2997d4b003a6c398" category="list-text"><block ref="33b5a46d5ad547c7160d2877495cd388" category="inline-xref-macro-rx"></block></block>
   <block id="2321e5c974e77f58ee923d1e00e01167" category="list-text"><block ref="2afbc4735288b232693d6654f053bf83" category="inline-xref-macro-rx"></block></block>
   <block id="d9072e37167baf145bc5655975039b9c" category="paragraph">サービスで実行されるストレージ健全性チェックの詳細についても確認できます。</block>
   <block id="62a5effb348b201359f9288178063353" category="list-text"><block ref="b9c91f9aab75a470a42dbb291a17df8d" category="inline-xref-macro-rx"></block></block>
   <block id="dd2a5a4091be5700ab6001e60a9a6483" category="section-title">NetApp Hybrid Cloud Control を使用して Element ストレージの健全性を実行します ストレージをアップグレードする前にチェックします</block>
-  <block id="f5c8d254cb62d36b2cfba42c5866a02a" category="paragraph">NetApp Hybrid Cloud Control （ HCC ）を使用して、ストレージクラスタをアップグレードする準備が完了していることを確認できます。</block>
   <block id="1f7790ed35a0ab861da3622b15bd9e8a" category="list-text">[ アップグレード * （ Upgrades * ） ] ページで、 [ * ストレージ * （ Storage * ） ] タブを選択します。</block>
   <block id="baec6461b0d69dde1b861aefbe375d8a" category="inline-image-macro">をクリックします。</block>
   <block id="6f2c388bfbd8977b6fbfc3a23a18b5c1" category="list-text">健全性チェックを選択します <block ref="121ad3230a694a5231762b0ae438963f" category="inline-image-macro-rx" type="image"></block> アップグレードの準備状況を確認するクラスタ</block>
@@ -5139,15 +5131,12 @@
   <block id="36f546dcaf82a7b3487c4002a3c6d1ed" category="summary">NetApp SolidFire ストレージシステムのアップグレードの一環として、管理サービスを更新する必要があります。</block>
   <block id="2fdf7cb371995103b459c97e897b87ee" category="doc">管理サービスを更新</block>
   <block id="79775a85ecd792fca2ed73286c1313cf" category="paragraph">管理ノード 11.3 以降をインストールしたら、管理サービスを最新のバンドルバージョンに更新できます。</block>
-  <block id="9d896625607ec2ce2f7a1559c4bdcd1d" category="paragraph">Element 11.3 以降の管理ノードリリースでは、個々のサービスを提供する新しいモジュラアーキテクチャに基づいて管理ノードの設計が変更されました。このモジュラサービスは、 SolidFire オールフラッシュストレージシステムに幅広い管理機能を一元的に提供します。管理サービスには、システム計測、ロギング、更新のサービス、 Element Plug-in for vCenter Server の QoSSIOC サービス、 NetApp Hybrid Cloud Control （ HCC ）などがあります。</block>
   <block id="a443497b41405480f6755e35166556e7" category="inline-link">管理サービスのリリースノート</block>
   <block id="b142e9d9b67c7c4504bd1ab09fd15db2" category="admonition">各サービスバンドルの主要なサービス、新機能、バグ修正、および対処方法について説明した最新の管理サービスリリースノートについては、を参照してください<block ref="51c56ce961e981301a44342800a6fcbd" category="inline-link-rx"></block></block>
-  <block id="884a5edae007e6d3e774a912317f61ca" category="paragraph">管理サービスは、 NetApp Hybrid Cloud Control （ HCC ） UI または管理ノードの REST API を使用して更新できます。</block>
   <block id="7d6cae0c176b060b3eb918e8fc3a8a88" category="list-text"><block ref="8b810af37d36ecef3e8ce0cfd28cc60b" category="inline-xref-macro-rx"></block> （推奨方法）</block>
   <block id="45d5739efe933eabe3dda4a4ba6b61b1" category="list-text"><block ref="b795f7048c0a3127327e392f4c115728" category="inline-xref-macro-rx"></block></block>
   <block id="610172e2b0e7d4051f0d0b230bd8c722" category="list-text"><block ref="79f95b99cf6c6dc511dd13bb08f1454f" category="inline-xref-macro-rx"></block></block>
   <block id="2325934efda1befa076510008b0f7646" category="section-title">Hybrid Cloud Control を使用して管理サービスを更新します</block>
-  <block id="6812fbe299c3076c40d64e3555fb0f6e" category="paragraph">NetApp Hybrid Cloud Control （ HCC ）を使用してネットアップ管理サービスを更新できます。</block>
   <block id="c3e2bcb5601498c3470bd272236342a3" category="paragraph">管理サービスバンドルは、メジャーリリースに含まれていない機能の強化とインストールに対する修正を提供します。</block>
   <block id="d0d4d24acea2b29c2079bdc9f046795d" category="list-text">管理サービスをバージョン 2.16 以降に更新する場合、管理ノード 11.3 から 11.8 を実行しているときは、管理サービスを更新する前に管理ノード VM の RAM を増やす必要があります。</block>
   <block id="eb6e06188d05a494c7bef0f5114cda80" category="list-text">管理ノード VM の電源をオフにします。</block>
@@ -5199,14 +5188,11 @@
   <block id="5c00f576c2af1d972df95537843e862f" category="list-text"><block ref="e1470314c076bb930d350da1dd8a3b7d" category="inline-link-rx"></block> プラグインを使用する。</block>
   <block id="b4c5d7523b472861778f2afd883b2b2b" category="inline-link">QoSSIOC を有効にします</block>
   <block id="e9649f789dba33069d65dd43f646890f" category="list-text"><block ref="ab3ca5933bb57bf5671eabef88a511cb" category="inline-link-rx"></block> プラグインで制御されているすべてのデータストアが対象です。</block>
-  <block id="0efaf95d5aed3c0eeb8ac846a92855dc" category="summary">NetApp SolidFire オールフラッシュストレージシステムとそのすべてのコンポーネントをアップグレードできます。</block>
   <block id="ce90f7229835d74f781e9e0252243716" category="paragraph">導入後も SolidFire Element ストレージシステムを最新の状態に保つには、すべてのネットアップストレージコンポーネントを順番にアップグレードします。</block>
-  <block id="0faf4f6bf1f4423ea9871139e1ce2c70" category="paragraph">これらのコンポーネントには、管理サービス、 HealthTools 、 NetApp Hybrid Cloud Control （ HCC ）、 Element ソフトウェア、管理ノード、および（インストール環境に応じて） Element Plug-in for vCenter Server が含まれます。</block>
   <block id="05384005cf99c46ea432f9d7696f56e1" category="list-text">管理ノード 11.3 以降が実行されていることを確認します。新しいバージョンの管理ノードには、個々のサービスを提供するモジュラアーキテクチャが採用されています。</block>
   <block id="ffa0fe3bc6da6c9b920ff8ce89a0609f" category="inline-link-macro">管理ノードをアップグレードします</block>
   <block id="ee04baa2ee228c73a80bcb76420c3f83" category="admonition">バージョンを確認するには、管理ノードにログインし、ログインバナーに表示される Element のバージョン番号を確認します。11.3 を使用していない場合は、を参照してください <block ref="298642ffea6db0968793883313b436ff" category="inline-link-macro-rx"></block>。</block>
   <block id="dc80874f9d06173050949a80fc641cfc" category="list-text">管理サービスをバージョン 2.1.326 以上にアップグレードしておきます。</block>
-  <block id="dbfccf960551b08a68ecfc6a6b7d7b65" category="paragraph">HCC を使用したアップグレードは、以前のバージョンのサービスバンドルでは使用できません。</block>
   <block id="ced99676ffdce11db0cf7ce2a4a812b8" category="list-text">すべてのノードのシステム時間が同期され、 NTP がストレージクラスタとノードに対して正しく設定されていることを確認しておきます。各ノードには、ノード Web UI （「 https://[IP address 」： 442 ）に DNS ネームサーバを設定する必要があります。時刻のずれに関連する未解決のクラスタ障害はありません。</block>
   <block id="524813e84d210a04a3c005022becca08" category="inline-link-macro">Hybrid Cloud Control から管理サービスを更新します</block>
   <block id="c43409e402c491faff614694ff49b45b" category="list-text"><block ref="d96c5e393dc7f7cfcba5644a67a6ff8a" category="inline-link-macro-rx"></block>。</block>
@@ -5274,15 +5260,7 @@
   <block id="b9e50e6a339819ad9d12906b29e978ca" category="list-text">プラグインの * NetApp Element 構成 * 拡張ポイントの * バージョン情報 * タブでバージョンの変更を確認します。</block>
   <block id="a2b39afbde860c9c0fc759f3772e2dd2" category="paragraph">次のバージョンの詳細またはより新しいバージョンの詳細が表示されます。</block>
   <block id="4715e0cc20eb79c52c1f181ce0f6afb0" category="admonition">vCenter Plug-in には、オンラインヘルプが用意されています。ヘルプの最新のコンテンツが読み込まれるようにするために、プラグインをアップグレードしたあとにブラウザキャッシュをクリアしてください。</block>
-  <block id="e9777d19bdbe46329cd6d019014e06f5" category="summary">このセクションの内容では、 NetApp SolidFire オールフラッシュストレージシステムのコンポーネントに推奨されるアップグレード順序を紹介します。</block>
-  <block id="73937695a7909fb754787fd36d659ac1" category="doc">アップグレードの概要</block>
-  <block id="ccc420b652b5625973223c9a1ff6c73d" category="paragraph">このセクションの内容では、 NetApp SolidFire オールフラッシュストレージシステムのコンポーネントに推奨されるアップグレード順序を紹介します。とは</block>
   <block id="6ea7f8d4483b20144d2c82f1ed99c07a" category="section-title">システムのアップグレード順序</block>
-  <block id="31ca97489f7ece65495f2b7febcd4b54" category="paragraph">システムのアップグレード手順の内容には、 SolidFire オールフラッシュストレージシステムのアップグレードを完了するために必要な作業が記載されています。これらの手順は、単独ででではなく、大きなアップグレード手順の一部として実行することを推奨します。コンポーネントベースのアップグレードまたは更新が必要な場合は、手順の前提条件を参照して、さらに複雑な作業が対処されるようにしてください。</block>
-  <block id="d249f69727f1f2d48b0dab7bd856ed7c" category="section-title">Element Plug-in for vCenter Server を含む vSphere のアップグレード順序</block>
-  <block id="b0c690633a2f05229420ba898d01dbe6" category="paragraph">Element Plug-in for vCenter Server を含む vSphere のアップグレードシーケンスでは、 Element Plug-in for vCenter Server を再インストールするために必要な追加のアップグレード前とアップグレード後の手順について説明します。</block>
-  <block id="1dca9e07f94d868e592e1c557b46fb1b" category="paragraph">Element Plug-in for vCenter Server を使用している NetApp SolidFire オールフラッシュストレージシステムの vSphere コンポーネントをアップグレードするには、次の順序に従います。</block>
-  <block id="3e382c500eb4957fbcfd912b8b3b3f10" category="list-text"><block ref="cfac6e060c52f472293e00df8517db42" category="inline-link-macro-rx"></block>。</block>
   <block id="d7cc77e1654b4ecc5878545e7bf4f78d" category="summary">NetApp SolidFire ストレージシステムのアップグレードの一環として、管理ノードをアップグレードします。</block>
   <block id="1761ea607c3f8d002099290408801187" category="doc">管理ノードをアップグレードします</block>
   <block id="5b6ab4d3c53ec5567002938471c9c120" category="admonition">vCenter Plug-in 4.4 以降では、モジュラアーキテクチャで作成された管理ノード 11.3 以降が必要であり、個々のサービスを提供します。</block>
@@ -5293,14 +5271,11 @@
   <block id="2317b568bcd918edcf31949bac7267a8" category="list-text">既存の管理ノードを保持する場合：<block ref="35b702a8c6556d6de2f367adef3740ff" category="inline-xref-macro-rx"></block></block>
   <block id="ec29698b029ebdc0e8d965b404b70339" category="list-text">管理ノード VM の RAM は 24GB です。</block>
   <block id="d6db6ab6b83c4d33fe8d22d8155fd5df" category="admonition">管理ノードのバージョンを確認するには、管理ノードにログインし、ログインバナーに表示される Element のバージョン番号を確認します。</block>
-  <block id="36f00ec8099ee24ce7cf9f89e0d6f7ac" category="list-text">NetApp Hybrid Cloud Control （ HCC ）を使用して管理サービスバンドルを最新バージョンに更新しておく必要があります。HCC には、次の IP アドレスからアクセスできます： https://&lt;ManagementNodeIP&gt;`</block>
   <block id="580c35d1b4dc1d63073ae537ce0f28ab" category="inline-link-macro">追加のストレージ NIC の設定</block>
   <block id="4733d6f93dbca188e79e25900eaeacb7" category="list-text">追加のネットワークアダプタを設定しておきます（必要な場合）。 の手順に従ってください <block ref="1f5ebd4d6fe6b214007c2692b1a22cfb" category="inline-link-macro-rx"></block>。</block>
   <block id="97badad042e3a18dd496d204994f3a2f" category="admonition">eth0 を SVIP にルーティングできない場合は、永続ボリュームに追加のネットワークアダプタが必要になることがあります。永続ボリュームを設定できるように、 iSCSI ストレージネットワークに新しいネットワークアダプタを設定してください。</block>
   <block id="2759cbca8a5572fe6fdc10d347df91c2" category="list-text">ストレージノードで Element 11.3 以降が実行されていることを確認します。</block>
   <block id="1a6ffd97834fd7495156f52f3058e50b" category="list-text">SSH またはコンソールアクセスを使用して管理ノード仮想マシンにログインします。</block>
-  <block id="231afe47f3f37d3808096b36c28b4ded" category="inline-link">要素（ Element ）</block>
-  <block id="735d094ea474aeeda5cb987742446180" category="list-text">の管理ノード ISO をダウンロードします<block ref="f69204473ef391e6243daff2874afa29" category="inline-link-rx"></block> ネットアップサポートサイトから管理ノード仮想マシンにソフトウェアをダウンロードします。</block>
   <block id="e097e26564fa470c938b5aa9cb375497" category="admonition">ISO の名前は 'olidfire-fdva-&lt;Element release&gt;-patchX-XXX.X.XXXX.iso' と似ています</block>
   <block id="7af3e8bcf74bc743e6d42428a1ef8e84" category="list-text">ダウンロードしたファイルに対して md5sum を実行し、その出力をネットアップサポートサイトにある Element ソフトウェア用の ISO と比較することで、ダウンロードの整合性をチェックします。以下の例を参照してください。</block>
   <block id="4e82f8cfbdbaab82d0c8c7e65d59b756" category="paragraph">「 sudo md5sum -b 」 &lt;path to ISO&gt;/solidfire-fdva-&lt;Element release &gt; -patchX-XXX.X.XXXX.iso 」を参照してください</block>
@@ -5403,7 +5378,6 @@
   <block id="5d1b774bcdd716279a4e1f6c45c21ae4" category="cell">オンラインのソフトウェアリポジトリにアクセスするための外部接続がない場合、 NetApp Hybrid Cloud Control では、バージョンを利用可能 * ではなくこのステータスが表示されます。このステータスは、アップグレードステータスのリストにないアップグレードステータスがストレージサービス API から返された場合にも表示されます。</block>
   <block id="3aff5fc3a8e8d7210a56cf227b42a6e8" category="section-title">NetApp Hybrid Cloud Control API を使用してストレージファームウェアをアップグレードします</block>
   <block id="fa296e9495ac8602647feef1c1f92880" category="list-text">応答から、以降の手順で使用するためにファームウェアパッケージ ID をコピーして保存します。</block>
-  <block id="dcce2f519bbe6d7772a0dbf0aac7a943" category="list-text">管理ノードからアクセス可能なデバイスにストレージファームウェアのアップグレードパッケージをダウンロードします。SolidFire ストレージシステムの場合は、 Element ソフトウェアに移動します<block ref="ad89077eafc4eb6d60327946d6a23ef9" category="inline-link-rx"></block> 最新のストレージファームウェアイメージをダウンロードできます。</block>
   <block id="3d849e77fb6435c594cb34aff5254c7a" category="list-text">ストレージファームウェアのアップグレードパッケージを管理ノードにアップロードします。</block>
   <block id="cbba2755a405305c04008eba28b81066" category="list-text">前の手順でコピーしたファームウェアパッケージ ID を * id * で入力します。</block>
   <block id="3982b15a7d8608c803ba0fea915a806a" category="list-text">インストールアセット ID を確認します。</block>
@@ -11560,7 +11534,6 @@
   <block id="01f85930b405f5ff6ea401b95fb623af" category="sidebar">管理ノード UI の操作</block>
   <block id="ca1fd6fbdda3d71b63bb4ea743cd48e8" category="sidebar">管理ノード REST API の操作</block>
   <block id="4c46c9acea33f3a7201c692e8d84806b" category="sidebar">サポート接続を管理します</block>
-  <block id="27d8cd692aeb03225d292fe0d69c19c0" category="sidebar">SolidFire システムをアップグレードします</block>
   <block id="b837bae0f441ebacd86887d737939282" category="sidebar">システムのアップグレード手順</block>
   <block id="e558a93d8af634916bae37b7136be1d2" category="sidebar">GetSoftwareEncryptionAtRestInfo</block>
   <block id="7312c371e606c4ef84d0e890d014f53f" category="sidebar">SolidFire ESDS の使用を開始します</block>
@@ -11628,8 +11601,6 @@
   <block id="dc060618420764cdfc7790fdeb1e33e8" category="paragraph">H610S シリーズノードを Element 12.3.x にアップグレードする場合、ノードで 11.8 よりも前のバージョンの Element が実行されていると、アップグレードプロセスは 2 つのフェーズで構成されます。</block>
   <block id="5e44a1903ec70087cd72eac7efa174b3" category="paragraph">最初に実行するフェーズ 1 では、 Element 12.3.x への標準アップグレードプロセスと同じ手順を実行します。Element ソフトウェアと 5 つすべてのファームウェアの更新を、クラスタ内で一度に 1 つのノードずつローリング形式でインストールします。ファームウェアのペイロードが原因で、 H610S ノードあたりの所要時間は約 1.5 ~ 2 時間と推定されます。これには、各ノードのアップグレード終了時のコールドブートサイクルが 1 回含まれます。</block>
   <block id="0156654ae4dc6b09e871c56632755132" category="doc">Element 12.3.x 用の NetApp SolidFire オールフラッシュストレージシステムをアップグレードします</block>
-  <block id="46ec2391e9110784c0ae0691c567ad15" category="paragraph">Element 12.3.x 用の NetApp SolidFire オールフラッシュストレージシステムをアップグレードするには、次の順序に従います。</block>
-  <block id="0cd7e8b16b69d0465d0cd555180471ad" category="list-text"><block ref="9ab4f30420c80d4c6870d42a969c945d" category="inline-link-macro-rx"></block>。</block>
   <block id="2c191a2c0c7197808c880518728ba922" category="admonition">管理ノード 12..1 では、機能の変更やバグの修正は行われていません。管理ノード 12.3 をすでに実行している場合は、これを 12.3.1 にアップグレードする必要はありません。</block>
   <block id="877752a02a9a723465e45e0699c0408a" category="list-text">管理ノード 12.2 からアップグレードする場合は、次の手順を実行します。<block ref="13ca98900fab2e9dc617ec4e80e5ef22" category="inline-xref-macro-rx"></block></block>
   <block id="c385c319a88b75509bcd9e965511f832" category="list-text">管理ノード 12.0 からアップグレードする場合は、次の手順を実行します。<block ref="837fd47411e60554dd964007e7b1f57c" category="inline-xref-macro-rx"></block></block>
@@ -12393,4 +12364,34 @@
   <block id="46b7076883c5472e769e88f9cf3495c2" category="admonition">RMA からの電源装置のワット数が、取り外した電源装置のワット数と一致しない場合は、電源装置を交換しないでください。次の手順については、ネットアップサポートにお問い合わせください。</block>
   <block id="5728f0317e6dafcb81e2d7025632bf5e" category="list-text">一方または両方の電源コードを接続します。</block>
   <block id="8650e9e71e38ae9e93eb5c72f21a25ea" category="list-text">両方の電源装置を交換した場合は、ノードの前面に移動し、電源ボタンを押してノードの電源をオンにします。電源をオンにすると、電源ボタンの LED が青色に点灯します。ドライブの青色の LED と識別ボタンの点滅が開始します。</block>
+  <block id="b7fe022e3d13a1a7248fb1583851f437" category="inline-link">NetApp Element ソフトウェア 11.8.2 リリースノート</block>
+  <block id="96a6137975cbcfe6dbff95b85cf1b6bf" category="list-text"><block ref="5ed2b0be7714cf9bfe94c6d0660549bb" category="inline-link-rx"></block> _ 新規 _</block>
+  <block id="78f6798eb036b3dd12c871ca38087892" category="inline-link">ストレージファームウェアバンドル 2.146 リリースノート（最新）</block>
+  <block id="cb459c9e82b22fbd72cf1986df403b4c" category="list-text"><block ref="cb459c9e82b22fbd72cf1986df403b4c" category="inline-link-rx"></block></block>
+  <block id="176d9ae1b8e18dc2cedc534e1da45e7c" category="inline-link">ストレージファームウェアバンドル 2.99.2 リリースノート</block>
+  <block id="7a90185243c33f6e26c13fa828aa78ae" category="list-text"><block ref="7a90185243c33f6e26c13fa828aa78ae" category="inline-link-rx"></block></block>
+  <block id="e8feae6554a0416e918615cc5ee78661" category="paragraph">健全性チェックは、 NetApp Hybrid Cloud Control の UI 、 NetApp Hybrid Cloud Control API 、または HealthTools スイートを使用して実行できます。</block>
+  <block id="ecf6e9bfc923a11b6b64f4916efd1def" category="paragraph">NetApp Hybrid Cloud Control を使用して、ストレージクラスタをアップグレードする準備が完了していることを確認できます。</block>
+  <block id="814733d416c95bcc389df46e42881e26" category="inline-link">ページをダウンロードします</block>
+  <block id="9b8271bf8ee401fbab82cfd673a6efe7" category="list-text">ストレージファームウェアのアップグレードパッケージを管理ノードにアクセス可能なデバイスにダウンロードします。 Element ソフトウェアにアクセスします<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block> 最新のストレージファームウェアイメージをダウンロードできます。</block>
+  <block id="592247e1218ecdf894b0dc3bf1e2b0c6" category="paragraph">Element ソフトウェアに移動します<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block> して最新のストレージノードのイメージをダウンロードしてください。</block>
+  <block id="a4a2ed7ca284633b8f6f40c70d9f2816" category="list-text">ストレージアップグレードパッケージをダウンロードします。 Element ソフトウェアにアクセスします<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block> をクリックし、管理ノードではないデバイスに最新のストレージノードイメージをダウンロードします。</block>
+  <block id="66605290f00669ae460e8d4ed9f22626" category="list-text">Element ソフトウェアに移動します<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block>。</block>
+  <block id="37a42081cc0d0c72d69723b5792a6c73" category="list-text">NetApp Hybrid Cloud Control を使用して管理サービスバンドルを最新バージョンに更新しておきます。NetApp Hybrid Cloud Control には、 https://&lt;ManagementNodeIP&gt;` からアクセスできます</block>
+  <block id="303c7d52b5c18e714947ecd4996594a2" category="inline-link">管理ノード ISO</block>
+  <block id="bc6733dc102d98376848617102ed0352" category="list-text">をダウンロードします<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block> ネットアップサポートサイトから管理ノード仮想マシンへの Element ソフトウェアの追加。</block>
+  <block id="9ec21c21d51558c2c4720284cc8e9f10" category="summary">導入後は、すべてのネットアップストレージコンポーネントをアップグレードすることで、 SolidFire Element ストレージシステムを最新の状態に保つことができます。</block>
+  <block id="59a003ce49b82fe00de09fe03510553f" category="doc">アップグレード手順の概要</block>
+  <block id="95f9414b6ac8911d498b5b4173c859c7" category="paragraph">これらのコンポーネントには、管理サービス、 HealthTools 、 NetApp Hybrid Cloud Control 、 Element ソフトウェア、管理ノード、 Element Plug-in for vCenter Server （インストール環境に応じて）が含まれます。</block>
+  <block id="d38f48e8e196e92a833076faf76e21bc" category="inline-xref">システムのアップグレード順序</block>
+  <block id="fb54f95f1b973757c205d87e6c954cbc" category="paragraph">。 <block ref="c0f289a1ce14070fe1c9e60f6416d18d" category="inline-xref-macro-rx"></block> コンテンツでは、 SolidFire オールフラッシュストレージシステムのアップグレードを完了するために必要な作業について説明します。これらの手順は、単独ででではなく、大きなアップグレード手順の一部として実行することを推奨します。コンポーネントベースのアップグレードまたは更新が必要な場合は、手順の前提条件を参照して、さらに複雑な作業が対処されるようにしてください。</block>
+  <block id="7ce03284a3322764084b916532f7b97d" category="inline-link-macro">vSphere のアップグレード順序</block>
+  <block id="8bc00ddcdd87294898356c5ea82fd0f8" category="paragraph">。 <block ref="a73406aeab7e054da6bf77ce7414f310" category="inline-link-macro-rx"></block> Element Plug-in for vCenter Server のコンテンツでは、 Element Plug-in for vCenter Server を再インストールするために必要な、アップグレード前とアップグレード後の追加の手順について説明します。</block>
+  <block id="df3748edc080e7a8ed49863460584cdd" category="paragraph">NetApp Hybrid Cloud Control を使用したアップグレードは、それよりも前のバージョンのサービスバンドルでは利用できません。</block>
+  <block id="2ddcbbcdd4f972f2c02a9a2fe92ff535" category="paragraph">Element 12.3.x では、次の順序で NetApp SolidFire オールフラッシュストレージシステムをアップグレードできます</block>
+  <block id="d87d94fb7beccdf03c401aa9b2c29f59" category="paragraph">Element 11.3 以降の管理ノードリリースでは、個々のサービスを提供する新しいモジュラアーキテクチャに基づいて管理ノードの設計が変更されました。このモジュラサービスは、 SolidFire オールフラッシュストレージシステムに幅広い管理機能を一元的に提供します。管理サービスには、システム計測、ロギング、更新のサービス、 Element Plug-in for vCenter Server の QoSSIOC サービス、 NetApp Hybrid Cloud Control などがあります。</block>
+  <block id="a5237c2b3436db5dc67ab53b053d3ec9" category="paragraph">管理サービスは、 NetApp Hybrid Cloud Control の UI または管理ノードの REST API を使用して更新できます。</block>
+  <block id="6dd42a6a80b9ea41a3c15d5cbf5c3528" category="paragraph">NetApp Hybrid Cloud Control を使用してネットアップの管理サービスを更新できます。</block>
+  <block id="a4f0b4cd8ed43da899bf23d0cc006ec8" category="inline-link-macro">ストレージファームウェアバンドル 2.146 に関する注意事項</block>
+  <block id="7a0a6b8351b186d782f2b5b12a09f9d1" category="list-text"><block ref="7a0a6b8351b186d782f2b5b12a09f9d1" category="inline-link-macro-rx"></block></block>
 </blocks>

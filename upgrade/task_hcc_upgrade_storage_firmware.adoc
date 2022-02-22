@@ -201,7 +201,7 @@ https://<ManagementNodeIP>/package-repository/1/
 
 
 | 外部に接続されていないダークサイトに管理ノードが配置されている。  a| 
-.. 管理ノードからアクセス可能なデバイスにストレージファームウェアのアップグレードパッケージをダウンロードします。SolidFire ストレージシステムの場合は、 Element ソフトウェアに移動します https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["ページをダウンロードします"^] 最新のストレージファームウェアイメージをダウンロードできます。
+.. ストレージファームウェアのアップグレードパッケージを管理ノードにアクセス可能なデバイスにダウンロードします。 Element ソフトウェアにアクセスします https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["ページをダウンロードします"^] 最新のストレージファームウェアイメージをダウンロードできます。
 .. ストレージファームウェアのアップグレードパッケージを管理ノードにアップロードします。
 +
 ... 管理ノードで管理ノード REST API UI を開きます。
