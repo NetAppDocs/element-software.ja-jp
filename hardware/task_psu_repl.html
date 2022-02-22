@@ -19,7 +19,7 @@
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
   <meta name="description" content="各シャーシには、電源を冗長化するために 2 つの電源装置が搭載されてい電源装置に障害が発生した場合は、シャーシの電源の冗長性を維持するために、できるだけ早く交換する必要があります。">
-  <meta name="keywords" content=" power supply, replacement, h610s, h410s, maintenance">
+  <meta name="keywords" content=" power supply, replacement, h610s, h410s, maintenance, psu, chassis">
   
   
 
@@ -5629,11 +5629,19 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-17 19:26:34 +0000">02/17/2022</time>
+    <time datetime="2022-02-22 21:19:40 +0000">02/22/2022</time>
     
   
 
 <span>寄稿者
+  <a target="_blank" href="https://github.com/netapp-yvonneo">
+    <img  class="avatar avatar-small"
+          alt="netapp-yvonneo"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/75329224?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
   <a target="_blank" href="https://github.com/netapp-mwallis">
     <img  class="avatar avatar-small"
           alt="netapp-mwallis"
@@ -5697,6 +5705,18 @@ H610S では、 2U / 4 ノードシャーシとは異なり、ノードとシャ
 </div>
 <div class="paragraph">
 <p>Element UI のアラームは、 PS1 または PS2 と表現され、障害が発生した電源装置に関する情報を提供します。NetApp HCI 2U の 4 ノードシャーシでは、 PS1 はシャーシの一番上の列のユニット、 PS2 はシャーシの一番下の列のユニットです。冗長電源装置が機能していれば、シャーシの電源をオンにして稼働したまま、障害のある電源装置を交換できます。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/element-software/images/note.svg" alt="注記">
+</td>
+<td class="content">
+ノードの両方の PSU を交換する場合は、 PSU のパーツ番号とワット数が同じである必要があります。PSU が一致しないと、システムが破損する可能性があり
+</td>
+</tr>
+</table>
 </div>
 <div class="olist arabic">
 <div class="title">手順</div>
@@ -5762,7 +5782,39 @@ H610S では、 2U / 4 ノードシャーシとは異なり、ノードとシャ
 </table>
 </li>
 <li>
-<p>電源装置から電源コードを抜きます。</p>
+<p>青色の引き出しタグまたはシリアル番号を使用して、正しいノードを特定します。青色の引き出しタグには、シリアル番号（ S/N ）とドライブレイアウトが記載されています。サービスを提供するノードのシリアル番号を確認します。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>両方の電源装置を交換する場合は、手順 3 に進みます。</p>
+</li>
+<li>
+<p>1 台の電源装置のみを交換する場合は、手順 4 に進みます。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>ノードの電源がオフになっているか、サービスを停止する準備ができていることを確認してください。次の点に注意してください。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>電源がオフになっているノードには、ドライブまたは電源ボタンの青色の電源 LED は表示されません。</p>
+</li>
+<li>
+<p>まだシャットダウンしていないノードでは、ドライブと電源ボタンに青色の LED が表示されます。</p>
+</li>
+<li>
+<p>シャットダウンされてサービスを開始する準備ができているノードでは、 PSU の LED が点滅し、点灯（緑）または消灯（色なし）します。</p>
+</li>
+<li>
+<p>まだシャットダウンしていないノードでは、電源装置の LED が緑色に点灯します。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>両方の装置を交換する場合は、電源装置ユニットまたは両方の電源コードから電源コードを抜きます。</p>
 </li>
 <li>
 <p>カムハンドルを持ち上げ、青色のラッチを押して電源装置ユニットを引き出します。</p>
@@ -5778,7 +5830,7 @@ H610S では、 2U / 4 ノードシャーシとは異なり、ノードとシャ
 <img src="/us-en/element-software/images/note.svg" alt="注記">
 </td>
 <td class="content">
-図は一例です。シャーシ内の電源装置の位置とリリースボタンの色は、シャーシのタイプによって異なります。
+図は一例です。シャーシ内の電源装置ユニットの位置とリリースボタンの色は、シャーシのタイプによって異なります。
 </td>
 </tr>
 </table>
@@ -5795,6 +5847,24 @@ H610S では、 2U / 4 ノードシャーシとは異なり、ノードとシャ
 </tr>
 </table>
 </div>
+<div class="paragraph">
+<p>2 台目の電源装置を交換する場合は、手順 3 、 4 、 5 を繰り返します。</p>
+</div>
+</li>
+<li>
+<p>シャーシから取り外した電源装置のラベルの位置を確認します。ラベルには、メーカーの詳細と出力ワット数が記載されています。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/element-software/images/note.svg" alt="注記">
+</td>
+<td class="content">
+RMA からの電源装置のワット数が、取り外した電源装置のワット数と一致しない場合は、電源装置を交換しないでください。次の手順については、ネットアップサポートにお問い合わせください。
+</td>
+</tr>
+</table>
+</div>
 </li>
 <li>
 <p>両手で電源装置の端をシャーシの開口部に合わせ、カムハンドルを使用して装置をシャーシにそっと押し込んで、カムハンドルを直立位置に戻します。</p>
@@ -5805,7 +5875,10 @@ H610S では、 2U / 4 ノードシャーシとは異なり、ノードとシャ
 </div>
 </li>
 <li>
-<p>電源コードを接続します。</p>
+<p>一方または両方の電源コードを接続します。</p>
+</li>
+<li>
+<p>両方の電源装置を交換した場合は、ノードの前面に移動し、電源ボタンを押してノードの電源をオンにします。電源をオンにすると、電源ボタンの LED が青色に点灯します。ドライブの青色の LED と識別ボタンの点滅が開始します。</p>
 </li>
 <li>
 <p>出荷時の箱に同梱されている手順に従って、障害が発生したユニットをネットアップに返送してください。</p>
