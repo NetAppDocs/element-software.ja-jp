@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>アップグレードの概要</title>
+  <title>アップグレード手順の概要</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="アップグレードの概要" />
+  <meta property="og:title" content="アップグレード手順の概要" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/ja-jp/element-software/upgrade/concept_element_upgrade_overview.html" />
-	<meta property="og:description" content="このセクションの内容では、 NetApp SolidFire オールフラッシュストレージシステムのコンポーネントに推奨されるアップグレード順序を紹介します。" />
+	<meta property="og:description" content="導入後は、すべてのネットアップストレージコンポーネントをアップグレードすることで、 SolidFire Element ストレージシステムを最新の状態に保つことができます。" />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/element-software/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,7 +18,7 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="このセクションの内容では、 NetApp SolidFire オールフラッシュストレージシステムのコンポーネントに推奨されるアップグレード順序を紹介します。">
+  <meta name="description" content="導入後は、すべてのネットアップストレージコンポーネントをアップグレードすることで、 SolidFire Element ストレージシステムを最新の状態に保つことができます。">
   <meta name="keywords" content=" netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgrade">
   
   
@@ -3810,11 +3810,11 @@
         <li class="pdf-ux-container">
           <a target="_blank" 
             
-              href="/ja-jp/element-software/pdfs/sidebar/SolidFire_システムをアップグレードします.pdf" 
+              href="/ja-jp/element-software/pdfs/sidebar/Element_12_3_x_用の_NetApp_SolidFire_オールフラッシュストレージシステムをアップグレードします.pdf" 
             
           >
             <img src="/ja-jp/element-software/images/pdf.png" width="16" height="16"/>
-            SolidFire システムをアップグレードします
+            Element 12.3.x 用の NetApp SolidFire オールフラッシュストレージシステムをアップグレードします
           </a>
           
     <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
@@ -3826,8 +3826,6 @@
 
 </ul>
   
-
-
 
 
 
@@ -5536,12 +5534,10 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/element-software/mnode/task_mnode_ssh_management.html">
         管理ノードで SSH 機能を管理します
       </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
-        <div class="na-navbar-padding"> SolidFire システムをアップグレードします</div>
+        <div class="na-navbar-padding"> Element 12.3.x 用の NetApp SolidFire オールフラッシュストレージシステムをアップグレードします</div>
       </a>
       <ul><li class="  active "><a class="na-navbar-padding" href="/ja-jp/element-software/upgrade/concept_element_upgrade_overview.html">
-        アップグレードの概要
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/element-software/upgrade/task_sf_upgrade_all.html">
-        Element 12.3.x 用の NetApp SolidFire オールフラッシュストレージシステムをアップグレードします
+        アップグレード手順の概要
       </a></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> システムのアップグレード手順</div>
       </a>
@@ -5599,7 +5595,7 @@
           <a href="/ja-jp/element-software/">Element&nbsp;Software</a>
         </li>
         <li class="n-breadcrumb__list-item">
-          アップグレードの概要
+          アップグレード手順の概要
         </li>
       </ul>
     </div>
@@ -5622,14 +5618,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">アップグレードの概要</h1>
+  <h1 class="n-doc__component-detail-heading">アップグレード手順の概要</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-02-22 21:19:40 +0000">02/22/2022</time>
+    <time datetime="2022-02-25 19:54:08 +0000">02/25/2022</time>
     
   
 
@@ -5639,14 +5635,6 @@
           alt="netapp-pcarriga"
           width="20" height="20"
           src="https://avatars.githubusercontent.com/u/77334475?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
-  <a target="_blank" href="https://github.com/netapp-mwallis">
-    <img  class="avatar avatar-small"
-          alt="netapp-mwallis"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/53353653?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -5667,7 +5655,45 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>このセクションの内容では、 NetApp SolidFire オールフラッシュストレージシステムのコンポーネントに推奨されるアップグレード順序を紹介します。とは</p>
+<p>導入後も SolidFire Element ストレージシステムを最新の状態に保つには、すべてのネットアップストレージコンポーネントを順番にアップグレードします。</p>
+</div>
+<div class="paragraph">
+<p>これらのコンポーネントには、管理サービス、 HealthTools 、 NetApp Hybrid Cloud Control 、 Element ソフトウェア、管理ノード、 Element Plug-in for vCenter Server （インストール環境に応じて）が含まれます。</p>
+</div>
+<div class="paragraph">
+<p>。 <a href="#sys_upgrade">システムのアップグレード順序</a> コンテンツでは、 SolidFire オールフラッシュストレージシステムのアップグレードを完了するために必要な作業について説明します。これらの手順は、単独ででではなく、大きなアップグレード手順の一部として実行することを推奨します。コンポーネントベースのアップグレードまたは更新が必要な場合は、手順の前提条件を参照して、さらに複雑な作業が対処されるようにしてください。</p>
+</div>
+<div class="paragraph">
+<p>。 <a href="task_sf_upgrade_all_vsphere.html">"vSphere のアップグレード順序"</a> Element Plug-in for vCenter Server のコンテンツでは、 Element Plug-in for vCenter Server を再インストールするために必要な、アップグレード前とアップグレード後の追加の手順について説明します。</p>
+</div>
+<div class="ulist">
+<div class="title">必要なもの</div>
+<ul>
+<li>
+<p>管理ノード 11.3 以降が実行されていることを確認します。新しいバージョンの管理ノードには、個々のサービスを提供するモジュラアーキテクチャが採用されています。</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/element-software/images/tip.svg" alt="ヒント">
+</td>
+<td class="content">
+バージョンを確認するには、管理ノードにログインし、ログインバナーに表示される Element のバージョン番号を確認します。11.3 を使用していない場合は、を参照してください <a href="task_hcc_upgrade_management_node.html">"管理ノードをアップグレードします"</a>。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>管理サービスをバージョン 2.1.326 以上にアップグレードしておきます。</p>
+<div class="paragraph">
+<p>NetApp Hybrid Cloud Control を使用したアップグレードは、それよりも前のバージョンのサービスバンドルでは利用できません。</p>
+</div>
+</li>
+<li>
+<p>すべてのノードのシステム時間が同期され、 NTP がストレージクラスタとノードに対して正しく設定されていることを確認しておきます。各ノードには、ノード Web UI （「 https://[IP address 」： 442 ）に DNS ネームサーバを設定する必要があります。時刻のずれに関連する未解決のクラスタ障害はありません。</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -5675,35 +5701,93 @@
 <h2 id="システムのアップグレード順序">システムのアップグレード順序</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>システムのアップグレード手順の内容には、 SolidFire オールフラッシュストレージシステムのアップグレードを完了するために必要な作業が記載されています。これらの手順は、単独ででではなく、大きなアップグレード手順の一部として実行することを推奨します。コンポーネントベースのアップグレードまたは更新が必要な場合は、手順の前提条件を参照して、さらに複雑な作業が対処されるようにしてください。</p>
+<p>Element 12.3.x では、次の順序で NetApp SolidFire オールフラッシュストレージシステムをアップグレードできます</p>
 </div>
-<div class="paragraph">
-<p>Element 12.3.x 用の NetApp SolidFire オールフラッシュストレージシステムをアップグレードするには、次の順序に従います。</p>
-</div>
-<div class="ulist">
-<ul>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
 <li>
-<p><a href="task_sf_upgrade_all.html">"Element 12.3.x 用の NetApp SolidFire オールフラッシュストレージシステムをアップグレードします"</a>。</p>
+<p><a href="task_hcc_update_management_services.html">"Hybrid Cloud Control から管理サービスを更新します"</a>。</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/element-software/images/important.svg" alt="重要">
+</td>
+<td class="content">
+管理サービスをバージョン 2.16 以降に更新する場合、管理ノード 11.3 から 11.8 を実行しているときは、管理サービスを更新する前に管理ノード VM の RAM を増やす必要があります。
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/element-software/images/important.svg" alt="重要">
+</td>
+<td class="content">
+Element ソフトウェアをアップグレードする前に、最新の管理サービスバンドルに更新する必要があります。
+</td>
+</tr>
+</table>
+</div>
 </li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="element-plug-in-for-vcenter-server-を含む-vsphere-のアップグレード順序">Element Plug-in for vCenter Server を含む vSphere のアップグレード順序</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Element Plug-in for vCenter Server を含む vSphere のアップグレードシーケンスでは、 Element Plug-in for vCenter Server を再インストールするために必要な追加のアップグレード前とアップグレード後の手順について説明します。</p>
-</div>
-<div class="paragraph">
-<p>Element Plug-in for vCenter Server を使用している NetApp SolidFire オールフラッシュストレージシステムの vSphere コンポーネントをアップグレードするには、次の順序に従います。</p>
-</div>
-<div class="ulist">
-<ul>
 <li>
-<p><a href="task_sf_upgrade_all_vsphere.html">"NetApp SolidFire ストレージシステムの vSphere コンポーネントをアップグレードします を使用： Element Plug-in for vCenter Server"</a>。</p>
+<p><a href="task_upgrade_element_latest_healthtools.html">"（オプション）最新の HealthTools にアップグレードします"</a>。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/element-software/images/note.svg" alt="注記">
+</td>
+<td class="content">
+HealthTools のアップグレードは、実行している管理ノードと Element ソフトウェアが 11.1 以前の場合にのみ必要です。NetApp Hybrid Cloud Control を使用した Element のアップグレードには HealthTools は必要ありません。
+</td>
+</tr>
+</table>
+</div>
 </li>
-</ul>
+<li>
+<p><a href="task_hcc_upgrade_element_prechecks.html">"ストレージをアップグレードする前に、 Element ストレージの健全性チェックを実行します"</a>。</p>
+</li>
+<li>
+<p><a href="task_hcc_upgrade_element_software.html">"Element ソフトウェアとストレージファームウェアをアップグレードします"</a>。</p>
+</li>
+<li>
+<p><a href="task_hcc_upgrade_storage_firmware.html">"（オプション） Element ストレージファームウェアのみをアップグレードします"</a>。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/element-software/images/note.svg" alt="注記">
+</td>
+<td class="content">
+このタスクは、メジャーリリース以外で新しいストレージファームウェアアップグレードがリリースされたときに実行することができます。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p><a href="task_hcc_upgrade_management_node.html">"（オプション）管理ノードをアップグレードします"</a>。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/element-software/images/note.svg" alt="注記">
+</td>
+<td class="content">
+ストレージクラスタ上の Element ソフトウェアをアップグレードするために、管理ノードのオペレーティングシステムをアップグレードする必要がなくなりました。管理ノードのバージョンが 11.3 以降である場合は、 NetApp Hybrid Cloud Control を使用して管理サービスを最新バージョンにアップグレードするだけで Element をアップグレードできます。管理ノードのオペレーティングシステムをアップグレードする理由がほかにもある場合は、セキュリティの修正など、管理ノードのアップグレード手順に従ってください。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p><a href="task_vcp_upgrade_plugin.html">"Element Plug-in for vCenter Server をアップグレードします"</a>。</p>
+</li>
+</ol>
 </div>
 <h2 id="詳細についてはこちらをご覧ください" class="discrete">詳細については、こちらをご覧ください</h2>
 <div class="ulist">
@@ -5728,7 +5812,7 @@
   <div class="page-nav-toolbar">
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/element-software/issues/new?body=Page%3A%20[アップグレードの概要](https://docs.netapp.com/ja-jp/element-software/upgrade/concept_element_upgrade_overview.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/element-software/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/element-software/issues/new?body=Page%3A%20[アップグレード手順の概要](https://docs.netapp.com/ja-jp/element-software/upgrade/concept_element_upgrade_overview.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/element-software/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
       <a target="_blank" href="https://github.com/NetAppDocs/element-software/blob/main/upgrade/concept_element_upgrade_overview.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/element-software/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/element-software/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
     </div>
