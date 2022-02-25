@@ -12394,4 +12394,5 @@
   <block id="6dd42a6a80b9ea41a3c15d5cbf5c3528" category="paragraph">NetApp Hybrid Cloud Control を使用してネットアップの管理サービスを更新できます。</block>
   <block id="a4f0b4cd8ed43da899bf23d0cc006ec8" category="inline-link-macro">ストレージファームウェアバンドル 2.146 に関する注意事項</block>
   <block id="7a0a6b8351b186d782f2b5b12a09f9d1" category="list-text"><block ref="7a0a6b8351b186d782f2b5b12a09f9d1" category="inline-link-macro-rx"></block></block>
+  <block id="329461104609d2ece68f1910799e2db0" category="list-text">NetApp Hybrid Cloud Control を使用して管理サービスバンドルを最新バージョンに更新しておきます。NetApp Hybrid Cloud Control には、「 https://&lt;ManagementNodeIP&gt;` 」という IP アドレスでアクセスできます</block>
 </blocks>
