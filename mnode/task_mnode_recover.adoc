@@ -237,7 +237,7 @@ NOTE: セキュアプロンプトにパスワードを入力するように求�
 NOTE: ユーザ名を追加するか、または情報の入力を求めるプロンプトをスクリプトに表示することができます。
 
 .. 「 redeploy -mnode 」コマンドを実行します。再導入が完了すると、成功メッセージが表示されます。
-.. システムの Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を使用して Element Web インターフェイス（管理ノードや NetApp Hybrid Cloud Control など）にアクセスする場合は、 link:upgrade/task_hcc_upgrade_management_node.html#reconfigure-authentication-using-the-management-node-rest-api["管理ノードの認証を再設定します"^]。
+.. システムの Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を使用して Element Web インターフェイス（管理ノードや NetApp Hybrid Cloud Control など）にアクセスする場合は、 link:../upgrade/task_hcc_upgrade_management_node.html#reconfigure-authentication-using-the-management-node-rest-api["管理ノードの認証を再設定します"]。
 
 
 

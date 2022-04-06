@@ -4578,7 +4578,6 @@
   <block id="447a2c77b25a29c4b95502c7ce068a00" category="admonition">ユーザ名を追加するか、または情報の入力を求めるプロンプトをスクリプトに表示することができます。</block>
   <block id="cad0c5c8ceda74235801d01a1f9fd1c9" category="list-text">「 redeploy -mnode 」コマンドを実行します。再導入が完了すると、成功メッセージが表示されます。</block>
   <block id="1ca15a17f59b2f41a1d0fa788065de9d" category="inline-link-macro">管理ノードの認証を再設定します</block>
-  <block id="cfeda7152469f5af9bf12e191eb35e22" category="list-text">システムの Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を使用して Element Web インターフェイス（管理ノードや NetApp Hybrid Cloud Control など）にアクセスする場合は、 <block ref="1426c5f10479a8dee24e34881e37d95f" category="inline-link-macro-rx"></block>。</block>
   <block id="1ff95dcbc18b37a5ced1333dc80463dc" category="inline-link-macro">ネットアップサポートの Remote Support Tunnel （ RST ）セッションアクセス</block>
   <block id="5586aaabd0a6d3e90ba91ecb4aabc919" category="inline-link-macro">SSH を再度無効にします</block>
   <block id="24260d30caec4399226e019ec2a8a7d4" category="admonition">提供する SSH 機能 <block ref="6bb28df38aa0844e287b2e23fc581879" category="inline-link-macro-rx"></block> 管理サービス 2.18 以降を実行する管理ノードでは、はデフォルトで無効になっています。以前に管理ノードで SSH 機能を有効にしていた場合は、が必要になることがあります <block ref="5b81c87a44b075e9194cc26f66c2b99f" category="inline-link-macro-rx"></block> リカバリされた管理ノード。</block>
@@ -12312,4 +12311,5 @@
   <block id="5e790f023d6f269f25709b2372d8cef2" category="list-text">TUI を使用して、管理ネットワークの正しい IP を 1500 バイト以上の MTU で設定します。</block>
   <block id="8c79dbfa1dd86948b37af21a8d7639d5" category="list-text">VM に正しい VM ネットワークを再割り当てします。</block>
   <block id="85708c896a2da121ac4eee4307002bd9" category="admonition">MTU が 1 、 500 バイト未満の DHCP を割り当てると、管理ノードネットワークの設定や管理ノード UI の使用ができなくなる可能性があります。</block>
+  <block id="1b8210afec8bf22eaf6aeec2c734fa6c" category="list-text">システムの Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を使用して Element Web インターフェイス（管理ノードや NetApp Hybrid Cloud Control など）にアクセスする場合は、 <block ref="3bef977fd72a25456136a30f2d648743" category="inline-link-macro-rx"></block>。</block>
 </blocks>
