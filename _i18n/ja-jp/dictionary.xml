@@ -4753,8 +4753,6 @@
   <block id="7e6093e52119f18464fc862a969c9f6a" category="admonition">IPv6 のサポートが必要な場合は、管理ノード 11.1 を使用してください。</block>
   <block id="9385b032418674e92472a8b4a2ae5cdf" category="list-text">（管理ノード 12.0 以降にプロキシサーバを使用） NetApp Hybrid Cloud Control を管理サービスバージョン 2.16 に更新してから、プロキシサーバを設定しておきます。</block>
   <block id="0406c3e25004e3d1dddbc367d2c4010f" category="paragraph">Element 12.2 管理ノードはオプションのアップグレードです。既存の環境では必要ありません。</block>
-  <block id="fa6c9c65878eae48ea2b7f9c23ccabe8" category="paragraph">この手順を実行する前に、を理解しておく必要があります <block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block> 使用するかどうかを指定します。永続ボリュームはオプションですが、 VM が失われた場合の管理ノードの設定データのリカバリには推奨されます。</block>
-  <block id="d65a2ab43bcac7efebde7effc9d142f8" category="list-text"><block ref="4e8e62755aa10b5d2420c05d87c0085a" category="inline-xref-macro-rx"></block></block>
   <block id="c92609be7302c756d6d918553df475c1" category="list-text"><block ref="d9e86326331a25418b718094ae602c19" category="inline-xref-macro-rx"></block></block>
   <block id="0267f7e06220d0fa6fb42578b5746da3" category="list-text"><block ref="b41cb2f7bd156a4035cdf9347b89cebe" category="inline-xref-macro-rx"></block></block>
   <block id="12b8893b065179b6b80fdc2d448862df" category="inline-link-macro">Element ソフトウェア</block>
@@ -12302,4 +12300,16 @@
   <block id="38be14292d8d278a5d7b04a84bab839d" category="admonition">VMware vCenter Server 7.0 U3 にアップグレードすると、すべてのバージョンの NetApp Element Plug-in for vCenter Server を導入できません。この問題 を解決するには、を参照してください<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>。</block>
   <block id="72da0f32a8783a5cb119cddae9f955bb" category="admonition">1 つの vCenter インスタンスに複数の NetApp Element VASA Provider を登録しないでください。2 つ目の NetApp Element VASA Provider が追加されている場合、その結果、すべての VVOL データストアにアクセスできなくなります。</block>
   <block id="fde51f20c5d4f2642518536389dc9ca9" category="list-text"><block ref="fde51f20c5d4f2642518536389dc9ca9" category="inline-link-macro-rx"></block></block>
+  <block id="3ab5d74afdff3156333304ac18ad1977" category="paragraph">この手順を実行する前に、を理解しておく必要があります <block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block> 使用するかどうかを指定します。永続ボリュームはオプションですが、仮想マシン（ VM ）が失われた場合の管理ノードの設定データのリカバリには推奨されます。</block>
+  <block id="2ef294393b47ae9f1c9dee1f319efb0d" category="list-text"><block ref="bf7a9c417954187cdc8487e05cd6fa32" category="inline-xref-macro-rx"></block></block>
+  <block id="bb79fe0e6bf117510635c505cc16e74d" category="list-text">次の構成でハイパーバイザーから新しい 64 ビットの VM を作成します。</block>
+  <block id="4aec8fb7a6a9c5631ebb25a7b86d9ac5" category="admonition">この手順 の以降の手順で指示があるまでは、 VM の電源をオンにしないでください。</block>
+  <block id="1632315c8463eb1e9d1b980297d68c37" category="list-text">ISO を VM に接続し、 .iso インストールイメージでブートします。</block>
+  <block id="faa024991ac61fa39b20d61ed2e88ada" category="list-text">インストールが完了したら、管理ノードの VM の電源をオンにします。</block>
+  <block id="c19f63a05ffe39159954c2b2fd892582" category="list-text">ネットワーク上に、最大伝送ユニット（ MTU ）が 1500 バイト未満の IP を割り当てる Dynamic Host Configuration Protocol （ DHCP ；動的ホスト構成プロトコル）サーバがある場合は、次の手順を実行する必要があります。</block>
+  <block id="b44234e2a29812de715ddf5ea19c15fc" category="list-text">iSCSI などの DHCP を使用しないで、一時的に管理ノードを vSphere ネットワークに配置します。</block>
+  <block id="f35b648abbd5fe5949ea297ee6cef3b9" category="list-text">VM をリブートするか、 VM ネットワークを再起動します。</block>
+  <block id="5e790f023d6f269f25709b2372d8cef2" category="list-text">TUI を使用して、管理ネットワークの正しい IP を 1500 バイト以上の MTU で設定します。</block>
+  <block id="8c79dbfa1dd86948b37af21a8d7639d5" category="list-text">VM に正しい VM ネットワークを再割り当てします。</block>
+  <block id="85708c896a2da121ac4eee4307002bd9" category="admonition">MTU が 1 、 500 バイト未満の DHCP を割り当てると、管理ノードネットワークの設定や管理ノード UI の使用ができなくなる可能性があります。</block>
 </blocks>
