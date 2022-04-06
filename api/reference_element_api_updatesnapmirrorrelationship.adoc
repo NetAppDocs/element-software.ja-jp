@@ -5,6 +5,7 @@ keywords: SnapMirror,relationship,relationships,update,updating,destination,volu
 summary: Element ソフトウェア Web UI は、 UpdateSnapMirrorRelationship メソッドを使用して、 SnapMirror 関係のデスティネーションボリュームをソースボリュームの最新のミラーに更新します。 
 ---
 = SnapMirror 関係を更新しています
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

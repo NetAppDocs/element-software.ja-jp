@@ -5,6 +5,7 @@ keywords: drive,drives,stats,get,getting,getdrivestats
 summary: GetDriveStats メソッドを使用すると、 1 つのドライブのアクティビティ測定値の概要を取得できます。値は、クラスタにドライブを追加したときからの累積値です。一部の値はブロックドライブに固有です。このメソッドを実行すると、ブロックドライブまたはメタデータドライブのいずれかのタイプの統計が返されます。 
 ---
 = GetDriveStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

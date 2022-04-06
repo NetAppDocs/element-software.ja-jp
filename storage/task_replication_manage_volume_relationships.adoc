@@ -5,6 +5,7 @@ keywords: volume pairing reversal, volume pair, replication
 summary: レプリケーションの一時停止、ボリュームペアリングの反転、レプリケーションモードの変更、ボリュームペアの削除、クラスタペアの削除など、さまざまな方法でボリューム関係を管理できます。 
 ---
 = ボリューム関係を管理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

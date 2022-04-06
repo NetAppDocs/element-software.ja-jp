@@ -5,6 +5,7 @@ keywords: node,test,testing,hardware,config,configuration,testhardwareconfig
 summary: TestHardwareConfig メソッドを使用すると、ノードでハードウェアテストを実行できます。テストオプションには、ハードウェア構成やファームウェアバージョンの確認、すべてのドライブが存在することの確認が含まれます。 
 ---
 = TestHardwareConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

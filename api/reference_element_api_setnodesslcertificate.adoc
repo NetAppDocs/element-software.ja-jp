@@ -5,6 +5,7 @@ keywords: ssl,certificate,set,setting,private,key,setnodesslcertificate
 summary: SetNodeSSLCertificate メソッドを使用すると、管理ノードのユーザ SSL 証明書と秘密鍵を設定できます。 
 ---
 = SetNodeSSLCertificate
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

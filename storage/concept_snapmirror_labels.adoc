@@ -5,6 +5,7 @@ keywords: labels, snapmirror, retention rules
 summary: SnapMirror ラベルは、指定した Snapshot を関係の保持ルールに従って転送するためのマーカーとして機能します。 
 ---
 = SnapMirror ラベル
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

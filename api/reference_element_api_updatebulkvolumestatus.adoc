@@ -5,6 +5,7 @@ keywords: updatebulkvolumestatus,update,updating,bulk,volume,status,job
 summary: UpdateBulkVolumeStatus メソッドを使用すると、 StartBulkVolumeRead メソッドまたは StartBulkVolumeWrite メソッドで開始した一括ボリュームジョブのステータスを更新できます。 
 ---
 = UpdateBulkVolumeStatus
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: KMIP,key server,getting information,retrieving
 summary: GetKeyServerKmip メソッドを使用すると、指定した Key Management Interoperability Protocol\ （ KMIP \ ）キーサーバに関する情報を取得できます。 
 ---
 = GetKeyServerKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

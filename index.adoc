@@ -6,5 +6,6 @@ lead: A SolidFire all-flash storage system is comprised of hardware components s
 summary: SolidFire オールフラッシュストレージシステムは、ドライブやノードなどのハードウェアコンポーネントで構成され、これらのコンポーネントをストレージリソースのプールに統合します。このユニファイドクラスタは、単一のストレージシステムとして NetApp Element ソフトウェアで管理されます。 
 ---
 = SolidFire および Element ソフトウェア 12.3.x のドキュメント
+:allow-uri-read: 
 
 

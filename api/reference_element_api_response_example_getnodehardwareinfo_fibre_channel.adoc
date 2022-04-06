@@ -5,6 +5,7 @@ keywords: response,example,getnodehardwareinfo
 summary: Fibre Channel ノードに対する GetNodeHardwareInfo メソッドは、次の例のような応答を返します。 
 ---
 = GetNodeHardwareInfo （ Fibre Channel ノードに対する出力）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

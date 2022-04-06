@@ -5,6 +5,7 @@ keywords: bin assignment,assignment properties,retrieve assignment properties
 summary: GetBinAssignmentProperties メソッドを使用すると、データベースの bin 割り当てプロパティを取得できます。 
 ---
 = GetBinAssignmentProperties のプロパティ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

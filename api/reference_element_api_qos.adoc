@@ -5,6 +5,7 @@ keywords: object,objects,QoS
 summary: QoS オブジェクトには、ボリュームの QoS 設定に関する情報が含まれます。QoS 値を指定せずに作成したボリュームは、デフォルト値を使用して作成されます。GetDefaultQoS メソッドを使用すると、デフォルト値を確認できます。 
 ---
 = QoS
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

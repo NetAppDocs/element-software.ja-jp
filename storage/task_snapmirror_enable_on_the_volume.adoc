@@ -5,6 +5,7 @@ keywords: snapmirror, enable, volume, ui, manually enable
 summary: ボリュームの SnapMirror は Element UI で有効にする必要があります。これにより、指定した ONTAP にデータをレプリケートできるようになります。これは、 NetApp Element ソフトウェアを実行しているクラスタの管理者が SnapMirror によるボリュームの制御を許可することを意味します。 
 ---
 = ボリュームで SnapMirror を有効にします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

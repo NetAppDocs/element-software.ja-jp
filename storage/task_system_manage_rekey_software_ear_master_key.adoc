@@ -5,6 +5,7 @@ keywords: element, rekey, encryption at rest, rekey master, replace key
 summary: Element API を使用して既存のキーを変更できます。このプロセスにより、外部キー管理サーバ用の新しい交換用マスターキーが作成されます。 
 ---
 = 保存マスターキーでのソフトウェア暗号化のキーを変更します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

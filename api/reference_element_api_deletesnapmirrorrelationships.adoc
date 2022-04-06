@@ -5,6 +5,7 @@ keywords: SnapMirror,relationship,relationships,delete,deleting,DeleteSnapMirror
 summary: Element Web UI は、 DeleteSnapMirrorRelationships メソッドを使用して、ソースエンドポイントとデスティネーションエンドポイントの間の SnapMirror 関係を削除します。 
 ---
 = SnapMirror 関係を削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

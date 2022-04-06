@@ -5,6 +5,7 @@ keywords: virtual,volume,vvol,cluster,bound,protocol,endpoint,binding,bindings,l
 summary: ListVirtualVolumeBindings メソッドを使用すると、プロトコルエンドポイントにバインドされているクラスタ内のすべての仮想ボリュームのリストを取得できます。 
 ---
 = ListVirtualVolumeBindings を実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

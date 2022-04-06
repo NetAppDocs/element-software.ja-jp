@@ -5,6 +5,7 @@ keywords: object,objects,session
 summary: session\ （ iSCSI\ ）オブジェクトには、各ボリュームの iSCSI セッションに関する詳細情報が含まれます。ListISCSISessions API メソッドを使用すると、 iSCSI セッション情報を取得できます。 
 ---
 = セッション（ iSCSI ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

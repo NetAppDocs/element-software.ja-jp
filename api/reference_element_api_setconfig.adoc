@@ -5,6 +5,7 @@ keywords: config,configuration,set,setting,node,setconfig,network,cluster
 summary: SetConfig メソッドを使用すると、ノードのネットワークとクラスタの情報を設定できます。このメソッドでは、 SetClusterConfig メソッドと SetNetworkConfig メソッドの両方を使用して設定できる単一の API メソッドで同じ設定を使用できます。このメソッドには、変更するフィールドだけを指定する必要があります。 
 ---
 = SetConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: addinitiatorstovolumeaccessgroup,add,adding,initiators,initiator,volum
 summary: AddInitiatorsToVolumeAccessGroup メソッドを使用すると、指定したボリュームアクセスグループにイニシエータを追加できます。 
 ---
 = AddInitiatorsToVolumeAccessGroup
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

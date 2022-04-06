@@ -5,6 +5,7 @@ keywords: sort lists, sorting on a single column, sorting on multiple columns, s
 summary: Element UI の特定のページでは、リストの情報を 1 つ以上の条件でソートできます。これにより、画面上で必要な情報を並べ替えることができます。 
 ---
 = リストを並べ替えます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ summary: 新しいボリュームアクセスグループを追加して SolidFi
 keywords: netapp, element, cluster, volume, access 
 ---
 = ボリュームアクセスグループを作成および管理します
+:allow-uri-read: 
 
 
 [role="lead"]

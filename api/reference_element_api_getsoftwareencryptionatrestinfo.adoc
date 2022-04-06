@@ -5,6 +5,7 @@ keywords: system, api, security, get, getting, software encryption at rest
 summary: GetSoftwareEncryptionAtRestInfo メソッドを使用すると、クラスタが保存データの暗号化に使用する情報を取得できます。 
 ---
 = GetSoftwareEncryptionAtRestInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

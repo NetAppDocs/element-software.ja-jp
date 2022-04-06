@@ -5,6 +5,7 @@ keywords: volumes, work, storage, iscsi, fc, cluster data management, overview o
 summary: SolidFire システムは、ボリュームを使用してストレージをプロビジョニングします。ボリュームは、 iSCSI または Fibre Channel クライアントがネットワーク経由でアクセスするブロックデバイスです。管理タブのボリュームページでは、ノードのボリュームを作成、変更、クローニング、および削除できます。ボリュームの帯域幅と I/O 使用量に関する統計も確認できます。 
 ---
 = ボリュームを操作します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: element, solidfire, install, setup, node, cluster
 summary: 開始する前に、 NetApp Element ソフトウェアのインストールとセットアップの手順を理解しておくことを推奨します。 
 ---
 = セットアップの概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

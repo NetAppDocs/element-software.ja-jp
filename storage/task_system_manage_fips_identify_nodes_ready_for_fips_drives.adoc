@@ -5,6 +5,7 @@ keywords: fips, security, federal information processing standards, 140-2
 summary: NetApp Element ソフトウェアの GetFipsReport API メソッドを使用して、ストレージクラスタ内のすべてのノードが FIPS ドライブに対応しているかどうかを確認する必要があります。 
 ---
 = ノードが FIPS ドライブ機能に対応しているかどうかを確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

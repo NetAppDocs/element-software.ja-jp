@@ -5,6 +5,7 @@ keywords: system events, monitor, view event log
 summary: システムで検出された各種のイベントに関する情報を確認できます。イベントメッセージは 30 秒ごとに更新されます。イベントログには、クラスタの主要なイベントが表示されます。 
 ---
 = システムイベントに関する情報を表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

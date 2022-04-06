@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,initiators,initiator,att
 summary: ModifyInitiators メソッドを使用すると、 1 つ以上の既存のイニシエータの属性を変更できます。 
 ---
 = ModifyInitiators の実行に使用し
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

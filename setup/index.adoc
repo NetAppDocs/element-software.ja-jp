@@ -5,6 +5,7 @@ keywords: set up storage, storage system, set up, configure node, configuring st
 summary: ご使用の環境に合わせてストレージシステムをセットアップする方法について説明します。 
 ---
 = ストレージをセットアップする
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

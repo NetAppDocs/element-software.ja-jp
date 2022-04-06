@@ -5,6 +5,7 @@ keywords: virtual volume, configure vvols, use UI to manage
 summary: Element UI を使用して、仮想ボリュームおよび仮想ボリュームに関連付けられたストレージコンテナ、プロトコルエンドポイント、バインド、およびホストの情報を確認し、タスクを実行できます。 
 ---
 = 仮想ボリュームを操作します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

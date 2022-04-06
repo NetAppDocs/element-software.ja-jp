@@ -5,6 +5,7 @@ keywords: multiple volumes, group snapshot, clone, create, data protection
 summary: ボリュームのグループをポイントインタイムのグループ Snapshot からクローニングできます。この処理を実行するにはボリュームのグループ Snapshot が必要です。このグループ Snapshot を基にボリュームが作成されます。作成したボリュームは、システム内の他のボリュームと同様に使用できます。 
 ---
 = グループ Snapshot から複数のボリュームのクローニング
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

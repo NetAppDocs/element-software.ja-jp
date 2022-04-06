@@ -5,6 +5,7 @@ keywords: qos,usage,volume,histogram,generate,listvolumeqoshistograms,histograms
 summary: ListVolumeQoSHistograms メソッドを使用すると、 1 つまたは複数のボリュームの QoS 使用状況のヒストグラムを生成できます。これにより、ボリュームで QoS がどのように使用されているかを把握できます。 
 ---
 = ListVolumeQoSHistograms
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

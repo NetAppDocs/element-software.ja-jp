@@ -5,6 +5,7 @@ keywords: tls,cipher,reset,supplemental,resetnodesupplementaltlsciphers,restore,
 summary: ResetNodeCES処理 で TlsCiphers メソッドを使用すると、追加 TLS 暗号のリストをデフォルトに戻すことができます。このコマンドは管理ノードで使用できます。 
 ---
 = ResetNodeJassentalTlsCiphers
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

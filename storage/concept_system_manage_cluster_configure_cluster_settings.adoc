@@ -5,6 +5,7 @@ keywords: configure, cluster, threshold, support access, encryption at rest, vir
 summary: Element UI の Cluster タブでは、クラスタ全体の設定を表示および変更したり、クラスタ固有のタスクを実行したりできます。 
 ---
 = クラスタの設定を行います
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

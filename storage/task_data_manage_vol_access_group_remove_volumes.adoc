@@ -5,6 +5,7 @@ keywords: access group, remove volumes from, initiators, chap
 summary: アクセスグループからボリュームを削除すると、グループはそのボリュームにアクセスできなくなります。 
 ---
 = アクセスグループからボリュームを削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: utilities,list,listing,listutilities
 summary: ListUtilities メソッドを使用すると、ノードで実行可能な処理をリストできます。 
 ---
 = ListUtilities を使用します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

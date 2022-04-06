@@ -5,6 +5,7 @@ keywords: element, solidfire, install, setup, node, cluster
 summary: ストレージノードを含むクラスタのセットアップ手順を理解しておく必要があります。 
 ---
 = Element ストレージノードを含むクラスタをセットアップする
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

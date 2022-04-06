@@ -5,6 +5,7 @@ keywords: layout,custom,protection domain,protection domains,setting protection 
 summary: SetProtectionDomainLayout メソッドを使用すると、カスタム保護ドメインにノードを割り当てることができます。 
 ---
 = SetProtectionDomainLayout の略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

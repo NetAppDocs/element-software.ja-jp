@@ -5,6 +5,7 @@ keywords: BMC cold reset,BMC reset,enable BMC
 summary: EnableBmcColdReset メソッドを使用すると、クラスタ内のすべてのノードのベースボード管理コントローラ \ （ BMC\ ）を定期的にリセットするバックグラウンドタスクを有効にできます。 
 ---
 = EnableBmcColdReset
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

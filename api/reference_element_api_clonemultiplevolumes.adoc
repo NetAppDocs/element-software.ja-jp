@@ -5,6 +5,7 @@ keywords: volume,volumes,clone,cloning,multiple,CloneMultipleVolumes
 summary: CloneMultipleVolumes メソッドを使用すると、指定したボリュームのグループのクローンを作成できます。複数のボリュームのクローンを一緒に作成する場合、一連の同じ特性を割り当てることができます。 
 ---
 = CloneMultipleVolumes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: SNMP requestor, config, enable, disable, snmp requests
 summary: SNMP バージョン 2 が有効な場合は、リクエスタを有効または無効にできるほか、許可された SNMP 要求を受信するリクエスタを設定できます。 
 ---
 = SNMP リクエスタを設定します
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

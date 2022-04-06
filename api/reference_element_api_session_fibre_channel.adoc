@@ -5,6 +5,7 @@ keywords: object,objects,session
 summary: session オブジェクトには、クラスタが認識できる各 Fibre Channel セッションと認識可能なターゲットポートの情報が含まれます。この情報は、 ListFibreChannelSessions API メソッドを使用して取得できます。 
 ---
 = セッション（ Fibre Channel ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

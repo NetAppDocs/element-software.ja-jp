@@ -5,6 +5,7 @@ keywords: solidfire esds, software-defined storage, networks, linux host routing
 summary: SolidFire ESDS をインストールする前に、 RHEL を実行するストレージノードに必要なネットワークをセットアップする必要があります。環境内のネットワークルーティングは、ユーザが行う必要があります。フレームワークとして提供されているベストプラクティスを使用できます。 
 ---
 = ネットワーク設定に関する考慮事項
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: remote,connectivity,test,testing,testremoteconnectivity
 summary: TestRemoteConnectivity メソッドを使用すると、リモートクラスタの各ノードに対して ping を実行し、リモートのアンサンブルデータベースの接続を確認できます。このメソッドで有用な結果を得るには、クラスタがペアリングされている必要があります。リモートデータベース接続に失敗した場合は、システムからの応答に例外がリストされます。 
 ---
 = TestRemoteConnectivity
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

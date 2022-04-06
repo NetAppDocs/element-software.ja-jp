@@ -5,6 +5,7 @@ keywords: snmp,trap,get,getting,info,getsnmptrapinfo
 summary: GetSnmpTrapInfo メソッドを使用すると、現在の SNMP トラップの設定情報を取得できます。 
 ---
 = GetSnmpTrapInfo をクリックします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

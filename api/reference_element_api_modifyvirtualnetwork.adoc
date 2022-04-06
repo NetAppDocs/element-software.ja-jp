@@ -5,6 +5,7 @@ keywords: virtual,network,modify,modifying,change,changing,edit,editing,modifyvi
 summary: ModifyVirtualNetwork メソッドを使用して、既存の仮想ネットワークの属性を変更できます。 
 ---
 = ModifyVirtualNetwork
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

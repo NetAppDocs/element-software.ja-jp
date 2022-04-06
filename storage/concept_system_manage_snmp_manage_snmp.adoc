@@ -5,6 +5,7 @@ keywords: snmp, manage, config, cluster, requestor, usm, traps, monitor
 summary: クラスタに簡易ネットワーク管理プロトコル（ SNMP ）を設定できます。 
 ---
 = SNMP を管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

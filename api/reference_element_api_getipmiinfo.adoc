@@ -5,6 +5,7 @@ keywords: hardware,sensor,info,ipmi,report,get,getting,getipmiinfo
 summary: GetIpmiInfo メソッドを使用すると、システムが監視するノードファン、吸気温度、排気温度、および電源装置に関するセンサー（オブジェクト）の詳細レポートを表示できます。 
 ---
 = GetIpmiInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

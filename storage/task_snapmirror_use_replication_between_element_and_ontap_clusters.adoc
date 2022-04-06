@@ -5,6 +5,7 @@ keywords: replication, snapmirror, data protection
 summary: SnapMirror 関係は、 NetAppElement UI のデータ保護タブで作成できます。この情報をユーザインターフェイスで確認するには、 SnapMirror 機能を有効にする必要があります。 
 ---
 = Element クラスタと ONTAP クラスタの間で SnapMirror レプリケーションを使用
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

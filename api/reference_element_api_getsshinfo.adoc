@@ -5,6 +5,7 @@ keywords: SSH,status,get,getting,getsshinfo
 summary: GetSshInfo メソッドを使用すると、 1 つのノードの SSH サービスのステータスを照会できます。 
 ---
 = GetSshInfo の順にクリックします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

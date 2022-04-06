@@ -5,6 +5,7 @@ keywords: nvram,info,get,getting,getnvraminfo
 summary: GetNvramInfo メソッドを使用して、各ノードから NVRAM カードに関する情報を取得できます。 
 ---
 = GetNvramInfo をクリックします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

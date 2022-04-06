@@ -5,6 +5,7 @@ keywords: cluster pairs, delete
 summary: ペアのいずれか一方のクラスタの Element UI から、クラスタペアを削除できます。 
 ---
 = クラスタペアを削除する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

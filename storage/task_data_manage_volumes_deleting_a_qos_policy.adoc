@@ -5,6 +5,7 @@ keywords: qos policy, delete, volumes
 summary: 不要になった QoS ポリシーを削除できます。QoS ポリシーを削除すると、そのポリシーに関連付けられているすべてのボリュームの QoS 設定は維持されますが、ポリシーとの関連付けは解除されます。 
 ---
 = QoS ポリシーを削除する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

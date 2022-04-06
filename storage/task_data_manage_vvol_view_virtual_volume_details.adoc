@@ -5,6 +5,7 @@ keywords: virtual volumes, view details vvols, vvols performance activity, vSphe
 summary: Element UI では、クラスタ上のすべてのアクティブな仮想ボリュームに関する情報を確認できます。入力、出力、スループット、レイテンシなど、各仮想ボリュームのパフォーマンスアクティビティを表示することもできます。 キュー深度とボリューム情報。 
 ---
 = 仮想ボリュームの詳細を表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

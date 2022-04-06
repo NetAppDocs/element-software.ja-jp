@@ -5,6 +5,7 @@ keywords: what is, node, management node, storage node, fibre channel, state, pe
 summary: ノードは、クラスタにグループ化され、ブロックストレージまたはコンピューティングリソースとしてアクセスされるハードウェアです。 
 ---
 = ノード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

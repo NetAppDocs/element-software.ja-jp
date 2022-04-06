@@ -5,6 +5,7 @@ keywords: bindings, vvols, bound virtual volumes
 summary: 仮想ボリュームを使用して I/O 処理を実行するには、最初に ESXi ホストから仮想ボリュームをバインドする必要があります。 
 ---
 = バインド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

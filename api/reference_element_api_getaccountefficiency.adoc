@@ -5,6 +5,7 @@ keywords: accounts,account,efficiency,get,getting,GetAccountEfficiency
 summary: GetAccountEfficiency を使用すると、ボリュームアカウントの効率性に関する統計を取得できます。このメソッドは、パラメータとして指定したアカウントについてのみ、効率性に関する情報を返します。 
 ---
 = GetAccountEfficiency
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

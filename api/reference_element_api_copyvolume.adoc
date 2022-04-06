@@ -5,6 +5,7 @@ keywords: volume,volumes,CopyVolume,overwrite,overwriting,data
 summary: CopyVolume メソッドを使用すると、既存のボリュームのデータコンテンツを別のボリューム（または Snapshot\ ）のデータコンテンツで上書きできます。IQN 、 QoS 設定、サイズ、アカウント、ボリュームアクセスグループのメンバーシップなどの、デスティネーションボリュームの属性は変更されません。デスティネーションボリュームは、すでに存在している必要があり、ソースボリュームと同じサイズである必要があります。 
 ---
 = CopyVolume （コピーボリューム）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

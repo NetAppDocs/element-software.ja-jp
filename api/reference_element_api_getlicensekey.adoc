@@ -5,6 +5,7 @@ keywords: cluster,get,getting,license,key
 summary: SolidFire Enterprise SDS ストレージクラスタでは、 GetLicenseKey メソッドを使用して、ストレージクラスタの現在のライセンスキーを取得できます。ストレージクラスタのライセンスキーは、クラスタの注文番号とシリアル番号で構成され、 Element ソフトウェア用に購入した容量モデルがアクティブになります。 
 ---
 = GetLicenseKey の 1 つ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

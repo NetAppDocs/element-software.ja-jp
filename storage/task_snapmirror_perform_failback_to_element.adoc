@@ -5,6 +5,7 @@ keywords: failback, perform a failbacl, Element, snapmirror
 summary: プライマリ側の問題が軽減されたら、元のソースボリュームを再同期し、 NetApp Element ソフトウェアへのフェイルバックを実行する必要があります。実行する手順は、元のソースボリュームがまだ存在しているか、あるいは新たに作成したボリュームへのフェイルバックが必要かによって異なります。 
 ---
 = Element へのフェイルバックを実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

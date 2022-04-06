@@ -5,6 +5,7 @@ keywords: KMIP,key server,unassigning,removing,remove,unassign,removekeyserverfr
 summary: RemoveKeyServerFromProviderKmip メソッドを使用すると、指定した Key Management Interoperability Protocol\ （ KMIP \ ）キーサーバを、割り当て先のプロバイダから解除できます。キーサーバが最後のサーバであり、そのプロバイダがアクティブである（現在使用中のキーを提供している）場合を除き、プロバイダからキーサーバの割り当てを解除できます。指定したキーサーバがプロバイダに割り当てられていない場合、処理は実行されず、エラーは返されません。 
 ---
 = RemoveKeyServerFromProviderKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,usmUser
 summary: SetSnmpInfo API メソッドを使用すると、 SNMP の usmUser オブジェクトを使用してストレージクラスタで SNMP を設定できます。 
 ---
 = usmUser
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

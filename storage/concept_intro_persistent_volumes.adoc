@@ -5,6 +5,7 @@ keywords: persistent volumes, what are persistent volumes
 summary: 永続ボリュームを使用すると、管理ノードの設定データをローカルな VM ではなく指定したストレージクラスタに格納できるため、管理ノードが失われた場合や削除された場合でもデータを保持することができます。永続ボリュームはオプションですが、推奨される管理ノード設定です。 
 ---
 = 永続ボリューム
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

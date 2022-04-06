@@ -5,6 +5,7 @@ keywords: list,listing,node,fibre,channel,port,info,listnodefibrechannelportinfo
 summary: ListNodeFibreChannelPortInfo メソッドを使用すると、ノードの Fibre Channel ポートに関する情報をリストできます。 
 ---
 = ListNodeFibreChannelPortInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

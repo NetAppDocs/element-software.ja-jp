@@ -5,6 +5,7 @@ keywords: ssl,cert,certificate,remove,removing,node,management,removenodesslcert
 summary: RemoveNodeSSLCertificate メソッドを使用すると、管理ノードのユーザ SSL 証明書と秘密鍵を削除できます。証明書と秘密鍵を削除すると、以降は管理ノードでデフォルトの証明書と秘密鍵を使用するように設定されます。 
 ---
 = RemoveNodeSSLCertificate
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

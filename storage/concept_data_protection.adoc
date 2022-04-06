@@ -5,6 +5,7 @@ keywords: data protection, protect your data, snapshots, replication, back up
 summary: NetApp Element ソフトウェアでは、さまざまな機能を使用してデータを保護できます。たとえば、個々のボリュームまたはボリュームグループの Snapshot 、 Element で実行されているクラスタとボリュームの間のレプリケーション、 ONTAP システムへのレプリケーションを利用できます。 
 ---
 = データを保護
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

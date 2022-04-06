@@ -5,6 +5,7 @@ keywords: snapmirror,relationship,relationships,quiesce,quiescing,quiescescnapmi
 summary: Element ソフトウェア Web UI は、 QuiesSnapMirrorRelationship メソッドを使用して、 SnapMirror 関係の以降のデータ転送を無効にします。転送が実行中の場合、転送が完了するまで関係のステータスは「休止」になります。現在の転送を中止した場合、転送は再開されません。関係のデータ転送を再び有効にするには、 ResumeSnapMirrorRelationship API メソッドを使用します。 
 ---
 = 休止 SnapMirror 関係
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

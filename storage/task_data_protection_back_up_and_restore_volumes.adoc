@@ -5,6 +5,7 @@ keywords: volumes, backup and restore
 summary: 他の SolidFire ストレージ、および Amazon S3 または OpenStack Swift と互換性のあるセカンダリオブジェクトストアに対して、ボリュームのバックアップとリストアを実行できます。 
 ---
 = ボリュームのバックアップとリストア
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

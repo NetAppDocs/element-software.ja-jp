@@ -5,6 +5,7 @@ keywords:
 summary: ボリュームアクセスグループによって、 Fibre Channel クライアントと SolidFire ストレージシステム上のボリューム間の通信が可能になります。Fibre Channel クライアントのイニシエータ（ WWPN ）をボリュームアクセスグループ内のボリュームにマッピングすることで、 Fibre Channel ネットワークと SolidFire ボリュームの間の安全なデータ I/O 通信が実現します。 
 ---
 = Fibre Channel クライアントのボリュームアクセスグループを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

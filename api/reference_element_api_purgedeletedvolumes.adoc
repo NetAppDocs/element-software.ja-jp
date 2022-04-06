@@ -5,6 +5,7 @@ keywords: volume,volumes,purge,purging,multiple,deleted,purgedeletedvolumes
 summary: PurgeDeletedVolumes メソッドを使用すると、削除されたボリュームをただちに完全にパージできます。このメソッドを使用すると、一度に最大 500 個のボリュームをパージできます。 
 ---
 = PurgeDeletedVolumes の場合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

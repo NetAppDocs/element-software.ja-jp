@@ -5,6 +5,7 @@ keywords: encryption,enable,enabling,EnableEncryptionAtRest
 summary: EnableEncryptionAtRest メソッドを使用すると、クラスタの保存データの Advanced Encryption Standard\ （ AES\ ） 256 ビット暗号化を有効にできます。これにより、各ノードのドライブで使用される暗号化キーをクラスタで管理できるようになります。この機能はデフォルトでは有効になっていません。 
 ---
 = EnableEncryptionAtRest
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

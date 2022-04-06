@@ -5,6 +5,7 @@ keywords: object,objects,network
 summary: network\ （ボンディングインターフェイス \ ）オブジェクトには、ストレージノード上のボンディングされたネットワークインターフェイスの構成情報が含まれます。GetConfig メソッドと GetNetworkConfig メソッドを使用して、ストレージノードのこの情報を取得できます。 
 ---
 = network （ボンディングインターフェイス）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

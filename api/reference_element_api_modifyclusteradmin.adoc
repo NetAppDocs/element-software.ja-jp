@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,cluster,admin,settings,m
 summary: ModifyClusterAdmin メソッドを使用すると、クラスタ管理、 LDAP クラスタ管理、またはサードパーティのアイデンティティプロバイダ / （ IdP ）クラスタ管理者の設定を変更できます。管理者のクラスタ管理者アカウントのアクセス権を変更することはできません。 
 ---
 = ModifyClusterAdmin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

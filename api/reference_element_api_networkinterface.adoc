@@ -5,6 +5,7 @@ keywords: object,objects,networkInterface
 summary: NetworkInterface オブジェクトには、ストレージノード上の個々のネットワークインターフェイスの設定情報が含まれます。 
 ---
 = NetworkInterface の略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

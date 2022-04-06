@@ -5,6 +5,7 @@ keywords: object,objects,virtualVolume
 summary: virtualVolume オブジェクトには、仮想ボリュームの情報と仮想ボリュームの Snapshot の情報が含まれます。稼働情報や使用状況に関する情報は含まれません。ListVirtualVolumes メソッドを使用すると、クラスタのこの情報を取得できます。 
 ---
 = virtualVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: element, solidfire esds, volumes, accounts, snapshots, virtual volumes
 summary: ストレージクラスタに SolidFire ESDS をインストールしたら、 Element UI 、 Element API 、または NetApp Element Plug-in for vCenter Server （ VCP ）を使用してストレージクラスタを管理できます。 
 ---
 = SolidFire ESDS ストレージを管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

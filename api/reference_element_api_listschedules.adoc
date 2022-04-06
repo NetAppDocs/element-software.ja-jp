@@ -5,6 +5,7 @@ keywords: snapshot,snapshots,list,listing,information,schedule,schedules,listsch
 summary: ListSchedules を使用すると、作成済みのすべてのスケジュールされた Snapshot に関する情報を取得できます。 
 ---
 = ListSchedules （リストスケジュール
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

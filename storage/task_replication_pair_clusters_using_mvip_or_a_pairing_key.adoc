@@ -5,6 +5,7 @@ keywords: pair cluster, mvip, pairing key, cluster pairing
 summary: 両方のクラスタにクラスタ管理者としてアクセスできる場合は、ターゲットクラスタの MVIP を使用してソースとターゲットのクラスタをペアリングできます。クラスタペアの一方のクラスタにしかクラスタ管理者としてアクセスできない場合は、ターゲットクラスタでペアリングキーを使用してクラスタをペアリングします。 
 ---
 = MVIP またはペアリングキーを使用してクラスタをペアリング
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

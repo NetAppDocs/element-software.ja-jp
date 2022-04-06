@@ -5,6 +5,7 @@ keywords: sign request, certificate authority, software encryption at rest, ear,
 summary: 以下の手順に従い、リストされている Element API メソッドを使用して外部キー管理機能を設定できます。 
 ---
 = 外部キー管理をセットアップする
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

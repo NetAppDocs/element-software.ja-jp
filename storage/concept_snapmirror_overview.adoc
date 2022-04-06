@@ -5,6 +5,7 @@ keywords: overview, snapmirror, snapshots, replicating between clusters, managin
 summary: NetApp Element ソフトウェアを実行するシステムでは、 NetApp ONTAP システムとの間での SnapMirror 機能を使用した Snapshot のコピーとリストアがサポートされます。 
 ---
 = SnapMirror の概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

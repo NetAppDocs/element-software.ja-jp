@@ -5,6 +5,7 @@ keywords: solidfire esds, uninstalling solidfire esds, ansible role
 summary: ノード上の SolidFire ESDS を削除することで、 SolidFire ESDS をインストールしたノードを「リセット」できます。ノードで SolidFire ESDS を復元するには、すべてのインストール手順を実行する必要があります。 
 ---
 = ノードで SolidFire ESDS をアンインストールします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

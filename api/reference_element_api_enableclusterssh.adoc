@@ -5,6 +5,7 @@ keywords: SSH,enabling,enable,cluster,EnableClusterSsh
 summary: EnableClusterSsh メソッドを使用すると、ストレージクラスタ内のすべてのノードで SSH サービスを有効にすることができます。 
 ---
 = EnableClusterSsh
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: objects,object,clusterConfig
 summary: clusterconfig オブジェクトは、ノードがクラスタとの通信に使用する情報を返します。 
 ---
 = clusterconfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

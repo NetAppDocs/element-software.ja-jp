@@ -5,6 +5,7 @@ keywords: objects,object,clusterCapacity
 summary: clusterCapacity オブジェクトには、クラスタの容量測定の概要が含まれます。GetClusterCapacity API メソッドを使用すると、クラスタの容量情報を取得できます。オブジェクトメンバーのスペース測定値はバイト単位で計算されます。 
 ---
 = clusterCapacity
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

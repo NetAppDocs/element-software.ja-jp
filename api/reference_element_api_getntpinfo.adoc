@@ -5,6 +5,7 @@ keywords: ntp,info,get,getting,getntpinfo
 summary: GetNtpInfo メソッドを使用すると、現在のネットワークタイムプロトコル（ NTP ）設定情報を取得できます。 
 ---
 = GetNtpInfo を使用します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

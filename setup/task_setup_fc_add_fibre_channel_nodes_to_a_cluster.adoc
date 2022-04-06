@@ -5,6 +5,7 @@ keywords:
 summary: ストレージの追加が必要になったとき、またはクラスタ作成時に、クラスタに Fibre Channel ノードを追加できます。Fibre Channel ノードは、初回の電源投入時に初期設定を行う必要があります。設定が完了したノードは保留状態のノードのリストに表示され、クラスタに追加できます。 
 ---
 = クラスタに Fibre Channel ノードを追加します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

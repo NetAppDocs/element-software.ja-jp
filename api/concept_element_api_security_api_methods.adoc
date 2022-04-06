@@ -5,6 +5,7 @@ keywords: security,key management,encryption
 summary: Element ソフトウェアは、外部キー管理サーバなどの外部セキュリティ関連サービスと統合できます。これらのセキュリティ関連のメソッドを使用して、保存データの暗号化のための外部キー管理などの Element セキュリティ機能を設定できます。 
 ---
 = セキュリティ API メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

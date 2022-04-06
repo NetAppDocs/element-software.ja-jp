@@ -5,6 +5,7 @@ keywords: object,objects,network
 summary: network\ （ローカルインターフェイス \ ）オブジェクトには、ストレージノード上のループバックインターフェイスなどのローカルネットワークインターフェイスの設定情報が含まれます。GetConfig メソッドと GetNetworkConfig メソッドを使用して、ストレージノードのこの情報を取得できます。 
 ---
 = network （ローカルインターフェイス）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

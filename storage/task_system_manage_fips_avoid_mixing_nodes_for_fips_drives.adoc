@@ -5,6 +5,7 @@ keywords: fips, security, federal information processing standards, 140-2, nodes
 summary: FIPS ドライブ機能を有効にする準備として、 FIPS ドライブに対応しているノードと対応していないノードが混在しないようにする必要があります。 
 ---
 = FIPS ドライブのノードを混在させないようにします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

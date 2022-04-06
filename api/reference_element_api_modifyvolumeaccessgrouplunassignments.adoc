@@ -5,6 +5,7 @@ keywords: volumes,volume,defining,define,modify,modifying,edit,editing,change,ch
 summary: ModifyVolumeAccessGroupLunAssignments メソッドを使用すると、特定のボリュームにカスタムの LUN の割り当てを定義できます。 
 ---
 = ModifyVolumeAccessGroupLunAssignments
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

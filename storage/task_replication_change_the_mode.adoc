@@ -5,6 +5,7 @@ keywords: volume pairings, replication mode, change, volume pair properties
 summary: ボリュームペアのプロパティを編集して、ボリュームペア関係のレプリケーションモードを変更することができます。 
 ---
 = レプリケーションのモードを変更します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

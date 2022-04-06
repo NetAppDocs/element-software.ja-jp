@@ -5,6 +5,7 @@ keywords: object,objects,fault
 summary: fault オブジェクトには、クラスタで検出された障害の情報が含まれます。ListClusterFaults メソッドは、クラスタ障害情報を返します。 
 ---
 = 障害
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

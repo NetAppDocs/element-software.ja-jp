@@ -5,6 +5,7 @@ keywords: get,getting,pending,operation,getpendingoperation
 summary: GetPendingOperation メソッドを使用すると、ノードで現在進行中の処理を検出できます。このメソッドは、処理の完了を報告する目的にも使用できます。 
 ---
 = GetPendingOperation をクリックします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

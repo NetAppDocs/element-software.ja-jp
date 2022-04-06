@@ -5,6 +5,7 @@ keywords: LDAP,cluster,admin,add,adding,addldapclusteradmin
 summary: AddLdapClusterAdmin を使用すると、新しい LDAP クラスタ管理者ユーザを追加できます。LDAP クラスタ管理者は、 API および管理ツールを使用してクラスタを管理できます。LDAP クラスタ管理者アカウントは、標準のテナントアカウントと完全に別のもので、関連性はありません。 
 ---
 = AddLdapClusterAdmin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

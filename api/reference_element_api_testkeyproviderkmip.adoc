@@ -5,6 +5,7 @@ keywords: KMIP,key provider,testing,test
 summary: TestKeyProviderKmip メソッドを使用すると、指定した Key Management Interoperability Protocol\ （ KMIP \ ）キープロバイダがアクセス可能で、正常に機能しているかどうかをテストできます。 
 ---
 = TestKeyProviderKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

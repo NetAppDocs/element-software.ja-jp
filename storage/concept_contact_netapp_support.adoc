@@ -5,6 +5,7 @@ keywords: contact,support
 summary: ネットアップ製品に関するサポートのご依頼、ご意見やご要望については、ネットアップサポートまでお問い合わせください。 
 ---
 = ネットアップサポートにお問い合わせください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

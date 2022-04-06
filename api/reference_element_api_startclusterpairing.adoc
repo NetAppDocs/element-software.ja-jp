@@ -5,6 +5,7 @@ keywords: cluster,pair,pairing,start,starting,startclusterpairing
 summary: StartClusterPairing メソッドを使用すると、クラスタからエンコードされたキーを作成できます。このキーを使用して別のクラスタとペアリングできます。この API で作成されるキーは、 CompleteClusterPairing メソッドでクラスタペアリングを確立するために使用されます。1 つのクラスタを最大で 4 つの他のクラスタとペアリングできます。 
 ---
 = StartClusterPairing を参照してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

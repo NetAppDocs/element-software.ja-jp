@@ -5,6 +5,7 @@ keywords: volume pairing, messages, replication, data protection
 summary: ボリュームペアリングに関するメッセージは、初回のペアリングプロセス時にデータ保護タブのボリュームペアページで確認できます。これらのメッセージは、 Replicating Volumes （レプリケーションボリューム）リストビューのペアのソースとターゲットの両方に表示されます。 
 ---
 = ボリュームペアリングに関するメッセージ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

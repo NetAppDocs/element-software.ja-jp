@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorLunInfo
 summary: snapMirrorLunInfo オブジェクトには、 ONTAP の LUN オブジェクトに関する情報が含まれます。 
 ---
 = snapMirrorLunInfo の追加
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

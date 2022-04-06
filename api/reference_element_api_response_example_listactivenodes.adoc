@@ -5,6 +5,7 @@ keywords: response,example,listactivenodes
 summary: ListActiveNodes メソッドの応答例を次に示します。 
 ---
 = ListActiveNodes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

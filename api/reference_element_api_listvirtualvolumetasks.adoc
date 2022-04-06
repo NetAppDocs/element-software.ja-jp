@@ -5,6 +5,7 @@ keywords: virtual,volume,hosts,host,cluster,list,listing,listvirtualvolumetasks
 summary: ListVirtualVolumeTasks メソッドを使用すると、システム内の仮想ボリュームタスクのリストを取得できます。 
 ---
 = ListVirtualVolumeTasks を実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

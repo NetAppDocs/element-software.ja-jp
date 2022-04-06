@@ -5,6 +5,7 @@ keywords: object,objects,protocolEndpoint
 summary: protocolEndpoint オブジェクトには、プロトコルエンドポイントの属性が含まれます。ListProtocolEndpoints API メソッドを使用すると、クラスタ内のすべてのプロトコルエンドポイントに関する以下の情報を取得できます。 
 ---
 = ProtocolEndpoint
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

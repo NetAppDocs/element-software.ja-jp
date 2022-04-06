@@ -5,6 +5,7 @@ keywords: virtual routing, forwarding, enable, vrf, storage networks, create a v
 summary: 仮想ルーティング / 転送（ VRF ）を有効にすることができます。これにより、ルーティングテーブルの複数のインスタンスをルータ内に共存させ、同時に動作させることができます。この機能はストレージネットワークでのみ使用できます。 
 ---
 = 仮想ルーティング / 転送を有効にします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: qos policies, iops
 summary: SolidFire ストレージクラスタでは、サービス品質（ QoS ）パラメータをボリューム単位で指定できます。QoS を定義する 3 つの設定可能なパラメータである Min IOPS 、 Max IOPS 、および Burst IOPS を使用して、 IOPS （ 1 秒あたりの入出力）で測定されるクラスタパフォーマンスを保証することができます。 
 ---
 = Quality of Service の略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

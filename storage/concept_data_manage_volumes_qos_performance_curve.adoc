@@ -5,6 +5,7 @@ keywords: qos, performance curve, block size, iops
 summary: サービス品質（ QoS ）パフォーマンス曲線は、ブロックサイズと IOPS の割合の関係を示します。 
 ---
 = QoS パフォーマンス曲線
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

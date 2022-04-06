@@ -5,6 +5,7 @@ keywords: nodes, manage, cluster, capacity rule, pairs, stranded nodes
 summary: SolidFire ストレージノードと Fibre Channel ノードは、クラスタタブのノードページで管理できます。 
 ---
 = ノードを管理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

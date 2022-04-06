@@ -5,6 +5,7 @@ keywords: API,method,return,list,methods,GetAPI
 summary: GetAPI メソッドを使用すると、システム内で使用可能なすべての API メソッドとサポート対象の API エンドポイントのリストを取得できます。 
 ---
 = GetAPI
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

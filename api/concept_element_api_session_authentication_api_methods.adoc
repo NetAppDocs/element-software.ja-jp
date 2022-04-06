@@ -5,6 +5,7 @@ keywords: session auth
 summary: セッションベースの認証を使用してユーザセッションを管理できます。 
 ---
 = セッション認証 API メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

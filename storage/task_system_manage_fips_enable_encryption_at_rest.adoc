@@ -5,6 +5,7 @@ keywords: fips, security, encryption at rest, enable, disable, drives
 summary: 保存データの暗号化をクラスタ全体で有効または無効にすることができます。この機能はデフォルトでは有効になっていません。FIPS ドライブをサポートするには、保存データの暗号化を有効にする必要があります。 
 ---
 = 保存データの暗号化を有効にします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

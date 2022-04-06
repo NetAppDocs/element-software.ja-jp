@@ -5,6 +5,7 @@ keywords: create,creating,storage,container,virtual,volume,volumes,vvol,vvols,Cr
 summary: CreateStorageContainer メソッドを使用すると、仮想ボリューム（ VVol ）ストレージコンテナを作成できます。ストレージコンテナは、レポートの作成やリソースの割り当てに使用できます。仮想ボリューム機能を使用するには、少なくとも 1 つのストレージコンテナを作成する必要があります。 
 ---
 = CreateStorageContainer を作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

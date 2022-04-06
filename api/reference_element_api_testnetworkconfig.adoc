@@ -5,6 +5,7 @@ keywords: test,testing,network,config,configuration,testnetworkconfig
 summary: TestNetworkConfig メソッドを使用すると、設定したネットワーク設定がシステムで使用されているネットワーク設定と一致することを確認できます。 
 ---
 = TestNetworkConfig （テスト）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

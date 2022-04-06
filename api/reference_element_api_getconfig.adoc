@@ -5,6 +5,7 @@ keywords: node,get,getting,info,config,configuration,getconfig
 summary: GetConfig API メソッドを使用すると、ノードのすべての設定情報を取得できます。この API メソッドは、 GetClusterConfig と GetNetworkConfig の両方の API メソッドで使用可能な情報を含みます。 
 ---
 = 設定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

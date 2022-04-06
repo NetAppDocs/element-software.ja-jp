@@ -5,6 +5,7 @@ keywords: volume pairings, volume id, replication
 summary: リモートクラスタのクラスタ管理者のクレデンシャルがあれば、ボリュームをリモートクラスタの別のボリュームとペアリングできます。 
 ---
 = ボリューム ID を使用してボリュームをペアリング
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

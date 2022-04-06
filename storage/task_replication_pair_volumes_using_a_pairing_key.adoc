@@ -5,6 +5,7 @@ keywords: volume pairings, pairing key, replication
 summary: リモートクラスタのクラスタ管理者のクレデンシャルがない場合は、ペアリングキーを使用してボリュームをリモートクラスタの別のボリュームとペアリングできます。 
 ---
 = ペアリングキーを使用してボリュームをペアリングします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: account,method,methods,API,managing,manage
 summary: アカウントメソッドを使用すると、アカウントおよびセキュリティ情報を追加、削除、表示、および変更できます。 
 ---
 = アカウント API メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

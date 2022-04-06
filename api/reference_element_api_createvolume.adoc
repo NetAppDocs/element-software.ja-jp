@@ -5,6 +5,7 @@ keywords: create,volume,volumes,creating,CreateVolume
 summary: CreateVolume メソッドを使用すると、クラスタに新しい空のボリュームを作成できます。作成したボリュームはすぐに iSCSI 経由で接続できます。 
 ---
 = CreateVolume を使用します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

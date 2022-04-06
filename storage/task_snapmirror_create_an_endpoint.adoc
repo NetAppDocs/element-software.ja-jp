@@ -5,6 +5,7 @@ keywords: endpoints, create, snapmirror, ui
 summary: 関係を作成する前に、 NetApp Element UI で SnapMirror エンドポイントを作成する必要があります。 
 ---
 = SnapMirror エンドポイントを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

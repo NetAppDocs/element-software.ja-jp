@@ -5,6 +5,7 @@ keywords: ekm, api commands, key providers
 summary: EKM の管理と設定に使用できるすべての API のリストです。 
 ---
 = 外部キー管理 API コマンド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

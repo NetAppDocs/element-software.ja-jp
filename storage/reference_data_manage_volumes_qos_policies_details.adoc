@@ -5,6 +5,7 @@ keywords: qos policies
 summary: QoS ポリシーの詳細は、管理タブで確認できます。 
 ---
 = QoS ポリシーの詳細
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

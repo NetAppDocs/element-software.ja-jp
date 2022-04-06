@@ -5,6 +5,7 @@ keywords: element, solidfire, cluster, what is, authoritative  cluster, rule of 
 summary: クラスタは、 SolidFire ストレージシステムの中心であり、複数のノードで構成されます。SolidFire のストレージ効率化を実現するには、クラスタに少なくとも 4 つのノードが必要です。クラスタはネットワーク上では 1 つの論理グループとして認識され、ブロックストレージとしてアクセスできます。 
 ---
 = クラスタ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: multi-factor,MFA,idp,authentication,methods
 summary: 多要素認証（ MFA ）を使用して、 Security Assertion Markup Language （ SAML ）を介してサードパーティのアイデンティティプロバイダ（ IdP ）を使用してユーザセッションを管理できます。 
 ---
 = 多要素認証 API メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

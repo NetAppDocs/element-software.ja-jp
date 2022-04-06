@@ -5,6 +5,7 @@ keywords: nodes, changing cluster settings, per-node UI
 summary: クラスタの設定およびノードのホスト名の変更後、ストレージノードのクラスタ設定を確認することができます。 
 ---
 = ノード UI から取得したクラスタ設定の詳細
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

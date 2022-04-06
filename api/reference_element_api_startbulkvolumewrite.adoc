@@ -5,6 +5,7 @@ keywords: volume,bulk,start,starting,write,session,startbulkvolumewrite
 summary: StartBulkVolumeWrite メソッドを使用すると、指定したボリュームの一括ボリューム書き込みセッションを開始できます。 
 ---
 = StartBulkVolumeWrite
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

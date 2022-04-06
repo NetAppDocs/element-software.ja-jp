@@ -5,6 +5,7 @@ keywords: storage container, create
 summary: Element UI でストレージコンテナを作成して、 vCenter で検出できます。VVol を使用する仮想マシンのプロビジョニングを開始するためには、少なくとも 1 つのストレージコンテナを作成する必要があります。 
 ---
 = ストレージコンテナを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

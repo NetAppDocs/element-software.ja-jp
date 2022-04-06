@@ -5,6 +5,7 @@ keywords: object,objects,groupSnapshot
 summary: groupSnapshot オブジェクトには、ボリュームのグループ Snapshot の情報が含まれます。ListGroupSnapshots API メソッドを使用すると、グループ Snapshot 情報を取得できます。 
 ---
 = groupSnapshot
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

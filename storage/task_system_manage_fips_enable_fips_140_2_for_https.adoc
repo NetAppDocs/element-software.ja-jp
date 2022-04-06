@@ -5,6 +5,7 @@ keywords: FIPS 140-2, enable fips, federal information processing standards, ncs
 summary: EnableFeature API メソッドを使用すると、 HTTPS 通信の FIPS 140-2 動作モードを有効にできます。 
 ---
 = クラスタで HTTPS の FIPS 140-2 を有効にしてください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

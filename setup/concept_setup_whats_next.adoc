@@ -5,6 +5,7 @@ keywords: element, solidfire, workflow
 summary: 開始する前に、 NetApp Element ソフトウェアのインストールとセットアップの手順を理解しておくことを推奨します。 
 ---
 = 次の手順
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

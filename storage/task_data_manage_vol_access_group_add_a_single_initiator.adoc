@@ -5,6 +5,7 @@ keywords: initiator, add to volume access group, access groups, add single initi
 summary: 既存のボリュームアクセスグループにイニシエータを追加できます。 
 ---
 = ボリュームアクセスグループに単一のイニシエータを追加します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

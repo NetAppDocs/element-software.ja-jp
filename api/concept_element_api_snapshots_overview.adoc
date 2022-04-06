@@ -5,6 +5,7 @@ keywords: snapshot,overview
 summary: ボリューム Snapshot は、ボリュームのポイントインタイムコピーです。Snapshot を使用して、 Snapshot が作成された時点の状態にボリュームをロールバックできます。 
 ---
 = Snapshot の概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

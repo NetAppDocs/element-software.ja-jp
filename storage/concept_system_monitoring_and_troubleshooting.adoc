@@ -5,6 +5,7 @@ keywords: trouble, troubleshoot, monitor, element, alert, event
 summary: システムの監視は、診断目的、および各種システム処理のパフォーマンスの傾向やステータスに関する情報を収集するために実行します。メンテナンスのためにノードや SSD の交換が必要になる場合があります。 
 ---
 = システムのトラブルシューティングを行います
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

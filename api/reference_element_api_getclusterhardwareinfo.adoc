@@ -5,6 +5,7 @@ keywords: get,getting,cluster,hardware,getclusterhardwareinfo
 summary: GetClusterHardwareInfo メソッドを使用すると、クラスタ内のすべての Fibre Channel ノード、 iSCSI ノード、およびドライブのハードウェアステータスと情報を取得できます。通常は、メーカー、ベンダー、バージョン、およびその他の関連するハードウェア識別情報が含まれます。 
 ---
 = GetClusterHardwareInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

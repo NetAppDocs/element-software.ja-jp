@@ -5,6 +5,7 @@ keywords: idp, json, mfa, cluster, metadata, saml
 summary: 以下の Element API による基本的な手順を使用して、マルチファクタ認証を使用するようにクラスタをセットアップできます。各 API メソッドの詳細については、 Element API リファレンスのドキュメントを参照してください。 
 ---
 = 多要素認証をセットアップします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

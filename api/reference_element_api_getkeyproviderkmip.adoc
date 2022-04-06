@@ -5,6 +5,7 @@ keywords: KMIP,key provider,retrieving,get,retrieve
 summary: GetKeyProviderKmip メソッドを使用すると、指定した Key Management Interoperability Protocol\ （ KMIP \ ）キープロバイダに関する情報を取得できます。 
 ---
 = GetKeyProviderKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

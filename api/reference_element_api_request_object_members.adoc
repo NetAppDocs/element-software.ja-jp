@@ -5,6 +5,7 @@ keywords: request,object,members
 summary: Element ソフトウェアの各 API 要求の基本要素は次のとおりです。 
 ---
 = 要求オブジェクトメンバー
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

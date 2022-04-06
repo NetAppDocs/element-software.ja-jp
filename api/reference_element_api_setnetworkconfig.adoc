@@ -5,6 +5,7 @@ keywords: network,config,configuration,set,setting,node,setnetworkconfig
 summary: SetNetworkConfig メソッドを使用して、ノードのネットワーク設定を設定できます。ノードの現在のネットワーク設定を表示するには、 GetNetworkConfig API メソッドを実行します。 
 ---
 = SetNetworkConfig の場合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

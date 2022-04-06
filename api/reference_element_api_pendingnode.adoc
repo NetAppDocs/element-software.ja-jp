@@ -5,6 +5,7 @@ keywords: object,objects,pendingNode
 summary: pendingNode オブジェクトには、クラスタに追加できるノードの情報が含まれます。ListPendingNodes API メソッドを使用すると、すべての Pending 状態のノードに関するこの情報のリストが返されます。AddNodes API メソッドを使用すると、リストに含まれるノードをクラスタに追加できます。 
 ---
 = pendingNode
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

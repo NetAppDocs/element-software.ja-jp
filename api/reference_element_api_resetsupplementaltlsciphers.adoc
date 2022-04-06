@@ -5,6 +5,7 @@ keywords: tls,cipher,reset,supplemental,resetsupplementaltlsciphers,restore,rest
 summary: ResetsendalTlsCiphers メソッドを使用すると、追加 TLS 暗号のリストをデフォルトに戻すことができます。このメソッドは、クラスタ全体に対して使用できます。 
 ---
 = ResetentsalTlsCiphers のサポート
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

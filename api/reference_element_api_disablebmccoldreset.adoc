@@ -5,6 +5,7 @@ keywords: BMC cold reset,BMC reset,disable BMC
 summary: DisableBmcColdReset メソッドを使用して、クラスタ内のすべてのノードのベースボード管理コントローラ \ （ BMC\ ）を定期的にリセットするバックグラウンドタスクを無効にできます。 
 ---
 = DisableBmcColdReset
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

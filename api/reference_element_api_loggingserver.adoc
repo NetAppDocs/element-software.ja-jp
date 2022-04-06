@@ -5,6 +5,7 @@ keywords: object,objects,loggingServer
 summary: loggingServer オブジェクトには、ストレージクラスタに対して設定されたロギングホストの情報が含まれます。GetRemoteLoggingHosts を使用して現在のロギングホストを特定してから、 SetRemoteLoggingHosts を使用して現在のロギングホストに新しいロギングホストを加えたリストを設定できます。 
 ---
 = loggingServer の場合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

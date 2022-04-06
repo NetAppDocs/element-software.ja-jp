@@ -5,6 +5,7 @@ keywords: object,objects,snmptraprecipient
 summary: snmpTrapRecipient オブジェクトには、ストレージクラスタが生成した SNMP トラップを受信するように設定されているホストに関する情報が含まれます。GetSnmpTrapInfo API メソッドを使用すると、 SNMP トラップを受信するように設定されているホストのリストを取得できます。 
 ---
 = snmpTrapRecipient のこと
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

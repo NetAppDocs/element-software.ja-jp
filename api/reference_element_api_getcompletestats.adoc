@@ -5,6 +5,7 @@ keywords:
 summary: ネットアップのエンジニアは、 GetCompleteStats API メソッドを使用して新機能をテストします。GetCompleteStats から返されるデータは文書化されておらず、頻繁に変わります。正確なデータである保証はありません。パフォーマンスデータの収集や Element ソフトウェアを実行するストレージクラスタとのその他の管理機能の統合には、 GetCompleteStats を使用しないでください。 
 ---
 = GetCompleteStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

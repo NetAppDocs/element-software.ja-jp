@@ -5,6 +5,7 @@ keywords: volume,access,groups,group,create,creating,CreateVolumeAccessGroup
 summary: CreateVolumeAccessGroup を使用すると、新しいボリュームアクセスグループを作成できます。ボリュームアクセスグループを作成するときは、名前を指定する必要があります。必要に応じて、イニシエータとボリュームを入力することもできます。 
 ---
 = CreateVolumeAccessGroup
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

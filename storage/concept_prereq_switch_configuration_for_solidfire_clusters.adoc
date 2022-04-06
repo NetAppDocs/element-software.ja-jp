@@ -5,6 +5,7 @@ keywords: cluster switch configuration, best practices for switch configuration,
 summary: NetApp Element ソフトウェアシステムには、スイッチに関する要件と、ストレージパフォーマンスを最適化するためのベストプラクティスがあります。 
 ---
 = Element ソフトウェアを実行するクラスタのスイッチ設定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

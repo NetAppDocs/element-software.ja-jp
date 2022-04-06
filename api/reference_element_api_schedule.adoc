@@ -5,6 +5,7 @@ keywords: object,objects,schedule
 summary: schedule オブジェクトには、ボリュームの Snapshot を自動的に作成するために設定されたスケジュールの情報が含まれます。ListSchedules API メソッドを使用すると、すべてのスケジュールの情報を取得できます。 
 ---
 = スケジュール
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

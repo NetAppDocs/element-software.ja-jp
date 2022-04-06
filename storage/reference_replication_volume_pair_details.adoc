@@ -5,6 +5,7 @@ keywords: volume pairs, replication, data protection
 summary: データ保護タブのボリュームペアページには、ペアリングされているボリュームまたはペアリング中のボリュームの情報が表示されます。ペアリングと進捗状況を示すメッセージがボリュームステータス列に表示されます。 
 ---
 = ボリュームペアの詳細
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

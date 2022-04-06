@@ -5,6 +5,7 @@ keywords: QoS,object,Quality,Service
 summary: API の多くの要求と応答では、オブジェクトとシンプルな型を使用します。オブジェクトはキーと値のペアの集まりで、値は単純なタイプまたは別のオブジェクトです。属性は、 JSON オブジェクトでユーザが設定できるカスタムの名前と値のペアです。一部のメソッドでは、オブジェクトの作成時または変更時に属性を追加できます。 
 ---
 = 属性（ Attributes ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

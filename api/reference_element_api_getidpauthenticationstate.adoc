@@ -5,6 +5,7 @@ keywords: IdP,idp,authentication,retrieve get,idp state
 summary: GetIdpAuthenticationState メソッドを使用すると、サードパーティ IdP を使用した認証の状態に関する情報を返すことができます。 
 ---
 = GetIdpAuthenticationState のこと
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

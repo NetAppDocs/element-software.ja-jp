@@ -5,6 +5,7 @@ keywords: drive,drives,test,testing,validating,hardware,testdrives
 summary: TestDrives メソッドを使用すると、ノードのすべてのドライブに対してハードウェア検証を実行できます。このメソッドは、ドライブのハードウェア障害を検出し、その内容を検証テストの結果で報告します。 
 ---
 = テストドライブ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: ontap,version,info,information,get,getting,api,support,getontapversion
 summary: Element Web UI は、 GetOntapVersionInfo を使用して、 SnapMirror 関係にある ONTAP クラスタから API バージョンのサポートに関する情報を取得します。 
 ---
 = GetOntapVersionInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

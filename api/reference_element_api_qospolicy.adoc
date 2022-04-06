@@ -5,6 +5,7 @@ keywords: object,objects,QoSPolicy,QoS,policy,policies
 summary: QoSPolicy オブジェクトには、 Element ソフトウェアを実行しているストレージクラスタの QoS ポリシーに関する情報が含まれます。 
 ---
 = QoSPolicy のように表示
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

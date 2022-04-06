@@ -5,6 +5,7 @@ keywords: SSH,enable,enabling,single,node,EnableSSH
 summary: EnableSsh メソッドを使用すると、 1 つのノードに対して SSH サービスを有効にすることができます。このメソッドはクラスタ全体の SSH タイムアウト期間には影響せず、グローバルな SSH タイムアウトによって SSH が無効になると、当該ノードの SSH も無効になります。 
 ---
 = EnableSsh
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

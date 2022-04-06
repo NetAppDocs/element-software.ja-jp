@@ -5,6 +5,7 @@ keywords: authentication sessions,delete
 summary: DeleteAuthSession メソッドを使用すると、個々の認証セッションを削除できます。呼び出し元のユーザが ClusterAdmins/Administrator AccessGroup にない場合は、呼び出し元のユーザに属する認証セッションだけを削除できます。 
 ---
 = DeleteAuthSession の略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

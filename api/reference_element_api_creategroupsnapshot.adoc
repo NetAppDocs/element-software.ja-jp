@@ -5,6 +5,7 @@ keywords: volume,volumes,snapshot,snapshots,CreateGroupSnapshot,group,create,cre
 summary: CreateGroupSnapshot を使用すると、ボリュームのグループのポイントインタイムコピーを作成できます。 
 ---
 = CreateGroupSnapshot を作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

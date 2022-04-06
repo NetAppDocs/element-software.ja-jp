@@ -5,6 +5,7 @@ keywords: user types, account, cluster, access active nodes, per-node UI
 summary: NetApp Element ソフトウェアを実行するストレージクラスタには、プライマリクラスタ管理者アカウントとクラスタ管理者アカウントの 2 種類の管理者アカウントがあります。 
 ---
 = ストレージクラスタ管理者アカウントのタイプ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

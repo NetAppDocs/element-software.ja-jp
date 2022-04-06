@@ -5,6 +5,7 @@ keywords:
 summary: ネットアップのエンジニアは、 GetRawStats API メソッドを使用して新機能をテストします。GetRawStats から返されるデータは文書化されておらず、頻繁に変わります。正確なデータである保証はありません。パフォーマンスデータの収集や Element ソフトウェアを実行するストレージクラスタとの管理機能の統合に GetRawStats を使用することは避けてください。 
 ---
 = GetRawStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

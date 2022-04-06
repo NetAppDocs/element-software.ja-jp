@@ -5,6 +5,7 @@ keywords: configuring node,configure storage node,configuring using TUI,configur
 summary: 個々のノードをクラスタに追加する前に、ノードを設定する必要があります。ノードをラックユニットに設置してケーブル接続し、電源をオンにしたら、ノード UI またはノードのターミナルユーザインターフェイスを使用してノードのネットワーク設定を構成できます。 
 ---
 = ストレージノードを設定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

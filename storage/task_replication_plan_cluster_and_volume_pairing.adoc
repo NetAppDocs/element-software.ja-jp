@@ -5,6 +5,7 @@ keywords: cluster, volume pairing, plan for, real-time replication
 summary: リアルタイムでリモートレプリケーションを行うには、 Element ソフトウェアを実行する 2 つのストレージクラスタをペアリングし、各クラスタのボリュームをペアリングしてから、レプリケーションを検証する必要があります。レプリケーションが完了したら、ボリューム関係を削除します。 
 ---
 = リアルタイムレプリケーションのためのクラスタとボリュームのペアリングを計画します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

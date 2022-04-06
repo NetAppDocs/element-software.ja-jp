@@ -5,6 +5,7 @@ keywords: user interface, UI, API commands, SolidFire system
 summary: NetApp Element ソフトウェア Web ユーザインターフェイス（ Element UI ）を使用して、 SolidFire システムの一般的なタスクを監視および実行することができます。 
 ---
 = Element ソフトウェア UI の基本オプションを使用
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

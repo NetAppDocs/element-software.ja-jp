@@ -5,6 +5,7 @@ keywords: snmp, config, traps, notifications, monitor, health, enable, disable
 summary: システム管理者は、 SNMP トラップ（通知とも呼ばれる）を使用して SolidFire クラスタの健常性を監視できます。 
 ---
 = SNMP トラップを設定する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

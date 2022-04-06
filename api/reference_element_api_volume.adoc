@@ -5,6 +5,7 @@ keywords: object,objects,volume
 summary: volume オブジェクトには、ペアリングされていないボリュームまたはペアリングされているボリュームの設定情報が含まれこの情報には、実行時や使用状況に関する情報は含まれず、また仮想ボリュームに関する情報も含まれません。 
 ---
 = ボリューム
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

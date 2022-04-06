@@ -5,6 +5,7 @@ keywords: API,authentication,auth,SolidFire
 summary: すべての API 要求に HTTP のベーシック認証ヘッダーを含めることで、 API を使用する際にシステムで認証できます。認証情報を省略すると、認証されていない要求はシステムによって拒否され、 HTTP 401 応答が返されます。システムは、 TLS を介した HTTP のベーシック認証をサポートしています。 
 ---
 = API 認証
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

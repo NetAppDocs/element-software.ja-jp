@@ -5,6 +5,7 @@ keywords: host details, vvols, ESXi host details, virtual volumes, bindings, end
 summary: VVol タブの Hosts ページには、仮想ボリュームをホストしている VMware ESXi ホストに関する情報が表示されます。 
 ---
 = ホストの詳細
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

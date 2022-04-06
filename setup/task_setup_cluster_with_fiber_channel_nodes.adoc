@@ -5,6 +5,7 @@ keywords: element, solidfire, fibre channel, setup, node, cluster
 summary: ストレージノードを含むクラスタのセットアップ手順を理解しておく必要があります。 
 ---
 = Fibre Channel ノードを含むクラスタをセットアップする
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

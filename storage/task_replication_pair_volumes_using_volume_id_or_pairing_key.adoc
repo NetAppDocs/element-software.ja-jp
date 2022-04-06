@@ -5,6 +5,7 @@ keywords: volume pairings, pairing key, volume id, replication
 summary: ペアリングプロセスでは、ボリューム ID またはペアリングキーを使用して 2 つのボリュームをペアリングします。 
 ---
 = ボリューム ID またはペアリングキーを使用してボリュームをペアリングします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

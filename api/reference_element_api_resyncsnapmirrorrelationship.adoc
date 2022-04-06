@@ -5,6 +5,7 @@ keywords: SnapMirror,relationship,resync,resyncing,ResyncSnapMirrorRelationship
 summary: Element ソフトウェア Web UI は、 ResyncSnapMirrorRelationship メソッドを使用して、ソースエンドポイントとデスティネーションエンドポイント間のミラー関係を確立または再確立します。関係を再同期すると、共通の Snapshot コピーよりも新しいデスティネーションボリューム上の Snapshot が削除され、共通の Snapshot コピーをエクスポート済み Snapshot コピーとし、デスティネーションボリュームがデータ保護ボリュームとしてマウントされます。 
 ---
 = SnapMirror 関係を再構築します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

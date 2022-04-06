@@ -5,6 +5,7 @@ keywords: setup, element, solidfire active iq
 summary: 設定および導入方法に応じて、管理ノード、 Active IQ 、 NetApp Monitoring Agent \ （ NMA ）などのうち、どの SolidFire コンポーネントをインストールするべきかを確認できます。 
 ---
 = インストールする SolidFire コンポーネントを決定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

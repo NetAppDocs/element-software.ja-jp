@@ -5,6 +5,7 @@ keywords: SnapMirror,volume,volumes,break,breaking,relationship,ONTAP,source,sna
 summary: Element Web UI では、 BreakSnapMirrorVolume メソッドを使用して、 ONTAP ソースコンテナと Element ターゲットボリュームの間の SnapMirror 関係を解除します。Element SnapMirror ボリュームの解除は、 Element ボリュームへのデータのレプリケーション中に ONTAP システムが使用できなくなった場合に便利です。ストレージ管理者は、この機能を使用して、 Element SnapMirror ボリュームを制御したり、ボリュームとリモート ONTAP システムとの関係を解除したり、ボリュームを以前の Snapshot にリバートしたりできます。 
 ---
 = BreakSnapMirrorVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

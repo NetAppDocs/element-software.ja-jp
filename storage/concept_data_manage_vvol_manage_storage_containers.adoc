@@ -5,6 +5,7 @@ keywords: storage container, storage containers, about storage containers, clust
 summary: ストレージコンテナは vSphere のデータストアに相当し、 Element ソフトウェアを実行するクラスタ上に作成されます。 
 ---
 = ストレージコンテナを管理する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snmp,acl,get,getting,getsnmpacl
 summary: GetSnmpACL メソッドを使用すると、クラスタノードの現在の SNMP アクセス権限を取得できます。 
 ---
 = GetSnmpACL を追加します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

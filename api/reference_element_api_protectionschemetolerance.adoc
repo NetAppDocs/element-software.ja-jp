@@ -5,6 +5,7 @@ keywords: object,objects,protectionSchemeTolerance
 summary: protectionSchemeTolerance オブジェクトには、障害発生後もストレージクラスタでデータの読み取りと書き込みを継続できるかどうかの情報が含まれます。 
 ---
 = protectionSchemeTolerance のようになりました
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

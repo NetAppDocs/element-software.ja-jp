@@ -5,6 +5,7 @@ keywords: access group, delete
 summary: 不要になったアクセスグループを削除できます。ボリュームアクセスグループを削除する前に、イニシエータ ID とボリューム ID をそのグループから削除する必要はありません。アクセスグループを削除すると、ボリュームへのグループアクセスが切断されます。 
 ---
 = アクセスグループを削除する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: create,creating,initiator,CreateInitiators,WWPN,IQN,initiators
 summary: CreateInitiators を使用すると、複数の新しいイニシエータ IQN または World Wide Port Name （ WWPN ）を作成し、オプションでエイリアスと属性を割り当てることができます。CreateInitiators を使用して新しいイニシエータを作成すると同時に、作成したイニシエータをボリュームアクセスグループに追加することもできます。 
 ---
 = イニシエータを作成する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

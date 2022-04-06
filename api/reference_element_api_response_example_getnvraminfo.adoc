@@ -5,6 +5,7 @@ keywords: response,example,getnvraminfo
 summary: GetNvramInfo メソッドは、次の例のような応答を返します。 
 ---
 = GetNvramInfo をクリックします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

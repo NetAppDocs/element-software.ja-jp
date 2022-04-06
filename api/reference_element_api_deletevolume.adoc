@@ -5,6 +5,7 @@ keywords: volume,volumes,delete,deleting,DeleteVolume
 summary: DeleteVolume メソッドを使用すると、アクティブなボリュームを削除対象としてマークできます。マークされたボリュームは、クリーンアップ間隔の経過後にパージされます \ （完全に削除されます \ ）。 
 ---
 = DeleteVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

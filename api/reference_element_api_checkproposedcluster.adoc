@@ -5,6 +5,7 @@ keywords: cluster,creation,check,proposed,checking,nodes,node,before,CheckPropos
 summary: CheckProposedCluster メソッドを使用すると、一連のストレージノードについて、一連のストレージクラスタを作成する前にテストすることができます。この方法では、ノードの混在がアンバランスな場合や、 2 ノードのストレージクラスタでサポートされないノードタイプの場合など、試行によって発生する可能性のあるエラーや障害を特定できます。 
 ---
 = CheckProposedCluster の略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

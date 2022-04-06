@@ -5,6 +5,7 @@ keywords: cluster,version,info,get,getting,getclusterversioninfo
 summary: GetClusterVersionInfo メソッドを使用すると、クラスタ内の各ノードで実行中の Element ソフトウェアの情報を取得できます。また、このメソッドでは、現在アップグレード中のソフトウェアのノードに関する情報も返されます。 
 ---
 = GetClusterVersionInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

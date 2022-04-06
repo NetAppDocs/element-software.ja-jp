@@ -5,6 +5,7 @@ keywords: object,objects,initiator
 summary: initiator オブジェクトには、 iSCSI イニシエータまたは Fibre Channel イニシエータの情報が含まれます。IQN 識別子または WWPN 識別子が含まれる場合もあります。ListInitiators メソッドを使用すると、システムで認識されているすべてのイニシエータのリストを取得できます。イニシエータオブジェクトを使用して、ボリュームアクセスグループ経由での一連のボリュームへの SCSI イニシエータアクセスを設定します。イニシエータは一度に 1 つのボリュームアクセスグループのメンバーにしかできません。CreateInitiators メソッドおよび ModifyInitiators メソッドを使用して 1 つ以上の virtualNetworkID を指定することで、イニシエータアクセスを 1 つ以上の VLAN に制限できます。仮想ネットワークを指定しない場合、イニシエータはすべてのネットワークにアクセスできます。 
 ---
 = イニシエータ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snapshot,schedule,get,getting,getschedule
 summary: GetSchedule を使用すると、スケジュールされた Snapshot に関する情報を取得できます。 
 ---
 = GetSchedule
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

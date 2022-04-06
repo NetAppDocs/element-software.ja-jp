@@ -5,6 +5,7 @@ keywords: cluster,interface,preferences,preference,get,getting,getclusterinterfa
 summary: GetClusterInterfacePreference メソッドを使用すると、 Element ソフトウェアを実行するストレージクラスタと統合されたシステムで、既存のクラスタインターフェイス設定の情報を取得できます。このメソッドは内部で使用されます。 
 ---
 = GetClusterInterfacePreference のこと
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

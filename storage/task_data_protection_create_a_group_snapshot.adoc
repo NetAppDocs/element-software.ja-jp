@@ -5,6 +5,7 @@ keywords: group snapshot, create, volumes, schedule, automate group snapshots
 summary: ボリュームグループの Snapshot を作成できます。また、グループ Snapshot スケジュールを作成して、グループ Snapshot の作成を自動化することもできます。1 つのグループ Snapshot には、一度に最大 32 個のボリュームの Snapshot を含めることができます。 
 ---
 = グループ Snapshot を作成しています
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

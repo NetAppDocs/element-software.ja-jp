@@ -5,6 +5,7 @@ keywords: netapp, element, fqdn, ui, access, web, administration
 summary: システム FQDN Web UI アクセスを設定、削除、およびトラブルシューティングする方法について説明します。 
 ---
 = 完全修飾ドメイン名 Web UI アクセスを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

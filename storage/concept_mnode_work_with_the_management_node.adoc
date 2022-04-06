@@ -5,6 +5,7 @@ keywords: management node,mNode
 summary: 管理ノード \ （ mNode ）は、システムサービスのアップグレード、クラスタのアセットと設定の管理、システムのテストとユーティリティの実行、システム監視用の Active IQ の設定、トラブルシューティング用のネットアップサポートアクセスの有効化に使用できます。 
 ---
 = 管理ノードを操作します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

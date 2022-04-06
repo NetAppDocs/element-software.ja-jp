@@ -5,6 +5,7 @@ keywords: fips, ssl ciphers, 140-2, encryption algorithms
 summary: SSL 暗号は、ホストがセキュアな通信を確立するために使用する暗号化アルゴリズムです。Element ソフトウェアでサポートされる標準の暗号と、 FIPS 140-2 モードが有効な場合にサポートされる非標準の暗号があります。 
 ---
 = SSL 暗号
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: initiator delete, deleted multiple initiators
 summary: 不要になったイニシエータを削除できます。イニシエータを削除すると、関連付けられているすべてのボリュームアクセスグループから削除されます。イニシエータを使用した接続は、接続をリセットするまでは有効なままです。 
 ---
 = イニシエータを削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

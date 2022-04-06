@@ -5,6 +5,7 @@ keywords: running tasks, view progress of
 summary: ListSyncJobs および ListBulkVolumeJobs API メソッドが報告する、実行中のタスクの進捗状況と完了ステータスを Web UI で確認できます。実行中のタスクページには、 Element UI のレポートタブからアクセスできます。 
 ---
 = 実行中のタスクのステータスを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

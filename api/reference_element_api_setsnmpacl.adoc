@@ -5,6 +5,7 @@ keywords: setsnmpACL,set,setting,snmp,acl,permissions,access,control,list
 summary: SetSnmpACL メソッドを使用すると、クラスタノードの SNMP アクセス権限を設定できます。このインターフェイスで設定した値はクラスタ内のすべてのノードに適用され、指定した値により、以前の SetSnmpACL 呼び出しで設定されたすべての値が置き換えられます。また、このインターフェイスで設定した値により、 SetSnmpInfo で設定されたすべてのネットワークまたは usmUsers 値が置き換えられます。 
 ---
 = SetSnmpACL の場合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

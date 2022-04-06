@@ -5,6 +5,7 @@ keywords: fibre,channel,port,ports,list,listing,listfibrechannelportinfo
 summary: ListFibreChannelPortInfo メソッドを使用すると、 Fibre Channel ポートに関する情報をリストできます。 
 ---
 = ListFibreChannelPortInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

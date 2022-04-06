@@ -5,6 +5,7 @@ keywords: KMIP,key server,creating,create
 summary: CreateKeyServerKmip メソッドを使用すると、指定した属性を使用して Key Management Interoperability Protocol\ （ KMIP \ ）キーサーバを作成できます。作成中にサーバに接続されることはありません。このメソッドを使用する前に、サーバが存在している必要はありません。クラスタ化されたキーサーバ設定の場合、すべてのサーバノードのホスト名または IP アドレスを kmipKeyServerHostnames パラメータで指定する必要があります。TestKeyServerKmip メソッドを使用すると、キーサーバをテストできます。 
 ---
 = CreateKeyServerKmip のように指定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

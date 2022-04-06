@@ -5,6 +5,7 @@ keywords: solidfire esds,software-defined storage, dynamic node rating
 summary: NetApp SolidFire エンタープライズ SDS （ ESDS ）は、 SolidFire スケールアウトテクノロジと NetApp Element ソフトウェアデータサービスのメリットを、 SolidFire ESDS のリファレンス構成を満たす任意のハードウェア上で提供します。SolidFire ESDS は、基盤となるハードウェアに依存しない NetApp Element ソフトウェアを提供します。これにより、ネットアップブランドのアプライアンスまたは汎用サーバの Element 機能をすべて使用できるようになります。このサーバは、ネットアップのリファレンス構成に準拠します。 
 ---
 = NetApp SolidFire エンタープライズ SDS の導入を始めましょう
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

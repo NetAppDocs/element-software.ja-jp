@@ -5,6 +5,7 @@ keywords: volume performance, view, view alerts
 summary: クラスタ内のすべてのボリュームの詳細なパフォーマンス情報を表示できます。ボリューム ID または任意のパフォーマンス列で情報をソートできます。フィルタを使用して、特定の条件で情報をフィルタリングすることもできます。 
 ---
 = ボリュームのパフォーマンスを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

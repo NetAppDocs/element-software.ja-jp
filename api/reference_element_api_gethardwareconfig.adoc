@@ -5,6 +5,7 @@ keywords: node,hardware,config,configuration,get,getting,gethardwareconfig
 summary: GetHardwareConfig メソッドを使用すると、ノードのハードウェア構成情報を取得できます。 
 ---
 = GetHardwareConfig の実行
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: drives, details, manage, filter, cluster
 summary: クラスタタブのドライブページには、クラスタ内のアクティブドライブのリストが表示されます。ページをフィルタするには、 Active 、 Available 、 Removing 、 Erasing 、 Failed の各タブを選択します。 
 ---
 = ドライブの詳細
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

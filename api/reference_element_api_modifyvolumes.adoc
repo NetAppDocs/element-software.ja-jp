@@ -5,6 +5,7 @@ keywords: volume,volumes,modifying,modify,change,changing,edit,editing,modifyvol
 summary: ModifyVolumes メソッドを使用すると、最大で 500 個の既存のボリュームを一度に設定できます。変更はすぐに反映されます。指定したいずれかのボリュームの変更に ModifyVolumes が失敗した場合、どのボリュームも変更されません。 
 ---
 = ModifyVolumes の場合に使用でき
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: SSDs, drives, replacement, sf-series, nodes
 summary: 障害が発生したソリッドステートドライブを、交換用ドライブにホットスワップできます。 
 ---
 = SF シリーズストレージノードのドライブを交換
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

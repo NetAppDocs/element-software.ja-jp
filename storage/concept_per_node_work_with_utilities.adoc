@@ -5,6 +5,7 @@ keywords: troubleshooting network issues, using per-node utilities, storage node
 summary: ネットワークの問題をトラブルシューティングする際に、 NetApp Element ソフトウェア UI の標準の監視ツールで十分な情報を得られない場合は、ノードユーティリティを使用できます。ノードユーティリティは、ノード間または管理ノードでのネットワークの問題をトラブルシューティングするために役立つ情報やツールを提供します。 
 ---
 = ストレージノードのノードユーティリティを使用する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

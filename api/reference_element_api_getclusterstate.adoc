@@ -5,6 +5,7 @@ keywords: cluster,state,getting,get,getclusterstate
 summary: GetClusterState API メソッドを使用すると、ノードがクラスタに含まれているかどうかを確認できます。 
 ---
 = GetClusterState
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

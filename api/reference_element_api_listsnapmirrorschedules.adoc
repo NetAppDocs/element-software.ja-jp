@@ -5,6 +5,7 @@ keywords: snapmirror,schedule,schedules,list,listing,listsnapmirrorschedules,ont
 summary: Element ソフトウェア Web UI は、 ListSnapMirrorSchedules メソッドを使用して、リモート ONTAP クラスタで使用可能なスケジュールのリストを取得します。 
 ---
 = ListSnapMirrorSchedules
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

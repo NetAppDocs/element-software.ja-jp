@@ -5,6 +5,7 @@ keywords: multitenant,network,networking,api,prerequisites,requirements,virtual,
 summary: Element ストレージクラスタのマルチテナントネットワークを使用すると、別々の論理ネットワークに属する複数のクライアント間のトラフィックをレイヤ 3 のルーティングなしで 1 つの Element ストレージクラスタに接続できます。 
 ---
 = マルチテナントネットワーク API メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: IdP,idp,configuration,update
 summary: UpdateIdpConfiguration メソッドを使用すると、クラスタの既存の設定をサードパーティ IdP で更新できます。 
 ---
 = UpdateIdpConfiguration
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,ontapVersionInfo
 summary: ontapVersionInfo オブジェクトには、 SnapMirror 関係にある ONTAP クラスタの API バージョンに関する情報が含まれています。Element Web UI は、 GetOntapVersionInfo API メソッドを使用してこの情報を取得します。 
 ---
 = ontapVersionInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snapshot retention, edit, set a retention period, edit retention perio
 summary: Snapshot の保持期間を変更して、 Snapshot を削除するタイミングまたは削除するかどうかを制御できます。指定した保持期間は、新しい間隔の開始時点からの期間です。保持期間には、現在の時刻からの期間を指定できます（保持期間は Snapshot の作成時間からは計算されません）。間隔は、分、時間、および日単位で指定できます。 
 ---
 = Snapshot 保持期間を編集します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

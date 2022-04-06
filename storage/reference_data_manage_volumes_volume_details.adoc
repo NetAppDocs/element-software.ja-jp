@@ -5,6 +5,7 @@ keywords: volume, size of volume
 summary: 管理タブのボリュームページには、名前、アカウント、ボリュームに関連付けられているアクセスグループ、ボリュームのサイズなどのアクティブなボリュームに関する情報が表示されます。 
 ---
 = ボリュームの詳細
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

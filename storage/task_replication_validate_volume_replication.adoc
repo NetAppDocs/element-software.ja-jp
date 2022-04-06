@@ -5,6 +5,7 @@ keywords: volume pairings, replication, validate volume replication
 summary: ボリュームがレプリケートされたら、ソースボリュームとターゲットボリュームがアクティブになっていることを確認する必要があります。状態がアクティブな場合は、ボリュームがペアリングされ、ソースボリュームからターゲットボリュームにデータが送信されて同期されています。 
 ---
 = ボリュームレプリケーションを検証
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: group snapshots, edit, replication, retention
 summary: 既存のグループ Snapshot のレプリケーションと保持の設定を編集できます。 
 ---
 = グループ Snapshot を編集しています
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

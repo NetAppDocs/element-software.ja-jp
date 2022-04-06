@@ -5,6 +5,7 @@ keywords: admin,admins,cluster,list,listing,listclusteradmins
 summary: ListClusterAdmins メソッドを使用すると、クラスタのすべてのクラスタ管理者のリストを取得できます。 
 ---
 = ListClusterAdmins
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

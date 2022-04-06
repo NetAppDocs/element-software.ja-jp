@@ -5,6 +5,7 @@ keywords: virtual,volume,vvol,API,method
 summary: Element ソフトウェア仮想ボリューム API メソッドを使用すると、仮想ボリューム（ VVol ）を管理できます。これらの API メソッドを使用して、既存の VVol を表示したり、仮想ボリュームストレージコンテナを作成、変更、削除したりできます。これらのメソッドを使用して通常のボリュームを処理することはできませんが、通常のボリュームの API メソッドを使用して VVol に関する情報を表示することはできます。 
 ---
 = 仮想ボリューム API メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

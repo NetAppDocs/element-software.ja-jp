@@ -5,6 +5,7 @@ keywords: snapshot schedule, edit, modify
 summary: 既存の Snapshot スケジュールを変更できます。変更後、次回のスケジュール実行時に更新された属性が使用されます。元のスケジュールで作成された Snapshot はストレージシステムに保持されます。 
 ---
 = Snapshot スケジュールを編集します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

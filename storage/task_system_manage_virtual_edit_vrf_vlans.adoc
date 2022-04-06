@@ -5,6 +5,7 @@ keywords: vrf vlans edit, vrf vlan attributes, change
 summary: VLAN 名、ネットマスク、ゲートウェイ、 IP アドレスブロックなどの VRF VLAN 属性を変更できます。 
 ---
 = VRF VLAN を編集します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

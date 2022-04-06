@@ -5,6 +5,7 @@ keywords: solidfire esds, installation, create cluster, cluster, add drives, esd
 summary: SolidFire ESDS をインストールした後、各 SolidFire ESDS ノードにクラスタ名を設定します。その後、 SolidFire ESDS クラスタを作成できます。 
 ---
 = インストール後のタスクを実行
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

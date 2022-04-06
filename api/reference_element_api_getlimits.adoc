@@ -5,6 +5,7 @@ keywords: system,limits,get,getting,getlimits
 summary: GetLimits メソッドを使用すると、 API で設定された制限値を取得できます。制限値は Element のリリースによって変わる可能性がありますが、システムの更新なしに変わることはありません。API で設定された制限値を確認しておくと、ユーザ向けツールの API スクリプトを記述するときに役立ちます。 
 ---
 = GetLimits
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

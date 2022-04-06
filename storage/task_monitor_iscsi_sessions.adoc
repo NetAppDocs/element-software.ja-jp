@@ -5,6 +5,7 @@ keywords: iscsi sessions, monitor
 summary: クラスタに接続されている iSCSI セッションを確認できます。情報をフィルタして、必要なセッションだけを表示できます。 
 ---
 = iSCSI セッションを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

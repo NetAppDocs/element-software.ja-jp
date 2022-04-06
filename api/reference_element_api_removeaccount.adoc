@@ -5,6 +5,7 @@ keywords: account,accounts,remove,removing,deleting,delete,purge,volume,volumes,
 summary: RemoveAccount メソッドを使用すると、既存アカウントを削除できます。アカウントを削除する前に、 DeleteVolume を使用して、そのアカウントに関連付けられているすべてのボリュームを削除およびパージする必要があります。アカウントのボリュームの削除が保留になっている間は、 RemoveAccount を使用してアカウントを削除することはできません。 
 ---
 = RemoveAccount を使用します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

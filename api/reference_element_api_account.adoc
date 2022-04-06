@@ -5,6 +5,7 @@ keywords: account,object,accounts
 summary: account オブジェクトには、アカウントの情報が含まれます。このオブジェクトに含まれるのはアカウントに関する「設定済み」の情報だけで、稼働情報または使用状況は含まれません。 
 ---
 = アカウント：
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

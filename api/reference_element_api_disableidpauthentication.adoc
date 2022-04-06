@@ -5,6 +5,7 @@ keywords: IdP,idp,authentication,disable
 summary: DisableIdpAuthentication メソッドを使用して、クラスタにサードパーティの IdP を使用した認証のサポートを無効にできます。無効にすると、サードパーティの IdP によって認証されたユーザはクラスタにアクセスできなくなり、アクティブな認証済みセッションは無効になるか切断されます。LDAP 管理者およびクラスタ管理者は、サポートされている UI からクラスタにアクセスできます。 
 ---
 = DisableIdpAuthentication の略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

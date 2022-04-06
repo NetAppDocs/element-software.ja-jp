@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorVserverAggregateInfo
 summary: snapMirrorVserverAggregateInfo オブジェクトには、デスティネーション ONTAP クラスタで使用可能なデータ Storage Virtual Machine （別名 Vservers ）に関する情報が含まれます。 
 ---
 = snapMirrorVserverAggregateInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

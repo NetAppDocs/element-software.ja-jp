@@ -5,6 +5,7 @@ keywords: delete,deleting,initiator,initiators,DeleteInitiators
 summary: DeleteInitiators を使用して、 1 つ以上のイニシエータをシステム（および関連付けられたボリュームまたはボリュームアクセスグループ）から削除できます。 
 ---
 = イニシエータを削除する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

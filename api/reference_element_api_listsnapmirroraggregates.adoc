@@ -5,6 +5,7 @@ keywords: snapmirror,aggregate,aggregates,list,listing,listsnapmirroraggregates
 summary: Element ソフトウェア Web UI は、 ListSnapMirrorAggregates メソッドを使用して、リモート ONTAP システムで使用可能なすべての SnapMirror アグリゲートをリストします。アグリゲートは、物理ストレージリソースの集まりです。 
 ---
 = ListAggregSnapMirrorates
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

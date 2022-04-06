@@ -5,6 +5,7 @@ keywords: rollbacktogroupsnapshot,snapshot,group,individual,creating,create,roll
 summary: RollbackToGroupSnapshot を使用すると、 Snapshot グループ内のすべてのボリュームを、それぞれのボリュームの Snapshot にロールバックできます。 
 ---
 = RollbackToGroupSnapshot
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

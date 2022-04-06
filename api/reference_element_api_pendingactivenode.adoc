@@ -5,6 +5,7 @@ keywords: object,objects,pendingActiveNode
 summary: pendingActiveNode オブジェクトには、現在の状態が pending と active の間の pendingActive であるノードの情報が含まれます。これは工場出荷時のソフトウェアイメージに戻されたノードです。ListPendingActiveNodes API メソッドを使用すると、 PendingActive 状態のすべてのノードに関する以下の情報のリストが返されます。 
 ---
 = pendingActiveNode
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

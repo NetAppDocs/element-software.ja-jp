@@ -5,6 +5,7 @@ keywords: what is, element, solidfire, replication, clone, snapshot, protection 
 summary: データ保護機能には、リモートレプリケーション、ボリューム Snapshot 、ボリュームクローニング、保護ドメイン、 Double Helix テクノロジによる高可用性などがあります。 
 ---
 = データ保護
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

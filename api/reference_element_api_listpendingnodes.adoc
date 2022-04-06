@@ -5,6 +5,7 @@ keywords: cluster,list,listing,pending,nodes,node,listpendingnodes
 summary: ListPendingNodes メソッドを使用すると、システム内で Pending 状態のストレージノードをリストできます。Pending 状態のノードとは、動作中であり、ストレージクラスタに追加するように設定されているものの、まだ AddNodes API メソッドを使用して追加されていないストレージノードのことです。 
 ---
 = ListPendingNodes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: drive,get,getting,hardware,info,getdrivehardwareinfo
 summary: GetDriveHardwareInfo メソッドを使用すると、特定のドライブに関するすべてのハードウェア情報を取得できます。通常は、メーカー、ベンダー、バージョン、およびその他の関連するハードウェア識別情報が含まれます。 
 ---
 = GetDriveHardwareInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

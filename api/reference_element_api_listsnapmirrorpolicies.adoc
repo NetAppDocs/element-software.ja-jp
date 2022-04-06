@@ -5,6 +5,7 @@ keywords: snapmirror,policy,policies,list,listing,ontap,listsnapmirrorpolicies
 summary: Element ソフトウェア Web UI は、 ListSnapMirrorPolicies メソッドを使用して、リモート ONTAP システム上のすべての SnapMirror ポリシーをリストします。 
 ---
 = ListSnapMirrorPolicies の順にクリックします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

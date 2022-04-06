@@ -5,6 +5,7 @@ keywords: fips, security, federal information processing standards, 140-2, drive
 summary: クラスタで FIPS ドライブ機能が有効になっているかどうかを確認するには、 NetApp Element ソフトウェアの GetFeatureStatus API メソッドを使用します。このメソッドで、 FIPS ドライブの有効ステータスが true であるか false であるかを確認できます。 
 ---
 = FIPS ドライブのステータスを確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

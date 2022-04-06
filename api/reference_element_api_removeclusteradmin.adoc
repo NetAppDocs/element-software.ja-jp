@@ -5,6 +5,7 @@ keywords: cluster,admin,remove,removing,removeclusteradmin
 summary: RemoveClusterAdmin メソッドを使用すると、クラスタ管理、 LDAP クラスタ管理、またはサードパーティのアイデンティティプロバイダ / （ IdP ）クラスタ管理者を削除できます。「 admin 」クラスタ管理者アカウントを削除することはできません。 
 ---
 = RemoveClusterAdmin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

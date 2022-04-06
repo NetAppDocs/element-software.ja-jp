@@ -5,6 +5,7 @@ keywords: qos, value limits
 summary: ここでは、指定可能なサービス品質（ QoS ）の最小値と最大値について説明します。 
 ---
 = QoS 値の制限
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

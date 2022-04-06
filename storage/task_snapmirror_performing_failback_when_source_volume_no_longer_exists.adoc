@@ -5,6 +5,7 @@ keywords: failback, perform, source volume, snapmirror, dr, disaster recovery
 summary: NetAppElement UI を使用して、元のソースボリュームを再同期し、フェイルバックを実行できます。このセクションでは、元のソースボリュームが失われ、元のクラスタはそのまま維持されている環境シナリオを示します。新しいクラスタにリストアする方法については、ネットアップサポートサイトのドキュメントを参照してください。 
 ---
 = ソースボリュームが存在しない場合にフェイルバックを実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

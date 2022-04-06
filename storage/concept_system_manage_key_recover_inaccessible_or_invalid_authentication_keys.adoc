@@ -5,6 +5,7 @@ keywords: slice drive error, cluster fault, authentication keys
 summary: 場合によっては、ユーザの介入を必要とするエラーが発生することがあります。エラーが発生すると、クラスタ障害が生成されます。ここでは、最も可能性の高い 2 つのケースについて説明します。 
 ---
 = アクセス不可または無効な認証キーをリカバリします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

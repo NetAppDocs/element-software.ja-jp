@@ -5,6 +5,7 @@ keywords: management,connection,test,testing,mvip,testconnectmvip
 summary: TestConnectMvip メソッドを使用すると、ストレージクラスタへの管理接続をテストできます。テストでは、 MVIP に対して ping を実行し、シンプルな API メソッドを実行して接続を検証します。 
 ---
 = TestConnectMvip のように入力します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,backup,target,modifyback
 summary: ModifyBackupTarget メソッドを使用すると、バックアップターゲットの属性を変更できます。 
 ---
 = ModifyBackupTarget
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

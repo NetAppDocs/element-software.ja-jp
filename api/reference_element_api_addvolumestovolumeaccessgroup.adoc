@@ -5,6 +5,7 @@ keywords: volume,volumes,adding,add,access,group,addvolumestovolumeaccessgroup
 summary: AddVolumesToVolumeAccessGroup メソッドを使用すると、指定したボリュームアクセスグループにボリュームを追加できます。 
 ---
 = AddVolumesToVolumeAccessGroup
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

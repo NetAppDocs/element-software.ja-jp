@@ -5,6 +5,7 @@ keywords: IdP,idp,authentication,enable
 summary: EnableIdpAuthentication メソッドを使用すると、クラスタにサードパーティの IdP を使用した認証のサポートを有効にできます。IdP 認証を有効にすると、 LDAP 管理者およびクラスタ管理者は、サポートされている UI からクラスタにアクセスできなくなり、アクティブな認証されたセッションが無効化 / 切断されます。サポートされている UI からクラスタにアクセスできるのは、サードパーティの IdP で認証されたユーザだけです。 
 ---
 = EnableIdpAuthentication の略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

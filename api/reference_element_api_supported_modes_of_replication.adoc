@@ -5,6 +5,7 @@ keywords: supported,replication,modes,clusters,paired,pair,pairs
 summary: ペアクラスタでは、次のレプリケーションモードがサポートされます。 
 ---
 = ペアクラスタでサポートされるレプリケーションモード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

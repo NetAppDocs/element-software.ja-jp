@@ -5,6 +5,7 @@ keywords: remote,logging,hosts,host,get,getting,getremotelogginghosts
 summary: GetRemoteLoggingHosts メソッドを使用すると、現在のログサーバのリストを取得できます。 
 ---
 = GetRemoteLoggingHosts
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

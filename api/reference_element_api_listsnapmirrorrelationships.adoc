@@ -5,6 +5,7 @@ keywords: snapmirror,endpoints,endpoint,list,listing,listsnapmirrorrelationships
 summary: Element ソフトウェア Web UI は、 ListSnapMirrorRelationships メソッドを使用して、 Element ストレージクラスタ上の 1 つまたはすべての SnapMirror 関係をリストします。 
 ---
 = ListSnapMirrorRelationships] をクリックします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

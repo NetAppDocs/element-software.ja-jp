@@ -5,6 +5,7 @@ keywords: response,example,testhardwareconfig
 summary: TestHardwareConfig メソッドから、次の例のような応答が返されます。 
 ---
 = TestHardwareConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

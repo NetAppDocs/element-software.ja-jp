@@ -5,6 +5,7 @@ keywords: soldifre hardware, h-series hardware, install hardware, maintain hardw
 summary: H シリーズおよび SF シリーズハードウェアの設置とメンテナンスについて説明します。 
 ---
 = ハードウェアを設置して保守する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

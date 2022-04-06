@@ -5,6 +5,7 @@ keywords: layout,custom,protection domain,protection domains,retrieve protection
 summary: GetProtectionDomainLayout メソッドを使用すると、クラスタのすべての保護ドメイン情報を返すことができます。これには、各ノードがどのシャーシとどのカスタム保護ドメインにあるかが含まれます。 
 ---
 = GetProtectionDomainLayout の略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

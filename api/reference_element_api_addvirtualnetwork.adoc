@@ -5,6 +5,7 @@ keywords: addvirtualnetwork,cluster,add,adding,virtual,network
 summary: AddVirtualNetwork メソッドを使用して、クラスタ構成に新しい仮想ネットワークを追加できます。 
 ---
 = AddVirtualNetwork
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

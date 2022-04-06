@@ -5,6 +5,7 @@ keywords: pair clusters, replication, connect clusters, data protection
 summary: リアルタイムレプリケーション機能を使用するには、最初に 2 つのクラスタをペアリングする必要があります。2 つのクラスタをペアリングして接続したあと、一方のクラスタのアクティブなボリュームをもう一方のクラスタに継続的にレプリケートするように設定することで継続的なデータ保護を実現できます \ （ CDP ）。 
 ---
 = レプリケーション用にクラスタをペアリング
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

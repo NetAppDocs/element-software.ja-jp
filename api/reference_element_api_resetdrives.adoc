@@ -5,6 +5,7 @@ keywords: drive,drives,remove,removing,data,reset,resetting,resetdrives,erase
 summary: ResetDrives メソッドを使用すると、ドライブをプロアクティブに初期化し、ドライブに現在格納されているすべてのデータを削除できます。その後、ドライブを既存のノードで再利用したり、アップグレードしたノードで使用したりできます。 
 ---
 = ResetDrives のコマンドです
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

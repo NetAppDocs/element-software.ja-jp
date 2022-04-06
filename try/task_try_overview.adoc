@@ -5,6 +5,7 @@ keywords: solidfire, element, lab on demand, demo node, element demo node
 summary: Element ソフトウェアの導入に役立つリソースとツールをご紹介します。 
 ---
 = ぜひお試しください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

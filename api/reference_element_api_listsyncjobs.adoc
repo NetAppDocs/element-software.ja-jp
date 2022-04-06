@@ -5,6 +5,7 @@ keywords: sync,synchronization,job,jobs,list,get,listing,getting,listsyncjobs
 summary: ListSyncJobs メソッドを使用すると、 Element ストレージクラスタで実行中の同期ジョブに関する情報を取得できます。スライス、クローン、ブロック、およびリモートの同期ジョブに関する情報が返されます。 
 ---
 = ListSyncJobs
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

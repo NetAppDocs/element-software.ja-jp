@@ -5,6 +5,7 @@ keywords: volume access group, create, initiators
 summary: 安全なアクセスを確保するために、ボリュームのグループにイニシエータをマッピングしてボリュームアクセスグループを作成できます。その後、アカウントの CHAP イニシエータシークレットとターゲットシークレットを使用して、グループ内のボリュームへのアクセスを許可できます。 
 ---
 = ボリュームアクセスグループを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

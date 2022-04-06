@@ -5,6 +5,7 @@ keywords: dr, disaster recovery, snapmirror
 summary: NetApp Element ソフトウェアを実行しているボリュームまたはクラスタで問題が発生した場合は、 SnapMirror 機能を使用して関係を解除し、デスティネーションボリュームにフェイルオーバーできます。 
 ---
 = SnapMirror を使用したディザスタリカバリ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

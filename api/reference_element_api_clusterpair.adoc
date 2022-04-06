@@ -5,6 +5,7 @@ keywords: objects,object,clusterPair
 summary: clusterPair オブジェクトには、ローカルクラスタとペアリングされているクラスタに関する情報が含まれます。ListClusterPairs メソッドを使用して、ローカルクラスタの clusterPair オブジェクトのリストを取得できます。 
 ---
 = クラスタペア
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

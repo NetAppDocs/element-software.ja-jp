@@ -5,6 +5,7 @@ keywords: snmp, overview, reference, mib, settings, trap
 summary: クラスタタブの SNMP ページでは、次の情報を表示できます。 
 ---
 = SNMP の詳細
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

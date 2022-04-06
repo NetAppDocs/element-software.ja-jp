@@ -5,6 +5,7 @@ keywords: object,objects,host
 summary: host オブジェクトには、仮想ボリュームホストに関する情報が含まれます。ListVirtualVolumeHosts メソッドを使用すると、すべての仮想ボリュームホストに関する以下の情報を取得できます。 
 ---
 = host カソウホリユウム
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

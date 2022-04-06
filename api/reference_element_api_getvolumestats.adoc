@@ -5,6 +5,7 @@ keywords: volume,volumes,get,getting,stats,measurements,activity,getvolumestats
 summary: GetVolumeStats メソッドを使用すると、単一のボリュームのアクティビティ測定値の概要を取得できます。値は、ボリュームを作成したときからの累積値です。 
 ---
 = GetVolumeStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

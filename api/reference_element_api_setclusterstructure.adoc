@@ -5,6 +5,7 @@ keywords: storage,cluster,configuration,info,restore,set,setting,setclusterstruc
 summary: SetClusterStructure メソッドを使用すると、ストレージクラスタの構成情報をバックアップからリストアできます。メソッドを呼び出す際に、リストアする構成情報を含む clusterStructure オブジェクトを params パラメータとして渡します。 
 ---
 = SetClusterStructure の場合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

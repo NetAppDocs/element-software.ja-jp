@@ -5,6 +5,7 @@ keywords: node,restarting,restart,networking,network,service,services,restartnet
 summary: RestartNetworking メソッドを使用すると、ノードのネットワーク関連サービスをリスタートできます。 
 ---
 = RestartNetworking
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

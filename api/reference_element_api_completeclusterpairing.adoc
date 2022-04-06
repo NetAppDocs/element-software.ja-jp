@@ -5,6 +5,7 @@ keywords: CompleteClusterPairing,cluster,pair,pairing,complete,completing
 summary: CompleteClusterPairing メソッドは、クラスタペアリングプロセスの 2 番目のステップです。このメソッドと StartClusterPairing メソッドで受け取ったエンコード済みのキーを使用して、クラスタペアリングプロセスを完了します。 
 ---
 = CompleteClusterPairing
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

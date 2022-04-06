@@ -5,6 +5,7 @@ keywords: feedback, web user interface, UI issues, feedback form, relevant infor
 summary: Element ソフトウェアの Web ユーザインターフェイスの改善や UI の問題への対処には、 UI からアクセス可能なフィードバックフォームを使用できます。 
 ---
 = フィードバックを提供する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

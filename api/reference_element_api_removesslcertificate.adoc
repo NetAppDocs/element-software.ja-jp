@@ -5,6 +5,7 @@ keywords: ssl,certificate,cert,remove,removing,cluster,removesslcertificate
 summary: RemoveSSLCertificate メソッドを使用すると、クラスタ内のストレージノードのユーザ SSL 証明書と秘密鍵を削除できます。証明書と秘密鍵を削除すると、以降はストレージノードでデフォルトの証明書と秘密鍵を使用するように設定されます。 
 ---
 = SSLCertificate を削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

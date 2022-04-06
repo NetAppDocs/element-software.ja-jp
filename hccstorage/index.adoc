@@ -5,6 +5,7 @@ summary: NetApp SolidFire オールフラッシュストレージを使用する
 keywords: netapp, element, cluster, element, account, user, volume, hybrid cloud control, hcc 
 ---
 = NetApp Hybrid Cloud Control を使用してストレージを管理および監視します
+:allow-uri-read: 
 
 
 [role="lead"]

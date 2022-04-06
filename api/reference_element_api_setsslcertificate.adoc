@@ -5,6 +5,7 @@ keywords: set,setting,ssl,cert,certificate,cluster,private,key,setsslcertificate
 summary: SetSSLCertificate メソッドを使用すると、クラスタ内のストレージノードに対してユーザの SSL 証明書と秘密鍵を設定できます。 
 ---
 = SetSSLCertificate
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

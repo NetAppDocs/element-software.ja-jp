@@ -5,6 +5,7 @@ keywords: network port requirements, TCP ports, firewall, utilities, URL, access
 summary: システムをリモートから管理し、データセンターの外部のクライアントがリソースに接続できるようにするために、データセンターのエッジファイアウォールで次の TCP ポートを許可する必要があります。システムの使用方法によっては、一部のポートは不要な場合もあります。 
 ---
 = ネットワークポートの要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

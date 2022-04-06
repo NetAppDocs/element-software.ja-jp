@@ -5,6 +5,7 @@ keywords: objects,object,drive
 summary: drive オブジェクトには、クラスタ内の Active 状態のノードの個々のドライブに関する情報が含まれます。このオブジェクトには、ボリュームメタデータまたはブロックドライブとして追加されたドライブのほか、まだ追加されていないが使用可能なドライブの詳細が含まれます。ListDrives API メソッドを使用すると、以下の情報を取得できます。 
 ---
 = ドライブ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

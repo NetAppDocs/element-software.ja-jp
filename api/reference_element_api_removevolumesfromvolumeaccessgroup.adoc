@@ -5,6 +5,7 @@ keywords: remove,removing,volume,volumes,access,group,removevolumesfromvolumeacc
 summary: RemoveVolumesFromVolumeAccessGroup メソッドを使用すると、指定したボリュームアクセスグループからボリュームを削除できます。 
 ---
 = RemoveVolumesFromVolumeAccessGroup
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume backup, amazon s3 object store
 summary: Amazon S3 と互換性のある外部のオブジェクトストアにのボリュームをバックアップできます。 
 ---
 = Amazon S3 オブジェクトストアにボリュームをバックアップします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

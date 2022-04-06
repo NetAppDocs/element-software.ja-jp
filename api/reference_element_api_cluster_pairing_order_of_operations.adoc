@@ -5,6 +5,7 @@ keywords: cluster,pairing,pair,order,operations,clusters
 summary: リモートレプリケーションを使用する前に、 Element ソフトウェアを実行する 2 つのストレージクラスタ間に接続を確立しておく必要があります。 
 ---
 = クラスタペアリングの処理の順序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

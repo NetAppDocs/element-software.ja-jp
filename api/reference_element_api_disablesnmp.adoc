@@ -5,6 +5,7 @@ keywords: SNMP,disable,disabling,DisableSnmp
 summary: DisableSnmp メソッドを使用してクラスタノードの SNMP を無効にできます。 
 ---
 = DisableSnmp
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

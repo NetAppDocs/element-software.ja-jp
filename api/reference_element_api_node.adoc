@@ -5,6 +5,7 @@ keywords: object,objects,node
 summary: node オブジェクトには、クラスタ内の各ノードに関する情報が含まれます。この情報を取得するには、 ListActiveNodes メソッドと ListAllNodes メソッドを使用します。 
 ---
 = ノード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

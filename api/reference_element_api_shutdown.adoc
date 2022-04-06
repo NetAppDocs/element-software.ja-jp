@@ -5,6 +5,7 @@ keywords: cluster,shutdown,node,shutting,down,shut,restart
 summary: Shutdown メソッドを使用すると、クラスタ内のノードをリスタートまたはシャットダウンできます。このメソッドを使用すると、単一のノード、複数のノード、またはクラスタ内のすべてのノードをシャットダウンできます。 
 ---
 = シャットダウン
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

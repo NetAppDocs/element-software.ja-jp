@@ -5,6 +5,7 @@ keywords: snapshots, group snapshots, volumes, replication
 summary: '[ データ保護 ] タブの [ グループスナップショット ] ページには、グループスナップショットに関する情報が表示されます。' 
 ---
 = グループ Snapshot の詳細
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

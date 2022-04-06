@@ -5,6 +5,7 @@ keywords: what is, element, volume, storage volume, persistent volume
 summary: NetApp SolidFire ストレージシステムは、ボリュームを使用してストレージをプロビジョニングします。ボリュームは、 iSCSI または Fibre Channel クライアントがネットワーク経由でアクセスするブロックデバイスです。 
 ---
 = 個のボリューム
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

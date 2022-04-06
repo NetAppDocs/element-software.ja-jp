@@ -5,6 +5,7 @@ keywords: SnapMirror,relationship,relationships,create,creating,CreateSnapMirror
 summary: Element Web UI は、 CreateSnapMirrorRelationship メソッドを使用して、ソースエンドポイントとデスティネーションエンドポイントの間に SnapMirror 拡張データ保護関係を作成します。 
 ---
 = CreateSnapMirrorRelationship 」をクリックします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

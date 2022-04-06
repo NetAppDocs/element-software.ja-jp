@@ -5,6 +5,7 @@ keywords: SnapMirror,endpoints,endpoint,delete,deleting,DeleteSnapMirrorEndpoint
 summary: Element Web UI は、 DeleteSnapMirrorEndpoints を使用して、システムから SnapMirror エンドポイントを削除します。 
 ---
 = DeleteSnapMirrorEndpoints
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: ping,test,TestPing
 summary: TestPing メソッドを使用すると、 1G および 10G の両方のインターフェイスで、 ICMP パケットを使用してクラスタ内のすべてのノードへのネットワーク接続をテストできます。テストでは、ネットワーク設定の MTU 設定に基づいて、パケットごとに適切な MTU サイズを使用します。TestPing では、一時的な VLAN インターフェイスは作成されません。 
 ---
 = TestPing です
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

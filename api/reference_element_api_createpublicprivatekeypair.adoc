@@ -5,6 +5,7 @@ keywords: SSL keys,public and private keys,certificate signing request,creating 
 summary: CreatePublicPrivateKeyPair メソッドを使用すると、パブリック SSL キーとプライベート SSL キーを作成できます。これらのキーを使用して、証明書署名要求を生成できます。各ストレージクラスタで使用できるキーペアは 1 組だけです。このメソッドを使用して既存のキーを置き換える前に、プロバイダがそのキーを使用していないことを確認してください。 
 ---
 = CreatePublicPrivateKeyPair
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

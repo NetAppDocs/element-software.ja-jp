@@ -5,6 +5,7 @@ keywords: cluster,list,listing,pending,active,node,nodes,listpendingactivenodes
 summary: ListPendingActiveNodes メソッドを使用すると、状態が Pending と Active の間の PendingActive であるクラスタノードをリストできます。この状態のノードは工場出荷時のイメージに戻されたノードです。 
 ---
 = ListPendingActiveNodes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: addaccount,add,adding,account,accounts
 summary: AddAccount を使用して、新しいアカウントをシステムに追加できます。アカウントの作成時に、このメソッドを使用して新しいアカウントに新しいボリュームを作成することもできます。アカウントに指定したチャレンジハンドシェイク認証プロトコル \ （ CHAP \ ）設定は、アカウントが所有するすべてのボリュームに適用されます。 
 ---
 = 追加アカウント
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: node,nodes,stats,list,listing,listnodestats
 summary: ListNodeStats メソッドを使用すると、ストレージクラスタ内のすべてのストレージノードに関するアクティビティ測定値の概要を表示できます。 
 ---
 = ListNodeStats の値
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

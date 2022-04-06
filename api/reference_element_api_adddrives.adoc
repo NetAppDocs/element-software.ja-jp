@@ -5,6 +5,7 @@ keywords: drives,adding,cluster,drive,add,adddrives
 summary: AddDrives メソッドを使用すると、 1 つ以上の使用可能なドライブをクラスタに追加できます。これにより、ドライブはクラスタのデータの一部をホスティングできるようになります。 
 ---
 = AddDrives
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

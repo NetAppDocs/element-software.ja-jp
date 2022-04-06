@@ -5,6 +5,7 @@ keywords: network settings, per-node UI, storage node, ui
 summary: ストレージノードのネットワーク設定を変更して、新しいネットワーク属性を指定できます。 
 ---
 = ネットワーク設定の詳細はノード UI から確認できます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume,pairing,order,operations,volumes,pairing,pair,pairs
 summary: ボリュームをペアリングする前に、 2 つのクラスタ間でクラスタペアを作成しておく必要があります。 
 ---
 = ボリュームペアリングの処理の順序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

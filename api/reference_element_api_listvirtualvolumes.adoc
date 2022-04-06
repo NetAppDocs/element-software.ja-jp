@@ -5,6 +5,7 @@ keywords: virtual,volume,volumes,vvol,list,listing,listvirtualvolumes
 summary: ListVirtualVolumes メソッドを使用すると、現在システムに存在する仮想ボリュームをリストできます。すべての仮想ボリュームを表示することも、一部だけを表示することもできます。 
 ---
 = ListVirtualVolumes の場合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

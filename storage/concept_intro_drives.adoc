@@ -5,6 +5,7 @@ keywords: drives, physical drives, cluster data, storage node, volume metadata, 
 summary: ストレージノードには 1 つ以上の物理ドライブが搭載され、クラスタのデータの一部が格納されます。クラスタにドライブが追加されると、そのドライブの容量とパフォーマンスがクラスタで使用されるようになります。 
 ---
 = ドライブ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

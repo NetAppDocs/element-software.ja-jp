@@ -5,6 +5,7 @@ keywords: element, cluster, fips, cluster, multi-factor authentication, authenti
 summary: システムは Element UI で管理できます。これには、多要素認証の有効化、クラスタ設定の管理、連邦情報処理標準（ FIPS ）のサポート、外部キー管理などが含まれます。 
 ---
 = システムを管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

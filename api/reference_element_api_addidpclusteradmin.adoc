@@ -5,6 +5,7 @@ keywords: IdP,idp,cluster,admin,add,adding,addIdpclusteradmin
 summary: AddIpdClusterAdmin メソッドを使用して、サードパーティのアイデンティティプロバイダで認証されたクラスタ管理者ユーザ（ IdP ）を追加できます。IdP クラスタ管理者アカウントは、ユーザに関連付けられた IdP の SAML アサーションで指定された SAML 属性値情報に基づいて設定されます。ユーザが IdP で認証され、複数の IdP クラスタ管理アカウントに一致する SAML アサーション内に SAML 属性ステートメントが含まれている場合、そのユーザは一致する IdP クラスタ管理アカウントのアクセスレベルを組み合わせて使用できます。 
 ---
 = AddIdpClusterAdmin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

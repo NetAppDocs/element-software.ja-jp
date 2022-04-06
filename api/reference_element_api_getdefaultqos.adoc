@@ -5,6 +5,7 @@ keywords: qos,values,default,get,getting,getdefaultqos
 summary: GetDefaultQoS メソッドを使用すると、作成したボリュームのデフォルトの QoS 値を取得できます。 
 ---
 = GetDefaultQoS の設定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

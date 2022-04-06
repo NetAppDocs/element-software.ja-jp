@@ -5,6 +5,7 @@ keywords: multiple volumes, clone, create
 summary: 複数のボリュームのクローンを一度に作成して、ボリュームグループ上のデータのポイントインタイムコピーを作成できます。 
 ---
 = 複数のボリュームのクローンを作成
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: terms,use,banner,configure,set,setting,setloginbanner,login
 summary: SetLoginBanner メソッドを使用すると、ユーザが Element Web インターフェイスにログインしたときに表示される利用条件バナーを設定できます。 
 ---
 = SetLoginBanner
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

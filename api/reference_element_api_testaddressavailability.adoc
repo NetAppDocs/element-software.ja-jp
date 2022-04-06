@@ -5,6 +5,7 @@ keywords: ip,address,availability,test,testing,ensemble,cluster,testaddressavail
 summary: TestAddressAvailability メソッドを使用すると、特定の IP アドレスがストレージクラスタ内のインターフェイスで使用されているかどうかを確認できます。 
 ---
 = TestAddressAvailability の値
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: solidfire, element, cluster admin, storage, account, authoritative clu
 summary: システム上のストレージリソースを管理し、アクセスを提供するには、システムリソースのアカウントを設定する必要があります。 
 ---
 = アカウントと権限
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

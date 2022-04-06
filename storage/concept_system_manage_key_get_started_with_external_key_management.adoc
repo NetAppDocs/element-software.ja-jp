@@ -5,6 +5,7 @@ keywords: kmip, master key, key management, encryption at rest, software encrypt
 summary: 外部キー管理 \ （ EKM \ ）は、クラスタ外の外部キーサーバ \ （ EKS \ ）と連携して、安全な認証キー \ （ AK \ ）管理を提供します。AK は、クラスタで保存データの暗号化が有効になっている場合に、自己暗号化ドライブ（ SED ）をロックおよびロック解除するために使用されます。 
 ---
 = 外部キー管理の開始
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

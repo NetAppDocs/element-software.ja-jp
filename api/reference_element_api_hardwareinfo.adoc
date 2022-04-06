@@ -5,6 +5,7 @@ keywords: object,objects,hardwareInfo
 summary: hardwareInfo オブジェクトには、クラスタ内の各ノードのハードウェアとステータスに関する詳細が含まれます。GetHardwareInfo API メソッドを使用すると、以下の情報を取得できます。 
 ---
 = hardwareInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

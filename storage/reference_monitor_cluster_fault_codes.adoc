@@ -5,6 +5,7 @@ keywords: cluster fault codes, alerts, error codes, view
 summary: エラーまたは必要な状態が報告される場合は、 Alerts （アラート）ページにリストされている障害コードを生成します。これらのコードは、アラートが発生したシステムのコンポーネントおよびアラートが生成された理由を判断するのに役立ちます。 
 ---
 = クラスタ障害コード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

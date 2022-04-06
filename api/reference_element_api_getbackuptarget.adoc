@@ -5,6 +5,7 @@ keywords: backup,target,targets,get,getting,GetBackupTarget
 summary: GetBackupTarget メソッドを使用すると、作成済みの特定のバックアップターゲットに関する情報を取得できます。 
 ---
 = GetBackupTarget
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

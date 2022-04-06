@@ -5,6 +5,7 @@ keywords: element demo node, virtual machine, element software, element api, vmw
 summary: Element デモノードは、 VMware 仮想マシン版の Element ソフトウェアで、 NetApp HCI 製品と SolidFire 製品の主要なストレージ機能の多くを簡単にデモできます。 
 ---
 = Element のデモノードを使用してストレージ機能を試します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

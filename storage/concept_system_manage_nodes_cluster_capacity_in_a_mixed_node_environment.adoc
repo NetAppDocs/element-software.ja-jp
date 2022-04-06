@@ -5,6 +5,7 @@ keywords: nodes, mixed environment, capacity, cluster capacity, mixed nodes, enc
 summary: 1 つのクラスタ内に異なるタイプのノードを混在させることができます。SF シリーズ 2405 、 3010 、 4805 、 6010 、 9605 、 9010 、 19210 、 38410 、および H シリーズはクラスタ内で共存できます。 
 ---
 = ノード混在環境でのクラスタ容量
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

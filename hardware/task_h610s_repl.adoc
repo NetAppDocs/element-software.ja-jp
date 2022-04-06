@@ -5,6 +5,7 @@ keywords: h610s, replacement, node replacement, chassis replacement, maintenance
 summary: ファン、 CPU 、または Dual Inline Memory Module （ DIMM ）に障害が発生した場合や、過熱やブートプロセスの問題を解決する場合には、シャーシの交換が必要になることがあります。シャーシ前面の黄色の LED の点滅は、シャーシの交換が必要な可能性があることを示しています。続行する前にネットアップサポートにお問い合わせください。 
 ---
 = H610S ノードを交換してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

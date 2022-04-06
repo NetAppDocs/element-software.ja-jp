@@ -5,6 +5,7 @@ keywords: element, terms of use, banner, config, edit, terms of use, disable, en
 summary: ユーザ向けのメッセージを含むバナーを有効にしたり、編集したり、設定したりできます。 
 ---
 = 利用条件のバナーを管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

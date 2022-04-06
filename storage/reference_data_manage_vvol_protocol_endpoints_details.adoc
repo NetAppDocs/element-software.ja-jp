@@ -5,6 +5,7 @@ keywords: protocol endpoints, details, vvols, state, type, id
 summary: VVOL タブのプロトコルエンドポイントのページには、プロトコルエンドポイントの情報が表示されます。 
 ---
 = プロトコルエンドポイントの詳細
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

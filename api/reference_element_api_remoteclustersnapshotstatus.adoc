@@ -5,6 +5,7 @@ keywords: object,objects,remoteClusterSnapshotStatus
 summary: remoteClusterSnapshotStatus オブジェクトには、リモートストレージクラスタに格納されている Snapshot の UUID とステータスが含まれます。この情報は、 listsnapshots API メソッドまたは ListGroupSnapshots API メソッドを使用して取得できます。 
 ---
 = remoteClusterSnapshotStatus の 2 つのグループがあり
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

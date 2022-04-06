@@ -5,6 +5,7 @@ keywords: accounts,account,get,getting,GetAccountByID,ID
 summary: GetAccountByID を使用すると、アカウント ID を指定して特定のアカウントに関する詳細を取得できます。 
 ---
 = GetAccountByID
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

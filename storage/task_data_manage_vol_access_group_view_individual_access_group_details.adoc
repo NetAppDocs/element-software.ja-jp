@@ -5,6 +5,7 @@ keywords: access group details, view, view details, initiators
 summary: 接続されているボリュームやイニシエータなど、個々のアクセスグループの詳細をグラフ形式で表示できます。 
 ---
 = 個々のアクセスグループの詳細を表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

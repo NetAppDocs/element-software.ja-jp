@@ -5,6 +5,7 @@ keywords: virtual network, edit, ip address block, vlan attributes
 summary: VLAN 名、ネットマスク、 IP アドレスブロックのサイズなどの VLAN 属性を変更できます。VLAN の VLAN タグおよび SVIP は変更できません。ゲートウェイ属性は、非 VRF VLAN の有効なパラメータではありません。 
 ---
 = 仮想ネットワークを編集します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

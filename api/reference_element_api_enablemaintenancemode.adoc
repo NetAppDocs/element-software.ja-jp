@@ -5,6 +5,7 @@ keywords: maintenance,enable,mode
 summary: EnableMaintenanceMode メソッドを使用して、ストレージノードをメンテナンス用に準備できます。メンテナンスシナリオには、ノードの電源をオフにしたり再起動したりする必要のあるタスクが含まれます。 
 ---
 = EnableMaintenanceMode のようになります
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

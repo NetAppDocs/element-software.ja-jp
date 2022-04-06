@@ -5,6 +5,7 @@ keywords: restart,service,services,restartservices,restarting,node
 summary: RestartServices メソッドを使用すると、ノードのサービスをリスタートできます。 
 ---
 = RestartServices の
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volumes,volume,cloning,clone,CloneVolume
 summary: CloneVolume メソッドを使用して、ボリュームのコピーを作成できます。このメソッドは非同期であり、また完了までの時間はさまざまです。 
 ---
 = CloneVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

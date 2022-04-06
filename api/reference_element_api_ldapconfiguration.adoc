@@ -5,6 +5,7 @@ keywords: object,objects,ldapConfiguration
 summary: ldapConfiguration オブジェクトには、ストレージシステムの LDAP 構成に関する情報が含まれます。GetLdapConfiguration API メソッドを使用すると、 LDAP 情報を取得できます。 
 ---
 = ldapConfiguration （ ldapConfiguration ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

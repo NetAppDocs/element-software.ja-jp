@@ -5,6 +5,7 @@ keywords: system alerts, view, cluster faults, system errors
 summary: システムで発生したクラスタの障害やエラーに関する情報をアラートで確認できます。アラートには、情報、警告、エラーがあり、クラスタの稼働状況を表すインジケータとして利用できます。ほとんどのエラーは自動的に解決します。 
 ---
 = システムアラートを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorNetworkInterface
 summary: snapMirrorNetworkInterface オブジェクトにクラスタ間論理インターフェイス（ LIF ）の情報が含まれています。 
 ---
 = snapMirrorNetworkInterface の略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

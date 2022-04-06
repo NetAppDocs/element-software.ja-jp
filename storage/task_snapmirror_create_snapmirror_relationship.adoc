@@ -5,6 +5,7 @@ keywords: relationships, create, snapmirror, ui
 summary: SnapMirror 関係は NetAppElement UI で作成する必要があります。 
 ---
 = SnapMirror 関係を作成
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

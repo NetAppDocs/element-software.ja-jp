@@ -5,6 +5,7 @@ keywords: API,administration,method,administrator
 summary: 管理者 API メソッドを使用すると、ストレージクラスタ管理者の作成、変更、表示、削除、およびストレージクラスタにアクセスするクラスタ管理者のアクセスレベルや権限の割り当てができます。 
 ---
 = 管理者 API メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

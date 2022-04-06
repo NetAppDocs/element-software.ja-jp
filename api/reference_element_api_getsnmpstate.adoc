@@ -5,6 +5,7 @@ keywords: snmp,state,get,getting,getsnmpstate
 summary: GetSnmpState メソッドを使用すると、 SNMP 機能の現在の状態を取得できます。 
 ---
 = GetSnmpState
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

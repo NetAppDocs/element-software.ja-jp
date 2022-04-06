@@ -5,6 +5,7 @@ keywords: list,listing,fibre,channel,session,sessions,listfibrechannelsessions
 summary: ListFibreChannelSessions メソッドを使用すると、クラスタでの Fibre Channel セッションに関する情報をリストできます。 
 ---
 = ListFibreChannelSessions
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

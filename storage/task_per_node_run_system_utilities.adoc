@@ -5,6 +5,7 @@ keywords: storage nodes, running system utilities, system utilities, network set
 summary: ストレージノードのノード UI を使用して、サポートバンドルの作成または削除、ドライブの設定のリセット、ネットワークサービスまたはクラスタサービスの再起動を実行できます。 
 ---
 = ノード UI を使用してシステムユーティリティを実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

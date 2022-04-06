@@ -5,6 +5,7 @@ keywords: volume restore, amazon s3 object store
 summary: Amazon S3 オブジェクトストア上のバックアップからボリュームをリストアできます。 
 ---
 = Amazon S3 オブジェクトストア上のバックアップからボリュームをリストアする
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

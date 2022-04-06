@@ -5,6 +5,7 @@ keywords: CreateClusterSupportBundle,create,cluster,support,bundle,creating
 summary: 管理ノードで CreateClusterSupportBundle を使用すると、クラスタ内のすべてのノードからサポートバンドルを収集できます。バンドルが作成されると、 .tar.gz ファイルとしてノードに保存されます。このメソッドは管理ノードでのみ実行できます。ストレージノードで実行しても機能しません。 
 ---
 = CreateClusterSupportBundle を作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

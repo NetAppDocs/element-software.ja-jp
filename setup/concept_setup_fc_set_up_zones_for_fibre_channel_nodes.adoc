@@ -5,6 +5,7 @@ keywords:
 summary: Fibre Channel ノードと SolidFire ストレージノードを含む新しいクラスタを作成すると、ノードの World Wide Port Name （ WWPN ）アドレスが Web UI で使用できるようになります。WWPN アドレスを使用して、 Fibre Channel スイッチをゾーニングできます。 
 ---
 = Fibre Channel ノードのゾーンをセットアップします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

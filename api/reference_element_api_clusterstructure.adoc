@@ -5,6 +5,7 @@ keywords: objects,cluster,structure,clusterStructure,object
 summary: clusterStructure オブジェクトには、 GetClusterStructure メソッドで作成されたクラスタ構成のバックアップ情報が保持されます。SetClusterStructure メソッドを使用すると、再構築中のストレージクラスタにこの情報をリストアできます。 
 ---
 = クラスタ構造
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

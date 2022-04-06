@@ -5,6 +5,7 @@ keywords: snapshots, snapshot schedules
 summary: '[Data Protection] > [Schedules] ページでは、スナップショットスケジュールのリストに次の情報を表示できます。' 
 ---
 = Snapshot スケジュールの詳細
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

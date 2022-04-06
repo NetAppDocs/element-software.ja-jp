@@ -5,6 +5,7 @@ keywords: object,objects,syncjob
 summary: syncJob オブジェクトには、クラスタで実行中のクローニング、リモートレプリケーション、またはスライスの同期化ジョブに関する情報が含まれます。 
 ---
 = syncJob
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

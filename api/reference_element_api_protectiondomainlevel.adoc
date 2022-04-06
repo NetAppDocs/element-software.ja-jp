@@ -5,6 +5,7 @@ keywords: object,objects,protectionDomainLevel
 summary: protectionDomainLevel オブジェクトには、ストレージクラスタの現在の許容レベルおよび耐障害性レベルに関する情報が含まれます。トレランスレベルは、障害が発生した場合にクラスタがデータの読み取りと書き込みを継続できるかどうかを示し、耐障害性レベルは、関連付けられたタイプの保護ドメイン内の 1 つ以上の障害からクラスタを自動的に修復できるかどうかを示します。 
 ---
 = protectionDomainLevel の値
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,virtualNetwork
 summary: virtualNetwork オブジェクトには、特定の仮想ネットワークの情報が含まれます。ListVirtualNetworks API メソッドを使用すると、システム内のすべての仮想ネットワークに関する以下の情報のリストを取得できます。 
 ---
 = VirtualNetwork
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

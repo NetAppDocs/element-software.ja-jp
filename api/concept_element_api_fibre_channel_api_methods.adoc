@@ -5,6 +5,7 @@ keywords: fibre,channel,method,API,fibre channel
 summary: Fibre Channel API メソッドを使用すると、ストレージクラスタの Fibre Channel ノードのメンバーを追加、変更、または削除できます。 
 ---
 = Fibre Channel API メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

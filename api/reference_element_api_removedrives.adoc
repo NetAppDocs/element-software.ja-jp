@@ -5,6 +5,7 @@ keywords: cluster,drive,drives,remove,removing,removedrives
 summary: RemoveDrives メソッドを使用すると、クラスタの一部であるドライブをプロアクティブに削除できます。このメソッドは、クラスタの容量を減らしたり、サービス寿命の終わりに近づいているドライブの交換準備を行ったりするときに使用できます。ドライブをクラスタから削除する前に、ドライブ上のすべてのデータが削除され、クラスタ内の他のドライブに移行されます。 
 ---
 = RemoveDrives の 2 つのコマンド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

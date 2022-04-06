@@ -5,6 +5,7 @@ keywords: remove qos policy, disassociate from a volume, modify
 summary: カスタム QoS 設定を選択すると、ボリュームへの QoS ポリシーの関連付けを解除できます。 
 ---
 = ボリュームの QoS ポリシーの関連付けを削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

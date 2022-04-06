@@ -5,6 +5,7 @@ keywords: ldap,api,methods
 summary: Lightweight Directory Access Protocol （ LDAP ）を使用して、 Element ストレージへのアクセスを認証できます。このセクションで説明する LDAP API メソッドを使用すると、ストレージクラスタへの LDAP アクセスを設定できます。 
 ---
 = LDAP API メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

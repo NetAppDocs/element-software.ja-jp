@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,snapmirror,relationship,
 summary: ModifySnapMirrorRelationship を使用すると、スケジュールされた Snapshot が作成される間隔を変更できます。スケジュールを削除または一時停止することもできます。 
 ---
 = ModifySnapMirrorRelationship のこと
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

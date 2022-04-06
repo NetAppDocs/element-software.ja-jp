@@ -5,6 +5,7 @@ keywords: access,control,type
 summary: Element API メソッドを使用できるかどうかは、設定するアクセスのタイプによって異なります。 
 ---
 = Access Control の略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

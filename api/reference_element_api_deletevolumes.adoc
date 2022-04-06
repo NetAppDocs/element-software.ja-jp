@@ -5,6 +5,7 @@ keywords: volumes,volume,delete,deleting,multiple,DeleteVolumes
 summary: DeleteVolumes メソッドを使用すると、複数のアクティブなボリューム（最大 500\ ）を削除対象としてマークできます。マークされたボリュームは、クリーンアップ間隔の経過後にパージされます \ （完全に削除されます \ ）。 
 ---
 = DeleteVolumes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

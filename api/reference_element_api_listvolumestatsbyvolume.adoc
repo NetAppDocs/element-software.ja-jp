@@ -5,6 +5,7 @@ keywords: volumes,volume,stats,list,listing,listvolumestatsbyvolume,activity
 summary: ListVolumeStatsByVolume メソッドを使用すると、すべてのボリュームのボリュームごとのアクティビティ測定値の概要をリストできます。値は、ボリュームを作成したときからの累積値です。 
 ---
 = ListVolumeStatsByVolume を参照してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

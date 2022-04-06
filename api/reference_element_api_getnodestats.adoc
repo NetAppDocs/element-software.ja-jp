@@ -5,6 +5,7 @@ keywords: node,get,getting,stats,getnodestats
 summary: GetNodeStats メソッドを使用すると、単一のノードのアクティビティ測定値の概要を取得できます。 
 ---
 = GetNodeStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

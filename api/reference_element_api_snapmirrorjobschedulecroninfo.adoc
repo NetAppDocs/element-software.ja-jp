@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorJobScheduleCronInfo
 summary: snapMirrorJobScheduleCronInfo オブジェクトには、 ONTAP システム上の cron ジョブスケジュールの情報が含まれています。 
 ---
 = snapMirrorJobScheduleCronInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storage,system,naming,convention,virtual,network
 summary: NetApp Element ストレージシステムでは、システム内のすべてのオブジェクトに対する一意の識別子として、 1 つずつ増分する数値を使用します。 
 ---
 = 仮想ネットワークの命名規則
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

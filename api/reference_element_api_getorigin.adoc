@@ -5,6 +5,7 @@ keywords: origin,get,getting,getorigin,certificate
 summary: GetOrigin メソッドを使用すると、ノードを作成したときの元の証明書を取得できます。 
 ---
 = GetOrigin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

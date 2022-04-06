@@ -5,6 +5,7 @@ keywords: access group, add volumes to
 summary: ボリュームアクセスグループにボリュームを追加できます。各ボリュームは複数のボリュームアクセスグループに属することができ、各ボリュームが属するグループはアクティブなボリュームページで確認できます。 
 ---
 = アクセスグループにボリュームを追加する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

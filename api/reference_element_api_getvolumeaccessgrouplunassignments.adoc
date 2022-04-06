@@ -5,6 +5,7 @@ keywords: volume,access,group,groups,LUN,mapping,assignment,get,getting,GetVolum
 summary: GetVolumeAccessGroupLunAssignments メソッドを使用すると、指定したボリュームアクセスグループの LUN マッピングの詳細を取得できます。 
 ---
 = GetVolumeAccessGroupLunAssignments というエラーが発生しました
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

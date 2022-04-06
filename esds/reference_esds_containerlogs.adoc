@@ -5,6 +5,7 @@ keywords: element, solidfire esds, get container logs, sds containers
 summary: SolidFire ESDS コンテナの詳細と、それらに関連するログの入手先については、こちらを参照してください。ここでは、トラブルシューティングのためのログ収集を開始する際に役立つ情報を示します。ネットアップサポートに問い合わせることを推奨します。トレーニングを受けたエンジニアがログ分析に精通している場合は、問題解決に役立ちます。 
 ---
 = コンテナログを収集します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

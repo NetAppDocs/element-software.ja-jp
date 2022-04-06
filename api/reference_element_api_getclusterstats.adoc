@@ -5,6 +5,7 @@ keywords: cluster,stats,statistics,get,getting,getclusterstats
 summary: GetClusterStats メソッドを使用すると、クラスタのアクティビティ測定値の概要を取得できます。戻り値は、クラスタを作成したときからの累積値です。 
 ---
 = GetClusterStats から参照できます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

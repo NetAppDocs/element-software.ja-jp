@@ -5,6 +5,7 @@ keywords: SnapMirror,endpoints,endpoint,creating,create,CreateSnapMirrorEndpoint
 summary: Element Web UI は、 CreateSnapMirrorEndpoint メソッドを使用して、リモート SnapMirror エンドポイントとの関係を作成します。 
 ---
 = CreateSnapMirrorEndpoint
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

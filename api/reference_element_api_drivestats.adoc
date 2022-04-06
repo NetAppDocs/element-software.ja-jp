@@ -5,6 +5,7 @@ keywords: object,objects,driveStats
 summary: driveStats オブジェクトには、 1 つのドライブのアクティビティ測定値の概要が含まれます。API メソッド GetDriveStats を使用すると、測定情報を取得できます。 
 ---
 = driveStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

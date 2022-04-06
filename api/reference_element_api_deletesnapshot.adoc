@@ -5,6 +5,7 @@ keywords: snapshot,snapshots,delete,deleting,DeleteSnapshot
 summary: DeleteSnapshot メソッドを使用すると、 Snapshot を削除できます。 
 ---
 = Snapshot を削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

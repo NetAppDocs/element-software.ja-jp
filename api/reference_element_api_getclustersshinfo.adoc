@@ -5,6 +5,7 @@ keywords: ssh,service,status,get,getting,cluster,info,getclustersshinfo
 summary: GetClusterSshInfo メソッドを使用すると、ストレージクラスタ全体の SSH サービスのステータスを照会できます。 
 ---
 = GetClusterSshInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

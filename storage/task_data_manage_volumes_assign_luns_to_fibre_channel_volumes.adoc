@@ -5,6 +5,7 @@ keywords: volumes, fc, luns, access group, assign
 summary: ボリュームアクセスグループ内の Fibre Channel ボリュームに対する LUN の割り当てを変更できます。ボリュームアクセスグループを作成するときに、 Fibre Channel ボリュームに LUN を割り当てることもできます。 
 ---
 = Fibre Channel ボリュームに LUN を割り当てます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,node,protection domains
 summary: nodeProtectionDomains オブジェクトには、ノードの識別と、そのノードに関連付けられた保護ドメインに関する情報が含まれます。 
 ---
 = nodeProtectionDomains
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: common,methods
 summary: 共通メソッドは、ストレージクラスタ、 API 自体、または実行中の API 処理に関する情報を取得するために使用されるメソッドです。 
 ---
 = 共通メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

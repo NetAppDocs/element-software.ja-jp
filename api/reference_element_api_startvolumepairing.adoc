@@ -5,6 +5,7 @@ keywords: volume,pair,pairing,start,starting,startvolumepairing
 summary: StartVolumePairing メソッドを使用すると、別のボリュームとのペアリングに使用されるボリュームからエンコードされたキーを作成できます。このメソッドで作成されるキーは、 CompleteVolumePairing メソッドでボリュームペアリングを確立するために使用されます。 
 ---
 = StartVolumePairing を参照してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

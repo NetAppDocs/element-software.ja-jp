@@ -5,6 +5,7 @@ keywords: test,testing,cluster,locate,configuration,TestLocateCluster
 summary: TestLocateCluster メソッドを使用すると、ノードがクラスタ構成で指定されたクラスタを特定できることを確認できます。出力結果でクラスタが作成されたことを確認します。出力結果には、クラスタアンサンブル内のノードがリストされます。 
 ---
 = TestLocateCluster の略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

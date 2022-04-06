@@ -5,6 +5,7 @@ keywords: netapp, element, initiator, storage volume, element volume, access gro
 summary: イニシエータの概要、およびイニシエータを使用してボリュームアクセスグループ内のストレージへのアクセスを許可する方法について説明します。 
 ---
 = イニシエータ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

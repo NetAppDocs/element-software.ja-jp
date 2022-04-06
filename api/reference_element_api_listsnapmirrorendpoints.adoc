@@ -5,6 +5,7 @@ keywords: snapmirror,endpoint,endpoints,list,listing,listsnapmirrorendpoints
 summary: Element ソフトウェア Web UI は、 ListSnapMirrorEndpoints メソッドを使用して、 Element ストレージクラスタが通信しているすべての SnapMirror エンドポイントをリストします。 
 ---
 = ListSnapMirrorEndpoints を指定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

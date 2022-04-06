@@ -5,6 +5,7 @@ keywords: volume,volumes,list,listing,account,active,pending,deleted,listvolumes
 summary: ListVolumesForAccount メソッドを使用して、アカウントのアクティブなボリュームと削除されたボリュームを表示できます。 
 ---
 = ListVolumesForAccount を実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

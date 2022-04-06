@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,snapmirror,endpoint,modi
 summary: Element ソフトウェアでは、このバージョンの ModifySnapMirrorEndpoint メソッドを使用して、管理対象外の SnapMirror エンドポイントのストレージクラスタ名または IP アドレスの属性を変更します。管理対象外のエンドポイントは、 Element SnapMirror API では管理できません。ONTAP 管理ソフトウェアまたは API で管理する必要があります。 
 ---
 = ModifySnapMirrorEndpoint （管理対象外）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

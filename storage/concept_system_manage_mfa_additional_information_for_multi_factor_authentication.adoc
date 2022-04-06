@@ -5,6 +5,7 @@ keywords: mfa, idp, certificates, api method
 summary: 多要素認証については、次の点に注意してください。 
 ---
 = 多要素認証のための追加情報
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,snapshot
 summary: snapshot オブジェクトには、ボリューム用に作成した Snapshot の情報が含まれます。listsnapshots API メソッドを使用すると、 1 つまたはすべてのボリュームの Snapshot 情報のリストを取得できます。オブジェクトには、アクティブな Snapshot とボリューム用に作成した各 Snapshot の情報が含まれます。 
 ---
 = スナップショット
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

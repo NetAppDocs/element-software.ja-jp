@@ -5,6 +5,7 @@ keywords: QoS,policy,policies,create,creating
 summary: CreateQoSPolicy メソッドを使用して QoSPolicy オブジェクトを作成できます。このオブジェクトは、あとで作成時や変更時にボリュームに適用できます。QoS ポリシーには、一意の ID 、名前、および QoS 設定があります。 
 ---
 = QoSPolicy を作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

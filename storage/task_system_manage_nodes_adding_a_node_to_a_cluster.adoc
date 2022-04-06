@@ -5,6 +5,7 @@ keywords: nodes, add, config, cluster, pending, pairs, capacity, rule
 summary: ストレージの追加が必要になったとき、またはクラスタ作成後に、クラスタにノードを追加できます。ノードは、初回の電源投入時に初期設定を行う必要があります。設定が完了したノードは保留状態のノードのリストに表示され、クラスタに追加できます。 
 ---
 = クラスタにノードを追加します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

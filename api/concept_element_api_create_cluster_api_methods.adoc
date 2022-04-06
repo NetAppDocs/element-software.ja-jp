@@ -5,6 +5,7 @@ keywords: API,methods,cluster,create,creation
 summary: これらの API メソッドを使用して、ストレージクラスタを作成できます。これらのメソッドはすべて、単一のノードの API エンドポイントに対して使用する必要があります。 
 ---
 = クラスタ作成 API メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

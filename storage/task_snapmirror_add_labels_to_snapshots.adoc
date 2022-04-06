@@ -5,6 +5,7 @@ keywords: snapmirror labels, add labels to snapshots, specify retention policies
 summary: SnapMirror ラベルは、 SnapMirror エンドポイントでの Snapshot 保持ポリシーを指定します。ラベルは、 Snapshot およびグループ Snapshot に追加できます。 
 ---
 = Snapshot に SnapMirror ラベルを追加します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

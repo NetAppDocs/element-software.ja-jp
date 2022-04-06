@@ -5,6 +5,7 @@ keywords: snmp,test,send,trap,testing,sending,snmpsendtesttraps
 summary: SnmpSendTestTraps を使用すると、クラスタの SNMP 機能をテストできます。このメソッドは、クラスタに対して、現在設定されている SNMP マネージャにテスト用の SNMP トラップを送信するよう指示します。 
 ---
 = SnmpSendTestTraps のことです
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

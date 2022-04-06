@@ -5,6 +5,7 @@ keywords: volumes,volume,virtual,stats,list,listing,listvolumestatsbyvirtualvolu
 summary: ListVolumeStatsByVirtualVolume メソッドを使用すると、仮想ボリュームに関連付けられているシステム内のすべてのボリュームのボリューム統計情報をリストできます。統計は、ボリュームを作成したときからの累積値です。 
 ---
 = ListVolumeStatsByVirtualVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume to snapshot roll back, snapshot roll back, revert changes
 summary: ボリュームは以前の Snapshot にいつでもロールバックできます。その Snapshot の作成後にボリュームに対して行われた変更はすべて元に戻ります。 
 ---
 = ボリュームを Snapshot にロールバックします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

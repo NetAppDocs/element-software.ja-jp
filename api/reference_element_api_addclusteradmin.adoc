@@ -5,6 +5,7 @@ keywords: addclusteradmin,cluster,admin,administrator,adding,add
 summary: AddClusterAdmin メソッドを使用して、新しいクラスタ管理者アカウントを追加できます。クラスタ管理者は、 API および管理ツールを使用してクラスタを管理できます。クラスタ管理者アカウントは標準のテナントアカウントと完全に別のもので、関連性はありません。 
 ---
 = AddClusterAdmin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

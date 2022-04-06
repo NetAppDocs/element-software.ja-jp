@@ -5,6 +5,7 @@ keywords: backup,target,targets,remove,delete,removing,deleting,removebackuptarg
 summary: RemoveBackupTarget メソッドを使用すると、バックアップターゲットを削除できます。 
 ---
 = RemoveBackupTarget
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

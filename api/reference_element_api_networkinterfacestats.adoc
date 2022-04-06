@@ -5,6 +5,7 @@ keywords: object,objects,stats,statistics,networkInterfacestats
 summary: networkInterfaceStats オブジェクトには、ストレージノード上の個々のネットワークインターフェイスのネットワーク統計およびエラー情報が含まれます。 
 ---
 = networkInterfaceStats のようになります
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

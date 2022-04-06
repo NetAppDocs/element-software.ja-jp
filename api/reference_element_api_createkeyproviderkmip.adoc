@@ -5,6 +5,7 @@ keywords: KMIP,key provider,creating,create
 summary: CreateKeyProviderKmip メソッドを使用すると、指定した名前の Key Management Interoperability Protocol\ （ KMIP \ ）キープロバイダを作成できます。キープロバイダは、認証キーを取得するメカニズムと場所を定義します。KMIP キープロバイダの新規作成時には、そのプロバイダに割り当てられている KMIP キーサーバはありません。KMIP キーサーバを作成するには、 CreateKeyServerKmip メソッドを使用します。プロバイダに割り当てるには、 AddKeyServerToProviderKmip を参照してください。 
 ---
 = CreateKeyProviderKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

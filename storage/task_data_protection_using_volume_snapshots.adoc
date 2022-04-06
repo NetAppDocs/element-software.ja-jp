@@ -5,6 +5,7 @@ keywords: data protection, volume snapshots, roll back volume, replicate snapsho
 summary: ボリューム Snapshot は、ボリュームのポイントインタイムコピーです。ボリュームの Snapshot を作成し、あとでボリュームを Snapshot 作成時の状態にロールバックする必要が生じた場合に使用できます。 
 ---
 = ボリューム Snapshot を使用してデータを保護します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

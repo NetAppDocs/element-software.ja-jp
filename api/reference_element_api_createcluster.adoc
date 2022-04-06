@@ -5,6 +5,7 @@ keywords: CreateCluster,cluster,create,creating,initialize,initializing
 summary: CreateCluster メソッドを使用すると、「 mvip 」または「 svip 」アドレスを所有するクラスタ内のノードを初期化できます。新しいクラスタは、それぞれクラスタの最初のノードの管理 IP （ MIP ）を使用して初期化されます。このメソッドは、構成されているすべてのノードを自動的にクラスタに追加します。このメソッドを使用するのは、新しいクラスタを初期化するときに 1 回だけです。 
 ---
 = クラスタを作成
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volumes,volume,modifying,modify,change,changing,edit,editing,modifyvol
 summary: ModifyVolume メソッドを使用すると、既存ボリュームの設定を変更できます。一度に 1 つのボリュームを変更できます。変更はすぐに反映されます。 
 ---
 = ModifyVolume の追加
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

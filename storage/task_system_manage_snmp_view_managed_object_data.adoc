@@ -5,6 +5,7 @@ keywords: snmp, view, management information base files, download, mib, statisti
 summary: 個々の管理対象オブジェクトの定義に使用されている管理情報ベース（ MIB\ ）ファイルを表示およびダウンロードできます。SNMP 機能では、 SolidFire-StorageCluster-MIB で定義されているオブジェクトへの読み取り専用アクセスがサポートされます。 
 ---
 = 管理情報ベースファイルを使用して管理対象オブジェクトデータを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

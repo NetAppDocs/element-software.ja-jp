@@ -5,6 +5,7 @@ keywords: solidfire esds, capacity model, license key, get license key
 summary: ネットアップサポートに問い合わせて問題のトラブルシューティングを依頼する前に、 SolidFire ESDS クラスタのライセンスキー情報を入手しておく必要があります。SolidFire ESDS クラスタのライセンスキーは、クラスタの注文番号とシリアル番号で構成されます。 
 ---
 = ライセンスキーを取得します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

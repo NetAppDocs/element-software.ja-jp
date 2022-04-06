@@ -5,6 +5,7 @@ keywords: storage,cluster,services,list,listing,listservices
 summary: ListServices メソッドを使用すると、ノード、ドライブ、現在のソフトウェア、およびクラスタで実行中のその他のサービスのサービス情報をリストできます。 
 ---
 = ListServices の場合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: initiator,method,methods,API,managing,manage
 summary: イニシエータメソッドを使用すると、ストレージシステムと外部ストレージクライアントの間の通信を処理する iSCSI イニシエータオブジェクトを追加、削除、表示、および変更できます。 
 ---
 = イニシエータ API メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

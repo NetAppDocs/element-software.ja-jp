@@ -5,6 +5,7 @@ keywords: node,hardware,info,get,getting,gethardwareinfo
 summary: GetHardwareInfo メソッドを使用すると、 1 つのノードのハードウェア情報およびステータスを取得できます。ハードウェア情報には、通常、メーカー、ベンダー、バージョン、ドライブ、およびその他の関連する識別情報が含まれます。 
 ---
 = GetHardwareInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

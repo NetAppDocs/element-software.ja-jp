@@ -5,6 +5,7 @@ keywords: objects,object,clusterAdmin
 summary: clusterAdmin オブジェクトには、現在のクラスタ管理者ユーザの情報が含まれます。GetCurrentClusterAdmin API メソッドを使用すると、管理者ユーザの情報を取得できます。 
 ---
 = クラスタ管理者
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

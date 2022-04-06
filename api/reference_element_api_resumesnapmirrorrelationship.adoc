@@ -5,6 +5,7 @@ keywords: ResumeSnapMirrorRelationship,resume,SnapMirror,relationship,resuming
 summary: Element ソフトウェア Web UI は、 ResumeSnapMirrorRelationship メソッドを使用して、休止されている SnapMirror 関係の以降の転送を有効にします。 
 ---
 = ResumeSnapMirrorRelationship のコマンドを実行しまし
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

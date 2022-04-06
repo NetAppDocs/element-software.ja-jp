@@ -5,6 +5,7 @@ keywords: volume,API,method,methods
 summary: Element ソフトウェアボリューム API メソッドを使用すると、ストレージノードにあるボリュームを管理できます。これらのメソッドを使用して、ボリュームを作成、変更、クローニング、および削除できます。また、ボリュームのデータ測定値を収集して表示することもできます。 
 ---
 = ボリューム API メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

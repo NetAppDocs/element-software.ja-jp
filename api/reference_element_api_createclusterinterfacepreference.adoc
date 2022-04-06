@@ -5,6 +5,7 @@ keywords: cluster,interface,preferences,create,creating,CreateClusterInterfacePr
 summary: CreateClusterInterfacePreference メソッドを使用すると、 Element ソフトウェアを実行するストレージクラスタと統合されたシステムで、ストレージクラスタに任意の情報を作成して格納できます。このメソッドは内部で使用されます。 
 ---
 = CreateClusterInterfacePreference
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

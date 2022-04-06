@@ -5,6 +5,7 @@ keywords: initiator, edit, change alias, chap, credentials
 summary: 既存のイニシエータのエイリアスを変更するか、既存のエイリアスがない場合はエイリアスを追加できます。 
 ---
 = イニシエータを編集します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

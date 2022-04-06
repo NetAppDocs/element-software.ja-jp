@@ -5,6 +5,7 @@ keywords: SnapMirror,endpoints,create,creating,volume,volumes,CreateSnapMirrorVo
 summary: Element Web UI は、 CreateSnapMirrorVolume メソッドを使用して、リモート ONTAP システムにボリュームを作成します。 
 ---
 = SnapMirror ボリュームを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

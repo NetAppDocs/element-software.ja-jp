@@ -5,6 +5,7 @@ keywords: volume,access,group,modify,modifying,updating,changing,change,update,e
 summary: ModifyVolumeAccessGroup メソッドを使用すると、イニシエータを更新し、ボリュームアクセスグループのボリュームを追加または削除できます。 
 ---
 = ModifyVolumeAccessGroup の作成
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

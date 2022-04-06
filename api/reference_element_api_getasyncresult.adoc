@@ -5,6 +5,7 @@ keywords: async,asynchronous,results,result,get,getting,GetAsyncResult
 summary: GetAsyncResult を使用すると、非同期メソッドの呼び出し結果を取得できます。一部のメソッドの呼び出しには時間がかかり、システムが初期応答を送信したときに完了していない場合があります。メソッド呼び出しのステータスまたは結果を取得するには、 GetAsyncResult を使用してメソッドから返される asyncHandle の値をポーリングします。 
 ---
 = GetAsyncResult
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

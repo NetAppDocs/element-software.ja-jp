@@ -5,6 +5,7 @@ keywords:
 summary: Fibre Channel ノードを使用すると、クラスタを Fibre Channel ネットワークファブリックに接続できます。Fibre Channel ノードはペアで追加され、アクティブ / アクティブモードで動作します（すべてのノードがクラスタのトラフィックをアクティブに処理します）。Element ソフトウェアバージョン 9.0 以降を実行しているクラスタは、最大 4 つのノードをサポートします。以前のバージョンを実行しているクラスタは、最大 2 つのノードをサポートします。 
 ---
 = Fibre Channel ノードを設定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

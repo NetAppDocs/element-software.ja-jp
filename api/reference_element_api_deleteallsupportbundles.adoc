@@ -5,6 +5,7 @@ keywords: support,bundle,delete,deleting,DeleteAllSupportBundles
 summary: DeleteAllSupportBundles メソッドを使用すると、 CreateSupportBundle API メソッドで生成されたすべてのサポートバンドルを削除できます。 
 ---
 = DeleteAllSupportBundles
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

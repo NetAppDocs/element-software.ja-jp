@@ -5,6 +5,7 @@ keywords: remote replication, clusters, Element software, failover, failback
 summary: Element ソフトウェアを実行するクラスタでは、リアルタイムレプリケーションを使用してボリュームデータのリモートコピーを迅速に作成できます。1 つのストレージクラスタを最大 4 つの他のストレージクラスタとペアリングすることができます。フェイルオーバーやフェイルバックの際には、クラスタペアのどちらかのクラスタからボリュームのデータを同期または非同期でレプリケートできます。 
 ---
 = NetApp Element ソフトウェアを実行しているクラスタ間でリモートレプリケーションを実行
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: cluster,list,listing,fault,faults,listclusterfaults,error,errors
 summary: ListClusterFaults メソッドを使用すると、クラスタで検出されたあらゆる障害に関する情報をリストできます。このメソッドでは、現在の障害と解決済みの障害の両方を表示できます。障害は 30 秒ごとにキャッシュされます。 
 ---
 = ListClusterFaults
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

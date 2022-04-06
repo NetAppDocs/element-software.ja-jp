@@ -5,6 +5,7 @@ keywords: configs configurations,idp configs,list
 summary: ListIdpConfigurations メソッドを使用すると、サードパーティ IdP の設定をリストできます。必要に応じて、 enabledOnly フラグを指定して現在有効になっている IdP 設定を取得したり、 IdP メタデータ UUID または IdP 名を指定して特定の IdP 設定の情報を照会したりできます。 
 ---
 = ListIdpConfigurations の例を次に示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

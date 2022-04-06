@@ -5,6 +5,7 @@ keywords: terms,use,banner,get,getting,getloginbanner,login
 summary: GetLoginBanner メソッドを使用すると、ユーザが Element Web インターフェイスにログインしたときに表示される現在アクティブな利用条件バナーを取得できます。 
 ---
 = GetLoginBanner
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

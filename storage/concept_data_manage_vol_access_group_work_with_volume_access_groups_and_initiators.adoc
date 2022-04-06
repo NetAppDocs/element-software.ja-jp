@@ -5,6 +5,7 @@ keywords: volume access groups, initiators, working with, chap, fc, iscsi
 summary: iSCSI イニシエータまたは Fibre Channel イニシエータを使用して、ボリュームアクセスグループ内に定義されたボリュームにアクセスできます。 
 ---
 = ボリュームアクセスグループとイニシエータを使用する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

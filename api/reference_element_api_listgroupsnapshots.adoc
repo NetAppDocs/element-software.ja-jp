@@ -5,6 +5,7 @@ keywords: snapshot,snapshots,group,list,listing,listgroupsnapshots
 summary: ListGroupSnapshots メソッドを使用すると、作成済みのすべてのグループ Snapshot に関する情報を取得できます。 
 ---
 = ListGroupSnapshots を参照してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

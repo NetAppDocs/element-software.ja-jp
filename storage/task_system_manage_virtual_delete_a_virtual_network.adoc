@@ -5,6 +5,7 @@ keywords: virtual network delete, remove, object, address blocks, vlan
 summary: 仮想ネットワークオブジェクトを削除することができます。仮想ネットワークを削除する前に、アドレスブロックを別の仮想ネットワークに追加する必要があります。 
 ---
 = 仮想ネットワークを削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

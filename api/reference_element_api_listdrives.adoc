@@ -5,6 +5,7 @@ keywords: drives,drive,list,listing,listdrives,cluster
 summary: ListDrives メソッドを使用すると、クラスタの Active 状態のノード内に存在するドライブをリストできます。このメソッドは、ボリュームメタデータまたはブロックドライブとして追加されたドライブのほか、まだ追加されていないが使用可能なドライブを返します。 
 ---
 = ListDrives の 2 つのメソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

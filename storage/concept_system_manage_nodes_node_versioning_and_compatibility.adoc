@@ -5,6 +5,7 @@ keywords: compatibility, node version, clusters, software version, compatible ve
 summary: ノードの互換性は、ノードにインストールされている Element ソフトウェアのバージョンに基づきます。ノードとクラスタのバージョンに互換性がない場合、 Element ソフトウェアベースのストレージクラスタは、ノードをクラスタ上の Element ソフトウェアのバージョンに自動で更新します。 
 ---
 = ノードのバージョンと互換性
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: list,listing,protection,domain,levels,level,listprotectiondomainlevels
 summary: ListProtectionDomainLevels メソッドを使用すると、ストレージクラスタのトレランスレベルと耐障害性レベルをリストできます。トレランスレベルは、障害が発生した場合にクラスタがデータの読み取りと書き込みを継続できるかどうかを示し、耐障害性レベルは、 1 つ以上の障害からストレージクラスタが自動的に自身を修復できるかどうかを示します。 
 ---
 = ListProtectionDomainLevels
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

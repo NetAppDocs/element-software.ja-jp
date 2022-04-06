@@ -5,6 +5,7 @@ keywords: backup,target,targets,info,list,listing,listbackuptargets
 summary: ListBackupTargets メソッドを使用すると、作成済みのすべてのバックアップターゲットに関する情報を取得できます。 
 ---
 = ListBackupTargets を参照します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

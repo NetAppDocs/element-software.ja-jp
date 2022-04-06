@@ -5,6 +5,7 @@ keywords: volume,volumes,get,getting,count,measurements,getvolumecount
 summary: GetVolumeCount メソッドを使用すると、現在システムにあるボリュームの数を取得できます。 
 ---
 = GetVolumeCount の値
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

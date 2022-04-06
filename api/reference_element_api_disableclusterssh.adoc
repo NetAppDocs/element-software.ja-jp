@@ -5,6 +5,7 @@ keywords: SSH,disable,disabling,cluster,DisableClusterSsh
 summary: DisableClusterSsh メソッドを使用して、ストレージクラスタ全体の SSH サービスを無効にすることができます。ストレージクラスタにノードを追加すると、新しいノードにはこのクラスタ全体の設定が継承されます。 
 ---
 = DisableClusterSsh
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

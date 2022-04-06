@@ -5,6 +5,7 @@ keywords:
 summary:  
 ---
 = Element ソフトウェアでストレージを管理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

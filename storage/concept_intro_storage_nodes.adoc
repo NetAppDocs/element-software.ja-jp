@@ -5,6 +5,7 @@ keywords: storage nodes, management nodes, block space, metadata space, data man
 summary: SolidFire ストレージノードは、 Bond10G ネットワークインターフェイスを通じて相互に通信する一連のドライブを搭載したサーバです。ノード内のドライブには、データの格納用と管理用にブロックスペースとメタデータスペースが確保されます。 
 ---
 = ストレージノード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

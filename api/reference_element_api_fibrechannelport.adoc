@@ -5,6 +5,7 @@ keywords: object,objects,fibreChannelPort
 summary: fibreChannelPort オブジェクトには、ノード上の個別のポートまたはクラスタ内のノード全体に関する情報が含まれます。この情報は、 ListNodeFibreChannelPortInfo メソッドを使用して取得できます。 
 ---
 = fibreChannelPort
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

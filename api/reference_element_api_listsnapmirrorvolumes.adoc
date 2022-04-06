@@ -5,6 +5,7 @@ keywords: snapmirror,volume,list,listing,volumes,listsnapmirrorvolumes,ontap
 summary: Element ソフトウェア Web UI は、 ListSnapMirrorVolumes メソッドを使用して、リモート ONTAP システムで使用可能なすべての SnapMirror ボリュームをリストします。 
 ---
 = ListSnapMirrorVolumes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

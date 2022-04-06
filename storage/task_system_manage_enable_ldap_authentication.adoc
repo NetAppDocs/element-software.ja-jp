@@ -5,6 +5,7 @@ keywords:
 summary: ストレージシステムと既存の LDAP サーバの統合を設定できます。これにより、 LDAP 管理者はストレージシステムへのユーザアクセスを一元管理できます。 
 ---
 = Element ユーザインターフェイスで LDAP 認証を有効にします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

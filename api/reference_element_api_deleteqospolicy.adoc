@@ -5,6 +5,7 @@ keywords: QoS,policy,policies,delete,deleting,DeleteQoSPolicy
 summary: DeleteQoSPolicy メソッドを使用してシステムから QoS ポリシーを削除できます。このポリシーで作成または変更したすべてのボリュームの QoS 設定には影響はありません。 
 ---
 = DeleteQoSPolicy のように入力します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

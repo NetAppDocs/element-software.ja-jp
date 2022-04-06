@@ -5,6 +5,7 @@ keywords: VLAN,pre-deployment,network,validation,validate,validating,check,check
 summary: CheckPingOnVlan メソッドを使用すると、導入前のネットワーク検証時に一時的な VLAN でネットワーク接続をテストできます。CheckPingOnVlan は一時的な VLAN インターフェイスを作成し、その VLAN インターフェイスを使用してストレージクラスタ内のすべてのノードに ICMP パケットを送信し、そのインターフェイスを削除します。 
 ---
 = CheckPingOnVlan が実行されます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

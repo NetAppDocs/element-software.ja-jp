@@ -5,6 +5,7 @@ keywords: KMIP,key provider,deleting,delete
 summary: DeleteKeyProviderKmip メソッドを使用すると、指定した非アクティブな Key Management Interoperability Protocol\ （ KMIP \ ）キープロバイダを削除できます。 
 ---
 = DeleteKeyProviderKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

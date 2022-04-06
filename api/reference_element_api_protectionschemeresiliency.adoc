@@ -5,6 +5,7 @@ keywords: object,objects,protectionSchemeResiliency
 summary: protectionSchemeResiliency オブジェクトには、特定の保護スキームについて、関連する protectionDomainType 内の 1 つ以上の障害からストレージクラスタが自動的に自己修復できるかどうかの情報が含まれます。ストレージクラスタは、単一のストレージノードに障害が発生した場合（ノードトレランス \ ）、データの読み取りと書き込みを継続できる場合に修復されたとみなされます。 
 ---
 = protectionSchemeResiliency の
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

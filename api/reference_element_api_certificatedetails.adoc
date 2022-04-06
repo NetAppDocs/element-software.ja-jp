@@ -5,6 +5,7 @@ keywords: security,certificate,SSL,get,getting,certificateDetails,object,objects
 summary: certificateDetails オブジェクトには、セキュリティ証明書に関するデコードされた情報が含まれます。 
 ---
 = 証明書の詳細
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

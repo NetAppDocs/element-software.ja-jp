@@ -5,6 +5,7 @@ keywords: terms of use banner, disable
 summary: 利用条件のバナーを無効にすることができます。バナーを無効にすると、ユーザが Element UI を使用する際に利用条件の同意を求められなくなります。 
 ---
 = 利用条件のバナーを無効にします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

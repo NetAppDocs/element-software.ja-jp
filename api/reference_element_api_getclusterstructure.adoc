@@ -5,6 +5,7 @@ keywords: storage,cluster,structure,config,configuration,info,get,getting,getclu
 summary: GetClusterStructure メソッドを使用すると、現在のストレージクラスタ構成情報をバックアップできます。このメソッドの実行中にストレージクラスタ構成が変更された場合、正しい構成がバックアップされる保証はありません。このデータをテキストファイルに保存して、災害発生時に他のクラスタまたは同じクラスタでリストアできます。 
 ---
 = GetClusterStructure （ GetClusterStructure ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

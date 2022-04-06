@@ -5,6 +5,7 @@ keywords: volume,access,group,groups,delete,deleting,DeleteVolumeAccessGroup
 summary: DeleteVolumeAccessGroup を使用すると、ボリュームアクセスグループを削除できます。 
 ---
 = DeleteVolumeAccessGroup
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

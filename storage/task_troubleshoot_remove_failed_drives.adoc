@@ -5,6 +5,7 @@ keywords: troubleshoot, failed drives, remove
 summary: ドライブの自己診断によりドライブで障害が発生したことがノードに通知された場合、あるいはドライブとの通信が 5 分半以上停止した場合、 SolidFire システムはドライブを障害状態にします。障害ドライブのリストが表示されます。障害が発生したドライブは、 NetApp Element ソフトウェアの障害ドライブリストから削除する必要があります。 
 ---
 = クラスタから障害ドライブを削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

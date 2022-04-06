@@ -5,6 +5,7 @@ keywords: filter, filtering, sorting information, viewing lists, unfiltered list
 summary: Element UI の各ページでは、リスト情報をフィルタリングできます。リスト \ （ボリュームや Snapshot など）を表示するときに、フィルタを 1 つ以上追加して情報を絞り込んでページに収まるようにすることができます。 
 ---
 = フィルタを使用して結果を制限します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

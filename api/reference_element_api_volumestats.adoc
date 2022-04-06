@@ -5,6 +5,7 @@ keywords: object,objects,volumeStats
 summary: volumeStats オブジェクトには、各ボリュームの統計データが含まれます。 
 ---
 = ボリューム統計
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

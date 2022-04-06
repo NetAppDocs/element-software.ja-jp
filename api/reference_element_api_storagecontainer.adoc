@@ -5,6 +5,7 @@ keywords: object,objects,storagecontainer
 summary: storageContainer オブジェクトには、仮想ボリュームストレージコンテナの属性が含まれます。ListStorageContainers API メソッドを使用すると、クラスタ内の各ストレージコンテナに関する以下の情報を取得できます。 
 ---
 = ストレージコンテナ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

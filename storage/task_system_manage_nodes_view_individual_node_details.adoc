@@ -5,6 +5,7 @@ keywords: nodes, view, details, vlan, mip, cip, sip, virtual id
 summary: 個々のノードの詳細を確認できます。サービスタグやドライブの詳細のほか、利用率やドライブの統計のグラフも参照できます。クラスタタブのノードページには、各ノードのソフトウェアバージョンを表示できるバージョン列があります。 
 ---
 = ノードの詳細を表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

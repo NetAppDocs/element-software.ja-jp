@@ -5,6 +5,7 @@ keywords: volume,volumes,list,listing,listvolumes
 summary: ListVolumes メソッドを使用すると、クラスタ内のボリュームのリストを取得できます。パラメータを使用して、リストで返すボリュームを指定できます。 
 ---
 = ListVolumes の場合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

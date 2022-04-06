@@ -5,6 +5,7 @@ keywords: KMIP,key server,keys
 summary: keyServerKmip オブジェクトは、 Key Management Interoperability Protocol\ （ KMIP \ ）キーサーバの詳細を示します。このキーサーバから、保存データの暗号化などのクラスタ機能で使用する認証キーを取得できます。 
 ---
 = KeyServerKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

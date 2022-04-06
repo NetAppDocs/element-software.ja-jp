@@ -5,6 +5,7 @@ keywords: target volume, create, read, write access
 summary: レプリケーションプロセスには、ソースボリュームとターゲットボリュームの 2 つのエンドポイントが含まれます。ターゲットボリュームは、レプリケーション時にデータを受け入れるように、作成時に自動的に読み取り / 書き込みモードに設定されます。 
 ---
 = 読み取りまたは書き込みアクセスが可能なターゲットボリュームを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

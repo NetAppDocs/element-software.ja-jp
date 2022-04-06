@@ -5,6 +5,7 @@ keywords: key provider,KMIP,keys
 summary: keyProviderKmip オブジェクトは、 Key Management Interoperability Protocol\ （ KMIP \ ）キープロバイダの説明を示します。キープロバイダは、保存データの暗号化などのクラスタ機能で使用する認証キーを取得するためのメカニズムと場所の両方を提供します。 
 ---
 = keyProviderKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

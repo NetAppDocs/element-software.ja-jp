@@ -5,6 +5,7 @@ keywords: IdP,idp,configuration,delete
 summary: DeleteIdpConfiguration メソッドを使用すると、クラスタのサードパーティの IdP の既存の設定を削除できます。最後の IdP 設定を削除すると、 SAML サービスプロバイダ証明書がクラスタから削除されます。 
 ---
 = DeleteIdpConfiguration
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume access groups, volumes, access volumes
 summary: NetApp SolidFire ストレージのボリュームアクセスグループを使用すると、 iSCSI イニシエータの IQN または Fibre Channel の WWPN でボリュームの集合にアクセスできます。アクセスグループに追加した各 IQN は、 CHAP 認証を使用せずにグループ内の各ボリュームにアクセスできます。アクセスグループに追加した各 WWPN は、アクセスグループ内のボリュームへの Fibre Channel ネットワークアクセスを許可します。 
 ---
 = ボリュームアクセスグループ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

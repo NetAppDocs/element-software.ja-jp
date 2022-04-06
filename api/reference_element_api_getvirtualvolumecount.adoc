@@ -5,6 +5,7 @@ keywords: volume,volumes,virtual,get,getting,count,GetVirtualVolumeCount
 summary: GetVirtualVolumeCount メソッドを使用すると、現在システムに存在する仮想ボリュームの数を取得できます。 
 ---
 = GetVirtualVolumeCount を実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

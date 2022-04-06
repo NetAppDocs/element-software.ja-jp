@@ -5,6 +5,7 @@ keywords: snapshot schedule, delete
 summary: Snapshot スケジュールを削除できます。スケジュールを削除すると、以降のスケジュールされた Snapshot は実行されません。過去にスケジュールで作成された Snapshot はストレージシステム上に保持されます。 
 ---
 = Snapshot スケジュールを削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

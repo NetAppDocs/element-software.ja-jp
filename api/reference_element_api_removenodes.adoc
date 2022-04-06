@@ -5,6 +5,7 @@ keywords: node,nodes,cluster,remove,removing,removenodes
 summary: RemoveNodes を使用すると、クラスタで不要になった 1 つ以上のノードを削除できます。 
 ---
 = RemoveNodes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

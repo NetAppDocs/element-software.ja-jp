@@ -5,6 +5,7 @@ keywords: response,example,listactivevolumes
 summary: ListActiveVolumes メソッドの応答例を次に示します。 
 ---
 = ListActiveVolumes の場合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

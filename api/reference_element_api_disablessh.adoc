@@ -5,6 +5,7 @@ keywords: SSH,disable,disabling,node,DisableSsh
 summary: DisableSsh メソッドを使用して、 1 つのストレージノードの SSH サービスを無効にすることができます。このメソッドは、クラスタ全体の SSH サービスタイムアウト時間には影響しません。 
 ---
 = DisableSsh （無効化
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: fibre channel sessions, fc, FC, sessions
 summary: ここでは、クラスタに接続されているアクティブな Fibre Channel （ FC ）セッションに関する情報を示します。 
 ---
 = Fibre Channel セッションの詳細
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: lldp,config,configure,set,setting,setlldpconfig
 summary: SetLldpConfig メソッドを使用すると、ストレージクラスタのリンクレイヤ検出プロトコル（ LLDP ）を設定できます。 
 ---
 = SetLldpConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

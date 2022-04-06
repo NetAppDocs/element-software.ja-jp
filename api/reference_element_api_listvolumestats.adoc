@@ -5,6 +5,7 @@ keywords: volumes,volume,stats,list,listing,listvolumestats,activity
 summary: ListVolumeStats メソッドを使用すると、単一のボリューム、ボリュームのリスト、またはすべてのボリュームのアクティビティ測定値の概要を取得できます（ボリューム ID パラメータを省略した場合）。測定値は、ボリュームを作成したときからの累積値です。 
 ---
 = ListVolumeStats の値
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

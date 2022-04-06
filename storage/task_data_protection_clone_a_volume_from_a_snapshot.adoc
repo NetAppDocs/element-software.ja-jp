@@ -5,6 +5,7 @@ keywords: clone volume from snapshot, volume snapshots, clone
 summary: ボリュームの Snapshot から新しいボリュームを作成できます。この処理では、 Snapshot の作成時点でボリュームに含まれていたデータを使用して新しいボリュームをクローニングします。このプロセスでは、ボリュームの他の Snapshot に関する情報が新しく作成されたボリュームに格納されます。 
 ---
 = Snapshot からボリュームをクローニングします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

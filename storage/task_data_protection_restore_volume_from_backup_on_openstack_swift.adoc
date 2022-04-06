@@ -5,6 +5,7 @@ keywords: volume restore, openstack swift object store
 summary: OpenStack Swift オブジェクトストア上のバックアップからボリュームをリストアできます。 
 ---
 = OpenStack Swift オブジェクトストア上のバックアップからボリュームをリストアします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: ntp, cluster, query, fqdn, dns server
 summary: クラスタ内の各ノードでネットワークタイムプロトコル（ NTP ）サーバの更新を照会するように設定できます。クラスタは、設定済みのサーバのみと通信し、そのサーバから NTP 情報を要求します。 
 ---
 = クラスタが照会するネットワークタイムプロトコルサーバを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

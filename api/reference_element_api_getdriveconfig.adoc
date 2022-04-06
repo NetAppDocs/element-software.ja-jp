@@ -5,6 +5,7 @@ keywords: drive,config,configuration,get,getting,getdriveconfig
 summary: GetDriveConfig メソッドを使用すると、想定されるスライスドライブとブロックドライブの数に関するドライブ情報のほか、ノードに現在接続されているスライスドライブとブロックドライブの数を取得できます。 
 ---
 = GetDriveConfig が実装されました
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

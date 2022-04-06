@@ -5,6 +5,7 @@ keywords: snapshot, schedule, volume snapshots, group snapshots
 summary: ボリューム Snapshot を指定した間隔で作成するようにスケジュールを設定することで、ボリュームまたはボリュームグループ上のデータを保護できます。1 つのボリューム Snapshot またはグループ Snapshot を自動的に実行するようにスケジュールを設定できます。 
 ---
 = Snapshot のスケジュールを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

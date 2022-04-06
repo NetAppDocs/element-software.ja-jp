@@ -5,6 +5,7 @@ keywords: mdss drives, troubleshoot, multi-drive slice service
 summary: 一方または両方のメタデータドライブ（またはスライスドライブ）で障害が発生した場合は、そのドライブをクラスタに戻すことでドライブをリカバリできます。このリカバリ処理は、ノードで MDSS 機能がすでに有効になっている場合に NetApp Element UI で実行できます。 
 ---
 = 基本的な MDSS ドライブのトラブルシューティング
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

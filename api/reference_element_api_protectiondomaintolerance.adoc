@@ -5,6 +5,7 @@ keywords: object,objects,protectionDomainTolerance
 summary: protectionDomainTolerance オブジェクトには、関連付けられた保護ドメインタイプの単一の保護ドメイン内で 1 つ以上の障害が発生した場合に、ストレージクラスタがデータの読み取りおよび書き込みを継続できるかどうかの情報が含まれます。 
 ---
 = protectionDomainTolerance
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

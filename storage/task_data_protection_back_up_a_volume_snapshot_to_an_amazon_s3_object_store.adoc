@@ -5,6 +5,7 @@ keywords: volume snapshot, backup, amazon S3 object store
 summary: Amazon S3 と互換性のある外部のオブジェクトストアに SolidFire Snapshot をバックアップできます。 
 ---
 = Amazon S3 オブジェクトストアにボリューム Snapshot をバックアップします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

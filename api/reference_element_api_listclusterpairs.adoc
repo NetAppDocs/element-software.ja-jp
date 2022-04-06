@@ -5,6 +5,7 @@ keywords: cluster,pair,pairs,paired,list,listing,listclusterpairs
 summary: ListClusterPairs メソッドを使用すると、現在のクラスタとペアリングされているすべてのクラスタを表示できます。このメソッドは、アクティブまたは保留状態のクラスタペアリングに関する情報を返します。たとえば、現在のペアリングについての統計データのほか、クラスタペアリングの接続やレイテンシについての情報（ミリ秒）が含まれます。 
 ---
 = ListClusterPairs
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

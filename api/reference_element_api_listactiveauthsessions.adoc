@@ -5,6 +5,7 @@ keywords: active,sessions,authentication session,list
 summary: ListActiveAuthSessions メソッドを使用して、アクティブな認証済みのすべてのセッションをリストできます。このメソッドを呼び出すことができるのは、管理者アクセス権を持つユーザーだけです。 
 ---
 = ListActiveAuthSessions を参照してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

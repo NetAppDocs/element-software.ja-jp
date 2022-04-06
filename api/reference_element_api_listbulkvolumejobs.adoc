@@ -5,6 +5,7 @@ keywords: bulk,volume,job,jobs,volumes,read,write,operation,list,listing,listbul
 summary: ListBulkVolumeJobs メソッドを使用すると、システムで発生している各ボリュームの一括読み取り / 書き込み処理に関する情報を取得できます。 
 ---
 = ListBulkVolumeJobs
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume,pairing,CompleteVolumePairing,pair,volumes,complete,completing
 summary: CompleteVolumePairing を使用すると、 2 つのボリュームのペアリングを完了できます。 
 ---
 = CompleteVolumePairing
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

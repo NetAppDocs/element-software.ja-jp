@@ -5,6 +5,7 @@ keywords: element, solidfire esds, maintenance, maintenance mode
 summary: ソフトウェアのアップグレードやホストの修復などのメンテナンスのためにストレージノードをオフラインにする必要がある場合は、そのノードのメンテナンスモードを有効にすることで、ストレージクラスタの残りの部分への I/O の影響を最小限に抑えることができます。 
 ---
 = SolidFire ESDS クラスタではメンテナンスモードを使用します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

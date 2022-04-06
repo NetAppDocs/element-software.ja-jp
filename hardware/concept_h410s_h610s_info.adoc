@@ -5,6 +5,7 @@ keywords: h410s, h610s, hardware installation, hardware maintenance
 summary: ここでは、 H シリーズストレージノードの設置とメンテナンスに関する情報について説明します。 
 ---
 = H410S および H610S ハードウェアの情報
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

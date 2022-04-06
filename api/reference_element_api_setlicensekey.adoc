@@ -5,6 +5,7 @@ keywords: set,setting,license,key
 summary: SolidFire Enterprise SDS ストレージクラスタでは、 SetLicenseKey メソッドを使用して、ストレージクラスタのライセンスキーを設定できます。ストレージクラスタのライセンスキーは、クラスタの注文番号とシリアル番号で構成され、 Element ソフトウェア用に購入した容量モデルがアクティブになります。 
 ---
 = SetLicenseKey の場合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

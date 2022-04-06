@@ -5,6 +5,7 @@ keywords: drive,hardware,list,listing,listdrivehardware,drives
 summary: ListDriveHardware メソッドを使用すると、ノードに接続されているすべてのドライブをリストできます。このメソッドを個々のノードで使用した場合は、ドライブのハードウェア情報が返されます。クラスタマスターノード MVIP で使用した場合は、すべてのノードのすべてのドライブに関する情報が返されます。 
 ---
 = ListDriveHardware の略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

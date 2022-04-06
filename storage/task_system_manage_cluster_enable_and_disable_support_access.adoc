@@ -5,6 +5,7 @@ keywords: support access, enable, disable
 summary: サポートアクセスを有効にすると、ネットアップサポートの担当者がトラブルシューティングのために一時的に SSH 経由でストレージノードにアクセスできるようになります。 
 ---
 = サポートアクセスを有効または無効にします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

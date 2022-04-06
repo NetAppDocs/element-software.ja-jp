@@ -5,6 +5,7 @@ keywords: cluster,capacity,getting,get,measurements,measure,deduplication,GetClu
 summary: GetClusterCapacity を使用すると、ストレージクラスタ全体の容量測定値の概要を取得できます。このメソッドが返すフィールドを使用すると、 Element Web UI に表示される削減率を計算できます。効率性の計算式をスクリプトで使用して、シンプロビジョニング、重複排除、圧縮、および全体的な効率性の削減率を取得できます。 
 ---
 = GetClusterCapacity
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

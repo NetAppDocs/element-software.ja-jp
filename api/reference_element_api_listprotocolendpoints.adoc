@@ -5,6 +5,7 @@ keywords: protocol,endpoints,endpoint,list,listing,listprotocolendpoints
 summary: ListProtocolEndpoints メソッドを使用すると、クラスタ内のすべてのプロトコルエンドポイントに関する情報を取得できます。プロトコルエンドポイントは、関連付けられた仮想ボリュームストレージコンテナへのアクセスを管理します。 
 ---
 = ListProtocolEndpoints を指定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

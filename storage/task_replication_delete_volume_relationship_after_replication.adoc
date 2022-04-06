@@ -5,6 +5,7 @@ keywords: volume pair, delete, replication
 summary: レプリケーションが完了してボリュームペア関係が不要になったら、ボリューム関係を削除できます。 
 ---
 = レプリケーション後にボリューム関係を削除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

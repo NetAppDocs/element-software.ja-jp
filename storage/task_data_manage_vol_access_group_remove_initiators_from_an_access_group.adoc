@@ -5,6 +5,7 @@ keywords: initiator, remove from volume access group, access groups, remove init
 summary: アクセスグループからイニシエータを削除すると、そのイニシエータはそのボリュームアクセスグループ内のボリュームにアクセスできなくなります。ボリュームへの通常のアカウントアクセスは引き続き可能です。 
 ---
 = アクセスグループからイニシエータを削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

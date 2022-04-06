@@ -5,6 +5,7 @@ summary: NetApp SolidFire ストレージシステムのアップグレードの
 keywords: netapp, solidfire, cluster, management services, hcc, update management services 
 ---
 = 管理サービスを更新
+:allow-uri-read: 
 
 
 [role="lead"]

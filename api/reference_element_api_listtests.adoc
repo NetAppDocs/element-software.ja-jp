@@ -5,6 +5,7 @@ keywords: test,tests,list,listing,listtests
 summary: ListTests メソッドを使用すると、ノードで実行可能なテストをリストできます。 
 ---
 = ListTests のように指定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

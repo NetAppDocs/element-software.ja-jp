@@ -5,6 +5,7 @@ keywords: cluster,API,methods,method,manage
 summary: Element ソフトウェアクラスタ API メソッドを使用すると、ストレージクラスタおよびストレージクラスタに属するノードの設定とトポロジを管理できます。 
 ---
 = クラスタ API メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

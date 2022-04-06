@@ -5,6 +5,7 @@ keywords: system,config,configuration,methods,api
 summary: システム設定 API メソッドを使用すると、クラスタ内のすべてのノードに適用される設定値を取得および設定できます。 
 ---
 = システム設定 API メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

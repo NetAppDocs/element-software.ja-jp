@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,accounts,settings,modify
 summary: ModifyAccount メソッドを使用すると、既存アカウントを変更できます。 
 ---
 = ModifyAccount の場合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

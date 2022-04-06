@@ -5,6 +5,7 @@ keywords: solidfire chassis, chassis replacement, sf-series nodes
 summary: ファン、 CPU 、または Dual Inline Memory Module （ DIMM ）に障害が発生した場合や、過熱やブートプロセスの問題を解決する場合には、シャーシの交換が必要になることがあります。NetApp Element ソフトウェアユーザインターフェイス（ UI ）のクラスタ障害や、シャーシの前面ランプの黄色の点滅は、シャーシの交換が必要な可能性があることを示しています。続行する前にネットアップサポートにお問い合わせください。 
 ---
 = シャーシを交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

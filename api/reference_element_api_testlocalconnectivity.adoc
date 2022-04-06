@@ -5,6 +5,7 @@ keywords: test,testing,local,connectivity,TestLocalConnectivity
 summary: TestLocalConnectivity メソッドを使用すると、アクティブなクラスタ内の各ノードのクラスタ IP （ CIP ）に対して ping を実行できます。 
 ---
 = TestLocalConnectivity のように表示され
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

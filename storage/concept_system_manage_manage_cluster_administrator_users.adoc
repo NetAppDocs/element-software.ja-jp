@@ -5,6 +5,7 @@ keywords: element, solidfire, cluster admin, account, create, change, configure,
 summary: SolidFire ストレージシステムのクラスタ管理者アカウントを管理できます。実行できるクラスタ管理機能には、クラスタ管理者アカウントの作成、削除、編集、クラスタ管理者パスワードの変更、ユーザのシステムアクセスを管理するための LDAP の設定などがあります。 
 ---
 = クラスタ管理者のユーザアカウントを管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

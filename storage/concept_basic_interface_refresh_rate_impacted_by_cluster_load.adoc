@@ -5,6 +5,7 @@ keywords: data refresh interval, cluster, interval controls, API requests, heavy
 summary: API の応答時間によっては、表示している NetApp Element ソフトウェアのページの一部に関してクラスタがデータの更新間隔を自動的に調整することがあります。 
 ---
 = インターフェイス更新間隔にクラスタの負荷が影響します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

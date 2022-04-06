@@ -5,6 +5,7 @@ keywords: failback, perform, source volume, snapmirror, ui
 summary: NetAppElement UI を使用して、元のソースボリュームを再同期し、フェイルバックを実行できます。元のソースボリュームがまだ存在している手順環境のシナリオです。 
 ---
 = ソースボリュームが存在する場合は、フェイルバックを実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

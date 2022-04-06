@@ -5,6 +5,7 @@ keywords: solidfire chassis, power supply replacement, sf-series nodes
 summary: 各 SolidFire シャーシには、電源を冗長化するために 2 台の電源装置が搭載されています電源装置に障害が発生した場合は、シャーシの電源の冗長性を維持するために、できるだけ早く交換する必要があります。 
 ---
 = 電源装置を交換してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

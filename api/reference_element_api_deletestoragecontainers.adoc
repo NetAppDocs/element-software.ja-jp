@@ -5,6 +5,7 @@ keywords: virtual,volume,storage,container,delete,deleting,vvol,DeleteStorageCon
 summary: DeleteStorageContainers メソッドを使用すると、最大で 2 、 000 個の仮想ボリューム（ VVol ）ストレージコンテナをシステムから一度に削除できます。削除するストレージコンテナに VVol が含まれないようにしてください。 
 ---
 = DeleteStorageContainers
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

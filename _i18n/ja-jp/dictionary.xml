@@ -11468,8 +11468,6 @@
   <block id="9d5d97be2b35b2991e27e028a5e6269e" category="paragraph">管理サービス 2.17 以前：</block>
   <block id="f5f61ce15f6fc00904ccb602ea18ba4f" category="admonition">API コマンドで使用されるベアラー '$ ｛ token ｝ ' を検索できます <block ref="13f13ef2cfa191d3bfde7dc1932402de" category="inline-link-macro-rx"></block>。ベアラー '$ ｛ token ｝ ' は curl 応答に含まれています。</block>
   <block id="85b9564487317ce0e6d7210cb84f0494" category="admonition">API コマンドで使用されるベアラー '$ ｛ token ｝ ' を検索できます <block ref="13f13ef2cfa191d3bfde7dc1932402de" category="inline-link-macro-rx"></block>。ベアラー '$ ｛ token ｝ ' は curl 応答に含まれています。</block>
-  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
-  <block id="6f2ac1cf1da8ec34232c651d4bba0149" category="paragraph"><block ref="6f2ac1cf1da8ec34232c651d4bba0149" category="inline-link-macro-rx"></block></block>
   <block id="5b7e7ff4cde603a8e9bda3b0790603ec" category="section-title">Element 12.3.1</block>
   <block id="adf576ac121282dd87a46368c235ab70" category="paragraph">Element 12..1 の新機能の詳細については、こちらを参照してください。</block>
   <block id="04aa68617927bbc2709638a86a15ad34" category="section-title">ストレージファームウェアバンドル 2.99.2</block>
@@ -12312,4 +12310,5 @@
   <block id="8c79dbfa1dd86948b37af21a8d7639d5" category="list-text">VM に正しい VM ネットワークを再割り当てします。</block>
   <block id="85708c896a2da121ac4eee4307002bd9" category="admonition">MTU が 1 、 500 バイト未満の DHCP を割り当てると、管理ノードネットワークの設定や管理ノード UI の使用ができなくなる可能性があります。</block>
   <block id="1b8210afec8bf22eaf6aeec2c734fa6c" category="list-text">システムの Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）を使用して Element Web インターフェイス（管理ノードや NetApp Hybrid Cloud Control など）にアクセスする場合は、 <block ref="3bef977fd72a25456136a30f2d648743" category="inline-link-macro-rx"></block>。</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
 </blocks>

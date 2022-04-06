@@ -5,6 +5,7 @@ keywords: request,endpoints
 summary: API で使用される要求エンドポイントには、 3 つのタイプ（ストレージクラスタ、ストレージクラスタの作成、ノードごと）があります。必ず、使用している Element ソフトウェアのバージョンでサポートされる最新のエンドポイントを使用してください。 
 ---
 = 要求エンドポイント
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

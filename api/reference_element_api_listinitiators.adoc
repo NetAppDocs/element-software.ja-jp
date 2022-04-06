@@ -5,6 +5,7 @@ keywords: initiators,initiator,list,listing,listinitiators,iqn,wwpn,iqns,wwpns
 summary: ListInitiators メソッドを使用すると、イニシエータの IQN または World Wide Port Name （ WWPN ）のリストを取得できます。 
 ---
 = ListInitiators の 1 つです
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

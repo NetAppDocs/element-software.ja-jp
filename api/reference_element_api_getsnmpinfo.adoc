@@ -5,6 +5,7 @@ keywords: snmp,information,info,get,getting
 summary: GetSnmpInfo メソッドを使用すると、現在の簡易ネットワーク管理プロトコル（ SNMP ）の設定情報を取得できます。 
 ---
 = GetSnmpInfo を追加します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

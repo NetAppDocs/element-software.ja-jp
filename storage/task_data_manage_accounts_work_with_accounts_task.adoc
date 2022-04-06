@@ -5,6 +5,7 @@ keywords: element, solidfire, accounts, create, delete, change, chap, view, edit
 summary: SolidFire ストレージシステムでは、クライアントはユーザアカウントを使用してノード上のボリュームに接続します。ボリュームには、作成時に特定のユーザアカウントが割り当てられます。 
 ---
 = ユーザアカウントを操作する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

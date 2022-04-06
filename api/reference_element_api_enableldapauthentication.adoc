@@ -5,6 +5,7 @@ keywords: LDAP,auth,authentication,enable,enabling,EnableLdapAuthentication
 summary: EnableLdapAuthentication メソッドを使用すると、クラスタへの LDAP 認証で使用する LDAP ディレクトリ接続を設定できます。LDAP ディレクトリのメンバーであるユーザは、 LDAP クレデンシャルを使用してストレージシステムにログインできるようになります。 
 ---
 = EnableLdapAuthentication の略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorEndpoint
 summary: snapMirrorEndpoint オブジェクトには、 Element ストレージクラスタと通信するリモート SnapMirror ストレージシステムの情報が含まれます。この情報は、 ListSnapMirrorEndpoints API メソッドを使用して取得できます。 
 ---
 = snapMirrorEndpoint のことです
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

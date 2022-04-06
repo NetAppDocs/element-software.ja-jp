@@ -5,6 +5,7 @@ keywords: cluster,getting,bootstrap,information,node,GetBootstrapConfig
 summary: GetBootstrapConfig メソッドを使用すると、ブートストラップ構成ファイルからクラスタおよびノードの情報を取得できます。個々のノードをクラスタに追加する前に、この API メソッドを使用してください。このメソッドが返す情報は、クラスタを作成するときにクラスタ構成インターフェイスで使用されます。 
 ---
 = GetBootstrapConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

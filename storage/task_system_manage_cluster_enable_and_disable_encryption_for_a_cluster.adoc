@@ -5,6 +5,7 @@ keywords: enable, disable, encryption at rest, cluster, sed, hardware-based, enc
 summary: SolidFire クラスタでは、ソフトウェアベースまたはハードウェアベースの保存データ暗号化を使用して、クラスタに格納されているすべてのデータを暗号化できます。 
 ---
 = クラスタの保存データの暗号化を有効または無効にします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

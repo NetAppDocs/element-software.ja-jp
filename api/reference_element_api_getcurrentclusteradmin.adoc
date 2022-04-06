@@ -5,6 +5,7 @@ keywords: cluster,admin,get,getting,current,getcurrentclusteradmin
 summary: GetCurrentClusterAdmin メソッドを使用すると、現在のプライマリクラスタ管理者に関する情報を取得できますプライマリクラスタ管理者は、クラスタの作成時に作成されます。 
 ---
 = GetCurrentClusterAdmin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

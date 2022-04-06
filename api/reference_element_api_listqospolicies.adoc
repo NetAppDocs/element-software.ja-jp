@@ -5,6 +5,7 @@ keywords: qos,policy,policies,list,listing,listqospolicies
 summary: ListQoSPolicy メソッドを使用して、システムのすべての QoS ポリシーの設定をリストできます。 
 ---
 = ListQoSPolicies の順にクリックします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

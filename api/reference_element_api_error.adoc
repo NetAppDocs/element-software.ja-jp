@@ -5,6 +5,7 @@ keywords: objects,object,error
 summary: メソッドの呼び出し中にエラーが発生した場合、 error オブジェクトにはエラーコードとメッセージが含まれます。システムで生成されるエラーのエラーコードはすべて「 500 」です。 
 ---
 = エラー
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

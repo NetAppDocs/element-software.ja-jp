@@ -5,6 +5,7 @@ keywords: volume restore, solidfire storage cluster
 summary: SolidFire ストレージクラスタ上のバックアップからボリュームをリストアできます。 
 ---
 = SolidFire ストレージクラスタ上のバックアップからボリュームをリストアします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

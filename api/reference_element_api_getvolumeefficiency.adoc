@@ -5,6 +5,7 @@ keywords: volume,volumes,get,getting,stats,measurements,efficiency,GetVolumeEffi
 summary: GetVolumeEfficiency メソッドを使用すると、ボリュームの情報を取得できます。容量の計算には、この API メソッドのパラメータとして指定したボリュームのみが使用されます。 
 ---
 = GetVolumeEfficiency を使用します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

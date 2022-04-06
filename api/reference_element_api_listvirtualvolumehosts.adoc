@@ -5,6 +5,7 @@ keywords: virtual,volume,vvol,host,hosts,list,listing,known,listvirtualvolumehos
 summary: ListVirtualVolumeHosts メソッドを使用すると、クラスタで認識されているすべての仮想ボリュームホストのリストを取得できます。仮想ボリュームホストとは、 VASA API プロバイダとのセッションを開始した VMware ESX ホストです。 
 ---
 = ListVirtualVolumeHosts を指定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

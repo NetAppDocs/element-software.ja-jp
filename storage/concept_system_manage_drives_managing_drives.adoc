@@ -5,6 +5,7 @@ keywords: drives, manage, cluster, element ui, remove drives
 summary: 各ノードには 1 つ以上の物理ドライブが搭載され、クラスタのデータの一部が格納されます。クラスタにドライブが追加されると、そのドライブの容量とパフォーマンスがクラスタで使用されるようになります。Element UI を使用してドライブを管理できます。 
 ---
 = ドライブを管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

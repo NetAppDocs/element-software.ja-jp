@@ -5,6 +5,7 @@ keywords: virtual networks, manage, traffic, clients, vlan tagging
 summary: SolidFire ストレージの仮想ネットワークを使用すると、別々の論理ネットワークに属する複数のクライアント間のトラフィックを 1 つのクラスタに接続できます。クラスタへの各接続は、 VLAN タギングを使用してネットワークスタック内で分離されます。 
 ---
 = 仮想ネットワークを管理する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

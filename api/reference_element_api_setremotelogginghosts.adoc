@@ -5,6 +5,7 @@ keywords: remote,logging,host,hosts,set,setting,setremotelogginghosts
 summary: SetRemoteLoggingHosts メソッドを使用すると、ストレージクラスタ内のノードから一元化された 1 台以上のログサーバへのリモートロギングを設定できます。リモートロギングは、デフォルトポート 514 を使用して TCP 経由で実行されます。この API は、既存のロギングホストには追加しません。現在のロギングホストをこの API メソッドで指定された新しいホストに置き換えます。GetRemoteLoggingHosts を使用して現在のロギングホストを特定してから、 SetRemoteLoggingHosts を使用して現在のロギングホストに新しいロギングホストを加えたリストを設定できます。 
 ---
 = SetRemoteLoggingHosts
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

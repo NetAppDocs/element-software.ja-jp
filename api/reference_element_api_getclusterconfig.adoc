@@ -5,6 +5,7 @@ keywords: cluster,configuration,get,getting,config,getclusterconfig
 summary: GetClusterConfig API メソッドを使用すると、ノードがクラスタとの通信に使用するクラスタ構成の情報を取得できます。 
 ---
 = GetClusterConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

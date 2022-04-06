@@ -5,6 +5,7 @@ keywords: get,patch,info,patches,getpatchinfo
 summary: GetPatchInfo メソッドを使用すると、ノードにインストールされているパッチに関する情報を取得できます。 
 ---
 = GetPatchInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

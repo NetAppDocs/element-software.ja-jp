@@ -5,6 +5,7 @@ keywords: object,objects,protection domains
 summary: protectionDomain オブジェクトには、保護ドメインの名前とタイプの詳細が含まれます。 
 ---
 = protectionDomain の略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

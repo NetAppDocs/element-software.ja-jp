@@ -5,6 +5,7 @@ keywords: ldap,config,configuration,get,getting,getldapconfiguration
 summary: GetLdapConfiguration メソッドを使用すると、クラスタで現在アクティブな LDAP 構成を取得できます。 
 ---
 = GetLdapConfiguration を実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

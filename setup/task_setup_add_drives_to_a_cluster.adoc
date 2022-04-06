@@ -5,6 +5,7 @@ keywords:
 summary: クラスタにノードを追加したり、既存のノードに新しいドライブを設置すると、ドライブが自動的に Available として登録されます。ドライブがクラスタに参加できるようにするためには、 Element UI または API を使用してドライブをクラスタに追加する必要があります。 
 ---
 = クラスタにドライブを追加
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

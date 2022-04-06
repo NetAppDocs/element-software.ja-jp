@@ -5,6 +5,7 @@ keywords: solidfire security, element security, encryption at rest, software enc
 summary: NetApp Element ソフトウェアを使用すると、業界標準のセキュリティプロトコルでデータが保護されます。 
 ---
 = セキュリティ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

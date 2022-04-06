@@ -5,6 +5,7 @@ keywords: storage nodes, running system tests,s ystem tests, network settings, t
 summary: ネットワーク設定を変更してネットワーク構成に適用したら、変更内容をテストできます。テストを実行することで、ストレージノードが安定していて問題なくオンラインに移行できることを確認できます。 
 ---
 = ノード UI を使用してシステムテストを実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

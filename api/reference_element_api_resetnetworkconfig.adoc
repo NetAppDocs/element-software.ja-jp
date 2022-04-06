@@ -5,6 +5,7 @@ keywords: network,config,configuration,reset,restetting,factory,default,resetnet
 summary: ResetNetworkConfig メソッドを使用すると、個々のノードのネットワーク設定の問題を解決できます。このメソッドは、個々のノードのネットワーク設定を工場出荷時のデフォルト設定にリセットします。 
 ---
 = ResetNetworkConfig （リセット）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

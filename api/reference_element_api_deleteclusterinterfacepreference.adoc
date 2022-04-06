@@ -5,6 +5,7 @@ keywords: cluster,interface,preferences,delete,deleting,DeleteClusterInterfacePr
 summary: DeleteClusterInterfacePreference メソッドを使用すると、 Element ソフトウェアを実行するストレージクラスタと統合されたシステムで、既存のクラスタインターフェイス設定を削除できます。このメソッドは内部で使用されます。 
 ---
 = DeleteClusterInterfacePreference の値
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

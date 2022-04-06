@@ -5,6 +5,7 @@ keywords: cluster,clear,clearing,fault,faults,support bundles,ClearClusterFaults
 summary: ClearClusterFaults メソッドを使用すると、現在検出されている障害と以前に検出された障害の両方に関する情報を消去できます。解決済みの障害と未解決の障害の両方を消去できます。 
 ---
 = ClearClusterFaults
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

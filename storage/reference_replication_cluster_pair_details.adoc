@@ -5,6 +5,7 @@ keywords: cluster pairs, replication, data protection
 summary: Data Protection タブの Cluster Pairs ページには、ペアリングされているクラスタまたはペアリング中のクラスタに関する情報が表示されます。ペアリングと進捗状況を示すメッセージがステータス列に表示されます。 
 ---
 = クラスタペアの詳細
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

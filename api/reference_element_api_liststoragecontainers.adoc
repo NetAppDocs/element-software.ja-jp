@@ -5,6 +5,7 @@ keywords: virtual,volume,storage,container,containers,list,listing,liststorageco
 summary: ListStorageContainers メソッドを使用すると、システムが認識しているすべての仮想ボリュームストレージコンテナに関する情報を取得できます。 
 ---
 = ListStorageContainers
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

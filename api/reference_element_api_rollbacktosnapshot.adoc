@@ -5,6 +5,7 @@ keywords: rollbacktosnapshot,snapshot,creating,create,roll,back,rollback,roll ba
 summary: RollbackToSnapshot メソッドを使用すると、アクティブなボリュームイメージの既存の Snapshot を作成できます。このメソッドは、既存の Snapshot から新しい Snapshot を作成します。 
 ---
 = RollbackToSnapshot
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

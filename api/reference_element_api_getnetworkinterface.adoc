@@ -5,6 +5,7 @@ keywords: nodes,node,network,interface,get,getting,getnetworkinterface
 summary: GetNetworkInterface メソッドを使用すると、ノードのネットワークインターフェイスに関する情報を取得できます。 
 ---
 = GetNetworkInterface の略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

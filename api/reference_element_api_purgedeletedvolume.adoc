@@ -5,6 +5,7 @@ keywords: volume,volumes,purging,purge,deleted,purgedeletedvolume
 summary: PurgeDeletedVolume メソッドを使用すると、削除されたボリュームをただちに完全にパージできます。パージする前に、 DeleteVolume を使用してボリュームを削除する必要があります。 
 ---
 = PurgeDeletedVolume のこと
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

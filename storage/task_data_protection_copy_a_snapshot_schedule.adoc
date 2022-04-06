@@ -5,6 +5,7 @@ keywords: snapshot schedule, copy, maintain, schedule attributes
 summary: スケジュールをコピーして、現在の設定を維持できます。 
 ---
 = Snapshot スケジュールをコピーします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

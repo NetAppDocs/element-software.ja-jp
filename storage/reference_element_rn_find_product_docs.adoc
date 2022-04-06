@@ -5,6 +5,7 @@ keywords: HCI documentation, SolidFire documentation
 summary: NetApp HCI と SolidFire オールフラッシュストレージの使用と管理の詳細については、両方の製品のドキュメントセンターとリソースページで確認できる資料を参照してください。 
 ---
 = 製品マニュアルとその他の情報の参照先
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

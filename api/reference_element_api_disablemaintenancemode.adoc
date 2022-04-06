@@ -5,6 +5,7 @@ keywords: disable,maintenance,mode
 summary: DisableMaintenanceMode メソッドを使用して、ストレージノードをメンテナンスモードから解除できます。メンテナンスモードは、メンテナンスが完了してノードがオンラインになったあとにのみ無効にしてください。 
 ---
 = DisableMaintenanceMode のようになります
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

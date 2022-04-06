@@ -5,6 +5,7 @@ keywords: binding,object,objects,volume,volumes,virtual
 summary: binding オブジェクトには、仮想ボリュームのバインディングに関する情報が含まれます。ListVirtualVolumeBindings API メソッドを使用すると、すべての仮想ボリュームに関する以下の情報のリストを取得できます。 
 ---
 = binding （仮想ボリューム）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

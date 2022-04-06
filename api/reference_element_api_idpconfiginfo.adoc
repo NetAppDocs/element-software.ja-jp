@@ -5,6 +5,7 @@ keywords: objects,object,idpConfigInfo
 summary: idpConfigInfo オブジェクトには、サードパーティのアイデンティティプロバイダ \ （ IdP \ ）に関する設定および統合の詳細が含まれます。 
 ---
 = idpConfigInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

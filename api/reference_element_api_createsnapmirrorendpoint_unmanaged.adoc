@@ -5,6 +5,7 @@ keywords: SnapMirror,endpoint,unmanaged,create,creating,CreateSnapMirrorEndpoint
 summary: Element ソフトウェアストレージシステムでは、 CreateSnapMirrorEndpointUnmanaged メソッドを使用して、リモートの管理対象外 SnapMirror エンドポイントが Element ストレージクラスタと通信できるようにします。管理対象外のエンドポイントは、 Element SnapMirror API では管理できません。ONTAP 管理ソフトウェアまたは API で管理する必要があります。 
 ---
 = CreateSnapMirrorEndpointUnmanaged
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snapshot,snapshots,list,listing,attributes,listsnapshots
 summary: listsnapshots を使用すると、ボリュームで作成された各 Snapshot の属性を取得できます。 
 ---
 = Listsnapshots を使用します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

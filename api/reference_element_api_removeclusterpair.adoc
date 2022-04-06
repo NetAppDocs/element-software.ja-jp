@@ -5,6 +5,7 @@ keywords: cluster,clusters,pair,remove,removing,removeclusterpair
 summary: RemoveClusterPair メソッドを使用して、 2 つのペアクラスタ間で開いている接続を閉じることができます。 
 ---
 = RemoveClusterPair を使用します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

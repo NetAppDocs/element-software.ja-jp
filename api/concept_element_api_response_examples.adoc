@@ -5,6 +5,7 @@ keywords: response,example
 summary: ここでは完全な応答例を示します。 
 ---
 = 応答例
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

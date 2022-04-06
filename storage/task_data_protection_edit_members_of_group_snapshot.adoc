@@ -5,6 +5,7 @@ keywords: group snapshot members, edit
 summary: 既存のグループ Snapshot のメンバーの保持の設定を編集できます。 
 ---
 = グループ Snapshot のメンバーを編集しています
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

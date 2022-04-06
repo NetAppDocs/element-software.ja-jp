@@ -5,6 +5,7 @@ keywords: troubleshoot, nodes removing
 summary: メンテナンスまたは交換のために、ノードをクラスタから削除できます。ノードをオフラインにする前に、 NetApp Element UI または API を使用してノードを削除する必要があります。 
 ---
 = ノードのトラブルシューティングを行う
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

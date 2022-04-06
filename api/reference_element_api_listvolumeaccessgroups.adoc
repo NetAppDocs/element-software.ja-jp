@@ -5,6 +5,7 @@ keywords: volume,access,group,groups,list,listing,listvolumeaccessgroups
 summary: ListVolumeAccessGroups メソッドを使用すると、現在システム内に存在するボリュームアクセスグループに関する情報を取得できます。 
 ---
 = ListVolumeAccessGroups の実行
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

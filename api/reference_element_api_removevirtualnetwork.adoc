@@ -5,6 +5,7 @@ keywords: virtual,network,networks,remove,removing,removevirtualnetwork
 summary: RemoveVirtualNetwork メソッドを使用すると、以前に追加した仮想ネットワークを削除できます。 
 ---
 = RemoveVirtualNetwork
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

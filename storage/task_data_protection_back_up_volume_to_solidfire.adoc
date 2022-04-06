@@ -5,6 +5,7 @@ keywords: volume backup, solidfire storage cluster
 summary: Element ソフトウェアを実行しているストレージクラスタでは、あるクラスタ上にあるボリュームをリモートのクラスタにバックアップできます。 
 ---
 = ボリュームを SolidFire ストレージクラスタにバックアップします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

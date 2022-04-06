@@ -5,6 +5,7 @@ keywords: fips,report,get,getting,getfipsreport,feature,support
 summary: GetFipsReport メソッドを使用すると、ストレージクラスタ内のすべてのノードの FIPS 140-2 暗号化機能サポートステータスを確認できます。 
 ---
 = GetFipsReport のようになりました
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

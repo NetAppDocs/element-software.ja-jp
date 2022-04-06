@@ -5,6 +5,7 @@ keywords: cluster,list,listing,active,node,nodes,listactivenodes
 summary: ListActiveNodes メソッドを使用すると、クラスタ内で現在 Active 状態のノードのリストを取得できます。 
 ---
 = ListActiveNodes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

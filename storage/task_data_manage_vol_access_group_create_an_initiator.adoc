@@ -5,6 +5,7 @@ keywords: initiator, create, fc, iscsi, aliases, chap
 summary: iSCSI イニシエータまたは Fibre Channel イニシエータを作成し、オプションでエイリアスを割り当てることができます。 
 ---
 = イニシエータを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

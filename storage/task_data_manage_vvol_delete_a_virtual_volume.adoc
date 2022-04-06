@@ -5,6 +5,7 @@ keywords: virtual volume, delete, vvols, use Element UI to delete a vvol
 summary: 仮想ボリュームの削除は必ず VMware 管理レイヤから実行する必要がありますが、仮想ボリュームを削除する機能自体は Element UI から有効にします。vSphere が SolidFire ストレージ上の仮想ボリュームをクリーンアップできない場合など、どうしても必要な場合以外は、 Element UI から仮想ボリュームを削除しないでください。 
 ---
 = 仮想ボリュームを削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

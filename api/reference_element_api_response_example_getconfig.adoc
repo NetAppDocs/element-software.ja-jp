@@ -5,6 +5,7 @@ keywords: response,example,getconfig
 summary: GetConfig メソッドは、次の例のような応答を返します。戻り値の分量が多いため、この応答に含まれる情報はクラスタの 1 ノード分のみです。 
 ---
 = 設定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

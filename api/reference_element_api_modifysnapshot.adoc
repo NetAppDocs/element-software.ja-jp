@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,snapshot,attributes,attr
 summary: ModifySnapshot を使用すると、 Snapshot に現在割り当てられている属性を変更できます。また、このメソッドを使用すると、読み取り / 書き込みボリューム（ソース）に作成された Snapshot を、 Element ソフトウェアを実行しているターゲットストレージクラスタにリモートでレプリケートできます。 
 ---
 = ModifySnapshot の追加
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

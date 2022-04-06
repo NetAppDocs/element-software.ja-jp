@@ -5,6 +5,7 @@ keywords: individual,fips,feature,support,info,report,get,getting,getnodefipsdri
 summary: GetNodeFipsDrivesReport メソッドを使用すると、ストレージクラスタ内の単一ノードの FIPS 140-2 ドライブ暗号化機能ステータスを確認できます。このメソッドは個々のストレージノードに対して実行する必要があります。 
 ---
 = GetNodeFipsDrivesReport
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: cluster fullness levels, understanding, fullness levels
 summary: Element ソフトウェアを実行するクラスタの容量が不足してくると、クラスタエラーが生成されてストレージ管理者に警告が表示されます。クラスタフルには 3 つのレベルがあり、いずれも NetApp Element UI に表示されます。警告、エラー、重大の 3 つです。 
 ---
 = クラスタフルレベルを把握
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: lldp,config,configuration,get,getting,getlldpinfo,storage
 summary: GetLldpConfig メソッドを使用すると、ストレージクラスタの各ノードの Link Layer Discovery Protocol\ （ LLDP ）の設定を取得できます。 
 ---
 = GetLldpConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

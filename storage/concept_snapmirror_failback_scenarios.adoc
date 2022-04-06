@@ -5,6 +5,7 @@ keywords: failback scenarios, snapmirror, dr, disaster recovery
 summary: SnapMirror ディザスタリカバリ機能について、 2 つのフェイルバックシナリオを例に説明します。どちらのシナリオも、元の関係がフェイルオーバーされた（解除された）状況を前提としています。 
 ---
 = SnapMirror フェイルバックのシナリオ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume,snapshot,API,method
 summary: Element ソフトウェアのボリューム Snapshot API メソッドを使用すると、ボリューム Snapshot を管理できます。ボリューム Snapshot API メソッドを使用して、ボリューム Snapshot を作成、変更、クローニング、および削除できます。 
 ---
 = ボリューム Snapshot API メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

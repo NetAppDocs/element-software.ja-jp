@@ -5,6 +5,7 @@ keywords: cluster,list,listing,event,events,listevents
 summary: ListEvents メソッドを使用すると、クラスタで検出されたイベントを古いイベントから新しいイベントの順にリストできます。 
 ---
 = ListEvents の場合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

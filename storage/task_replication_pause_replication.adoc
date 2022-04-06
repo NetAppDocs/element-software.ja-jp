@@ -5,6 +5,7 @@ keywords: replication, pause, volume pairs
 summary: I/O 処理を短時間停止する必要がある場合は、レプリケーションを手動で一時停止できます。I/O 処理が急増したために処理の負荷を軽減する場合、レプリケーションを一時停止することができます。 
 ---
 = レプリケーションを一時停止
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

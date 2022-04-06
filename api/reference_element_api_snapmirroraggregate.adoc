@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorAggregate
 summary: snapMirrorAggregate オブジェクトには、ボリュームでストレージとして使用可能なディスクの集合である、使用可能な ONTAP アグリゲートに関する情報が含まれています。この情報は、 ListSnapMirrorAggregates API メソッドを使用して取得できます。 
 ---
 = snapMirrorAggregate
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

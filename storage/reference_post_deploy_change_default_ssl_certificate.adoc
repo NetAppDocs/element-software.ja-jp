@@ -5,6 +5,7 @@ keywords: ssl certificate, SSL, private key, self-signed, cluster, nodes, user-d
 summary: NetApp Element API を使用して、クラスタ内のストレージノードのデフォルト SSL 証明書と秘密鍵を変更できます。 
 ---
 = Element ソフトウェアのデフォルトの SSL 証明書を変更
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

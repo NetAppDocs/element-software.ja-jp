@@ -5,6 +5,7 @@ keywords: snapmirror,vserver,vservers,list,listing,listsnapmirrorvservers
 summary: Element ソフトウェア Web UI は、 ListSnapMirrorVserver メソッドを使用して、リモート ONTAP システムで使用可能なすべての SnapMirror SVM をリストします。 
 ---
 = ListSnapMirrorVserver
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

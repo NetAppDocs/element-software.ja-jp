@@ -5,6 +5,7 @@ keywords: sf-series nodes, hardware installation, hardware maintenance
 summary: ここでは、 SF シリーズストレージノードのインストールと管理に関する情報について説明します。 
 ---
 = SF シリーズハードウェアの情報
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

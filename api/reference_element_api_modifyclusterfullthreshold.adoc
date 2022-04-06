@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,cluster,full,fullness,th
 summary: ModifyClusterFullThreshold メソッドを使用すると、ストレージクラスタの容量が一定の利用率に近づいた場合にイベントを生成するレベルを変更できます。このしきい値設定を使用すると、警告が生成されるまでの間使用可能なブロックストレージの許容量を指定できます。 
 ---
 = ModifyClusterFullThreshold のでした
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

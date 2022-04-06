@@ -5,6 +5,7 @@ keywords: volumes, purge a volume
 summary: パージしたボリュームは、システムから完全に削除されます。ボリューム内のデータはすべて失われます。 
 ---
 = ボリュームをパージする
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorRelationship
 summary: snapMirrorRelationship オブジェクトに、 Element ボリュームと ONTAP ボリュームの間の SnapMirror 関係の情報が含まれています。 
 ---
 = snapMirrorRelationship のこと
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

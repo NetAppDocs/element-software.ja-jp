@@ -5,6 +5,7 @@ keywords: transfer, perform, source volume, snapmirror, dr, disaster recovery, o
 summary: 通常、 NetApp Element ソフトウェアを実行する SolidFire ストレージクラスタから ONTAP ソフトウェアへのディザスタリカバリに SnapMirror を使用する場合、 Element がソースで ONTAP がデスティネーションです。ただし、場合によっては、 ONTAP ストレージシステムをソース、 Element をデスティネーションとして使用できます。 
 ---
 = ONTAP から Element への転送または 1 回限りの移行を実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: element, solidfire, accounts, manage, cluster, admin, administrator, n
 summary: SolidFire ストレージシステムでは、クライアントはユーザアカウントを使用してノード上のボリュームに接続します。SolidFire ストレージシステムのクラスタ管理者アカウントを管理することもできます。 
 ---
 = アカウントを管理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

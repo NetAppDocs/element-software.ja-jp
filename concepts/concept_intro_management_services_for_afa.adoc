@@ -5,6 +5,7 @@ keywords: what is, what are, management services, service, vcp service, plugin s
 summary: 管理サービスは、 SolidFire オールフラッシュストレージに幅広い管理機能を一元的に提供します。管理サービスには、 Active IQ システムテレメトリ、ログ、サービスの更新、および Element Plug-in for vCenter の QoSSIOC サービスが含まれます。 
 ---
 = SolidFire オールフラッシュストレージの管理サービス
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

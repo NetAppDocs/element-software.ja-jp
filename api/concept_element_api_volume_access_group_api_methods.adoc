@@ -5,6 +5,7 @@ keywords: volume,access,group,method,methods,API,managing,manage
 summary: ボリュームアクセスグループメソッドを使用すると、ボリュームアクセスグループを追加、削除、表示、および変更できます。ボリュームアクセスグループは、 iSCSI イニシエータまたは Fibre Channel イニシエータを使用してユーザがアクセスできるボリュームの集まりです。 
 ---
 = ボリュームアクセスグループ API メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: auth sessions,cluster,admin,delete,authentication sessions
 summary: DeleteAuthSessionsByClusterAdmin メソッドを使用すると、指定した ClusterAdminID に関連付けられているすべての認証セッションを削除できます。指定した ClusterAdminID がユーザのグループにマッピングされている場合、そのグループのすべてのメンバーのすべての認証セッションが削除されます。削除可能なセッションのリストを表示するには、 ClusterAdminID パラメータを指定して ListAuthSessionsByClusterAdmin メソッドを使用します。 
 ---
 = DeleteAuthSessionsByClusterAdmin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

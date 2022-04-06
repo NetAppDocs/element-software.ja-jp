@@ -5,6 +5,7 @@ keywords: volume pairs, delete
 summary: 2 つのボリューム間のペア関係を解除するには、ボリュームペアを削除します。 
 ---
 = ボリュームペアを削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

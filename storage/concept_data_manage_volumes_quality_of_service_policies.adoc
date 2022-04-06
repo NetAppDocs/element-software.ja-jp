@@ -5,6 +5,7 @@ keywords: qos policies, manage, volumes, create, edit, delete
 summary: 標準的なサービス品質設定を QoS ポリシーとして作成および保存して、複数のボリュームに適用することができます。QoS ポリシーは、 Management タブの QoS Policies ページで作成、編集、および削除できます。 
 ---
 = QoS ポリシーを管理する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

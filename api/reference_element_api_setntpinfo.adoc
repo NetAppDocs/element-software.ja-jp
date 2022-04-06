@@ -5,6 +5,7 @@ keywords: ntp,info,set,setting,setntpinfo
 summary: SetNtpInfo メソッドを使用すると、クラスタノードの NTP を設定できます。このインターフェイスで設定した値は、クラスタ内のすべてのノードに適用されます。NTP ブロードキャストサーバがネットワーク上で時刻情報を定期的にブロードキャストする場合は、ノードをブロードキャストクライアントとして設定することもできます。 
 ---
 = SetNtpInfo の値を指定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

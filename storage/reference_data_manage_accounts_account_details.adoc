@@ -5,6 +5,7 @@ keywords: account, volumes
 summary: 管理タブのアカウントページには、システム内の各アカウントについて、 ID 、ユーザ名、各アカウントに割り当てられているボリュームの効率性などの情報が表示されます。 
 ---
 = アカウントの詳細
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

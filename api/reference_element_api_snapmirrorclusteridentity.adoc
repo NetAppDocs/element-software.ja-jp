@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorClusterIdentity
 summary: snapMirrorClusterIdentity オブジェクトには、 SnapMirror 関係にあるリモート ONTAP クラスタの識別情報が含まれます。 
 ---
 = snapMirrorClusterIdentity
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

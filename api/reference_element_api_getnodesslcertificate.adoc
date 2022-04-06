@@ -5,6 +5,7 @@ keywords: ssl,cert,certificate,get,getting,getnodesslcertificate,active
 summary: GetNodeSSLCertificate メソッドを使用すると、管理ノードで現在アクティブになっている SSL 証明書を取得できます。 
 ---
 = GetNodeSSLCertificate
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

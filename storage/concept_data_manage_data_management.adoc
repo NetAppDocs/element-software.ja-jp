@@ -5,6 +5,7 @@ keywords: virtual volumes, volumes, manage
 summary: Element ソフトウェアを実行しているクラスタのデータは、 Element UI の管理タブで管理できます。実行可能なクラスタ管理機能には、データボリューム、ユーザアカウント、ボリュームアクセスグループ、イニシエータ、および QoS ポリシーの作成と管理などがあります。 
 ---
 = ボリュームと仮想ボリュームを管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

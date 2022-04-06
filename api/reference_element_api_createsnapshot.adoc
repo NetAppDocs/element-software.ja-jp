@@ -5,6 +5,7 @@ keywords: volume,volumes,create,creating,snapshot,snapshots,CreateSnapshot
 summary: CreateSnapshot を使用して、ボリュームのポイントインタイムコピーを作成できます。任意のボリュームまたは既存の Snapshot から Snapshot を作成できます。 
 ---
 = CreateSnapshot の更新
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

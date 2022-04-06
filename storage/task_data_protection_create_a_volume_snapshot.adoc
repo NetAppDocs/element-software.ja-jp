@@ -5,6 +5,7 @@ keywords: volume snapshot, create, active volume, preserve volume
 summary: アクティブボリュームの Snapshot を作成すると、任意の時点におけるボリュームイメージを保持できます。1 つのボリュームに最大 32 個の Snapshot を作成できます。 
 ---
 = ボリューム Snapshot を作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

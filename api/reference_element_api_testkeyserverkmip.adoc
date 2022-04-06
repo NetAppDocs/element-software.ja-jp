@@ -5,6 +5,7 @@ keywords: KMIP,key server,testing,test
 summary: TestKeyServerKmip メソッドを使用すると、指定した Key Management Interoperability Protocol\ （ KMIP \ ）キーサーバがアクセス可能で、正常に機能しているかどうかをテストできます。 
 ---
 = TestKeyServerKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

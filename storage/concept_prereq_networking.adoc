@@ -5,6 +5,7 @@ keywords: 'network setup, setup network, switch requirements, port requirements,
 summary: SolidFire システムのネットワークセットアップは、スイッチとポートの要件で構成されます。これらの実装方法はシステムによって異なります。 
 ---
 = ネットワーキング
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

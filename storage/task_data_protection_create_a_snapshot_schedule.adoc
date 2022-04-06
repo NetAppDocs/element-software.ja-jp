@@ -5,6 +5,7 @@ keywords: snapshot schedule, create, volumes, recurring schedule
 summary: ボリュームの Snapshot のスケジュールを設定して、指定した間隔で Snapshot を自動的に作成できます。 
 ---
 = Snapshot スケジュールを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

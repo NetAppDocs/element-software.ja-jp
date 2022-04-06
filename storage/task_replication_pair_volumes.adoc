@@ -5,6 +5,7 @@ keywords: volume pairings, replication, cluster, cluster pair
 summary: クラスタペアのクラスタ間の接続を確立したら、一方のクラスタのボリュームをもう一方のクラスタのボリュームとペアリングできます。ボリュームペアリング関係を確立するときは、どちらのボリュームをレプリケーションターゲットにするかを指定する必要があります。 
 ---
 = ボリュームをペアリング
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

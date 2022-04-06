@@ -5,6 +5,7 @@ keywords: restore,active,restoring,deleted,volume,volumes,restoredeletedvolume
 summary: RestoreDeletedVolume メソッドを使用すると、削除したボリュームを再びアクティブとしてマークできます。この操作により、ボリュームはただちに iSCSI 接続で使用できるようになります。 
 ---
 = RestoreDeletedVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: active,volume,volumes,list,listing,listactivevolumes,cluster
 summary: ListActiveVolumes メソッドを使用すると、現在システムにあるアクティブなボリュームのリストを取得できます。ボリュームのリストは、ボリューム ID 順にソートされます。複数のパート（ページ）に分けて取得することもできます。 
 ---
 = ListActiveVolumes の場合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

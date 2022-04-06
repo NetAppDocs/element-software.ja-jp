@@ -5,6 +5,7 @@ keywords: group snapshot, delete
 summary: システムからグループ Snapshot を削除できます。グループ Snapshot を削除するときに、グループに関連付けられているすべての Snapshot について、削除するか個別の Snapshot として保持するかを選択できます。 
 ---
 = グループ Snapshot を削除しています
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

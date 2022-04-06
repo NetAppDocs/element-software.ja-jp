@@ -5,6 +5,7 @@ keywords: what is, element mnode, management node, mnode
 summary: 管理ノード（ mNode ）は、 Element ソフトウェアベースの 1 つ以上のストレージクラスタと同時に実行される仮想マシンです。このサービスは、アップグレード後にシステムサービスを提供するために使用されます。これには、監視とテレメトリ、クラスタのアセットと設定の管理、システムテストとユーティリティの実行、トラブルシューティング用のネットアップサポートアクセスの有効化などが含まれます。 
 ---
 = Element ソフトウェアの管理ノード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

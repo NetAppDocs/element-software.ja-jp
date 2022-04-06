@@ -5,6 +5,7 @@ keywords: network,interface,interfaces,list,listing,listnetworkinterfaces
 summary: ListNetworkInterfaces メソッドを使用すると、ノードの各ネットワークインターフェイスに関する情報をリストできます。この API メソッドは、個々のノードに対して使用するためのものです。個々のノードにアクセスするには、ユーザ ID とパスワードによる認証が必要です。ただし、メソッド呼び出しで force パラメータの値が true に設定されている場合は、このメソッドをクラスタに対して使用できます。このパラメータをクラスタに対して使用すると、すべてのインターフェイスが表示されます。 
 ---
 = ListNetworkInterfaces
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

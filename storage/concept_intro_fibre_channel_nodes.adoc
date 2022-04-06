@@ -5,6 +5,7 @@ keywords: fibre channel nodes, fibre channel switch, clients, protcols, iSCSi pr
 summary: SolidFire Fibre Channel ノードは Fibre Channel スイッチへの接続を提供し、 Fibre Channel スイッチは Fibre Channel クライアントに接続できます。Fibre Channel ノードは、 Fibre Channel プロトコルと iSCSI プロトコル間のプロトコルコンバータとして機能するため、新規または既存の任意の SolidFire クラスタへの Fibre Channel 接続を追加できます。 
 ---
 = Fibre Channel ノード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

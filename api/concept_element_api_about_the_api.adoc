@@ -5,6 +5,7 @@ keywords: SolidFire,API,overview,about,Element
 summary: Element API は、 HTTPS 経由の JSON-RPC プロトコルに基づいています。JSON-RPC は、軽量な JSON データ交換形式をベースにした単純なテキストベースの RPC プロトコルです。クライアントライブラリは、すべての主要なプログラミング言語で使用できます。 
 ---
 = Element ソフトウェア API の概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

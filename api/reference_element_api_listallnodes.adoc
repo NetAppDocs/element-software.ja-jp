@@ -5,6 +5,7 @@ keywords: cluster,list,listing,node,nodes,all,listallnodes
 summary: ListAllNodes メソッドを使用すると、クラスタ内の Active 状態および Pending 状態のノードをリストできます。 
 ---
 = ListAllNodes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

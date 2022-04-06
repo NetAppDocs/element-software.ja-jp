@@ -5,6 +5,7 @@ keywords: volume warnings, messages, replication, data protection
 summary: これらのメッセージは、データ保護タブのボリュームペアページでボリュームをペアリングしたあとに表示されます。これらのメッセージは、 Replicating Volumes （レプリケーションボリューム）リストビューでペアのソースとターゲットの両方に表示されます（特に指定がない限り）。 
 ---
 = ボリュームペアリングに関する警告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

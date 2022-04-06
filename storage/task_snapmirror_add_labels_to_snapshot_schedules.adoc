@@ -5,6 +5,7 @@ keywords: snapmirror labels, add labels to snapshot schedules, snapmirror polici
 summary: SnapMirror ラベルを Snapshot スケジュールに追加して、 SnapMirror ポリシーが適用されるようにすることができます。追加できるラベルは、既存の SnapMirror 関係ダイアログボックスまたは NetAppONTAP System Manager で確認できます。 
 ---
 = SnapMirror ラベルを Snapshot スケジュールに追加します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

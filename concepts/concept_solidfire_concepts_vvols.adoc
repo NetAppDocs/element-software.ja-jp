@@ -6,6 +6,7 @@ summary: vSphere Virtual Volumes は、 VMware が提供するストレージパ
 ---
 = 仮想ボリューム（ VVOL ）
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

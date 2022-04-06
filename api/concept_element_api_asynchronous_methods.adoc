@@ -5,6 +5,7 @@ keywords: async,asynchronous,methods,API
 summary: 一部の API メソッドは非同期です。つまり、 API メソッドで実行される処理は、メソッドが戻るときにまだ完了していない可能性があります。非同期メソッドは、処理のステータスを照会して確認できるハンドルを返します。一部の処理のステータス情報には、進捗状況が含まれることがあります。 
 ---
 = 非同期メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

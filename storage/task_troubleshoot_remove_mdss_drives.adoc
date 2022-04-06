@@ -5,6 +5,7 @@ keywords: mdss, remove, multi-drive slice service
 summary: マルチドライブスライスサービス（ MDSS ）のドライブを削除できます。この手順は、ノードに複数のスライスドライブがある場合にのみ適用されます。 
 ---
 = MDSS ドライブを削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

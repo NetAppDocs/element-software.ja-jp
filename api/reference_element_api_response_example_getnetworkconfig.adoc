@@ -5,6 +5,7 @@ keywords: response,example,getnetworkconfig
 summary: GetNetworkConfig メソッドで次の例のような応答を返します。 
 ---
 = GetNetworkConfig （ GetNetworkConfig ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

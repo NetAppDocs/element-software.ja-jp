@@ -5,6 +5,7 @@ keywords: fibre channel ports, details, view, fc ports, hba, wwnn, wwpn
 summary: FC ポートのページでは、ステータス、名前、ポートアドレスなど、 Fibre Channel ポートの詳細を確認できます。 
 ---
 = Fibre Channel ポートの詳細を表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

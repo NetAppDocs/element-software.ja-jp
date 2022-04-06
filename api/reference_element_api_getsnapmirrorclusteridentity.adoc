@@ -5,6 +5,7 @@ keywords: get,getting,SnapMirror,cluster,identity,GetSnapMirrorClusterIdentity
 summary: Element ソフトウェア Web UI は、 GetSnapMirrorClusterIdentity を使用して、 ONTAP クラスタの識別情報を取得します。 
 ---
 = GetSnapMirrorClusterIdentity
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

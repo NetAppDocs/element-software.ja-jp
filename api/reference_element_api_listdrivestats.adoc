@@ -5,6 +5,7 @@ keywords: cluster,list,listing,drive,drives,stats,statistics,listdrivestats
 summary: ListDriveStats メソッドを使用すると、クラスタ内の複数のドライブに関するアクティビティ測定値の概要をリストできます。デフォルトでは、このメソッドはクラスタ内のすべてのドライブについて統計を返します。これらの測定値は、クラスタにドライブを追加したときからの累積値です。このメソッドが返す値には、ブロックドライブに固有な値とメタデータドライブに固有な値があります。 
 ---
 = ListDriveStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

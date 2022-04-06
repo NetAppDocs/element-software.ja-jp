@@ -5,6 +5,7 @@ keywords: volume,volumes,marked,delete,deleted,deletion,list,listing,listdeleted
 summary: ListDeletedVolumes メソッドを使用すると、削除対象としてマークされてシステムからパージされたボリュームのリストを取得できます。 
 ---
 = ListDeletedVolumes の場合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

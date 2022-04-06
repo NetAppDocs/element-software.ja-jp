@@ -5,6 +5,7 @@ keywords: h410s, h610s, hardware installation, hardware maintenance
 summary: オールフラッシュストレージシステムを導入する前に、ストレージノードを正しく設置してセットアップする必要があります。 
 ---
 = H シリーズストレージノードを設置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

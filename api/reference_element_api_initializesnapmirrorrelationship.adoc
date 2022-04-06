@@ -5,6 +5,7 @@ keywords: snapmirror,relationship,relationships,initialize,initializing,initiali
 summary: Element ソフトウェア Web UI は、 InitializeSnapMirrorRelationship メソッドを使用して、クラスタ間の最初のベースライン転送を実行することで SnapMirror 関係のデスティネーションボリュームを初期化します。 
 ---
 = SnapMirror 関係の初期化
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

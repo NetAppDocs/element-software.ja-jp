@@ -5,6 +5,7 @@ keywords: SnapMirror,API,method
 summary: SnapMirror API メソッドは、リモート ONTAP システムでミラーリングされる Snapshot を Element Web UI で管理するために使用されます。このメソッドは、 Element Web UI でのみ使用されます。SnapMirror 機能への API アクセスが必要な場合は、 ONTAP API を使用します。SnapMirror API メソッドには、要求例と戻り値の例が示されません。 
 ---
 = SnapMirror API メソッド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

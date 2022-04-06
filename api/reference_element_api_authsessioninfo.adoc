@@ -5,6 +5,7 @@ keywords: objects,object,authSessionInfo
 summary: authSessionInfo オブジェクトには、認証セッションに関する情報が含まれています。 
 ---
 = authSessionInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

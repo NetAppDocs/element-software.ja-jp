@@ -5,6 +5,7 @@ keywords: object,objects,volumePair
 summary: volumePair オブジェクトには、異なるクラスタ上の別のボリュームとペアリングされているボリュームの情報が含まれます。ボリュームがペアリングされていない場合、このオブジェクトは空になります。ListActivePairedVolumes メソッドと ListActiveVolumes API メソッドを使用すると、ペアリングされているボリュームに関する情報を取得できます。 
 ---
 = ボリュームペア
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

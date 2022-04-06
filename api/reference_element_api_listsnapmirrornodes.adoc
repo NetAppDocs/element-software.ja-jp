@@ -5,6 +5,7 @@ keywords: snapmirror,node,nodes,list,listing,listsnapmirrornodes
 summary: Element ソフトウェア Web UI は、 ListSnapMirrorNodes メソッドを使用して、リモート ONTAP クラスタ内のノードのリストを取得します。 
 ---
 = ListSnapMirrorNodes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

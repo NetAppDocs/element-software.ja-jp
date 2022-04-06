@@ -5,6 +5,7 @@ keywords: active,pairs,paired,pair,volume,volumes,list,listing,listactivepairedv
 summary: ListActivePairedVolumes メソッドを使用すると、ボリュームとペアリングされているアクティブなボリュームをすべてリストできます。このメソッドは、ペアリングがアクティブまたは保留状態のボリュームに関する情報を返します。 
 ---
 = ListActivePairedVolumes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

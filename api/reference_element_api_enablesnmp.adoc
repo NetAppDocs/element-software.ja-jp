@@ -5,6 +5,7 @@ keywords: SNMP,enable,enabling,EnableSNMP
 summary: EnableSnmp メソッドを使用すると、クラスタノードの SNMP を有効にできます。SNMP を有効にすると、アクション環境クラスタ内のすべてのノードが処理され、指定した値によって、以前の EnableSnmp 呼び出しで設定されたすべての値が置き換えられます。 
 ---
 = EnableSnmp
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

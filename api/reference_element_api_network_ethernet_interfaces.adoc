@@ -5,6 +5,7 @@ keywords: object,objects,network
 summary: network\ （イーサネットインターフェイス \ ）オブジェクトには、個々のイーサネットインターフェイスの設定情報が含まれます。GetConfig メソッドと GetNetworkConfig メソッドを使用して、ストレージノードのこの情報を取得できます。 
 ---
 = network （イーサネットインターフェイス）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

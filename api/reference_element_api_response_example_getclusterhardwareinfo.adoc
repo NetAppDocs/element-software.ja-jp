@@ -5,6 +5,7 @@ keywords: response,example,getclusterhardwareinfo
 summary: GetClusterHardwareInfo メソッドを使用すると、次の例のような応答が返されます。 
 ---
 = GetClusterHardwareInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

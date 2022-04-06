@@ -5,6 +5,7 @@ keywords: qos,value,configure,configuring,default,set,setting,setdefaultqos
 summary: SetDefaultQoS メソッドを使用すると、ボリュームのデフォルトの QoS 値を設定できます。この値は 1 秒あたりの入出力処理数（ IOPS ）で測定されます。 
 ---
 = SetDefaultQoS の設定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snmp,info,setting,set,setsnmpinfo
 summary: SetSnmpInfo メソッドを使用すると、クラスタノードで SNMP バージョン 2 およびバージョン 3 を設定できます。このインターフェイスで設定した値はクラスタ内のすべてのノードに適用され、指定した値により、以前の SetSnmpInfo 呼び出しで設定されたすべての値が置き換えられます。 
 ---
 = SetSnmpInfo のサービス
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

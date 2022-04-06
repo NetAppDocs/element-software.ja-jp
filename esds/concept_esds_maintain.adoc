@@ -5,6 +5,7 @@ keywords: solidfire esds, software-defined storage, maintain, troubleshooting, m
 summary: ここでは、保守モードの使用方法と SolidFire ESDS クラスタ内のドライブの交換方法について説明します。 
 ---
 = SolidFire ESDS を管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,event
 summary: event オブジェクトには、 API メソッドの呼び出し中またはシステムによる処理の実行中に発生するイベントの詳細が含まれます。 
 ---
 = イベント
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

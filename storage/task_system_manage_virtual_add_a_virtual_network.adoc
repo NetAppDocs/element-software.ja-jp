@@ -5,6 +5,7 @@ keywords: virtual network, add, cluster configuration, cluster nodes, svip, vlan
 summary: クラスタ構成に新しい仮想ネットワークを追加すると、マルチテナント環境から Element ソフトウェアを実行しているクラスタに接続できるようになります。 
 ---
 = 仮想ネットワークを追加
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

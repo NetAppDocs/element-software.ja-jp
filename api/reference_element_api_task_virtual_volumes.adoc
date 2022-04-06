@@ -5,6 +5,7 @@ keywords: object,objects,task
 summary: task オブジェクトには、システム内で現在実行中または完了済みの仮想ボリュームタスクに関する情報が含まれます。ListVirtualVolumeTasks メソッドを使用すると、すべての仮想ボリュームタスクに関する以下の情報を取得できます。 
 ---
 = task （仮想ボリューム）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

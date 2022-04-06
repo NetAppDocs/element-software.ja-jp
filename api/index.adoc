@@ -5,6 +5,7 @@ keywords: element, api, storage, manage, cluster, volumes, json, rpc, https
 summary: Element API を使用して NetApp Element ストレージクラスタを管理する方法について説明します。 
 ---
 = Element API を使用してストレージを管理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

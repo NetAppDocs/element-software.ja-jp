@@ -5,6 +5,7 @@ keywords: cluster admin,sessions,auth sessions,list
 summary: ListAuthSessionsByClusterAdmin メソッドを使用すると、指定した ClusterAdminID に関連付けられているすべての認証セッションをリストできます。指定した ClusterAdminID がユーザのグループにマッピングされている場合、そのグループのすべてのメンバーのすべての認証セッションが一覧表示されます。 
 ---
 = ListAuthSessionsByClusterAdmin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

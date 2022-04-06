@@ -5,6 +5,7 @@ keywords: fips, security, federal information processing standards, 140-2
 summary: NetApp Element ソフトウェア UI を使用して、システムにおける FIPS ドライブ機能に関するクラスタ障害やエラーに関するアラートを確認できます。 
 ---
 = FIPS ドライブ機能のトラブルシューティングを行います
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

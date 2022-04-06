@@ -5,6 +5,7 @@ keywords: element, api, encryption, disable, disabling, at rest, rest, DisableEn
 summary: DisableEncryptionAtRest メソッドを使用すると、以前に EnableEncryptionAtRest メソッドを使用してクラスタに適用した暗号化を解除できます。このメソッドは非同期で、暗号化が無効になる前に応答を返します。GetClusterInfo メソッドを使用すると、システムをポーリングしてプロセスがいつ完了したかを確認できます。 
 ---
 = DisableEncryptionAtRest
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

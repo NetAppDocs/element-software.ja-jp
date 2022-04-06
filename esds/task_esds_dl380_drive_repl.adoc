@@ -5,6 +5,7 @@ keywords: solidfire esds, replace drive, proactive drive replacement, cache driv
 summary: SolidFire ESDS クラスタ内のメタデータドライブまたはブロックドライブをプロアクティブに交換する場合は、この手順を実行します。Element UI Cluster > Drives ページに、ドライブ摩耗度情報が表示されます。 
 ---
 = HPE DL380 のドライブを交換
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

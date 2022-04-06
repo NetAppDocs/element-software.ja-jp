@@ -5,6 +5,7 @@ keywords: KMIP,key server,modifying,modify,change,edit
 summary: ModifyKeyServerKmip メソッドを使用すると、既存の Key Management Interoperability Protocol\ （ KMIP \ ）キーサーバを指定した属性に変更できます。必須パラメータは keyServerID だけですが、 keyServerID のみを含む要求は処理を行いません。エラーは返されません。その他のパラメータを指定すると、キーサーバの既存の値が、指定したキーサーバ ID で置き換えられます。キーサーバは、機能していることを確認するために、処理中に接続されます。複数のホスト名または IP アドレスを指定するには、 kmipKeyServerHostnames パラメータを使用します。ただし、キーサーバがクラスタ構成の場合にのみ指定できます。 
 ---
 = ModifyKeyServerKmip のように指定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

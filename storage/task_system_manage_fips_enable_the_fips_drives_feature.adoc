@@ -5,6 +5,7 @@ keywords: fips, security, federal information processing standards, 140-2, enabl
 summary: FIPS ドライブ機能を有効にするには、 NetApp Element ソフトウェアの EnableFeature API メソッドを使用します。 
 ---
 = FIPS ドライブ機能を有効にします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

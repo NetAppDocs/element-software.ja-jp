@@ -5,6 +5,7 @@ keywords: KMIP,key server,deleting,delete
 summary: DeleteKeyServerKmip メソッドを使用すると、既存の Key Management Interoperability Protocol\ （ KMIP \ ）キーサーバを削除できます。キーサーバは、プロバイダに割り当てられた最後のサーバであり、そのプロバイダが現在使用中のキーを提供していないかぎり、削除できます。 
 ---
 = DeleteKeyServerKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: CancelClone メソッドを使用すると、実行中のボリュームクローンまたはボリュームコピーのプロセスを停止できます。グループクローン操作をキャンセルすると、システムは処理に関連付けられた asyncHandle を完了させ、削除します。 
 ---
 = CancelClone
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

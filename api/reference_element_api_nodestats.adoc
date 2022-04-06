@@ -5,6 +5,7 @@ keywords: object,objects,nodestats
 summary: nodeStats オブジェクトには、ノードのアクティビティ測定値の概要が含まれます。GetNodeStats API メソッドと ListNodeStats API メソッドを使用すると、 nodeStats オブジェクトの一部またはすべてを取得できます。 
 ---
 = nodeStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: set, ntp, broadcasts, query, updates, clocks, synchronize,
 summary: ネットワークタイムプロトコル（ NTP ）を設定するには、次の 2 つの方法があります。クラスタ内の各ノードがブロードキャストをリスンするように指定するか、各ノードで NTP サーバに更新を照会するように指示します。 
 ---
 = ネットワークタイムプロトコルを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

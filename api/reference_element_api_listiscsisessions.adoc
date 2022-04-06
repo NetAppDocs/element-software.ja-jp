@@ -5,6 +5,7 @@ keywords: iscsi,connection,list,listing,session,info,cluster,listiscsisessions
 summary: ListISCSISessions メソッドを使用すると、クラスタ内のボリュームの iSCSI 接続情報をリストできます。 
 ---
 = ListISCSISessions
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

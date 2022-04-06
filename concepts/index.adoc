@@ -5,6 +5,7 @@ keywords: element, security, clusters, protection, qos
 summary: Element ソフトウェアに関連する基本的な概念を確認できます。 
 ---
 = 概念
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

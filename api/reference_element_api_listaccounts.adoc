@@ -5,6 +5,7 @@ keywords: account,accounts,list,listing,all,listaccounts
 summary: ListAccounts を使用すると、ストレージテナントアカウントのリスト全体を取得できます。オプションでページングをサポートできます。Element アカウントを使用してボリュームにアクセスできます。 
 ---
 = ListAccounts の 2 つのグループ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

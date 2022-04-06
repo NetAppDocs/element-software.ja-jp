@@ -5,6 +5,7 @@ keywords: auth sessions,username,delete,authentication sessions
 summary: DeleteAuthSessionsByUsername メソッドを使用すると、特定のユーザのすべての認証セッションを削除できます。AccessGroup ClusterAdmins/Administrator にない発信者は、自身のセッションだけを削除できます。ClusterAdmins/Administrator 権限を持つ呼び出し側は、任意のユーザに属するセッションを削除できます。削除可能なセッションのリストを表示するには、同じパラメータを指定して ListAuthSessionsByUsername を使用します。削除可能なセッションのリストを表示するには、同じパラメータを指定して ListAuthSessionsByUsername メソッドを使用します。 
 ---
 = DeleteAuthSessionsByUsername のように入力します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

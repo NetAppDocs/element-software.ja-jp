@@ -5,6 +5,7 @@ keywords: SSL,certificate,cert,get,getting,active,GetSSLCertificate
 summary: GetSSLCertificate メソッドを使用すると、クラスタのストレージノードで現在アクティブになっている SSL 証明書を取得できます。 
 ---
 = GetSSLCertificate
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

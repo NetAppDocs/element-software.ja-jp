@@ -5,6 +5,7 @@ keywords: virtual,network,networks,listing,list,listvirtualnetworks
 summary: ListVirtualNetworks メソッドを使用すると、クラスタのすべての設定済み仮想ネットワークをリストできます。 
 ---
 = ListVirtualNetworks のように指定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

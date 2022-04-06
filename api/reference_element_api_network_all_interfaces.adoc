@@ -5,6 +5,7 @@ keywords: object,objects,network
 summary: network\ （すべてのインターフェイス \ ）オブジェクトは、ストレージノードのネットワークインターフェイス設定に関する情報を収集します。GetConfig メソッドと GetNetworkConfig メソッドを使用して、ストレージノードのこの情報を取得できます。 
 ---
 = network （すべてのインターフェイス）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

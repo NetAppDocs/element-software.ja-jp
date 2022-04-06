@@ -5,6 +5,7 @@ keywords: tls,cipher,set,setting,list,supplemental,setnodesupplementaltlsciphers
 summary: 追加 TLS 暗号のリストを指定するには、 SetNodeJendalTlsCiphers メソッドを使用します。このコマンドは管理ノードで使用できます。 
 ---
 = SetNodeJassentalTlsCiphers
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ summary: REST API UI を使用して、管理ノードの設定にコントロ�
 keywords: netapp, mnode, management node, rest api, Element 
 ---
 = 管理ノードにコントローラアセットを追加します
+:allow-uri-read: 
 
 
 [role="lead"]

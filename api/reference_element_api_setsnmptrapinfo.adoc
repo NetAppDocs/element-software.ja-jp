@@ -5,6 +5,7 @@ keywords: snmp,trap,information,info,setting,set,setsnmptrapinfo
 summary: SetSnmpTrapInfo メソッドを使用すると、クラスタの SNMP 通知の生成を有効または無効にし、通知を受け取る一連のホストを指定できます。各 SetSnmpTrapInfo メソッド呼び出しで指定した値により、以前の呼び出しで設定されたすべての値が置き換えられます。 
 ---
 = SetSnmpTrapInfo の順にクリックしてください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

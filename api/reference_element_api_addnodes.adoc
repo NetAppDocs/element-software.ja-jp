@@ -5,6 +5,7 @@ keywords: addnodes,node,add,adding,nodes,cluster
 summary: AddNodes メソッドを使用すると、 1 つ以上の新しいノードをクラスタに追加できます。 
 ---
 = AddNodes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

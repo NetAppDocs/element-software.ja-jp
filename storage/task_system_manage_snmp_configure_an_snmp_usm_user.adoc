@@ -5,6 +5,7 @@ keywords: snmp, usm user, config, requests
 summary: SNMP バージョン 3 を有効にした場合は、許可された SNMP 要求を受信する USM ユーザを設定する必要があります。 
 ---
 = SNMP USM ユーザを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

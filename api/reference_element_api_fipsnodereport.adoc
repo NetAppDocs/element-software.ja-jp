@@ -5,6 +5,7 @@ keywords: objects,object,fipsNodeReport
 summary: fipsNodeReport オブジェクトには、ストレージクラスタ内の単一ノードの FIPS 140-2 サポートに関する情報が含まれます。GetFipsReport メソッドを使用すると、この情報を取得できます。 
 ---
 = fipsNodeReport
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

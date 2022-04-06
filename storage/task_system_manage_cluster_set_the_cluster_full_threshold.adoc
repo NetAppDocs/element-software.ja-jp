@@ -5,6 +5,7 @@ keywords: cluster fullness, setting threshold, metadata, warning
 summary: ブロッククラスタフルの警告を生成するレベルを次の手順で変更できます。さらに、 ModifyClusterFullThreshold API メソッドを使用すると、ブロックまたはメタデータの警告を生成するレベルを変更できます。 
 ---
 = クラスタフルしきい値を設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

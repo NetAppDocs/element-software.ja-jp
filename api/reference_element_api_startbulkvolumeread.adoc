@@ -5,6 +5,7 @@ keywords: volume,read,session,start,starting,bulk,startbulkvolumeread
 summary: StartBulkVolumeRead メソッドを使用すると、指定したボリュームの一括ボリューム読み取りセッションを開始できます。 
 ---
 = StartBulkVolumeRead
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

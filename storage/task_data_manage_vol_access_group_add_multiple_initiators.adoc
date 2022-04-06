@@ -5,6 +5,7 @@ keywords: initiator, add to volume access group, access groups, add multiple ini
 summary: 既存のボリュームアクセスグループに複数のイニシエータを追加すると、そのグループ内のボリュームに CHAP 認証の有無にかかわらずアクセスできるようになります。 
 ---
 = ボリュームアクセスグループに複数のイニシエータを追加します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

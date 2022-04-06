@@ -5,6 +5,7 @@ keywords: mdss, add, multi-drive slice service
 summary: スロット 2 のブロックドライブをスライスドライブに変換することで、 SolidFire ノードに 2 つ目のメタデータドライブを追加できます。そのためには、マルチドライブスライスサービス（ MDSS ）機能を有効にします。この機能を有効にする場合は、ネットアップサポートにお問い合わせください。 
 ---
 = MDSS ドライブを追加します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

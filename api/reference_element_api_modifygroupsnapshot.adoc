@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,group,snapshot,modifygro
 summary: ModifyGroupSnapshot を使用すると、 Snapshot のグループの属性を変更できます。また、このメソッドを使用すると、読み取り / 書き込みボリューム（ソース）で作成された Snapshot を、ターゲットストレージシステムにリモートでレプリケートできます。 
 ---
 = ModifyGroupSnapshot の追加
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

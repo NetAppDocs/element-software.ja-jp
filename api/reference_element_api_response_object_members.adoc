@@ -5,6 +5,7 @@ keywords: response,object,member
 summary: Element ソフトウェアの各 API 応答の本文の基本要素は次のとおりです。 
 ---
 = 応答オブジェクトメンバー
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

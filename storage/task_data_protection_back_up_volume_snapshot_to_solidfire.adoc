@@ -5,6 +5,7 @@ keywords: volume snapshot, backup, solidfire cluster
 summary: SolidFire クラスタ上にあるボリューム Snapshot をリモートの SolidFire クラスタにバックアップできます。 
 ---
 = ボリューム Snapshot を SolidFire クラスタにバックアップします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorVserver
 summary: snapMirrorVserver オブジェクトに、デスティネーション ONTAP クラスタの Storage Virtual Machines （または Vservers ）の情報が含まれています。 
 ---
 = snapMirrorVserver
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

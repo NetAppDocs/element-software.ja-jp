@@ -5,6 +5,7 @@ keywords: snapmirror,interface,interfaces,list,listing,listsnapmirrornetworkinte
 summary: Element ソフトウェア Web UI は、 ListSnapMirrorNetworkInterfaces メソッドを使用して、リモート ONTAP システムで使用可能なすべての SnapMirror インターフェイスをリストします。 
 ---
 = ListSnapMirrorNetworkInterfaces
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

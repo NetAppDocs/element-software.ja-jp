@@ -5,6 +5,7 @@ keywords: KMIP,key server,assigning to key provider,assign,addkeyservertoprovide
 summary: AddKeyServerToProviderKmip メソッドを使用すると、指定したキープロバイダに Key Management Interoperability Protocol\ （ KMIP \ ）キーサーバを割り当てることができます。割り当て中に、サーバに接続して機能を確認します。指定したキーサーバが指定したキープロバイダにすでに割り当てられている場合、処理は実行されず、エラーは返されません。RemoveKeyServerFromProviderKmip メソッドを使用して、割り当てを削除できます。 
 ---
 = AddKeyServerToProviderKmip のように指定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

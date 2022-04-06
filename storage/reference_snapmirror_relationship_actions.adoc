@@ -5,6 +5,7 @@ keywords: relationships, snapmirror, actions, configure relationships
 summary: '関係は、データ保護タブの SnapMirror 関係ページで設定できます。ここでは、 [ アクション（ Actions ） ] アイコンのオプションについて説明します。' 
 ---
 = SnapMirror 関係の操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: qos,policy,policies,get,getting,getqospolicy
 summary: GetQoSPolicy メソッドを使用して、システムから特定の QoS ポリシーに関する詳細を取得できます。 
 ---
 = GetQoSPolicy を参照してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: test,testing,connectivity,ensemble,testconnectensemble
 summary: TestConnectEnsemble メソッドを使用すると、指定したデータベースアンサンブルとの接続を検証できます。デフォルトでは、ノードが関連付けられているクラスタのアンサンブルを使用します。また、接続をテストする別のアンサンブルを指定することもできます。 
 ---
 = TestConnectEnsemble のようになりました
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

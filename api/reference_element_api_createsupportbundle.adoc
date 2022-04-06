@@ -5,6 +5,7 @@ keywords: create,creating,support,bundle,CreateSupportBundle
 summary: CreateSupportBundle を使用すると、ノードのディレクトリにサポートバンドルファイルを作成できます。作成したバンドルは、 tar.gz ファイルとしてノードに格納されます。 
 ---
 = CreateSupportBundle を作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

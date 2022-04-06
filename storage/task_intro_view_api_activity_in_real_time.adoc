@@ -5,6 +5,7 @@ keywords: solidfire api, element api, element os, element, viewing the API log, 
 summary: Element システムの各種機能は、 NetAppElement API をその基盤として使用します。Element UI では、画面での操作に連動して、システム上のさまざまな種類の API アクティビティをリアルタイムで確認できます。API ログでは、ユーザが開始したバックグラウンドのシステム API アクティビティと、現在表示しているページ上で実行された API 呼び出しを確認できます。 
 ---
 = API アクティビティを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

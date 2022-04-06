@@ -5,6 +5,7 @@ keywords: proposed,node,additions,CheckProposedNodeAdditions,storage,checking
 summary: CheckProposedNodeAdditions メソッドを使用すると、一連のストレージノードをテストして、エラーやベストプラクティスの違反なしでストレージクラスタに追加できるかどうかを確認できます。 
 ---
 = CheckProposedNodeAdditions
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

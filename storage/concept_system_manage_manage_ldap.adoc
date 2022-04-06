@@ -5,6 +5,7 @@ keywords: element, solidfire, ldap, enable, disable, test, config, addresses, pr
 summary: Lightweight Directory Access Protocol\ （ LDAP\ ）を設定して、 SolidFire ストレージへのセキュアなディレクトリベースのログイン機能を有効にすることができます。LDAP をクラスタレベルで設定し、 LDAP ユーザおよびグループを許可することができます。 
 ---
 = LDAP を管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

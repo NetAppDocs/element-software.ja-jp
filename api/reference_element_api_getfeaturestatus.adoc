@@ -5,6 +5,7 @@ keywords: feature,status,cluster,get,getting,getfeaturestatus
 summary: GetFeatureStatus メソッドを使用すると、クラスタ機能のステータスを取得できます。 
 ---
 = GetFeatureStatus の順にクリックします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

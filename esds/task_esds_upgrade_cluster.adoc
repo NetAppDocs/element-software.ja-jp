@@ -5,6 +5,7 @@ keywords: solidfire esds, upgrading solidfire esds clusters, ansible role, clust
 summary: Ansible を使用して、 SolidFire ESDS クラスタで無停止のローリングアップグレードを実行できます。ネットアップが提供する「 nar_solidfire_sds_upgrade 」ロールを使用すると、 Ansible は、すべてのボリュームへのデータ可用性を維持しながら、一度に 1 ノードずつローリングアップグレードを実行します。 
 ---
 = クラスタをアップグレード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

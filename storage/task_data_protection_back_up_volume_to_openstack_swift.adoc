@@ -5,6 +5,7 @@ keywords: volume backup, openstack swift object store
 summary: OpenStack Swift と互換性のある外部のオブジェクトストアにのボリュームをバックアップできます。 
 ---
 = OpenStack Swift オブジェクトストアにボリュームをバックアップします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

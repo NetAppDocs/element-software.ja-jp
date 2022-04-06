@@ -5,6 +5,7 @@ keywords: tls,cipher,ciphers,get,getting,supported,getnodesupportedtlsciphers
 summary: 単一のノードで GetNodeSupportedTlsCiphers メソッドを使用すると、そのノードで現在サポートされている TLS 暗号のリストを取得できます。このメソッドは、管理ノードとストレージノードで使用できます。 
 ---
 = GetNodeSupportedTlsCiphers
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

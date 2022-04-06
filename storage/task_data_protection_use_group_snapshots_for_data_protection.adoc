@@ -5,6 +5,7 @@ keywords: group snapshots, data protection, set of volumes, backup, rollback
 summary: 関連する一連のボリュームのグループ Snapshot を作成して、各ボリュームのメタデータのポイントインタイムコピーを保持できます。グループ Snapshot は、後日バックアップまたはロールバックとして使用して、ボリュームグループを以前の状態にリストアすることができます。 
 ---
 = グループ Snapshot を使用したデータ保護タスク
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

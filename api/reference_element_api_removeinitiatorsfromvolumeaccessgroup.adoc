@@ -5,6 +5,7 @@ keywords: initiators,initiator,volume,access,group,remove,removing,removeinitiat
 summary: RemoveInitiatorsFromVolumeAccessGroup メソッドを使用すると、指定したボリュームアクセスグループからイニシエータを削除できます。 
 ---
 = RemoveInitiatorsFromVolumeAccessGroup
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

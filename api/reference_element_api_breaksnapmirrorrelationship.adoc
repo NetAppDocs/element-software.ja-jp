@@ -5,6 +5,7 @@ keywords: SnapMirror,volume,volumes,break,breaking,relationship,ONTAP
 summary: Element Web UI では、 SnapMirror 関係を解除するために BreakSnapMirrorRelationship メソッドを使用します。SnapMirror 関係を解除すると、デスティネーションボリュームが独立して読み書き可能になり、ソースボリュームとは切り離して使用できるようになります。ResyncSnapMirrorRelationship API メソッドを使用して関係を再確立できます。このメソッドを使用するには、 ONTAP クラスタが使用可能である必要があります。 
 ---
 = BreakSnapMirror 関係
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

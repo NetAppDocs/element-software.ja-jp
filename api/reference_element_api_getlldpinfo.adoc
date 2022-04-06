@@ -5,6 +5,7 @@ keywords: lldp,info,get,getting,getlldpinfo,storage
 summary: GetLldpInfo メソッドを使用すると、ストレージクラスタの各ノードまたは個々のストレージノードの Link Layer Discovery Protocol\ （ LLDP ；リンクレイヤ検出プロトコル）設定を取得できます。 
 ---
 = GetLldpInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

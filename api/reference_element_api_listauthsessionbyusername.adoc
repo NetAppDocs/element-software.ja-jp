@@ -5,6 +5,7 @@ keywords: username,sessions,authentication sessions,list
 summary: ListAuthSessionsByUsername メソッドを使用すると、指定したユーザのすべての認証セッションを一覧表示できます。AccessGroup ClusterAdmins/Administrator 権限を持たない発信者は、自身のセッションだけを表示できます。ClusterAdmins/Administrator 権限を持つ呼び出し側は、任意のユーザに属するセッションを表示できます。 
 ---
 = ListAuthSessionsByUsername のユーザ名
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

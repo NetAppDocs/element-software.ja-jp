@@ -5,6 +5,7 @@ keywords: nodes, accessing node settings, accessing node settings with per-node 
 summary: 管理ノードの IP を入力して認証を実行したら、ノードユーザインターフェイスでネットワーク設定、クラスタ設定、システムテストおよびユーティリティにアクセスできます。 
 ---
 = ノード UI を使用してノード設定にアクセスします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

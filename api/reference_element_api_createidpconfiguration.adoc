@@ -5,6 +5,7 @@ keywords: IdP,idp,configuration,create,creating
 summary: CreateIpdConfiguration メソッドを使用すると、クラスタにサードパーティのアイデンティティプロバイダ \ （ IdP \ ）を使用して認証用の信頼関係を作成できます。IdP 通信には SAML サービスプロバイダ証明書が必要です。この証明書は必要に応じて生成され、この API 呼び出しで返されます。 
 ---
 = CreateIdpConfiguration を実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume,pair,pairs,modify,modifying,edit,editing,changing,change,modify
 summary: ModifyVolumePair メソッドを使用すると、ボリュームのペア間のレプリケーションを一時停止またはリスタートできます。このメソッドは、ソースボリューム（読み取り / 書き込みアクセス権のあるボリューム）に対して設定されます。 
 ---
 = ModifyVolumePair を使用します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

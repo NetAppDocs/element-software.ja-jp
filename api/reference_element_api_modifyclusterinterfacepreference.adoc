@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,cluster,interface,prefer
 summary: ModifyClusterInterfacePreference メソッドを使用すると、 Element ソフトウェアを実行するストレージクラスタと統合されたシステムで、既存のクラスタインターフェイス設定を変更できます。このメソッドは内部で使用されます。 
 ---
 = ModifyClusterInterfacePreference のこと
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

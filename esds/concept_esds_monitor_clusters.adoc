@@ -5,6 +5,7 @@ keywords: solidfire esds installation, hcc, hybrid cloud control, esds clusters
 summary: SolidFire ESDS クラスタのパフォーマンスを監視し、 NetApp Hybrid Cloud Control の UI を使用してインベントリを表示できます。NetApp Hybrid Cloud Control の UI を使用して、トラブルシューティング用のログを収集することもできます。」 
 ---
 = クラスタを監視
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

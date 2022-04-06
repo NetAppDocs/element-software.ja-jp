@@ -5,6 +5,7 @@ keywords: SNMP,enable,enabling,EnableFeature,vvols,virtual volumes,FIPS,140-2,Sn
 summary: EnableFeature メソッドを使用すると、デフォルトでは無効となっている VVOL などのクラスタ機能を有効にできます。 
 ---
 = EnableFeature
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

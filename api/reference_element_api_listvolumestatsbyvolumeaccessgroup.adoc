@@ -5,6 +5,7 @@ keywords: volumes,volume,stats,list,listing,access,group,listvolumestatsbyvolume
 summary: ListVolumeStatsByVolumeAccessGroup メソッドを使用すると、指定したボリュームアクセスグループのメンバーであるすべてのボリュームのアクティビティ測定値の合計をリストできます。 
 ---
 = ListVolumeStatsByVolumeAccessGroup
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

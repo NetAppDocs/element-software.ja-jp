@@ -5,6 +5,7 @@ keywords: volumes,volume,stats,list,listing,account,listvolumestatsbyaccount,act
 summary: ListVolumeStatsByAccount メソッドを使用すると、すべてのアカウントのボリュームアクティビティ測定値の概要をリストできます。値はアカウントが所有するすべてのボリュームの合計値です。 
 ---
 = ListVolumeStatsByAccount
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

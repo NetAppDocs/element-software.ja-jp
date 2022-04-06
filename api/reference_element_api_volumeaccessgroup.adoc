@@ -5,6 +5,7 @@ keywords: object,objects,volumeAccessGroup
 summary: volumeAccessGroup オブジェクトには、特定のボリュームアクセスグループの情報が含まれます。API メソッド ListVolumeAccessGroups を使用すると、すべてのアクセスグループに関する以下の情報のリストを取得できます。 
 ---
 = volumeAccessGroup の場合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

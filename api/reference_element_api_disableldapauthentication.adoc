@@ -5,6 +5,7 @@ keywords: LDAP,authentication,auth,disable,disabling,DisableLdapAuthentication
 summary: DisableLdapAuthentication メソッドを使用すると、 LDAP 認証を無効にし、すべての LDAP 構成設定を削除できます。ユーザまたはグループに対する設定済みのクラスタ管理者アカウントは削除されません。LDAP 認証を無効にすると、 LDAP 認証を使用するように設定されているクラスタ管理者はクラスタにアクセスできなくなります。 
 ---
 = DisableLdapAuthentication の略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume,volumes,get,getting,access,group,efficiency,GetVolumeAccessGrou
 summary: GetVolumeAccessGroupEfficiency メソッドを使用すると、ボリュームアクセスグループの効率性に関する情報を取得できます。容量の計算には、この API メソッドのパラメータとして指定したボリュームアクセスグループのみが使用されます。 
 ---
 = GetVolumeAccessGroupEfficiency の更新
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

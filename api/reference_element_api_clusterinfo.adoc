@@ -5,6 +5,7 @@ keywords: element, api, object, objects, clusterInfo
 summary: clusterInfo オブジェクトには、ノードとクラスタの通信で使用される情報が含まれます。GetClusterInfo API メソッドを使用すると、この情報を取得できます。 
 ---
 = clusterInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: fips, security, federal information processing standards, 140-2, clust
 summary: 多くのお客様の環境にソリューションを導入する場合、セキュリティの重要性はますます高まっています。Federal Information Processing Standards （ FIPS ；連邦情報処理標準）は、コンピュータのセキュリティと相互運用性に関する標準です。FIPS 140-2 認定の保存データの暗号化は、全体的なセキュリティ解決策に欠かせない要素です。 
 ---
 = FIPS ドライブをサポートするクラスタを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: element, solidfire, volume, create, edit, delete, purge, restore, clon
 summary: SolidFire システムは、ボリュームを使用してストレージをプロビジョニングします。ボリュームは、 iSCSI または Fibre Channel クライアントがネットワーク経由でアクセスするブロックデバイスです。 
 ---
 = ボリュームを管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

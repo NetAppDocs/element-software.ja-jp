@@ -5,6 +5,7 @@ keywords: troubleshoot, drives, ssd, swappable, solid-state drives
 summary: 障害が発生したソリッドステートドライブ（ SSD ）を、交換用ドライブに交換できます。SolidFire ストレージノードの SSD はホットスワップ対応です。SSD で障害が発生した疑いがある場合は、ネットアップサポートに障害の検証を依頼し、指示に従って正しい解決策の手順を実行してください。ネットアップサポートは、サービスレベルアグリーメントに従って、交換用ドライブを入手する方法についてもアドバイスします。 
 ---
 = ドライブのトラブルシューティング
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

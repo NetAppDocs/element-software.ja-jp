@@ -5,6 +5,7 @@ keywords: objects,object,fipsErrorNodeReport
 summary: fipsErrorNodeReport オブジェクトには、 GetFipsReport メソッドで照会したときに、 FIPS 140-2 のサポートに関する情報を応答しない各ノードのエラー情報が含まれています。 
 ---
 = fipsErrorNodeReport
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

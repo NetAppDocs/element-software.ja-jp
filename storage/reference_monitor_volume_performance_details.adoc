@@ -5,6 +5,7 @@ keywords: volume performance
 summary: ボリュームのパフォーマンス統計は、 Element UI の Reporting タブの Volume Performance ページで確認できます。 
 ---
 = ボリュームのパフォーマンスの詳細
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

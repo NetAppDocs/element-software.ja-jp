@@ -5,6 +5,7 @@ keywords: cluster, power down, mvip
 summary: ネットアップサポートに連絡して準備手順を完了したら、クラスタ全体の電源をオフにすることができます。 
 ---
 = クラスタの電源をオフにします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

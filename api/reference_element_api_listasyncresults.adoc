@@ -5,6 +5,7 @@ keywords: async,asynchronous,result,results,get,list,listing,listasyncresults
 summary: ListAsyncResults を使用して、システムで現在実行中および完了済みの非同期メソッドの結果をリストできます。ListAsyncResults を使用原因して非同期結果を照会しても、完了済みの asyncHandles は期限切れになりません。 GetAsyncResult を使用して、 ListAsyncResults から返される任意の asyncHandles を照会できます。 
 ---
 = ListAsyncResults
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

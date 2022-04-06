@@ -5,6 +5,7 @@ summary: NetApp SolidFire システムのアップグレードの一環として
 keywords: netapp, element, hcc, firmware, storage firmware 
 ---
 = ストレージファームウェアをアップグレードします
+:allow-uri-read: 
 
 
 [role="lead"]

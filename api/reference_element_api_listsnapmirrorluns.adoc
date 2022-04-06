@@ -5,6 +5,7 @@ keywords: snapmirror,lun,luns,list,listing,listsnapmirrorluns
 summary: Element ソフトウェア Web UI は、 ListSnapMirrorLuns メソッドを使用して、リモート ONTAP クラスタからの SnapMirror 関係の LUN 情報を一覧表示します。 
 ---
 = ListSnapMirrorLuns
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

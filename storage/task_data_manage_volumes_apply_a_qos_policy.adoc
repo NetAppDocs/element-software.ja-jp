@@ -5,6 +5,7 @@ keywords: qos policy, apply to volumes
 summary: 既存の QoS ポリシーを 1 つ以上のボリュームに一括して適用できます。 
 ---
 = ボリュームに QoS ポリシーを適用する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

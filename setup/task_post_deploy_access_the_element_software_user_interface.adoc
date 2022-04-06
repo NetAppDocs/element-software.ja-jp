@@ -5,6 +5,7 @@ keywords:
 summary: Element UI には、プライマリクラスタノードの管理仮想 IP アドレス（ MVIP ）を使用してアクセスできます。 
 ---
 = Element ソフトウェアのユーザインターフェイスにアクセスします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

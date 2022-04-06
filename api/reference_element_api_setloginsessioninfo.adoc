@@ -5,6 +5,7 @@ keywords: authentication,login,session,info,timeout,setloginsessioninfo
 summary: SetLoginSessionInfo メソッドを使用すると、セッションのログイン認証の有効期間を設定できます。システムで処理が行われないままログインの有効期間が経過すると、認証の期限が切れます。ログインの有効期間の経過後もクラスタに引き続きアクセスするには、新しいログインクレデンシャルが必要です。 
 ---
 = SetLoginSessionInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: install management node,install mNode,install Active IQ,install AIQ
 summary: NetApp Element ソフトウェア管理ノード（ mNode ）をインストールして、アップグレードやシステムサービスの提供、クラスタのアセットと設定の管理、システムテストとユーティリティの実行、ネットアップサポートへのアクセスをトラブルシューティングに利用できます。 
 ---
 = 管理ノードをセットアップ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

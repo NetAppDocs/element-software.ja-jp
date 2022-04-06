@@ -5,6 +5,7 @@ keywords: network,config,configuration,get,getting,getnetworkconfig
 summary: GetNetworkConfig メソッドを使用して、ノードのネットワーク設定情報を表示できます。 
 ---
 = GetNetworkConfig （ GetNetworkConfig ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

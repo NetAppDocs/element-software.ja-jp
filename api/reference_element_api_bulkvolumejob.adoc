@@ -5,6 +5,7 @@ keywords: bulkVolumeJob,object,objects,read,write,clones,snapshots,clone,snapsho
 summary: bulkVolumeJob オブジェクトには、クローニングや Snapshot 作成など、ボリュームの一括読み取りまたは書き込み処理に関する情報が含まれます。 
 ---
 = bulkVolumeJob
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

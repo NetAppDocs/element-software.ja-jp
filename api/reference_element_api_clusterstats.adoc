@@ -5,6 +5,7 @@ keywords: objects,clusterStats
 summary: clusterStats オブジェクトには、クラスタの統計データが含まれます。このオブジェクトに含まれるボリューム関連の統計の多くは、クラスタ内のすべてのボリュームの平均値です。GetClusterStats メソッドを使用すると、クラスタの統計情報を取得できます。 
 ---
 = clusterStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

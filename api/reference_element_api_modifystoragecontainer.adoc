@@ -5,6 +5,7 @@ keywords: virtual,volume,storage,container,vvol,modify,modifying,change,changing
 summary: ModifyStorageContainer メソッドを使用すると、既存の仮想ボリュームストレージコンテナに変更を加えることができます。 
 ---
 = ModifyStorageContainer の追加
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

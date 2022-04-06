@@ -5,6 +5,7 @@ keywords: object,objects,protectionDomainResiliency
 summary: protectionDomainResiliency オブジェクトには、このストレージクラスタの耐障害性ステータスを含みます。復元力とは、関連付けられた保護ドメインタイプの単一の保護ドメイン内の 1 つ以上の障害から、ストレージクラスタが自動的に自己修復できる能力を示します。ストレージクラスタは、単一のストレージノードに障害が発生した場合（ノードトレランス \ ）、データの読み取りと書き込みを継続できる場合に修復されたとみなされます。 
 ---
 = protectionDomainResiliency
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

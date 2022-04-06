@@ -5,6 +5,7 @@ keywords: system, api, element, security, rekey, software encryption at rest
 summary: RekeySoftwareEncryptionAtRestMasterKey メソッドを使用すると、 DEK （データ暗号化キー）の暗号化に使用される保存時のソフトウェア暗号化マスターキーを再生成できます。 
 ---
 = RekeySoftwareEncryptionAtRestMasterKey
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

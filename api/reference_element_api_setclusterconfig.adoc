@@ -5,6 +5,7 @@ keywords: cluster,configuration,set,setting,node,setclusterconfig
 summary: SetClusterConfig メソッドを使用すると、ノードが所属先のクラスタとの通信で使用する値を設定できます。ノードの現在のクラスタインターフェイス設定を表示するには、 GetClusterConfig API メソッドを使用します。 
 ---
 = SetClusterConfig の場合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

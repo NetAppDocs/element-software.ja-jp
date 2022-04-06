@@ -5,6 +5,7 @@ keywords: CreateSchedule,create,creating,schedule,schedules,snapshot,snapshots,s
 summary: CreateSchedule を使用すると、ボリュームの Snapshot のスケジュールを設定し、指定した間隔で Snapshot を自動的に作成できます。 
 ---
 = スケジュールの作成
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

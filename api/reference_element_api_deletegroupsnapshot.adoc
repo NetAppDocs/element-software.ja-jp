@@ -5,6 +5,7 @@ keywords: volume,volumes,group,snapshot,snapshots,delete,deleting,DeleteGroupSna
 summary: DeleteGroupSnapshot を使用すると、グループ Snapshot を削除できます。 
 ---
 = DeleteGroupSnapshot
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: individual volume snapshots, use, volume, snapshot
 summary: ボリューム Snapshot は、ボリュームのポイントインタイムコピーです。Snapshot には、ボリュームのグループではなく個々のボリュームを使用できます。 
 ---
 = 個々のボリューム Snapshot をデータ保護に使用します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

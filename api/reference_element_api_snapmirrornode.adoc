@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorNode
 summary: snapMirrorNode オブジェクトには、 SnapMirror 関係にあるデスティネーション ONTAP クラスタのノードに関する情報が含まれます。 
 ---
 = snapMirrorNode の略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

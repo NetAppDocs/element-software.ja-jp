@@ -5,6 +5,7 @@ keywords: element, solidfire esds, hardware components, configuration file
 summary: すべてのノードには sf_sds_config.yaml ファイルがあります。このファイルには、 SolidFire ESDS サービスで使用するように指定するハードウェアのリストが含まれています。ドライブを交換したら、ドライブを交換したノードのこのファイルに交換用ドライブの情報を追加する必要があります。このファイルは /opt/sf/sf/ に保存されます。このファイルには、ノード内のドライブに関するすべての情報が含まれます。新しいドライブを追加するたびに、このファイルに新しいドライブの詳細を入力する必要があります。 
 ---
 = sf_sds_config.yaml ファイルの内容
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

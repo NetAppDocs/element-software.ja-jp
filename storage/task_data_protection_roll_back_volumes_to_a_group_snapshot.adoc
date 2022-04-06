@@ -5,6 +5,7 @@ keywords: volumes, rollback, group snapshot, purge
 summary: ボリュームグループを、グループ Snapshot にいつでもロールバックできます。 
 ---
 = グループ Snapshot にボリュームをロールバックします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

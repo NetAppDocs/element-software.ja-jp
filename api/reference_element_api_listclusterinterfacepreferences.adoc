@@ -5,6 +5,7 @@ keywords:
 summary: ListClusterInterfacePreference メソッドを使用すると、 Element ソフトウェアを実行するストレージクラスタと統合されたシステムで、システムに格納されている既存のクラスタインターフェイス設定をリストできます。このメソッドは内部で使用されます。 
 ---
 = ListClusterInterfacePreferences の順に選択します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
