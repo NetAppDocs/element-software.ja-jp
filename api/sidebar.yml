@@ -902,8 +902,6 @@ entries:
     url: "/api/reference_element_api_listvirtualvolumetasks.html"
   - title: ModifyStorageContainer の追加
     url: "/api/reference_element_api_modifystoragecontainer.html"
-- title: クラスタ障害コード
-  url: "/api/reference_element_api_app_a_cluster_fault_codes.html"
 - title: Access Control の略
   url: "/api/reference_element_api_app_b_access_control.html"
 - title: 応答例

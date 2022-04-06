@@ -20,7 +20,7 @@ summary: 個々のノードの設定がすべて完了したら、ストレー�
 各ノードには、設定時に 1G または 10G の管理 IP （ MIP ）アドレスが複数割り当てられています。Create a New Cluster ページを開くには、設定時に作成したノード IP アドレスのいずれかを使用する必要があります。使用する IP アドレスは、クラスタ管理用に選択したネットワークによって異なります。
 
 
-IMPORTANT: クラスタ全体で有効にする場合 link:../concepts/concept_solidfire_concepts_security.html#encryption-at-rest-software["ソフトウェアによる保存データの暗号化"]を使用してクラスタを作成する必要があります  代わりに API メソッドを使用して、 enableSoftwareEncryptionAtRest パラメータを「 true 」に変更します。保存データのソフトウェア暗号化を有効にしたあとは、クラスタで無効にすることはできません。SolidFire ESDS クラスタでは、保存データのソフトウェア暗号化がデフォルトで有効になっています。保存データのハードウェアベースの暗号化は、の場合もあります  クラスタの作成後：
+IMPORTANT: クラスタ全体で有効にする場合 link:../concepts/concept_solidfire_concepts_security.html#encryption-at-rest-software["ソフトウェアによる保存データの暗号化"]を使用してクラスタを作成する必要があります link:../api/reference_element_api_createcluster.html["クラスタを作成"] 代わりに API メソッドを使用して、 enableSoftwareEncryptionAtRest パラメータを「 true 」に変更します。保存データのソフトウェア暗号化を有効にしたあとは、クラスタで無効にすることはできません。SolidFire ESDS クラスタでは、保存データのソフトウェア暗号化がデフォルトで有効になっています。保存データのハードウェアベースの暗号化は、の場合もあります link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["有効と無効を切り替えます"] クラスタの作成後：
 
 [NOTE]
 ====

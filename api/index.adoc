@@ -37,7 +37,6 @@ Element API は、 HTTPS 経由の JSON-RPC プロトコルに基づいていま
 * xref:concept_element_api_volume_access_group_api_methods.adoc[ボリュームアクセスグループ API メソッド]
 * xref:concept_element_api_volume_snapshot_api_methods.adoc[ボリューム Snapshot API メソッド]
 * xref:concept_element_api_vvols_api_methods.adoc[仮想ボリューム API メソッド]
-* xref:reference_element_api_app_a_cluster_fault_codes.adoc[クラスタ障害コード]
 * xref:reference_element_api_app_b_access_control.adoc[Access Control の略]
 * xref:concept_element_api_response_examples.adoc[応答例]
 

@@ -169,5 +169,5 @@ ISO 8601 形式の文字列
 == 詳細については、こちらをご覧ください
 
 * xref:reference_element_api_listclusterfaults.adoc[ListClusterFaults]
-* xref:reference_element_api_app_a_cluster_fault_codes.adoc[クラスタ障害コード]
+* link:../storage/reference_monitor_cluster_fault_codes.html["クラスタ障害コード"]
 

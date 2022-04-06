@@ -283,7 +283,7 @@ IMPORTANT: 管理サービスに関連付けられた永続ボリュームが作
 クラスタでは、ボリュームあたり一度に実行できるクローン要求は最大 2 つ、アクティブなボリュームのクローン処理は最大 8 件までサポートされます。これらの制限を超える要求はキューに登録され、あとで処理されます。
 
 
-NOTE: オペレーティングシステムによって、クローニングされたボリュームの処理方法が異なります。VMware ESXi は、クローンボリュームをボリュームコピーまたは Snapshot ボリュームとして扱います。新しいデータストアの作成に使用できるデバイスがボリュームになります。クローンボリュームのマウントと Snapshot LUN の処理の詳細については、 VMware のドキュメントを参照してください https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EEFEB765-A41F-4B6D-917C-BB9ABB80FC80.html["VMFS データストアのコピーをマウントしています"] および。
+NOTE: オペレーティングシステムによって、クローニングされたボリュームの処理方法が異なります。VMware ESXi は、クローンボリュームをボリュームコピーまたは Snapshot ボリュームとして扱います。新しいデータストアの作成に使用できるデバイスがボリュームになります。クローンボリュームのマウントと Snapshot LUN の処理の詳細については、 VMware のドキュメントを参照してください https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EEFEB765-A41F-4B6D-917C-BB9ABB80FC80.html["VMFS データストアのコピーをマウントしています"] および https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EBAB0D5A-3C77-4A9B-9884-3D4AD69E28DC.html["重複する VMFS データストアの管理"]。
 
 
 IMPORTANT: 小さいサイズにクローニングすることによってクローンボリュームのサイズを切り詰める場合は、小さいボリュームに収まるように事前にパーティションを準備してください。

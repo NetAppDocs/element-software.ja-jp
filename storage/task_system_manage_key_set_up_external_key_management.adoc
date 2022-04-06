@@ -28,12 +28,12 @@ summary: 以下の手順に従い、リストされている Element API メソ�
 +
 .. 次の API メソッドを呼び出して、キーサーバの詳細が格納されるキープロバイダを作成します。 link:../api/reference_element_api_createkeyproviderkmip.html["CreateKeyProviderKmip"]
 .. 次の API メソッドを呼び出して、署名済み証明書と認証局の公開鍵証明書を提供するキーサーバを作成します。 link:../api/reference_element_api_createkeyserverkmip.html["CreateKeyServerKmip のように指定します"]
-
+link:../api/reference_element_api_testkeyserverkmip.html["TestKeyServerKmip"]
 +
 テストに失敗した場合は、サーバの接続と設定を確認します。その後、テストを繰り返します。
 
 .. 次の API メソッドを呼び出して、キーサーバをキープロバイダコンテナに追加します。link:../api/reference_element_api_addkeyservertoproviderkmip.html["AddKeyServerToProviderKmip のように指定します"]
-
+link:../api/reference_element_api_testkeyproviderkmip.html["TestKeyProviderKmip"]
 +
 テストに失敗した場合は、サーバの接続と設定を確認します。その後、テストを繰り返します。
 
@@ -41,12 +41,12 @@ summary: 以下の手順に従い、リストされている Element API メソ�
 
 . 保存データの暗号化の次の手順として、次のいずれかを実行します。
 +
-.. （保存中のハードウェア暗号化の場合）有効にします link:../concepts/concept_solidfire_concepts_security.html["保存データのハードウェア暗号化"] キーの格納に使用するキーサーバを含むキープロバイダの ID を指定するには、を呼び出します  API メソッド。
+.. （保存中のハードウェア暗号化の場合）有効にします link:../concepts/concept_solidfire_concepts_security.html["保存データのハードウェア暗号化"] キーの格納に使用するキーサーバを含むキープロバイダの ID を指定するには、を呼び出します link:../api/reference_element_api_enableencryptionatrest.html["EnableEncryptionAtRest"] API メソッド。
 +
 
 NOTE: 保存データの暗号化はを使用して有効にする必要があります link:../api/reference_element_api_enableencryptionatrest.html["API"]。既存の Element UI ボタンを使用して保存データの暗号化を有効にすると、原因機能で内部で生成されたキーの使用に戻ります。
 
-.. （ソフトウェアによる保存データの暗号化）を実行します link:../concepts/concept_solidfire_concepts_security.html["ソフトウェアによる保存データの暗号化"] 新しく作成したキープロバイダを使用するには、キープロバイダ ID をに渡します  API メソッド。
+.. （ソフトウェアによる保存データの暗号化）を実行します link:../concepts/concept_solidfire_concepts_security.html["ソフトウェアによる保存データの暗号化"] 新しく作成したキープロバイダを使用するには、キープロバイダ ID をに渡します link:../api/reference_element_api_rekeysoftwareencryptionatrestmasterkey.html["RekeySoftwareEncryptionAtRestMasterKey"] API メソッド。
 
 
 

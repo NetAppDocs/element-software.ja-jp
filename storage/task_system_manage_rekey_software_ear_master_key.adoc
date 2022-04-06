@@ -22,8 +22,8 @@ Element API を使用して既存のキーを変更できます。このプロ�
 NOTE: このプロセスは非同期で、キー変更処理が完了する前に応答を返します。を使用できます link:../api/reference_element_api_getasyncresult.html["GetAsyncResult"] システムをポーリングして、プロセスがいつ完了したかを確認する方法。
 
 .必要なもの
-* を使用して保存データのソフトウェア暗号化を有効にしておきます link:../api/reference_element_api_createcluster.html["クラスタを作成"] ボリュームを含まず、 I/O を含まない新しいクラスタ上のメソッド使用  続行する前に状態が「有効」であることを確認します。
-* これで完了です link:../storage/task_system_manage_key_set_up_external_key_management.html["信頼関係を確立しました"] SolidFire クラスタと外部キーサーバ（ EKS ）の間の接続に使用します。を実行します  キープロバイダへの接続が確立されていることを確認する方法。
+* を使用して保存データのソフトウェア暗号化を有効にしておきます link:../api/reference_element_api_createcluster.html["クラスタを作成"] ボリュームを含まず、 I/O を含まない新しいクラスタ上のメソッド使用 link:../api/reference_element_api_getsoftwareencryptionatrestinfo.html["GetSoftwareEncryptionatRestInfo"] 続行する前に状態が「有効」であることを確認します。
+* これで完了です link:../storage/task_system_manage_key_set_up_external_key_management.html["信頼関係を確立しました"] SolidFire クラスタと外部キーサーバ（ EKS ）の間の接続に使用します。を実行します link:../api/reference_element_api_testkeyserverkmip.html["TestKeyProviderKmip"] キープロバイダへの接続が確立されていることを確認する方法。
 
 
 .手順

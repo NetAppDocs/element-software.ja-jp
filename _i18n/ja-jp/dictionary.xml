@@ -7633,7 +7633,6 @@
   <block id="4d10c3e24e7b6edfa72b4c011dadac86" category="list-text">volume ：個々のボリュームに影響する障害。</block>
   <block id="0a2bf1d355540ae9ad881fb6d158ec6a" category="inline-xref-macro">ListClusterFaults</block>
   <block id="7821875a472294168621a09938fb4651" category="list-text"><block ref="7821875a472294168621a09938fb4651" category="inline-xref-macro-rx"></block></block>
-  <block id="3903d3b2985d16476d5183c0d4083057" category="list-text"><block ref="3903d3b2985d16476d5183c0d4083057" category="inline-xref-macro-rx"></block></block>
   <block id="e57b956af31e98e7384b69e0e0cfc5a6" category="summary">UpdateBulkVolumeStatus メソッドを使用すると、 StartBulkVolumeRead メソッドまたは StartBulkVolumeWrite メソッドで開始した一括ボリュームジョブのステータスを更新できます。</block>
   <block id="207fb408c59f98b4eafa864bbc3f6ebe" category="doc">UpdateBulkVolumeStatus</block>
   <block id="0cbc9b3eac70901cd08c76ae7fb284c1" category="paragraph">「 UpdateBulkVolumeStatus 」メソッドを使用すると、「 S tartBulkVolumeRead 」メソッドまたは「 S tartBulkVolumeWrite 」メソッドで開始した一括ボリュームジョブのステータスを更新できます。</block>
@@ -10185,100 +10184,6 @@
   <block id="a382fc873af055a44b77ea69dfb19c81" category="paragraph">セッションに関連付けられているボリュームの ID （存在する場合）。</block>
   <block id="3c1891dd585e189a03a3738dc0aabddc" category="paragraph">ボリュームインスタンス</block>
   <block id="c8587e41483add069cdbf299856867fd" category="paragraph">iSCSI セッションに関連付けられているボリュームオブジェクト（存在する場合）を示します。</block>
-  <block id="d25f5e226239713265f2bcd9097ea3d9" category="summary">ストレージクラスタで管理者の注意が必要なエラーや状態が発生すると、クラスタ障害が生成されます。ListClusterFaults メソッドを使用すると、ストレージクラスタの解決済みおよび未解決の障害の最新のリストを取得できます。</block>
-  <block id="32e6aaf950017a84b1ab127d90a8cd73" category="paragraph">ストレージクラスタで管理者の注意が必要なエラーや状態が発生すると、クラスタ障害が生成されます。「 ListClusterFaults 」メソッドを使用すると、ストレージクラスタの解決済みおよび未解決の障害の最新のリストを取得できます。</block>
-  <block id="08c9f33e90162e7c5b80a70d3c8aa867" category="paragraph">NetApp Element ストレージクラスタの障害の詳細と有効な解決策を次に示します。</block>
-  <block id="4d98a80b85374d1311eed6454df98c3b" category="paragraph">単一ノードの損失をサポートするのに十分なブロックストレージの空き容量がありません。クラスタフルレベルの詳細については、「 GetClusterFullThreshold 」 API メソッドを参照してください。このクラスタ障害は、次のいずれかの状態を示します。</block>
-  <block id="3db1b2b278c0d698957be3ed18d42de5" category="paragraph">この問題を解決するには、ボリュームをパージまたは削除するか、ストレージクラスタに別のストレージノードを追加してください。</block>
-  <block id="5a6382e5e39ddd7ab060673ce2523e8b" category="paragraph">クラスタマスターとトークンを提供しているノードの間の時間差が推奨されるしきい値を超えている。</block>
-  <block id="39dab517f8236f92cc89879a65097ef2" category="paragraph">ストレージクラスタは、ノード間の時間スキューを自動的に修正できません。この問題を解決するには、インストール時のデフォルトではなく、使用するネットワーク内の NTP サーバを使用してください。すでに内部の NTP サーバを使用している場合は、ネットアップサポートにお問い合わせください。</block>
-  <block id="6f0088cdf2c7b3dad2942a89353c2b68" category="paragraph">クラスタブロックデータがデグレード状態になっており、ブロックデータの完全な冗長性をリストアする自動修復プロセスを続行できません。ノードまたはブロックサービスが多すぎるか、クラスタブロックサービスがいっぱいです。</block>
-  <block id="f3ffaddc928cf25788e1add3fc16d416" category="paragraph">この問題を解決するには、ブロック容量を追加するか、ネットアップサポートにお問い合わせください。</block>
-  <block id="c37aa739f6a3b24edd32a877c555e3f5" category="paragraph">ストレージクラスタの IOPS がオーバープロビジョニングされています。QoS の最小 IOPS の合計が、クラスタの想定 IOPS を上回っています。すべてのボリュームで同時に最小 QoS を維持することができません。</block>
-  <block id="ab37700b0df7d254582657aa08260e04" category="paragraph">この問題を解決するには、ボリュームの最小 QoS IOPS 設定を引き下げてください。</block>
-  <block id="3a38698ed20d2b51f1d0781ec02e5c87" category="paragraph">保存データの暗号化機能を無効にすると、ドライブのセキュリティを無効にできません。ドライブのセキュリティは引き続き有効になっています。</block>
-  <block id="121654d824d8ceb6408f940c8de02811" category="paragraph">ドライブのセキュリティを無効にできなかった理由が障害の詳細に表示されています。理由に基づいた問題の調査が必要になる場合があります。セキュリティを正常に無効にできないディスクをリカバリする必要がある場合は、次の手順を実行します。</block>
-  <block id="439ee6a5afc1cd45005be05a7653ab07" category="list-text">ドライブを「 available 」ステータスにして、論理的に削除します。</block>
-  <block id="273c0bb976b8f467495ee48fae3e1c19" category="list-text">ドライブで完全消去を実行します。</block>
-  <block id="fff51ddf8246606628af34a9e4f74c22" category="list-text">ドライブを「 active 」ステータスにします。上記の手順で問題が解決しない場合は、ドライブを交換します。</block>
-  <block id="ca505a259b750fe5a33a46d3a0b1380e" category="paragraph">クラスタペアが切断されているか、正しく設定されていません。</block>
-  <block id="b08d9368a4197f3cf36aeb195b3848e2" category="paragraph">クラスタのネットワーク接続を確認してください。</block>
-  <block id="030593fde2e9cf275ac8e18e40e77cbd" category="paragraph">リモートノードが切断されているか、正しく設定されていません。ノード間のネットワーク接続を確認してください。</block>
-  <block id="ef6314346433530b2e488a790cf076af" category="paragraph">ストレージクラスタ内に追加可能なドライブがあります。通常は、すべてのストレージクラスタにすべてのドライブが追加されており、利用可能な状態のドライブはありません。この問題が予期せずに発生する場合は、ネットアップサポートにお問い合わせください。</block>
-  <block id="225c937a79d1fadd0e404df90f04ed6f" category="paragraph">ストレージクラスタマスターの候補が複数あります。</block>
-  <block id="9044d525754cbaf1c9aa47a573ac52ed" category="paragraph">保存データの暗号化機能を有効にすると、ドライブのセキュリティを有効にできません。</block>
-  <block id="cf74dfaaa13e2e52d57e1a9ff8aa2672" category="paragraph">セキュリティを有効にするために正しいキーが使用されていることを確認します。セキュリティを正常に有効にできないディスクをリカバリする必要がある場合は、次の手順を実行します。</block>
-  <block id="4bba0b2aae153f2a9209ff82e1ff10fb" category="paragraph">いずれかのアンサンブルノードでネットワーク接続または電源が失われています。</block>
-  <block id="d2342f99a78712b9ee1fa27974b89aee" category="paragraph">この問題を解決するには、該当するノードのネットワーク接続または電源を復旧してください。</block>
-  <block id="1e9c06875eaa0fff8c9b078db63bea78" category="paragraph">通常とは異なる障害が発生しました。これらの障害は、障害キューから自動的に消去されることはありません。</block>
-  <block id="0092527a0cb321d5a813f5e071aaa45e" category="paragraph">Fibre Channel ノードが自身のストレージ IP アドレスでストレージクラスタ内の他のノードに応答していません。</block>
-  <block id="bf67c87d37b9233d02e142302836fd57" category="paragraph">すべての Fibre Channel ノードが応答していません。ノード ID が表示されます。</block>
-  <block id="897353d1ce2876e6dd9645249c871840" category="paragraph">FIPS 対応ストレージノードに FIPS 非対応ドライブが挿入されているか、 FIPS 非対応ストレージノードに FIPS 対応ドライブが挿入されています。</block>
-  <block id="41132d2def22fb064ed264826ba92fc2" category="paragraph">該当するドライブを取り外すか交換してください。</block>
-  <block id="cc84eb08eef17d0c2e0b250756f9e67f" category="paragraph">保存データの暗号化が無効になっているか、ストレージクラスタに FIPS 非対応のハードウェアが含まれていることが検出されました。</block>
-  <block id="9575b80cd9c5765a86912e0409ddff03" category="paragraph">保存データの暗号化を有効にするか、 FIPS 非対応のハードウェアをストレージクラスタから取り外してください。</block>
-  <block id="217c9deaee318d3bd12927f04caa1c58" category="paragraph">FIPS のセルフテスト中に障害が検出されました。</block>
-  <block id="aca7df4e501ae7d2add7d97814315d29" category="list-text">ノードでサポート対象外のドライブが使用されています。</block>
-  <block id="e34ab0116446eb703fc3c5eef0891f9b" category="list-text">ドライブの暗号化対応が親ノードと一致しません。ネットアップサポートにお問い合わせください。</block>
-  <block id="f377b2b38ea921d06792212f83c462c5" category="paragraph">サードパーティのアイデンティティプロバイダで使用するクラスタのサービスプロバイダの SSL 証明書の有効期限が近づいているか、または有効期限が切れています。この問題では、緊急性に基づいて次の重大度が使用されます。</block>
-  <block id="e058e237149ccd7c52a0620d92e60d02" category="paragraph">この問題を解決するには、有効期限が切れる前に SSL 証明書を更新してください。更新された SSL 証明書を提供するには、 UpdateIdpConfiguration メソッドを「 refreshCertificateExpirationTime=true 」とともに使用します。</block>
-  <block id="ae5d3104abdae092ec87127df4c70cc0" category="paragraph">この問題を解決するには、ノード Web UI でボンディングモードを変更してください。</block>
-  <block id="6fc1988f796789606d1a7788a6fe4250" category="paragraph">この問題を解決するには、ノード Web UI で MTU 設定を変更してください。</block>
-  <block id="0556ad4e965313f1ffafac4f00c62769" category="paragraph">この問題を解決するには、 Element （ストレージクラスタ） Web UI でサブネットマスクを変更してください。</block>
-  <block id="146f2b31e751a3d1265ceecc20d02f21" category="list-text">* kmipCertificateFault （ルート認証局（ CA ）証明書の有効期限が近づいています） *</block>
-  <block id="ed567d278c3974824988049b2c111fc2" category="paragraph">ルート認証局（ CA ）証明書の有効期限が近づいています。この問題では、緊急性に基づいて次の重大度が使用されます。</block>
-  <block id="fd58f0129cdd35b5e370dbd7b79db10e" category="paragraph">証明書は 3 日以内に期限切れになります。</block>
-  <block id="f95baa7a107665ecaae975f01ac7edc3" category="paragraph">この問題を解決するには、有効期限が切れる前に証明書を更新してください。ルート CA から、有効期限が 30 日以上ある新しい証明書を取得します。ModifyKeyServerKmip API メソッドを使用して、更新されたルート CA 証明書を提供します。</block>
-  <block id="9861508ecbeed5e9fbc443095592eb8f" category="list-text">* kmipCertificateFault （クライアント証明書の有効期限が近づいています） *</block>
-  <block id="840aaf8a8b2720440ebc740df98562e6" category="paragraph">クライアント証明書の有効期限が近づいています。この問題では、緊急性に基づいて次の重大度が使用されます。</block>
-  <block id="e6b687a40c1d24d41844f93c165a412f" category="paragraph">この問題を解決するには、 GetClientCertificateSigningRequest メソッドを使用して新しい CSR を作成してください。30 日以上の有効期限を持つ CSR に署名を受けてから、 ModifyKeyServerKmip API メソッドを使用して、期限切れになる KMIP クライアント証明書を新しい証明書に置き換えます。</block>
-  <block id="091d0fc8fdc4383d7ce083951cbc653c" category="list-text">* kmipCertificateFault （ルート認証局（ CA ）証明書の有効期限が切れています） *</block>
-  <block id="d51be7553ddbe9f2bc7e5477bb563bbe" category="paragraph">ルート CA 証明書の有効期限が切れています。</block>
-  <block id="022f95feb35f143e01a16b6b1e6c6eed" category="paragraph">ルート CA から、有効期限が 30 日以上ある新しい証明書を取得します。ModifyKeyServerKmip API メソッドを使用して、更新されたルート CA 証明書を提供します。</block>
-  <block id="fdc9f6cb047f5b168ce82457178114b8" category="list-text">* kmipCertificateFault （クライアント証明書の有効期限が切れています） *</block>
-  <block id="d27f6d4f53de1dc511579ab140393ec3" category="paragraph">クライアント証明書の有効期限が切れています。</block>
-  <block id="812cf44fa02f67ff9c8fddb56a4c9985" category="paragraph">GetClientCertificateSigningRequest API メソッドを使用して新しい CSR を作成し、新しい有効期限が 30 日以上あることを確認する署名を受けます。ModifyKeyServerKmip API メソッドを使用して、期限切れのクライアント証明書を新しい証明書に置き換えます。</block>
-  <block id="2e87150ed823fc3834baf28af608e485" category="list-text">* kmipCertificateFault （ルート証明機関（ CA ）証明書が無効です） *</block>
-  <block id="a908e509a1a0b2dc8767bdc6c1a80c54" category="paragraph">ルート CA 証明書が無効です。</block>
-  <block id="ca34afe28a5e1cdb65d8116284b2c20f" category="paragraph">正しい証明書が指定されていることを確認してください。必要に応じて、ルート CA から証明書を再取得します。ModifyKeyServerKmip API メソッドを使用して、正しい証明書をインストールします。</block>
-  <block id="3de47aa9779613d0dedb0ab86875c29d" category="list-text">* kmipCertificateFault （クライアント証明書が無効です） *</block>
-  <block id="0b024a8347f60375d4249529b15a4139" category="paragraph">クライアント証明書が無効です。</block>
-  <block id="083fc5d279fd73bb3f94e6ca8fb3b307" category="paragraph">正しい KMIP クライアント証明書がインストールされていることを確認してください。クライアント証明書のルート CA が外部キー管理サーバにインストールされている必要があります。クライアント証明書を更新する必要がある場合は、 ModifyKeyServerKmip API メソッドを使用します。</block>
-  <block id="723a1ea937d686aec7ad25f965c31c16" category="list-text">* kmipServerFault （接続障害） *</block>
-  <block id="13cdf933a1c1d3beca453ab7d0521cec" category="paragraph">1 つ以上のノードが外部キー管理サーバにアクセスできません。</block>
-  <block id="20b55cd5ab13a6d96393688a90490d02" category="paragraph">キーサーバ ID は、障害の詳細に記載されています。サーバが機能しており、管理ネットワーク経由でアクセスできることを確認してください。一部のノードのみが外部キー管理サーバにアクセスできない場合は、障害の詳細にキーサーバにアクセスできないノードが表示されます。ネットワークまたは特定のノードレベルでトラブルシューティングを実行し、一部のノードのみが外部キー管理サーバにアクセスできる理由を特定します。</block>
-  <block id="86d4ff43058edb65f9af819dcfd47da1" category="list-text">* kmipServerFault （認証エラー） *</block>
-  <block id="5cc5c7caacea256a9002ab3381ab6ad3" category="paragraph">1 つ以上のノードを外部キー管理サーバで認証できません。</block>
-  <block id="759ecaac26c1f586572dabbcecf2d04a" category="paragraph">正しいルート CA および KMIP クライアント証明書が使用されていることを確認します。いずれかの証明書を更新する必要がある場合は、 ModifyKeyServerKmip メソッドを使用して正しい証明書をインストールします。</block>
-  <block id="eade44c8e23537f95eb84f24426d13f5" category="list-text">* kmipServerFault （サーバエラー） *</block>
-  <block id="6f61ff32f736b10131517229dc652d94" category="paragraph">外部キー管理サーバでエラーが発生しました。</block>
-  <block id="a31307c1242e58a4be9014afc06d75b1" category="paragraph">エラーの詳細は、障害の詳細に記載されています。エラーに基づいて、外部キー管理サーバのトラブルシューティングが必要になる場合があります。</block>
-  <block id="308ded7e16ce934c75a01e4ac1f9c866" category="admonition">エラーの種類の詳細については、エラーの詳細 * の見出しを参照してください。</block>
-  <block id="2f4404d1f53c3e0104852bded542147c" category="list-text">stage5CompletelyConsumed （ Critical ） 1 ：書き込みまたは新しい iSCSI 接続は許可されません。現在の iSCSI 接続は維持されます。クラスタに容量を追加するまで書き込みは失敗します。データをパージまたは削除するか、ノードを追加します。詳細については、「クラスタフルレベルについて」を参照してください。</block>
-  <block id="713c1f103ca74a6f919ef7544e6aaefd" category="list-text">想定されるネットワークインターフェイスが存在しません。</block>
-  <block id="2daf8cc67ea4469719d1d7092295910f" category="list-text">ネットワークインターフェイスが重複しています。</block>
-  <block id="a94ecb250b7e5b960be8ce16a18f95e6" category="list-text">ネットワークインターフェイスは設定されていますが停止しています。</block>
-  <block id="77d5269bd8523a86db0c6f4f3a135732" category="list-text">ネットワークインターフェイスの再起動が必要です。ネットアップサポートにお問い合わせください。</block>
-  <block id="c4454706342053bea7fb984b62eb9945" category="paragraph">Element ソフトウェアが指定されたノードと通信できません。</block>
-  <block id="97ae3d0b3a8c5a578275f9398682f5df" category="paragraph">この問題を解決するには、クラスタのネットワークの接続状態とケーブル配線を確認してください。ネットワークに問題がない場合は、ネットアップサポートに連絡してノードを交換してください。</block>
-  <block id="15171c04c4ca2884a751133663d55632" category="paragraph">この問題を解決するには、 NTP サーバの設定、ネットワーク、およびファイアウォールを確認してください。</block>
-  <block id="fedcfabb2cfec0de72c7da31545b3034" category="list-text">電源装置の入力が見つからないか、範囲外です。この問題を解決するには、冗長電源がすべてのノードに供給されていることを確認してください。問題が解決しない場合は、ネットアップサポートにお問い合わせください。</block>
-  <block id="d9ec13666aa4de7ae099fde6bc3d26de" category="paragraph">ストレージクラスタのプロビジョニング済み容量がいっぱいです。</block>
-  <block id="7e86477012c1ee97d9d8c3d0e0f124c1" category="paragraph">この問題を解決するには、プロビジョニング済みスペースを追加するか、またはボリュームまたは Snapshot を削除およびパージしてください。</block>
-  <block id="65e58ff4798bf793261ceb923ccf6b20" category="paragraph">レプリケーションに設定されている非同期遅延を超えました。</block>
-  <block id="02c53cf3cf77d38f62cf01cc524c5852" category="paragraph">この問題を解決するには、リモートクラスタ上の Snapshot をいくつか削除してください。</block>
-  <block id="2720062f4c9a9abe0b540ca56a165526" category="paragraph">この問題を解決するには、ストレージノードを追加するか、ネットアップサポートにお問い合わせください。</block>
-  <block id="4d55e6484c45b2629c5f0a3bab55eb1d" category="paragraph">この問題を解決するには、ノードの SSH サービスを無効にしてください。</block>
-  <block id="de3e5549122bac0d08064ef5de222370" category="paragraph">データの冗長性を維持するために、最大のノードの容量がシステムによって削減され、ブロック容量の一部が孤立（使用されない）状態になります。この問題を解決するには、既存のストレージノードにドライブを追加するか、クラスタにストレージノードを追加してください。</block>
-  <block id="19ea2f91b3ae961be9e609088755c628" category="paragraph">この問題を解決するには、アップグレードを再開するか、ネットアップサポートにお問い合わせください。</block>
-  <block id="343b83008361f7348f29b09992c036a1" category="list-text">* unbalancedMixedNodes *</block>
-  <block id="21d9554faf915c184479d8c414879a2a" category="paragraph">1 つのノードがストレージクラスタの容量の 1/3 以上を使用しています。</block>
-  <block id="cee5216be9ba626ac51bd95852a64ddf" category="paragraph">システムサービスが応答しなくなりました。</block>
-  <block id="a47f69fbe65c37ed6c032cad6a13015c" category="list-text">ネットワークマスクが正しくありません。</block>
-  <block id="592d7386d2730cefa2d178a375b13922" category="paragraph">セカンダリボリュームのレプリケートと同期が完了していません。</block>
-  <block id="b3e722a43226f69be3a749b06deb3593" category="paragraph">この問題は、同期が完了すると解消されます。</block>
-  <block id="43d437f44edd9731eb55ac4bda52ba7e" category="paragraph">問題が解消されない場合は、ネットワーク接続の問題やハードウェアエラーが発生していないか確認してください。</block>
-  <block id="6b3f5cdcf5ea28c920a4c59ff8a5b0ff" category="paragraph">ストレージクラスタ内の 1 つ以上のボリュームがオフラインです。</block>
   <block id="1c8d03b94219effcb7913447cfa07b5b" category="summary">GetNodeHardwareInfo メソッドを使用すると、指定したノードのすべてのハードウェア情報およびステータスを取得できます。通常は、メーカー、ベンダー、バージョン、およびその他の関連するハードウェア識別情報が含まれます。</block>
   <block id="1eddc855ab1db00029f5919d5d2faaa6" category="paragraph">GetNodeHardwareInfo メソッドを使用すると、指定したノードのすべてのハードウェア情報およびステータスを取得できます。通常は、メーカー、ベンダー、バージョン、およびその他の関連するハードウェア識別情報が含まれます。</block>
   <block id="70102b213e2e4ab01cc4b057f41a1d7b" category="paragraph">ハードウェア情報を要求するノードの ID 。Fibre Channel ノードを指定した場合は、 Fibre Channel ノードに関する情報が返されます。</block>
@@ -12395,4 +12300,6 @@
   <block id="a4f0b4cd8ed43da899bf23d0cc006ec8" category="inline-link-macro">ストレージファームウェアバンドル 2.146 に関する注意事項</block>
   <block id="7a0a6b8351b186d782f2b5b12a09f9d1" category="list-text"><block ref="7a0a6b8351b186d782f2b5b12a09f9d1" category="inline-link-macro-rx"></block></block>
   <block id="38be14292d8d278a5d7b04a84bab839d" category="admonition">VMware vCenter Server 7.0 U3 にアップグレードすると、すべてのバージョンの NetApp Element Plug-in for vCenter Server を導入できません。この問題 を解決するには、を参照してください<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>。</block>
+  <block id="72da0f32a8783a5cb119cddae9f955bb" category="admonition">1 つの vCenter インスタンスに複数の NetApp Element VASA Provider を登録しないでください。2 つ目の NetApp Element VASA Provider が追加されている場合、その結果、すべての VVOL データストアにアクセスできなくなります。</block>
+  <block id="fde51f20c5d4f2642518536389dc9ca9" category="list-text"><block ref="fde51f20c5d4f2642518536389dc9ca9" category="inline-link-macro-rx"></block></block>
 </blocks>
