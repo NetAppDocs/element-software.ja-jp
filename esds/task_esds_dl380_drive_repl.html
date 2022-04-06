@@ -45,12 +45,52 @@
   <link rel="stylesheet" href='/ja-jp/element-software/css/na-utility.css' type='text/css'>
   <link rel="stylesheet" href='/ja-jp/element-software/css/na-sidebar.css' type='text/css'>
   <link rel='stylesheet' href='/ja-jp/element-software/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/ja-jp/element-software/css/custom-dropdown.css' type='text/css'>
   <link rel='stylesheet' href='/ja-jp/element-software/css/na-pagenav.css' type='text/css'>
 
   
   <link rel="stylesheet" href="/ja-jp/element-software/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/ja-jp/element-software/css/tabbed-blocks.css" type="text/css">
-  <link rel='stylesheet' href='/ja-jp/element-software/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/ja-jp/element-software/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    if (document.location.hostname === "docs.netapp.com") {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = "72570c5c-fe30-465f-b0e0-b77f7fb4ae34";
+      head.appendChild(onetrustScript);
+    }
+
+    function OptanonWrapper() { }
+
+    if (document.location.hostname === "docs.netapp.com") {
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+      head.appendChild(adobe);
+
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id=UA-81697994-3";
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-81697994-3');
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
@@ -60,15 +100,6 @@
 
   <script src='/ja-jp/element-software/js/na-utility.js'></script>
   <script src='/ja-jp/element-software/js/clouddocs.js'></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    var head = document.getElementsByTagName('head')[0];
-    var adobe = document.createElement("script");
-    adobe.type = "text/javascript";
-    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
-    head.appendChild(adobe);
-  }
-  </script>
   <script src='/ja-jp/element-software/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/ja-jp/element-software/js/toc.js'></script>
@@ -121,16 +152,8 @@
               $("#tg-sb-icon").toggleClass('fa-toggle-off');
           });
       });
-  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-81697994-3');
-  }
   </script>
-  <script src='/ja-jp/element-software/js/version-dropdown.js'></script>
+  <script src='/ja-jp/element-software/js/custom-dropdown.js'></script>
   <script src='/ja-jp/element-software/js/FileSaver.min.js'></script>
   <script src='/ja-jp/element-software/js/jszip-utils.min.js'></script>
   <script src='/ja-jp/element-software/js/jszip.min.js'></script>
@@ -138,20 +161,15 @@
 </head>
 
 
-  <body class role="document">
+  <body class role="document" data-flavor="">
     <div id="page" class="n-off-canvas-menu">
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
   <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/element-software/issues/new?body=Page%3A%20[HPE DL380 のドライブを交換](https://docs.netapp.com/ja-jp/element-software/esds/task_esds_dl380_drive_repl.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/element-software/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/element-software/blob/main/esds/task_esds_dl380_drive_repl.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/element-software/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/element-software/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
-    </div>
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/element-software/issues/new?body=Page%3A%20[HPE DL380 のドライブを交換](https://docs.netapp.com/ja-jp/element-software/esds/task_esds_dl380_drive_repl.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/element-software/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/element-software/blob/main/esds/task_esds_dl380_drive_repl.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/element-software/images/edit-sm.svg" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/element-software/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">このページ</div>
@@ -161,6 +179,7 @@
       </nav>
     </div>
   </div>
+  
   
   <!-- Start top_hat -->
   <div class="n-top-hat">
@@ -244,7 +263,8 @@
           data-did-you-mean="{suggestion} を検索" 
           data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?" 
           data-results-found="{hitCount} 件見つかりました"  
-          data-sk-es-pf-indexes=""></div>
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -333,6 +353,9 @@
 </div>
 <div class="n-pdf-body-container">
   <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
         <a target="_blank" href="/ja-jp/element-software/pdfs/fullsite-sidebar/SolidFire_および_Element_ソフトウェア_12_3_x_のドキュメント.pdf" >
           <img src="/ja-jp/element-software/images/pdf.png" width="16" height="16"/>このドキュメントサイトのPDF</a>
 
@@ -341,6 +364,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/リリースノート.pdf" 
@@ -365,6 +391,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/概念.pdf" 
@@ -380,6 +409,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/アーキテクチャとコンポーネント.pdf" 
@@ -418,6 +450,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ストレージ.pdf" 
@@ -461,6 +496,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/要件.pdf" 
@@ -489,6 +527,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ぜひお試しください.pdf" 
@@ -513,6 +554,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ハードウェアを設置して保守する.pdf" 
@@ -526,6 +570,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/H410S_および_H610S_ハードウェアの情報.pdf" 
@@ -558,6 +605,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/SF_シリーズハードウェアの情報.pdf" 
@@ -595,6 +645,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/SolidFire_エンタープライズ_SDS_をインストールして使用します.pdf" 
@@ -610,6 +663,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/インストールの前提条件となるタスクを実行します.pdf" 
@@ -648,6 +704,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/SolidFire_ESDS_を管理します.pdf" 
@@ -704,6 +763,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ストレージをセットアップする.pdf" 
@@ -717,6 +779,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ストレージノードで構成されたクラスタをセットアップ.pdf" 
@@ -747,6 +812,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/Fibre_Channel_ノードを含むクラスタをセットアップします.pdf" 
@@ -796,6 +864,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/Element_ソフトウェアでストレージを管理.pdf" 
@@ -811,6 +882,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/導入後に_SolidFire_システムのオプションを設定.pdf" 
@@ -839,6 +913,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/Element_ソフトウェア_UI_の基本オプションを使用.pdf" 
@@ -852,6 +929,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/API_アクティビティを表示します.pdf" 
@@ -889,6 +969,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/アカウントを管理.pdf" 
@@ -904,6 +987,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/クラスタ管理者のユーザアカウントを管理します.pdf" 
@@ -937,6 +1023,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/システムを管理します.pdf" 
@@ -950,6 +1039,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/多要素認証を有効にします.pdf" 
@@ -976,6 +1068,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/クラスタの設定を行います.pdf" 
@@ -997,6 +1092,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ネットワークタイムプロトコルを設定します.pdf" 
@@ -1023,6 +1121,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/SNMP_を管理します.pdf" 
@@ -1055,6 +1156,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ドライブを管理します.pdf" 
@@ -1079,6 +1183,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ノードを管理.pdf" 
@@ -1111,6 +1218,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/仮想ネットワークを管理する.pdf" 
@@ -1152,6 +1262,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/FIPS_ドライブをサポートするクラスタを作成します.pdf" 
@@ -1186,6 +1299,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/クラスタで_HTTPS_の_FIPS_140_2_を有効にしてください.pdf" 
@@ -1210,6 +1326,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/外部キー管理の開始.pdf" 
@@ -1249,6 +1368,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ボリュームと仮想ボリュームを管理します.pdf" 
@@ -1262,6 +1384,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ボリュームを操作します.pdf" 
@@ -1294,6 +1419,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/仮想ボリュームを操作します.pdf" 
@@ -1315,6 +1443,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/プロトコルエンドポイント.pdf" 
@@ -1339,6 +1470,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/バインド.pdf" 
@@ -1374,6 +1508,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ボリュームアクセスグループとイニシエータを使用する.pdf" 
@@ -1427,6 +1564,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/データを保護.pdf" 
@@ -1440,6 +1580,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ボリューム_Snapshot_を使用してデータを保護します.pdf" 
@@ -1453,6 +1596,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/個々のボリューム_Snapshot_をデータ保護に使用します.pdf" 
@@ -1476,6 +1622,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ボリューム_Snapshot_のバックアップ処理.pdf" 
@@ -1513,6 +1662,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/グループ_Snapshot_を使用してデータを保護します.pdf" 
@@ -1551,6 +1703,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/Snapshot_のスケジュールを設定します.pdf" 
@@ -1592,6 +1747,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/NetApp_Element_ソフトウェアを実行しているクラスタ間でリモートレプリケーションを実行.pdf" 
@@ -1607,6 +1765,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/レプリケーション用にクラスタをペアリング.pdf" 
@@ -1620,6 +1781,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/MVIP_またはペアリングキーを使用してクラスタをペアリング.pdf" 
@@ -1657,6 +1821,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ボリュームをペアリング.pdf" 
@@ -1672,6 +1839,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ボリューム_ID_またはペアリングキーを使用してボリュームをペアリングします.pdf" 
@@ -1713,6 +1883,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ボリューム関係を管理.pdf" 
@@ -1736,6 +1909,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ボリュームペアの詳細.pdf" 
@@ -1780,6 +1956,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/Element_クラスタと_ONTAP_クラスタの間で_SnapMirror_レプリケーションを使用.pdf" 
@@ -1805,6 +1984,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/SnapMirror_ラベル.pdf" 
@@ -1831,6 +2013,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/SnapMirror_を使用したディザスタリカバリ.pdf" 
@@ -1846,6 +2031,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/Element_へのフェイルバックを実行します.pdf" 
@@ -1894,6 +2082,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ボリュームのバックアップとリストア.pdf" 
@@ -1937,6 +2128,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/システムのトラブルシューティングを行います.pdf" 
@@ -1950,6 +2144,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/システムイベントに関する情報を表示します.pdf" 
@@ -1976,6 +2173,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/システムアラートを表示します.pdf" 
@@ -2002,6 +2202,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ボリュームのパフォーマンスを表示します.pdf" 
@@ -2026,6 +2229,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/iSCSI_セッションを表示します.pdf" 
@@ -2050,6 +2256,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/Fibre_Channel_セッションを表示します.pdf" 
@@ -2074,6 +2283,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ドライブのトラブルシューティング.pdf" 
@@ -2104,6 +2316,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ノードのトラブルシューティングを行う.pdf" 
@@ -2128,6 +2343,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ストレージノードのノードユーティリティを使用する.pdf" 
@@ -2182,6 +2400,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/NetApp_Hybrid_Cloud_Control_を使用してストレージを管理および監視します.pdf" 
@@ -2209,6 +2430,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/NetApp_Hybrid_Cloud_Control_を使用して_SolidFire_システムを監視します.pdf" 
@@ -2248,6 +2472,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/Element_API_を使用してストレージを管理.pdf" 
@@ -2261,6 +2488,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/Element_ソフトウェア_API_の概要.pdf" 
@@ -2295,6 +2525,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/共通オブジェクト.pdf" 
@@ -2483,6 +2716,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/共通メソッド.pdf" 
@@ -2519,6 +2755,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/アカウント_API_メソッド.pdf" 
@@ -2555,6 +2794,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/管理者_API_メソッド.pdf" 
@@ -2591,6 +2833,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/クラスタ_API_メソッド.pdf" 
@@ -2681,6 +2926,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/クラスタ作成_API_メソッド.pdf" 
@@ -2709,6 +2957,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ドライブ_API_メソッド.pdf" 
@@ -2745,6 +2996,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/Fibre_Channel_API_メソッド.pdf" 
@@ -2777,6 +3031,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/イニシエータ_API_メソッド.pdf" 
@@ -2807,6 +3064,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/LDAP_API_メソッド.pdf" 
@@ -2839,6 +3099,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/多要素認証_API_メソッド.pdf" 
@@ -2885,6 +3148,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/セッション認証_API_メソッド.pdf" 
@@ -2911,6 +3177,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ノード_API_メソッド.pdf" 
@@ -3039,6 +3308,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/レプリケーション_API_メソッド.pdf" 
@@ -3085,6 +3357,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/セキュリティ_API_メソッド.pdf" 
@@ -3145,6 +3420,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/SnapMirror_API_メソッド.pdf" 
@@ -3225,6 +3503,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/システム設定_API_メソッド.pdf" 
@@ -3321,6 +3602,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/マルチテナントネットワーク_API_メソッド.pdf" 
@@ -3353,6 +3637,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ボリューム_API_メソッド.pdf" 
@@ -3461,6 +3748,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ボリュームアクセスグループ_API_メソッド.pdf" 
@@ -3501,6 +3791,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/ボリューム_Snapshot_API_メソッド.pdf" 
@@ -3553,6 +3846,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/仮想ボリューム_API_メソッド.pdf" 
@@ -3596,11 +3892,12 @@
 
 
 
-
-
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/応答例.pdf" 
@@ -3654,6 +3951,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/管理ノードを操作します.pdf" 
@@ -3669,6 +3969,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/管理ノードをインストールまたはリカバリします.pdf" 
@@ -3701,6 +4004,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/管理ノード_UI_の操作.pdf" 
@@ -3731,6 +4037,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/管理ノード_REST_API_の操作.pdf" 
@@ -3773,6 +4082,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/サポート接続を管理します.pdf" 
@@ -3808,6 +4120,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/Element_12_3_x_用の_NetApp_SolidFire_オールフラッシュストレージシステムをアップグレードします.pdf" 
@@ -3823,6 +4138,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/element-software/pdfs/sidebar/システムのアップグレード手順.pdf" 
@@ -5436,9 +5754,7 @@
         ListVirtualVolumeTasks を実行します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/element-software/api/reference_element_api_modifystoragecontainer.html">
         ModifyStorageContainer の追加
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/element-software/api/reference_element_api_app_a_cluster_fault_codes.html">
-        クラスタ障害コード
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/element-software/api/reference_element_api_app_b_access_control.html">
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/element-software/api/reference_element_api_app_b_access_control.html">
         Access Control の略
       </a></li><li class="subfolders "><a href="/ja-jp/element-software/api/concept_element_api_response_examples.html">
         <div class="na-navbar-padding"> 応答例</div>
@@ -5564,6 +5880,7 @@
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
+
   </div>
   
 
@@ -5612,20 +5929,9 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-11 16:04:25 +0000">03/11/2022</time>
+    <time datetime="2021-09-17 16:11:11 +0000">09/17/2021</time>
     
   
-
-<span>寄稿者
-  <a target="_blank" href="https://github.com/netapp-mwallis">
-    <img  class="avatar avatar-small"
-          alt="netapp-mwallis"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/53353653?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
-</span>
 
 
 </p>
@@ -6335,98 +6641,122 @@ SolidFire を再起動するかノードを再起動すると ' 一部のクラ�
   <div class="n-footer__bottom">
     <div class="n-container">
       <div class="n-footer__bottom-left">
-
         <div class="n-footer__copyright">
           <ul class="n-footer__copyright-list">
             <li class="n-footer__copyright-link">
-            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
-
-</ul>
-</div>
-<div class="n-footer__social-links">
-<ul class="n-footer__social-link-list">
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
-<span class="n-footer__social-link-text">blog</span>
-<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
-  <title>blog@</title>
-  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/element-software/common/svg/sprite.svg#blog"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
-<span class="n-footer__social-link-text">community</span>
-<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
-<title>community@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/element-software/common/svg/sprite.svg#comments"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
-<span class="n-footer__social-link-text">twitter</span>
-<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
-<title>twitter@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/element-software/common/svg/sprite.svg#twitter"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
-<span class="n-footer__social-link-text">facebook</span>
-<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
-<title>facebook@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/element-software/common/svg/sprite.svg#facebook"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
-<span class="n-footer__social-link-text">linkedin</span>
-<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
-<title>linkedin@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/element-software/common/svg/sprite.svg#linkedin"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
-<span class="n-footer__social-link-text">youtube</span>
-<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
-<title>youtube@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/element-software/common/svg/sprite.svg#youtube"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
-<span class="n-footer__social-link-text">slideshare</span>
-<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
-<title>slideshare@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/element-software/common/svg/sprite.svg#slideshare"></use>
-</svg>
-
-</a>
-</li>
-</ul>
-</div>
-
-</div>
-<div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">Web サイトについてのフィードバックを<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">お寄せください</a>
-  <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">お知らせ</a>
-  </p>
-</div>
-</div>
-</div>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">利用条件</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">プライバシー ポリシー</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">クッキー ポリシー</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">クッキーの設定</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <span class="n-footer__fine-print">Web サイトについてのフィードバックを</span>
+              <a target="_self" href="javascript:netapp_mailto()">お寄せください</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://docs.netapp.com/ja-jp/announcements/">お知らせ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ja-jp/element-software/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ja-jp/element-software/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ja-jp/element-software/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ja-jp/element-software/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ja-jp/element-software/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ja-jp/element-software/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ja-jp/element-software/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
       </div><!-- Elasticsearch JS -->
