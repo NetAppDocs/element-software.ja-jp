@@ -5931,7 +5931,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:31:56 +0000">04/18/2022</time>
+    <time datetime="2022-05-16 14:23:48 +0000">05/16/2022</time>
     
   
 
@@ -5965,6 +5965,42 @@
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p>管理サービス2.20以降では、NetApp Hybrid Cloud ControlのUIまたはAPIを使用して管理サービスをアップグレードする前に、エンドユーザライセンス契約（EULA）に同意して保存する必要があります。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Webブラウザで管理ノードのIPアドレスを開きます。</p>
+<div class="listingblock">
+<div class="content">
+<pre>https://&lt;ManagementNodeIP&gt;</pre>
+</div>
+</div>
+</li>
+<li>
+<p>ストレージクラスタ管理者のクレデンシャルを指定して NetApp Hybrid Cloud Control にログインします。</p>
+</li>
+<li>
+<p>インターフェイスの右上にある [* Upgrade] を選択します。</p>
+</li>
+<li>
+<p>EULAがポップアップ表示されます。下にスクロールして、[現在および今後のすべての更新を許可する*]を選択し、[保存*]を選択します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/element-software/images/note.svg" alt="注記">
+</td>
+<td class="content">
+EULAに同意すると、以後のすべての更新についてそのEULAが記録され、自動ダウンロード機能が有効になります。ネットアップのソフトウェアの更新とアップグレードに関する最新情報が提供されます。この情報はお客様の自由裁量と利便性に基づいてインストールすることができます。ネットアップオンラインソフトウェアリポジトリへのネットワーク接続を無効にすることで、自動ダウンロード機能を無効にできます。
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p>管理サービスは、 NetApp Hybrid Cloud Control の UI または管理ノードの REST API を使用して更新できます。</p>
@@ -6039,7 +6075,12 @@
 <div class="title">手順</div>
 <ol class="arabic">
 <li>
-<p>Web ブラウザを開き ' 管理ノードの IP アドレス :\https://&lt;ManagementNodeIP&gt;` を参照します</p>
+<p>Webブラウザで管理ノードのIPアドレスを開きます。</p>
+<div class="listingblock">
+<div class="content">
+<pre>https://&lt;ManagementNodeIP&gt;</pre>
+</div>
+</div>
 </li>
 <li>
 <p>ストレージクラスタ管理者のクレデンシャルを指定して NetApp Hybrid Cloud Control にログインします。</p>
