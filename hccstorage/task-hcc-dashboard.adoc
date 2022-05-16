@@ -24,7 +24,7 @@ NOTE: 新しい NetApp Hybrid Cloud Control セッションを初めて起動し
 
 == NetApp HCC ダッシュボードにアクセスします
 
-. Web ブラウザを開き、管理ノードの IP アドレスにアクセスします。例：
+. Webブラウザで管理ノードのIPアドレスを開きます。例：
 +
 [listing]
 ----
