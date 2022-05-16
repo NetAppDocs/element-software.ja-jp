@@ -12136,7 +12136,6 @@
   <block id="5dc24222e8b8a9148a6bfcbd2707e07e" category="paragraph">Element 12.3以前を実行しており、SolidFire オールフラッシュストレージシステムのテクニカルサポートが必要な場合、ネットアップサポートはお客様のシステムにリモートで接続できます。セッションを開始してリモートアクセスを確立するために、ネットアップサポートはお客様の環境へのリバース Secure Shell （ SSH ）接続を確立します。</block>
   <block id="1cf342de8aa31250addb30092adae2c5" category="section-title">動的ノードレーティング</block>
   <block id="f413d4f1d8e95d29f50c5e04149a3882" category="paragraph">動的ノード評価では、現在のプラットフォームごとに1つのCPUモデルではなく、ESDSプラットフォームごとに24個のサポートされているCPUを活用できます。</block>
-  <block id="c1265bffe835ce4c170f3f9a9a83b18f" category="admonition">Element 12.5では、サポートされているPodmanのバージョンは1.1.6です。</block>
   <block id="d15380f01867fb0f66a13165a708bf5c" category="inline-link-macro">Elementソフトウェア12.5の場合の注意</block>
   <block id="666d0726b52e2f2825f461badc8414a8" category="list-text"><block ref="666d0726b52e2f2825f461badc8414a8" category="inline-link-macro-rx"></block></block>
   <block id="fe69a3287756ee47fc4650a84806448a" category="inline-link-macro">NetApp SolidFire エンタープライズSDS 12.5に関するお知らせ</block>
@@ -12287,4 +12286,5 @@
   <block id="30486cdfdde2444e4151845599ac5bf5" category="sidebar">Element 12.5のドキュメント</block>
   <block id="da8bff445c6c74f2506b1cfb6b3ca63f" category="sidebar">Elementソフトウェア12.5向けにNetApp SolidFire オールフラッシュストレージシステムをアップグレード</block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">カスタムの保護ドメインを設定する</block>
+  <block id="7d0538a19432cbf213b589c89bb6b819" category="admonition">Element 12.3 でサポートされている Podman のバージョンは 1.1.6 です。</block>
 </blocks>

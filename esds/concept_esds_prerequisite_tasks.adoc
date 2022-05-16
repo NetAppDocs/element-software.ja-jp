@@ -110,7 +110,7 @@ rhel-7-server-extras-rpms
 * Ansible 、 Git 、 Podman 、 Python 3.0 をインストールします。
 +
 
-NOTE: Element 12.5では、サポートされているPodmanのバージョンは1.1.6です。
+NOTE: Element 12.3 でサポートされている Podman のバージョンは 1.1.6 です。
 
 
 
