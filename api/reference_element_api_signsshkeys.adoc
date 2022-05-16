@@ -1,0 +1,172 @@
+---
+permalink: api/reference_element_api_signsshkeys.html 
+sidebar: sidebar 
+keywords: ssh, sign key 
+summary: ノードまたはクラスタでsshを有効にしたあとに、SignSshKeysメソッドを使用して、ノード上のシェルにsfadminまたはsfreadonlyとしてアクセスできます。sfreadonlyは、Element 12.5以降の新しいユーザアカウントです。ノードでの初期トラブルシューティングは可能ですが、管理者特権を持たないコマンドを実行する権限はありません。 
+---
+= SigSshKeys
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+を使用してクラスタでSSHを有効にしたあと link:../api/reference_element_api_enablessh.html["EnableSSHメソッド"]'SignSshKeys'メソッドを使用すると'ノード上のシェルにアクセスできます
+
+「sfreadonly」は、Element 12.5以降の新しいシステムアカウントで、ノードでの基本的なトラブルシューティングを可能にします。このAPIでは、クラスタ内のすべてのノードで「sfreadonly」システムアカウントを使用したSSHアクセスが有効になります。
+
+
+WARNING: ネットアップサポートから指示されないかぎり、システムに対する変更はサポートされず、サポート契約にも取り消しが含まれ、データが不安定になったり、アクセスできなくなる可能性があります。
+
+メソッドを使用した後、応答からキーチェーンをコピーし、SSH接続を開始するシステムに保存してから、次のコマンドを実行する必要があります。
+
+[listing]
+----
+ssh -i <identity_file> sfreadonly@<node_ip>
+----
+「identity_file」は、公開鍵認証のID（秘密鍵）が読み取られるファイルで、「node_ip」はノードのIPアドレスです。'identity_file'の詳細については'SSHのマニュアル・ページを参照してください
+
+
+
+== パラメータ
+
+このメソッドの入力パラメータは次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します | デフォルト値 | 必須 
+
+
+ a| 
+期間
+ a| 
+符号付きキーが有効である時間数を示す1～24の整数。durationを指定しなかった場合は、デフォルト値が使用されます。
+ a| 
+整数
+ a| 
+1.
+ a| 
+いいえ
+
+
+
+ a| 
+publickey
+ a| 
+このパラメータを指定すると、ユーザに完全なキーチェーンを作成するのではなく、signed_public_keyのみが返されます。
+
+
+NOTE: 「+」の付いたブラウザのURLバーを使用して送信された公開キーは、スペースとブレーク署名として解釈されます。
+ a| 
+文字列
+ a| 
+null
+ a| 
+いいえ
+
+
+
+ a| 
+sfadmin
+ a| 
+supportAdminクラスタアクセスを使用してAPI呼び出しを行う場合、またはノードがクラスタにない場合に、sfadminシェルアカウントへのアクセスを許可します。
+ a| 
+ブール値
+ a| 
+いいえ
+ a| 
+いいえ
+
+|===
+
+
+== 戻り値
+
+このメソッドの戻り値は次のとおりです。
+
+|===
+| 名前 | 説明 | を入力します 
+
+
+ a| 
+keygen_statusのように入力します
+ a| 
+署名付きキーのID、許可されているプリンシパル、およびキーの有効な開始日と終了日が含まれます。
+ a| 
+文字列
+
+
+
+ a| 
+private_key を使用します
+ a| 
+プライベートSSHキーの値は、APIがエンドユーザの完全なキーチェーンを生成している場合にのみ返されます。
+
+
+NOTE: 値はBase64でエンコードされます。値がファイルに書き込まれるときに値をデコードして、有効な秘密鍵として読み取られるようにする必要があります。
+ a| 
+文字列
+
+
+
+ a| 
+公開鍵
+ a| 
+公開SSHキーの値は、APIがエンドユーザの完全なキーチェーンを生成している場合にのみ返されます。
+
+
+NOTE: public_keyパラメータをAPIメソッドに渡すと'signed_public_key'値のみが応答に返されます
+ a| 
+文字列
+
+
+
+ a| 
+signed_public_key
+ a| 
+ユーザが指定したか生成したかに関係なく、公開鍵への署名で生成されたSSH公開鍵。
+ a| 
+文字列
+
+|===
+
+
+== 要求例
+
+このメソッドの要求例を次に示します。
+
+[listing]
+----
+{
+    "method": "SignSshKeys",
+    "params": {
+        "duration": 2,
+        "publicKey":<string>
+    },
+    "id": 1
+}
+----
+
+
+== 応答例
+
+このメソッドの応答例を次に示します。
+
+[listing]
+----
+{
+  "id": null,
+  "result": {
+    "signedKeys": {
+      "keygen_status": <keygen_status>,
+      "signed_public_key": <signed_public_key>
+    }
+  }
+}
+----
+この例では、期間（1～24時間）に有効な公開鍵が署名され、返されます。
+
+
+
+== 新規導入バージョン
+
+12.5

@@ -11,202 +11,65 @@ summary: ネットアップでは、 SolidFire および Element ソフトウェ
 
 
 [role="lead"]
-ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。Element 12.3 では、ソフトウェアによる保存データの暗号化の機能強化、セキュリティの強化、ストレージファームウェアのアップデート、スナップショット機能の強化、障害ドライブの動作の改善が導入されています。
+ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。Element 12.5では、ストレージノードへのアクセスの向上、カスタム保護ドメインの管理性の強化、クラスタの障害やイベントの新規追加と改善、クラスタ作成UI機能の強化、セキュリティの強化、Ansibleによる自動アップグレードなどが可能になっています。
 
 
 
-== NetApp Bugs Online には、既知の問題と解決済みの問題があります
+== Element 12.5
 
-既知の問題と解決済みの問題の一覧が NetApp Bugs Online ツールに表示されるようになりました。これらの問題は Element およびその他の製品で参照できます。
+Element 12.5の新機能について詳しくは、こちらをご覧ください。
 
-. に進みます https://mysupport.netapp.com/site/products/all/details/solidfire-elementos/bugsonline-tab["NetApp Bugs Online では"^]。
-. [ キーワードで検索（ Search by Keyword ） ] フィールドに製品名（例えば、「エレメント」）を入力します。
-. を選択します image:plus_icon.PNG["プラスアイコン"] アイコンをクリックし、 * バージョン * で固定を選択し、 * OK * を選択します。
-+
-image:bol_filters.PNG["BOL フィルタ、「センター」の位置合わせ"]
 
-. リリースでフィルタリングするには、 [ バージョン * で固定 ] フィールドにリリースバージョンを入力します。
 
+=== ストレージノードへのアクセスの向上
 
+Element 12.5では、署名付きSSH証明書を使用して、個々のノードへのリモートアクセスが向上していますストレージノードへのセキュアなリモートアクセスを提供するために、ストレージノードのRTFI実行時に「sfreadonly」という新しい権限制限付きローカルユーザアカウントが作成されるようになりました。sfreadonlyアカウントを使用すると'基本的な保守やトラブルシューティングの目的で'ストレージ・ノードのバックエンドにアクセスできますクラスタ管理者ユーザの「supportAdmin」アクセスタイプを設定し、ネットアップサポートが必要に応じてクラスタにアクセスできるようになりました。
 
 
-== Element 12.3.2
 
-Element 12.3.2 の新機能の詳細を確認してください。
+=== 強化されたカスタム保護ドメインの管理性
 
-Element ソフトウェア 12.3.2 リリースには、 Apache log4j の脆弱性に対する Element ソフトウェアの影響を軽減する機能が含まれています。Virtual Volumes （ VVol ）機能が有効になっている NetApp SolidFire ストレージクラスタは、この脆弱性の影響を受けやすくなっています。
+Element 12.5には、既存のカスタム保護ドメインをすばやく簡単に表示したり、新しいカスタム保護ドメインを設定したりできる新しいユーザインターフェイスが用意されています。
 
 
 
-== Element 12.3.1
+=== クラスタの新しい障害、イベント、アラートが追加されました
 
-Element 12..1 の新機能の詳細については、こちらを参照してください。
+Element 12.5では、新しいクラスタ障害コード「BmcSelfTestFailed」および「CpuThermalEventThreshold」が導入され、システムのトラブルシューティングが強化されています。Element 12.5では、「nodeOffline」、「volumeOffline」、「driveHealthFault」、「networkEvent」など、既存のクラスタイベントおよびアラートの堅牢性も向上しています。 と「cSumEvent」です。
 
 
 
-=== ストレージファームウェアバンドル 2.99.2
+=== クラスタ作成UIから保存データのソフトウェア暗号化を有効にします
 
-Element 12.3.1 リリースには、ストレージファームウェアバンドルバージョン 2.99.2 が含まれています。ストレージクラスタがすでに Element 12.3 にある場合は、新しい 2.99.2 ファームウェアバンドルをインストールするだけで済みます。
-
-
-
-== SolidFire ESDS ホスト・プラットフォームの動的 CPU ノード定格のサポート
-
-SolidFire ESDS では、 24 種類のモデルからなるインテル ® Gold および Silver Cascade Lake 世代の CPU を幅広くサポートしています。Dynamic Node Rating 機能は、 CPU に基づいてホストサーバに 5 万 ～ 10 万の QoS IOPS レートを割り当てます。
-
-[cols="100,100"]
-|===
-| CPU コアの数 | ESDS ノードの IOPS レート 
-
-
- a| 
-8.
- a| 
-5 万
-
-
-
- a| 
-10.
- a| 
-60 万
-
-
-
- a| 
-12.
- a| 
-75K
-
-
-
- a| 
-16 以上
- a| 
-10 万ドル
-
-|===
-
-
-=== SolidFire ESDS のシングルボンドネットワーク構成がサポートされます
-
-SolidFire ESDS を使用して、ホストに単一ボンドネットワーク構成を使用できるようになりました。
-
-
-
-=== SolidFire エンタープライズ SDS での新しいサーバーのサポート
-
-SolidFire ESDS が HPE DL380 サーバで利用可能になりました。を参照してください https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^] サポートされている構成の詳細については、を参照してください。
-
-
-
-== Element 12.3
-
-Element 12.3 の新機能について詳しくは、こちらをご覧ください。
-
-
-
-=== FIFO スナップショット・キューのサポート
-
-Element 12.3 では、ボリュームスナップショットの First-In First-Out （ FIFO ）キューを作成できます。Element API を使用すると、ボリュームの作成時に予約する FIFO スナップショットスロットの最小数と最大数を指定できます。ボリュームの FIFO スナップショットキューがいっぱいになると、そのボリュームに次に作成するスナップショットは、そのボリュームの最も古いスナップショットをシステムから削除します。FIFO スナップショットと非 FIFO スナップショットはどちらも、ボリューム上の使用可能なスナップショットスロットの同じプールを使用します。
-
-次の Element API メソッドは、 FIFO スナップショットに関連しています （を参照してください link:../api/index.html["Element API のドキュメント"] 各 API メソッドの詳細については、を参照してください）。
-
-* CreateGroupSnapshot を作成します
-* スケジュールの作成
-* CreateSnapshot の更新
-* CreateVolume を使用します
-* ModifyGroupSnapshot の追加
-* ModifySchedule の追加
-* ModifySnapshot の追加
-* ModifyVolume の追加
-* ModifyVolumes の場合に使用でき
-
-
-
-
-=== スナップショットシリアル化のサポート
-
-Element 12.3 では、シリアル化スナップショットの作成がサポートされてElement API を使用して新しい Snapshot を作成する際、以前の Snapshot レプリケーションがまだ実行中の場合は Snapshot を作成しないように指定できます。
-
-次の Element API メソッドは、スナップショットのシリアル化に関連しています （を参照してください link:../api/index.html["Element API のドキュメント"] 各 API メソッドの詳細については、を参照してください）。
-
-* CreateGroupSnapshot を作成します
-* スケジュールの作成
-* CreateSnapshot の更新
-* ModifySchedule の追加
-
-
-
-
-=== Snapshot 保持のサポート
-
-Element 12.3 では、スナップショットの保存期間を指定できます。Snapshot の保持期限または有効期限を指定しない場合、 Snapshot は無期限に保持されます。
-
-Snapshot の保持には次の Element API メソッドが関連します （を参照してください link:../api/index.html["Element API のドキュメント"] 各 API メソッドの詳細については、を参照してください）。
-
-* CreateGroupSnapshot を作成します
-* スケジュールの作成
-* CreateSnapshot の更新
-* ModifyGroupSnapshot の追加
-* ModifySchedule の追加
-* ModifySnapshot の追加
-
-
-
-
-=== ソフトウェアによる保存データの暗号化の機能拡張
-
-ソフトウェア保存時の暗号化機能では、 Element 12.3 に外部キー管理（ EKM ）とソフトウェア暗号化マスターキーのキー変更機能が導入されています。ストレージクラスタの作成時に保存データのソフトウェア暗号化を有効にすることができます。SolidFire エンタープライズ SDS ストレージクラスタを作成すると、保存データのソフトウェア暗号化がデフォルトで有効になります。この機能では、ストレージノード内の SSD に格納されているすべてのデータが暗号化され、クライアント IO のパフォーマンスへの影響は非常に小さく（最大 2% ）すぎません。
-
-ソフトウェア暗号化に関連する Element API メソッドは次のとおりです 休止状態（を参照） link:../api/index.html["Element API のドキュメント"] 各 API メソッドの詳細については、を参照してください）。
-
-* クラスタを作成
-* DisableEncryptionAtRest
-* EnableEncryptionAtRest
-* GetSoftwareEncryptionAtRestInfo
-* RekeySoftwareEncryptionAtRestMasterKey
-
+Element 12.5では、クラスタ作成UIの新しいチェックボックスが追加され、クラスタ作成時にSolidFire オールフラッシュストレージクラスタの保存データの暗号化をクラスタ全体で有効にすることができます。
 
 
 
 === ストレージノードのファームウェアの更新
 
-Element 12.3 では、ストレージノード用のファームウェアの更新が含まれています。 link:../concepts/concept_rn_relatedrn_element.html#storage-firmware["詳細はこちら。"]。
+Element 12.5には、ストレージノードのファームウェアの更新が含まれています。 link:../concepts/concept_rn_relatedrn_element.html#storage-firmware["詳細はこちら。"]。
 
 
 
-=== セキュリティの機能拡張
+=== セキュリティの強化
 
-Element 12.3 では、ストレージノードおよび管理ノードのセキュリティの脆弱性を解決します。 https://security.netapp.com/["詳細はこちら。"] これらのセキュリティ機能拡張について
+Element 12.5には、Apache log4jの脆弱性に対するElementソフトウェアの影響を緩和する機能が含まれています。仮想ボリューム（VVol）機能が有効になっているNetApp SolidFire ストレージクラスタは、Apache log4jの脆弱性の影響を受けやすくなっています。NetApp Element ソフトウェアのApache log4jの脆弱性に対する回避策 の詳細については、を参照してください link:++https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Element_Software_-_Apache_Log4j_Vulnerability_-_Workaround++["こちらの技術情報アーティクル"^]。
 
+Element 11.x、12.0、または12.2を実行している場合、またはvVol機能を有効にした状態でストレージクラスタをElement 12.3または12.3.1にアップグレードすることを推奨します。
 
-
-=== ドライブ障害時の動作が改善されました
-
-Element 12.3 は、ドライブの SMART ヘルスデータを使用して、 SolidFire アプライアンスドライブの定期的なヘルスチェックを実行します。SMART ヘルスチェックに失敗したドライブは、障害に近い可能性があります。ドライブが SMART ヘルスチェックに失敗すると、ドライブは「 Failed * 」状態に移行し、重大度が「 D rive with serial ： <serial number> in slot ： <node slot><drive slot> has failed the Smart overall health check. 」という重大なクラスタエラーが表示されます。この問題を解決するには、ドライブを交換してください
+Element 12.5には、120を超えるCVEセキュリティ脆弱性の修正も含まれています。
 
 
 
-=== SolidFire エンタープライズ SDS での新しいサーバーのサポート
+=== Ansibleによる自動アップグレード
 
-SolidFire ESDS が Dell R640 サーバーで利用できるようになりました。を参照してください https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^] サポートされている構成の詳細については、を参照してください。
-
-
-
-=== SolidFire ESDS の新しいドキュメント
-
-SolidFire ESDS には、次の新しいドキュメントが用意されています。
-
-* https://docs.netapp.com/us-en/element-software/esds/task_esds_r640_drive_repl.html["Dell R640 のドライブを交換します"^]: Dell R640 サーバーのドライブを交換する手順について説明します。
-* https://kb.netapp.com/Special:Search?query=solidfire+enterprise+SDS&type=wiki["ナレッジベースの記事（ログインが必要）"^]： SolidFire ESDS システムの問題のトラブルシューティングについて説明します。
+Element 12.5では、Ansibleを使用してストレージクラスタ全体のローリングアップグレードを実行することで、Elementソフトウェアのアップグレードワークフローを自動化できます。作業を開始するには、に移動します https://github.com/NetApp-Automation["NetApp Ansibleリポジトリ"^] GitHubで'NAR_solidfire_SDS_upgradeロールとドキュメントをダウンロードします
 
 
 
+=== NetApp Bugs Onlineには、解決済みの問題と既知の問題があります
 
-=== SolidFire ESDS の既知の問題の新しい場所
-
-で既知の問題を検索できるようになりました https://mysupport.netapp.com/site/products/all/details/solidfire-enterprise-sds/bugsonline-tab["Bugs Online のツール（ログインが必要）"^]。
+解決済みの問題と既知の問題の一覧については、NetApp Bugs Onlineツールを参照してください。これらの問題は、Elementソフトウェアおよびその他の製品で参照できます https://mysupport.netapp.com/site/products/all/details/element-software/bugsonline-tab["NetApp Bugs Online では"^]。
 
 [discrete]
 == 詳細については、こちらをご覧ください

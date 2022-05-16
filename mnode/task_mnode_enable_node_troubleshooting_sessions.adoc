@@ -1,0 +1,234 @@
+---
+sidebar: sidebar 
+permalink: mnode/task_mnode_enable_node_troubleshooting_sessions.html 
+summary: Element 12.5以降では、管理ノードでsfreadonlyユーザアカウントを有効にして、ネットアップサポートによるサポートなしでシステムコンポーネントのトラブルシューティングを行うことができます。高度なトラブルシューティングのために、ネットアップサポート用のリモートサポートトンネルアクセスを有効にして開くこともできます。 
+keywords: netapp, sfreadonly, connect to support, support tunnel, rst, mnode, management node 
+---
+= 基本的なトラブルシューティングのためにSSHを使用してストレージノードにアクセスする
+:allow-uri-read: 
+
+
+[role="lead"]
+Element 12.5以降では、基本的なトラブルシューティングに、ストレージノード上でsfreadonlyシステムアカウントを使用できます。高度なトラブルシューティングのために、ネットアップサポート用のリモートサポートトンネルアクセスを有効にして開くこともできます。
+
+sfreadonlyシステムアカウントを使用すると、基本的なLinuxシステムおよびネットワークトラブルシューティングコマンド(pingコマンドを含む)を実行できます。
+
+
+WARNING: ネットアップサポートから指示されないかぎり、このシステムに対する変更はサポートされず、サポート契約にも取り消し、データのアクセスが不安定になったり、アクセスできなくなる場合があります。
+
+.作業を開始する前に
+* *書き込み許可*：現在の作業ディレクトリに対する書き込み許可があることを確認します。
+* *(オプション)独自のキーペアを生成*: Windows 10、MacOS、またはLinuxディストリビューションから「ssh-keygen」を実行します。これは、ユーザキーペアを作成する1回限りのアクションで、今後のトラブルシューティングセッションで再利用できます。このモデルでは、従業員アカウントに関連付けられた証明書を使用することもできます。
+* *管理ノードでSSH機能を有効にする*：管理モードでリモートアクセス機能を有効にするには、を参照してください link:task_mnode_ssh_management.html["このトピック"]。管理サービス 2.18 以降では、管理ノードでリモートアクセス機能がデフォルトで無効になっています。
+* *ストレージクラスタでSSH機能を有効にする*：ストレージクラスタノードでリモートアクセス機能を有効にするには、を参照してください link:https://docs.netapp.com/us-en/element-software/storage/task_system_manage_cluster_enable_and_disable_support_access.html["このトピック"]。
+* *ファイアウォールの設定*：管理ノードがプロキシサーバの背後にある場合は、sshd.configファイルで次のTCPポートを設定しておく必要があります。
++
+[cols="15,25,60"]
+|===
+| TCP ポート | 説明 | 接続方向 
+
+
+| 443 | オープンサポートトンネルを介したリバースポート転送用の API 呼び出し / HTTPS をクリックします | 管理ノードからストレージノードへ 
+
+
+| 22 | SSH ログインアクセス | 管理ノードからストレージノードへ、またはストレージノードからに 管理ノード 
+|===
+
+
+.トラブルシューティングのオプション
+* <<Troubleshoot a cluster node>>
+* <<Troubleshoot a cluster node with NetApp Support>>
+* <<Troubleshoot a node that is not part of cluster>>
+
+
+
+
+== クラスタノードのトラブルシューティングを行う
+
+sfreadonlyシステムアカウントを使用した基本的なトラブルシューティングを実行できます。
+
+.手順
+. 管理ノードVMのインストール時に選択したアカウントのログインクレデンシャルを使用して、管理ノードにSSH接続します。
+. 管理ノードで'/sf/bin'に移動します
+. ご使用のシステムに適したスクリプトを検索します。
++
+** SignSshKeys.ps1
+** SignSshKeys.py
+** SignSshKeys.sh
++
+[NOTE]
+====
+SignSshKeys.ps1はPowerShell 7以降に依存し、SignSshKeys.pyはPython 3.6.0以降およびに依存しています https://docs.python-requests.org/["モジュールを要求します"^]。
+
+「SignSshKeys」スクリプトは、「user」、「user.pub」、および「user-cert.pub」ファイルを現在の作業ディレクトリに書き込みます。これらのファイルはあとで「ssh」コマンドで使用されます。ただし、公開鍵ファイルがスクリプトに提供されると、ディレクトリに書き込まれるのは「<public_key>」ファイル（「<public_key>」で置き換えられた「公開鍵ファイル」の接頭辞）のみです。
+
+====
+
+
+. 管理ノードでスクリプトを実行して、SSHキーチェーンを生成します。スクリプトでは、クラスタ内のすべてのノードに対して、sfreadonlyシステムアカウントを使用したSSHアクセスを有効にしています。
++
+[listing]
+----
+SignSshKeys --ip [ip address] --user [username] --duration [hours] --publickey [public key path]
+----
++
+.. 次の各パラメータについて、[]括弧内の値（括弧を含む）を置き換えます。
++
+
+NOTE: 省略形またはフル形式のパラメータを使用できます。
+
++
+*** *--ip|-i [IP address]*：APIの実行対象となるターゲットノードのIPアドレス。
+*** *--user|-u [username]*：API呼び出しの実行に使用するクラスタユーザ。
+*** *（任意）--duration|-d[hours]*：符号付きキーの有効期間は、時間単位の整数として保持する必要があります。デフォルトは 24 時間です。
+*** *（任意）-publickey |-k [公開鍵のパス]*：ユーザが公開鍵を指定した場合のパス。
+
+
+.. 入力内容を次のコマンド例と比較します。この例では'10.116.139.195'はストレージ・ノードのIPで'admin'はクラスタ・ユーザ名で'キーの有効期間は2時間です
++
+[listing]
+----
+sh /sf/bin/SignSshKeys.sh --ip 10.116.139.195 --user admin --duration 2
+----
+.. コマンドを実行します。
+
+
+. ノードIPへのSSH接続：
++
+[listing]
+----
+ssh -i user sfreadonly@[node_ip]
+----
++
+基本的なLinuxシステムおよびネットワークのトラブルシューティングコマンド(pingコマンドなど)やその他の読み取り専用コマンドを実行できます。
+
+. （任意）ディセーブルにします link:task_mnode_ssh_management.html["リモートアクセス機能"] トラブルシューティングが完了したら、もう一度実行します。
++
+
+NOTE: SSHを無効にしないと、管理ノードでSSHが有効なままになります。SSH を有効にした設定は、手動で無効にするまで、更新やアップグレードを通じて管理ノードで維持されます。
+
+
+
+
+
+== ネットアップサポートでクラスタノードのトラブルシューティングを行います
+
+ネットアップサポートは、技術者がより詳細なElement診断を実行できるようにするシステムアカウントを使用して、高度なトラブルシューティングを実行できます。
+
+.手順
+. 管理ノードVMのインストール時に選択したアカウントのログインクレデンシャルを使用して、管理ノードにSSH接続します。
+. ネットアップサポートから送信されたポート番号を指定してrstコマンドを実行し、サポートトンネルを開きます。
++
+rst -r sfsupport.solidfire.com -u element -p <port_number>`
+
++
+ネットアップサポートは、サポートトンネルを使用して管理ノードにログインします。
+
+. 管理ノードで'/sf/bin'に移動します
+. ご使用のシステムに適したスクリプトを検索します。
++
+** SignSshKeys.ps1
+** SignSshKeys.py
+** SignSshKeys.sh
++
+[NOTE]
+====
+SignSshKeys.ps1はPowerShell 7以降に依存し、SignSshKeys.pyはPython 3.6.0以降およびに依存しています https://docs.python-requests.org/["モジュールを要求します"^]。
+
+「SignSshKeys」スクリプトは、「user」、「user.pub」、および「user-cert.pub」ファイルを現在の作業ディレクトリに書き込みます。これらのファイルはあとで「ssh」コマンドで使用されます。ただし、公開鍵ファイルがスクリプトに提供されると、ディレクトリに書き込まれるのは「<public_key>」ファイル（「<public_key>」で置き換えられた「公開鍵ファイル」の接頭辞）のみです。
+
+====
+
+
+. スクリプトを実行して、「--sfadmin」フラグを付けたSSHキーチェーンを生成します。このスクリプトでは、すべてのノードでSSHを有効にします。
++
+[listing]
+----
+SignSshKeys --ip [ip address] --user [username] --duration [hours] --sfadmin
+----
++
+[NOTE]
+====
+クラスタノードに--sfadminとしてSSHするには、クラスタ上で「supportAdmin」アクセス権を持つ「--user」を使用してSSHキーチェーンを生成する必要があります。
+
+クラスタ管理者アカウントの「supportAdmin」アクセスを設定するには、Element UIまたはAPIを使用します。
+
+** link:../storage/concept_system_manage_manage_cluster_administrator_users.html#view-cluster-admin-details["Element UIを使用して「supportAdmin」アクセスを設定します"]
+** APIを使用して「supportAdmin」アクセスを構成し、「supportAdmin」を「access」タイプとしてAPI要求に追加します。
++
+*** link:../api/reference_element_api_addclusteradmin.html["新しいアカウントの「supportAdmin」アクセスを設定します"]
+*** link:../api/reference_element_api_modifyclusteradmin.html["既存のアカウントの「supportAdmin」アクセスを設定します"]
++
+'clusterAdminID'を取得するには'を使用します link:../api/reference_element_api_listclusteradmins.html["ListClusterAdmins"] API
+
+
+
+
+
+「supportAdmin」アクセスを追加するには、クラスタ管理者または管理者の権限が必要です。
+
+====
++
+.. 次の各パラメータについて、[]括弧内の値（括弧を含む）を置き換えます。
++
+
+NOTE: 省略形またはフル形式のパラメータを使用できます。
+
++
+*** *--ip|-i [IP address]*：APIの実行対象となるターゲットノードのIPアドレス。
+*** *--user|-u [username]*：API呼び出しの実行に使用するクラスタユーザ。
+*** *（任意）--duration|-d[hours]*：符号付きキーの有効期間は、時間単位の整数として保持する必要があります。デフォルトは 24 時間です。
+
+
+.. 入力内容を次のコマンド例と比較します。この例では'192.168.0.1'はストレージ・ノードのIP 'admin'はクラスタ・ユーザ名'キーの有効期間は2時間'--sfadmin'は'トラブルシューティングのためにNetAppサポート・ノードにアクセスできるようにします
++
+[listing]
+----
+sh /sf/bin/SignSshKeys.sh --ip 192.168.0.1 --user admin --duration 2 --sfadmin
+----
+.. コマンドを実行します。
+
+
+. ノードIPへのSSH接続：
++
+[listing]
+----
+ssh -i user sfadmin@[node_ip]
+----
+. リモートサポートトンネルを閉じるには、次のように入力します。
++
+rst -- killall
+
+. （任意）ディセーブルにします link:task_mnode_ssh_management.html["リモートアクセス機能"] トラブルシューティングが完了したら、もう一度実行します。
++
+
+NOTE: SSHを無効にしないと、管理ノードでSSHが有効なままになります。SSH を有効にした設定は、手動で無効にするまで、更新やアップグレードを通じて管理ノードで維持されます。
+
+
+
+
+
+== クラスタに属していないノードのトラブルシューティングを行う
+
+クラスタにまだ追加されていないノードについて、基本的なトラブルシューティングを実行できます。sfreadonlyシステムアカウントは、ネットアップサポートの有無に関係なく使用できます。管理ノードを設定している場合は、SSHに使用し、このタスクに提供されたスクリプトを実行できます。
+
+. SSHクライアントがインストールされているWindows、Linux、またはMacマシンで、ネットアップサポートから提供されたシステムに適したスクリプトを実行します。
+. ノードIPへのSSH接続：
++
+[listing]
+----
+ssh -i user sfreadonly@[node_ip]
+----
+. （任意）ディセーブルにします link:task_mnode_ssh_management.html["リモートアクセス機能"] トラブルシューティングが完了したら、もう一度実行します。
++
+
+NOTE: SSHを無効にしないと、管理ノードでSSHが有効なままになります。SSH を有効にした設定は、手動で無効にするまで、更新やアップグレードを通じて管理ノードで維持されます。
+
+
+
+[discrete]
+== 詳細については、こちらをご覧ください
+
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+* https://www.netapp.com/hybrid-cloud/hci-documentation/["NetApp HCI のリソースページ"^]
+

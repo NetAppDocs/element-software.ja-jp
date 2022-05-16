@@ -50,7 +50,9 @@ entries:
     url: "/mnode/task_mnode_logs.html"
 - title: サポート接続を管理します
   entries:
-  - title: リモートのネットアップサポートセッションを開始します
+  - title: 基本的なトラブルシューティングのためにSSHを使用してストレージノードにアクセスする
+    url: "/mnode/task_mnode_enable_node_troubleshooting_sessions.html"
+  - title: リモートのネットアップサポートセッションを開始する（Element 12.3以前）
     url: "/mnode/task_mnode_enable_remote_support_connections.html"
   - title: 管理ノードで SSH 機能を管理します
     url: "/mnode/task_mnode_ssh_management.html"

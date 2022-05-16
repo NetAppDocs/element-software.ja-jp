@@ -1,6 +1,6 @@
 ---
 section: upgrade
-title: Element 12.3.x 用の NetApp SolidFire オールフラッシュストレージシステムをアップグレードします
+title: Elementソフトウェア12.5向けにNetApp SolidFire オールフラッシュストレージシステムをアップグレード
 entries:
 - title: アップグレード手順の概要
   url: "/upgrade/concept_element_upgrade_overview.html"
@@ -8,8 +8,6 @@ entries:
   entries:
   - title: 管理サービスを更新
     url: "/upgrade/task_hcc_update_management_services.html"
-  - title: 最新の HealthTools にアップグレードします
-    url: "/upgrade/task_upgrade_element_latest_healthtools.html"
   - title: ストレージをアップグレードする前に、 Element ストレージの健全性チェックを実行します
     url: "/upgrade/task_hcc_upgrade_element_prechecks.html"
   - title: Element ソフトウェアをアップグレードします

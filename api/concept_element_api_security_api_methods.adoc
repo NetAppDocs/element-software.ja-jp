@@ -28,6 +28,7 @@ Element ソフトウェアは、外部キー管理サーバなどの外部セキ
 * xref:reference_element_api_listkeyserverskmip.adoc[ListKeyServersKmip]
 * xref:reference_element_api_modifykeyserverkmip.adoc[ModifyKeyServerKmip のように指定します]
 * xref:reference_element_api_removekeyserverfromproviderkmip.adoc[RemoveKeyServerFromProviderKmip]
+* xref:reference_element_api_signsshkeys.adoc[SigSshKeys]
 * xref:reference_element_api_testkeyproviderkmip.adoc[TestKeyProviderKmip]
 * xref:reference_element_api_testkeyserverkmip.adoc[TestKeyServerKmip]
 

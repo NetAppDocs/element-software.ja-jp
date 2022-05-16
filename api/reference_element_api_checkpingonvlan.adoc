@@ -169,7 +169,7 @@ ping パケットの送信時に使用する VLAN ID 。
 
 
  a| 
-詳細
+結果
  a| 
 ノードが通信できた各 IP のリストと ping 応答の統計情報。
  a| 
@@ -206,38 +206,34 @@ JSON オブジェクト
 {
   "id": 1,
   "result": {
-    "details": {
-      "192.168.41.2": {
-        "individualResponseCodes": [
-          "Success",
-          "Success",
-          "Success",
-          "Success",
-          "Success"
-        ],
-        "individualResponseTimes": [
-          "00:00:00.000373",
-          "00:00:00.000098",
-          "00:00:00.000097",
-          "00:00:00.000074",
-          "00:00:00.000075"
-        ],
-        "individualStatus": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "interface": "Bond10G",
-        "responseTime": "00:00:00.000143",
-        "sourceAddressV4": "192.168.41.4",
-        "successful": true,
-        "virtualNetworkTag": 4001
-      }
-    },
-    "duration": "00:00:00.244379",
-    "result": "Passed"
+    "192.168.41.2": {
+      "individualResponseCodes": [
+        "Success",
+        "Success",
+        "Success",
+        "Success",
+        "Success"
+      ],
+      "individualResponseTimes": [
+        "00:00:00.000373",
+        "00:00:00.000098",
+        "00:00:00.000097",
+        "00:00:00.000074",
+        "00:00:00.000075"
+      ],
+      "individualStatus": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "interface": "Bond10G",
+      "responseTime": "00:00:00.000143",
+      "sourceAddressV4": "192.168.41.4",
+      "successful": true,
+      "virtualNetworkTag": 4001
+    }
   }
 }
 ----
