@@ -4,12 +4,12 @@ permalink: mnode/task_mnode_enable_remote_support_connections.html
 summary: 管理ノードを使用して、ネットアップサポートがトラブルシューティング用にアクセスできるようにします。 
 keywords: netapp, mnode, management node, connect to support, support tunnel, rst 
 ---
-= リモートのネットアップサポートセッションを開始する（Element 12.3以前）
+= リモートのネットアップサポートセッションを開始します
 :allow-uri-read: 
 
 
 [role="lead"]
-Element 12.3以前を実行しており、SolidFire オールフラッシュストレージシステムのテクニカルサポートが必要な場合、ネットアップサポートはお客様のシステムにリモートで接続できます。セッションを開始してリモートアクセスを確立するために、ネットアップサポートはお客様の環境へのリバース Secure Shell （ SSH ）接続を確立します。
+SolidFire オールフラッシュストレージシステムのテクニカルサポートが必要な場合は、ネットアップサポートがお客様のシステムにリモートで接続できます。セッションを開始してリモートアクセスを確立するために、ネットアップサポートはお客様の環境へのリバース Secure Shell （ SSH ）接続を確立します。
 
 ネットアップサポートとの SSH リバーストンネル接続用の TCP ポートを開くことができます。この接続を介して、ネットアップサポートはお客様の管理ノードにログインします。
 
