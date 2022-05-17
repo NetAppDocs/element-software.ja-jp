@@ -5849,7 +5849,7 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/element-software/mnode/task_mnode_enable_node_troubleshooting_sessions.html">
         基本的なトラブルシューティングのためにSSHを使用してストレージノードにアクセスする
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/element-software/mnode/task_mnode_enable_remote_support_connections.html">
-        リモートのネットアップサポートセッションを開始する（Element 12.3以前）
+        リモートのネットアップサポートセッションを開始します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/element-software/mnode/task_mnode_ssh_management.html">
         管理ノードで SSH 機能を管理します
       </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
@@ -5939,7 +5939,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:31:56 +0000">04/18/2022</time>
+    <time datetime="2022-05-17 20:38:20 +0000">05/17/2022</time>
     
   
 
@@ -6011,7 +6011,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>* 保存中のソフトウェア暗号化の拡張 * ： Element 12.3 には、ソフトウェアの保存データの暗号化機能の拡張機能が導入されています。この機能は、 SolidFire エンタープライズ SDS ストレージクラスタを作成するとデフォルトで有効になります。この機能では、ストレージノード内の SSD に格納されているすべてのデータが暗号化され、クライアント IO のパフォーマンスへの影響は非常に小さく（最大 2% ）すぎません。保存データのソフトウェア暗号化に関連する Element API メソッドを次に示します（を参照） <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API のドキュメント"</a> 各メソッドの詳細については、以下を参照してください）。</p>
+<p><strong>保存中のソフトウェア暗号化の機能拡張</strong>: SolidFire エンタープライズSDSストレージクラスタの作成時にデフォルトで有効になるソフトウェア暗号化機能の拡張機能が、Element 12.3で導入されました。この機能では、ストレージノード内の SSD に格納されているすべてのデータが暗号化され、クライアント IO のパフォーマンスへの影響は非常に小さく（最大 2% ）すぎません。保存データのソフトウェア暗号化に関連する Element API メソッドを次に示します（を参照） <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API のドキュメント"</a> 各メソッドの詳細については、以下を参照してください）。</p>
 <div class="ulist">
 <ul>
 <li>
@@ -6033,7 +6033,7 @@
 </div>
 </li>
 <li>
-<p>* 保持するスナップショットの最大数を定義する機能 * ： Element 12.3 では、スナップショット保持機能が強化されています。この拡張機能をサポートするように次の API が変更されています（を参照） <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API のドキュメント"</a> 各メソッドの詳細については、以下を参照してください）。</p>
+<p><strong>保持するスナップショットの最大数を定義する機能</strong>：Element 12.3では、スナップショット保持機能の拡張機能が導入されました。この拡張機能をサポートするように次の API が変更されています（を参照） <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API のドキュメント"</a> 各メソッドの詳細については、以下を参照してください）。</p>
 <div class="ulist">
 <ul>
 <li>
@@ -6064,10 +6064,10 @@
 </div>
 </li>
 <li>
-<p>* Element ソフトウェアのパッチに関する情報を入手する *: Element 12.3 には GetPatchInfo メソッドが導入されています。これにより、ストレージノードにインストールされている Element ソフトウェアのパッチに関する情報を取得できます。を参照してください <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API のドキュメント"</a> を参照してください。</p>
+<p>* Elementソフトウェアのパッチに関する情報を入手する*: Element 12.3で導入されたGetPatchInfoメソッドを使用すると、ストレージノードにインストールされているElementソフトウェアのパッチに関する情報を取得できます。を参照してください <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API のドキュメント"</a> を参照してください。</p>
 </li>
 <li>
-<p>* ノード上の各ネットワークインターフェイスの統計情報を表示する *: Element 12.3 では、「 ListNetworkInterfaceStats 」メソッドが導入されています。このメソッドを使用すると、ノード上の各ネットワークインターフェイスのドロップされたパケット数やさまざまな種類のエラーなどの統計情報を表示できます。この API メソッドは、個々のノードに対して使用するためのものです。個々のノードにアクセスするには、ユーザ ID とパスワードによる認証が必要です。ただし、メソッド呼び出しで force パラメータの値が true に設定されている場合は、このメソッドをクラスタに対して使用できます。パラメータをクラスタに対して使用すると、すべてのインターフェイスのネットワーク統計が表示されます。を参照してください <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API のドキュメント"</a> を参照してください。</p>
+<p><strong>ノード上の各ネットワークインターフェイスの統計情報をリストする</strong>: Element 12.3で導入された「ListNetworkInterfaceStats」メソッドを使用すると、ノード上の各ネットワークインターフェイスのドロップされたパケット数やさまざまな種類のエラーなどの統計情報をリストできます。この API メソッドは、個々のノードに対して使用するためのものです。個々のノードにアクセスするには、ユーザ ID とパスワードによる認証が必要です。ただし、メソッド呼び出しで force パラメータの値が true に設定されている場合は、このメソッドをクラスタに対して使用できます。パラメータをクラスタに対して使用すると、すべてのインターフェイスのネットワーク統計が表示されます。を参照してください <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API のドキュメント"</a> を参照してください。</p>
 </li>
 <li>
 <p>* SolidFire ESDS* をサポートするために Element 12.2 で導入および更新された API ： SolidFire ESDS クラスタで使用できる新しい API が Element 12.2 で導入されました。</p>

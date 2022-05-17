@@ -5849,7 +5849,7 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/element-software/mnode/task_mnode_enable_node_troubleshooting_sessions.html">
         基本的なトラブルシューティングのためにSSHを使用してストレージノードにアクセスする
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/element-software/mnode/task_mnode_enable_remote_support_connections.html">
-        リモートのネットアップサポートセッションを開始する（Element 12.3以前）
+        リモートのネットアップサポートセッションを開始します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/element-software/mnode/task_mnode_ssh_management.html">
         管理ノードで SSH 機能を管理します
       </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
@@ -5939,7 +5939,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-16 16:06:33 +0000">05/16/2022</time>
+    <time datetime="2022-05-17 20:38:20 +0000">05/17/2022</time>
     
   
 
@@ -6103,6 +6103,42 @@ EULAに同意すると、以後のすべての更新についてそのEULAが記
 </div>
 <div class="paragraph">
 <p><sup>2</sup>クラスタに高い書き込みIOPSの負荷があり、ファームウェアの更新時間が長い場合、データの同期時間が長くなります。</p>
+</div>
+</li>
+<li>
+<p><strong>エンドユーザライセンス契約（EULA）</strong>：管理サービス2.20以降では、NetApp Hybrid Cloud Control UIまたはAPIを使用してストレージファームウェアをアップグレードする前に、EULAに同意して保存する必要があります。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Webブラウザで管理ノードのIPアドレスを開きます。</p>
+<div class="listingblock">
+<div class="content">
+<pre>https://&lt;ManagementNodeIP&gt;</pre>
+</div>
+</div>
+</li>
+<li>
+<p>ストレージクラスタ管理者のクレデンシャルを指定して NetApp Hybrid Cloud Control にログインします。</p>
+</li>
+<li>
+<p>インターフェイスの右上にある [* Upgrade] を選択します。</p>
+</li>
+<li>
+<p>EULAがポップアップ表示されます。下にスクロールして、[現在および今後のすべての更新を許可する*]を選択し、[保存*]を選択します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/element-software/images/note.svg" alt="注記">
+</td>
+<td class="content">
+EULAに同意すると、以後のすべての更新についてそのEULAが記録され、自動ダウンロード機能が有効になります。ネットアップのソフトウェアの更新とアップグレードに関する最新情報が提供されます。この情報はお客様の自由裁量と利便性に基づいてインストールすることができます。ネットアップオンラインソフトウェアリポジトリへのネットワーク接続を無効にすることで、自動ダウンロード機能を無効にできます。
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
 </div>
 </li>
 </ul>
