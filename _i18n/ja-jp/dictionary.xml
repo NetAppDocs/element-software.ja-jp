@@ -12124,8 +12124,6 @@
   <block id="efb3497df51898324a04d1329dc9b9ae" category="list-text"><block ref="efb3497df51898324a04d1329dc9b9ae" category="inline-link-rx"></block></block>
   <block id="b727b29e2e84d57f6040d22db60d4f2e" category="admonition">Element 12..1以降では、手順（a）～（e）が自動的に実行されます。管理ノード12.3.1以降の場合は、に進みます <block ref="e7aead760c231b389589c93842d555c1" category="inline-xref-macro-rx"></block> 時刻同期の設定を完了します。</block>
   <block id="dce49007d1d10ccadf332bd86146cba7" category="list-text"><block ref="dce49007d1d10ccadf332bd86146cba7" category="inline-link-macro-rx"></block></block>
-  <block id="fcfc8ec29a85e264572757cf7ff41339" category="inline-link-macro">リモートネットアップサポート接続を有効にする（Element 12.3以前）</block>
-  <block id="5bda78d943ecf4022539ccee32c6682a" category="list-text"><block ref="5bda78d943ecf4022539ccee32c6682a" category="inline-link-macro-rx"></block></block>
   <block id="1cf342de8aa31250addb30092adae2c5" category="section-title">動的ノードレーティング</block>
   <block id="d15380f01867fb0f66a13165a708bf5c" category="inline-link-macro">Elementソフトウェア12.5の場合の注意</block>
   <block id="666d0726b52e2f2825f461badc8414a8" category="list-text"><block ref="666d0726b52e2f2825f461badc8414a8" category="inline-link-macro-rx"></block></block>
@@ -12287,4 +12285,6 @@
   <block id="d7fe934d3710b6c0fc8d7387b1330f7b" category="paragraph">Element 12.3.1で導入された動的ノード評価では、現在のプラットフォームごとに1つのCPUモデルではなく、ESDSプラットフォームごとに24個のサポートされているCPUを活用できます。</block>
   <block id="234a1430825055fe25203429facd267e" category="admonition">1 つの vCenter インスタンスに複数の NetApp Element VASA Provider を登録しないでください。2 つ目の NetApp Element VASA Provider が追加されている場合、その結果、すべての VVOL データストアにアクセスできなくなります。</block>
   <block id="3f28cad21e73645ec84c4a70033925a4" category="doc">Elementソフトウェア12.5の新機能</block>
+  <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">ネットアップサポートによるリモート接続を有効にする</block>
+  <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
 </blocks>

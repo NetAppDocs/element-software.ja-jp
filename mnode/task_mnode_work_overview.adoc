@@ -51,7 +51,7 @@ Element ソフトウェアバージョン 11.3 以降を実行するクラスタ
 
 * link:task_mnode_enable_node_troubleshooting_sessions.html["基本的なトラブルシューティングのためにSSHを使用してストレージノードにアクセスする"]
 +
-** link:task_mnode_enable_remote_support_connections.html["リモートネットアップサポート接続を有効にする（Element 12.3以前）"]
+** link:task_mnode_enable_remote_support_connections.html["ネットアップサポートによるリモート接続を有効にする"]
 ** link:task_mnode_ssh_management.html["管理ノードで SSH 機能を管理します"]
 
 
