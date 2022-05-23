@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>ユーザアカウントを操作する</title>
+  <title>CHAPを使用してアカウントを操作します</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="ユーザアカウントを操作する" />
+  <meta property="og:title" content="CHAPを使用してアカウントを操作します" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/ja-jp/element-software/storage/task_data_manage_accounts_work_with_accounts_task.html" />
 	<meta property="og:description" content="SolidFire ストレージシステムでは、クライアントはユーザアカウントを使用してノード上のボリュームに接続します。ボリュームには、作成時に特定のユーザアカウントが割り当てられます。" />
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/element-software/issues/new?body=Page%3A%20[ユーザアカウントを操作する](https://docs.netapp.com/ja-jp/element-software/storage/task_data_manage_accounts_work_with_accounts_task.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/element-software/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/element-software/blob/main/storage/task_data_manage_accounts_work_with_accounts_task.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/element-software/images/edit-sm.svg" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/element-software/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/element-software/issues/new?body=Page%3A%20[CHAPを使用してアカウントを操作します](https://docs.netapp.com/ja-jp/element-software/storage/task_data_manage_accounts_work_with_accounts_task.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/element-software/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/element-software/blob/main/storage/task_data_manage_accounts_work_with_accounts_task.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/element-software/images/edit-sm.svg" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/element-software/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">このページ</div>
@@ -5941,14 +5941,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">ユーザアカウントを操作する</h1>
+  <h1 class="n-doc__component-detail-heading">CHAPを使用してアカウントを操作します</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:31:56 +0000">04/18/2022</time>
+    <time datetime="2022-05-23 11:39:25 +0000">05/23/2022</time>
     
   
 
@@ -5958,10 +5958,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>SolidFire ストレージシステムでは、クライアントはユーザアカウントを使用してノード上のボリュームに接続します。ボリュームには、作成時に特定のユーザアカウントが割り当てられます。</p>
-</div>
-<div class="paragraph">
-<p>アカウントには、そのアカウントに割り当てられているボリュームへのアクセスに必要な CHAP 認証が含まれています。</p>
+<p>SolidFire ストレージシステムでは、テナントはアカウントを使用してクライアントがクラスタ上のボリュームに接続できるようにすることができます。アカウントには、割り当てられているボリュームへのアクセスに必要なChallenge Handshake Authentication Protocol（CHAP；チャレンジハンドシェイク認証プロトコル）認証が含まれています。ボリュームは、作成時に特定のアカウントに割り当てられます。</p>
 </div>
 <div class="paragraph">
 <p>アカウントには最大 2 、 000 個のボリュームを関連付けることができますが、 1 つのボリュームが属することのできるアカウントは 1 つだけです。</p>
