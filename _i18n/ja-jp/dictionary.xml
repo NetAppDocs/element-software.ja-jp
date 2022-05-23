@@ -3512,7 +3512,6 @@
   <block id="a05f7e42c392eb71c87dcfbb65fda74b" category="paragraph">Snapshot にラベルを適用すると、その Snapshot が SnapMirror レプリケーションのターゲットとしてマークされます。関係の役割は、データ転送にルールを適用するために、一致するラベルの付いた Snapshot を選択してデスティネーションボリュームにコピーし、正しい数のコピーが保持されるようにすることです。関係では、ポリシーを参照して保持数と保持期間が特定されます。ポリシーには任意の数のルールを含めることができ、各ルールにはラベルが付けられます。このラベルは、 Snapshot と保持ルールの間のリンクとして機能します。</block>
   <block id="73aeb1f21c4197f4982b1663655493ad" category="paragraph">この SnapMirror ラベルによって、選択した Snapshot 、グループ Snapshot 、またはスケジュールに適用されるルールが指定されます。</block>
   <block id="c862058e7345a40a7280afb21deb5070" category="summary">SolidFire ストレージシステムでは、クライアントはユーザアカウントを使用してノード上のボリュームに接続します。ボリュームには、作成時に特定のユーザアカウントが割り当てられます。</block>
-  <block id="76a60d9f56c68f8cdba13568859cd542" category="paragraph">アカウントには、そのアカウントに割り当てられているボリュームへのアクセスに必要な CHAP 認証が含まれています。</block>
   <block id="4082f16ece7fe49a6ae9cff89731b948" category="paragraph">アカウントには最大 2 、 000 個のボリュームを関連付けることができますが、 1 つのボリュームが属することのできるアカウントは 1 つだけです。</block>
   <block id="2fdfd506efea08144c0794c32ca8250a" category="section-title">アカウントを作成します</block>
   <block id="4c284224e57855e8f92076f429042030" category="paragraph">アカウントを作成して、ボリュームへのアクセスを許可することができます。</block>
@@ -5172,7 +5171,6 @@
   <block id="fc076765cbc4aef219c970ffdd93f443" category="section-title">ホストの要件</block>
   <block id="03bcd410bd7ead49d08f550bc9a30142" category="list-text">Element デモノード 11.7 VM の ESXi 6.0 または 6.5</block>
   <block id="ecb8216baa63e0909aac4fd714e014e1" category="list-text">Element デモノード 12.0 および 12.2 の VM の ESXi 6.5</block>
-  <block id="b85a8796b972a55dc7c4bf65dd09fd2e" category="list-text">Element デモノード 12.3 VM 用 ESXi 6.7 および 7.0</block>
   <block id="5ac069ffea9781a530fd57c5091c864e" category="list-text">マルチコア 64 ビットインテル ® アーキテクチャー</block>
   <block id="0b1be0c62ecdaf7366d96f912ceb102c" category="section-title">Element のデモノードをダウンロード</block>
   <block id="8e0427361ae62a632ff8f5f2e0f77488" category="paragraph">Element のデモノードソフトウェアは、 .ova ファイルにパッケージ化された VMware ファイルのセットです。</block>
@@ -12287,4 +12285,7 @@
   <block id="3f28cad21e73645ec84c4a70033925a4" category="doc">Elementソフトウェア12.5の新機能</block>
   <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">ネットアップサポートによるリモート接続を有効にする</block>
   <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
+  <block id="36d8d20d969c93e2ea2538dca80bb707" category="list-text">Elementデモノード12.5 VM用のESXi 6.7および7.0</block>
+  <block id="036988ff4fac899a45c5c90da9729599" category="doc">CHAPを使用してアカウントを操作します</block>
+  <block id="5f93174c2b6fa00ee106be4342b5fae5" category="paragraph">SolidFire ストレージシステムでは、テナントはアカウントを使用してクライアントがクラスタ上のボリュームに接続できるようにすることができます。アカウントには、割り当てられているボリュームへのアクセスに必要なChallenge Handshake Authentication Protocol（CHAP；チャレンジハンドシェイク認証プロトコル）認証が含まれています。ボリュームは、作成時に特定のアカウントに割り当てられます。</block>
 </blocks>
