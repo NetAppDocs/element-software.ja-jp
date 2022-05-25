@@ -10527,10 +10527,8 @@
   <block id="04be9ab6e44a60450ae6452e609984be" category="list-text">サポートされているサーバをインストールします。を参照してください<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block> を参照してください。</block>
   <block id="fa5b69222b994a8a596eef2320a99a75" category="list-text">ハードウェア構成のバランスがとれ、すべてのチャネルが設定されていることを確認します。帯域幅の最大化の詳細については、を参照してください<block ref="404eae9bc7c2264c66c1f2a9c06f066b" category="inline-link-rx"></block> （ログインが必要です）。</block>
   <block id="2a97471ec199242556431779bd30838a" category="list-title">&lt;strong&gt; ホスト（ノード）を設定 &lt;/strong&gt; します</block>
-  <block id="dfda84dd73a63b7698fcd71a1a191bb4" category="list-text">に記載されているサポート対象のバージョンに基づいて RHEL をインストールします<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block>。</block>
   <block id="6fa70406f47786b02c8769bd1b178120" category="list-text">ネットワーク内のすべてのホストで使用するネットワークタイムプロトコル（ NTP ）サーバを設定します。</block>
   <block id="0ce895e38ab4717417ddcc44e6cf4e1c" category="list-text">インストール先を選択するときに、オプションボタンを選択してファイルシステムのパーティショニングを手動で設定します。[* 手動パーティション分割 *] ページで、 [*+*] および [*-*] ボタンを使用して既存のパーティションを削除し、ここに記載されている推奨事項に従って新しいパーティションを作成してサイズを設定します。デフォルトの LVM パーティショニングスキームを使用すると、必要に応じてあとから簡単にサイズを変更できます。</block>
-  <block id="7cf307b4cbb4dc37df69fb730f71704e" category="admonition">デフォルトでは 'RHEL は ' 手動で作成するパーティションのデフォルト・ファイル・システムとして xfs を選択しますこれは '/boot' パーティションと 'swap' パーティションを除いて 'ext4 に変更する必要がありますあなたの「 /boot 」パーティションは「 ext2 」を使うべきです。</block>
   <block id="3349300356cb3141ea939dcbdf749789" category="cell">パーティション</block>
   <block id="6f6cb72d544962fa333e2e34ce64f719" category="cell">サイズ</block>
   <block id="a53bfb333437907a8d5bdc636d15c75d" category="paragraph">/boot</block>
@@ -10545,7 +10543,6 @@
   <block id="6666cd76f96956469e7be39d750cc7d9" category="paragraph">/</block>
   <block id="876bd0b5b542dbc543a61dd69f527ceb" category="admonition">/dev/sdb ディスクはどのプロセスでも使用されていません</block>
   <block id="09942c4da908193c21f2c641c4c45cd7" category="list-text">/boot に対して RAID を無効にします。</block>
-  <block id="d0c957516dbabedfe88742b9e4a4cfdc" category="list-text">[ ソフトウェアの選択 ] 画面で、インストールする特定のパッケージを選択し、 RHEL のバージョンに基づいて *Server* または *Infrastructure Server* を選択します。</block>
   <block id="303f5963e3ea829928dcbe2a9317331c" category="list-text">最初のブート後、次の手順を実行します。</block>
   <block id="583f03cc8d89c265cfb974e74e052cc2" category="list-text">Red Hat Subscription Manager をインストールし、次のリポジトリを有効にします。</block>
   <block id="68c4b5c87d48a6c6ca4cc14cfacaab03" category="list-text">ノードで SSH を有効にします。</block>
@@ -10566,8 +10563,6 @@
   <block id="e7b21406c191f4c1bb269d3ffee0368d" category="list-text">次の例に示すように、準拠チェックプレイブックを実行します。</block>
   <block id="37ea6b2cb8a75db09428d93d9a0416d0" category="admonition">SolidFire ESDS システムの使用を開始した後でも、定期的に準拠チェックを実行して、システムが準拠していることを確認する必要があります。場合によっては、ネットアップサポートから、準拠チェックを実行して問題の診断とトラブルシューティングを依頼されることがあります。</block>
   <block id="09acbcc09d76195cfde55a1522db4644" category="list-title">&lt;strong&gt; ネットワークと IP アドレスの要件を理解する &lt;/strong&gt;</block>
-  <block id="c8bd9bfc4e58f0125e3130b5e3b58307" category="inline-link">Red Hat のドキュメント</block>
-  <block id="36a4a4fa850be7aa4008ba57334d681b" category="list-text">RHEL でネットワークとネットワークインターフェイスを設定および管理する方法を理解しておく必要があります。を参照してください<block ref="a5d07f73933f9c55909e31f1ce2ee464" category="inline-link-rx"></block>。</block>
   <block id="1c39f346a9b7cd529f0e7deeee5ce177" category="list-text">ここで説明する IP 要件に従ってネットワークを設定します。</block>
   <block id="2cb05e4bb7830be982f0922fed86b4cd" category="cell">コンポーネント</block>
   <block id="265df7cdddd316ce979aa017f0753e25" category="cell">ストレージネットワークの IP アドレス</block>
@@ -10589,7 +10584,6 @@
   <block id="ebff118a006e94651da911d800279c44" category="admonition">ここで示す図は例です。実際のハードウェアは、お使いのサーバによって異なる場合があります。</block>
   <block id="7300079506cb737ad309140b1f56eeda" category="list-text">スイッチポートの MTU を 9216 バイトに変更します。</block>
   <block id="4b7ef9f74fc5d5abcae07ceee277787a" category="list-title">&lt;strong&gt; データセンターのファイアウォールで特定のポートを許可する &lt;/strong&gt;</block>
-  <block id="2c87e2d0f38577f9f5bdce1dc171ae67" category="list-text">RHEL を実行しているストレージ・ノードで firewalld が有効になっている場合は ' 次のポートが開いていることを確認して ' システムをリモートで管理し ' データセンターの外部のクライアントがリソースに接続できるようにし ' 内部サービスが正常に機能することを確認します</block>
   <block id="ab2f4d4dbd7fe86289026b4321e7e53d" category="paragraph">80 TCP/UDP</block>
   <block id="f5fc4cfbf6f32dae142bd0f1c443bc13" category="paragraph">クラスタのアップグレード</block>
   <block id="b0ee3a63a5791163e83df745e5b7b013" category="paragraph">442 TCP</block>
@@ -12193,7 +12187,6 @@
   <block id="a8c7f4c70c59120de0b33efda8af8aa5" category="list-text">に十分な時間を設定しておきます <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> および <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> アップグレード：Elementソフトウェア12.5にアップグレードする場合、アップグレードプロセスの所要時間はElementソフトウェアのバージョンとファームウェアの更新によって異なります。</block>
   <block id="2fa7dfb88e1cb5cf745edc36604f73fd" category="paragraph">健全性チェックは、NetApp Hybrid Cloud ControlのUIまたはNetApp Hybrid Cloud ControlのAPIを使用して実行できます。</block>
   <block id="d37f0270ef1cdc666fe669356e1a4f75" category="inline-link-macro">カスタムの保護ドメインを設定します</block>
-  <block id="5425a332a34a92102aeaad92cb1cfd47" category="paragraph">Element UI を使用して、を実行できます <block ref="6aad22cf2ff364471fbadae1f249e90f" category="inline-link-macro-rx"></block>または、次の API メソッドを使用できます。</block>
   <block id="b9d7f7d96ba0d7f9fb0ebbfdd76705d5" category="list-text"><block ref="a92b076f4c042891d554c076d8d2ec26" category="inline-link-macro-rx"></block> - 各ノードがどのシャーシに配置されているか、およびどのカスタム保護ドメインが表示されます。</block>
   <block id="ed4cb7ef9d0074dd188232c212f3131c" category="list-text"><block ref="79208a7b3d3c86443da0ca3bafbef925" category="inline-link-macro-rx"></block> - 各ノードにカスタム保護ドメインを割り当てることができます。</block>
   <block id="61b35a1ffe9df32c3c0e2e4a7969de4b" category="paragraph">ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。Element 12.5では、ストレージノードへのアクセスの向上、カスタム保護ドメインの管理性の強化、クラスタの障害やイベントの新規追加と改善、クラスタ作成UI機能の強化、セキュリティの強化、Ansibleによる自動アップグレードなどが可能になっています。</block>
@@ -12272,7 +12265,6 @@
   <block id="30486cdfdde2444e4151845599ac5bf5" category="sidebar">Element 12.5のドキュメント</block>
   <block id="da8bff445c6c74f2506b1cfb6b3ca63f" category="sidebar">Elementソフトウェア12.5向けにNetApp SolidFire オールフラッシュストレージシステムをアップグレード</block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">カスタムの保護ドメインを設定する</block>
-  <block id="7d0538a19432cbf213b589c89bb6b819" category="admonition">Element 12.3 でサポートされている Podman のバージョンは 1.1.6 です。</block>
   <block id="e606a329fd1c8e2f2543e5fd1dce6af5" category="doc">リモートのネットアップサポートセッションを開始します</block>
   <block id="6d76b07dcfce8c041eb64f1886c69449" category="paragraph">SolidFire オールフラッシュストレージシステムのテクニカルサポートが必要な場合は、ネットアップサポートがお客様のシステムにリモートで接続できます。セッションを開始してリモートアクセスを確立するために、ネットアップサポートはお客様の環境へのリバース Secure Shell （ SSH ）接続を確立します。</block>
   <block id="22e8c0119e5a615de3153bd0cf6157f1" category="list-text">*保存中のソフトウェア暗号化の機能拡張*: SolidFire エンタープライズSDSストレージクラスタの作成時にデフォルトで有効になるソフトウェア暗号化機能の拡張機能が、Element 12.3で導入されました。この機能では、ストレージノード内の SSD に格納されているすべてのデータが暗号化され、クライアント IO のパフォーマンスへの影響は非常に小さく（最大 2% ）すぎません。保存データのソフトウェア暗号化に関連する Element API メソッドを次に示します（を参照）<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 各メソッドの詳細については、以下を参照してください）。</block>
@@ -12288,4 +12280,19 @@
   <block id="36d8d20d969c93e2ea2538dca80bb707" category="list-text">Elementデモノード12.5 VM用のESXi 6.7および7.0</block>
   <block id="036988ff4fac899a45c5c90da9729599" category="doc">CHAPを使用してアカウントを操作します</block>
   <block id="5f93174c2b6fa00ee106be4342b5fae5" category="paragraph">SolidFire ストレージシステムでは、テナントはアカウントを使用してクライアントがクラスタ上のボリュームに接続できるようにすることができます。アカウントには、割り当てられているボリュームへのアクセスに必要なChallenge Handshake Authentication Protocol（CHAP；チャレンジハンドシェイク認証プロトコル）認証が含まれています。ボリュームは、作成時に特定のアカウントに割り当てられます。</block>
+  <block id="f5c6f9835df083f9a7848584832ffe51" category="list-text">に記載されているサポート対象のバージョンに基づいてRed Hat Package Managerをインストールします<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block>。</block>
+  <block id="8297e8d8235ab4d403ff5275f7488f0e" category="admonition">デフォルトでは'Red Hat Package Managerは'手動で作成するパーティションのデフォルト・ファイル・システムとしてxfsを選択しますこれは '/boot' パーティションと 'swap' パーティションを除いて 'ext4 に変更する必要がありますあなたの「 /boot 」パーティションは「 ext2 」を使うべきです。</block>
+  <block id="e39438a68fb3f711253e9a7370ff67d2" category="list-text">[ソフトウェアの選択]画面で、インストールする特定のパッケージを選択し、Red Hat Package Managerのバージョンに基づいて*Server*または*Infrastructure Server*を選択します。</block>
+  <block id="94f57e8fc8a5e98d0aadd2f3fd717077" category="paragraph">Element 12.5でサポートされるPodmanのバージョンは、Red Hat Package Managerのバージョンによって異なります。</block>
+  <block id="111f3cbd261a94954f796bd076317101" category="cell">Red Hat Package Managerのバージョン</block>
+  <block id="89c0c976c84a0dc5ae614e09b4cc1c8e" category="cell">Podmanバージョン</block>
+  <block id="b1db54564fe54a4c74a975b18a791532" category="cell">7.x</block>
+  <block id="029b1c7f4aeae9b0d7440388e1b6b30b" category="cell">1.6.4</block>
+  <block id="9b894f3cda522ff568508c500c301f16" category="cell">8.1、8.2、8.3、8.4の各モデルがサポートされます</block>
+  <block id="f991179eef81959ca4ec71aa86a4df76" category="paragraph">3.1.x、3.2.x、3.3.x、3.4.1、および3.4.2</block>
+  <block id="23e29da41b25c9d2df2b9c3e88b4f7e0" category="admonition">利用可能な場合は、Podmanバージョン用のセキュリティ更新プログラムを受け入れることを推奨します。</block>
+  <block id="cd9179614936afe6f50612f0cf8c5615" category="inline-link">Red Hat のドキュメント</block>
+  <block id="f82fbefaef1108fe81a739d7c43f6e9f" category="list-text">Red Hat Package Managerでネットワークとネットワークインターフェイスを設定および管理する方法について説明します。を参照してください<block ref="a661302e878d4f2065d4f48e5679440c" category="inline-link-rx"></block>。</block>
+  <block id="5cfb8e81e0263340cb87df666ea52280" category="list-text">Red Hat Package Managerを実行しているストレージノードで「firewalld」が有効になっている場合は、次のポートが開いていることを確認します。これにより、システムをリモートで管理し、データセンターの外部のクライアントがリソースに接続できるようになり、内部サービスが正常に機能するようになります。</block>
+  <block id="da098b5086ce4e5936074c04efe5aa87" category="paragraph">Element UI を使用して、を実行できます <block ref="cbef8289b7bcb52ca0b9a41f4d962912" category="inline-link-macro-rx"></block>または、次の API メソッドを使用できます。</block>
 </blocks>

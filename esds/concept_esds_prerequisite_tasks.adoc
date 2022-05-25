@@ -19,12 +19,12 @@ SolidFire ESDS をインストールする前に、必要なチェックを実�
 
 
 .<strong> ホスト（ノード）を設定 </strong> します
-* に記載されているサポート対象のバージョンに基づいて RHEL をインストールします https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU#welcome["NetApp Interoperability Matrix （ログインが必要）"^]。
+* に記載されているサポート対象のバージョンに基づいてRed Hat Package Managerをインストールします https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU#welcome["NetApp Interoperability Matrix （ログインが必要）"^]。
 * ネットワーク内のすべてのホストで使用するネットワークタイムプロトコル（ NTP ）サーバを設定します。
 * インストール先を選択するときに、オプションボタンを選択してファイルシステムのパーティショニングを手動で設定します。[* 手動パーティション分割 *] ページで、 [*+*] および [*-*] ボタンを使用して既存のパーティションを削除し、ここに記載されている推奨事項に従って新しいパーティションを作成してサイズを設定します。デフォルトの LVM パーティショニングスキームを使用すると、必要に応じてあとから簡単にサイズを変更できます。
 +
 
-NOTE: デフォルトでは 'RHEL は ' 手動で作成するパーティションのデフォルト・ファイル・システムとして xfs を選択しますこれは '/boot' パーティションと 'swap' パーティションを除いて 'ext4 に変更する必要がありますあなたの「 /boot 」パーティションは「 ext2 」を使うべきです。
+NOTE: デフォルトでは'Red Hat Package Managerは'手動で作成するパーティションのデフォルト・ファイル・システムとしてxfsを選択しますこれは '/boot' パーティションと 'swap' パーティションを除いて 'ext4 に変更する必要がありますあなたの「 /boot 」パーティションは「 ext2 」を使うべきです。
 
 +
 SATA ディスクに 250GB がある場合は、次の推奨パーティションに従ってください。SATA ディスクの空き容量が大きい場合は、 /opt と /var パーティションのサイズを大きくできます。
@@ -88,7 +88,7 @@ SATA ディスクに 250GB がある場合は、次の推奨パーティショ�
 NOTE: /dev/sdb ディスクはどのプロセスでも使用されていません
 
 * /boot に対して RAID を無効にします。
-* [ ソフトウェアの選択 ] 画面で、インストールする特定のパッケージを選択し、 RHEL のバージョンに基づいて *Server* または *Infrastructure Server* を選択します。
+* [ソフトウェアの選択]画面で、インストールする特定のパッケージを選択し、Red Hat Package Managerのバージョンに基づいて*Server*または*Infrastructure Server*を選択します。
 * 最初のブート後、次の手順を実行します。
 +
 ** Red Hat Subscription Manager をインストールし、次のリポジトリを有効にします。
@@ -109,9 +109,26 @@ rhel-7-server-extras-rpms
 .<strong> 必要なソフトウェアをインストールする </strong>
 * Ansible 、 Git 、 Podman 、 Python 3.0 をインストールします。
 +
+[NOTE]
+====
+Element 12.5でサポートされるPodmanのバージョンは、Red Hat Package Managerのバージョンによって異なります。
 
-NOTE: Element 12.3 でサポートされている Podman のバージョンは 1.1.6 です。
+[cols="35,65"]
+|===
+| Red Hat Package Managerのバージョン | Podmanバージョン 
 
+
+| 7.x | 1.6.4 
+
+
+| 8.1、8.2、8.3、8.4の各モデルがサポートされます  a| 
+3.1.x、3.2.x、3.3.x、3.4.1、および3.4.2
+
+
+NOTE: 利用可能な場合は、Podmanバージョン用のセキュリティ更新プログラムを受け入れることを推奨します。
+
+|===
+====
 
 
 .<strong>SolidFire ESDS をインストールするための NetApp の要件と構成が一致していることを確認します </strong>
@@ -168,7 +185,7 @@ NOTE: SolidFire ESDS システムの使用を開始した後でも、定期的�
 
 
 .<strong> ネットワークと IP アドレスの要件を理解する </strong>
-* RHEL でネットワークとネットワークインターフェイスを設定および管理する方法を理解しておく必要があります。を参照してください https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index["Red Hat のドキュメント"^]。
+* Red Hat Package Managerでネットワークとネットワークインターフェイスを設定および管理する方法について説明します。を参照してください https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index["Red Hat のドキュメント"^]。
 * ここで説明する IP 要件に従ってネットワークを設定します。
 +
 [cols="4*"]
@@ -245,7 +262,7 @@ IMPORTANT: ここで示す図は例です。実際のハードウェアは、お
 
 
 .<strong> データセンターのファイアウォールで特定のポートを許可する </strong>
-* RHEL を実行しているストレージ・ノードで firewalld が有効になっている場合は ' 次のポートが開いていることを確認して ' システムをリモートで管理し ' データセンターの外部のクライアントがリソースに接続できるようにし ' 内部サービスが正常に機能することを確認します
+* Red Hat Package Managerを実行しているストレージノードで「firewalld」が有効になっている場合は、次のポートが開いていることを確認します。これにより、システムをリモートで管理し、データセンターの外部のクライアントがリソースに接続できるようになり、内部サービスが正常に機能するようになります。
 +
 [cols="4*"]
 |===

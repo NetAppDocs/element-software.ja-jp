@@ -190,7 +190,7 @@ Protection Domain レイアウトは、各ノードを特定の保護ドメイ�
 
 複数のカスタム保護ドメインが割り当てられている場合、各サブシステムは重複を個別のカスタム保護ドメインに割り当てます。これができない場合は、重複したデータが別のノードに割り当てられます。各サブシステム（ビン、スライス、プロトコルエンドポイントプロバイダ、アンサンブルなど）は、それぞれ独立して機能します。
 
-Element UI を使用して、を実行できます link:..storage/task_data_protection_configure_custom_protection_domains.html["カスタムの保護ドメインを設定します"]または、次の API メソッドを使用できます。
+Element UI を使用して、を実行できます link:../storage/task_data_protection_configure_custom_protection_domains.html["カスタムの保護ドメインを設定します"]または、次の API メソッドを使用できます。
 
 * link:../api/reference_element_api_getprotectiondomainlayout.html["GetProtectionDomainLayout の略"] - 各ノードがどのシャーシに配置されているか、およびどのカスタム保護ドメインが表示されます。
 * link:../api/reference_element_api_setprotectiondomainlayout.html["SetProtectionDomainLayout の略"] - 各ノードにカスタム保護ドメインを割り当てることができます。
