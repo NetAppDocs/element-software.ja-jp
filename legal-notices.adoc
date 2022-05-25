@@ -59,4 +59,7 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 * link:./media/mgmt-214.pdf["管理サービス2.14（VCP 4.42）に関する注意事項"^]
 * link:./media/mgmt-213.pdf["管理サービス 2.13 の注意事項（ VCP 4.5.42 ）"^]
 * link:./media/storage_firmware_bundle_2.146_notices.pdf["ストレージファームウェアバンドル 2.146 に関する注意事項"^]
+* link:./media/storage_firmware_bundle_2.99_notices.pdf["ストレージファームウェアバンドル 2.99.2 に関する注意事項"^]
+* link:./media/storage_firmware_bundle_2.76_notices.pdf["ストレージファームウェアバンドル 2.76 に関する注意"^]
+* link:./media/storage_firmware_bundle_2.27_notices.pdf["ストレージファームウェアバンドル 2.27 に関する注意"^]
 
