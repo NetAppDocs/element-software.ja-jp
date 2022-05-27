@@ -123,7 +123,7 @@ homepage:
       url: https://mysupport.netapp.com/site/products/all/details/element-software/guideme-tab
   - title: 以前のバージョン
     links:
-    - title: Element 12.5のドキュメント
+    - title: Element 12.3のドキュメント
       url: https://docs.netapp.com/us-en/element-software-123/
     - title: Element 12.2 のドキュメント
       url: https://docs.netapp.com/sfe-122/index.jsp
