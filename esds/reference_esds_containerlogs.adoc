@@ -38,7 +38,7 @@ SolidFire ESDS に関連するすべてのログは、ホストの /var/log/soli
 
 
 
-=== NetApp Hybrid Cloud Control の UI を使用してログを収集します
+== NetApp Hybrid Cloud Control の UI を使用してログを収集します
 
 ネットアップサポートに送信するログを収集して、 SolidFire ESDS クラスタの問題を診断するのに役立ちます。
 
