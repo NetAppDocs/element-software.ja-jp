@@ -12276,7 +12276,6 @@
   <block id="3f28cad21e73645ec84c4a70033925a4" category="doc">Elementソフトウェア12.5の新機能</block>
   <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">ネットアップサポートによるリモート接続を有効にする</block>
   <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
-  <block id="36d8d20d969c93e2ea2538dca80bb707" category="list-text">Elementデモノード12.5 VM用のESXi 6.7および7.0</block>
   <block id="036988ff4fac899a45c5c90da9729599" category="doc">CHAPを使用してアカウントを操作します</block>
   <block id="5f93174c2b6fa00ee106be4342b5fae5" category="paragraph">SolidFire ストレージシステムでは、テナントはアカウントを使用してクライアントがクラスタ上のボリュームに接続できるようにすることができます。アカウントには、割り当てられているボリュームへのアクセスに必要なChallenge Handshake Authentication Protocol（CHAP；チャレンジハンドシェイク認証プロトコル）認証が含まれています。ボリュームは、作成時に特定のアカウントに割り当てられます。</block>
   <block id="f5c6f9835df083f9a7848584832ffe51" category="list-text">に記載されているサポート対象のバージョンに基づいてRed Hat Package Managerをインストールします<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block>。</block>
@@ -12299,4 +12298,5 @@
   <block id="30624e21224d847e1b829641269ffe3c" category="inline-link-macro">ストレージファームウェアバンドル 2.27 に関する注意</block>
   <block id="656e3f29cbe522931c455a5e233d1c6f" category="list-text"><block ref="656e3f29cbe522931c455a5e233d1c6f" category="inline-link-macro-rx"></block></block>
   <block id="65475fb8d204c527f117e51b4e025657" category="sidebar">Element 12.3のドキュメント</block>
+  <block id="612f97930662fc3cd831ed7bc5ae322c" category="list-text">Elementデモノード12.3および12.5 VM用のESXi 6.7および7.0</block>
 </blocks>
