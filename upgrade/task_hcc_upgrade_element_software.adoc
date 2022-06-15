@@ -5,7 +5,12 @@ summary: NetApp SolidFire システムのアップグレードの一環として
 keywords: netapp, solidfire, cluster, element, H610S upgrade, hcc, ansible upgrades, upgrade role 
 ---
 = Element ソフトウェアをアップグレードします
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

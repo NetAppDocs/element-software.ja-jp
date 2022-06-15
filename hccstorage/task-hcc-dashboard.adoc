@@ -5,7 +5,12 @@ summary: ストレージリソースは、 NetApp Hybrid Cloud Control Dashboard
 keywords: netapp, element, hcc, hybrid cloud control, storage, storage performance, capacity 
 ---
 = Hybrid Cloud Control Dashboard でストレージリソースを監視します
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

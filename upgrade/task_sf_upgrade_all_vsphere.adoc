@@ -5,7 +5,12 @@ summary: SolidFire ストレージシステムの VMware コンポーネント�
 keywords: netapp, solidfire, vsphere components, upgrade, vCenter, ESXi 
 ---
 = NetApp SolidFire ストレージシステムの vSphere コンポーネントをアップグレードします を使用： Element Plug-in for vCenter Server
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

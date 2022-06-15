@@ -5,7 +5,12 @@ summary: vCenter アセットを管理ノードに追加する前に、 vCenter 
 keywords: netapp, mnode, management node, vcenter, hcc, esxi 
 ---
 = vCenter で NetApp HCC ロールを作成します
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

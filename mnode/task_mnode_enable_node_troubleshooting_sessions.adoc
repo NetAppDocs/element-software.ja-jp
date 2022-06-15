@@ -5,7 +5,12 @@ summary: Element 12.5以降では、管理ノードでsfreadonlyユーザアカ�
 keywords: netapp, sfreadonly, connect to support, support tunnel, rst, mnode, management node 
 ---
 = 基本的なトラブルシューティングのためにSSHを使用してストレージノードにアクセスする
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

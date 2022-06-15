@@ -5,7 +5,12 @@ summary: NetApp Hybrid Cloud Control を使用して Element のインストー�
 keywords: netapp, element, logs, collection, troubleshooting, monitor 
 ---
 = トラブルシューティング用にログを収集する
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

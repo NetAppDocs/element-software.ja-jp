@@ -5,7 +5,12 @@ summary: 管理ノード（ mNode ）を使用して、 SolidFire オールフ�
 keywords: netapp, Element, api, enable, active iq, activeiq 
 ---
 = Active IQ とネットアップによる監視を有効にします
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

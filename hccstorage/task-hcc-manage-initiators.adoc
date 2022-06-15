@@ -5,7 +5,12 @@ summary: 外部クライアントと Element ストレージボリューム間�
 keywords: netapp, initiator, storage, element, access group 
 ---
 = イニシエータを作成および管理する
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

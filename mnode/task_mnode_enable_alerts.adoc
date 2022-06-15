@@ -5,7 +5,12 @@ summary: SolidFire オールフラッシュストレージシステムでは、�
 keywords: netapp, Element, management node, mnode, ui, alerts, alert monitoring 
 ---
 = アラートの監視を設定
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -5,7 +5,12 @@ summary: NetApp Hybrid Control の UI を使用して、ストレージクラス
 keywords: netapp, element, storage cluster, hybrid cloud control, hcc, maintenance mode, enable, disable 
 ---
 = NetApp Hybrid Cloud Control を使用してストレージクラスタを追加および管理します
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -5,7 +5,12 @@ summary: クラスタがプロキシサーバの背後にある場合、パブ�
 keywords: netapp, Element, mnode, api, management node, add proxy, proxy server 
 ---
 = プロキシサーバを設定します
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]
