@@ -2888,7 +2888,6 @@
   <block id="cef2ee48106a0a7790ec9a773798ee14" category="inline-link-macro">Element ソフトウェア UI の基本オプションを使用</block>
   <block id="6038a645307a76874f058ffe322fc4f6" category="list-text"><block ref="6038a645307a76874f058ffe322fc4f6" category="inline-link-macro-rx"></block></block>
   <block id="afa76abc4566eab1fcb19c24508a45f6" category="inline-link-macro">アカウントを管理</block>
-  <block id="4fbd159c0ffeaa8174ace6e07db12ddd" category="list-text"><block ref="4fbd159c0ffeaa8174ace6e07db12ddd" category="inline-link-macro-rx"></block></block>
   <block id="78b427ddfeadab92101bce0e26d2af15" category="list-text"><block ref="78b427ddfeadab92101bce0e26d2af15" category="inline-link-macro-rx"></block></block>
   <block id="d6615555ed8cd4ed3dcba9b13d892dc3" category="inline-link-macro">ボリュームと仮想ボリュームを管理します</block>
   <block id="b1d9f91038721e8f8e298ac364db6778" category="list-text"><block ref="b1d9f91038721e8f8e298ac364db6778" category="inline-link-macro-rx"></block></block>
@@ -6128,7 +6127,6 @@
   <block id="f61e9636e293369f10b1ec103f8fee93" category="inline-xref-macro">GetLldpInfo</block>
   <block id="086febacc15b636e3a60d1b37daa6282" category="list-text"><block ref="086febacc15b636e3a60d1b37daa6282" category="inline-xref-macro-rx"></block></block>
   <block id="e4dfbeb73cec3dae15bbd54d9bab5371" category="inline-xref-macro">GetNodeFipsDrivesReport</block>
-  <block id="aabd1801541ead1bcd1e57ea9a0dc288" category="list-text"><block ref="aabd1801541ead1bcd1e57ea9a0dc288" category="inline-xref-macro-rx"></block></block>
   <block id="45412dfdcfac19674f8390f537bdaaa8" category="inline-xref-macro">GetNtpInfo を使用します</block>
   <block id="a62467a99f0a13c7d78641ecb62f072c" category="list-text"><block ref="a62467a99f0a13c7d78641ecb62f072c" category="inline-xref-macro-rx"></block></block>
   <block id="d736a9b022857922ef24a52f89db18eb" category="inline-xref-macro">GetNvramInfo をクリックします</block>
@@ -8956,7 +8954,6 @@
   <block id="99af96643360f14d8491e1a3db76670b" category="list-text"><block ref="99af96643360f14d8491e1a3db76670b" category="inline-xref-macro-rx"></block></block>
   <block id="e7ac6f23e0ce05c66482e1e86f007493" category="list-text"><block ref="e7ac6f23e0ce05c66482e1e86f007493" category="inline-xref-macro-rx"></block></block>
   <block id="bb691212fb55b0514079cc2d0ea324cb" category="list-text"><block ref="bb691212fb55b0514079cc2d0ea324cb" category="inline-xref-macro-rx"></block></block>
-  <block id="144d36f45c4e2cbb636347c94accc2c5" category="list-text"><block ref="144d36f45c4e2cbb636347c94accc2c5" category="inline-xref-macro-rx"></block></block>
   <block id="3339cf3860b4354d2b18ca86148968b1" category="summary">ListVirtualVolumeHosts メソッドを使用すると、クラスタで認識されているすべての仮想ボリュームホストのリストを取得できます。仮想ボリュームホストとは、 VASA API プロバイダとのセッションを開始した VMware ESX ホストです。</block>
   <block id="729d062de92cee3965129088677b543d" category="paragraph">「 ListVirtualVolumeHosts 」メソッドを使用すると、クラスタで認識されているすべての仮想ボリュームホストのリストを取得できます。仮想ボリュームホストとは、 VASA API プロバイダとのセッションを開始した VMware ESX ホストです。</block>
   <block id="cb5ccddc259adc416bb5082ac4f0d691" category="paragraph">virtualVolumeHostID</block>
@@ -10818,23 +10815,11 @@
   <block id="096aa1735be602da09e80976ee664490" category="summary">ストレージクラスタに SolidFire ESDS をインストールしたら、 Element UI 、 Element API 、または NetApp Element Plug-in for vCenter Server （ VCP ）を使用してストレージクラスタを管理できます。</block>
   <block id="b708fcb66d2fb4281601a54f0e59184f" category="paragraph">各種のストレージ管理タスク用のコンテンツへのリンクを次に示します。</block>
   <block id="0dafc18315b2055ca29f9f5395b46078" category="list-text"><block ref="0dafc18315b2055ca29f9f5395b46078" category="inline-link-macro-rx"></block></block>
-  <block id="ee345e37fd89921fbb54a89b2fefa229" category="list-text"><block ref="ee345e37fd89921fbb54a89b2fefa229" category="inline-link-macro-rx"></block></block>
-  <block id="74ebf8ab5e798d0fa568bcd8a71aa242" category="list-text"><block ref="74ebf8ab5e798d0fa568bcd8a71aa242" category="inline-link-macro-rx"></block></block>
   <block id="7b3b3440fb0f7016b1525de95db91e45" category="paragraph">また、ボリュームへの QoS ポリシーの適用に関する情報も確認できます。</block>
-  <block id="6bb10b8c2ec44ff96150cda3829a141f" category="list-text"><block ref="6bb10b8c2ec44ff96150cda3829a141f" category="inline-link-macro-rx"></block></block>
-  <block id="016c10d0f18079b72acb6524c57aaee2" category="list-text"><block ref="016c10d0f18079b72acb6524c57aaee2" category="inline-link-macro-rx"></block></block>
   <block id="e5879288a130fbd8d0b8682cfc375c4f" category="inline-link-macro">スナップショットを操作します</block>
-  <block id="ca94cd46c5b91d8dd88b38cadc1857cd" category="list-text"><block ref="ca94cd46c5b91d8dd88b38cadc1857cd" category="inline-link-macro-rx"></block></block>
-  <block id="f4a74b3b076b1d462ffa0172857a69aa" category="list-text"><block ref="ca9fbc25825ab8d777cc58150f281e73" category="inline-link-macro-rx"></block> 新規</block>
-  <block id="abccea51172d10762d66aadd72d745d4" category="list-text"><block ref="560be90d6081a2a9ff1b510f5605605b" category="inline-link-macro-rx"></block> 新規</block>
   <block id="2dac088d1b366882d185fe8aedb97392" category="inline-link-macro">クラスタ間でリモートレプリケーションを実行</block>
-  <block id="fdf730847afa2142fb1e4ccfa7075c34" category="list-text"><block ref="fdf730847afa2142fb1e4ccfa7075c34" category="inline-link-macro-rx"></block></block>
-  <block id="8fd4f5c1d16d7d08b2d74e6e3d77e80f" category="list-text"><block ref="8fd4f5c1d16d7d08b2d74e6e3d77e80f" category="inline-link-macro-rx"></block></block>
   <block id="12f6af3a2ee487909bf552aa36903b29" category="inline-link-macro">Element API を使用してストレージを管理</block>
-  <block id="56a5432cb1558dea6f6c8ec0507a8a93" category="list-text"><block ref="56a5432cb1558dea6f6c8ec0507a8a93" category="inline-link-macro-rx"></block></block>
-  <block id="c487b4619a6c8cbd207c9a3f233e0681" category="list-text"><block ref="c487b4619a6c8cbd207c9a3f233e0681" category="inline-link-macro-rx"></block></block>
   <block id="19c63df81b4a931980753ca5b4f349e8" category="inline-link">NetApp Element Plug-in for vCenter Server の概要を参照してください</block>
-  <block id="c6051cfa3c7828a4f0a2532c70333d32" category="list-text"><block ref="c6051cfa3c7828a4f0a2532c70333d32" category="inline-link-rx"></block></block>
   <block id="cf01dc47ed79267872b62a626969809c" category="paragraph">概要ページから特定のタスクに移動できます。</block>
   <block id="b6da6eab87d65c4c9297f872afd87022" category="section-title">SolidFire ESDS クラスタでは Element API を使用します</block>
   <block id="389945c09cdda9d478adbb3a47413d5c" category="list-text">「 DisableEncryptionAtRest 」</block>
@@ -10960,7 +10945,6 @@
   <block id="4dbf9739b89cc855a36adb8a310e446b" category="summary">開始する前に、 NetApp Element ソフトウェアのインストールとセットアップの手順を理解しておくことを推奨します。</block>
   <block id="bbde1cda5233ef3e90656a8c516591d1" category="paragraph">Element ソフトウェアのセットアップ後は、次のいずれかのオプションを実行してストレージを管理します。</block>
   <block id="40fbcf5a102757324058f7fa79b9f9b7" category="list-text"><block ref="40fbcf5a102757324058f7fa79b9f9b7" category="inline-link-macro-rx"></block></block>
-  <block id="17c7bc4d0c6040d40f372c983e2ebdfa" category="list-text"><block ref="17c7bc4d0c6040d40f372c983e2ebdfa" category="inline-link-macro-rx"></block></block>
   <block id="7d3ef918a12e578d9fde14c32bffb81d" category="list-text"><block ref="7d3ef918a12e578d9fde14c32bffb81d" category="inline-link-macro-rx"></block></block>
   <block id="7b899c0575eff5699d0108e9f4fc03d6" category="list-text"><block ref="7b899c0575eff5699d0108e9f4fc03d6" category="inline-link-macro-rx"></block></block>
   <block id="90a3faa61b9abab56e4855567afc95b1" category="list-text"><block ref="90a3faa61b9abab56e4855567afc95b1" category="inline-link-macro-rx"></block></block>
@@ -11766,7 +11750,6 @@
   <block id="b12641981b1007fecfaf498bd16ae5d5" category="list-text">テーブルの * アクション * 列で、アカウントのメニューを展開し、 * 削除 * を選択します。</block>
   <block id="1326a41ad4b26f3395b0f54dd9172b2b" category="inline-link-macro">アカウントの詳細を確認します</block>
   <block id="f25165465224e736bc3801bbad7eb5f8" category="list-text"><block ref="f25165465224e736bc3801bbad7eb5f8" category="inline-link-macro-rx"></block></block>
-  <block id="fe0d0db1949183b4fc769561ae8c3f8a" category="list-text"><block ref="fe0d0db1949183b4fc769561ae8c3f8a" category="inline-link-macro-rx"></block></block>
   <block id="3f9324833c13ae3ed43845b441b05e73" category="summary">ストレージリソースは、 NetApp Hybrid Cloud Control Dashboard で確認できます。また、ストレージ容量とストレージパフォーマンスも監視できます。</block>
   <block id="a74d2845bf0214173bedd164f5dc18bc" category="doc">Hybrid Cloud Control Dashboard でストレージリソースを監視します</block>
   <block id="a916121ffd7a7772d450d2d9b32f3aa2" category="paragraph">NetApp Hybrid Cloud Control Dashboard では、すべてのストレージリソースを一目で確認できます。また、ストレージ容量とストレージパフォーマンスも監視できます。</block>
@@ -12303,4 +12286,25 @@
   <block id="e8158506d71c28d8d821c3acbeb0f97d" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block></block>
   <block id="831b7fafcb48c5cdc3232392066936d8" category="inline-link-macro">ストレージファームウェアバンドル2.150に関する注意事項</block>
   <block id="24918f39116096f98dc92e1125b8a780" category="list-text"><block ref="24918f39116096f98dc92e1125b8a780" category="inline-link-macro-rx"></block></block>
+  <block id="372092ac59d2946fc3d092b0e44df82a" category="list-text"><block ref="372092ac59d2946fc3d092b0e44df82a" category="inline-link-macro-rx"></block></block>
+  <block id="26bde7cf1d647a00812ba293427f218c" category="summary">アカウントはElement UIで管理できます。これには、CHAPを使用するアカウントの操作と、クラスタ管理者のユーザアカウントの管理が含まれます。</block>
+  <block id="cb7c12b1424a0e6b1be1defaded53de8" category="paragraph">システムアカウントはElement UIで管理できます。これには、Challenge Handshake Authentication Protocol（CHAP；チャレンジハンドシェイク認証プロトコル）を使用したアカウントの処理と、クラスタ管理者ユーザアカウントの管理が含まれます。</block>
+  <block id="0de8022e52b232dc0912129174158b7b" category="list-text"><block ref="0de8022e52b232dc0912129174158b7b" category="inline-link-macro-rx"></block></block>
+  <block id="93b99f5d3cef7af59adc0f899dddf1e1" category="list-text"><block ref="93b99f5d3cef7af59adc0f899dddf1e1" category="inline-link-macro-rx"></block></block>
+  <block id="5ca104d2b413ecd234583f40c3a808b8" category="list-text"><block ref="5ca104d2b413ecd234583f40c3a808b8" category="inline-link-macro-rx"></block></block>
+  <block id="7e33105c99e1040a1b09764052c96bf6" category="list-text"><block ref="7e33105c99e1040a1b09764052c96bf6" category="inline-xref-macro-rx"></block></block>
+  <block id="b9d025f755210db0c30935ae2494f820" category="list-text"><block ref="b9d025f755210db0c30935ae2494f820" category="inline-xref-macro-rx"></block></block>
+  <block id="9eecd7c0744f77d1f15658bd0a02f1b2" category="list-text"><block ref="9eecd7c0744f77d1f15658bd0a02f1b2" category="inline-xref-macro-rx"></block></block>
+  <block id="482c5ad7089a563e0fe0fbc1a8647e77" category="list-text"><block ref="482c5ad7089a563e0fe0fbc1a8647e77" category="inline-xref-macro-rx"></block></block>
+  <block id="ec0b9fb2fa43e46443eb0f7087291fb5" category="list-text"><block ref="ec0b9fb2fa43e46443eb0f7087291fb5" category="inline-link-macro-rx"></block></block>
+  <block id="11df4da923543977db2ff7d6c2b87b7c" category="list-text"><block ref="11df4da923543977db2ff7d6c2b87b7c" category="inline-link-macro-rx"></block></block>
+  <block id="2e437e291facb9c9920734e7632e62ad" category="list-text"><block ref="2e437e291facb9c9920734e7632e62ad" category="inline-link-macro-rx"></block></block>
+  <block id="d39f23e3f84c1bd1e144f6fed629b1e4" category="list-text"><block ref="d39f23e3f84c1bd1e144f6fed629b1e4" category="inline-link-macro-rx"></block></block>
+  <block id="b4d3d7a7f19bcfb9d4bcfeca430cfbef" category="list-text"><block ref="b4d3d7a7f19bcfb9d4bcfeca430cfbef" category="inline-link-macro-rx"></block></block>
+  <block id="fb8145a478a8837082d05d97d87dbde5" category="list-text"><block ref="b16f2946d1eb3dd465deb7a9462fd76d" category="inline-link-macro-rx"></block> 新規</block>
+  <block id="1f5d8ae290c85b66ea7ecdfae46d7188" category="list-text"><block ref="8393824aba7fe138051cb03400ca7bb6" category="inline-link-macro-rx"></block> 新規</block>
+  <block id="fac8ed8d82b59cb855583050cee9cd34" category="list-text"><block ref="fac8ed8d82b59cb855583050cee9cd34" category="inline-link-macro-rx"></block></block>
+  <block id="dcfa4d00c50a08c56e2319fa3f3d1288" category="list-text"><block ref="dcfa4d00c50a08c56e2319fa3f3d1288" category="inline-link-macro-rx"></block></block>
+  <block id="e12535c6360c5dad15589e14aca41e3a" category="list-text"><block ref="e12535c6360c5dad15589e14aca41e3a" category="inline-link-macro-rx"></block></block>
+  <block id="7661478d2706b156c56055536f2e93da" category="list-text"><block ref="7661478d2706b156c56055536f2e93da" category="inline-link-rx"></block></block>
 </blocks>

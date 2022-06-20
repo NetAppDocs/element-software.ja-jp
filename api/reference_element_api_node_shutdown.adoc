@@ -1,5 +1,5 @@
 ---
-permalink: api/reference_element_api_shutdown.html 
+permalink: api/reference_element_api_node_shutdown.html 
 sidebar: sidebar 
 keywords: cluster,shutdown,node,shutting,down,shut,restart 
 summary: Shutdown メソッドを使用すると、クラスタ内のノードをリスタートまたはシャットダウンできます。このメソッドを使用すると、単一のノード、複数のノード、またはクラスタ内のすべてのノードをシャットダウンできます。 

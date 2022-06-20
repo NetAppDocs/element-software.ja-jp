@@ -25,7 +25,7 @@ summary: システム設定 API メソッドを使用すると、クラスタ内
 * xref:reference_element_api_getfipsreport.adoc[GetFipsReport のようになりました]
 * xref:reference_element_api_getlldpconfig.adoc[GetLldpConfig]
 * xref:reference_element_api_getlldpinfo.adoc[GetLldpInfo]
-* xref:reference_element_api_getnodefipsdrivesreport.adoc[GetNodeFipsDrivesReport]
+* xref:reference_element_api_system_configuration_getnodefipsdrivesreport.adoc[GetNodeFipsDrivesReport]
 * xref:reference_element_api_getntpinfo.adoc[GetNtpInfo を使用します]
 * xref:reference_element_api_getnvraminfo.adoc[GetNvramInfo をクリックします]
 * xref:reference_element_api_getprotectiondomainlayout.adoc[GetProtectionDomainLayout の略]
