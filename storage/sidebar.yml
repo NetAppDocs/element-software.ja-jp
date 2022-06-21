@@ -222,7 +222,7 @@ entries:
         url: "/storage/task_data_protection_clone_a_volume_from_a_snapshot.html"
       - title: ボリュームを Snapshot にロールバックします
         url: "/storage/task_data_protection_roll_back_a_volume_to_a_snapshot.html"
-      - title: ボリューム Snapshot のバックアップ処理
+      - title: ボリュームSnapshotをバックアップします
         url: "/storage/concept_data_protection_volume_snapshot_backup_operations.html"
         entries:
         - title: Amazon S3 オブジェクトストアにボリューム Snapshot をバックアップします
