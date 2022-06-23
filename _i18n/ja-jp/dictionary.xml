@@ -3489,11 +3489,6 @@
   <block id="61cdc942423ae857cab50a88f5d96f28" category="list-text">[ ボリュームアクセスグループの編集 *] ダイアログボックスの [ ボリュームの追加 ] で、 [ 添付されたボリューム *] リストの矢印をクリックします。</block>
   <block id="de23c347c953e1b1b7d0a55759da7b30" category="list-text">リストから削除するボリュームを選択し、 * x * アイコンをクリックしてリストから削除します。</block>
   <block id="fa9af863a5c38bb09eda10cee4e97b6c" category="paragraph">さらにボリュームを削除するには、この手順を繰り返します。</block>
-  <block id="34fa21de6cec673be30516d925b1ef0a" category="summary">SolidFire ストレージシステムでは、クライアントはユーザアカウントを使用してノード上のボリュームに接続します。SolidFire ストレージシステムのクラスタ管理者アカウントを管理することもできます。</block>
-  <block id="4dc056b77b799b07e73a3c822af00828" category="paragraph">SolidFire ストレージシステムでは、クライアントはユーザアカウントを使用してノード上のボリュームに接続します。ボリュームには、作成時に特定のユーザアカウントが割り当てられます。SolidFire ストレージシステムのクラスタ管理者アカウントを管理することもできます。</block>
-  <block id="7e5784de66821e5068bc24c9a5c6d1d6" category="inline-link-macro">ユーザアカウントを操作する</block>
-  <block id="f5b0d24b7d0469f0116c13fb8bcbb772" category="list-text"><block ref="f5b0d24b7d0469f0116c13fb8bcbb772" category="inline-link-macro-rx"></block></block>
-  <block id="093667bda42279d43524628d34f5580a" category="list-text"><block ref="093667bda42279d43524628d34f5580a" category="inline-link-macro-rx"></block></block>
   <block id="925b9e4a5e967e704fa574ff41dbb23a" category="summary">サポートアクセスを有効にすると、ネットアップサポートの担当者がトラブルシューティングのために一時的に SSH 経由でストレージノードにアクセスできるようになります。</block>
   <block id="3cb626bc3d43e80335c0553cc6790891" category="paragraph">サポートアクセスを変更するには、クラスタ管理者の権限が必要です。</block>
   <block id="182969fe3381ded6f453dee920d37c9f" category="list-text">[ サポートアクセスの有効化 / 無効化 ] セクションで、サポートにアクセスを許可する期間（時間単位）を入力します。</block>
@@ -12285,12 +12280,8 @@
   <block id="e8158506d71c28d8d821c3acbeb0f97d" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block></block>
   <block id="831b7fafcb48c5cdc3232392066936d8" category="inline-link-macro">ストレージファームウェアバンドル2.150に関する注意事項</block>
   <block id="24918f39116096f98dc92e1125b8a780" category="list-text"><block ref="24918f39116096f98dc92e1125b8a780" category="inline-link-macro-rx"></block></block>
-  <block id="372092ac59d2946fc3d092b0e44df82a" category="list-text"><block ref="372092ac59d2946fc3d092b0e44df82a" category="inline-link-macro-rx"></block></block>
-  <block id="26bde7cf1d647a00812ba293427f218c" category="summary">アカウントはElement UIで管理できます。これには、CHAPを使用するアカウントの操作と、クラスタ管理者のユーザアカウントの管理が含まれます。</block>
-  <block id="cb7c12b1424a0e6b1be1defaded53de8" category="paragraph">システムアカウントはElement UIで管理できます。これには、Challenge Handshake Authentication Protocol（CHAP；チャレンジハンドシェイク認証プロトコル）を使用したアカウントの処理と、クラスタ管理者ユーザアカウントの管理が含まれます。</block>
   <block id="0de8022e52b232dc0912129174158b7b" category="list-text"><block ref="0de8022e52b232dc0912129174158b7b" category="inline-link-macro-rx"></block></block>
   <block id="93b99f5d3cef7af59adc0f899dddf1e1" category="list-text"><block ref="93b99f5d3cef7af59adc0f899dddf1e1" category="inline-link-macro-rx"></block></block>
-  <block id="5ca104d2b413ecd234583f40c3a808b8" category="list-text"><block ref="5ca104d2b413ecd234583f40c3a808b8" category="inline-link-macro-rx"></block></block>
   <block id="7e33105c99e1040a1b09764052c96bf6" category="list-text"><block ref="7e33105c99e1040a1b09764052c96bf6" category="inline-xref-macro-rx"></block></block>
   <block id="b9d025f755210db0c30935ae2494f820" category="list-text"><block ref="b9d025f755210db0c30935ae2494f820" category="inline-xref-macro-rx"></block></block>
   <block id="9eecd7c0744f77d1f15658bd0a02f1b2" category="list-text"><block ref="9eecd7c0744f77d1f15658bd0a02f1b2" category="inline-xref-macro-rx"></block></block>
@@ -12307,4 +12298,8 @@
   <block id="e12535c6360c5dad15589e14aca41e3a" category="list-text"><block ref="e12535c6360c5dad15589e14aca41e3a" category="inline-link-macro-rx"></block></block>
   <block id="7661478d2706b156c56055536f2e93da" category="list-text"><block ref="7661478d2706b156c56055536f2e93da" category="inline-link-rx"></block></block>
   <block id="324fcb27182f60b1051fad39c080b193" category="doc">ボリュームSnapshotをバックアップします</block>
+  <block id="cd7c96dd340046e8b1a1ed84b73227c0" category="summary">SolidFire ストレージシステムでは、テナントはアカウントを使用してクライアントがクラスタ上のボリュームに接続できるようにすることができます。SolidFire ストレージシステムのクラスタ管理者アカウントを管理することもできます。</block>
+  <block id="d69a8eaf0dfea73cf60506f2c945b71e" category="paragraph">SolidFire ストレージシステムでは、テナントはアカウントを使用してクライアントがクラスタ上のボリュームに接続できるようにすることができます。ボリュームは、作成時に特定のアカウントに割り当てられます。SolidFire ストレージシステムのクラスタ管理者アカウントを管理することもできます。</block>
+  <block id="f22f8c5563a22eebf5e40a4e6776b17e" category="list-text"><block ref="f22f8c5563a22eebf5e40a4e6776b17e" category="inline-link-macro-rx"></block></block>
+  <block id="270743fb35c053386e4a4cdf6792cc48" category="list-text"><block ref="270743fb35c053386e4a4cdf6792cc48" category="inline-link-macro-rx"></block></block>
 </blocks>

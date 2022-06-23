@@ -27,7 +27,7 @@ entries:
   - title: フィードバックを提供する
     url: "/storage/task_intro_provide_feedback.html"
 - title: アカウントを管理
-  url: "/storage/concept_system_manage_account_management.html"
+  url: "/storage/concept_system_manage_accounts_overview.html"
   entries:
   - title: CHAPを使用してアカウントを操作します
     url: "/storage/task_data_manage_accounts_work_with_accounts_task.html"

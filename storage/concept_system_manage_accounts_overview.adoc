@@ -1,0 +1,26 @@
+---
+permalink: storage/concept_system_manage_accounts_overview.html 
+sidebar: sidebar 
+keywords: element, chap, cluster, accounts, administrator 
+summary: SolidFire ストレージシステムでは、テナントはアカウントを使用してクライアントがクラスタ上のボリュームに接続できるようにすることができます。SolidFire ストレージシステムのクラスタ管理者アカウントを管理することもできます。 
+---
+= アカウントを管理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire ストレージシステムでは、テナントはアカウントを使用してクライアントがクラスタ上のボリュームに接続できるようにすることができます。ボリュームは、作成時に特定のアカウントに割り当てられます。SolidFire ストレージシステムのクラスタ管理者アカウントを管理することもできます。
+
+* link:task_data_manage_accounts_work_with_accounts_task.html["CHAPを使用してアカウントを操作します"]
+* link:concept_system_manage_manage_cluster_administrator_users.html["クラスタ管理者のユーザアカウントを管理します"]
+
+
+
+
+== を参照してください。
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
+
