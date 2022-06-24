@@ -11108,25 +11108,6 @@
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">プライバシーポリシー</block>
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
-  <block id="eb3c130e264688a3a29d73ad802f6f63" category="paragraph">通知ファイルには、サードパーティの著作権およびライセンスに関する情報が記載されています。</block>
-  <block id="fbcc1cb0e2a70eff701965a5f3e0d76b" category="inline-link-macro">Ember OS 12.3 の注意</block>
-  <block id="fd9a4be3d806a4349b944f9bfba66d2f" category="list-text"><block ref="fd9a4be3d806a4349b944f9bfba66d2f" category="inline-link-macro-rx"></block></block>
-  <block id="43551c29e9ac231743a69c265f5ef85c" category="inline-link-macro">管理ノード 12.3 についての注意</block>
-  <block id="75a6ef9f6db80c36c759ab0d75ce6a00" category="list-text"><block ref="75a6ef9f6db80c36c759ab0d75ce6a00" category="inline-link-macro-rx"></block></block>
-  <block id="61cd5267ad49d97d8c6a8799b4590b34" category="inline-link-macro">管理サービス 2.18 に関する注意事項</block>
-  <block id="a32fc98c3fcd85bfbaec869e06369054" category="list-text"><block ref="a32fc98c3fcd85bfbaec869e06369054" category="inline-link-macro-rx"></block></block>
-  <block id="6a277dcdcf3e292a520228548566382d" category="inline-link-macro">管理サービス 2.17.56 に関する注意事項</block>
-  <block id="a13f8370935ba66df60b71ed88c770a4" category="list-text"><block ref="a13f8370935ba66df60b71ed88c770a4" category="inline-link-macro-rx"></block></block>
-  <block id="a7f3524da37a8fea65e29d2411b8d139" category="inline-link-macro">管理サービス 2.17.52 に関する注意事項</block>
-  <block id="c4b0c1a013a1ecb5b81326f9c346a81a" category="list-text"><block ref="c4b0c1a013a1ecb5b81326f9c346a81a" category="inline-link-macro-rx"></block></block>
-  <block id="0ee51fae49898e7b795797b58419f657" category="inline-link-macro">管理サービス 2.16 に関する注意事項</block>
-  <block id="72f5ccb1ed4b7e177d8ae3b465eef55a" category="list-text"><block ref="72f5ccb1ed4b7e177d8ae3b465eef55a" category="inline-link-macro-rx"></block></block>
-  <block id="1dfa4a8c715814e4b02560de4804ce2d" category="inline-link-macro">管理サービス 2.14 に関する注意事項</block>
-  <block id="508fdda0cae73a3702d387c360f820fa" category="list-text"><block ref="508fdda0cae73a3702d387c360f820fa" category="inline-link-macro-rx"></block></block>
-  <block id="b299d2f02ed62ade4c836e18fedda400" category="inline-link-macro">管理サービス 2.13 に関する注意事項</block>
-  <block id="4c906abe4e1aa56f6ecc4fc5bb0dac85" category="list-text"><block ref="4c906abe4e1aa56f6ecc4fc5bb0dac85" category="inline-link-macro-rx"></block></block>
-  <block id="a6e60f5446d407aa42b1293e56f2cb42" category="inline-link-macro">NetApp SolidFire エンタープライズ SDS に関するお知らせです</block>
-  <block id="b96897a2164001e55b7cb0f0b7883d94" category="list-text"><block ref="b96897a2164001e55b7cb0f0b7883d94" category="inline-link-macro-rx"></block></block>
   <block id="2e5993f9d970daebf225967bb1e45acc" category="inline-link-macro">ストレージファームウェアバンドル 2.99.2 に関する注意事項</block>
   <block id="96d39df4d07a61aada740f0716155f51" category="list-text"><block ref="96d39df4d07a61aada740f0716155f51" category="inline-link-macro-rx"></block></block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
@@ -11194,8 +11175,6 @@
   <block id="96ba39f59d895d814d38db0ef8c583fd" category="list-text">フォールトトレランス：カスタムの保護ドメインの 1 つで障害が発生した場合にデータ損失を防ぐために、ストレージクラスタに十分な空き容量が確保されています。</block>
   <block id="e453e93ae1af3155f2774b6b529f8ed9" category="list-text">障害への耐障害性：カスタムの保護ドメインの 1 つに障害が発生した場合に自己回復可能な十分な空き容量がストレージクラスタにある。修復プロセスの完了後、他のドメインで障害が発生してもクラスタはデータ損失から保護されます。</block>
   <block id="2d50fad3ab9a441a87882c17c13f0bae" category="paragraph">複数のカスタム保護ドメインが割り当てられている場合、各サブシステムは重複を個別のカスタム保護ドメインに割り当てます。これができない場合は、重複したデータが別のノードに割り当てられます。各サブシステム（ビン、スライス、プロトコルエンドポイントプロバイダ、アンサンブルなど）は、それぞれ独立して機能します。</block>
-  <block id="bd77f2754e5c1c371ba7793ef5fe29b4" category="list-text"><block ref="6702e5c49e3601276668962e5917edde" category="inline-link-macro-rx"></block> - 各ノードがどのシャーシに配置されているか、およびどのカスタム保護ドメインが表示されます。</block>
-  <block id="1508ab090b8072419802560c24117082" category="list-text"><block ref="c488c3c5d50768a853ca2b4d12fca704" category="inline-link-macro-rx"></block> - 各ノードにカスタム保護ドメインを割り当てることができます。</block>
   <block id="b5a4b64b2aa505bd7c11f79b8a9f458d" category="cell">解決策：</block>
   <block id="0f7229b82509dba67fd326002f94b558" category="inline-link-macro">HPE DL380 のドライブを交換</block>
   <block id="be51a55dd3e1d87adc0cfa8354012eb4" category="list-text"><block ref="be51a55dd3e1d87adc0cfa8354012eb4" category="inline-link-macro-rx"></block></block>
@@ -11212,10 +11191,6 @@
   <block id="08a481e768a7e6b16029a890ff83c01c" category="list-text">クラスタから削除したノードに SSH を使用して接続します。</block>
   <block id="97536cbfae1b231373bcd97b10deb15c" category="paragraph">動的ノード評価は、現在 ESDS でサポートされているすべてのプラットフォーム（ DL360 、 DL380 、 R640 ）でサポートされています。</block>
   <block id="24bc1a938f18ccc15e42f585341c44d5" category="paragraph">ノードの動的な評価の初回リリースでは、どのノードでも最大 IOPS 定格は 100K です。</block>
-  <block id="24e9da091f15f10b8da793e19b340302" category="inline-link-macro">Ember OS 12.3.1 の注意</block>
-  <block id="53b5781a15ca0bf5e3350b448255d082" category="list-text"><block ref="53b5781a15ca0bf5e3350b448255d082" category="inline-link-macro-rx"></block></block>
-  <block id="26c74f7a8ac6a7c8cdb0def0e876263d" category="inline-link-macro">管理ノード 12.3.1 の通知です</block>
-  <block id="047152327178a19c354a2a92281da90f" category="list-text"><block ref="047152327178a19c354a2a92281da90f" category="inline-link-macro-rx"></block></block>
   <block id="c099da1e7198d2f1407d45eef0d02a48" category="inline-link">Element デモノード</block>
   <block id="fae634e54f6a24eca87a92f1d78df928" category="paragraph"><block ref="e1baf480e2c2d0517c80b4748e50de89" category="inline-link-rx"></block> は、 VMware の Virtual Machine （ VM ；仮想マシン）バージョンの Element ソフトウェアであり、 NetApp HCI と SolidFire 製品の主要なストレージ機能の多くを簡単にデモできます。開発者は、デモノードを使用することで、物理ハードウェアを必要とせずに Element API に対してコードを実行できます。VMware の導入を容易にする OVA ファイルとしてパッケージ化されています。</block>
   <block id="baae0a76ecbb6b197350ee0618576960" category="inline-link">Element のデモノードのダウンロードページ（ログインが必要）</block>
@@ -12206,9 +12181,6 @@
   <block id="5c2dfac41e0fdae2b2af5a185bd13a44" category="list-text">* Secondary Node ID *：このボリュームのセカンダリノードのリスト。セカンダリノードの変更など、一時的な状態では複数の値を指定できますが、通常は1つの値が使用されます。</block>
   <block id="92cbb89e687486d046f0af2031e1de69" category="list-text">* QoSスロットル*：プライマリストレージノードの負荷が高いためにボリュームのスロットルが調整されているかどうかを特定します。</block>
   <block id="16deeb1542b48d5c3cc48574bd812c77" category="list-text">supportAdmin</block>
-  <block id="1c99ab1d6f1bd835e71ce34f57021bf2" category="summary">カスタム保護ドメインレイアウトを定義できます。各ノードは 1 つのカスタム保護ドメインのみに関連付けられます。デフォルトでは、各ノードは同じデフォルトのカスタム保護ドメインに割り当てられます。</block>
-  <block id="5973fb594f77dc8b3479a7d06ec53911" category="paragraph">シャーシおよびノードの特定のレイアウトに一致するカスタム保護ドメインレイアウトを定義できます。</block>
-  <block id="6e599ec445b85acc8e9d5e5e62c0612c" category="paragraph">Element UI を使用して、を実行できます <block ref="207ccb2cb37becc35a7f5fde670b328f" category="inline-link-macro-rx"></block>または、次の API メソッドを使用できます。</block>
   <block id="da55ae5c0f3e2b8fbec3529ced565e0a" category="paragraph"><block ref="da55ae5c0f3e2b8fbec3529ced565e0a" category="inline-link-macro-rx"></block></block>
   <block id="74fdf94991a3d3c1590a208535b101cc" category="list-text">[[cssum_event]]* cSumEvent*</block>
   <block id="2c33c7444ec9022ae43511db98615b15" category="paragraph">エンドツーエンドのチェックサム検証中にチェックサム不一致が検出された場合に関連するイベント。</block>
@@ -12236,8 +12208,6 @@
   <block id="07cf8fd6e47576d971bbe1a1f3791d23" category="cell">SetProtectionDomainLayout に失敗しました : 保護ドメインタイプ 'custom' スプリット保護ドメインタイプ 'chassis' 。</block>
   <block id="74edc88174dceefbbbb11b9aba21d425" category="cell">マルチノードシャーシのノードには、シャーシ内の他のノードとは異なる保護ドメインが割り当てられます。</block>
   <block id="49c71a7c59d3ffac02af2e11f20c6903" category="cell">シャーシ内のすべてのノードに同じ保護ドメインが割り当てられていることを確認します。</block>
-  <block id="29a6f38cbca29e0f3bdeecf96eb0b27a" category="paragraph"><block ref="b58e8d039996e87c7075e998e2dbe5e4" category="inline-link-macro-rx"></block>
-<block ref="da55ae5c0f3e2b8fbec3529ced565e0a" category="inline-link-macro-rx"></block></block>
   <block id="da8bff445c6c74f2506b1cfb6b3ca63f" category="sidebar">Elementソフトウェア12.5向けにNetApp SolidFire オールフラッシュストレージシステムをアップグレード</block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">カスタムの保護ドメインを設定する</block>
   <block id="e606a329fd1c8e2f2543e5fd1dce6af5" category="doc">リモートのネットアップサポートセッションを開始します</block>
@@ -12302,4 +12272,5 @@
   <block id="d69a8eaf0dfea73cf60506f2c945b71e" category="paragraph">SolidFire ストレージシステムでは、テナントはアカウントを使用してクライアントがクラスタ上のボリュームに接続できるようにすることができます。ボリュームは、作成時に特定のアカウントに割り当てられます。SolidFire ストレージシステムのクラスタ管理者アカウントを管理することもできます。</block>
   <block id="f22f8c5563a22eebf5e40a4e6776b17e" category="list-text"><block ref="f22f8c5563a22eebf5e40a4e6776b17e" category="inline-link-macro-rx"></block></block>
   <block id="270743fb35c053386e4a4cdf6792cc48" category="list-text"><block ref="270743fb35c053386e4a4cdf6792cc48" category="inline-link-macro-rx"></block></block>
+  <block id="d42c0305f510d1b93b9961f158db9d17" category="list-text"><block ref="d42c0305f510d1b93b9961f158db9d17" category="inline-link-macro-rx"></block></block>
 </blocks>

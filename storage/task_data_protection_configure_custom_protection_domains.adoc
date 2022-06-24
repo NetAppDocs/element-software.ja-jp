@@ -56,5 +56,6 @@ CAUTION: 変更を適用する前に、ノードとシャーシのレイアウ�
 
 == 詳細については、こちらをご覧ください
 
-link:concept_intro_custom_protection_domains.html["カスタムの保護ドメイン"^]
-link:../api/index.html["Element API を使用してストレージを管理します"^]
+* link:../concepts/concept_solidfire_concepts_data_protection.html#custom_pd["カスタムの保護ドメイン"^]
+* link:../api/index.html["Element API を使用してストレージを管理します"^]
+
