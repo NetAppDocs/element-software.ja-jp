@@ -2,7 +2,7 @@
 permalink: storage/task_snapmirror_use_replication_between_element_and_ontap_clusters.html 
 sidebar: sidebar 
 keywords: replication, snapmirror, data protection 
-summary: SnapMirror 関係は、 NetAppElement UI のデータ保護タブで作成できます。この情報をユーザインターフェイスで確認するには、 SnapMirror 機能を有効にする必要があります。 
+summary: SnapMirror関係は、NetApp Element UIのデータ保護タブから作成できます。この情報をユーザインターフェイスで確認するには、 SnapMirror 機能を有効にする必要があります。 
 ---
 = Element クラスタと ONTAP クラスタの間で SnapMirror レプリケーションを使用
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: SnapMirror 関係は、 NetAppElement UI のデータ保護タブで作
 
 
 [role="lead"]
-SnapMirror 関係は、 NetAppElement UI のデータ保護タブで作成できます。この情報をユーザインターフェイスで確認するには、 SnapMirror 機能を有効にする必要があります。
+SnapMirror関係は、NetApp Element UIのデータ保護タブから作成できます。この情報をユーザインターフェイスで確認するには、 SnapMirror 機能を有効にする必要があります。
 
 NetApp Element ソフトウェアクラスタと ONTAP クラスタの間の SnapMirror レプリケーションでは、 IPv6 はサポートされていません。
 

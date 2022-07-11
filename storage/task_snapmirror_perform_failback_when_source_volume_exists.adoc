@@ -2,7 +2,7 @@
 permalink: storage/task_snapmirror_perform_failback_when_source_volume_exists.html 
 sidebar: sidebar 
 keywords: failback, perform, source volume, snapmirror, ui 
-summary: NetAppElement UI を使用して、元のソースボリュームを再同期し、フェイルバックを実行できます。元のソースボリュームがまだ存在している手順環境のシナリオです。 
+summary: NetApp Element UIを使用して、元のソースボリュームを再同期し、フェイルバックを実行できます。元のソースボリュームがまだ存在している手順環境のシナリオです。 
 ---
 = ソースボリュームが存在する場合は、フェイルバックを実行します
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: NetAppElement UI を使用して、元のソースボリュームを再
 
 
 [role="lead"]
-NetAppElement UI を使用して、元のソースボリュームを再同期し、フェイルバックを実行できます。元のソースボリュームがまだ存在している手順環境のシナリオです。
+NetApp Element UIを使用して、元のソースボリュームを再同期し、フェイルバックを実行できます。元のソースボリュームがまだ存在している手順環境のシナリオです。
 
 . Element UI で、フェイルオーバーを実行するために解除する関係を探します。
 . アクションアイコンをクリックし、 * 逆再同期 * をクリックします。

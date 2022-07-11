@@ -2,7 +2,7 @@
 permalink: storage/task_snapmirror_create_an_endpoint.html 
 sidebar: sidebar 
 keywords: endpoints, create, snapmirror, ui 
-summary: 関係を作成する前に、 NetApp Element UI で SnapMirror エンドポイントを作成する必要があります。 
+summary: 関係を作成する前に、NetApp Element UIでSnapMirrorエンドポイントを作成する必要があります。 
 ---
 = SnapMirror エンドポイントを作成します
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 関係を作成する前に、 NetApp Element UI で SnapMirror エン�
 
 
 [role="lead"]
-関係を作成する前に、 NetApp Element UI で SnapMirror エンドポイントを作成する必要があります。
+関係を作成する前に、NetApp Element UIでSnapMirrorエンドポイントを作成する必要があります。
 
 SnapMirror エンドポイントは、 Element ソフトウェアを実行するクラスタのレプリケーションターゲットとして機能する ONTAP クラスタです。SnapMirror 関係を作成する前に、まず SnapMirror エンドポイントを作成します。
 

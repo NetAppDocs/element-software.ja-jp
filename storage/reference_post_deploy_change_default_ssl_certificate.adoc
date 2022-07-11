@@ -11,7 +11,7 @@ summary: NetApp Element API を使用して、クラスタ内のストレージ�
 
 
 [role="lead"]
-NetAppElement API を使用して、クラスタ内のストレージノードのデフォルト SSL 証明書と秘密鍵を変更できます。
+NetApp Element API を使用して、クラスタ内のストレージノードのデフォルト SSL 証明書と秘密鍵を変更できます。
 
 NetApp Element ソフトウェアクラスタを作成すると、一意の自己署名 Secure Sockets Layer （ SSL ）証明書と、 Element UI 、ノード UI 、またはノード API を介したすべての HTTPS 通信に使用される秘密鍵が作成されます。Element ソフトウェアは、自己署名証明書に加え、信頼できる認証局（ CA ）が発行して検証する証明書をサポートします。
 
