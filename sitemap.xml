@@ -832,21 +832,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/ja-jp/element-software/setup/</loc>
-      
-      <lastmod>2022-04-18T06:31:56+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/ja-jp/element-software/concepts/</loc>
-      
-      <lastmod>2022-04-18T06:31:56+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/ja-jp/element-software/esds/</loc>
       
       <lastmod>2022-04-18T06:31:56+00:00</lastmod>
       
@@ -860,6 +846,27 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/ja-jp/element-software/api/</loc>
+      
+      <lastmod>2022-04-18T06:31:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/element-software/setup/</loc>
+      
+      <lastmod>2022-04-18T06:31:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/element-software/esds/</loc>
+      
+      <lastmod>2022-04-18T06:31:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/ja-jp/element-software/storage/</loc>
       
       <lastmod>2022-06-23T11:43:37+00:00</lastmod>
@@ -868,13 +875,6 @@
   
     <url>
       <loc>https://docs.netapp.com/ja-jp/element-software/hardware/</loc>
-      
-      <lastmod>2022-04-18T06:31:56+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/ja-jp/element-software/api/</loc>
       
       <lastmod>2022-04-18T06:31:56+00:00</lastmod>
       
@@ -4122,14 +4122,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/ja-jp/element-software/storage/reference_trademark.html</loc>
+      <loc>https://docs.netapp.com/ja-jp/element-software/api/reference_trademark.html</loc>
       
       <lastmod>2022-04-18T06:31:56+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/ja-jp/element-software/api/reference_trademark.html</loc>
+      <loc>https://docs.netapp.com/ja-jp/element-software/storage/reference_trademark.html</loc>
       
       <lastmod>2022-04-18T06:31:56+00:00</lastmod>
       
@@ -4138,7 +4138,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/element-software//search.html</loc>
       
-      <lastmod>2022-07-11T15:32:12+00:00</lastmod>
+      <lastmod>2022-07-19T11:29:56+00:00</lastmod>
       
     </url>
   
@@ -5179,14 +5179,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/ja-jp/element-software/setup/task_setup_configure_fqdn_web_ui_access.html</loc>
+      <loc>https://docs.netapp.com/ja-jp/element-software/hccstorage/task-setup-configure-fqdn-web-ui-access.html</loc>
       
       <lastmod>2022-05-16T14:23:48+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/ja-jp/element-software/hccstorage/task-setup-configure-fqdn-web-ui-access.html</loc>
+      <loc>https://docs.netapp.com/ja-jp/element-software/setup/task_setup_configure_fqdn_web_ui_access.html</loc>
       
       <lastmod>2022-05-16T14:23:48+00:00</lastmod>
       
