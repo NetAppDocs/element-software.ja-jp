@@ -6,6 +6,7 @@ summary: VLAN 名、ネットマスク、 IP アドレスブロックのサイ�
 ---
 = 仮想ネットワークを編集します
 :allow-uri-read: 
+:url-peak: https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_determine_which_VLAN_IP%27s_are_in_use_and_which_nodes_those_IP%27s_are_assigned_to_in_Element
 :icons: font
 :imagesdir: ../media/
 
@@ -35,6 +36,6 @@ IP アドレスブロックは、次の手順を使用して追加できます�
 
 VLAN IP アドレス範囲の管理に関する問題のトラブルシューティングについては、ナレッジベースの記事へのリンクを参照してください。
 
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Duplicate_IP_warning_after_adding_a_storage_node_in_VLAN_on_Element_cluster["Element クラスタの VLAN にストレージノードを追加したあとに IP に関する警告が重複して発生しています"]
-* link:++https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_determine_which_VLAN_IP's_are_in_use_and_which_nodes_those_IP's_are_assigned_to_in_Element++["使用中の VLAN IP と Element で IP が割り当てられているノードを確認する方法"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Duplicate_IP_warning_after_adding_a_storage_node_in_VLAN_on_Element_cluster["Element クラスタの VLAN にストレージノードを追加したあとに IP に関する警告が重複して発生しています"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_determine_which_VLAN_IP%27s_are_in_use_and_which_nodes_those_IP%27s_are_assigned_to_in_Element["使用中の VLAN IP と Element で IP が割り当てられているノードを確認する方法"^]
 

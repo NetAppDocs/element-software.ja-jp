@@ -78,7 +78,7 @@ homepage:
     - title: SolidFire ESDS の概要
       url: "/esds/concept_get_started_esds.html"
     - title: クイックスタート
-      url: https://review.docs.netapp.com/us-en/element-software_element_tile_restructure_doc-3473/media/SDS_Quick_Start_Guide.pdf
+      url: https://docs.netapp.com/us-en/element-software/media/SDS_Quick_Start_Guide.pdf
     - title: インストールの要件
       url: "/esds/concept_esds_prerequisite_tasks.html"
     - title: ストレージを管理します
