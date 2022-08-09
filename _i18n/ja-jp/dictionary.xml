@@ -12272,4 +12272,12 @@
   <block id="70659e4f9824d888c2aa77344aaa46c4" category="list-text"><block ref="70659e4f9824d888c2aa77344aaa46c4" category="inline-link-rx"></block></block>
   <block id="0ea391471e626f95079246bfd0ab48f9" category="paragraph">NetApp Element Plug-in for vCenter ServerのSIOCパスワードは_QoSSIOCパスワードとも呼ばれます。 </block>
   <block id="0ba7ef8feca0e0b45134473e9c3182d4" category="paragraph">｛url-peak｝[ Element Plug-in for vCenter Serverの技術情報アーティクル^]を確認します。</block>
+  <block id="3bf9f01521140ec88c2161d9f808b379" category="paragraph">Element 12.5以降では、シリアル作成を有効にし、UIからFIFO（First-In First-Out）ベースでスナップショットを保持するよう選択できます。</block>
+  <block id="5beca424202dedf9ea56fe2a0a6d24f6" category="list-text">Enable Serial Creation *オプションは、一度にレプリケートするSnapshotを1つだけ指定します。以前のSnapshotレプリケーションがまだ実行中の場合、新しいSnapshotの作成は失敗します。このチェックボックスをオフにすると、別のSnapshotレプリケーションがまだ実行中のときにSnapshotを作成できます。</block>
+  <block id="70342af84cb4a95a09688a4c7e780637" category="list-text">*fifo*オプションは、最新のスナップショットを一貫した数だけ保持する機能を追加します。このチェックボックスをオンにすると、スナップショットはFIFOベースで保持されます。FIFOスナップショットのキューが最大深さに達すると、新しいFIFOスナップショットが挿入されると、最も古いFIFOスナップショットは破棄されます。</block>
+  <block id="b576ad045524fd70facc357a10b32b10" category="list-text">[*データ保護*&gt;*スケジュール*]を選択します。</block>
+  <block id="e514a3adc1ea9d298a7e9ab19078872e" category="list-text">*オプション：*シリアル作成を有効にする*チェックボックスをオンにして、一度に1つのスナップショットのみが複製されるようにします。</block>
+  <block id="3c508c424a766cdd354ff2b5f471ceb9" category="list-text">*オプション：* FIFO（先入れ先出し）*チェックボックスをオンにして、最新のスナップショットの数が一定になるようにします。</block>
+  <block id="3905d1636a9d67ee561424a8bc5551a7" category="list-text">「* Forever *」を選択すると、Snapshotがシステム上に無期限に保持されます。</block>
+  <block id="627fb665998dc47f162df6850e3bb211" category="list-text">[*保持期間の設定*]を選択し、日付スピンボックスを使用して、システムがスナップショットを保持する期間を選択します。</block>
 </blocks>
