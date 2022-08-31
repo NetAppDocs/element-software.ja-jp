@@ -474,7 +474,6 @@
   <block id="09bfac84403d33379e533954403b0f94" category="list-text">仮想マシンの CPU およびストレージ関連情報</block>
   <block id="d13de4a83d7b44c2e65495def8ef1c7b" category="section-title">を参照してください。</block>
   <block id="8f7f4baec8aa05a765ec83446ad7d0c6" category="inline-link">ネットアップサポートサイトと Active IQ 用ツール</block>
-  <block id="a93cab242c29bc1f7ed010aedb157dab" category="list-text"><block ref="1a3a02f863c93340fc1be395cd8c98c0" category="inline-link-rx"></block></block>
   <block id="f1d02ef71e655f874094154fe26955ae" category="summary">クラスタは、 SolidFire ストレージシステムの中心であり、複数のノードで構成されます。SolidFire のストレージ効率化を実現するには、クラスタに少なくとも 4 つのノードが必要です。クラスタはネットワーク上では 1 つの論理グループとして認識され、ブロックストレージとしてアクセスできます。</block>
   <block id="9b99bf7d2bfd4b09363304c166832734" category="doc">クラスタ</block>
   <block id="c31f538ab7ed22954b3c941becbca20b" category="paragraph">新しいクラスタを作成すると、 1 つのノードがそのクラスタの通信の所有者として初期化され、クラスタ内の各ノードに対してネットワーク通信が確立されます。このプロセスは、新しいクラスタごとに 1 回だけ実行します。Element UI または API を使用してクラスタを作成できます。</block>
@@ -12280,4 +12279,12 @@
   <block id="3c508c424a766cdd354ff2b5f471ceb9" category="list-text">*オプション：* FIFO（先入れ先出し）*チェックボックスをオンにして、最新のスナップショットの数が一定になるようにします。</block>
   <block id="3905d1636a9d67ee561424a8bc5551a7" category="list-text">「* Forever *」を選択すると、Snapshotがシステム上に無期限に保持されます。</block>
   <block id="627fb665998dc47f162df6850e3bb211" category="list-text">[*保持期間の設定*]を選択し、日付スピンボックスを使用して、システムがスナップショットを保持する期間を選択します。</block>
+  <block id="ef9cbe434b5f28c847ba96be9c26f253" category="list-text">CPU、メモリ使用量、ノードスロットルをグラフィカルに表示します</block>
+  <block id="7aa85da92a1cd23b2981568643e3da1c" category="inline-link">SolidFire Active IQ のドキュメント</block>
+  <block id="f02632134f46548247abd92a38e5f73e" category="paragraph">SolidFire Active IQ の詳細については、を参照してください<block ref="3422f40bd7bba6370d69142070e812b4" category="inline-link-rx"></block>。</block>
+  <block id="1a1a6c5ed33ecaf055e3e38150525306" category="list-text"><block ref="11e28499cd7c9c7d408304fbab2a1320" category="inline-link-rx"></block></block>
+  <block id="56ee8203bf76c58f39596dab101d98d5" category="list-text">Quality of Service（QoS；サービス品質）などのActive IQ の一部の機能を正しく機能させるには、Element 11.3以降が必要です。Active IQ のすべての機能を使用できることを確認するために、次のことを推奨します。</block>
+  <block id="469eaba8a7048afa0ba6f8eb91801de9" category="doc">SolidFire Active IQ でストレージを監視</block>
+  <block id="45f40a7365f71f3eafc4489e01e9aa82" category="sidebar">NetApp SolidFire Active IQ でストレージを監視</block>
+  <block id="d8d2cf4b5fd1196b5be39dd3b93ba995" category="sidebar">NetApp SolidFire Active IQ を使用する</block>
 </blocks>

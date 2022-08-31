@@ -35,6 +35,8 @@ sidebar:
   - section: api
   - title: Element Plug-in for vCenter Server を使用してストレージを管理（リンク）
     url: https://docs.netapp.com/us-en/vcp/
+  - title: NetApp SolidFire Active IQ でストレージを監視
+    url: "/monitor-storage-active-iq.html"
   - section: mnode
   - section: upgrade
   - title: 以前のバージョン
@@ -71,6 +73,8 @@ homepage:
       url: "/api/index.html"
     - title: Element Plug-in for vCenter Server を使用します
       url: https://docs.netapp.com/us-en/vcp/
+    - title: NetApp SolidFire Active IQ を使用する
+      url: https://docs.netapp.com/us-en/solidfire-active-iq/
     - title: 管理ノードを操作します
       url: "/mnode/task_mnode_work_overview.html"
   - title: SolidFire エンタープライズ SDS をインストールして使用します

@@ -1,16 +1,7 @@
----
-permalink: concepts/concept_intro_solidfire_active_iq.html 
-sidebar: sidebar 
-keywords: solidfire, active, iq, activeiq, tool, aiq 
-summary: Active IQ は、クラスタ全体のデータの履歴ビューを提供する Web ベースのツールです。ビューは定期的に更新されます。特定のイベント、しきい値、または指標にアラートを設定できます。Active IQ を使用すると、システムのパフォーマンスと容量を監視し、クラスタの健常性を常に把握できます。 
----
-= SolidFire Active IQ の略
+= を参照してください。
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
 
-[role="lead"]
 https://activeiq.solidfire.com["SolidFire Active IQ の略"^] は、クラスタ全体のデータの履歴ビューを提供する Web ベースのツールです。ビューは定期的に更新されます。特定のイベント、しきい値、または指標にアラートを設定できます。SolidFire Active IQ を使用すると、システムのパフォーマンスと容量を監視し、クラスタの健常性を常に把握できます。
 
 システムに関する次の情報は、 SolidFire Active IQ で確認できます。

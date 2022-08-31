@@ -1,22 +1,6 @@
----
-sidebar: sidebar 
-permalink: mnode/task_mnode_enable_activeIQ.html 
-summary: 管理ノード（ mNode ）を使用して、 SolidFire オールフラッシュストレージで Active IQ を有効にすることができます。 
-keywords: netapp, Element, api, enable, active iq, activeiq 
----
-= Active IQ とネットアップによる監視を有効にします
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ../media/
 
-
-[role="lead"]
-インストールまたはアップグレード時に Active IQ ストレージの監視を有効にしていない場合、有効にすることができます。SolidFire オールフラッシュストレージシステムのインストール時に SolidFire Active IQ をセットアップしなかった場合は、この手順の使用が必要になることがあります。
-
-Active IQ コレクタサービスは、履歴データのレポートおよびほぼリアルタイムのパフォーマンス監視用に、設定データと Element ソフトウェアベースのクラスタパフォーマンス指標を SolidFire Active IQ に転送します。ネットアップ監視サービスを使用すると、ストレージクラスタのエラーを vCenter に転送してアラート通知を送信できます。
 
 .作業を開始する前に
 * Quality of Service（QoS；サービス品質）などのActive IQ の一部の機能を正しく機能させるには、Element 11.3以降が必要です。Active IQ のすべての機能を使用できることを確認するために、次のことを推奨します。
@@ -105,40 +89,4 @@ Active IQ サービスは、アセットが変更されるたびに自動的に�
 
 
 
-. NetApp Hybrid Cloud Control の vCenter コントローラアセットをまだ追加していない場合は、管理ノードの既知のアセットに追加します。
-+
-
-NOTE: ネットアップ監視サービスにはコントローラアセットが必要です。
-
-+
-.. コントローラサブアセットを追加する場合は、「 * POST /assets/｛ asset_id ｝ /controllers * 」を選択します。
-.. [* 試してみてください * ] を選択します。
-.. クリップボードにコピーした親ベースアセットの ID を * asset_id * フィールドに入力します。
-.. 必要なペイロード値を「 type 」に「 vcenter 」、 vCenter クレデンシャルを指定して入力します。
-+
-[listing]
-----
-{
-"username": "string",
-"password": "string",
-"ip": "string",
-"type": "vCenter",
-"host_name": "string",
-"config": {}
-}
-----
-+
-
-NOTE: 「 ip 」は vCenter の IP アドレスです。
-
-.. [* Execute] を選択します。
-
-
-
-
-[discrete]
-== 詳細については、こちらをご覧ください
-
-* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
 
