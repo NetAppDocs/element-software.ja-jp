@@ -469,7 +469,6 @@
   <block id="7d640bfdd148f102df423b6e94b11571" category="paragraph"><block ref="15098cd863d8945571eb3fa1cb63a7fe" category="inline-link-rx"></block> は、クラスタ全体のデータの履歴ビューを提供する Web ベースのツールです。ビューは定期的に更新されます。特定のイベント、しきい値、または指標にアラートを設定できます。SolidFire Active IQ を使用すると、システムのパフォーマンスと容量を監視し、クラスタの健常性を常に把握できます。</block>
   <block id="841b3da78955b4e942c8bd5ffddca29e" category="paragraph">システムに関する次の情報は、 SolidFire Active IQ で確認できます。</block>
   <block id="4cea75009713f3eadbea7bd906d0523e" category="list-text">ノードの数とステータス：健全、オフライン、またはエラー</block>
-  <block id="1d60ceb1c0eb7b235010f9d4f656f6d7" category="list-text">CPU とメモリの使用状況をグラフィカルに表示します</block>
   <block id="390ad22ea22a7a4699d87e2efaa0c84e" category="list-text">シリアル番号、シャーシ内のスロットの場所、モデル、ストレージノードで実行されている NetApp Element ソフトウェアのバージョンなど、ノードに関する詳細</block>
   <block id="09bfac84403d33379e533954403b0f94" category="list-text">仮想マシンの CPU およびストレージ関連情報</block>
   <block id="d13de4a83d7b44c2e65495def8ef1c7b" category="section-title">を参照してください。</block>
@@ -489,7 +488,6 @@
   <block id="4902bbb0f0792204a931cd6714a07488" category="section-title">信頼できるストレージクラスタです</block>
   <block id="a18ea3a466ff3d7bd70cfb3f7158e88d" category="paragraph">信頼できるストレージクラスタとは、 NetApp Hybrid Cloud Control でユーザの認証に使用するストレージクラスタです。</block>
   <block id="2cd0e9f52d18ccaa56ebdcbb4861e9b3" category="paragraph">管理ノードにストレージクラスタが 1 つしかない場合は、信頼できるクラスタになります。管理ノードに複数のストレージクラスタがある場合は、それらのクラスタのいずれかが権限のあるクラスタとして割り当てられ、そのクラスタのユーザのみが NetApp Hybrid Cloud Control にログインできます。権限のあるクラスタを確認するには、「 get/mnode/about 」 API を使用します。応答では、「 token_url 」フィールドの IP アドレスは、権限のあるストレージクラスタの管理仮想 IP アドレス（ MVIP ）です。信頼できるクラスタにないユーザとして NetApp Hybrid Cloud Control にログインしようとすると、ログインに失敗します。</block>
-  <block id="231614b040b1229fa532738569668845" category="paragraph">NetApp Hybrid Cloud Control の多くの機能は複数のストレージクラスタを使用するように設計されていますが、認証と許可には制限があります。認証と許可に関する制限事項として、信頼できるクラスタのユーザが、他のストレージクラスタのユーザでなくても、 NetApp Hybrid Cloud Control に関連付けられている他のクラスタに対して操作を実行できることがあります。複数のストレージクラスタの管理を開始する前に、権限のあるクラスタで定義されているユーザが同じ権限を持つ他のすべてのストレージクラスタに定義されていることを確認してください。</block>
   <block id="7637537a215094d11d21f8d200622812" category="inline-link-macro">Element ソフトウェアユーザインターフェイス</block>
   <block id="353681e44a9f1004360ad2451b95f66a" category="paragraph">複数のストレージクラスタの管理を開始する前に、権限のあるクラスタで定義されているユーザが同じ権限を持つ他のすべてのストレージクラスタに定義されていることを確認してください。からユーザを管理できます <block ref="c6f9d44a89e7c75fd4726f61bea07a82" category="inline-link-macro-rx"></block>。</block>
   <block id="68f491affafdc67007d139c6e24190b1" category="inline-link-macro">ストレージクラスタアセットを作成および管理する</block>
@@ -1530,7 +1528,6 @@
   <block id="1d571a87e429de32d15e077fd11efa4c" category="paragraph">リモートクラスタのボリュームのボリューム ID 。</block>
   <block id="62fac95c783d4dee37c3fd0105a6842d" category="list-text">* リモートボリューム名 *</block>
   <block id="8ddc2f3b11177418057af7e520d41192" category="paragraph">リモートボリュームの作成時に指定した名前。</block>
-  <block id="148fe9926e292adb5c7374ee88fa6651" category="paragraph">システムに関する次の情報は、 Active IQ で確認できます。</block>
   <block id="b1ff5704b48e42d700d43961dd415064" category="doc">商標です</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp のロゴ、および NetApp の商標ページに記載されているマークは、 NetApp, Inc. の商標です。その他の会社名および製品名は、それぞれの所有者の商標である場合があります。</block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="paragraph"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -2692,9 +2689,6 @@
   <block id="e184b6353db6b97eb8014ea10f962324" category="paragraph">ペア内の各クラスタに指定された一意の ID 。</block>
   <block id="6e9575b9d78c74ecac3c7ffb6cc01291" category="summary">Snapshot スケジュールを削除できます。スケジュールを削除すると、以降のスケジュールされた Snapshot は実行されません。過去にスケジュールで作成された Snapshot はストレージシステム上に保持されます。</block>
   <block id="b5a47ab00ee38fd24f7e8b0828ad2a73" category="list-text">削除するスケジュールの * Actions * アイコンをクリックします。</block>
-  <block id="05da295a52c5ab8bf219722efcc57625" category="summary">サービス品質（ QoS ）パフォーマンス曲線は、ブロックサイズと IOPS の割合の関係を示します。</block>
-  <block id="735a31f1d01fe768279621625e725b79" category="doc">QoS パフォーマンス曲線</block>
-  <block id="18a66bc3ec4b3669a530ba3c51d026aa" category="paragraph">サービス品質（ QoS ）パフォーマンス曲線は、ブロックサイズと IOPS の割合の関係を示しています。</block>
   <block id="0b627a9e309e95034aa647662c6850ba" category="summary">ネットワークタイムプロトコル（ NTP ）を設定するには、次の 2 つの方法があります。クラスタ内の各ノードがブロードキャストをリスンするように指定するか、各ノードで NTP サーバに更新を照会するように指示します。</block>
   <block id="aee40dc887e7ee1a678b3c4f23851b92" category="doc">ネットワークタイムプロトコルを設定します</block>
   <block id="e4fb8fa88e0f62a27817b1b76b7fb1f6" category="paragraph">ネットワークタイムプロトコル（ NTP ）の設定は、次の 2 つの方法のいずれかで行うことができます。クラスタ内の各ノードがブロードキャストをリスンするように指定するか、各ノードで NTP サーバに更新を照会するように指示します。</block>
@@ -3454,18 +3448,6 @@
   <block id="bed13c073d5912ccef92dd70e9357cd2" category="list-text"><block ref="bed13c073d5912ccef92dd70e9357cd2" category="inline-link-macro-rx"></block></block>
   <block id="f3b82e36a84370efe127112e7f219805" category="inline-link-macro">ノードの IPMI パスワードを変更します</block>
   <block id="4aa4554ac18412c09dee47b401202fc0" category="list-text"><block ref="4aa4554ac18412c09dee47b401202fc0" category="inline-link-macro-rx"></block></block>
-  <block id="8bc14f0cb78851f59e85c1d447c2c99f" category="doc">Quality of Service の略</block>
-  <block id="8525478e88fe768020917024e56b3375" category="list-text">* 最小 IOPS *</block>
-  <block id="27e38a475d319fbe8808dbde111a71f4" category="paragraph">ストレージクラスタがボリュームに提供する平常時の最小 IOPS 。ボリュームに設定された Min IOPS は、そのボリュームに対して最低限保証されるパフォーマンスレベルです。パフォーマンスがこのレベルを下回ることはありません。</block>
-  <block id="0eafe666057554f59d8d2c8c24b3e0f3" category="list-text">* 最大 IOPS *</block>
-  <block id="086078d6e9862aa3229698f9f4ea609d" category="paragraph">ストレージクラスタがボリュームに提供する平常時の最大 IOPS 。クラスタの IOPS レベルが非常に高い場合も、 IOPS パフォーマンスはこのレベル以下に抑えられます。</block>
-  <block id="6c3439000c562798f2214c4888ab4ed8" category="paragraph">短時間のバースト時に許容される最大 IOPS 。ボリュームが Max IOPS 未満で動作している間は、バーストクレジットが蓄積されます。パフォーマンスレベルが非常に高くなって最大レベルに達した場合、ボリュームで IOPS の短時間のバーストが許容されます。</block>
-  <block id="21094115b958d315231b910f9b8e8c38" category="paragraph">個々のボリュームは、蓄積したバーストクレジットを使用して、一定の「バースト期間」中は Max IOPS を最大で Burst IOPS レベルまで一時的に超過することができます。ボリュームのバースト時間は最大で 60 秒です。クラスタの容量にバーストに対応できるだけの余力があることが条件になります。</block>
-  <block id="1d817bd510c09dbc5ee3cf5101fa6e94" category="paragraph">ボリュームは、 Max IOPS 未満で動作している 1 秒ごとに、 1 秒分のバーストクレジットを蓄積します（最大 60 秒）。</block>
-  <block id="4fb6dee19a7208b7558396de228b1c1c" category="list-text">* 実効最大帯域幅 *</block>
-  <block id="248da5ca182c3126378490e07f585f5c" category="paragraph">最大帯域幅は、（ QoS 曲線に基づく） IOPS に IO サイズを掛けて計算されます。</block>
-  <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">例</block>
-  <block id="4f88c9126146259f6c0627052d9cda8f" category="paragraph">QoS パラメータを Min IOPS = 100 、 Max IOPS = 1000 、 Burst IOPS = 1500 に設定した場合、パフォーマンスの品質は次のようになります。</block>
   <block id="1aaca5edc4fbf2eb13aafb9dacdd81f0" category="summary">SNMP バージョン 3 を有効にした場合は、許可された SNMP 要求を受信する USM ユーザを設定する必要があります。</block>
   <block id="a363169b1744dccfddf694d199d4a087" category="doc">SNMP USM ユーザを設定します</block>
   <block id="3104b99d314e34f0b267b138695bd206" category="list-text">[*General SNMP Settings*]( 一般的な SNMP 設定 ) で、 [*Yes*]( はい ) をクリックして SNMP を有効</block>
@@ -11090,7 +11072,6 @@
   <block id="96d39df4d07a61aada740f0716155f51" category="list-text"><block ref="96d39df4d07a61aada740f0716155f51" category="inline-link-macro-rx"></block></block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
-  <block id="c653b8edc861abcc06840aebde786e4b" category="sidebar">Element Plug-in for vCenter Server を使用してストレージを管理（リンク）</block>
   <block id="93168a8084b3e838d2932c4734bd234e" category="sidebar">以前のバージョン</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
   <block id="01064f33f360eefba819bf9542c0486b" category="sidebar">ハードウェアのメンテナンスをインストールします</block>
@@ -12287,4 +12268,10 @@
   <block id="469eaba8a7048afa0ba6f8eb91801de9" category="doc">SolidFire Active IQ でストレージを監視</block>
   <block id="45f40a7365f71f3eafc4489e01e9aa82" category="sidebar">NetApp SolidFire Active IQ でストレージを監視</block>
   <block id="d8d2cf4b5fd1196b5be39dd3b93ba995" category="sidebar">NetApp SolidFire Active IQ を使用する</block>
+  <block id="d214b4cd328cf59221f38d85dca1988f" category="summary">NetApp Element ソフトウェアを実行しているストレージクラスタを管理および監視するには、VMware vSphereインターフェイスのプラグインであるNetApp Element Plug-in for vCenter Serverを使用します。</block>
+  <block id="14dc26d359d13f6037d00a6c79232cd6" category="paragraph">NetApp Element Plug-in for vCenter Serverは、VMware vSphereインターフェイスのプラグインを提供します。これにより、NetApp Element ソフトウェアを実行しているストレージクラスタを管理および監視できるようになります。</block>
+  <block id="da3eb0bd8c882a21931739ac39ce915a" category="inline-link">NetApp Element Plug-in for vCenter Server のドキュメント</block>
+  <block id="c557278939ddfc5c37a8606a5b8bc3d8" category="paragraph">Element Plug-in for vCenter Serverの詳細については、を参照してください<block ref="4a40fe421733073daff96e428d226590" category="inline-link-rx"></block>。</block>
+  <block id="fd0b9b1500c5983ac27a332210ebfe29" category="paragraph">NetApp Hybrid Cloud Control の多くの機能は複数のストレージクラスタを使用するように設計されていますが、認証と許可には制限があります。認証と許可に関する制限事項として、信頼できるクラスタのユーザが、他のストレージクラスタのユーザでなくても、 NetApp Hybrid Cloud Control に関連付けられている他のクラスタに対して操作を実行できることがあります。</block>
+  <block id="f0e8a2f025f562374fa58233f9f7cd01" category="sidebar">Element Plug-in for vCenter Serverを使用してストレージを管理します</block>
 </blocks>

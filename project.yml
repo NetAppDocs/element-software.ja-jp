@@ -33,8 +33,8 @@ sidebar:
   - section: storage
   - section: hccstorage
   - section: api
-  - title: Element Plug-in for vCenter Server を使用してストレージを管理（リンク）
-    url: https://docs.netapp.com/us-en/vcp/
+  - title: Element Plug-in for vCenter Serverを使用してストレージを管理します
+    url: "/element-plug-in-index.html"
   - title: NetApp SolidFire Active IQ でストレージを監視
     url: "/monitor-storage-active-iq.html"
   - section: mnode

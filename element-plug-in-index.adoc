@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: element-plug-in-index.html 
+keywords: element, plug-in, plugin, vcenter, server 
+summary: NetApp Element ソフトウェアを実行しているストレージクラスタを管理および監視するには、VMware vSphereインターフェイスのプラグインであるNetApp Element Plug-in for vCenter Serverを使用します。 
+---
+= vCenter Server 向け NetApp Element プラグイン
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Element Plug-in for vCenter Serverは、VMware vSphereインターフェイスのプラグインを提供します。これにより、NetApp Element ソフトウェアを実行しているストレージクラスタを管理および監視できるようになります。
+
+Element Plug-in for vCenter Serverの詳細については、を参照してください https://docs.netapp.com/us-en/vcp/index.html["NetApp Element Plug-in for vCenter Server のドキュメント"^]。
+
+
+
+== を参照してください。
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+
