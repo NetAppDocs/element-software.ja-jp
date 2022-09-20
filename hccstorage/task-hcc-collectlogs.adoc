@@ -23,8 +23,8 @@ SolidFire オールフラッシュストレージの設置で問題が発生し�
 
 次のいずれかのオプションを選択します。
 
-* <<Use NetApp Hybrid Cloud Control to collect logs>>
-* <<Use the REST API to collect logs>>
+*  NetApp Hybrid Cloud Control to collect logs
+*  the REST API to collect logs
 
 
 

@@ -28,11 +28,11 @@ Element 12.2 以降では、を使用できます link:../esds/reference_esds_us
 
 
 .オプション（ Options ）
-* <<Add a storage cluster>>
-* <<Confirm storage cluster status>>
-* <<Edit storage cluster credentials>>
-* <<Remove a storage cluster>>
-* <<Enable and disable maintenance mode>>
+*  a storage cluster
+*  storage cluster status
+*  storage cluster credentials
+*  a storage cluster
+*  and disable maintenance mode
 
 
 
@@ -117,7 +117,7 @@ CAUTION: 「 * Yes * next 」を選択すると、クラスタがインストー
 
 == メンテナンスモードを有効または無効にします
 
-ソフトウェアのアップグレードやホストの修復などのメンテナンスのためにストレージノードをオフラインにする必要がある場合は、ストレージクラスタの残りの部分に対する I/O の影響を最小限に抑えることができます <<enable_main_mode,有効化>> ノードの保守モードを指定します。いつでも <<disable_main_mode,- 無効にします>> 保守モードでは、ノードが保守モードから移行するために、一定の条件を満たしていることを確認するためにノードが監視されます。
+ソフトウェアのアップグレードやホストの修復などのメンテナンスのためにストレージノードをオフラインにする必要がある場合は、ストレージクラスタの残りの部分に対する I/O の影響を最小限に抑えることができます ,有効化 ノードの保守モードを指定します。いつでも ,- 無効にします 保守モードでは、ノードが保守モードから移行するために、一定の条件を満たしていることを確認するためにノードが監視されます。
 
 の情報を参照できます link:../esds/reference_esds_use_maintenance_mode.html["メンテナンスモード"] 機能オプションおよびを有効または無効にします link:../esds/reference_esds_use_maintenance_mode.html#possible-scenarios-while-using-maintenance-mode["メンテナンスモードの使用中に発生する可能性があるシナリオ"]。
 

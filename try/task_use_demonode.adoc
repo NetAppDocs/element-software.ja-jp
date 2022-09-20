@@ -73,9 +73,9 @@ Element のデモノードソフトウェアは、 .ova ファイルにパッケ
 
 VMware ESXi に Element デモノードをインストールするには、次のタスクを実行します。
 
-* <<Configure network interfaces>>
-* <<Register the demo node on an ESXi server>>
-* <<Start the demo node on an ESXi server>>
+*  network interfaces
+*  the demo node on an ESXi server
+*  the demo node on an ESXi server
 
 
 

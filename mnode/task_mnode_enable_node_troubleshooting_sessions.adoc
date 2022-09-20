@@ -41,9 +41,9 @@ WARNING: ネットアップサポートから指示されないかぎり、こ�
 
 
 .トラブルシューティングのオプション
-* <<Troubleshoot a cluster node>>
-* <<Troubleshoot a cluster node with NetApp Support>>
-* <<Troubleshoot a node that is not part of cluster>>
+*  a cluster node
+*  a cluster node with NetApp Support
+*  a node that is not part of cluster
 
 
 

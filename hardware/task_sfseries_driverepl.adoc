@@ -62,9 +62,9 @@ NOTE: 上の図は一例です。SF9608 のドライブレイアウトに含ま�
 ====
 手順の概要は次のとおりです。
 
-* <<Remove the drive from the cluster>>
-* <<Replace the drive from the chassis>>
-* <<Add the drive to the cluster>>
+*  the drive from the cluster
+*  the drive from the chassis
+*  the drive to the cluster
 
 
 

@@ -13,9 +13,9 @@ summary: ユーザ向けのメッセージを含むバナーを有効にした�
 [role="lead"]
 ユーザ向けのメッセージを含むバナーを有効にしたり、編集したり、設定したりできます。
 
-<<Enable the Terms of Use banner>>
-<<Edit the Terms of Use banner>>
-<<Disable the Terms of Use banner>>
+ the Terms of Use banner
+ the Terms of Use banner
+ the Terms of Use banner
 
 
 

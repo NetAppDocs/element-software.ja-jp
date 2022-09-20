@@ -15,8 +15,8 @@ summary: 個々のノードをクラスタに追加する前に、ノードを�
 
 ストレージノードを設定する方法は 2 つあります。
 
-* <<Configure a storage node using the per-node UI,ノード UI>>：ノード UI を使用します (https://<node_management_IP>:442)[] ノードのネットワーク設定を構成します。
-* <<Configure a storage node using the TUI,TUI>>：ノードのターミナルユーザインターフェイス（ TUI ）を使用してノードを設定します。
+*  a storage node using the per-node UI,ノード UI：ノード UI を使用します (https://<node_management_IP>:442)[] ノードのネットワーク設定を構成します。
+*  a storage node using the TUI,TUI：ノードのターミナルユーザインターフェイス（ TUI ）を使用してノードを設定します。
 
 
 DHCP によって割り当てられた IP アドレスを使用するノードをクラスタに追加することはできません。DHCP IP アドレスは、ノード UI 、 TUI 、または API でノードの初期設定を行う際に使用します。この初期設定では、クラスタにノードを追加するための静的 IP アドレス情報を追加できます。

@@ -5080,7 +5080,6 @@
   <block id="26db8374256abd97a337e0f9af2f21c8" category="admonition">ストレージノードのファームウェアをアップグレードする前に、最新の管理サービスバンドルにアップグレードする必要があります。Element ソフトウェアをバージョン 12.2 以降に更新する場合は、管理サービス 2.14.60 以降が必要です。</block>
   <block id="736c409b380383ee8843715d26079c63" category="list-text">* クラスタの健全性 * ：健全性チェックを実行しました。を参照してください <block ref="bdcf6db43efb3c82b174a0c4c0a65c66" category="inline-link-macro-rx"></block>。</block>
   <block id="7389b01d5fe0e17f5523a7fb85295f91" category="inline-link">こちらの技術情報アーティクル</block>
-  <block id="b24f3db75077a578765967e0b8ffa295" category="admonition">ご使用のハードウェアのファームウェアとドライバのファームウェアの一覧については、を参照してください<block ref="54a79ab153742147d13ffd4ac16bf6ba" category="inline-link-rx"></block> （ログインが必要です）。</block>
   <block id="5212e4232f93722ce70d3ed042cd25c1" category="paragraph">次のいずれかのストレージファームウェアアップグレードオプションを選択します。</block>
   <block id="71894c0623112f371e3598666af16695" category="list-text"><block ref="c67f607f0c5a6b98a7e28e151694a09a" category="inline-xref-macro-rx"></block></block>
   <block id="b8cff0b41605e83e8a12999dd0a4ca92" category="list-text"><block ref="bd241c643056b4027f18f8f059752b73" category="inline-xref-macro-rx"></block></block>
@@ -11941,7 +11940,6 @@
   <block id="a0fc274442d4c69dfe575d357ce015e2" category="cell">40～70分</block>
   <block id="9b2b1e8f398acbac5493461c590118f6" category="inline-link">ノードの完全なシャットダウンと電源切断を実行します</block>
   <block id="2233d6c0637a0dd985141fefd60451a0" category="cell">130～160分も必要です<block ref="b75cb1417453c96f34f9e695ad57b88f" category="inline-link-rx"></block> H610Sノードごとに、</block>
-  <block id="6ed1151a1c81c87309cd82c96457f044" category="paragraph">^1ご使用のハードウェアのファームウェアおよびドライバファームウェアの完全なマトリックスについては、こちらを参照してください<block ref="919d0da258d2c9346bfb11f078cfd474" category="inline-link-rx"></block> （ログインが必要です）。</block>
   <block id="0fe84530e14d6cb77f51c3d2cc85aa18" category="paragraph">^2^クラスタに高い書き込みIOPSの負荷があり、ファームウェアの更新時間が長い場合、データの同期時間が長くなります。</block>
   <block id="eb05636c0d5a8e35fae14ecd37584ea8" category="doc">SolidFire およびElementソフトウェア12.5のドキュメント</block>
   <block id="7275696d9abdd4848d9921861f886410" category="inline-link">Element 12.3.xのドキュメント</block>
@@ -12274,4 +12272,7 @@
   <block id="c557278939ddfc5c37a8606a5b8bc3d8" category="paragraph">Element Plug-in for vCenter Serverの詳細については、を参照してください<block ref="4a40fe421733073daff96e428d226590" category="inline-link-rx"></block>。</block>
   <block id="fd0b9b1500c5983ac27a332210ebfe29" category="paragraph">NetApp Hybrid Cloud Control の多くの機能は複数のストレージクラスタを使用するように設計されていますが、認証と許可には制限があります。認証と許可に関する制限事項として、信頼できるクラスタのユーザが、他のストレージクラスタのユーザでなくても、 NetApp Hybrid Cloud Control に関連付けられている他のクラスタに対して操作を実行できることがあります。</block>
   <block id="f0e8a2f025f562374fa58233f9f7cd01" category="sidebar">Element Plug-in for vCenter Serverを使用してストレージを管理します</block>
+  <block id="4b8861a11346d673205d074f862db70a" category="inline-link">サポートされているファームウェアおよびESXiドライバのバージョン</block>
+  <block id="7f6c7867ac3c62c136dad288b3e3298e" category="paragraph">^1ご使用のハードウェアのファームウェアおよびドライバファームウェアの完全なマトリックスについては、を参照してください<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>。</block>
+  <block id="3c22f77849e3b66d2e0c9c63419afb53" category="admonition">ご使用のハードウェアのファームウェアとドライバのファームウェアの一覧については、を参照してください<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>。</block>
 </blocks>

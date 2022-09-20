@@ -55,11 +55,11 @@ Element 12.2 管理ノードはオプションのアップグレードです。�
 この手順を実行する前に、を理解しておく必要があります link:../concepts/concept_solidfire_concepts_volumes.html#persistent-volumes["永続ボリューム"] 使用するかどうかを指定します。永続ボリュームはオプションですが、仮想マシン（ VM ）が失われた場合の管理ノードの設定データのリカバリには推奨されます。
 
 .手順
-. <<Download ISO or OVA and deploy the VM>>
-. <<create_mnode_admin,管理ノード管理者を作成し、ネットワークを設定>>
-. <<Configure time sync>>
-. <<Set up the management node>>
-. <<Configure controller assets>>
+.  ISO or OVA and deploy the VM
+. ,管理ノード管理者を作成し、ネットワークを設定
+.  time sync
+.  up the management node
+.  controller assets
 
 
 
@@ -144,7 +144,7 @@ NOTE: ストレージトラフィックを分離するために NIC を追加す
 
 
 
-NOTE: Element 12..1 以降では、手順（ a ） ～ （ e ）が自動的に実行されます。管理ノード 12..1 の場合は、に進みます <<substep_f_install_config_time_sync,サブステップ (f)>> 時刻同期の設定を完了します。
+NOTE: Element 12..1 以降では、手順（ a ） ～ （ e ）が自動的に実行されます。管理ノード 12..1 の場合は、に進みます ,サブステップ (f) 時刻同期の設定を完了します。
 
 . SSH またはハイパーバイザーが提供するコンソールを使用して、管理ノードにログインします。
 . NTPD を停止：

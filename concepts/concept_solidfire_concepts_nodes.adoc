@@ -15,12 +15,12 @@ summary: ノードは、クラスタにグループ化され、ブロックス�
 
 NetApp Element ソフトウェアでは、クラスタのさまざまなノードロールを定義します。ノードロールのタイプは次のとおりです。
 
-* <<Management node>>
-* <<Storage node>>
-* <<Fibre Channel node>>
+*  node
+*  node
+*  Channel node
 
 
-<<Node states of operation,ノードの状態>> クラスタの関連付けによって異なります。
+ states of operation,ノードの状態 クラスタの関連付けによって異なります。
 
 
 
