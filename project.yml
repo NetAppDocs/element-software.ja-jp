@@ -63,6 +63,8 @@ homepage:
       url: "/hardware/concept_h410s_h610s_info.html"
     - title: SF シリーズハードウェアの情報
       url: "/hardware/concept_sfseries_info.html"
+    - title: サポートされているファームウェアおよびESXiドライバのバージョン
+      url: https://docs.netapp.com/us-en/hci/docs/firmware_driver_versions.html
   - title: ストレージを管理します
     links:
     - title: Element ソフトウェア UI を使用
