@@ -462,8 +462,6 @@
   <block id="049adc1802f0210729234e1fe80d95e6" category="list-text"><block ref="049adc1802f0210729234e1fe80d95e6" category="inline-link-rx"></block></block>
   <block id="c93817bbfc3fab71f5f7ca740a11c847" category="inline-link">NetApp HCI のリソースページ</block>
   <block id="bc218e71c18c2f809dffb10d3bc2a6e8" category="list-text"><block ref="bc218e71c18c2f809dffb10d3bc2a6e8" category="inline-link-rx"></block></block>
-  <block id="311f4aa48c89c4e8754b8d93a8d5c0d5" category="inline-link">NetApp HCI および NetApp Element のファームウェアとドライバのバージョン ソフトウェア</block>
-  <block id="8c47ac98e3f72388d0a7fb3d375c0441" category="list-text"><block ref="8c47ac98e3f72388d0a7fb3d375c0441" category="inline-link-rx"></block></block>
   <block id="148da2fc8997120fa9c4ae723fb03eb1" category="summary">Active IQ は、クラスタ全体のデータの履歴ビューを提供する Web ベースのツールです。ビューは定期的に更新されます。特定のイベント、しきい値、または指標にアラートを設定できます。Active IQ を使用すると、システムのパフォーマンスと容量を監視し、クラスタの健常性を常に把握できます。</block>
   <block id="c9618f4b15d53501dee68300c1517890" category="doc">SolidFire Active IQ の略</block>
   <block id="7d640bfdd148f102df423b6e94b11571" category="paragraph"><block ref="15098cd863d8945571eb3fa1cb63a7fe" category="inline-link-rx"></block> は、クラスタ全体のデータの履歴ビューを提供する Web ベースのツールです。ビューは定期的に更新されます。特定のイベント、しきい値、または指標にアラートを設定できます。SolidFire Active IQ を使用すると、システムのパフォーマンスと容量を監視し、クラスタの健常性を常に把握できます。</block>
@@ -1022,8 +1020,6 @@
   <block id="c9587cb08e5592f619eef36a7fb5d994" category="doc">ノード混在環境でのクラスタ容量</block>
   <block id="e1a3e19f69efda7a7363311358c45df4" category="paragraph">H シリーズは、 H610S-1 、 H610S-2 、 H610S-4 、および H410S ノードで構成されています。これらのノードは 10GbE と 25GbE の両方に対応しています。</block>
   <block id="17d44e89eecd428fa4268b3fa3873164" category="paragraph">暗号化されているノードとされていないノードは混在させないことを推奨します。ノードが混在するクラスタでは、どのノードもクラスタの総容量の 33% を超えることはできません。たとえば、 SF シリーズ 4805 のノードが 4 つあるクラスタの場合、単独で追加できる最大のノードは SF シリーズ 9605 です。クラスタ容量のしきい値は、最大のノードが失われた場合を基準に計算されます。</block>
-  <block id="dde5a199f31b4af53ccd088330e8314c" category="paragraph">Element 12.0 以降では、次の SF シリーズのストレージノードはサポートされません。</block>
-  <block id="58432e4b26f0e5c8db86828d17f3a7ba" category="paragraph">これらのストレージノードのいずれかを Element 12.0 にアップグレードすると、このノードが Element 12.0 でサポートされていないことを示すエラーが表示されます。</block>
   <block id="da286307c85db8e876f4cf760e4a8dc2" category="summary">リモートクラスタのクラスタ管理者のクレデンシャルがあれば、ボリュームをリモートクラスタの別のボリュームとペアリングできます。</block>
   <block id="0046da2aa067f20f295ecbc573820209" category="doc">ボリューム ID を使用してボリュームをペアリング</block>
   <block id="5e664610aae0289e363c77ef3388af3a" category="list-text">該当するボリュームを含むクラスタがペアリングされていることを確認します。</block>
@@ -11907,7 +11903,6 @@
   <block id="47e9151ac689287505aa641c93450d92" category="list-text">vCenter Server 4.9、4.8、4.7、4.6、4.5、または4.4にアップグレードNetApp Element する。</block>
   <block id="8eeabd6de4a231c731b82c27ee25bbdb" category="admonition">このプラグインは、VMware vCenter Server 6.5 for Element Plug-in for VMware vCenter Server 4.6、4.7、および4.8とは互換性がありません。</block>
   <block id="c7c27143d481078e23cd4144c0df2f10" category="inline-link">vCenter Plug-in 4.9リリースノート</block>
-  <block id="6452d1b3e56fe38fdc537aeb6fe8d1c8" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block>_ 新規 _</block>
   <block id="95f27799ddeb01b37a606c94f6349232" category="paragraph">NetApp Hybrid Cloud ControlのWeb UIおよびAPIのダウンロードソフトウェアパッケージを、ネットアップのオンラインソフトウェアリポジトリからダウンロードします。このため、一部の URL または IP アドレスは、コンテンツ配信ネットワークに基づいて他の URL または IP アドレスに解決される場合があります。可能であれば、ネットワークエンジニアと協力して、次の一般的な手順に従ってファイアウォールルールにこれらの URL または IP アドレスを追加する必要があります。</block>
   <block id="468e2827e5dc0169c965a021b0f015d8" category="list-text">URL（support-sg-nawest.netapp.comなど）にアクセスするには、wgetまたはcURLユーティリティを使用します。</block>
   <block id="887a9d2ae67bb61c76d5d0032a4b7b0f" category="list-text">次の例に示すように、接続を確認します。</block>
@@ -11919,13 +11914,11 @@
   <block id="9fc75d41716cfd46199787dcf77473a1" category="list-text">https://support-sg-emea.netapp.com`</block>
   <block id="a1b1a9120bbc7238c7b6088d7223d194" category="list-text">https://support-sg-naeast.netapp.com`</block>
   <block id="219033cd316af31663b173765be6dd78" category="list-text">https://support-sg-nawest.netapp.com`</block>
-  <block id="54aa7f2dcdc54ac5abd932a5b6c8b3d7" category="list-text">*アップグレード処理時間*:アップグレードを実行するための十分な時間を確保しています。Elementソフトウェア12.5にアップグレードする場合、アップグレードプロセスの時間は、Elementソフトウェアの現在のバージョンとファームウェアの更新によって異なります。</block>
   <block id="778b8320a31f425d9021c72ba59dd8bd" category="cell">ストレージノード</block>
   <block id="c4303966c5d95835840cedbb4010f17d" category="cell">Elementソフトウェアの現在のバージョン</block>
   <block id="0eb587cb5fd7c18c359cc306f978cd9d" category="cell">ノードあたりのソフトウェアとファームウェアのインストール時間の概算。^1 ^</block>
   <block id="67578343d744d824d2ae7f1f0780853f" category="cell">ノードあたりのおおよそのデータ同期時間^2^</block>
   <block id="16ac89e788575fb90e5d952ce28c7d05" category="cell">ノードあたりのアップグレード時間の概算</block>
-  <block id="ff99582146f5f2ab14948a290d24066e" category="cell">最新のファームウェアを搭載したSolidFire およびNetApp Hシリーズのすべてのノード</block>
   <block id="94a391e7535162277a17a069254b24c6" category="cell">12.x</block>
   <block id="2a7bb67d9681d8b5c8241cd49c734772" category="cell">15 分</block>
   <block id="5e1ee2491e0c0ac6da474bab9124ae95" category="cell">10～15分</block>
@@ -11941,10 +11934,8 @@
   <block id="9b2b1e8f398acbac5493461c590118f6" category="inline-link">ノードの完全なシャットダウンと電源切断を実行します</block>
   <block id="2233d6c0637a0dd985141fefd60451a0" category="cell">130～160分も必要です<block ref="b75cb1417453c96f34f9e695ad57b88f" category="inline-link-rx"></block> H610Sノードごとに、</block>
   <block id="0fe84530e14d6cb77f51c3d2cc85aa18" category="paragraph">^2^クラスタに高い書き込みIOPSの負荷があり、ファームウェアの更新時間が長い場合、データの同期時間が長くなります。</block>
-  <block id="eb05636c0d5a8e35fae14ecd37584ea8" category="doc">SolidFire およびElementソフトウェア12.5のドキュメント</block>
   <block id="7275696d9abdd4848d9921861f886410" category="inline-link">Element 12.3.xのドキュメント</block>
   <block id="b3c5f594b6d2e3e6a1ff3b84dd766edf" category="list-text"><block ref="b3c5f594b6d2e3e6a1ff3b84dd766edf" category="inline-link-rx"></block></block>
-  <block id="70a1cc9bac71af783948e9c6d13ed046" category="summary">Element 12.5以降では、管理ノードでsfreadonlyユーザアカウントを有効にして、ネットアップサポートによるサポートなしでシステムコンポーネントのトラブルシューティングを行うことができます。高度なトラブルシューティングのために、ネットアップサポート用のリモートサポートトンネルアクセスを有効にして開くこともできます。</block>
   <block id="87c6849449248757341d19789f0ecb83" category="doc">基本的なトラブルシューティングのためにSSHを使用してストレージノードにアクセスする</block>
   <block id="ed66fa0901c1a26113d52acbb6ee20dd" category="paragraph">Element 12.5以降では、基本的なトラブルシューティングに、ストレージノード上でsfreadonlyシステムアカウントを使用できます。高度なトラブルシューティングのために、ネットアップサポート用のリモートサポートトンネルアクセスを有効にして開くこともできます。</block>
   <block id="d1ac7db9c842ceaac83404d4d52e800f" category="paragraph">sfreadonlyシステムアカウントを使用すると、基本的なLinuxシステムおよびネットワークトラブルシューティングコマンド(pingコマンドを含む)を実行できます。</block>
@@ -12020,7 +12011,6 @@
   <block id="3ae6493bf18ba6963b40d7f9821c1a52" category="summary">ノードまたはクラスタでsshを有効にしたあとに、SignSshKeysメソッドを使用して、ノード上のシェルにsfadminまたはsfreadonlyとしてアクセスできます。sfreadonlyは、Element 12.5以降の新しいユーザアカウントです。ノードでの初期トラブルシューティングは可能ですが、管理者特権を持たないコマンドを実行する権限はありません。</block>
   <block id="a7917a2f080408ce1e230f197d5433cd" category="inline-link-macro">EnableSSHメソッド</block>
   <block id="6dda290cb72d73d469f631c0dfd2e0f3" category="paragraph">を使用してクラスタでSSHを有効にしたあと <block ref="7d9609f81e054cdd171756b31fbc7560" category="inline-link-macro-rx"></block>'SignSshKeys'メソッドを使用すると'ノード上のシェルにアクセスできます</block>
-  <block id="ac22ef258ca6640c6916f485dfb04a12" category="paragraph">「sfreadonly」は、Element 12.5以降の新しいシステムアカウントで、ノードでの基本的なトラブルシューティングを可能にします。このAPIでは、クラスタ内のすべてのノードで「sfreadonly」システムアカウントを使用したSSHアクセスが有効になります。</block>
   <block id="4c99bed64e74c6cc1cfc268cdeaa6615" category="admonition">ネットアップサポートから指示されないかぎり、システムに対する変更はサポートされず、サポート契約にも取り消しが含まれ、データが不安定になったり、アクセスできなくなる可能性があります。</block>
   <block id="b076eaceedc6422f2cfaa718fed94e69" category="paragraph">メソッドを使用した後、応答からキーチェーンをコピーし、SSH接続を開始するシステムに保存してから、次のコマンドを実行する必要があります。</block>
   <block id="d0bb781e5b5f30c7270f5c59dbe3b4b0" category="paragraph">「identity_file」は、公開鍵認証のID（秘密鍵）が読み取られるファイルで、「node_ip」はノードのIPアドレスです。'identity_file'の詳細については'SSHのマニュアル・ページを参照してください</block>
@@ -12045,28 +12035,17 @@
   <block id="cf3e481a44141cabd4e9d46cfbb1f899" category="paragraph">12.5</block>
   <block id="1cd7e1f52564ecd1b9b47bf17fe8d192" category="inline-link-macro">有効と無効を切り替えます</block>
   <block id="9be1c6c1a5e1d288c79545fe648fce2d" category="paragraph">クラスタ全体で有効にする場合 <block ref="46beba8112888a31f3c57eea2d458bf9" category="inline-link-macro-rx"></block> SolidFire オールフラッシュストレージクラスタの場合は、クラスタ作成時にクラスタ作成時に実行する必要があります。Element 12.5以降では、クラスタ作成時にCreate Cluster UIで保存データのソフトウェア暗号化を有効にする必要があります。Element 12.3.x以前のバージョンでは、を使用してクラスタを作成する必要があります <block ref="3302765abfbbe930557ebd20cdd8d8e8" category="inline-link-macro-rx"></block> APIメソッドを使用して、enableSoftwareEncryptionAtRestパラメータを「true」に変更します。SolidFire ESDS クラスタでは、保存データのソフトウェア暗号化がデフォルトで有効になっています。SolidFire オールフラッシュストレージクラスタおよびSolidFire ESDSクラスタでは、クラスタで保存データのソフトウェア暗号化を有効にしたあとで、クラスタを無効にすることはできません。可能です <block ref="c4953cd715ac499bd17d25e3487e7fdb" category="inline-link-macro-rx"></block> クラスタ作成後の保存データのハードウェアベースの暗号化。</block>
-  <block id="90c2dc9b8e4f7b029c80f8c7488a4b58" category="paragraph">管理ノードをバージョン12.3.xから管理ノード12.5にアップグレードできます</block>
   <block id="2ee9526aa61dc0808ea0ccf6ccfa2412" category="paragraph">ストレージクラスタ上の Element ソフトウェアをアップグレードするために、管理ノードのオペレーティングシステムをアップグレードする必要がなくなりました。NetApp Hybrid Cloud Controlを使用してElementのアップグレードを実行するには、管理サービスを最新バージョンにアップグレードするだけです。管理ノードのオペレーティングシステムをアップグレードする理由がほかにもある場合は、セキュリティの修正など、管理ノードのアップグレード手順に従ってください。</block>
   <block id="cd5e8795f7da1b9c55223a753f0c64bd" category="inline-link">Element 12.3.x管理ノードのアップグレードに関するドキュメント</block>
   <block id="33fea926c5e46b795ee89cd754264618" category="admonition">管理ノード12.2以前のアップグレードに関する情報が必要な場合は、を参照してください<block ref="7510c32e54d32b91989c1cd2810dc6d2" category="inline-link-rx"></block>。</block>
-  <block id="8802b9126d6080e36bb95641f40cfab3" category="list-text"><block ref="54df05cfe3df35112175e19c0aa861b7" category="inline-xref-macro-rx"></block></block>
   <block id="4ec79ca5d6408d326fb4a58b0c3b2e40" category="list-text"><block ref="35b702a8c6556d6de2f367adef3740ff" category="inline-xref-macro-rx"></block></block>
   <block id="f3bac24ec8b72ab99e38f7ecb167cc25" category="paragraph">このオプションは、管理サービスのバージョンが * シーケンシャル * 更新（ 1 ）であり、（ 2 ） Element ストレージのバージョンが既存の管理ノードを * 保持する場合に選択します。</block>
-  <block id="e94fb483edf44bcb1d0066bfff1ffe18" category="section-title">12.3.xから管理ノードをバージョン12.5にアップグレードします</block>
-  <block id="e071a52c7e2ea747fe3b237e04bcec11" category="paragraph">新しい管理ノード仮想マシンをプロビジョニングすることなく、管理ノードをバージョン12.3.xからバージョン12.5へインプレースアップグレードできます。</block>
-  <block id="cd6641a5f66844b15e37f50c79eafa6e" category="admonition">Element 12.5管理ノードはオプションのアップグレードです。既存の環境では必要ありません。</block>
-  <block id="02bd6928c03c8f53c18f8a5143bdd5f4" category="list-text">アップグレードする管理ノードのバージョンが 12.0 で、 IPv4 ネットワークを使用している。管理ノードバージョン12.5ではIPv6がサポートされません。</block>
-  <block id="1e92b13cdf15b50caf5e299263e754d4" category="list-text">管理ノードをバージョン12.5に更新する場合は、管理サービス2.20.69以降が必要です。</block>
-  <block id="dfa645595ef398bf7b6f3c49d39a3426" category="list-text">ストレージノードでElement 12.3以降が実行されている。</block>
   <block id="2914d2e1549f2ef461f9b040823e6218" category="list-text">管理サービスを2.20.69以降に更新しておきます。</block>
   <block id="311e83625ce0c896e7a3f811f3ac48c2" category="list-text">ストレージクラスタでElement 12.3以降が実行されている。</block>
   <block id="0637ebd56fb666abb4197f99ee28a8be" category="list-text">* H610Sノードのベースボード管理コントローラ（BMC）を更新*：H610SノードのBMCバージョンをアップグレードしました。を参照してください <block ref="c240390f1d50c698cb63f0c07c7d1edd" category="inline-link-macro-rx"></block>。</block>
   <block id="356747bc1580f5d7e13f9055ae1f02df" category="paragraph">NetApp Element ソフトウェアをアップグレードするには、NetApp Hybrid Cloud ControlのUIまたはREST APIを使用します。Element ソフトウェアのアップグレードの実行中は、ノードの追加と削除、ドライブの追加と削除、イニシエータ、ボリュームアクセスグループ、仮想ネットワークに関連するコマンドなど、一部の処理は実行できません。</block>
   <block id="abad8a22ec62bb4befaee820afb760ef" category="inline-link-macro">HealthToolsを使用してElement 12.3にアップグレードします</block>
-  <block id="e4f2f9baf039ea62b7a0740e3ba88a7a" category="admonition">Element 12.5以降では、ElementソフトウェアのアップグレードでNetApp HealthToolsがサポートされなくなりました。Element 11.0または11.1を実行している場合は、最初にが必要です <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> NetApp Hybrid Cloud Controlを使用してElement 12.5にアップグレードします。</block>
-  <block id="7970314795c697c589f52cd629d4a341" category="admonition">Elementソフトウェアをバージョン12.5にアップグレードする前に、最新の管理サービスバンドルにアップグレードする必要があります。Elementソフトウェアをバージョン12.5に更新する場合は、管理サービス2.20.69以降が必要です。</block>
   <block id="649c8d7c132041751dab6da01f1fd9db" category="list-text">* H610Sストレージノードのベースボード管理コントローラ（BMC）を更新*：H610SノードのBMCバージョンをアップグレードしました。を参照してください <block ref="c240390f1d50c698cb63f0c07c7d1edd" category="inline-link-macro-rx"></block>。</block>
-  <block id="eed743cc753cdf3d22086e7df918db02" category="admonition">H610SシリーズノードをElement 12.5にアップグレードする場合、ノードで11.8よりも前のバージョンのElementが実行されているときは、こので追加のアップグレード手順を実行する必要があります<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block> ストレージノードごとに割り当てます。Element 11.8以降を実行している場合は、追加のアップグレード手順は必要ありません。</block>
   <block id="02526a9433819b3363fdad9cdfc66a7d" category="list-text">管理ノードがインターネットに接続されていない場合は、をダウンロードしておきます<block ref="0c09c6a7a60b11e622c5ccc20d3a7783" category="inline-link-rx"></block>。</block>
   <block id="a901d2b8512ddf5cf3b7654718ea92a4" category="admonition">NetApp Hybrid Cloud Controlを使用してストレージクラスタをアップグレードする際の潜在的な問題とその対処方法については、このドキュメントを参照してください<block ref="385c83615df1d77fbf0bae3f06fabb3d" category="inline-link-rx"></block>。</block>
   <block id="981a393a1b5619c45c3545ca7373b5cf" category="list-text">[* アップグレードの開始 * ] を選択します。アップグレードが完了すると、追加のアップグレード手順を実行するように求められます。</block>
@@ -12076,14 +12055,11 @@
   <block id="fb9099604c3233c77b3c8b5487c99eb3" category="list-text">このに記載されている追加のアップグレード手順を実行します<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block> をクリックします。</block>
   <block id="7fdc03d82c29eba6b61c702a58fd28ba" category="paragraph">これらのコンポーネントには、管理サービス、NetApp Hybrid Cloud Control、Elementソフトウェア、管理ノード、および（インストール環境に応じて）Element Plug-in for vCenter Serverが含まれます。</block>
   <block id="85aed6fa173952d69db4c99c1290921b" category="inline-link-macro">ストレージファームウェア</block>
-  <block id="a8c7f4c70c59120de0b33efda8af8aa5" category="list-text">に十分な時間を設定しておきます <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> および <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> アップグレード：Elementソフトウェア12.5にアップグレードする場合、アップグレードプロセスの所要時間はElementソフトウェアのバージョンとファームウェアの更新によって異なります。</block>
   <block id="2fa7dfb88e1cb5cf745edc36604f73fd" category="paragraph">健全性チェックは、NetApp Hybrid Cloud ControlのUIまたはNetApp Hybrid Cloud ControlのAPIを使用して実行できます。</block>
   <block id="d37f0270ef1cdc666fe669356e1a4f75" category="inline-link-macro">カスタムの保護ドメインを設定します</block>
   <block id="b9d7f7d96ba0d7f9fb0ebbfdd76705d5" category="list-text"><block ref="a92b076f4c042891d554c076d8d2ec26" category="inline-link-macro-rx"></block> - 各ノードがどのシャーシに配置されているか、およびどのカスタム保護ドメインが表示されます。</block>
   <block id="ed4cb7ef9d0074dd188232c212f3131c" category="list-text"><block ref="79208a7b3d3c86443da0ca3bafbef925" category="inline-link-macro-rx"></block> - 各ノードにカスタム保護ドメインを割り当てることができます。</block>
-  <block id="61b35a1ffe9df32c3c0e2e4a7969de4b" category="paragraph">ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。Element 12.5では、ストレージノードへのアクセスの向上、カスタム保護ドメインの管理性の強化、クラスタの障害やイベントの新規追加と改善、クラスタ作成UI機能の強化、セキュリティの強化、Ansibleによる自動アップグレードなどが可能になっています。</block>
   <block id="38614c843f3a64f496d80e9b3a15ca3c" category="section-title">Element 12.5</block>
-  <block id="3841a44fe905d7faa925f35d459015bf" category="paragraph">Element 12.5の新機能について詳しくは、こちらをご覧ください。</block>
   <block id="632a0cf5bff2b4038d81ba8a87bedf56" category="section-title">ストレージノードへのアクセスの向上</block>
   <block id="36c6fef8b472466a86d8c04fae14b83a" category="paragraph">Element 12.5では、署名付きSSH証明書を使用して、個々のノードへのリモートアクセスが向上していますストレージノードへのセキュアなリモートアクセスを提供するために、ストレージノードのRTFI実行時に「sfreadonly」という新しい権限制限付きローカルユーザアカウントが作成されるようになりました。sfreadonlyアカウントを使用すると'基本的な保守やトラブルシューティングの目的で'ストレージ・ノードのバックエンドにアクセスできますクラスタ管理者ユーザの「supportAdmin」アクセスタイプを設定し、ネットアップサポートが必要に応じてクラスタにアクセスできるようになりました。</block>
   <block id="c4850a0256fd94385624e245ebb4e3f5" category="section-title">強化されたカスタム保護ドメインの管理性</block>
@@ -12102,7 +12078,6 @@
   <block id="3e295da75c8e1147efb1d40b92bc67b1" category="section-title">NetApp Bugs Onlineには、解決済みの問題と既知の問題があります</block>
   <block id="dacb18e4909785f6226e9cc6bcd62371" category="paragraph">解決済みの問題と既知の問題の一覧については、NetApp Bugs Onlineツールを参照してください。これらの問題は、Elementソフトウェアおよびその他の製品で参照できます<block ref="6d0e40d4342f9a7ae6016dd8d3efbf3e" category="inline-link-rx"></block>。</block>
   <block id="875455659aea2dfd3f63e40de150b31c" category="inline-link">NetApp Element ソフトウェア12.5リリースノート</block>
-  <block id="f8e8ebc61e5eb8b12488dfac5a827259" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block> _ 新規 _</block>
   <block id="9de5606ae9b23ff6651244b85bd5dae8" category="list-text"><block ref="9de5606ae9b23ff6651244b85bd5dae8" category="inline-link-rx"></block></block>
   <block id="5ed2b0be7714cf9bfe94c6d0660549bb" category="list-text"><block ref="5ed2b0be7714cf9bfe94c6d0660549bb" category="inline-link-rx"></block></block>
   <block id="ad6795e432521efb065caaec447cfa77" category="inline-link">ストレージファームウェアバンドル 2.146 リリースノート</block>
@@ -12110,7 +12085,6 @@
   <block id="efe7c0d4ed04341756689674a3fb46c4" category="list-text">* BmcSelfTestFailed*</block>
   <block id="e14ad5a8fd8d67543e771552b5287d65" category="paragraph">ベースボード管理コントローラ（BMC）のセルフテストに失敗しました。</block>
   <block id="f13985a4689ae985836f2d3e56cd1a5f" category="paragraph">ネットアップサポートにお問い合わせください。</block>
-  <block id="dfe7f32d919b2362aed8eecc2ad964cf" category="paragraph">Element 12.5のアップグレード中に、BMCにすでに障害が発生しているノードや、アップグレード中にノードのBMCに障害が発生したノードについて、「BmcSelfTestFailed」というエラーは生成されません。アップグレード中にセルフテストに失敗したBMCは'クラスタ全体のアップグレードが完了した後'BmcSelfTestFailed'警告エラーを問題 に通知します</block>
   <block id="45a258c05276cacb5b1d7863b0d316e4" category="list-text">* CpuThermalEventThreshold *</block>
   <block id="2e83559dc365c7e917e7fba7009ec948" category="paragraph">1つ以上のCPUのCPU温度イベントの数が、設定されたしきい値を超えています。</block>
   <block id="b045aebb370ef7c237c48505464a66fe" category="paragraph">10分以内に新しいCPU温度イベントが検出されない場合、警告は自動的に解決します。</block>
@@ -12147,18 +12121,15 @@
   <block id="07cf8fd6e47576d971bbe1a1f3791d23" category="cell">SetProtectionDomainLayout に失敗しました : 保護ドメインタイプ 'custom' スプリット保護ドメインタイプ 'chassis' 。</block>
   <block id="74edc88174dceefbbbb11b9aba21d425" category="cell">マルチノードシャーシのノードには、シャーシ内の他のノードとは異なる保護ドメインが割り当てられます。</block>
   <block id="49c71a7c59d3ffac02af2e11f20c6903" category="cell">シャーシ内のすべてのノードに同じ保護ドメインが割り当てられていることを確認します。</block>
-  <block id="da8bff445c6c74f2506b1cfb6b3ca63f" category="sidebar">Elementソフトウェア12.5向けにNetApp SolidFire オールフラッシュストレージシステムをアップグレード</block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">カスタムの保護ドメインを設定する</block>
   <block id="e606a329fd1c8e2f2543e5fd1dce6af5" category="doc">リモートのネットアップサポートセッションを開始します</block>
   <block id="6d76b07dcfce8c041eb64f1886c69449" category="paragraph">SolidFire オールフラッシュストレージシステムのテクニカルサポートが必要な場合は、ネットアップサポートがお客様のシステムにリモートで接続できます。セッションを開始してリモートアクセスを確立するために、ネットアップサポートはお客様の環境へのリバース Secure Shell （ SSH ）接続を確立します。</block>
   <block id="22e8c0119e5a615de3153bd0cf6157f1" category="list-text">*保存中のソフトウェア暗号化の機能拡張*: SolidFire エンタープライズSDSストレージクラスタの作成時にデフォルトで有効になるソフトウェア暗号化機能の拡張機能が、Element 12.3で導入されました。この機能では、ストレージノード内の SSD に格納されているすべてのデータが暗号化され、クライアント IO のパフォーマンスへの影響は非常に小さく（最大 2% ）すぎません。保存データのソフトウェア暗号化に関連する Element API メソッドを次に示します（を参照）<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 各メソッドの詳細については、以下を参照してください）。</block>
   <block id="a22ab525bece28b87773c244a6f1b3a0" category="list-text">*保持するスナップショットの最大数を定義する機能*：Element 12.3では、スナップショット保持機能の拡張機能が導入されました。この拡張機能をサポートするように次の API が変更されています（を参照）<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 各メソッドの詳細については、以下を参照してください）。</block>
-  <block id="7e567302f5ef9349d96e39bff1919742" category="paragraph">Element 12.5のNetApp SolidFire オールフラッシュストレージシステムをアップグレードする場合は、次の順序でアップグレードできます。</block>
   <block id="763c55956ad9c66895ee6e099d610ff4" category="list-text">* Elementソフトウェアのパッチに関する情報を入手する*: Element 12.3で導入されているGetPatchInfoメソッドを使用すると、ストレージノードにインストールされているElementソフトウェアのパッチに関する情報を取得できます。を参照してください<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> を参照してください。</block>
   <block id="7b6627460723fe1128ae2566dade0d76" category="list-text">*ノード上の各ネットワークインターフェイスの統計情報をリストする*: Element 12.3で導入された「ListNetworkInterfaceStats」メソッドを使用すると、ノード上の各ネットワークインターフェイスのドロップされたパケット数や各種エラーなどの統計情報をリストできます。この API メソッドは、個々のノードに対して使用するためのものです。個々のノードにアクセスするには、ユーザ ID とパスワードによる認証が必要です。ただし、メソッド呼び出しで force パラメータの値が true に設定されている場合は、このメソッドをクラスタに対して使用できます。パラメータをクラスタに対して使用すると、すべてのインターフェイスのネットワーク統計が表示されます。を参照してください<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> を参照してください。</block>
   <block id="d7fe934d3710b6c0fc8d7387b1330f7b" category="paragraph">Element 12.3.1で導入された動的ノード評価では、現在のプラットフォームごとに1つのCPUモデルではなく、ESDSプラットフォームごとに24個のサポートされているCPUを活用できます。</block>
   <block id="234a1430825055fe25203429facd267e" category="admonition">1 つの vCenter インスタンスに複数の NetApp Element VASA Provider を登録しないでください。2 つ目の NetApp Element VASA Provider が追加されている場合、その結果、すべての VVOL データストアにアクセスできなくなります。</block>
-  <block id="3f28cad21e73645ec84c4a70033925a4" category="doc">Elementソフトウェア12.5の新機能</block>
   <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">ネットアップサポートによるリモート接続を有効にする</block>
   <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
   <block id="036988ff4fac899a45c5c90da9729599" category="doc">CHAPを使用してアカウントを操作します</block>
@@ -12272,8 +12243,67 @@
   <block id="c557278939ddfc5c37a8606a5b8bc3d8" category="paragraph">Element Plug-in for vCenter Serverの詳細については、を参照してください<block ref="4a40fe421733073daff96e428d226590" category="inline-link-rx"></block>。</block>
   <block id="fd0b9b1500c5983ac27a332210ebfe29" category="paragraph">NetApp Hybrid Cloud Control の多くの機能は複数のストレージクラスタを使用するように設計されていますが、認証と許可には制限があります。認証と許可に関する制限事項として、信頼できるクラスタのユーザが、他のストレージクラスタのユーザでなくても、 NetApp Hybrid Cloud Control に関連付けられている他のクラスタに対して操作を実行できることがあります。</block>
   <block id="f0e8a2f025f562374fa58233f9f7cd01" category="sidebar">Element Plug-in for vCenter Serverを使用してストレージを管理します</block>
-  <block id="4b8861a11346d673205d074f862db70a" category="inline-link">サポートされているファームウェアおよびESXiドライバのバージョン</block>
-  <block id="7f6c7867ac3c62c136dad288b3e3298e" category="paragraph">^1ご使用のハードウェアのファームウェアおよびドライバファームウェアの完全なマトリックスについては、を参照してください<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>。</block>
-  <block id="3c22f77849e3b66d2e0c9c63419afb53" category="admonition">ご使用のハードウェアのファームウェアとドライバのファームウェアの一覧については、を参照してください<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>。</block>
   <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp Hシリーズストレージノードでサポートされるファームウェアのリビジョン</block>
+  <block id="376acf421ab362eb5e198d9dbe0ef1f4" category="summary">Element 12.5以降では、管理ノードでsfreadonlyユーザアカウントを有効にして、ネットアップサポートによるサポートなしでシステムコンポーネントのトラブルシューティングを行うことができます。高度なトラブルシューティングのために、ネットアップサポート用のリモートサポートトンネルアクセスを有効にして開くこともできます。</block>
+  <block id="03977ca9014ed49925d2fb260f5a2b6f" category="paragraph">Elementソフトウェアのバージョンに応じて、次のSFシリーズストレージノードはサポートされません。</block>
+  <block id="02cf6300fcf798dec9268510fe501399" category="cell">Elementソフトウェアのバージョン</block>
+  <block id="d491880ed7c4f2716c5b8ebf0f2cfbb0" category="cell">SFシリーズストレージノード</block>
+  <block id="30e5e485b533c453bba3daf6375cc212" category="cell">Element 12.0以降</block>
+  <block id="7f2ce5d6d8ad99c7a9f40d2f7b993f65" category="cell">Element 12.7から</block>
+  <block id="8c807086e16a6bf793517a3ea6554487" category="paragraph">これらのストレージノードのいずれかをサポート対象外のElementバージョンにアップグレードしようとすると、Element 12.xでサポートされていないことを示すエラーが表示されます</block>
+  <block id="b1ac6637f319a778daa4b7822c1798b5" category="paragraph">Element 12.5以降へのアップグレード時、「BmcSelfTestFailed」エラーは、BMCにすでに障害が発生しているノード、またはアップグレード中にノードのBMCに障害が発生したノードに対しては生成されません。アップグレード中にセルフテストに失敗したBMCは'クラスタ全体のアップグレードが完了した後'BmcSelfTestFailed'警告エラーを問題 に通知します</block>
+  <block id="57f06358fba0b8a8922a0641b09632cd" category="list-text">*アップグレード処理時間*:アップグレードを実行するための十分な時間を確保しています。Elementソフトウェア12.5以降にアップグレードする場合は、Elementソフトウェアの現在のバージョンとファームウェアの更新によってアップグレードプロセスの時間が異なります。</block>
+  <block id="139691973eba994346784166c2abe4d8" category="cell">最新のファームウェアを搭載したSolidFire およびNetApp Hシリーズのすべてのノード^3^</block>
+  <block id="f8d237cd828d649cb8579bc85ca63755" category="inline-link">SolidFire ストレージノードでサポートされるストレージファームウェアのバージョン</block>
+  <block id="b20b54856add4fca7311231c02ca0554" category="paragraph">^1ご使用のハードウェアのファームウェアおよびドライバファームウェアの完全なマトリックスについては、を参照してください<block ref="30c1aa6de93ea8b8201546979be3ae7b" category="inline-link-rx"></block>。</block>
+  <block id="084b51ffb24ddd67b6e5691377e919f4" category="paragraph">^3^ Element 12.7以降、SF2405ストレージノードはサポートされていません。SF2405をElement 12.7にアップグレードしようとすると、このノードがElement 12.7でサポートされていないことを示すエラーが表示されます。</block>
+  <block id="05b5a3d236fa2bfaecf9efbeb480af88" category="paragraph">Element 12.5以降、「sfreadonly」は新しいシステムアカウントであり、ノード上での基本的なトラブルシューティングを可能にします。このAPIでは、クラスタ内のすべてのノードで「sfreadonly」システムアカウントを使用したSSHアクセスが有効になります。</block>
+  <block id="482c14e23170c54f9df57d397733d7af" category="doc">Elementソフトウェア12.5以降の新機能</block>
+  <block id="5267888908e1548e1d5846f51c92bac9" category="paragraph">ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。Element 12.7は最新リリースで、セキュリティおよびシステムコンポーネントのアップデート、運用の改善、および解決済みの問題が含まれています。</block>
+  <block id="31433f4c595cf82b6f9b0654fe86c038" category="admonition">ソフトウェアとファームウェアの累積更新は、ストレージクラスタで実行されているElementの現在のバージョンに基づいて、Element 12.7のアップグレードの一環としてインストールされます。たとえば、クラスタでElement 12.3.xが実行されている場合は、Element 12.7に直接アップグレードして、Element 12.5と12.7の両方から累積的な更新を取得できます。サポートされるアップグレードパスについては、こちらを参照してください<block ref="5d2488aae82cc199977a2b418e4bfb0b" category="inline-link-rx"></block></block>
+  <block id="7a5d44771145d6289118d595153e9a0f" category="section-title">要素12.7</block>
+  <block id="c5955a73b2634f54a283c2c1c11a5f00" category="paragraph">Element 12.7の新機能の詳細をご確認ください。</block>
+  <block id="e1aa603edc6a21750a2c4f3ad4c5c6fe" category="section-title">セキュアCHAPアルゴリズム</block>
+  <block id="7d8047866d4cd4b945792113fe0aef7e" category="paragraph">Element 12.7には、セキュアなFIPS準拠のChallenge-Handshake Authentication Protocol（CHAP）アルゴリズムSHA1、SHA-256、SHA-256がサポートされています。 <block ref="b6cad66d2ee175f758d394e0154cb07f" category="inline-link-macro-rx"></block>。</block>
+  <block id="3dd61b40b979f11e2f99dcbda82fabe4" category="section-title">ダイナミックブロック（BIN）の同期レート</block>
+  <block id="f0f51fd465849cb53ced2b63167aa2a4" category="paragraph">ノードの追加、アップグレード、メンテナンスなどのクラスタ処理やドライブの追加などのクラスタ処理では、ブロック（bin）の同期がトリガーされ、クラスタレイアウトの新しいノードまたは更新されたノードにブロックデータが分散されます。デフォルトの同期速度として1つの低速を使用すると、これらの処理に長い時間がかかり、大規模なノードの処理能力は活用されません。Element 12.7以降、ストレージノード上のコア数に基づいて動的に同期速度が調整されるため、これらの処理を大幅に高速化できます。</block>
+  <block id="9a34a7d8791a1a6d72b590e86a6e6c71" category="paragraph">たとえば、Element 12.7を実行する大規模な28コアストレージノード（H610S、SF19210、およびSF38410）を既存のクラスタに追加すると、データの同期速度は60MBpsではなく110MBpsに自動的に調整されます。また、NetApp Hybrid Cloud Controlを使用したElement 12.3.x以降からElement 12.7へのアップグレード時などに、これらの大規模なストレージノードをノードメンテナンスモードから解除すると、変更されたブロックデータ速度の同期レートが20MBpsではなく110MBpsに自動的に調整されます。</block>
+  <block id="5ea9100be0bb0a226350ecb83ed7bbf3" category="paragraph">中規模な16コアストレージノード（H410S）と小規模な12コアストレージノード（SF4805）をElement 12.7クラスタに追加した場合、データの同期速度は60MBpsのままになります。 ただし、Element 12.3.xからElement 12.7へのアップグレード時に変更されたブロックをノードメンテナンスモードから解除すると、同期レートは、メディアストレージノードでは20Mbpsから60Mbpsに、小規模ストレージノードでは40Mbpsに自動的に調整されます。</block>
+  <block id="238da46c9fb35f77225a8601b5dcc7c7" category="paragraph">ストレージノードを削除しても、ブロックの同期速度には影響しないため、クライアントのI/Oへのパフォーマンスの影響はありません</block>
+  <block id="cba547779696e53fe77f25c2836e9ea2" category="section-title">ガベージコレクションの改善</block>
+  <block id="2089f735c5678c4d81adad19a94b0654" category="paragraph">ストレージノードが大規模なクラスタの場合：1PBの使用済みスペースがあるH610S-4では、上書きされて非常に高いワークロードが実行されています。 また、重複排除機能と圧縮機能が高いため、大容量ノードのデフォルトのブルームフィルタサイズが700GB以上から1048576ビットに拡大されているため、ガベージコレクション操作を維持できるようになりました。この変更は、ストレージノードをElement 12.7にアップグレードすると自動的に有効になり、小規模なノードには影響しません。</block>
+  <block id="83e68150a866d5b50cad0d93cf7c5492" category="section-title">スケールの改善</block>
+  <block id="0f4f4bf2c2176ad09cbc4a0ca3ff4eeb" category="paragraph">Element 12.7では、既存のクラスタに複数のストレージノードのブロックドライブとメタデータドライブを追加する際に、特定の順序を指定する必要がなくなりました。Element UIまたはAPIを使用すると、使用可能なすべてのドライブを選択し、同時に一括で追加することができます。Element 12.7は、すべてのブロックサービスが同時に同期されるように、データ同期を自動的に管理します。各ノードのブロックサービスが同期を完了すると、そのノード上のメタデータドライブがボリュームをホストできるようになります。この拡張性の向上により、読み取り応答のレイテンシが大幅に低減され、新しく追加したストレージノード間でデータを同期する際のパフォーマンスの低下を防ぐことができます。</block>
+  <block id="43a918d4e27a1a7a8251fef04c98185b" category="paragraph">Element 12.7には、ストレージファームウェアバンドルバージョン2.164.0が含まれています。このバンドルには、新しいシステムコンポーネントのサポートが含まれています。 <block ref="01562cc61c3c006c5e7ad8d89f347678" category="inline-link-macro-rx"></block>。</block>
+  <block id="3fc5b3acd1d3708d5cfa3ba7d0a8162e" category="admonition">Element 12.7リリースでは、新しいファームウェアアップデートはありません。ただし、ストレージノードで実行されている現在のファームウェアバンドルに基づいて、Element 12.7にアップグレードすると累積的な更新がインストールされます。</block>
+  <block id="5c74c03fbdeea06c0e7eb5afe2d9f9bb" category="paragraph">SolidFire Active IQ UIでQoS管理ページに移動して、クラスタに関する推奨事項とノードスロットル情報を確認できるようになりました。また、クラスタダッシュボードに合計Snapshot数が表示されるようになりました。最近の改善点としては、アクティブボリュームのプライマリノードとセカンダリノードの情報の追加、ノードのプライマリボリュームでの平均スループット、IOPS、平均レイテンシなどがあります。</block>
+  <block id="ab55ac9ce7363800677511aee7a9ab12" category="paragraph">これで、ElementソフトウェアのドキュメントからSolidFire Active IQ のドキュメントにアクセスできるようになりました。 <block ref="cf42182e91c5e79a875ebd341c48eb99" category="inline-link-macro-rx"></block>。</block>
+  <block id="4dae8e1e6549980e8397eec97af1ecaf" category="paragraph">Element 12.5では、ストレージノードへのアクセスの向上、カスタム保護ドメインの管理性の強化、クラスタの障害やイベントの新規追加と改善、クラスタ作成UI機能の強化、セキュリティの強化、Ansibleによる自動アップグレードなどが可能になっています。</block>
+  <block id="b1eb510dd705c0d83386b5f196686d5a" category="inline-link">SolidFire ストレージノードでサポートされるストレージファームウェアのバージョン</block>
+  <block id="2ef946a9f76c178cd4c28a70511f3ac8" category="list-text"><block ref="2ef946a9f76c178cd4c28a70511f3ac8" category="inline-link-rx"></block></block>
+  <block id="1dea56720635d200a6c7b3a71efca6ab" category="inline-link">NetApp Element ソフトウェア12.7リリースノート</block>
+  <block id="3e51721b09445e45502532be5e6096fc" category="list-text"><block ref="939f531b35412529043c2c302552fa24" category="inline-link-rx"></block> _ 新規 _</block>
+  <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
+  <block id="90e7c2277ee69a3d3ecf30fa1fe61ab1" category="inline-link">vCenter Plug-in 4.10リリースノート</block>
+  <block id="5c6c5d2c88269bcae97dbd93d213851a" category="list-text"><block ref="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="inline-link-rx"></block> _ 新規 _</block>
+  <block id="779aeeb0a67ee84cae70c2361654111d" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block></block>
+  <block id="b7faeba39aadbf9af836a1e70f5708d7" category="doc">SolidFire およびElementソフトウェア12.5以降のドキュメント</block>
+  <block id="280ccd6bb84b0a0b3e9c579cabeab78e" category="list-text">Element 12.7以降では、SF2405ストレージノードはサポートされていません。SF2405ストレージノードをElement 12.7にアップグレードすると、このノードがElement 12.7でサポートされていないことを示すエラーが表示されます。</block>
+  <block id="dddc768078a274c29d2a79433013cc8b" category="list-text">Element 12.5以降では、ElementソフトウェアのアップグレードでNetApp HealthToolsがサポートされなくなりました。Element 11.0または11.1を実行している場合は、最初にが必要です <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> NetApp Hybrid Cloud Controlを使用してElement 12.5以降にアップグレードします。</block>
+  <block id="4b1a9ce7f7fbe6c6a81ef1238b7e421a" category="list-text">に十分な時間を設定しておきます <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> および <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> アップグレード：Elementソフトウェア12.5以降にアップグレードする場合は、Elementソフトウェアのバージョンとファームウェアの更新によってアップグレードプロセスの時間が異なります。</block>
+  <block id="11d9cbba51c832a014742a5da1938d41" category="paragraph">Element 12.5以降では、次の順序でNetApp SolidFire オールフラッシュストレージシステムをアップグレードできます。</block>
+  <block id="840a7d863d92c143994565c1a1169097" category="admonition">ご使用のハードウェアのファームウェアとドライバのファームウェアの一覧については、を参照してください<block ref="30c1aa6de93ea8b8201546979be3ae7b" category="inline-link-rx"></block>。</block>
+  <block id="7df8805b6d2dda4d3fb6d3ac7bb98b27" category="inline-link-macro">HealthToolsを使用してElement 12.3.xにアップグレードします</block>
+  <block id="dc1b969077a38d3c5d1ddc04ce3b29c7" category="admonition">Element 12.5以降では、ElementソフトウェアのアップグレードでNetApp HealthToolsがサポートされなくなりました。Element 11.0または11.1を実行している場合は、最初にが必要です <block ref="b94815288b0622c054c235dd32c9c615" category="inline-link-macro-rx"></block> NetApp Hybrid Cloud Controlを使用してElement 12.5以降にアップグレードします。</block>
+  <block id="7ef561ec74f917ecad309d4001bff056" category="admonition">Elementソフトウェアをバージョン12.5以降にアップグレードする前に、最新の管理サービスバンドルにアップグレードする必要があります。Elementソフトウェアをバージョン12.5以降に更新する場合は、管理サービス2.21.61以降が必要です。</block>
+  <block id="25c6e7b86999549e989728f739c4fc89" category="admonition">H610SシリーズノードをElement 12.5以降にアップグレードする場合、ノードで11.8よりも前のバージョンのElementが実行されているときは、こので追加のアップグレード手順を実行する必要があります<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block> ストレージノードごとに割り当てます。Element 11.8以降を実行している場合は、追加のアップグレード手順は必要ありません。</block>
+  <block id="29bba7cbe3dac4ea58cab61272150fe8" category="paragraph">管理ノードをバージョン12.3.x以降から管理ノード12.5以降にアップグレードできます。</block>
+  <block id="4ff70a8151851ab1e82db6f0eed42808" category="list-text"><block ref="810c9a492c31390e08f0e76e7c298785" category="inline-xref-macro-rx"></block></block>
+  <block id="2a67edcd39483da3b7c2244d1a853ca7" category="section-title">バージョン12.3.x以降から管理ノードをバージョン12.5以降にアップグレードします</block>
+  <block id="00986f242d79556b370e046857ac478c" category="paragraph">新しい管理ノード仮想マシンをプロビジョニングすることなく、バージョン12.3.x以降からバージョン12.5以降への管理ノードのインプレースアップグレードを実行できます。</block>
+  <block id="162101c4a12e19388bdcdc0495ccc2ae" category="admonition">Element 12.5以降の管理ノードはオプションのアップグレードです。既存の環境では必要ありません。</block>
+  <block id="cd847f70c9955e37a7a701eee9f2cd67" category="list-text">アップグレードする管理ノードのバージョンが 12.0 で、 IPv4 ネットワークを使用している。管理ノードバージョン12.5以降ではIPv6がサポートされません。</block>
+  <block id="94f146a196ada89ebff337e86bd67dd8" category="list-text">管理ノードをバージョン12.5以降に更新する場合は、管理サービス2.21.61以降が実行されます。</block>
+  <block id="b529479350602e9be1d9caa1838edb9b" category="list-text">ストレージノードでElement 12.3.x以降が実行されています。</block>
+  <block id="a3fc65b85282a6a88ae5d5d3defca6e5" category="sidebar">Elementソフトウェア12.5以降向けのNetApp SolidFire オールフラッシュストレージシステムをアップグレード</block>
 </blocks>

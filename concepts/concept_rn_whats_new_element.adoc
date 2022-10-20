@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: netapp, solidfire, element, storage, solidfire enterprise sds 
 summary: ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。 
 ---
-= Elementソフトウェア12.5の新機能
+= Elementソフトウェア12.5以降の新機能
 :allow-uri-read: 
 :url-peak: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Element_Software_-_Apache_Log4j_Vulnerability_-_Workaround
 :icons: font
@@ -12,13 +12,75 @@ summary: ネットアップでは、 SolidFire および Element ソフトウェ
 
 
 [role="lead"]
-ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。Element 12.5では、ストレージノードへのアクセスの向上、カスタム保護ドメインの管理性の強化、クラスタの障害やイベントの新規追加と改善、クラスタ作成UI機能の強化、セキュリティの強化、Ansibleによる自動アップグレードなどが可能になっています。
+ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。Element 12.7は最新リリースで、セキュリティおよびシステムコンポーネントのアップデート、運用の改善、および解決済みの問題が含まれています。
+
+
+NOTE: ソフトウェアとファームウェアの累積更新は、ストレージクラスタで実行されているElementの現在のバージョンに基づいて、Element 12.7のアップグレードの一環としてインストールされます。たとえば、クラスタでElement 12.3.xが実行されている場合は、Element 12.7に直接アップグレードして、Element 12.5と12.7の両方から累積的な更新を取得できます。サポートされるアップグレードパスについては、こちらを参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software["こちらの技術情報アーティクル"^]
+
+
+
+== 要素12.7
+
+Element 12.7の新機能の詳細をご確認ください。
+
+
+
+=== セキュアCHAPアルゴリズム
+
+Element 12.7には、セキュアなFIPS準拠のChallenge-Handshake Authentication Protocol（CHAP）アルゴリズムSHA1、SHA-256、SHA-256がサポートされています。 link:../storage/task_data_manage_accounts_work_with_accounts_task.html["詳細はこちら。"]。
+
+
+
+=== ダイナミックブロック（BIN）の同期レート
+
+ノードの追加、アップグレード、メンテナンスなどのクラスタ処理やドライブの追加などのクラスタ処理では、ブロック（bin）の同期がトリガーされ、クラスタレイアウトの新しいノードまたは更新されたノードにブロックデータが分散されます。デフォルトの同期速度として1つの低速を使用すると、これらの処理に長い時間がかかり、大規模なノードの処理能力は活用されません。Element 12.7以降、ストレージノード上のコア数に基づいて動的に同期速度が調整されるため、これらの処理を大幅に高速化できます。
+
+たとえば、Element 12.7を実行する大規模な28コアストレージノード（H610S、SF19210、およびSF38410）を既存のクラスタに追加すると、データの同期速度は60MBpsではなく110MBpsに自動的に調整されます。また、NetApp Hybrid Cloud Controlを使用したElement 12.3.x以降からElement 12.7へのアップグレード時などに、これらの大規模なストレージノードをノードメンテナンスモードから解除すると、変更されたブロックデータ速度の同期レートが20MBpsではなく110MBpsに自動的に調整されます。
+
+中規模な16コアストレージノード（H410S）と小規模な12コアストレージノード（SF4805）をElement 12.7クラスタに追加した場合、データの同期速度は60MBpsのままになります。 ただし、Element 12.3.xからElement 12.7へのアップグレード時に変更されたブロックをノードメンテナンスモードから解除すると、同期レートは、メディアストレージノードでは20Mbpsから60Mbpsに、小規模ストレージノードでは40Mbpsに自動的に調整されます。
+
+ストレージノードを削除しても、ブロックの同期速度には影響しないため、クライアントのI/Oへのパフォーマンスの影響はありません
+
+
+
+=== ガベージコレクションの改善
+
+ストレージノードが大規模なクラスタの場合：1PBの使用済みスペースがあるH610S-4では、上書きされて非常に高いワークロードが実行されています。 また、重複排除機能と圧縮機能が高いため、大容量ノードのデフォルトのブルームフィルタサイズが700GB以上から1048576ビットに拡大されているため、ガベージコレクション操作を維持できるようになりました。この変更は、ストレージノードをElement 12.7にアップグレードすると自動的に有効になり、小規模なノードには影響しません。
+
+
+
+=== スケールの改善
+
+Element 12.7では、既存のクラスタに複数のストレージノードのブロックドライブとメタデータドライブを追加する際に、特定の順序を指定する必要がなくなりました。Element UIまたはAPIを使用すると、使用可能なすべてのドライブを選択し、同時に一括で追加することができます。Element 12.7は、すべてのブロックサービスが同時に同期されるように、データ同期を自動的に管理します。各ノードのブロックサービスが同期を完了すると、そのノード上のメタデータドライブがボリュームをホストできるようになります。この拡張性の向上により、読み取り応答のレイテンシが大幅に低減され、新しく追加したストレージノード間でデータを同期する際のパフォーマンスの低下を防ぐことができます。
+
+
+
+=== ストレージノードのファームウェアの更新
+
+Element 12.7には、ストレージファームウェアバンドルバージョン2.164.0が含まれています。このバンドルには、新しいシステムコンポーネントのサポートが含まれています。 link:https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.164.0.html["詳細はこちら。"]。
+
+
+NOTE: Element 12.7リリースでは、新しいファームウェアアップデートはありません。ただし、ストレージノードで実行されている現在のファームウェアバンドルに基づいて、Element 12.7にアップグレードすると累積的な更新がインストールされます。
+
+
+
+=== SolidFire Active IQ のドキュメント
+
+SolidFire Active IQ UIでQoS管理ページに移動して、クラスタに関する推奨事項とノードスロットル情報を確認できるようになりました。また、クラスタダッシュボードに合計Snapshot数が表示されるようになりました。最近の改善点としては、アクティブボリュームのプライマリノードとセカンダリノードの情報の追加、ノードのプライマリボリュームでの平均スループット、IOPS、平均レイテンシなどがあります。
+
+これで、ElementソフトウェアのドキュメントからSolidFire Active IQ のドキュメントにアクセスできるようになりました。 link:https://docs.netapp.com/us-en/element-software/monitor-storage-active-iq.html["詳細はこちら。"]。
+
+
+
+=== NetApp Bugs Onlineには、解決済みの問題と既知の問題があります
+
+解決済みの問題と既知の問題の一覧については、NetApp Bugs Onlineツールを参照してください。これらの問題は、Elementソフトウェアおよびその他の製品で参照できます https://mysupport.netapp.com/site/products/all/details/element-software/bugsonline-tab["NetApp Bugs Online では"^]。
 
 
 
 == Element 12.5
 
-Element 12.5の新機能について詳しくは、こちらをご覧ください。
+Element 12.5では、ストレージノードへのアクセスの向上、カスタム保護ドメインの管理性の強化、クラスタの障害やイベントの新規追加と改善、クラスタ作成UI機能の強化、セキュリティの強化、Ansibleによる自動アップグレードなどが可能になっています。
 
 
 
@@ -66,12 +128,6 @@ Element 12.5には、120を超えるCVEセキュリティ脆弱性の修正も�
 
 Element 12.5では、Ansibleを使用してストレージクラスタ全体のローリングアップグレードを実行することで、Elementソフトウェアのアップグレードワークフローを自動化できます。作業を開始するには、に移動します https://github.com/NetApp-Automation["NetApp Ansibleリポジトリ"^] GitHubで'NAR_solidfire_SDS_upgradeロールとドキュメントをダウンロードします
 
-
-
-=== NetApp Bugs Onlineには、解決済みの問題と既知の問題があります
-
-解決済みの問題と既知の問題の一覧については、NetApp Bugs Onlineツールを参照してください。これらの問題は、Elementソフトウェアおよびその他の製品で参照できます https://mysupport.netapp.com/site/products/all/details/element-software/bugsonline-tab["NetApp Bugs Online では"^]。
-
 [discrete]
 == 詳細については、こちらをご覧ください
 
@@ -81,5 +137,5 @@ Element 12.5では、Ansibleを使用してストレージクラスタ全体の�
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"^]
 * http://docs.netapp.com/sfe-122/index.jsp["以前のバージョン用の SolidFire および Element ソフトウェアドキュメントセンター"^]
 * https://www.netapp.com/us/documentation/hci.aspx["NetApp HCI のリソースページ"^]
-* https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software["NetApp HCI および NetApp Element のファームウェアとドライバのバージョン ソフトウェア"^]
+* https://docs.netapp.com/us-en/hci/docs/fw_storage_nodes.html["SolidFire ストレージノードでサポートされるストレージファームウェアのバージョン"^]
 
