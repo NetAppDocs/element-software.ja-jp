@@ -75,6 +75,8 @@ entries:
     url: "/api/reference_element_api_idpconfiginfo.html"
   - title: イニシエータ
     url: "/api/reference_element_api_initiator.html"
+  - title: ISCSIAuthenticationの略
+    url: "/api/reference_element_api_iscsiauthentication.html"
   - title: keyProviderKmip
     url: "/api/reference_element_api_keyproviderkmip.html"
   - title: KeyServerKmip

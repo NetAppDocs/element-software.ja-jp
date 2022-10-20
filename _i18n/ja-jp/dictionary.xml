@@ -3471,7 +3471,6 @@
   <block id="599159fa797fcb671e2546a86ff13043" category="doc">SnapMirror ラベル</block>
   <block id="a05f7e42c392eb71c87dcfbb65fda74b" category="paragraph">Snapshot にラベルを適用すると、その Snapshot が SnapMirror レプリケーションのターゲットとしてマークされます。関係の役割は、データ転送にルールを適用するために、一致するラベルの付いた Snapshot を選択してデスティネーションボリュームにコピーし、正しい数のコピーが保持されるようにすることです。関係では、ポリシーを参照して保持数と保持期間が特定されます。ポリシーには任意の数のルールを含めることができ、各ルールにはラベルが付けられます。このラベルは、 Snapshot と保持ルールの間のリンクとして機能します。</block>
   <block id="73aeb1f21c4197f4982b1663655493ad" category="paragraph">この SnapMirror ラベルによって、選択した Snapshot 、グループ Snapshot 、またはスケジュールに適用されるルールが指定されます。</block>
-  <block id="c862058e7345a40a7280afb21deb5070" category="summary">SolidFire ストレージシステムでは、クライアントはユーザアカウントを使用してノード上のボリュームに接続します。ボリュームには、作成時に特定のユーザアカウントが割り当てられます。</block>
   <block id="4082f16ece7fe49a6ae9cff89731b948" category="paragraph">アカウントには最大 2 、 000 個のボリュームを関連付けることができますが、 1 つのボリュームが属することのできるアカウントは 1 つだけです。</block>
   <block id="2fdfd506efea08144c0794c32ca8250a" category="section-title">アカウントを作成します</block>
   <block id="4c284224e57855e8f92076f429042030" category="paragraph">アカウントを作成して、ボリュームへのアクセスを許可することができます。</block>
@@ -12246,17 +12245,12 @@
   <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp Hシリーズストレージノードでサポートされるファームウェアのリビジョン</block>
   <block id="376acf421ab362eb5e198d9dbe0ef1f4" category="summary">Element 12.5以降では、管理ノードでsfreadonlyユーザアカウントを有効にして、ネットアップサポートによるサポートなしでシステムコンポーネントのトラブルシューティングを行うことができます。高度なトラブルシューティングのために、ネットアップサポート用のリモートサポートトンネルアクセスを有効にして開くこともできます。</block>
   <block id="03977ca9014ed49925d2fb260f5a2b6f" category="paragraph">Elementソフトウェアのバージョンに応じて、次のSFシリーズストレージノードはサポートされません。</block>
-  <block id="02cf6300fcf798dec9268510fe501399" category="cell">Elementソフトウェアのバージョン</block>
-  <block id="d491880ed7c4f2716c5b8ebf0f2cfbb0" category="cell">SFシリーズストレージノード</block>
-  <block id="30e5e485b533c453bba3daf6375cc212" category="cell">Element 12.0以降</block>
-  <block id="7f2ce5d6d8ad99c7a9f40d2f7b993f65" category="cell">Element 12.7から</block>
   <block id="8c807086e16a6bf793517a3ea6554487" category="paragraph">これらのストレージノードのいずれかをサポート対象外のElementバージョンにアップグレードしようとすると、Element 12.xでサポートされていないことを示すエラーが表示されます</block>
   <block id="b1ac6637f319a778daa4b7822c1798b5" category="paragraph">Element 12.5以降へのアップグレード時、「BmcSelfTestFailed」エラーは、BMCにすでに障害が発生しているノード、またはアップグレード中にノードのBMCに障害が発生したノードに対しては生成されません。アップグレード中にセルフテストに失敗したBMCは'クラスタ全体のアップグレードが完了した後'BmcSelfTestFailed'警告エラーを問題 に通知します</block>
   <block id="57f06358fba0b8a8922a0641b09632cd" category="list-text">*アップグレード処理時間*:アップグレードを実行するための十分な時間を確保しています。Elementソフトウェア12.5以降にアップグレードする場合は、Elementソフトウェアの現在のバージョンとファームウェアの更新によってアップグレードプロセスの時間が異なります。</block>
   <block id="139691973eba994346784166c2abe4d8" category="cell">最新のファームウェアを搭載したSolidFire およびNetApp Hシリーズのすべてのノード^3^</block>
   <block id="f8d237cd828d649cb8579bc85ca63755" category="inline-link">SolidFire ストレージノードでサポートされるストレージファームウェアのバージョン</block>
   <block id="b20b54856add4fca7311231c02ca0554" category="paragraph">^1ご使用のハードウェアのファームウェアおよびドライバファームウェアの完全なマトリックスについては、を参照してください<block ref="30c1aa6de93ea8b8201546979be3ae7b" category="inline-link-rx"></block>。</block>
-  <block id="084b51ffb24ddd67b6e5691377e919f4" category="paragraph">^3^ Element 12.7以降、SF2405ストレージノードはサポートされていません。SF2405をElement 12.7にアップグレードしようとすると、このノードがElement 12.7でサポートされていないことを示すエラーが表示されます。</block>
   <block id="05b5a3d236fa2bfaecf9efbeb480af88" category="paragraph">Element 12.5以降、「sfreadonly」は新しいシステムアカウントであり、ノード上での基本的なトラブルシューティングを可能にします。このAPIでは、クラスタ内のすべてのノードで「sfreadonly」システムアカウントを使用したSSHアクセスが有効になります。</block>
   <block id="482c14e23170c54f9df57d397733d7af" category="doc">Elementソフトウェア12.5以降の新機能</block>
   <block id="5267888908e1548e1d5846f51c92bac9" category="paragraph">ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。Element 12.7は最新リリースで、セキュリティおよびシステムコンポーネントのアップデート、運用の改善、および解決済みの問題が含まれています。</block>
@@ -12288,8 +12282,6 @@
   <block id="5c6c5d2c88269bcae97dbd93d213851a" category="list-text"><block ref="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="inline-link-rx"></block> _ 新規 _</block>
   <block id="779aeeb0a67ee84cae70c2361654111d" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block></block>
   <block id="b7faeba39aadbf9af836a1e70f5708d7" category="doc">SolidFire およびElementソフトウェア12.5以降のドキュメント</block>
-  <block id="280ccd6bb84b0a0b3e9c579cabeab78e" category="list-text">Element 12.7以降では、SF2405ストレージノードはサポートされていません。SF2405ストレージノードをElement 12.7にアップグレードすると、このノードがElement 12.7でサポートされていないことを示すエラーが表示されます。</block>
-  <block id="dddc768078a274c29d2a79433013cc8b" category="list-text">Element 12.5以降では、ElementソフトウェアのアップグレードでNetApp HealthToolsがサポートされなくなりました。Element 11.0または11.1を実行している場合は、最初にが必要です <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> NetApp Hybrid Cloud Controlを使用してElement 12.5以降にアップグレードします。</block>
   <block id="4b1a9ce7f7fbe6c6a81ef1238b7e421a" category="list-text">に十分な時間を設定しておきます <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> および <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> アップグレード：Elementソフトウェア12.5以降にアップグレードする場合は、Elementソフトウェアのバージョンとファームウェアの更新によってアップグレードプロセスの時間が異なります。</block>
   <block id="11d9cbba51c832a014742a5da1938d41" category="paragraph">Element 12.5以降では、次の順序でNetApp SolidFire オールフラッシュストレージシステムをアップグレードできます。</block>
   <block id="840a7d863d92c143994565c1a1169097" category="admonition">ご使用のハードウェアのファームウェアとドライバのファームウェアの一覧については、を参照してください<block ref="30c1aa6de93ea8b8201546979be3ae7b" category="inline-link-rx"></block>。</block>
@@ -12306,4 +12298,40 @@
   <block id="94f146a196ada89ebff337e86bd67dd8" category="list-text">管理ノードをバージョン12.5以降に更新する場合は、管理サービス2.21.61以降が実行されます。</block>
   <block id="b529479350602e9be1d9caa1838edb9b" category="list-text">ストレージノードでElement 12.3.x以降が実行されています。</block>
   <block id="a3fc65b85282a6a88ae5d5d3defca6e5" category="sidebar">Elementソフトウェア12.5以降向けのNetApp SolidFire オールフラッシュストレージシステムをアップグレード</block>
+  <block id="153627e79a0ffb6d6ade85f68b50611b" category="inline-link-macro">Elementソフトウェア12.7のご注意ください</block>
+  <block id="ab73a3f8818312d49869de237a845464" category="list-text"><block ref="ab73a3f8818312d49869de237a845464" category="inline-link-macro-rx"></block></block>
+  <block id="0ce0d000aa89de0d0743fc44c13f94f4" category="inline-link-macro">Ember OS 12.7の注意</block>
+  <block id="56e5995b672eb3b444091a7a02e9f649" category="list-text"><block ref="56e5995b672eb3b444091a7a02e9f649" category="inline-link-macro-rx"></block></block>
+  <block id="fe083ab0d94ac0f3fab1459ec6687f07" category="inline-link-macro">管理ノード12.7の注意</block>
+  <block id="a906487a007d594fc20699a82221d349" category="list-text"><block ref="a906487a007d594fc20699a82221d349" category="inline-link-macro-rx"></block></block>
+  <block id="4b1bf8212206bf46f19c51764c4e1a10" category="inline-link-macro">ストレージファームウェアバンドル2.164.0の注意事項</block>
+  <block id="d57216d6837a747e09b565470b2ef946" category="list-text"><block ref="d57216d6837a747e09b565470b2ef946" category="inline-link-macro-rx"></block></block>
+  <block id="5959cf5fc1876c0cf2f01475b2d29319" category="cell">先頭のドキュメント</block>
+  <block id="9591fa9a8d37fb96963a1164f28d8329" category="cell">ストレージノードがサポートされていません...</block>
+  <block id="80736a9fd1a5cd3a0f3c3ef7e8c627c1" category="cell">Element 12.0</block>
+  <block id="3d6ac36552702d0a682fac26d1841715" category="summary">SolidFire ストレージシステムでは、テナントはアカウントを使用して、クライアントがノード上のボリュームに接続できるようにすることができます。アカウントには、そのアカウントに割り当てられているボリュームへのアクセスに必要な CHAP 認証が含まれています。ボリュームは、作成時に特定のアカウントに割り当てられます。</block>
+  <block id="adf63029757917f4aff07fe55725e5d9" category="section-title">CHAPアルゴリズム</block>
+  <block id="3b2569fbd052a233a8a46886c97fc207" category="paragraph">Element 12.7以降では、FIPS準拠のセキュアなCHAPアルゴリズムSHA1、SHA-256、およびSHA3-256がサポートされています。Element 12.7では、ホストiSCSIイニシエータがElement iSCSIターゲットを使用してiSCSIセッションを作成している場合、使用するCHAPアルゴリズムのリストを要求します。ElementのiSCSIターゲットは、ホストのiSCSIイニシエータが要求したリストから、最初にサポートするアルゴリズムを選択します。ElementのiSCSIターゲットが最もセキュアなアルゴリズムを選択することを確認するには、ホストのiSCSIイニシエータを設定して、最もセキュアなアルゴリズム（SHA-256など）から最もセキュアでないアルゴリズムのリストを送信する必要があります。たとえば、次のようになります。 SHA1またはMD5。ホストのiSCSIイニシエータからSHAアルゴリズムが要求されない場合は、ホストから提示されたアルゴリズムのリストにMD5が含まれていれば、Element iSCSIターゲットによってMD5が選択されます。セキュアなアルゴリズムのサポートを有効にするために、ホストのiSCSIイニシエータ設定の更新が必要になる場合があります。</block>
+  <block id="b8bb97697b35e86a4877aef90f591533" category="paragraph">Element 12.7のアップグレード時に、ストレージノードの再起動時に、SHAアルゴリズムを含むリストを含むセッション要求を送信するようにホストiSCSIイニシエータ設定がすでに更新されている場合は、 新しいセキュア・アルゴリズムがアクティブ化され、最もセキュアなプロトコルを使用して、新規または再接続されたiSCSIセッションが確立されます。アップグレード時に、既存のすべてのiSCSIセッションがMD5からSHAに移行します。SHAを要求するためにホストiSCSIイニシエータの設定を更新しない場合、既存のiSCSIセッションでは引き続きMD5が使用されます。ホストのiSCSIイニシエータCHAPアルゴリズムをあとで更新したあと、iSCSIセッションは、iSCSIセッションの再接続になるメンテナンス作業に基づいて、時間の経過とともにMD5からSHAに徐々に移行する必要があります。</block>
+  <block id="db6cb10180fa1523938da319a188d13d" category="paragraph">たとえば、Red Hat Enterprise Linux（RHEL）8.3のデフォルトのホストiSCSIイニシエータでは、「node.session.auth.chap_algs = SHA3-256、SHA256、SHA1、MD5」の設定がコメントアウトされており、iSCSIイニシエータではMD5が使用されています。ホストでこの設定のコメントを解除し、iSCSIイニシエータを再起動すると、そのホストからのiSCSIセッションがSHA-256を使用し始めるようになります。</block>
+  <block id="55fc627721522ae45305c9f988153a20" category="paragraph">必要に応じて、を使用できます<block ref="06aa6b6b67e008146e7c8d6417794b62" category="inline-link-rx"></block> 各セッションで使用されているCHAPアルゴリズムを確認するためのAPIメソッド。</block>
+  <block id="822cfacfacaf81a90ce9862ea1ea1e0e" category="paragraph">^3^ Element 12.7以降、SF2405およびSF9608ストレージノード、FC0025およびSF-FCN-01 FCノードはサポートされていません。SF2405をElement 12.7にアップグレードしようとすると、このノードがElement 12.7でサポートされていないことを示すエラーが表示されます。</block>
+  <block id="197daf7bc8c465056c36b92f2d586989" category="paragraph">Elementソフトウェアのバージョンによっては、次のノードがサポートされません。</block>
+  <block id="08c7862f5f38b9fd867553b48afef501" category="list-text">Element 12.7以降、SF2405およびSF9608ストレージノード、FC0025およびSF-FCN-01 FCノード。</block>
+  <block id="8308b7fe397e44d83e5a712066af41fb" category="list-text">Element 12.0以降、SF3010、SF6010、およびSF9010ストレージノード。</block>
+  <block id="317098c2199258cdc962c4debca77db2" category="list-text">Element 12.7以降、SF2405およびSF9608ストレージノード。</block>
+  <block id="b0d78c489174a630a6e5502b9e0dd40b" category="summary">ISCSIAuthenticationオブジェクトには、iSCSIセッションに関する認証情報が含まれます。</block>
+  <block id="69077e0fa8b70b64097afc89348bf61f" category="doc">ISCSIAuthenticationの略</block>
+  <block id="770823b04c56cf06b613a8c46e074777" category="paragraph">iSCSIセッションのログイン時に使用される認証方法。CHAPやNoneなど。</block>
+  <block id="c1e71a842db5c0d9b8794b78708cd11c" category="paragraph">chapAlgorithm</block>
+  <block id="2fb17ea4ae9813c2eb5d3a5bd7fe3512" category="paragraph">使用されるCHAPアルゴリズム。例：MD5、SHA1 *、SHA-256 *、 またはSHOR3-256 *</block>
+  <block id="e4129684446aea2a0364c5466dc85146" category="paragraph">iSCSIセッションログイン時にイニシエータが指定するCHAPユーザ名。</block>
+  <block id="ef72c37be9d1b9e6e5bbd6ef09448abe" category="paragraph">方向（Direction）</block>
+  <block id="e7eefd9834440f0ab15e111471053cf0" category="paragraph">一方向（イニシエータのみ）または双方向（イニシエータとターゲットの両方）などの認証方向。</block>
+  <block id="cd6217be1698a09a848043a5d6c72040" category="paragraph">* Element 12.7以降で提供。</block>
+  <block id="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="list-text"><block ref="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="inline-xref-macro-rx"></block></block>
+  <block id="6fa691d2c07bea6ae78b7022c80e9d20" category="paragraph">認証</block>
+  <block id="b7a8a9738e1b53aeef92d2d4490ed88c" category="paragraph">このiSCSIセッションの認証情報。</block>
+  <block id="2e5eceda3bfa3409dad5d20e93cd57ac" category="list-text">Element 12.7以降では、SF2405およびSF9608ストレージノード、FC0025およびSF-FCN-01 FCノードはサポートされていません。これらのノードのいずれかをElement 12.7にアップグレードすると、このノードがElement 12.7でサポートされていないことを示すエラーが表示されます。</block>
+  <block id="3ce48b341428a446ef1ef80ae2ebc84a" category="list-text">Element 12.5以降では、ElementソフトウェアのアップグレードでNetApp HealthToolsがサポートされなくなりました。Element 11.0または11.1を実行している場合は、最初にが必要です <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> NetApp Hybrid Cloud Controlを使用してElement 12.5にアップグレードします。NetApp Hybrid Cloud Controlを使用してElement 12.5以降にアップグレードします。</block>
 </blocks>

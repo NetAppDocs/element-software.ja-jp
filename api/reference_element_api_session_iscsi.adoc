@@ -42,6 +42,15 @@ CHAP 認証に使用するアカウントの名前（存在する場合）。
 
 
  a| 
+認証
+ a| 
+このiSCSIセッションの認証情報。
+ a| 
+xref:reference_element_api_iscsiauthentication.adoc[ISCSIAuthenticationの略]
+
+
+
+ a| 
 CreateTime をクリックします
  a| 
 iSCSI セッションが作成された時刻（ UTC+0 形式）。

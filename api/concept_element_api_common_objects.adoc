@@ -40,6 +40,7 @@ Element ソフトウェア API は、まとまったデータの概念を表す�
 * xref:reference_element_api_host.adoc[host カソウホリユウム]
 * xref:reference_element_api_idpconfiginfo.adoc[idpConfigInfo]
 * xref:reference_element_api_initiator.adoc[イニシエータ]
+* xref:reference_element_api_iscsiauthentication.adoc[ISCSIAuthenticationの略]
 * xref:reference_element_api_keyproviderkmip.adoc[keyProviderKmip]
 * xref:reference_element_api_keyserverkmip.adoc[KeyServerKmip]
 * xref:reference_element_api_ldapconfiguration.adoc[ldapConfiguration （ ldapConfiguration ）]
