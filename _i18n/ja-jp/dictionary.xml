@@ -12144,7 +12144,6 @@
   <block id="65475fb8d204c527f117e51b4e025657" category="sidebar">Element 12.3のドキュメント</block>
   <block id="612f97930662fc3cd831ed7bc5ae322c" category="list-text">Elementデモノード12.3および12.5 VM用のESXi 6.7および7.0</block>
   <block id="f73f11dc118d0773193fe38ff975e133" category="inline-link">『Storage Firmware Bundle 2.150 Release Notes』を参照してください</block>
-  <block id="4ed157f2adee50f00ed14eca30c23284" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block> _ 新規 _</block>
   <block id="e8158506d71c28d8d821c3acbeb0f97d" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block></block>
   <block id="831b7fafcb48c5cdc3232392066936d8" category="inline-link-macro">ストレージファームウェアバンドル2.150に関する注意事項</block>
   <block id="24918f39116096f98dc92e1125b8a780" category="list-text"><block ref="24918f39116096f98dc92e1125b8a780" category="inline-link-macro-rx"></block></block>
@@ -12319,7 +12318,6 @@
   <block id="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="list-text"><block ref="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="inline-xref-macro-rx"></block></block>
   <block id="6fa691d2c07bea6ae78b7022c80e9d20" category="paragraph">認証</block>
   <block id="b7a8a9738e1b53aeef92d2d4490ed88c" category="paragraph">このiSCSIセッションの認証情報。</block>
-  <block id="3ce48b341428a446ef1ef80ae2ebc84a" category="list-text">Element 12.5以降では、ElementソフトウェアのアップグレードでNetApp HealthToolsがサポートされなくなりました。Element 11.0または11.1を実行している場合は、最初にが必要です <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> NetApp Hybrid Cloud Controlを使用してElement 12.5にアップグレードします。NetApp Hybrid Cloud Controlを使用してElement 12.5以降にアップグレードします。</block>
   <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">管理サービス2.2.1.61（NetApp Element Plug-in for VMware vCenter Server 4.10.12）に関する注意事項</block>
   <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
   <block id="01c72a31a534b06f00c7ab5b05653a0a" category="list-text">vCenter Server 4.10、4.9、4.8、4.7、4.6、NetApp Element Plug-in for vCenter Server 4.10にアップグレードする場合 4.5または4.4。</block>
@@ -12338,4 +12336,10 @@
   <block id="eb354756273b461b7f8b4d3abc6ac150" category="paragraph">これらのノードのいずれかをサポート対象外のバージョンにアップグレードしようとすると、Element 12.xでサポートされていないことを示すエラーが表示されます</block>
   <block id="ab23337415270010383937ce784cb519" category="list-text">Element 12.7以降では、SF2405およびSF9608ストレージノード、FC0025およびSF-FCN-01 FCノードはサポートされていません。これらのノードのいずれかをElement 12.7にアップグレードしようとすると、このノードがElement 12.7でサポートされていないことを示すエラーが表示されます。</block>
   <block id="b2466e723f3725978ed96accd95013ae" category="paragraph">スロット 0 には、ノードのメタデータドライブが格納されます。スロット 0 のドライブを交換する場合は、交換用ドライブの梱包用の箱に入っていたステッカーを貼り、他のドライブとは区別できるようにする必要があります。</block>
+  <block id="eb66a5e31d8328246fdb5497ed40a7a4" category="inline-link">『Storage Firmware Bundle 2.164.0 Release Notes』を参照してください</block>
+  <block id="e95c3968984424b94d3bd781dd9e8819" category="list-text"><block ref="758831bd0271b3c8b1bf3b7bf6466060" category="inline-link-rx"></block> _ 新規 _</block>
+  <block id="134e2a3d5f4b8b65c064815f605c76e6" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block></block>
+  <block id="4b8861a11346d673205d074f862db70a" category="inline-link">サポートされているファームウェアおよびESXiドライバのバージョン</block>
+  <block id="bb3b8b57aaaa2ec5e665324ff79ed132" category="list-text"><block ref="16447f3faa9ba0e1db5b0d946a9dbeaf" category="inline-link-rx"></block> _ 新規 _</block>
+  <block id="e4f2f9baf039ea62b7a0740e3ba88a7a" category="list-text">Element 12.5以降では、ElementソフトウェアのアップグレードでNetApp HealthToolsがサポートされなくなりました。Element 11.0または11.1を実行している場合は、最初にが必要です <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> NetApp Hybrid Cloud Controlを使用してElement 12.5にアップグレードします。</block>
 </blocks>
