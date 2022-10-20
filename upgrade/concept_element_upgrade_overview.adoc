@@ -21,7 +21,7 @@ keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgra
 
 [NOTE]
 ====
-* Element 12.7以降では、SF2405およびSF9608ストレージノード、FC0025およびSF-FCN-01 FCノードはサポートされていません。これらのノードのいずれかをElement 12.7にアップグレードすると、このノードがElement 12.7でサポートされていないことを示すエラーが表示されます。
+* Element 12.7以降では、SF2405およびSF9608ストレージノード、FC0025およびSF-FCN-01 FCノードはサポートされていません。これらのノードのいずれかをElement 12.7にアップグレードしようとすると、このノードがElement 12.7でサポートされていないことを示すエラーが表示されます。
 * Element 12.5以降では、ElementソフトウェアのアップグレードでNetApp HealthToolsがサポートされなくなりました。Element 11.0または11.1を実行している場合は、最初にが必要です link:https://docs.netapp.com/us-en/element-software-123/upgrade/task_hcc_upgrade_element_software.html#upgrade-element-software-at-connected-sites-using-healthtools["HealthToolsを使用してElement 12.3にアップグレードします"^] NetApp Hybrid Cloud Controlを使用してElement 12.5にアップグレードします。NetApp Hybrid Cloud Controlを使用してElement 12.5以降にアップグレードします。
 
 
