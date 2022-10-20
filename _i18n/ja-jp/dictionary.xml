@@ -4756,7 +4756,6 @@
   <block id="b8b5ab3135b691068cf7fe977ca56d49" category="list-text">必要な値をペイロードに追加します。</block>
   <block id="2a9657ab3bc5d2dff84e7a553d41a3ff" category="summary">REST API を使用して、管理ノードで実行されているサービスからログを取得できます。</block>
   <block id="7eada9b3aeba75afea1bb6e56efd98a1" category="paragraph">REST API を使用して、管理ノードで実行されているサービスからログを取得できます。すべてのパブリックサービスからログを取得したり、特定のサービスを指定したりできます。また、クエリパラメータを使用して、取得する内容を細かく絞り込むこともできます。</block>
-  <block id="4ac581155f2c6a4a3a056078e2b122a1" category="list-text">管理ノードで REST API UI を開きます。</block>
   <block id="fe5314e1f2b52008d7c6c1dc49232535" category="list-text">mnode-client の値がまだ入力されていない場合は、クライアント ID を入力します。</block>
   <block id="09cd4d07205bec65818c2a8ba07333f0" category="list-text">「 * get/logs * 」を選択します。</block>
   <block id="c3f3617407361c6204e50a958c94b6a6" category="list-text">「 Lines 」：ログから返される行数を入力します。このパラメータは整数で、デフォルトは 1000 です。</block>
@@ -12336,4 +12335,7 @@
   <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">管理サービス2.2.1.61（NetApp Element Plug-in for VMware vCenter Server 4.10.12）に関する注意事項</block>
   <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
   <block id="01c72a31a534b06f00c7ab5b05653a0a" category="list-text">vCenter Server 4.10、4.9、4.8、4.7、4.6、NetApp Element Plug-in for vCenter Server 4.10にアップグレードする場合 4.5または4.4。</block>
+  <block id="5d8cb69408d9a6773459aa0a397a3003" category="list-text">管理ノードでREST API UIを開きます。</block>
+  <block id="4eed3af07414f10fffdba8a7ff51ca36" category="list-text">管理サービス2.2.1.61以降では、次の処理を実行します。</block>
+  <block id="880c70977a68b1ec897e498bb11c7021" category="list-text">管理サービス2.20.69以前の場合：</block>
 </blocks>
