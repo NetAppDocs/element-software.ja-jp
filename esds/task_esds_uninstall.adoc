@@ -14,14 +14,14 @@ summary: ノード上の SolidFire ESDS を削除することで、 SolidFire ES
 ノード上の SolidFire ESDS を削除することにより、 SolidFire ESDS をインストールしたノードを * リセット * できます。ノードで SolidFire ESDS を復元するには、すべてのインストール手順を実行する必要があります。
 
 
-NOTE: を使用できます link:https://github.com/NetApp-Automation/nar_solidfire_sds_uninstall["「 nar_solidfire_sds_uninstall 」"^] 処理を実行するためにネットアップが提供する Ansible のロール。ノードから SolidFire ESDS を手動で削除する場合は、次の手順を参照してください。
+NOTE: を使用できます link:https://github.com/NetApp-Automation/nar_solidfire_sds_uninstall["bfc7399c1c92cf0d90621d6b98ee2e84"^] 処理を実行するためにネットアップが提供する Ansible のロール。ノードから SolidFire ESDS を手動で削除する場合は、次の手順を参照してください。
 
 .手順
-. Element UI またはを使用してクラスタからドライブを削除します https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removedrives.html["「 RemoveDrives 」を参照してください"^] API メソッド。
+. Element UI またはを使用してクラスタからドライブを削除します https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removedrives.html["c97feb073ff79f44cf03a1742a29f033"^] API メソッド。
 +
 その結果、ノードのドライブからクラスタ内の他のドライブへデータが移行されます。このプロセスにかかる時間は、移行が必要なデータの量によって異なります。
 
-. Element UI またはを使用して、クラスタからノードを削除します https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removenodes.html["「 RemoveNodes 」"^] API メソッド。
+. Element UI またはを使用して、クラスタからノードを削除します https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removenodes.html["3a7274d7e44dc3f5bd547cc6bc747d94"^] API メソッド。
 . クラスタから削除したノードに SSH を使用して接続します。
 . 次のように、ノードから SolidFire ESDS を削除します。
 +

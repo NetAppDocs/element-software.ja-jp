@@ -3894,7 +3894,6 @@
   <block id="b58f4eb51d27127044588d81769a043d" category="list-text">セキュリティ関連イベントに対する応答または保護として、新しいキーを作成します。</block>
   <block id="ec355cf03a7880d1a60bb9371fddcc50" category="inline-link-macro">GetAsyncResult</block>
   <block id="ff0f319d3e651b401a52ec174aba241a" category="admonition">このプロセスは非同期で、キー変更処理が完了する前に応答を返します。を使用できます <block ref="0ec3280d129d80613fce987917bb0350" category="inline-link-macro-rx"></block> システムをポーリングして、プロセスがいつ完了したかを確認する方法。</block>
-  <block id="9510c8e68784d05acbae2e947dde3cd8" category="inline-link-macro">GetSoftwareEncryptionatRestInfo</block>
   <block id="2f9ac93930569b85149b387a7c125c35" category="list-text">を使用して保存データのソフトウェア暗号化を有効にしておきます <block ref="3302765abfbbe930557ebd20cdd8d8e8" category="inline-link-macro-rx"></block> ボリュームを含まず、 I/O を含まない新しいクラスタ上のメソッド使用 <block ref="45a8306c9a5e0c83d4f4c7f381b9868c" category="inline-link-macro-rx"></block> 続行する前に状態が「有効」であることを確認します。</block>
   <block id="62e528d538c732360863f85252c5d0d9" category="inline-link-macro">信頼関係を確立しました</block>
   <block id="11132c180fb32da6e0e1137cce53c559" category="list-text">これで完了です <block ref="e846b05f100d06ce4cdb56417280cd74" category="inline-link-macro-rx"></block> SolidFire クラスタと外部キーサーバ（ EKS ）の間の接続に使用します。を実行します <block ref="886b549d5f0bca1725c26591df7dddef" category="inline-link-macro-rx"></block> キープロバイダへの接続が確立されていることを確認する方法。</block>
@@ -10176,7 +10175,6 @@
   <block id="b1802c77389b4ac3b23faeadf903c049" category="list-text"><block ref="1efdf10dcfe9c2e3a25a8865e617917c" category="inline-xref-macro-rx"></block></block>
   <block id="97b3e300fdc30fec27018f67c316a56f" category="list-text"><block ref="7369d04fe6c601eb40cc8c3814fb604a" category="inline-xref-macro-rx"></block></block>
   <block id="ef5b20c600ed307281dd18a2e008153b" category="list-text"><block ref="c3d184e2b4d651938156eb240caa790b" category="inline-xref-macro-rx"></block></block>
-  <block id="49284958c9d16c4b6d8ee9ddd4ebbca5" category="inline-link-macro">'NAR_solidfire_cluster_config</block>
   <block id="bdc50eb6c47970077e948f5bb3f2f8a9" category="admonition">を使用できます <block ref="66b3dfe54b73a97277e6f9c94606df0e" category="inline-link-macro-rx"></block> インストール後の手順を実行するためにネットアップが提供する Ansible のロール。手動で実行する場合は、以下の手順を参照してください。</block>
   <block id="9130cceb2ee763a25b9513639313012e" category="section-title">クラスタ名を設定</block>
   <block id="3b50f0fa5346b2b7a1dbbc42b96fff06" category="paragraph">ノードをクラスタに追加する前に、各 SolidFire ESDS ノードにクラスタ名を設定する必要があります。ノード UI または Element API を使用します。</block>
@@ -10186,7 +10184,6 @@
   <block id="3b8521cd8c98f1b89d1886e9da53e4c7" category="list-text">ノード単位の管理ノード UI を開きます https://&lt;node_mip&gt;:442`</block>
   <block id="ecf9269363976c8aa9dfb2d865ab2460" category="list-text">「 * Cluster Settings 」（クラスタ設定）を選択し、クラスタ名を入力します。</block>
   <block id="2ce8d1287d5fe484f0fb11eb92e9f79a" category="list-text">「 * 変更を適用する * 」を選択します。</block>
-  <block id="acf00854bc64655927abe2f08f53203f" category="inline-link-macro">'etClusterConfig'</block>
   <block id="cadf3b6311b2a5cd1f2479588b496983" category="list-text">を使用します <block ref="ae527e5fc4083ce232328ba1f392402b" category="inline-link-macro-rx"></block> API メソッド。</block>
   <block id="65e18a0bb1868a9c1e181302d4733dba" category="paragraph">「クラスタ」</block>
   <block id="783a065554458a06417e6f7521ebd39a" category="paragraph">次の要求例を参照してください。</block>
@@ -10227,7 +10224,6 @@
   <block id="9ec797bc87593a53c946c895e6c29645" category="list-text">Element UI を使用します。</block>
   <block id="c9347a5a6675f6567839e4fc23da9425" category="list-text">複数のドライブを追加するには、追加するドライブのチェックボックスを選択し、 * Bulk Actions * を選択し、 * Add * を選択します。</block>
   <block id="368f584747203782ae3edd4027e4dbb3" category="list-text">ドライブが追加され、クラスタの容量が想定どおりであることを確認します。</block>
-  <block id="775ca0ad68fdedd2fe06eeb23598d120" category="inline-link">「 AddDrives 」を参照してください</block>
   <block id="0c6dbcef2d177e85c06897fc358c21b2" category="list-text">を使用します<block ref="c0d40b2326a5711bff7fb806cc298f7f" category="inline-link-rx"></block> API メソッド。</block>
   <block id="eba45a3406905c7055cebb16bd953ac4" category="paragraph">「ドライブ」</block>
   <block id="333e523014fc6637a48d2a78b34543ee" category="paragraph">要求例を次に示します。</block>
@@ -10602,7 +10598,6 @@
   <block id="9c75611c54a1490d7892d192c9aa1f24" category="paragraph">出力例を次に示します。</block>
   <block id="697f1902b372db279956f211f1472f8d" category="list-text">SolidFire サービスが正常に開始されたことを確認するには 'systemctl status SolidFire コマンドを実行し ' 出力で Active ： active （ Exited ） ... を確認します</block>
   <block id="6fc37b544c0c7c6bad6a21c5e2aa379c" category="summary">ソフトウェアのアップグレードやホストの修復などのメンテナンスのためにストレージノードをオフラインにする必要がある場合は、そのノードのメンテナンスモードを有効にすることで、ストレージクラスタの残りの部分への I/O の影響を最小限に抑えることができます。</block>
-  <block id="9a22eba2ac8927a67bb3d8f09e152944" category="inline-link-macro">「 ListActiveNodes 」</block>
   <block id="e69d07edaa334125aaef7f2094da77a8" category="admonition">ノードの保守モードの現在のステータスを確認する場合は、を使用します <block ref="04e910fadadbb107f8995814b13ebed5" category="inline-link-macro-rx"></block> API メソッド。node オブジェクトには、ノードの保守モードの現在のステータスを示す「 maintenanceMode 」パラメータが含まれています。</block>
   <block id="cec1e459f131189983c83e13023b4c41" category="admonition">メンテナンスモードを有効にしたらすぐにメンテナンスを実行してください。ノードを必要以上に保守モードのままにしないでください。</block>
   <block id="b7ca43b9728873986f598048b8cf1944" category="paragraph">ストレージノードを保守モードに移行できるのは、ノードが正常で（クラスタエラーがブロックされていない）、かつストレージクラスタが単一ノード障害に対応している場合のみです。正常なトレラントノードに対してメンテナンスモードをイネーブルにすると、ノードはすぐには移行されません。ノードは、次の条件が満たされるまで監視されます。</block>
@@ -10661,11 +10656,8 @@
   <block id="560d0945440f76a732a9fbcc35180010" category="summary">ノード上の SolidFire ESDS を削除することで、 SolidFire ESDS をインストールしたノードを「リセット」できます。ノードで SolidFire ESDS を復元するには、すべてのインストール手順を実行する必要があります。</block>
   <block id="9016f524f2973678d7663aea53bb88b3" category="doc">ノードで SolidFire ESDS をアンインストールします</block>
   <block id="3b6744c82f649728c504907b57a1055e" category="paragraph">ノード上の SolidFire ESDS を削除することにより、 SolidFire ESDS をインストールしたノードを * リセット * できます。ノードで SolidFire ESDS を復元するには、すべてのインストール手順を実行する必要があります。</block>
-  <block id="bfc7399c1c92cf0d90621d6b98ee2e84" category="inline-link-macro">「 nar_solidfire_sds_uninstall 」</block>
   <block id="68629b26007b6f0d31da5f710865d8c4" category="admonition">を使用できます <block ref="e21e9b52142fa32fc9f2798e0357c93a" category="inline-link-macro-rx"></block> 処理を実行するためにネットアップが提供する Ansible のロール。ノードから SolidFire ESDS を手動で削除する場合は、次の手順を参照してください。</block>
-  <block id="c97feb073ff79f44cf03a1742a29f033" category="inline-link">「 RemoveDrives 」を参照してください</block>
   <block id="006a2c6366ad86bc1da05db85ff0ff30" category="list-text">Element UI またはを使用してクラスタからドライブを削除します<block ref="af8bb9d27ccaccc91f1f8edbd1b2c6cd" category="inline-link-rx"></block> API メソッド。</block>
-  <block id="3a7274d7e44dc3f5bd547cc6bc747d94" category="inline-link">「 RemoveNodes 」</block>
   <block id="215a2ff75aaa54f1e5a17125c706bca4" category="list-text">Element UI またはを使用して、クラスタからノードを削除します<block ref="b93ddc7d3c2a507b426fba6e07c41251" category="inline-link-rx"></block> API メソッド。</block>
   <block id="3ef7f9e0aa1c6e4768c8761acab7b60c" category="list-text">次のように、ノードから SolidFire ESDS を削除します。</block>
   <block id="0ecd55f220d62ef9bacff1300064205c" category="list-text">次の手順でディレクトリから永続データを削除します。</block>
@@ -10782,16 +10774,11 @@
   <block id="b4d38d2cfe8361b4706ee65b48cd47e7" category="list-text">'CreateGroupSnapshot'</block>
   <block id="b39b4f606b587cbb01f67a7e70186eea" category="list-text">* SolidFire ESDS* をサポートするために Element 12.2 で導入および更新された API ： SolidFire ESDS クラスタで使用できる新しい API が Element 12.2 で導入されました。</block>
   <block id="463224af5ebc7979ed09e40e54613a35" category="paragraph">Element 12.2 で追加された API の一覧を次に示します。</block>
-  <block id="41773f0138486ec234a35d7b9f9a9fbd" category="inline-link-macro">「 GetLicenseKey 」をクリックします</block>
   <block id="234e051281051671e79fd955b3cc36a1" category="list-text"><block ref="234e051281051671e79fd955b3cc36a1" category="inline-link-macro-rx"></block></block>
-  <block id="024825eae18cb8bc988d2efcdf5a78f7" category="inline-link-macro">'setLicenseKey'</block>
   <block id="2107b28d0e666b2c94a8ae5ac00facf7" category="list-text"><block ref="2107b28d0e666b2c94a8ae5ac00facf7" category="inline-link-macro-rx"></block></block>
-  <block id="c465b1888bcc159df3ab3662fac3d576" category="inline-link-macro">「 EnableMaintenanceMode 」のように表示されます</block>
   <block id="182314039c230eaf0b610ab5336bd944" category="list-text"><block ref="182314039c230eaf0b610ab5336bd944" category="inline-link-macro-rx"></block></block>
-  <block id="00ec9d3f2cdb59b4897d3e3db8e8db80" category="inline-link-macro">「 DisableMaintenanceMode 」</block>
   <block id="6c8f5d51f9d138086b55a6d2b68f0ba9" category="list-text"><block ref="6c8f5d51f9d138086b55a6d2b68f0ba9" category="inline-link-macro-rx"></block></block>
   <block id="f72e130e78ae2a72c1d8ba0e803f0638" category="paragraph">SolidFire ESDS クラスタをサポートするために、次の 12.2 の API が更新されました。</block>
-  <block id="07cacca00a99fbebd82083d61daa7d2f" category="inline-link-macro">「 AddNodes 」</block>
   <block id="34850bd5fb3f2667bbb87db4cffca2ed" category="list-text"><block ref="34850bd5fb3f2667bbb87db4cffca2ed" category="inline-link-macro-rx"></block></block>
   <block id="8404d841c616b784628d5ae406a01813" category="list-text"><block ref="8404d841c616b784628d5ae406a01813" category="inline-link-macro-rx"></block></block>
   <block id="16a30437f029582ce534f35778eac3b5" category="admonition">Element ソフトウェア 12.2 の「 CreateCluster 」メソッドに、新しいパラメータ「 OrderNumber 」、「 erialNumber 」、および「 enableSoftwareEncryptionAtRest 」が追加されました。SolidFire ESDS のインストール後にクラスタを作成する場合は、この API メソッドを使用してこれらのパラメータを指定する必要があります。</block>
@@ -12341,5 +12328,7 @@
   <block id="134e2a3d5f4b8b65c064815f605c76e6" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block></block>
   <block id="4b8861a11346d673205d074f862db70a" category="inline-link">サポートされているファームウェアおよびESXiドライバのバージョン</block>
   <block id="bb3b8b57aaaa2ec5e665324ff79ed132" category="list-text"><block ref="16447f3faa9ba0e1db5b0d946a9dbeaf" category="inline-link-rx"></block> _ 新規 _</block>
-  <block id="e4f2f9baf039ea62b7a0740e3ba88a7a" category="list-text">Element 12.5以降では、ElementソフトウェアのアップグレードでNetApp HealthToolsがサポートされなくなりました。Element 11.0または11.1を実行している場合は、最初にが必要です <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> NetApp Hybrid Cloud Controlを使用してElement 12.5にアップグレードします。</block>
+  <block id="fd755336ba3702c8d419343da5efb6d6" category="list-text">* fileSystemIsReadOnly*</block>
+  <block id="ed734a928c08d6cb25fc1abe2d4e0c3a" category="paragraph">ファイルシステムが読み取り専用モードに移行しました。</block>
+  <block id="9732e3757f397fc8e75412dea43c030e" category="list-text">Element 12.5以降では、ElementソフトウェアのアップグレードでNetApp HealthToolsがサポートされなくなりました。Element 11.0または11.1を実行している場合は、最初にが必要です<block ref="e9afc225a78965c54dbba9b335afd021" category="inline-link-rx"></block> NetApp Hybrid Cloud Controlを使用してElement 12.5以降にアップグレードします。</block>
 </blocks>
