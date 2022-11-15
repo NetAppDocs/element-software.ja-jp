@@ -515,6 +515,17 @@ vCenter Plug-in の API アクセス
  a| 
 vCenter Server の各サービスを提供
  a| 
+リモートプラグイン
+ a| 
+8333
+ a| 
+Remote vCenter Plug-inサービス
+
+
+
+ a| 
+vCenter Server の各サービスを提供
+ a| 
 管理ノード
  a| 
 8443
