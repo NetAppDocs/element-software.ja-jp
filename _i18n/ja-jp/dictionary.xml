@@ -12349,9 +12349,6 @@
   <block id="924861571eeb51fd5eb1d806da0f0e5e" category="list-text">* Elementストレージのアップグレード*：</block>
   <block id="b9ad9c0000e5c2b012be9c9ba83b7cff" category="list-text">Element vCenterプラグイン5.0以降では、NetApp Element ソフトウェア12.3.x以降を実行するクラスタが必要です。</block>
   <block id="02738f63a80a594ad3ab131f3a7298f2" category="list-text">Element vCenterプラグイン4.10以前では、NetApp Element ソフトウェア11.3以降を実行するクラスタが必要です。</block>
-  <block id="e8b1bdd38a7601206cf400f05fbdc57d" category="paragraph">vCenter Server 5向けElementプラグインで始まる：0</block>
-  <block id="05c0e13a813e930c3eab807f98959379" category="paragraph">vCenter Server 4.10以前のElementプラグイン：</block>
-  <block id="23fa7915a24406758b2d7b2b274fe1f3" category="list-text">（社内サーバ/ダークサイトの場合）Element Plug-in for vCenterのバージョンに応じて、プラグインのJSONファイルまたはプラグインのZIPのカスタムURL：</block>
   <block id="1e35767408ad5bd29ecc61c301c556ef" category="list-text">Element Plug-in for vCenter Server 5.0以降、プラグインのJSONファイルのカスタムURL。</block>
   <block id="b9d11c83e937a9ece9e8b7051bc68606" category="admonition">HTTPまたはHTTPSサーバ（ダークサイト）を使用している場合、またはJSONファイル名やネットワーク設定を変更した場合は、「* Custom URL *」を選択してURLをカスタマイズできます。URL をカスタマイズする場合の追加の設定手順については、社内（ダークサイト）の HTTP サーバの vCenter プロパティの変更に関する Element Plug-in for vCenter Server のドキュメントを参照してください。</block>
   <block id="ba85baaa049f62983a89ac7da1647abd" category="list-text">Element Plug-in for vCenter Server 4.10以前の場合は、プラグインのZIPのカスタムURL。</block>
@@ -12360,6 +12357,14 @@
   <block id="93c82fa50530ab1db18373f37f38e453" category="inline-link-macro">管理サービス2.22.7（VMware vCenter Server 5.337用NetApp Element プラグイン）に関する注意事項</block>
   <block id="6bad10de0797378a77f16be896cb0776" category="list-text"><block ref="6bad10de0797378a77f16be896cb0776" category="inline-link-macro-rx"></block></block>
   <block id="d471727ba1fb423986701d5307906d08" category="list-text">vSphere Web Clientの* Shortcuts *タブとサイドパネルにプラグインの拡張ポイントが表示されていることを確認します。</block>
-  <block id="290b380ec7760347344e9055b68f217d" category="paragraph">Element Plug-in for vCenter Server 5.0以降では、NetApp Element リモートプラグイン拡張ポイントは次のとおりです。</block>
-  <block id="7491d78d51f3545fc9fe30d2249bc196" category="paragraph">Element Plug-in for vCenter Server 4.10以前のバージョンでは、NetApp Element Configuration and Management拡張ポイントは次のとおりです。</block>
+  <block id="78d33ed700a31bfed5ec712d766def44" category="paragraph">ストレージノードのベースボード管理コントローラ（BMC）/ Intelligent Platform Management Interface（IPMI）H410およびH600シリーズ</block>
+  <block id="59f1e3a87c5b329f2a5a951d9bf325f8" category="paragraph">ノードリモート制御へのHTTPS UIおよびAPIアクセス</block>
+  <block id="1381491a5bb8087f95db0601150c5c28" category="paragraph">ストレージノードBMC/IPMI H410およびH600シリーズ</block>
+  <block id="ad097a4f1c93214faa0a1ca354a82225" category="paragraph">623 UDP</block>
+  <block id="483602128e75be96f5280855d8065878" category="paragraph">Remote Management Control Protocolのポート。これはIPMI対応のシステムを管理するために必要です。</block>
+  <block id="3ef00ef1af91bf9fe0b72f4052a67f59" category="list-text">Element Plug-in for vCenter Server 5.0のvCenter Plug-inの登録ページ：</block>
+  <block id="1875d143de1e9be70dc9e780b41377fe" category="list-text">Element Plug-in for vCenter Server 4.10以前のvCenter Plug-inの登録ページ：</block>
+  <block id="b8b146fd1e1ecdf074536a02bfe40871" category="list-text">（社内サーバ/ダークサイトの場合）Element Plug-in for vCenterのバージョンに応じて、プラグインのJSONファイルまたはプラグインのZIPのカスタムURL：</block>
+  <block id="1993643c12bb4ee547f04d8d85f8c4bf" category="list-text">Element Plug-in for vCenter Server 5.0以降では、NetApp Element リモートプラグイン拡張ポイントが表示されます。</block>
+  <block id="1c63b3cd9a6d3bdf8b9b31aca68672d7" category="list-text">Element Plug-in for vCenter Server 4.10以前では、NetApp Element Configuration and Management拡張ポイントが表示されます。</block>
 </blocks>

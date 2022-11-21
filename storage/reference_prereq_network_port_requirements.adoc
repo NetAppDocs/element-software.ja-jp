@@ -482,11 +482,33 @@ LDAPS ルックアップ
  a| 
 システム管理者の PC
  a| 
+ストレージノードのベースボード管理コントローラ（BMC）/ Intelligent Platform Management Interface（IPMI）H410およびH600シリーズ
+ a| 
+443
+ a| 
+ノードリモート制御へのHTTPS UIおよびAPIアクセス
+
+
+
+ a| 
+システム管理者の PC
+ a| 
 ストレージノードの MIP
  a| 
 443
  a| 
 HTTPS によるストレージクラスタの作成、ストレージクラスタへの導入後の UI アクセス
+
+
+
+ a| 
+システム管理者の PC
+ a| 
+ストレージノードBMC/IPMI H410およびH600シリーズ
+ a| 
+623 UDP
+ a| 
+Remote Management Control Protocolのポート。これはIPMI対応のシステムを管理するために必要です。
 
 
 
