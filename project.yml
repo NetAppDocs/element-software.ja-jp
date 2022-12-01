@@ -64,7 +64,7 @@ homepage:
     - title: SF シリーズハードウェアの情報
       url: "/hardware/concept_sfseries_info.html"
     - title: NetApp Hシリーズストレージノードでサポートされるファームウェアのリビジョン
-      url: https://docs.netapp.com/us-en/hci/docs/fw_storage_nodes.html
+      url: "/hardware/fw_storage_nodes.html"
   - title: ストレージを管理します
     links:
     - title: Element ソフトウェア UI を使用
