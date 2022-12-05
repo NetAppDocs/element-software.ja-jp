@@ -20,7 +20,7 @@ VVol 機能を有効にすると、ユーザインターフェイスに VVol 関
 Element ソフトウェアストレージシステムで仮想ボリューム機能を使用するために必要な構成の大部分は、 vSphere で作成されます。vCenter への VASA Provider の登録、 VVol データストアの作成と管理、およびポリシーに基づくストレージの管理を行うには、 VMware vSphere Virtual Volumes for SolidFire ストレージ構成ガイドを参照してください。
 
 
-NOTE: 1 つの vCenter インスタンスに複数の NetApp Element VASA Provider を登録しないでください。2 つ目の NetApp Element VASA Provider が追加されている場合、その結果、すべての VVOL データストアにアクセスできなくなります。
+NOTE: Element 12.5以前では、1つのvCenterインスタンスに複数のNetApp Element VASAプロバイダを登録しないでください。2 つ目の NetApp Element VASA Provider が追加されている場合、その結果、すべての VVOL データストアにアクセスできなくなります。
 
 
 NOTE: VASA Provider を vCenter に登録済みの場合は、複数の vCenter に対する VASA サポートをアップグレードパッチとして利用できます。をインストールするには、から VASA39 .tar.gz ファイルをダウンロードします https://mysupport.netapp.com/products/element_software/VASA39/index.html["ネットアップのソフトウェアダウンロード"] サイトに移動し、マニフェストの指示に従います。NetApp Element VASA プロバイダはネットアップの証明書を使用します。このパッチでは、 vCenter が証明書を変更せずに使用して、 VASA および VVOL に使用する複数の vCenter をサポートします。証明書は変更しないでください。カスタム SSL 証明書は VASA でサポートされません。
