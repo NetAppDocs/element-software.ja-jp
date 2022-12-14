@@ -36,9 +36,9 @@ WARNING: SolidFire オールフラッシュストレージクラスタの場合�
 NOTE: https://<MVIP>/` の Element ソフトウェア UI ダッシュボードには ' 現在 ' ハードウェア・ベースの暗号化の保存中の暗号化ステータスのみが表示されています
 
 .オプション（ Options ）
-*  hardware-based encryption at rest
-*  software-based encryption at rest
-*  hardware-based encryption at rest
+* <<保存データのハードウェアベースの暗号化を有効にします>>
+* <<保存データのソフトウェアベースの暗号化を有効にします>>
+* <<保存データのハードウェアベースの暗号化を無効にします>>
 
 
 

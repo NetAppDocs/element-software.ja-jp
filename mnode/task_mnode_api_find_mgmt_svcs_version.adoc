@@ -22,8 +22,8 @@ keywords: netapp, Element, management node, management services, version, bundle
 
 
 .オプション（ Options ）
-*  commands
-*  API UI steps
+* <<API コマンド>>
+* <<REST API の UI の手順>>
 
 
 

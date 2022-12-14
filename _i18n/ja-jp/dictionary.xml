@@ -109,7 +109,6 @@
   <block id="f94e428499e6b0a048593b378e6d1e63" category="image-alt">この図は、 4 台のストレージノードを備えた 4 ノードシャーシを示しています。</block>
   <block id="66e62fb3b4f9f571913a8e7fc1ad86eb" category="paragraph">H410S ノードが設置された 4 ノードシャーシの前面図と各ノードに対応するベイを示します。</block>
   <block id="02f1f5dfbef570d0aa6ffa60d170113c" category="image-alt">は、 H410S ノードが設置された 4 ノードシャーシの各ノードに関連付けられたベイを示しています。</block>
-  <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">必要なもの</block>
   <block id="8d73b8d7cb951ae03021818360431bf3" category="list-text">ストレージノードに障害が発生し、交換が必要であることを確認しておきます。</block>
   <block id="a5de1df78b2a5f859ad00751d2bd98e0" category="list-text">交換用ストレージノードを入手します。</block>
   <block id="7dc71fc1ba8b3b46bc5aa180659fd0c4" category="list-text">静電放電（ ESD ）リストバンドを装着するか、静電気防止処置を行っておきます。</block>
@@ -5029,7 +5028,6 @@
   <block id="b9e50e6a339819ad9d12906b29e978ca" category="list-text">プラグインの * NetApp Element 構成 * 拡張ポイントの * バージョン情報 * タブでバージョンの変更を確認します。</block>
   <block id="a2b39afbde860c9c0fc759f3772e2dd2" category="paragraph">次のバージョンの詳細またはより新しいバージョンの詳細が表示されます。</block>
   <block id="4715e0cc20eb79c52c1f181ce0f6afb0" category="admonition">vCenter Plug-in には、オンラインヘルプが用意されています。ヘルプの最新のコンテンツが読み込まれるようにするために、プラグインをアップグレードしたあとにブラウザキャッシュをクリアしてください。</block>
-  <block id="6ea7f8d4483b20144d2c82f1ed99c07a" category="section-title">システムのアップグレード順序</block>
   <block id="d7cc77e1654b4ecc5878545e7bf4f78d" category="summary">NetApp SolidFire ストレージシステムのアップグレードの一環として、管理ノードをアップグレードします。</block>
   <block id="1761ea607c3f8d002099290408801187" category="doc">管理ノードをアップグレードします</block>
   <block id="1edc36bdf08bca8bac4f78d104c92780" category="admonition">管理サービスと Element ストレージを順番に更新しないと、この手順で再認証を再設定することはできません。代わりに、該当するアップグレード手順を実行してください。</block>
@@ -10454,11 +10452,9 @@
   <block id="1e23f0ce49a8f014bc05289297cd4e9d" category="paragraph">ログ・パッケージは ' 圧縮された UNIX`.tgz ファイル形式です</block>
   <block id="8a221a4f965f4cfc6edfd1e855cb0aaa" category="summary">SolidFire ESDS をインストールする前に、必要なチェックを実行し、お使いの環境が構成、 IP アドレス指定、およびネットワーク要件を満たしていることを確認してください。</block>
   <block id="88d5e6f116564d2c06f8abf0724efec5" category="doc">インストールの前提条件となるタスクを実行します</block>
-  <block id="f7dcb8224f85128ec87fe0a2442fc52a" category="list-title">&lt;strong&gt; 必要なハードウェアを設置する &lt;/strong&gt;</block>
   <block id="72af4b89bf6c89e877a119046199a6b7" category="inline-link">NetApp Interoperability Matrix （ログインが必要）</block>
   <block id="04be9ab6e44a60450ae6452e609984be" category="list-text">サポートされているサーバをインストールします。を参照してください<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block> を参照してください。</block>
   <block id="fa5b69222b994a8a596eef2320a99a75" category="list-text">ハードウェア構成のバランスがとれ、すべてのチャネルが設定されていることを確認します。帯域幅の最大化の詳細については、を参照してください<block ref="404eae9bc7c2264c66c1f2a9c06f066b" category="inline-link-rx"></block> （ログインが必要です）。</block>
-  <block id="2a97471ec199242556431779bd30838a" category="list-title">&lt;strong&gt; ホスト（ノード）を設定 &lt;/strong&gt; します</block>
   <block id="6fa70406f47786b02c8769bd1b178120" category="list-text">ネットワーク内のすべてのホストで使用するネットワークタイムプロトコル（ NTP ）サーバを設定します。</block>
   <block id="0ce895e38ab4717417ddcc44e6cf4e1c" category="list-text">インストール先を選択するときに、オプションボタンを選択してファイルシステムのパーティショニングを手動で設定します。[* 手動パーティション分割 *] ページで、 [*+*] および [*-*] ボタンを使用して既存のパーティションを削除し、ここに記載されている推奨事項に従って新しいパーティションを作成してサイズを設定します。デフォルトの LVM パーティショニングスキームを使用すると、必要に応じてあとから簡単にサイズを変更できます。</block>
   <block id="3349300356cb3141ea939dcbdf749789" category="cell">パーティション</block>
@@ -10480,8 +10476,6 @@
   <block id="68c4b5c87d48a6c6ca4cc14cfacaab03" category="list-text">ノードで SSH を有効にします。</block>
   <block id="f0a2de2efe6108942f8b79e50b1b6be5" category="inline-link">技術情報アーティクル（ログインが必要です</block>
   <block id="57208611101414fe2f0426e46c1f0d65" category="list-text">IPv6 を無効にする場合は、このセクションで説明する手順を実行します<block ref="2a5c78b7a0390cd7a5313c37d3eb2c52" category="inline-link-rx"></block>。</block>
-  <block id="1a76b48d9d60fd8364da6ea0eaec3eff" category="list-title">&lt;strong&gt; 必要なソフトウェアをインストールする &lt;/strong&gt;</block>
-  <block id="e1633c03fa0d88ea4ec55f043ee4598c" category="list-title">&lt;strong&gt;SolidFire ESDS をインストールするための NetApp の要件と構成が一致していることを確認します &lt;/strong&gt;</block>
   <block id="30ec57363b9938495c0097cd8a0bcbbf" category="list-text">に記載されている SolidFire ESDS 構成を使用します<block ref="d73544449e4c516eccc06a758c5e6c47" category="inline-link-rx"></block> を参照してください。</block>
   <block id="909806d31a8e12a761cf09c409cefaad" category="admonition">SolidFire ESDS に関する問題についてサポートが必要な場合は、まず、ご使用のプラットフォームが IMT に記載されている SolidFire ESDS の参照構成に準拠していることを確認します。サポートが基盤のプラットフォームがリファレンス構成に準拠していないと判断した場合は、非準拠のファームウェア、ソフトウェア、ハードウェアのコンポーネントを IMT の正しいバージョンに合わせて調整する手順がサポートによってガイドされます。</block>
   <block id="6314b9fb7626759e31aeab5d959e5286" category="list-text">SolidFire ESDS の準拠チェックを実行します。</block>
@@ -10494,7 +10488,6 @@
   <block id="34838a3f0559a6f772b5758da69cbbfb" category="list-text">準拠チェックに使用するプレイブックを作成します。</block>
   <block id="e7b21406c191f4c1bb269d3ffee0368d" category="list-text">次の例に示すように、準拠チェックプレイブックを実行します。</block>
   <block id="37ea6b2cb8a75db09428d93d9a0416d0" category="admonition">SolidFire ESDS システムの使用を開始した後でも、定期的に準拠チェックを実行して、システムが準拠していることを確認する必要があります。場合によっては、ネットアップサポートから、準拠チェックを実行して問題の診断とトラブルシューティングを依頼されることがあります。</block>
-  <block id="09acbcc09d76195cfde55a1522db4644" category="list-title">&lt;strong&gt; ネットワークと IP アドレスの要件を理解する &lt;/strong&gt;</block>
   <block id="1c39f346a9b7cd529f0e7deeee5ce177" category="list-text">ここで説明する IP 要件に従ってネットワークを設定します。</block>
   <block id="2cb05e4bb7830be982f0922fed86b4cd" category="cell">コンポーネント</block>
   <block id="265df7cdddd316ce979aa017f0753e25" category="cell">ストレージネットワークの IP アドレス</block>
@@ -10515,7 +10508,6 @@
   <block id="3954d0109fc9c791be6d11e39804cb50" category="paragraph">管理ネットワーク用のポート</block>
   <block id="ebff118a006e94651da911d800279c44" category="admonition">ここで示す図は例です。実際のハードウェアは、お使いのサーバによって異なる場合があります。</block>
   <block id="7300079506cb737ad309140b1f56eeda" category="list-text">スイッチポートの MTU を 9216 バイトに変更します。</block>
-  <block id="4b7ef9f74fc5d5abcae07ceee277787a" category="list-title">&lt;strong&gt; データセンターのファイアウォールで特定のポートを許可する &lt;/strong&gt;</block>
   <block id="ab2f4d4dbd7fe86289026b4321e7e53d" category="paragraph">80 TCP/UDP</block>
   <block id="f5fc4cfbf6f32dae142bd0f1c443bc13" category="paragraph">クラスタのアップグレード</block>
   <block id="b0ee3a63a5791163e83df745e5b7b013" category="paragraph">442 TCP</block>
@@ -10535,10 +10527,8 @@
   <block id="f0f166a01d55488cbf1ae223ecbb6068" category="paragraph">vCenter Plug-in の QoSSIOC サービス</block>
   <block id="b843120f7921517683f4de0687bf0a29" category="admonition">では、 Element 分散データベースにポート 2181 、 2182 、および 2183 が必要です。 SolidFire ESDS をインストールすると、 Element コンテナから動的に開かれます。</block>
   <block id="0cb585626379a70b87a0e3ee14309e3b" category="list-text">上記のポートを開くには、次のコマンドを使用します。</block>
-  <block id="95f75258f8b33664eeaf8b541ff97858" category="list-title">&lt;strong&gt; ホストネットワークを設定 &lt;/strong&gt;</block>
   <block id="78ff65afbf92a15cd30dea91aefc1e9b" category="inline-link-macro">ベストプラクティス</block>
   <block id="9fe0e0876a07d2247ecb84a994e87a77" category="admonition">SolidFire ESDS を正常にインストールするには、ホストネットワークを設定する手順を実行する必要があります。</block>
-  <block id="fb96b65afb5d2a139a12f87e3171372c" category="list-title">&lt;strong&gt; 追加要件を満たす &lt;/strong&gt;</block>
   <block id="d5272d5ecd1fe99c7097dfcca90c8f7d" category="list-text">1 つの Collect をインストールします。この収集は、ネットアップサポートがホストログを収集するために使用します。から収集したデータは 1 つインストールできます<block ref="d3b16539387c5c512d10064586f79c65" category="inline-link-rx"></block>。ダウンロードにアクセスするには、ネットアップアカウントが必要です。『 Collect Installation Guide 』と『 Release Notes 』も同じ場所にあります。</block>
   <block id="b4cac9f0dca24135289e8ff89afe6aa1" category="admonition">最適なサポートを受けるには、収集したものを 1 つダウンロードしてインストールする必要があります。</block>
   <block id="6d1d7be211708c9b56d930f731aa306b" category="list-text">ログを収集する管理ノードをインストールし、ネットアップサポートがトラブルシューティングにアクセスできるようにします。管理ノードとインストールの手順については、を参照してください <block ref="9915e3fe57455c0bc98ba7d4ab2016f9" category="inline-link-macro-rx"></block>。</block>
@@ -12553,4 +12543,28 @@
   <block id="c9c5cc2efc04287e6fe8d7feebf032aa" category="cell">N41WC 1.02</block>
   <block id="126078d2e17c3ac2589cca85b30163c7" category="cell">起動デバイス</block>
   <block id="64c9f5445140b2d5ab2eb8fe31bd6872" category="admonition">Element 12.5以前では、1つのvCenterインスタンスに複数のNetApp Element VASAプロバイダを登録しないでください。2 つ目の NetApp Element VASA Provider が追加されている場合、その結果、すべての VVOL データストアにアクセスできなくなります。</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="paragraph-title">必要なもの</block>
+  <block id="2cd70ba1e2d0b294626ea7f96d25a07f" category="paragraph-title">ログ収集オプション</block>
+  <block id="891a52ee80600fd58bac60927df7a3a9" category="section-title">[[enable_main_mode]]メンテナンスモードを有効にします</block>
+  <block id="27404255e546058b4a4837fb07e90bbf" category="section-title">[[disable_main_mode]]メンテナンスモードを無効にします</block>
+  <block id="64916198004d1ee19b1b50002f51f1a8" category="paragraph-title">アップグレードオプション</block>
+  <block id="bac407daf00ae86b0f95e89cf84eeac1" category="section-title">[[sys_upgrade]システムのアップグレード順序</block>
+  <block id="df5820ca7f238b48987ff74db1271e4a" category="paragraph-title">オプションを更新します</block>
+  <block id="a31b6eafc73ca0db90a0d96e6fb9dc93" category="paragraph-title">健全性チェックのオプション</block>
+  <block id="f8317d9a65a7e996db437d8eabc22aeb" category="paragraph-title">トラブルシューティングの技術情報アーティクルへのリンク</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="1505b4d22f5b2439d387f71ebb0fccd2" category="paragraph-title">エラーの可能性あり</block>
+  <block id="2de79e7b8c77e4847d6bcd5a8ee879ce" category="section-title">[[sf_nodes]] SF38410、SF19210、SF9605、SF4805</block>
+  <block id="6a31058d1e6208d43e0d620fb4953c23" category="paragraph-title">ストレージクラスタのアセット管理オプション</block>
+  <block id="50f33d14f129e4548c1c270fd6725a78" category="paragraph-title">設定オプション</block>
+  <block id="63f488c7bb829c89f024839d6aa602f4" category="section-title">[[custom_pd]]カスタム保護ドメイン</block>
+  <block id="fa5cc5e49b65ffd46ba8881097cf8310" category="list-title">*必要なハードウェアを取り付けます*</block>
+  <block id="6b170e726e4567decff7daaed3e1a08b" category="list-title">*ホスト（ノード）を設定*</block>
+  <block id="c86064ac886a0aab9f8ecf92f19f98b3" category="list-title">*必要なソフトウェアをインストールします。*</block>
+  <block id="fd9cdaf80c90bdd2d3af18c1c856b60f" category="list-title">*お使いの構成が、SolidFire ESDS *のインストールに関するネットアップの要件を満たしていることを確認してください</block>
+  <block id="9bfadf4c7ec72b1af0ecb9eaabaf58c8" category="list-title">*ネットワークとIPアドレスの要件を理解する*</block>
+  <block id="a113f5f001cbfcc5dc2a0dde65f4e2d9" category="list-title">*データセンターのファイアウォールを経由して特定のポートを許可します。*</block>
+  <block id="45f450486d575041c747125231750ffe" category="list-title">*ホストネットワークを設定*</block>
+  <block id="abe03d597b94a3f77cae3615416163ef" category="list-title">*追加要件を満たしていること*</block>
+  <block id="71f5771dab663d80ba4dad1627e3386a" category="paragraph-title">アップグレードの概要</block>
 </blocks>

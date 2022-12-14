@@ -15,13 +15,13 @@ summary: データ保護機能には、リモートレプリケーション、�
 
 Element ストレージデータ保護の概念は次のとおりです。
 
-*  replication types
-*  snapshots for data protection
-*  clones
-*  and restore process overview for Element storage
-*  Domains
-* ,カスタムの保護ドメイン
-*  Helix high availability
+* <<リモートレプリケーションの種類>>
+* <<データ保護用のボリューム Snapshot>>
+* <<ボリュームクローン>>
+* <<Element ストレージのバックアップとリストアのプロセスの概要>>
+* <<保護ドメイン>>
+* <<custom_pd,カスタムの保護ドメイン>>
+* <<Double Helix の高可用性>>
 
 
 
@@ -30,9 +30,9 @@ Element ストレージデータ保護の概念は次のとおりです。
 
 データのリモートレプリケーションには、次の形式を使用できます。
 
-*  and asynchronous replication between clusters
-*  replication
-*  between Element and ONTAP clusters using SnapMirror
+* <<クラスタ間の同期レプリケーションと非同期レプリケーション>>
+* <<Snapshot のみのレプリケーション>>
+* <<SnapMirror を使用した Element クラスタと ONTAP クラスタ間のレプリケーション>>
 
 
 詳細については、を参照してください https://www.netapp.com/us/media/tr-4741.pdf["TR-4741 ：『 NetApp Element Software Remote Replication 』"^]。
@@ -171,7 +171,7 @@ Protection Domain レイアウトは、各ノードを特定の保護ドメイ�
 
 
 
-== カスタムの保護ドメイン
+== [[custom_pd]]カスタム保護ドメイン
 
 特定のシャーシおよびノードレイアウトに一致するカスタム保護ドメインレイアウトを定義し、各ノードが 1 つだけのカスタム保護ドメインに関連付けられるようにすることができます。デフォルトでは、各ノードは同じデフォルトのカスタム保護ドメインに割り当てられます。
 

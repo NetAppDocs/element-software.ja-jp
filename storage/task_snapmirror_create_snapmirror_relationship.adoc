@@ -16,6 +16,7 @@ SnapMirror関係はNetApp Element UIで作成する必要があります。
 
 NOTE: ボリュームで SnapMirror が有効になっていない状態で Element UI から関係の作成を選択すると、そのボリュームで自動的に SnapMirror が有効になります。
 
+.必要なもの
 ボリュームで SnapMirror を有効にしておきます。
 
 .手順

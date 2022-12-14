@@ -34,6 +34,7 @@ IP アドレスブロックは、次の手順を使用して追加できます�
 . 「変更を保存」を選択します。
 
 
+.トラブルシューティングの技術情報アーティクルへのリンク
 VLAN IP アドレス範囲の管理に関する問題のトラブルシューティングについては、ナレッジベースの記事へのリンクを参照してください。
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Duplicate_IP_warning_after_adding_a_storage_node_in_VLAN_on_Element_cluster["Element クラスタの VLAN にストレージノードを追加したあとに IP に関する警告が重複して発生しています"^]

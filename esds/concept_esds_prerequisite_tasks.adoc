@@ -13,12 +13,12 @@ summary: SolidFire ESDS をインストールする前に、必要なチェッ�
 [role="lead"]
 SolidFire ESDS をインストールする前に、必要なチェックを実行し、お使いの環境が構成、 IP アドレス指定、およびネットワーク要件を満たしていることを確認してください。
 
-.<strong> 必要なハードウェアを設置する </strong>
+.*必要なハードウェアを取り付けます*
 * サポートされているサーバをインストールします。を参照してください https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU#welcome["NetApp Interoperability Matrix （ログインが必要）"^] を参照してください。
 * ハードウェア構成のバランスがとれ、すべてのチャネルが設定されていることを確認します。帯域幅の最大化の詳細については、を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/SolidFire_Enterprise_SDS/How_to_balance_memory_and_maximize_bandwidth_for_your_hardware_configurations["こちらの技術情報アーティクル"^] （ログインが必要です）。
 
 
-.<strong> ホスト（ノード）を設定 </strong> します
+.*ホスト（ノード）を設定*
 * に記載されているサポート対象のバージョンに基づいてRed Hat Package Managerをインストールします https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU#welcome["NetApp Interoperability Matrix （ログインが必要）"^]。
 * ネットワーク内のすべてのホストで使用するネットワークタイムプロトコル（ NTP ）サーバを設定します。
 * インストール先を選択するときに、オプションボタンを選択してファイルシステムのパーティショニングを手動で設定します。[* 手動パーティション分割 *] ページで、 [*+*] および [*-*] ボタンを使用して既存のパーティションを削除し、ここに記載されている推奨事項に従って新しいパーティションを作成してサイズを設定します。デフォルトの LVM パーティショニングスキームを使用すると、必要に応じてあとから簡単にサイズを変更できます。
@@ -106,7 +106,7 @@ rhel-7-server-extras-rpms
 
 
 
-.<strong> 必要なソフトウェアをインストールする </strong>
+.*必要なソフトウェアをインストールします。*
 * Ansible 、 Git 、 Podman 、 Python 3.0 をインストールします。
 +
 [NOTE]
@@ -131,7 +131,7 @@ NOTE: 利用可能な場合は、Podmanバージョン用のセキュリティ�
 ====
 
 
-.<strong>SolidFire ESDS をインストールするための NetApp の要件と構成が一致していることを確認します </strong>
+.*お使いの構成が、SolidFire ESDS *のインストールに関するネットアップの要件を満たしていることを確認してください
 * に記載されている SolidFire ESDS 構成を使用します https://mysupport.netapp.com/matrix/#welcome["ネットアップの Interoperability Matrix Tool （ IMT ）"] を参照してください。
 +
 
@@ -184,7 +184,7 @@ NOTE: SolidFire ESDS システムの使用を開始した後でも、定期的�
 
 
 
-.<strong> ネットワークと IP アドレスの要件を理解する </strong>
+.*ネットワークとIPアドレスの要件を理解する*
 * Red Hat Package Managerでネットワークとネットワークインターフェイスを設定および管理する方法について説明します。を参照してください https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index["Red Hat のドキュメント"^]。
 * ここで説明する IP 要件に従ってネットワークを設定します。
 +
@@ -261,7 +261,7 @@ IMPORTANT: ここで示す図は例です。実際のハードウェアは、お
 * スイッチポートの MTU を 9216 バイトに変更します。
 
 
-.<strong> データセンターのファイアウォールで特定のポートを許可する </strong>
+.*データセンターのファイアウォールを経由して特定のポートを許可します。*
 * Red Hat Package Managerを実行しているストレージノードで「firewalld」が有効になっている場合は、次のポートが開いていることを確認します。これにより、システムをリモートで管理し、データセンターの外部のクライアントがリソースに接続できるようになり、内部サービスが正常に機能するようになります。
 +
 [cols="4*"]
@@ -446,7 +446,7 @@ firewall-cmd –-reload
 ----
 
 
-.<strong> ホストネットワークを設定 </strong>
+.*ホストネットワークを設定*
 * を使用してホストネットワークを設定します link:task_esds_configure_the_interface_config_files.html["ベストプラクティス"^] 提供されます。
 +
 
@@ -454,7 +454,7 @@ IMPORTANT: SolidFire ESDS を正常にインストールするには、ホスト
 
 
 
-.<strong> 追加要件を満たす </strong>
+.*追加要件を満たしていること*
 * 1 つの Collect をインストールします。この収集は、ネットアップサポートがホストログを収集するために使用します。から収集したデータは 1 つインストールできます https://mysupport.netapp.com/site/tools/tool-eula/activeiq-onecollect["こちらをご覧ください"^]。ダウンロードにアクセスするには、ネットアップアカウントが必要です。『 Collect Installation Guide 』と『 Release Notes 』も同じ場所にあります。
 +
 

@@ -14,12 +14,12 @@ summary: NetApp Element ストレージシステムは、 SolidFire のソフト
 SolidFire ストレージシステムは、 NetApp Element の各種ソフトウェアインターフェイスや統合ユーティリティを使用して管理できます。
 
 .オプション（ Options ）
-*  Element software user interface
-*  Element software API
-*  Element Plug-in for vCenter Server
-*  Hybrid Cloud Control
-*  node UIs
-*  integration utilities and tools
+* <<NetApp Element ソフトウェアのユーザインターフェイス>>
+* <<NetApp Element ソフトウェア API>>
+* <<vCenter Server 向け NetApp Element プラグイン>>
+* <<NetApp Hybrid Cloud Control の略>>
+* <<管理ノード UI>>
+* <<その他の統合ユーティリティおよびツール>>
 
 
 

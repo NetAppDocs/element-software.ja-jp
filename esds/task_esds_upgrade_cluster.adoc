@@ -13,6 +13,7 @@ summary: Ansible を使用して、 SolidFire ESDS クラスタで無停止の�
 [role="lead"]
 Ansible を使用して、 SolidFire ESDS クラスタで無停止のローリングアップグレードを実行できます。ネットアップが提供する「 nar_solidfire_sds_upgrade 」ロールを使用すると、 Ansible は、すべてのボリュームへのデータ可用性を維持しながら、一度に 1 ノードずつローリングアップグレードを実行します。
 
+.必要なもの
 アップグレード前に、次の条件が満たされていることを確認します。
 
 * Element UI でクラスタエラーは発生しません。
@@ -35,6 +36,7 @@ hosts:
 * インベントリファイルには、次の変数が指定されています。 sf_mgmt_virt_ip （ MVIP ）、 sf_cluster_admin_username 、 sf_cluster_admin_passwd 、 solidfire_element_rpm （新しい RPM ファイルへのパス）
 
 
+.アップグレードの概要
 アップグレードプロセスの概要を次に示します。
 
 * インベントリファイルに入力した情報が検証されます。

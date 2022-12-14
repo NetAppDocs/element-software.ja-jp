@@ -19,10 +19,10 @@ NetApp Hybrid Cloud Control Dashboard では、すべてのストレージリソ
 
 NOTE: 新しい NetApp Hybrid Cloud Control セッションを初めて起動したときに、管理ノードで複数のクラスタを管理しているときに NetApp Hybrid Cloud Control のダッシュボードビューのロードに時間がかかることがあります。ロードにかかる時間は、管理ノードでアクティブに管理されているクラスタの数によって異なります。その後の起動では、読み込み時間が短縮されます。
 
-*  the NetApp HCC Dashboard
-*  storage resources
-*  storage capacity
-*  storage performance
+* <<NetApp HCC ダッシュボードにアクセスします>>
+* <<ストレージリソースを監視する>>
+* <<ストレージ容量を監視>>
+* <<ストレージパフォーマンスを監視>>
 
 
 

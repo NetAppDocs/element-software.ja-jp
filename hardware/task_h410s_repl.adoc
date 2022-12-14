@@ -32,9 +32,9 @@ image::hci_stor_node_ssd_bays.gif[は、 H410S ノードが設置された 4 ノ
 
 手順の概要は次のとおりです。
 
-*  to replace the node
-*  the node in the chassis
-*  the node to the cluster
+* <<ノードを交換する準備をします>>
+* <<シャーシ内のノードを交換します>>
+* <<クラスタにノードを追加します>>
 
 
 
