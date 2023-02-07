@@ -25,3 +25,13 @@ entries:
     url: "/hardware/task_sfseries_driverepl.html"
   - title: 電源装置を交換してください
     url: "/hardware/task_sfseries_psurepl.html"
+- title: 工場出荷時のイメージ情報に戻ります
+  entries:
+  - title: Return to Factory Imageを設定します
+    url: "/hardware/concept_rtfi_configure.html"
+  - title: RTFIの導入オプションとインストールオプション
+    url: "/hardware/task_rtfi_deployment_and_install_options.html"
+  - title: RTFIプロセス
+    url: "/hardware/task_rtfi_process.html"
+  - title: RTFIのオプションメニュー
+    url: "/hardware/task_rtfi_options_menu.html"

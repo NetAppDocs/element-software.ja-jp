@@ -1,0 +1,20 @@
+= 詳細については、こちらをご覧ください
+:allow-uri-read: 
+
+
+Return to Factory Image（RTFI）プロセスは、最小限の要件を完全に満たす自己完結型のLinux OSを搭載した、ブート可能なインストール可能なメディアを使用して、ノードにElementソフトウェアを導入します。Elementソフトウェアのバージョンに固有のRTFI ISOイメージは、からダウンロードできます https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["NetApp Support Site"^]。
+
+RTFI ISOイメージをダウンロードしたら、次の一般的な方法のいずれかに従って導入できます。
+
+* *物理USBキー*：起動可能なElementソフトウェアISOをUSBキーに書き込むことができます。手順については、Knowledge Baseの記事を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_create_an_RTFI_key_to_re-image_a_SolidFire_storage_node["SolidFire ストレージノードを再イメージ化するためのRTFIキーの作成方法"^]。ISOを使用したUSBキーをノードに挿入し、USBキーからブートします。
+* *ベースボード管理コントローラ（BMC）管理ポートを使用した仮想メディア*：BMCを使用して、クライアントシステム上のISOに動的に接続できます。ISOは、仮想ドライブ（CDまたはDVD）としてホストOSで使用できるようになります。詳細については、技術情報アーティクルを参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_RTFI_a_node_via_BMC["BMCを使用してノードのRTFIを実行する方法"^]。
+* * Preboot Execution Environment（PXE）、Trivial File Transfer Protocol（TFTP）、またはFTP*を使用したネットワークブート：ISOイメージを手動で展開する代わりに、を使用できます `autofs` RTFIプロセスが要求したときにイメージを自動的に抽出する。この導入メカニズムでは、より多くの初期セットアップが必要になりますが、インストールの自動化と拡張性を正しく実現できます。
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire のリソースページ"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
+

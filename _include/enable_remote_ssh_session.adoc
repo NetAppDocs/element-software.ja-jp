@@ -1,20 +1,6 @@
----
-sidebar: sidebar 
-permalink: mnode/task_mnode_enable_remote_support_connections.html 
-summary: 管理ノードを使用して、ネットアップサポートがトラブルシューティング用にアクセスできるようにします。 
-keywords: netapp, mnode, management node, connect to support, support tunnel, rst 
----
-= リモートのネットアップサポートセッションを開始します
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ../media/
 
-
-[role="lead"]
-SolidFire オールフラッシュストレージシステムのテクニカルサポートが必要な場合は、ネットアップサポートがお客様のシステムにリモートで接続できます。セッションを開始してリモートアクセスを確立するために、ネットアップサポートはお客様の環境へのリバース Secure Shell （ SSH ）接続を確立します。
 
 ネットアップサポートとの SSH リバーストンネル接続用の TCP ポートを開くことができます。この接続を介して、ネットアップサポートはお客様の管理ノードにログインします。
 
@@ -49,12 +35,4 @@ rst -- killall
 
 NOTE: SSHを無効にしないと、管理ノードでSSHが有効なままになります。SSH を有効にした設定は、手動で無効にするまで、更新やアップグレードを通じて管理ノードで維持されます。
 
-
-
-
-
-== 詳細については、こちらをご覧ください
-
-* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
 

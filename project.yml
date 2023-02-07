@@ -6,7 +6,7 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
-  langs: ja-jp,us-en,zh-cn,zh-tw,ko-kr,fr-fr,de-de
+  langs: ja-jp,us-en,ko-kr,zh-cn,zh-tw,de-de,fr-fr
 sidebar:
   entries:
   - title: SolidFire およびElementソフトウェア12.5以降のドキュメント
@@ -63,6 +63,8 @@ homepage:
       url: "/hardware/concept_h410s_h610s_info.html"
     - title: SF シリーズハードウェアの情報
       url: "/hardware/concept_sfseries_info.html"
+    - title: 工場出荷時のイメージ情報に戻ります
+      url: "/hardware/concept_rtfi_configure.html"
     - title: NetApp Hシリーズストレージノードでサポートされるファームウェアのリビジョン
       url: "/hardware/fw_storage_nodes.html"
   - title: ストレージを管理します
