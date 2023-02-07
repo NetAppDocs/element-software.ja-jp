@@ -40,7 +40,7 @@ RTFIプロセスが正常に完了したあとにノードを設定するには�
 
 次の手順 を使用して、SolidFire ノードでElementソフトウェアをリストアします。
 
-USBキーの作成またはBMCを使用したRTFIプロセスの実行の詳細については、を参照してください link:task_rtfi_deployment_and_install_options.html["RTFIの導入オプションとインストールオプション"]。
+USBキーの作成またはBMCを使用したRTFIプロセスの実行の詳細については、を参照してください xref:task_rtfi_deployment_and_install_options.html[RTFIの導入オプションとインストールオプション]。
 
 .作業を開始する前に
 次の要件を満たしていることを確認します。
@@ -80,7 +80,7 @@ RTFIイメージのElementソフトウェアの名前とバージョン番号が
 . 初期プロンプトでは、プロセスによってノードからすべてのデータが削除され、プロセスの開始後にデータをリカバリできないことが通知されます。開始するには、「* Yes」と入力します。
 +
 
-WARNING: プロセスが開始されると、ノードからすべてのデータと設定の詳細が完全に消去されます。続行しないことを選択すると、が表示されます link:task_rtfi_options_menu.html["RTFIのオプションメニュー"]。
+WARNING: プロセスが開始されると、ノードからすべてのデータと設定の詳細が完全に消去されます。続行しないことを選択すると、が表示されます xref:task_rtfi_options_menu.html[RTFIのオプションメニュー]。
 
 +
 
@@ -95,7 +95,7 @@ RTFIプロセスが完了し、システムの電源がオフになったこと�
 これでノードの電源をオンにして設定する準備が完了しました。を参照してください https://docs.netapp.com/us-en/element-software/setup/concept_setup_overview.html["Elementソフトウェアセットアップストレージのドキュメント"^] ストレージノードを設定します。
 
 +
-RTFIプロセス中にエラーメッセージが発生した場合は、を参照してください link:task_rtfi_options_menu.html["RTFIのオプションメニュー"]。
+RTFIプロセス中にエラーメッセージが発生した場合は、を参照してください xref:task_rtfi_options_menu.html[RTFIのオプションメニュー]。
 
 
 
