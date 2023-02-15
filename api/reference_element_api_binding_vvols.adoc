@@ -24,7 +24,7 @@ binding オブジェクトには、仮想ボリュームのバインディング
 
 
  a| 
-protocolEndpointID
+`protocolEndpointID`
  a| 
 プロトコルエンドポイントの一意の ID 。
  a| 
@@ -33,7 +33,7 @@ UUID
 
 
  a| 
-protocolEndpointInBandID を指定します
+`protocolEndpointInBandID`
  a| 
 プロトコルエンドポイントの scsiNAADeviceID 。
  a| 
@@ -42,7 +42,7 @@ protocolEndpointInBandID を指定します
 
 
  a| 
-protocolEndpointType
+`protocolEndpointType`
  a| 
 プロトコルエンドポイントのタイプ。SCSI は、プロトコルエンドポイントタイプに返される唯一の値です。
  a| 
@@ -51,7 +51,7 @@ protocolEndpointType
 
 
  a| 
-virtualVolumeBindingID
+`virtualVolumeBindingID`
  a| 
 仮想ボリュームバインドオブジェクトの一意の ID 。
  a| 
@@ -60,7 +60,7 @@ virtualVolumeBindingID
 
 
  a| 
-virtualVolumeHostID
+`virtualVolumeHostID`
  a| 
 仮想ボリュームホストの一意の ID 。
  a| 
@@ -69,7 +69,7 @@ UUID
 
 
  a| 
-virtualVolumeID
+`virtualVolumeID`
  a| 
 仮想ボリュームの一意の ID 。
  a| 
@@ -78,7 +78,7 @@ UUID
 
 
  a| 
-virtualVolumeSecondaryID
+`virtualVolumeSecondaryID`
  a| 
 仮想ボリュームのセカンダリ ID 。
  a| 

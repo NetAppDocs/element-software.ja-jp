@@ -11,7 +11,7 @@ summary: bulkVolumeJob オブジェクトには、クローニングや Snapshot
 
 
 [role="lead"]
-bulkVolumeJob オブジェクトには、クローニングや Snapshot 作成など、ボリュームの一括読み取りまたは書き込み処理に関する情報が含まれます。
+。 `bulkVolumeJob` オブジェクトには、クローニングやSnapshot作成など、ボリュームの一括読み取り/書き込み処理に関する情報が含まれます。
 
 
 
@@ -24,7 +24,7 @@ bulkVolumeJob オブジェクトには、クローニングや Snapshot 作成�
 
 
  a| 
-属性（ Attributes ）
+「 attributes 」
  a| 
 一括ボリュームジョブの JSON 属性。
  a| 
@@ -33,7 +33,7 @@ JSON オブジェクト
 
 
  a| 
-bulkVolumeID
+`bulkVolumeID`
  a| 
 内部一括ボリュームジョブの ID 。
  a| 
@@ -42,7 +42,7 @@ bulkVolumeID
 
 
  a| 
-CreateTime をクリックします
+`createTime`
  a| 
 UTC+0 形式の一括ボリュームジョブ用に作成されたタイムスタンプ。
  a| 
@@ -51,7 +51,7 @@ ISO 8601 形式の日付文字列
 
 
  a| 
-elapsedTime
+`elapsedTime`
  a| 
 ジョブが開始されてからの秒数。
  a| 
@@ -60,7 +60,7 @@ elapsedTime
 
 
  a| 
-の形式で入力し
+`format`
  a| 
 一括ボリューム処理の形式。有効な値は次のとおり
 
@@ -73,7 +73,7 @@ elapsedTime
 
 
  a| 
-キーを押します
+`key`
  a| 
 一括ボリュームセッションで作成された一意のキー。
  a| 
@@ -82,7 +82,7 @@ elapsedTime
 
 
  a| 
-PercentComplete
+`percentComplete`
  a| 
 処理によって報告された完了率。
  a| 
@@ -91,7 +91,7 @@ PercentComplete
 
 
  a| 
-残り時間
+`remainingTime`
  a| 
 推定残り時間（秒）。
  a| 
@@ -100,7 +100,7 @@ PercentComplete
 
 
  a| 
-srcVolumeID
+`srcVolumeID`
  a| 
 ソースボリュームの ID 。
  a| 
@@ -109,7 +109,7 @@ srcVolumeID
 
 
  a| 
-ステータス
+`status`
  a| 
 処理のステータス。有効な値は次のとおり
 
@@ -124,7 +124,7 @@ srcVolumeID
 
 
  a| 
-スクリプト
+`script`
  a| 
 スクリプトが指定されている場合は、その名前です。
  a| 
@@ -133,7 +133,7 @@ srcVolumeID
 
 
  a| 
-Snapshot ID
+'napshotID'
  a| 
 一括ボリュームジョブのソースにある Snapshot の ID 。
  a| 
@@ -142,7 +142,7 @@ Snapshot ID
 
 
  a| 
-を入力します
+`type`
  a| 
 一括処理のタイプ。有効な値は次のとおり
 

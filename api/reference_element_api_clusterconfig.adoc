@@ -11,7 +11,7 @@ summary: clusterconfig オブジェクトは、ノードがクラスタとの通
 
 
 [role="lead"]
-clusterconfig オブジェクトは、ノードがクラスタとの通信に使用する情報を返します。
+。 `clusterConfig` オブジェクトは、ノードがクラスタとの通信に使用する情報を返します。
 
 
 
@@ -24,7 +24,7 @@ clusterconfig オブジェクトは、ノードがクラスタとの通信に使
 
 
  a| 
-シピ
+`cipi`
  a| 
 クラスタ通信に使用するネットワークインターフェイス。
  a| 
@@ -33,7 +33,7 @@ clusterconfig オブジェクトは、ノードがクラスタとの通信に使
 
 
  a| 
-クラスタ
+「クラスタ」
  a| 
 クラスタの一意の名前。
  a| 
@@ -42,7 +42,7 @@ clusterconfig オブジェクトは、ノードがクラスタとの通信に使
 
 
  a| 
-暗号化可能
+`encryptionCapable`
  a| 
 ノードで暗号化がサポートされているかどうかを示します
  a| 
@@ -51,7 +51,7 @@ clusterconfig オブジェクトは、ノードがクラスタとの通信に使
 
 
  a| 
-アンサンブル
+`ensemble`
  a| 
 クラスタに参加しているノード。
  a| 
@@ -60,7 +60,7 @@ clusterconfig オブジェクトは、ノードがクラスタとの通信に使
 
 
  a| 
-fipsDriveConfiguration を参照してください
+`fipsDriveConfiguration`
  a| 
 ノードが FIPS 140-2 認定ドライブをサポートするかどうかを示します。
  a| 
@@ -69,7 +69,7 @@ fipsDriveConfiguration を参照してください
 
 
  a| 
-hasLocalAdmin
+`hasLocalAdmin`
  a| 
 クラスタにローカル管理者が設定されているかどうかを示します。
  a| 
@@ -78,7 +78,7 @@ hasLocalAdmin
 
 
  a| 
-MIPI
+`mipi`
  a| 
 ノード管理に使用するネットワークインターフェイス。
  a| 
@@ -87,7 +87,7 @@ MIPI
 
 
  a| 
-名前
+「 name 」
  a| 
 クラスタの一意の識別子。
  a| 
@@ -96,7 +96,7 @@ MIPI
 
 
  a| 
-ノード ID
+`nodeID`
  a| 
 ノードの一意の識別子。
  a| 
@@ -105,7 +105,7 @@ MIPI
 
 
  a| 
-pendingNodeID
+`pendingNodeID`
  a| 
 Pending 状態のノードの一意の識別子。
  a| 
@@ -114,7 +114,7 @@ Pending 状態のノードの一意の識別子。
 
 
  a| 
-ロール
+`role`
  a| 
 ノードのロールを指定します。
  a| 
@@ -123,7 +123,7 @@ Pending 状態のノードの一意の識別子。
 
 
  a| 
-SIPI
+`sipi`
  a| 
 ストレージに使用するネットワークインターフェイス。
  a| 
@@ -132,7 +132,7 @@ SIPI
 
 
  a| 
-状態
+`state`
  a| 
 ノードの状態を示します。
  a| 
@@ -141,7 +141,7 @@ SIPI
 
 
  a| 
-バージョン
+`version`
  a| 
 ノードのバージョン。
  a| 

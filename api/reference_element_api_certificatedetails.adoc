@@ -11,7 +11,7 @@ summary: certificateDetails オブジェクトには、セキュリティ証明�
 
 
 [role="lead"]
-certificateDetails オブジェクトには、セキュリティ証明書に関するデコードされた情報が含まれます。
+。 `certificateDetails` objectには、セキュリティ証明書に関するデコードされた情報が含まれます。
 
 
 
@@ -24,7 +24,7 @@ certificateDetails オブジェクトには、セキュリティ証明書に関�
 
 
  a| 
-発行元
+`issuer`
  a| 
 発行元の名前。
  a| 
@@ -33,7 +33,7 @@ certificateDetails オブジェクトには、セキュリティ証明書に関�
 
 
  a| 
-モジュラス
+`modulus`
  a| 
 公開鍵のモジュラス。
  a| 
@@ -42,7 +42,7 @@ certificateDetails オブジェクトには、セキュリティ証明書に関�
 
 
  a| 
-notAfter
+`notAfter`
  a| 
 証明書の有効期限。
  a| 
@@ -51,7 +51,7 @@ ISO 8601 形式の文字列
 
 
  a| 
-メモ前段
+`notBefore`
  a| 
 証明書の開始日。
  a| 
@@ -60,7 +60,7 @@ ISO 8601 形式の文字列
 
 
  a| 
-Serial （シリアル）
+`serial`
  a| 
 証明書のシリアル番号。
  a| 
@@ -69,7 +69,7 @@ Serial （シリアル）
 
 
  a| 
-sha1 指紋
+`sha1Fingerprint`
  a| 
 DER でエンコードされたバージョンの証明書のダイジェスト。
  a| 
@@ -78,7 +78,7 @@ DER でエンコードされたバージョンの証明書のダイジェスト�
 
 
  a| 
-件名
+`subject`
  a| 
 件名。
  a| 

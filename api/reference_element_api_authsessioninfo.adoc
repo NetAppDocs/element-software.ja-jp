@@ -11,7 +11,7 @@ summary: authSessionInfo オブジェクトには、認証セッションに関�
 
 
 [role="lead"]
-authSessionInfo オブジェクトには、認証セッションに関する情報が含まれています。
+。 `authSessionInfo` Objectには、認証セッションの情報が含まれます。
 
 
 
@@ -24,7 +24,7 @@ authSessionInfo オブジェクトには、認証セッションに関する情�
 
 
  a| 
-AccessGroupList ( アクセスグループリスト )
+`accessGroupList`
  a| 
 ユーザのアクセスグループのリスト。
  a| 
@@ -33,7 +33,7 @@ AccessGroupList ( アクセスグループリスト )
 
 
  a| 
-使用します
+`authMethod`
  a| 
 クラスタ管理者ユーザが使用する認証のタイプ。有効な値は次のとおり
 
@@ -47,7 +47,7 @@ AccessGroupList ( アクセスグループリスト )
 
 
  a| 
-クラスタ管理者 ID
+`clusterAdminIDs`
  a| 
 このセッションに関連付けられているクラスタ管理者 ID のリスト。LDAP またはサードパーティのアイデンティティプロバイダ（ IdP ）に関連するセッションの場合、このセッションに関連付けられている一致するクラスタ管理者 ID のアグリゲートリストが表示されます。
  a| 
@@ -56,7 +56,7 @@ AccessGroupList ( アクセスグループリスト )
 
 
  a| 
-finalTimeout
+`finalTimeout`
  a| 
 セッションが無効になる時刻。セッションが作成されたときに設定され、変更できません。
  a| 
@@ -65,7 +65,7 @@ finalTimeout
 
 
  a| 
-idpConfigVersion
+`idpConfigVersion`
  a| 
 セッション作成時の IDP 設定バージョン。
  a| 
@@ -74,7 +74,7 @@ idpConfigVersion
 
 
  a| 
-lastAccessTimeout の値
+`lastAccessTimeout`
  a| 
 非アクティブのためにセッションが無効になった時間。セッションが使用できるようにアクセスされたときの新しい値に設定されます。これは、 finalTimeout に達したためにセッションが無効になった時間までです。
  a| 
@@ -83,7 +83,7 @@ lastAccessTimeout の値
 
 
  a| 
-sessionCreationTime に追加します
+`sessionCreationTime`
  a| 
 セッションが作成された時刻。
  a| 
@@ -92,7 +92,7 @@ sessionCreationTime に追加します
 
 
  a| 
-SessionID
+`sessionID`
  a| 
 このセッションの UUID 。
  a| 
@@ -101,7 +101,7 @@ UUID
 
 
  a| 
-ユーザ名
+「ユーザ名」
  a| 
 このセッションに関連付けられているユーザ名。LDAP に関連するセッションの場合は、ユーザの LDAP DN になります。サードパーティ IdP に関連するセッションの場合、セッション内の処理の監査に使用する任意の名前と値のペアを指定します。クラスタ管理者名と同じである必要はありません。たとえば、 SAML Subject NameID は、 IdP の設定と SAML アサーションの結果コンテンツによって決まります。
  a| 

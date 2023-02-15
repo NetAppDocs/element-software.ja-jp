@@ -5281,7 +5281,6 @@
   <block id="c658b81fa8392ad8358fa7025ef68471" category="paragraph">クラスタに参加しているノード。</block>
   <block id="97ebf541060790cce82e6c290f39469d" category="paragraph">fipsDriveConfiguration を参照してください</block>
   <block id="aa250ff7f0539ee77ebcbe694fb7ed8e" category="paragraph">ノードが FIPS 140-2 認定ドライブをサポートするかどうかを示します。</block>
-  <block id="9c67fd947bdf4fff7195660e494235a9" category="paragraph">hasLocalAdmin</block>
   <block id="e409ed502bfce3289786dde214400243" category="paragraph">クラスタにローカル管理者が設定されているかどうかを示します。</block>
   <block id="bc78880f602551cf8a3b259a0c962334" category="paragraph">MIPI</block>
   <block id="ed86fdb4761f4f49f190074a32c13e5a" category="paragraph">ノード管理に使用するネットワークインターフェイス。</block>
@@ -7443,14 +7442,11 @@
   <block id="661e8b5e13fd1b6d2cb95e7fd1ddc6da" category="summary">binding オブジェクトには、仮想ボリュームのバインディングに関する情報が含まれます。ListVirtualVolumeBindings API メソッドを使用すると、すべての仮想ボリュームに関する以下の情報のリストを取得できます。</block>
   <block id="252511a4bae9588f75cafb11059cfab0" category="doc">binding （仮想ボリューム）</block>
   <block id="ed803bf4b6c9b034d91b1bdcafdf1630" category="paragraph">binding オブジェクトには、仮想ボリュームのバインディングに関する情報が含まれます。「 ListVirtualVolumeBindings 」 API メソッドを使用すると、すべての仮想ボリュームに関する以下の情報のリストを取得できます。</block>
-  <block id="c086097777745f6e58e7c869ddec22a4" category="paragraph">protocolEndpointInBandID を指定します</block>
   <block id="8a243326e7441ff313e43923a78d3938" category="paragraph">プロトコルエンドポイントの scsiNAADeviceID 。</block>
   <block id="39c4c08e56ab2d685095d11aeb7862c5" category="paragraph">プロトコルエンドポイントのタイプ。SCSI は、プロトコルエンドポイントタイプに返される唯一の値です。</block>
-  <block id="ead0832c7060f9a01d951958eea89b12" category="paragraph">virtualVolumeBindingID</block>
   <block id="a7fae1ef625697c5a7a612dfdc0dd0d9" category="paragraph">仮想ボリュームバインドオブジェクトの一意の ID 。</block>
   <block id="074caad1387db91896ed65e6b9d15794" category="paragraph">仮想ボリュームホストの一意の ID 。</block>
   <block id="6bb6828df73c621751ada2246cdf02a9" category="paragraph">仮想ボリュームの一意の ID 。</block>
-  <block id="a84d0d7286faa74ea242283b2a577249" category="paragraph">virtualVolumeSecondaryID</block>
   <block id="61f0f68050db0e3a705d867283012dc9" category="paragraph">仮想ボリュームのセカンダリ ID 。</block>
   <block id="ce81746843205f62b91cb103018f3855" category="inline-xref-macro">ListVirtualVolumeBindings を実行します</block>
   <block id="191bb122655686189b83810b68285ebd" category="list-text"><block ref="191bb122655686189b83810b68285ebd" category="inline-xref-macro-rx"></block></block>
@@ -7765,7 +7761,6 @@
   <block id="0cefba585c51db1beb859a06e4b53d38" category="paragraph">各アカウントのボリュームアクティビティ情報のリスト。 * 注：この値はアカウントが所有するすべてのボリュームの合計を表すため、各エントリのボリューム ID メンバーは 0 です。</block>
   <block id="4f4d5661536c011a5b741adcc4ef375e" category="summary">bulkVolumeJob オブジェクトには、クローニングや Snapshot 作成など、ボリュームの一括読み取りまたは書き込み処理に関する情報が含まれます。</block>
   <block id="1d6615a239aa12c4eedb118a5825a76c" category="paragraph">一括ボリュームジョブの JSON 属性。</block>
-  <block id="f2553a2f3501d5cc5d30d57cc0c0b93a" category="paragraph">bulkVolumeID</block>
   <block id="da0bf234ebace510e62766d4c16cdedb" category="paragraph">内部一括ボリュームジョブの ID 。</block>
   <block id="f4c609fc8cfe4b4af500d9b32efdeef8" category="paragraph">UTC+0 形式の一括ボリュームジョブ用に作成されたタイムスタンプ。</block>
   <block id="dad566b38c7c4c71d805927e9fff2732" category="paragraph">elapsedTime</block>
@@ -8815,22 +8810,16 @@
   <block id="cca4974913ce844555e5b5097aa84166" category="paragraph">返されるボリューム情報オブジェクトの最大数。0 （ゼロ）はすべてのボリュームを返します（無制限）。</block>
   <block id="39e0f39d287e268929778eef6d9bf8bc" category="paragraph">アクティブなボリュームのリスト。</block>
   <block id="da77bcc62101c9ebe41a2f69ed7a225a" category="summary">authSessionInfo オブジェクトには、認証セッションに関する情報が含まれています。</block>
-  <block id="82c11ba1b42b51fd5186ac3c7832d4bd" category="paragraph">AccessGroupList ( アクセスグループリスト )</block>
   <block id="c3d46917e290d42cf79506e2c6965017" category="paragraph">ユーザのアクセスグループのリスト。</block>
   <block id="304a19f5c3e0f3f28ed7e5b4fb7d8d2a" category="paragraph">使用します</block>
   <block id="b7393fc8533c9081513d1e4e6de4614f" category="paragraph">クラスタ管理者ユーザが使用する認証のタイプ。有効な値は次のとおり</block>
   <block id="526df192a30d9e2d44f794b48cc12b73" category="list-text">LDAP - LDAP で認証されています。</block>
   <block id="369baf374646153c348856b9bf69414e" category="list-text">クラスタ - クラスタデータベースに保存されているユーザ名とパスワードを使用して認証されます。</block>
   <block id="108afc331184fa4802c5a75fa48d8ab1" category="list-text">IdP - サードパーティのアイデンティティプロバイダを使用して認証されています。</block>
-  <block id="4eec019ba04132017c6c3764134d1ef2" category="paragraph">クラスタ管理者 ID</block>
   <block id="afcdcd750f1faaba6c546e08e1c73321" category="paragraph">このセッションに関連付けられているクラスタ管理者 ID のリスト。LDAP またはサードパーティのアイデンティティプロバイダ（ IdP ）に関連するセッションの場合、このセッションに関連付けられている一致するクラスタ管理者 ID のアグリゲートリストが表示されます。</block>
-  <block id="fb5b30c6a1ea9f43fae8c0f01394f49f" category="paragraph">finalTimeout</block>
   <block id="505254db0f83c0910f746d08a7ac99f6" category="paragraph">セッションが無効になる時刻。セッションが作成されたときに設定され、変更できません。</block>
-  <block id="35da4f44f342c2e389dd9b58f96947e1" category="paragraph">idpConfigVersion</block>
   <block id="7493515074b71edb089561f159ebb34a" category="paragraph">セッション作成時の IDP 設定バージョン。</block>
-  <block id="f48a7a8ee3be3d137267127a48f03a62" category="paragraph">lastAccessTimeout の値</block>
   <block id="1ed06e45935396a9ca1b25f06cbe7d51" category="paragraph">非アクティブのためにセッションが無効になった時間。セッションが使用できるようにアクセスされたときの新しい値に設定されます。これは、 finalTimeout に達したためにセッションが無効になった時間までです。</block>
-  <block id="4dfdaa2c889da42ffa384535c55bad20" category="paragraph">sessionCreationTime に追加します</block>
   <block id="565b17feb5f1306aceb85856370e9622" category="paragraph">セッションが作成された時刻。</block>
   <block id="f4d70d668878643ca29fcc21e27945c7" category="paragraph">このセッションの UUID 。</block>
   <block id="4c98b9454b129bf78626cc14d0d0850a" category="paragraph">このセッションに関連付けられているユーザ名。LDAP に関連するセッションの場合は、ユーザの LDAP DN になります。サードパーティ IdP に関連するセッションの場合、セッション内の処理の監査に使用する任意の名前と値のペアを指定します。クラスタ管理者名と同じである必要はありません。たとえば、 SAML Subject NameID は、 IdP の設定と SAML アサーションの結果コンテンツによって決まります。</block>
@@ -9044,19 +9033,13 @@
   <block id="28d689e2421d0ca9c708a556488f460c" category="paragraph">ソースとデスティネーションのボリュームペアのボリューム ID のリスト。</block>
   <block id="b28198827844362b9840eaa3a5887d57" category="summary">certificateDetails オブジェクトには、セキュリティ証明書に関するデコードされた情報が含まれます。</block>
   <block id="0a9b30c9586139e0c073136d4fd18c70" category="doc">証明書の詳細</block>
-  <block id="3e6c2bc1e7f7e5e8c450394c747a8e9f" category="paragraph">発行元</block>
   <block id="73d85b1c5e216ad3b1af880670cf9dd8" category="paragraph">発行元の名前。</block>
-  <block id="06efba23b1f3a9b846a25c6b49f30348" category="paragraph">モジュラス</block>
   <block id="56b096d21f789ea9609f940b2a4322a1" category="paragraph">公開鍵のモジュラス。</block>
-  <block id="21f1ba3a4a4a624d712b87c23b2fd95a" category="paragraph">notAfter</block>
   <block id="5c8e992f481a2a6e6a603859abf99469" category="paragraph">証明書の有効期限。</block>
-  <block id="cf2c84750b842aaa309ecba4d79ff935" category="paragraph">メモ前段</block>
   <block id="7ded06075abb3fd5e744484bb9307bdb" category="paragraph">証明書の開始日。</block>
   <block id="74136b24217cb75599440e6e1d807cf7" category="paragraph">Serial （シリアル）</block>
   <block id="adc31c3bcfc3c8de65322e54c047705a" category="paragraph">証明書のシリアル番号。</block>
-  <block id="b1824a768eb2bedf4deb31cb0dda516e" category="paragraph">sha1 指紋</block>
   <block id="6dcc496ee5f8b53f4418d8a4857de392" category="paragraph">DER でエンコードされたバージョンの証明書のダイジェスト。</block>
-  <block id="b5e3374e43f6544852f7751dfc529100" category="paragraph">件名</block>
   <block id="cc6b1cfcd3f0936e0a3eb385e953846c" category="paragraph">件名。</block>
   <block id="ee767e2266a1445eb984f3e5cdb6dea5" category="summary">RemoveClusterAdmin メソッドを使用すると、クラスタ管理、 LDAP クラスタ管理、またはサードパーティのアイデンティティプロバイダ / （ IdP ）クラスタ管理者を削除できます。「 admin 」クラスタ管理者アカウントを削除することはできません。</block>
   <block id="b7932e6374435b01c22e826b709ce4f9" category="paragraph">RemoveClusterAdmin メソッドを使用すると、クラスタ管理者、 LDAP クラスタ管理者、またはサードパーティの Identity Provider （ IdP ；アイデンティティプロバイダ）クラスタ管理者を削除できます。「 admin 」クラスタ管理者アカウントを削除することはできません。</block>
@@ -12676,4 +12659,55 @@
   <block id="a386fc287fd28e52c07d586cfb7aa08b" category="admonition">プロセスが開始されると、ノードからすべてのデータと設定の詳細が完全に消去されます。続行しないことを選択すると、が表示されます <block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block>。</block>
   <block id="d9730da4fb3635f5ccd1c078266c9334" category="paragraph">RTFIプロセス中にエラーメッセージが発生した場合は、を参照してください <block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block>。</block>
   <block id="fe87b6b5d8e86013cf5abe3db7879c77" category="list-text">セキュア選択したすべてのドライブが消去されます。</block>
+  <block id="bc00f70999910793cca72a5ef73422f0" category="paragraph"><block ref="09baf477e57e7f3831d71c16e6539e63" prefix="" category="inline-code"></block></block>
+  <block id="4f6db9bf27ec4feede510bacf8ddd895" category="paragraph"><block ref="c086097777745f6e58e7c869ddec22a4" prefix="" category="inline-code"></block></block>
+  <block id="b480699d7320465070d3fca77728913e" category="paragraph"><block ref="2451a5f865d1a4f95ca8ac13d9327804" prefix="" category="inline-code"></block></block>
+  <block id="34b7e74a069a54a1e4ffcf70f86b3f1b" category="paragraph"><block ref="ead0832c7060f9a01d951958eea89b12" prefix="" category="inline-code"></block></block>
+  <block id="a75e5e3d3f2c0949b2e73a455424475f" category="paragraph"><block ref="853cc9c778b55f73c37ae904ccaf8ca0" prefix="" category="inline-code"></block></block>
+  <block id="dc9b3cdab12de90c933e458b684ea2cb" category="paragraph"><block ref="20d2528785eba01be62c63ef88a34df2" prefix="" category="inline-code"></block></block>
+  <block id="071343dbc99e7d53be5805eed2fea27c" category="paragraph"><block ref="a84d0d7286faa74ea242283b2a577249" prefix="" category="inline-code"></block></block>
+  <block id="cd11615fedd7d5c8dc795d237158ffe3" category="paragraph">。<block ref="0a9b30c9586139e0c073136d4fd18c70" prefix=" " category="inline-code"></block> objectには、セキュリティ証明書に関するデコードされた情報が含まれます。</block>
+  <block id="911cdd7166115e429e8e70db0235eac5" category="paragraph"><block ref="3e6c2bc1e7f7e5e8c450394c747a8e9f" prefix="" category="inline-code"></block></block>
+  <block id="b86a341954a6c06a28a76002d65b3475" category="paragraph"><block ref="06efba23b1f3a9b846a25c6b49f30348" prefix="" category="inline-code"></block></block>
+  <block id="1816a44ebe9e35500b1a4ff4f239779c" category="paragraph"><block ref="21f1ba3a4a4a624d712b87c23b2fd95a" prefix="" category="inline-code"></block></block>
+  <block id="908fc73b554678fd09029defca345c56" category="paragraph"><block ref="cf2c84750b842aaa309ecba4d79ff935" prefix="" category="inline-code"></block></block>
+  <block id="601eb78012ee07bb2d1a1f4f756579dd" category="paragraph"><block ref="74136b24217cb75599440e6e1d807cf7" prefix="" category="inline-code"></block></block>
+  <block id="dc1a9e1c0f6c00bb17722cc697bf15b1" category="paragraph"><block ref="b1824a768eb2bedf4deb31cb0dda516e" prefix="" category="inline-code"></block></block>
+  <block id="d417475e5f494306cb8c0eb5b719ac56" category="paragraph"><block ref="b5e3374e43f6544852f7751dfc529100" prefix="" category="inline-code"></block></block>
+  <block id="5b2dcbbe8c405b31e0cdc640023557e4" category="paragraph">。<block ref="27dc8ad0ed4686d1401b38ad85126f2f" prefix=" " category="inline-code"></block> オブジェクトには、クローニングやSnapshot作成など、ボリュームの一括読み取り/書き込み処理に関する情報が含まれます。</block>
+  <block id="126f16f91505e64f86d9db2c760ac5db" category="paragraph"><block ref="f2553a2f3501d5cc5d30d57cc0c0b93a" prefix="" category="inline-code"></block></block>
+  <block id="40aef4b729106c75a0482b701239db2f" category="paragraph"><block ref="1ed2e1b19b6e55d52d2473be17a4afd9" prefix="" category="inline-code"></block></block>
+  <block id="79b0fc8232087a8f03086cf06b588075" category="paragraph"><block ref="dad566b38c7c4c71d805927e9fff2732" prefix="" category="inline-code"></block></block>
+  <block id="703769be5e6210b6a2b6b99e92112954" category="paragraph"><block ref="1ddcb92ade31c8fbd370001f9b29a7d9" prefix="" category="inline-code"></block></block>
+  <block id="b5f22048829ef6db41cb34c651f96faa" category="paragraph"><block ref="3c6e0b8a9c15224a8228b9a98ca1531d" prefix="" category="inline-code"></block></block>
+  <block id="e1e059b40b75849ff9dc719eda5e6c12" category="paragraph"><block ref="69f891d47e66aaa0a968e3fbd070d4a5" prefix="" category="inline-code"></block></block>
+  <block id="0098d750e60da9805e878840bb54382c" category="paragraph"><block ref="ab9b69f140a1e5d13d4862be384ae223" prefix="" category="inline-code"></block></block>
+  <block id="b00941d91b64405f0e06c47a2bed5051" category="paragraph"><block ref="87a17a82989223258916f440886481da" prefix="" category="inline-code"></block></block>
+  <block id="cf9f9fbbb24544659ae4b59937ecb570" category="paragraph"><block ref="9acb44549b41563697bb490144ec6258" prefix="" category="inline-code"></block></block>
+  <block id="f69685a2b9996f27af921b74f37fc276" category="paragraph"><block ref="3205c0ded576131ea255ad2bd38b0fb2" prefix="" category="inline-code"></block></block>
+  <block id="415ce7b551e9decd6aac5fb465bd367b" category="paragraph"><block ref="599dcce2998a6b40b1e38e8c6006cb0a" prefix="" category="inline-code"></block></block>
+  <block id="12429662b50426169e15a3a0bd812b77" category="paragraph">。<block ref="e268443e43d93dab7ebef303bbe9642f" prefix=" " category="inline-code"></block> Objectには、アカウントの情報が含まれます。このオブジェクトに含まれるのはアカウントに関する「設定済み」の情報だけで、稼働情報または使用状況は含まれません。</block>
+  <block id="0dda361a1e4bd829ec9b993595439c8e" category="paragraph"><block ref="b5e57de5ff2c469efbf205bb99834e4f" prefix="" category="inline-code"></block></block>
+  <block id="41f57963afb778a9cf4af334962398d7" category="paragraph">。<block ref="9a43554262146ce04817985e50c7f70c" prefix=" " category="inline-code"></block> Objectには、認証セッションの情報が含まれます。</block>
+  <block id="9743ba415832304c7f52901372714d6e" category="paragraph"><block ref="82c11ba1b42b51fd5186ac3c7832d4bd" prefix="" category="inline-code"></block></block>
+  <block id="65b21ce2c38e6e4f476acbc8ea9ce384" category="paragraph"><block ref="304a19f5c3e0f3f28ed7e5b4fb7d8d2a" prefix="" category="inline-code"></block></block>
+  <block id="2e952bf746164dfd12e866f3dbd95eec" category="paragraph"><block ref="4eec019ba04132017c6c3764134d1ef2" prefix="" category="inline-code"></block></block>
+  <block id="1e1823963d07a2a9ba48e6b2ab3650cc" category="paragraph"><block ref="fb5b30c6a1ea9f43fae8c0f01394f49f" prefix="" category="inline-code"></block></block>
+  <block id="d6f258a79c95d563a0c1a60d24eb84be" category="paragraph"><block ref="35da4f44f342c2e389dd9b58f96947e1" prefix="" category="inline-code"></block></block>
+  <block id="94afa8129819dea3954e0bcf8f7ab7d6" category="paragraph"><block ref="f48a7a8ee3be3d137267127a48f03a62" prefix="" category="inline-code"></block></block>
+  <block id="613b7cd1773d945213f4a726f91f33a8" category="paragraph"><block ref="4dfdaa2c889da42ffa384535c55bad20" prefix="" category="inline-code"></block></block>
+  <block id="8afa9e195204d51d1efe73295a663915" category="paragraph"><block ref="0ad941b537a927186263b578e28bfd9b" prefix="" category="inline-code"></block></block>
+  <block id="b0c8b2bc285eb35c1d17ebbae099e249" category="paragraph">。<block ref="545969892e468dfdfc30bb51ffc1c34c" prefix=" " category="inline-code"></block> オブジェクトは、ノードがクラスタとの通信に使用する情報を返します。</block>
+  <block id="a38be2de7d274cb8f8108c988ad1c46c" category="paragraph"><block ref="9d08802b313fb8797710d67e55eab896" prefix="" category="inline-code"></block></block>
+  <block id="fa1b1a3e69fb166e323727016fdf6333" category="paragraph"><block ref="a43baddbf2cfaa154f9947e47ee1bfe7" prefix="" category="inline-code"></block></block>
+  <block id="099b42f75c3fbe5c8a528cddcf8819d8" category="paragraph"><block ref="52406e4baf76901e487aadaec67e88ea" prefix="" category="inline-code"></block></block>
+  <block id="d6498c1d07f3702d50a3040ed94f4c63" category="paragraph"><block ref="97ebf541060790cce82e6c290f39469d" prefix="" category="inline-code"></block></block>
+  <block id="9f114e4fa4e7a73268f48f07ea634b02" category="paragraph"><block ref="9c67fd947bdf4fff7195660e494235a9" prefix="" category="inline-code"></block></block>
+  <block id="846405f66574e2c563fc65824e44736b" category="paragraph"><block ref="bc78880f602551cf8a3b259a0c962334" prefix="" category="inline-code"></block></block>
+  <block id="1c63edaccfcb01f1b29cad1cde92f5fd" category="paragraph"><block ref="62ba2c7a16dc89d75e021db678437e35" prefix="" category="inline-code"></block></block>
+  <block id="e31c0062aabb26e49279bbec3cbeb4ed" category="paragraph"><block ref="211df989e77735e4541c48f3cfd7e7b4" prefix="" category="inline-code"></block></block>
+  <block id="6739976c44cd4126fc58284566f9b7d2" category="paragraph"><block ref="29a7e96467b69a9f5a93332e29e9b0de" prefix="" category="inline-code"></block></block>
+  <block id="6232a2f1b30c3036b5c008529bc21aef" category="paragraph"><block ref="cfc64b55d03850e2ab017f7286375f5d" prefix="" category="inline-code"></block></block>
+  <block id="01e67269f053fa497a470b13c81ac40c" category="paragraph"><block ref="9ed39e2ea931586b6a985a6942ef573e" prefix="" category="inline-code"></block></block>
+  <block id="7877022c956918624cc0373ff564cad4" category="paragraph"><block ref="2af72f100c356273d46284f6fd1dfc08" prefix="" category="inline-code"></block></block>
 </blocks>
