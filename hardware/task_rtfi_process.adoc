@@ -40,7 +40,7 @@ RTFIプロセスが正常に完了したあとにノードを設定するには�
 
 次の手順 を使用して、SolidFire ノードでElementソフトウェアをリストアします。
 
-USBキーの作成またはBMCを使用したRTFIプロセスの実行の詳細については、を参照してください xref:task_rtfi_deployment_and_install_options.html[RTFIの導入オプションとインストールオプション]。
+USBキーの作成またはBMCを使用したRTFIプロセスの実行の詳細については、を参照してください xref:task_rtfi_deployment_and_install_options.adoc[RTFIの導入オプションとインストールオプション]。
 
 .作業を開始する前に
 次の要件を満たしていることを確認します。

@@ -26,9 +26,9 @@ WARNING: RTFIプロセスはデータを破壊し、ノードからデータと�
 
 RTFI国際標準化機構（ISO）イメージを導入してインストールし、RTFIプロセスを実行します。
 
-* xref:task_rtfi_deployment_and_install_options.html[RTFIの導入オプションとインストールオプション]
-* xref:task_rtfi_process.html[RTFIプロセスを実行します]
-* xref:task_rtfi_options_menu.html[RTFIのオプションメニュー]
+* xref:task_rtfi_deployment_and_install_options.adoc[RTFIの導入オプションとインストールオプション]
+* xref:task_rtfi_process.adoc[RTFIプロセスを実行します]
+* xref:task_rtfi_options_menu.adoc[RTFIのオプションメニュー]
 
 
 
