@@ -1238,9 +1238,6 @@
   <block id="bb4d7312552f53e884cc23db3819fd11" category="list-text">* 中止 * ：実行中の転送をキャンセルします。中止された関係に対して SnapMirror 更新が実行されると、前回の転送が、中止前に作成された最後の再開チェックポイントから続行されます。</block>
   <block id="25145b9df35ba6ef8386c92cbc7e67aa" category="summary">ネットアップサポートに連絡して準備手順を完了したら、クラスタ全体の電源をオフにすることができます。</block>
   <block id="d3dc741b1e26e016be52c0a55b325fda" category="doc">クラスタの電源をオフにします</block>
-  <block id="7e75e710e04194aacb5b7f056ec5e471" category="paragraph">次の手順でクラスタをシャットダウンする準備をします。</block>
-  <block id="7bf4e8d030b2c47061505b2052e7e3c8" category="list-text">すべての I/O を停止します</block>
-  <block id="c1fc137e8581e89d2a694ed758b29c11" category="list-text">すべての iSCSI セッションを切断します。</block>
   <block id="52774163f10fbc297ca1a2188d7b81c9" category="list-text">クラスタの管理仮想 IP アドレス（ MVIP ）に移動して、 Element UI を開きます。</block>
   <block id="ecb5391ff71658726fe4fbade2f9af5e" category="list-text">ノードリストに表示されているノードをメモします。</block>
   <block id="7a9ac18ef12501dac2ab0cc718dd03a4" category="list-text">クラスタ内の各ノード ID に対し、 halt オプションを指定して Shutdown API メソッドを実行します。</block>
@@ -12725,4 +12722,15 @@
   <block id="51de7a2a44178422229997edab051ac7" category="list-text"><block ref="51de7a2a44178422229997edab051ac7" category="inline-xref-macro-rx"></block></block>
   <block id="8f047e2b521fd8a37be46c7a429ab25b" category="list-text"><block ref="8f047e2b521fd8a37be46c7a429ab25b" category="inline-xref-macro-rx"></block></block>
   <block id="c2350b958761f326a00bd673fc30fdae" category="list-text"><block ref="c2350b958761f326a00bd673fc30fdae" category="inline-xref-macro-rx"></block></block>
+  <block id="57d4d715f0b6238380a88647e5064ab7" category="paragraph">クラスタ全体の電源をオフにするには、次の手順 を実行します。</block>
+  <block id="69824b5487e4b72a56fe97cb153b7404" category="list-text">（オプション）準備手順の実行については、ネットアップサポートにお問い合わせください。</block>
+  <block id="f901f3a344a86528165d6bab6500fbc5" category="list-text">すべてのI/Oが停止していることを確認します。</block>
+  <block id="f0b8c58f8c65aac7a69a51384ac1a649" category="list-text">すべてのiSCSIセッションを切断します。</block>
+  <block id="391aec42faef3b52d4eaaefa153733b2" category="paragraph">クラスタを再起動するときは、特定の手順に従ってすべてのノードがオンラインになったことを確認する必要があります。</block>
+  <block id="56312700a2d03ce6cacae049f3294807" category="list-text">すべての重大度とを確認します<block ref="945c53fff9195b4e69a31c30b6a268c6" prefix=" " category="inline-code"></block> クラスタの障害が解決されました。</block>
+  <block id="6331b65d2bb9f0f39b6e8331e5b2c669" category="list-text">クラスタが安定するまで10～15分待ちます。</block>
+  <block id="301bf6ea727a40a8d5cc8608cc0c41d7" category="list-text">データにアクセスするためのホストの起動を開始します。</block>
+  <block id="c192e3c2dbd374233d4685406db01520" category="paragraph">メンテナンス後にノードの電源をオンにして正常であることを確認する時間を長くしたい場合は、データの同期を遅らせて不要なビンの同期を回避する方法についてテクニカルサポートにお問い合わせください。</block>
+  <block id="eef615f9029df3b19885b836d67d03a3" category="inline-link">NetApp SolidFire / HCIストレージクラスタを正常にシャットダウンして電源をオンにする方法</block>
+  <block id="b8c22947a9d726cf79f399d361ecc7a2" category="paragraph"><block ref="b8c22947a9d726cf79f399d361ecc7a2" category="inline-link-rx"></block></block>
 </blocks>
