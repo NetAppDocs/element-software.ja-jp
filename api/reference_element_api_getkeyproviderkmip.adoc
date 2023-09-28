@@ -50,7 +50,7 @@ kmipKeyProvider のいずれかです
  a| 
 要求されたキープロバイダの詳細を含むオブジェクト。
  a| 
-link:reference_element_api_keyproviderkmip.md#["KeyProviderKmip"]
+link:reference_element_api_keyproviderkmip.html["KeyProviderKmip"]
 
 |===
 

@@ -37,6 +37,6 @@ protectionDomains の順にクリックします
  a| 
 ノードがメンバーになっている保護ドメインのリスト。
  a| 
-link:reference_element_api_protectiondomain.md#GUID-96388C5C-ACA2-44D9-86CE-19FEF0825A11["protectionDomain の略"]
+link:reference_element_api_protectiondomain.html["protectionDomain の略"]
 
 |===

@@ -23,7 +23,7 @@ summary: 個々のノードの設定がすべて完了したら、ストレー�
 
 [IMPORTANT]
 ====
-クラスタ全体で有効にする場合 link:../concepts/concept_solidfire_concepts_security.html#encryption-at-rest-software["ソフトウェアによる保存データの暗号化"] SolidFire オールフラッシュストレージクラスタの場合は、クラスタ作成時にクラスタ作成時に実行する必要があります。Element 12.5以降では、クラスタ作成時にCreate Cluster UIで保存データのソフトウェア暗号化を有効にする必要があります。Element 12.3.x以前のバージョンでは、を使用してクラスタを作成する必要があります link:../api/reference_element_api_createcluster.html["クラスタを作成"] APIメソッドを使用して、enableSoftwareEncryptionAtRestパラメータを「true」に変更します。SolidFire ESDS クラスタでは、保存データのソフトウェア暗号化がデフォルトで有効になっています。SolidFire オールフラッシュストレージクラスタおよびSolidFire ESDSクラスタでは、クラスタで保存データのソフトウェア暗号化を有効にしたあとで、クラスタを無効にすることはできません。可能です link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["有効と無効を切り替えます"] クラスタ作成後の保存データのハードウェアベースの暗号化。
+クラスタ全体で有効にする場合 link:../concepts/concept_solidfire_concepts_security.html#encryption-at-rest-software["ソフトウェアによる保存データの暗号化"] SolidFire オールフラッシュストレージクラスタの場合は、クラスタ作成時にクラスタ作成時に実行する必要があります。Element 12.5以降では、クラスタ作成時にCreate Cluster UIで保存データのソフトウェア暗号化を有効にする必要があります。Element 12.3.x以前のバージョンでは、を使用してクラスタを作成する必要があります link:../api/reference_element_api_createcluster.html["クラスタを作成"] APIメソッドを使用し、enableSoftwareEncryptionAtRestパラメータをに変更します。 `true`。クラスタでソフトウェアの保存データ暗号化を有効にしたあとに無効にすることはできません。可能です link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["有効と無効を切り替えます"] クラスタ作成後の保存データのハードウェアベースの暗号化。
 
 ====
 [NOTE]

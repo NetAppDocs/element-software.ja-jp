@@ -48,7 +48,8 @@ NOTE: ネットアップサポートのクレデンシャルでログインす�
 
 == vCenter Server 向け NetApp Element プラグイン
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2884992["vCenter Plug-in 5.0リリースノート"^] _ 新規 _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2885734["vCenter Plug-in 5.1リリースノート"^] _ 新規 _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2884992["vCenter Plug-in 5.0リリースノート"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2884458["vCenter Plug-in 4.10リリースノート"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2881904["vCenter Plug-in 4.9リリースノート"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2879296["vCenter Plug-in 4.8 リリースノート"^]
@@ -63,13 +64,14 @@ NOTE: ネットアップサポートのクレデンシャルでログインす�
 
 == ストレージファームウェア
 
-* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.164.0.html["『Storage Firmware Bundle 2.164.0 Release Notes』を参照してください"^] _ 新規 _
+* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.175.0.html["『Storage Firmware Bundle 2.175.0 Release Notes』を参照してください"^] _ 新規 _
+* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.164.0.html["『Storage Firmware Bundle 2.164.0 Release Notes』を参照してください"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.150.html["『Storage Firmware Bundle 2.150 Release Notes』を参照してください"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.146.html["ストレージファームウェアバンドル 2.146 リリースノート"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.99.2.html["ストレージファームウェアバンドル 2.99.2 リリースノート"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.76.html["ストレージファームウェアバンドル 2.76 リリースノート"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.27.html["ストレージファームウェアバンドル 2.27 リリースノート"^]
-* link:rn_H610S_BMC_3.84.07.html["H610S BMC 3.84.07 リリースノート"]
+* https://docs.netapp.com/us-en/hci/docs/rn_H610S_BMC_3.84.07.html["H610S BMC 3.84.07 リリースノート"^]
 * https://docs.netapp.com/us-en/hci/docs/firmware_driver_versions.html["サポートされているファームウェアおよびESXiドライバのバージョン"] _ 新規 _
 
 

@@ -90,7 +90,7 @@ kmipKeyServers
  a| 
 作成された KMIP キーサーバの完全なリスト。
  a| 
-link:reference_element_api_keyserverkmip.md#["KeyServerKmip"] 配列
+link:reference_element_api_keyserverkmip.html["KeyServerKmip"] 配列
 
 |===
 

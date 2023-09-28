@@ -14,9 +14,6 @@ summary: GetIpmiConfig メソッドを使用すると、ノードに搭載され
 GetIpmiConfig メソッドを使用すると、ノード内のセンサーからハードウェアセンサー情報を取得できます。
 
 
-NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
-
-
 
 == パラメータ
 

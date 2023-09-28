@@ -14,7 +14,7 @@ summary: DisableEncryptionAtRest メソッドを使用すると、以前に Enab
 「 EnableEncryptionAtRest 」メソッドを使用すると、以前にクラスタに適用された暗号化を解除できます。このメソッドは非同期で、暗号化が無効になる前に応答を返します。GetClusterInfo' メソッドを使用すると ' プロセスが完了したことを確認するためにシステムをポーリングできます
 
 
-TIP: クラスタの保存データの暗号化とソフトウェア暗号化の現在のステータスを確認するには、を使用します link:../api/reference_element_api_getclusterinfo["クラスタ情報メソッドを取得します"^]。GetSoftwareEncryptionAtRestInfo' を使用できます link:../api/reference_element_api_getsoftwareencryptionatrestinfo["クラスタが保存データの暗号化に使用する情報を取得する方法"^]。
+TIP: クラスタの保存データの暗号化とソフトウェア暗号化の現在のステータスを確認するには、を使用します link:../api/reference_element_api_getclusterinfo.html["クラスタ情報メソッドを取得します"^]。を使用できます `GetSoftwareEncryptionAtRestInfo` link:../api/reference_element_api_getsoftwareencryptionatrestinfo.html["クラスタが保存データの暗号化に使用する情報を取得する方法"^]。
 
 
 NOTE: このメソッドを使用して保存データのソフトウェア暗号化を無効にすることはできません。保存データのソフトウェア暗号化を無効にするには、が必要です link:reference_element_api_createcluster.html["新しいクラスタを作成します。"] ソフトウェアによる保存データの暗号化は無効です。

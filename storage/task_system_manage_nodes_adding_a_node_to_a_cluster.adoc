@@ -20,20 +20,18 @@ summary: ストレージの追加が必要になったとき、またはクラ�
 
 NOTE: 新しく追加したノードがクラスタの合計容量の 50% を超えると、容量のルールに準拠するためにこのノードの一部の容量が使用できなくなります（「未使用」）。これは、ストレージが追加されるまで有効です。容量のルールにも違反するような大規模なノードを追加すると、それまでに孤立していたノードは孤立しなくなり、新たに追加したノードが孤立する状態になります。この問題を回避するには、容量を常にペアで追加する必要があります。ノードが孤立状態になると、 strandedCapacity クラスタエラーがスローされます。
 
-https://www.youtube.com/embed/2smVHWkikXY?rel=0["ネットアップのビデオ： Scale on Your Terms ： Expanding a SolidFire Cluster"]
+https://www.youtube.com/embed/2smVHWkikXY?rel=0["ネットアップのビデオ： Scale on Your Terms ： Expanding a SolidFire Cluster"^]
 
-ノードは、 SolidFire エンタープライズ SDS （ SolidFire ESDS ）クラスタまたは NetApp HCI アプライアンスに追加できます。
-
-SolidFire ESDS ノードは、「 S FC 」のようにノードタイププレフィックス「 `S FC100. 」で示されます。
+NetApp HCI アプライアンスにノードを追加できます。
 
 .手順
 . [* Cluster*>* Nodes] を選択します。
 . 保留中のノードのリストを表示するには、 * Pending * をクリックします。
 +
-ノード（ SolidFire ESDS または SolidFire ESDS 以外の両方のノード）を追加するプロセスが完了すると、それらのノードがアクティブノードリストに表示されます。それまでは、保留中のノードが [ 保留中のアクティブ ] リストに表示されます。
+ノードを追加するプロセスが完了すると、それらのノードが[Active nodes]リストに表示されます。それまでは、保留中のノードが [ 保留中のアクティブ ] リストに表示されます。
 
 +
-SolidFire ESDS ノード以外のノードをクラスタに追加すると、 SolidFire によって保留状態のノードにクラスタの Element ソフトウェアバージョンがインストールされます。この処理には数分かかることがあります。
+クラスタに追加するPending状態のノードには、ElementソフトウェアバージョンのクラスタがインストールされますSolidFire 。この処理には数分かかることがあります。
 
 . 次のいずれかを実行します。
 +

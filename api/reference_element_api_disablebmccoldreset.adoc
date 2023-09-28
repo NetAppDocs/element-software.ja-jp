@@ -14,9 +14,6 @@ summary: DisableBmcColdReset メソッドを使用して、クラスタ内のす
 「 DisableBmcColdReset 」メソッドを使用すると、クラスタ内のすべてのノードのベースボード管理コントローラ（ BMC ）を定期的にリセットするバックグラウンドタスクを無効にできます。
 
 
-NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
-
-
 
 == パラメータ
 

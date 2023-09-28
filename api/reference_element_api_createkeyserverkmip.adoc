@@ -104,7 +104,7 @@ kmipKeyServer
  a| 
 作成されたキーサーバの詳細を含むオブジェクト。
  a| 
-link:reference_element_api_keyserverkmip.md#["KeyServerKmip"]
+link:reference_element_api_keyserverkmip.html["KeyServerKmip"]
 
 |===
 

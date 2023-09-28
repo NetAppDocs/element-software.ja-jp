@@ -50,7 +50,7 @@ kmipKeyServer
  a| 
 要求されたキーサーバの詳細を含むオブジェクト。
  a| 
-link:reference_element_api_keyserverkmip.md#["KeyServerKmip"]
+link:reference_element_api_keyserverkmip.html["KeyServerKmip"]
 
 |===
 

@@ -39,7 +39,7 @@ protectionDomainLayout の略
  a| 
 各ノードの保護ドメイン情報。
  a| 
-の JSON リスト link:reference_element_api_nodeprotectiondomains.md#GUID-3750B3B8-6A66-402F-85F1-E828005084BB["nodeProtectionDomains"] オブジェクト。
+の JSON リスト link:reference_element_api_nodeprotectiondomains.html["nodeProtectionDomains"] オブジェクト。
  a| 
 なし
  a| 
@@ -61,7 +61,7 @@ protectionDomainLayout の略
  a| 
 各ノードとそれに関連付けられた保護ドメインのリスト。
  a| 
-の JSON リスト link:reference_element_api_nodeprotectiondomains.md#GUID-3750B3B8-6A66-402F-85F1-E828005084BB["nodeProtectionDomains"] オブジェクト。
+の JSON リスト link:reference_element_api_nodeprotectiondomains.html["nodeProtectionDomains"] オブジェクト。
 
 |===
 

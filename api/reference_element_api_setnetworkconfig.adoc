@@ -14,9 +14,6 @@ summary: SetNetworkConfig メソッドを使用して、ノードのネットワ
 「 `S etNetworkConfig 」メソッドを使用して、ノードのネットワーク設定を設定できます。ノードの現在のネットワーク設定を表示するには、「 GetNetworkConfig 」 API メソッドを実行します。
 
 
-NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
-
-
 
 == パラメータ
 

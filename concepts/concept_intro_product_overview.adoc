@@ -31,19 +31,11 @@ SolidFire システムには次の機能があります。
 
 
 
-== SolidFire の導入オプション
+== SolidFire の導入
 
-SolidFire には、さまざまな導入オプションがあります。
+ネットアップが提供し、NetApp Element ソフトウェアと統合されたストレージノードを使用できます。
 
-* ネットアップが提供し、 NetApp Element ソフトウェアと統合されたストレージノードを使用する
-+
 link:../concepts/concept_solidfire_concepts_solidfire_architecture_overview.html["SolidFire オールフラッシュストレージアーキテクチャの概要"]
-
-* コンテナ化された SolidFire エンタープライズ SDS を使用して Element ソフトウェアを実行するには、専用のサーバを使用します
-+
-link:../esds/concept_get_started_esds.html["NetApp SolidFire エンタープライズ SDS の導入を始めましょう"]
-
-
 
 
 

@@ -77,7 +77,7 @@ kmipKeyProviders のマニュアルページです
  a| 
 作成された KMIP キープロバイダのリスト。
  a| 
-link:reference_element_api_keyproviderkmip.md#["KeyProviderKmip"] 配列
+link:reference_element_api_keyproviderkmip.html["KeyProviderKmip"] 配列
 
 |===
 

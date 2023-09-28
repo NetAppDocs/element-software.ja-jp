@@ -14,9 +14,6 @@ summary: ListClusterInterfacePreference メソッドを使用すると、 Elemen
 「 ListClusterInterfacePreference 」メソッドを使用すると、 Element ソフトウェアを実行するストレージクラスタと統合されたシステムで、システムに格納されている既存のクラスタインターフェイス設定を表示できます。このメソッドは内部で使用されます。
 
 
-NOTE: SolidFire エンタープライズ SDS は、この方法をサポートしていません。SolidFire ESDS システムでこのメソッドを使用すると、エラーが返されます。
-
-
 
 == パラメータ
 

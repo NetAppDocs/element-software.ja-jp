@@ -19,7 +19,7 @@ Element は、 SolidFire クラスタの中核をなすストレージオペレ�
 
 * link:task_post_deploy_access_the_element_software_user_interface.html["Element ソフトウェアのユーザインターフェイスにアクセスします"]
 * link:task_post_deploy_configure_system_options.html["導入後に SolidFire システムのオプションを設定"]
-* link:concept_upgrade_storage_components.html["ストレージシステムコンポーネントをアップグレードする"]
+* link:../upgrade/concept_element_upgrade_overview.html["ストレージシステムコンポーネントをアップグレードする"]
 * link:task_intro_use_basic_options_in_the_element_software_ui.html["Element ソフトウェア UI の基本オプションを使用"]
 * link:concept_system_manage_accounts_overview.html["アカウントを管理"]
 * link:concept_system_manage_system_management.html["システムを管理します"]

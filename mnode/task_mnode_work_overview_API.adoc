@@ -42,7 +42,7 @@ REST API で実行できるタスクは次のとおりです。
 
 * link:task_mnode_edit_vcenter_assets.html["既存のコントローラアセットを表示または編集する"]
 * link:task_mnode_manage_storage_cluster_assets.html["ストレージクラスタアセットを作成および管理する"]
-* link:hccstorage/task-hcc-collectlogs.html#use-the-rest-api-to-collect-netapp-hci-logs["REST API を使用して Element システムログを収集します"]
+* link:../hccstorage/task-hcc-collectlogs.html#use-the-rest-api-to-collect-netapp-hci-logs["REST API を使用して Element システムログを収集します"]
 * link:task_mnode_api_find_mgmt_svcs_version.html["管理ノードの OS とサービスのバージョンを確認"]
 * link:task_mnode_logs.html["管理サービスからログを取得しています"]
 
