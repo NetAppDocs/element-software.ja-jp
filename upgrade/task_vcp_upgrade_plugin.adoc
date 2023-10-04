@@ -31,7 +31,7 @@ NOTE: 管理サービス2.22.7には、リモートプラグインを含むEleme
 * HTML5 vSphere Web Client 8.0または7.0にアップグレードする。
 +
 
-IMPORTANT: Element Plug-in for vCenter 5.0以降は、vCenter Server 6.7および6.5と互換性がありません。
+IMPORTANT: Element Plug-in for vCenter 5.0以降はvCenter Server 6.7および6.5と互換性がありません。
 
 
 

@@ -67,7 +67,7 @@ iSCSI クライアント
  a| 
 管理ノード
  a| 
-sfsupport.solidfire.com
+`sfsupport.solidfire.com`
  a| 
 22
  a| 
@@ -122,7 +122,7 @@ DNS ルックアップ
  a| 
 管理ノード
  a| 
-monitoring.solidfire.com
+`monitoring.solidfire.com`
  a| 
 443
  a| 
