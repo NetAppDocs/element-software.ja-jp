@@ -1,6 +1,6 @@
 ---
 section: upgrade
-title: Elementソフトウェア12.5以降向けのNetApp SolidFire オールフラッシュストレージシステムをアップグレード
+title: NetApp SolidFireオールフラッシュストレージシステムのアップグレード
 entries:
 - title: アップグレード手順の概要
   url: "/upgrade/concept_element_upgrade_overview.html"
