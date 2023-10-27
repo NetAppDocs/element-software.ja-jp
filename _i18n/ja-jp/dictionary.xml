@@ -3921,7 +3921,6 @@
   <block id="904ca5c0e43e80ef4466e5b37a5d4eb6" category="list-text">iSCSI イニシエータをボリュームアクセスグループに追加するには、イニシエータの追加で、 * イニシエータ * リストから既存のイニシエータを選択します。</block>
   <block id="230516a4fe444ca1f997bb4f4e25375f" category="paragraph">イニシエータ IQN の有効な形式は、 iqn.yyyy-mm です。 y と m は数字で、続けて任意の文字列を指定します。使用できる文字は、数字、小文字のアルファベット、ピリオド、コロン（：）、ダッシュ（ - ）です。</block>
   <block id="cefa41a40ed4b981da4df6e3220b56f8" category="admonition">各ボリュームのイニシエータ IQN は、操作アイコンをクリックし、ボリュームの詳細を表示 * を選択すると、 * Management * &gt; * Volumes * Active Volumes ページに表示されます。</block>
-  <block id="ff888c386cbf7561a41674237043ab02" category="summary">システムをリモートから管理し、データセンターの外部のクライアントがリソースに接続できるようにするために、データセンターのエッジファイアウォールで次の TCP ポートを許可する必要があります。システムの使用方法によっては、一部のポートは不要な場合もあります。</block>
   <block id="1f2681a91e9e795d6ebb1d5828cd1182" category="admonition">管理ノード、 Element ソフトウェアを実行するノード、およびクラスタの MVIP の間で ICMP を有効にします。</block>
   <block id="15a1051d03ca55ab79226f44fa683bbe" category="paragraph">この表では次の略語を使用します。</block>
   <block id="60175d30ed8f8459b2f835b923bb4ee5" category="list-text">mip ：管理 IP アドレス。ノードごとのアドレスです</block>
@@ -12014,6 +12013,7 @@
   <block id="dfd25ff244b001be7beece9729517779" category="list-text">非圧縮</block>
   <block id="54b283655ec8649a11478759bf661650" category="list-text">Element 12.7以降で使用できます。</block>
   <block id="909a1c829d29d09da00949e5c8b87a0e" category="sidebar">NetApp SolidFireオールフラッシュストレージシステムのアップグレード</block>
-  <block id="2284948398c940fd233236412a959432" category="paragraph">システムをリモートで管理し、データセンター外部のクライアントがリソースに接続できるようにするには、データセンターのエッジファイアウォールで次のTCPポートとUDPポートを許可する必要があります。システムの使用方法によっては、一部のポートは不要な場合もあります。</block>
   <block id="331d6d490990c63b2cee0dc04fe2589b" category="paragraph">特に記載がないかぎり、すべてのポートがTCPであり、NetAppサポートサーバ、管理ノード、およびElementソフトウェアを実行するノードの間の3ウェイハンドシェイク通信がすべてサポートされている必要があります。たとえば、管理ノードのソースのホストはTCPポート443を介してストレージクラスタのMVIPデスティネーションのホストと通信し、デスティネーションホストは任意のポートを介してソースホストと通信します。</block>
+  <block id="f814466eb9bcf561b354422b41f381f3" category="summary">システムをリモートで管理し、データセンターの外部のクライアントがリソースに接続できるようにするには、データセンターのエッジファイアウォールで次のTCPポートを許可する必要があります。システムの使用方法によっては、一部のポートは不要な場合もあります。</block>
+  <block id="c04c3f3380a29245247f6e8a6c77a880" category="paragraph">システムをリモートで管理し、データセンター外部のクライアントがリソースに接続できるようにするには、データセンターのエッジファイアウォールで次のTCPポートとUDPポートを許可する必要があります。システムの使用方法によっては、一部のポートは不要な場合もあります。</block>
 </blocks>
