@@ -38,6 +38,6 @@ Element Plug-in for vCenter Server 4.xでは、VMware vCenter Server 7.0 Update 
 
 == 詳細については、こちらをご覧ください
 
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
 

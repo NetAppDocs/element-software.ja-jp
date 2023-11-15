@@ -71,6 +71,6 @@ NetApp Element には次のものが必要です。
 == を参照してください。
 
 * https://docs.netapp.com/us-en/hci/docs/hci_prereqs_network_switch.html["NetApp HCI のネットワークとスイッチの要件"^]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
 

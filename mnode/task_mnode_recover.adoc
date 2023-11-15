@@ -256,5 +256,5 @@ IMPORTANT: 提供する SSH 機能 link:task_mnode_enable_remote_support_connect
 
 * link:../concepts/concept_solidfire_concepts_volumes.html#persistent-volumes["永続ボリューム"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 

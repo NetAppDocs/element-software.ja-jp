@@ -40,6 +40,6 @@ NOTE: クラスタの SSL 証明書は、クラスタに追加される新しい
 
 * link:../mnode/reference_change_mnode_default_ssl_certificate.html["管理ノードのデフォルトSSL証明書を変更します"]
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_are_the_requirements_around_setting_custom_SSL_certificates_in_Element_Software%3F["Element SoftwareでのカスタムSSL証明書の設定に関する要件を教えてください。"^]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
 

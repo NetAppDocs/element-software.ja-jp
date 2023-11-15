@@ -22,5 +22,5 @@ summary: 作業を開始する前に、前提条件を確認する必要があ�
 
 == 詳細については、こちらをご覧ください
 
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 

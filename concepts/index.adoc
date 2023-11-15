@@ -29,5 +29,5 @@ Element ソフトウェアに関連する基本的な概念を確認できます
 == 詳細については、こちらをご覧ください
 
 * https://www.netapp.com/data-storage/solidfire/["SolidFire オールフラッシュストレージの概要"^]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 

@@ -78,6 +78,6 @@ NOTE: ボリュームと QoS ポリシーの関連付けを解除する代わり
 == 詳細については、こちらをご覧ください
 
 * link:task_data_manage_volumes_remove_a_qos_policy_association_of_a_volume.html["ボリュームの QoS ポリシーの関連付けを削除します"]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
 

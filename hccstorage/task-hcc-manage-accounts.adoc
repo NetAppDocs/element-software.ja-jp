@@ -198,5 +198,5 @@ NOTE: 管理サービスに関連付けられた永続ボリュームは、イ�
 * link:../concepts/concept_solidfire_concepts_accounts_and_permissions.html["アカウントの詳細を確認します"]
 * link:../storage/task_data_manage_accounts_work_with_accounts_task.html["CHAPを使用してアカウントを操作します"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 

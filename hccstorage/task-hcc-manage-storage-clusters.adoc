@@ -198,5 +198,5 @@ NOTE: ノードが保守モードのときは新しいデータは受け入れ�
 == 詳細については、こちらをご覧ください
 
 * link:../mnode/task_mnode_manage_storage_cluster_assets.html["ストレージクラスタアセットを作成および管理する"]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 

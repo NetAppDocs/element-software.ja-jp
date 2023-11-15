@@ -57,6 +57,6 @@ NOTE: VASA Provider を vCenter に登録済みの場合、アップグレード
 [discrete]
 == 詳細については、こちらをご覧ください
 
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
 

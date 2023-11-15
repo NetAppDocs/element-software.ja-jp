@@ -158,6 +158,6 @@ Element UI を使用してクラスタ管理者のパスワードを変更でき
 
 * link:task_system_manage_enable_ldap_authentication.html["Element ユーザインターフェイスで LDAP 認証を有効にします"]
 * link:concept_system_manage_manage_ldap.html["LDAP を無効にする"]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
 

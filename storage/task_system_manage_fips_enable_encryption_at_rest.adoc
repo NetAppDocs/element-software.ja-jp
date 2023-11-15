@@ -22,6 +22,6 @@ summary: 保存データの暗号化をクラスタ全体で有効または無�
 == 詳細については、こちらをご覧ください
 
 * xref:task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.adoc[クラスタの暗号化を有効または無効にします]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
 

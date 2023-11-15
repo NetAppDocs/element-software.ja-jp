@@ -27,5 +27,5 @@ summary: ストレージノードを含むクラスタのセットアップ手�
 
 == 詳細については、こちらをご覧ください
 
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire and Element Resources ページにアクセスします"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 
