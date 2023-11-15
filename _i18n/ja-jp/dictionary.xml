@@ -98,8 +98,6 @@
   <block id="639250aa42b00f3259c7b54c6e791327" category="inline-link-macro">セットアップの概要</block>
   <block id="596fbab33a290bc71265a19ce2f71069" category="list-text">[** 新しいクラスタの作成 ** ] ウィンドウに必要な情報を入力します。を参照してください <block ref="5aab4a84ae29c50955c68eacf78e03bf" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="9c83e144e5481ac6766f4055e566594d" category="section-title">詳細については、こちらをご覧ください</block>
-  <block id="1c1519037df87ff4dd08fe6e757ff03f" category="inline-link">NetApp SolidFire のリソースページ</block>
-  <block id="abc0c04174a58217258765895984ed4e" category="list-text"><block ref="abc0c04174a58217258765895984ed4e" category="inline-link-rx"></block></block>
   <block id="89e3bb4cf03209dcb9c85e2455cde9c3" category="inline-link">以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント</block>
   <block id="461166164223a1234073a2c9d388d33a" category="list-text"><block ref="461166164223a1234073a2c9d388d33a" category="inline-link-rx"></block></block>
   <block id="fca4290295aaf1b9d0112b739644d884" category="summary">CPU 障害、ラジアンカードの問題、その他のマザーボードの問題、または電源が入らない場合は、ストレージノードを交換する必要があります。この手順は H410S ストレージノードに適用されます。</block>
@@ -12016,4 +12014,6 @@
   <block id="331d6d490990c63b2cee0dc04fe2589b" category="paragraph">特に記載がないかぎり、すべてのポートがTCPであり、NetAppサポートサーバ、管理ノード、およびElementソフトウェアを実行するノードの間の3ウェイハンドシェイク通信がすべてサポートされている必要があります。たとえば、管理ノードのソースのホストはTCPポート443を介してストレージクラスタのMVIPデスティネーションのホストと通信し、デスティネーションホストは任意のポートを介してソースホストと通信します。</block>
   <block id="f814466eb9bcf561b354422b41f381f3" category="summary">システムをリモートで管理し、データセンターの外部のクライアントがリソースに接続できるようにするには、データセンターのエッジファイアウォールで次のTCPポートを許可する必要があります。システムの使用方法によっては、一部のポートは不要な場合もあります。</block>
   <block id="c04c3f3380a29245247f6e8a6c77a880" category="paragraph">システムをリモートで管理し、データセンター外部のクライアントがリソースに接続できるようにするには、データセンターのエッジファイアウォールで次のTCPポートとUDPポートを許可する必要があります。システムの使用方法によっては、一部のポートは不要な場合もあります。</block>
+  <block id="5858de35bb153f56bdb4f3fbd003b515" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block></block>
+  <block id="591c130bf36c26fe5946fac7eeba4c11" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block>エンテーション]</block>
 </blocks>
