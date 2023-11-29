@@ -447,8 +447,6 @@
   <block id="8c62a8856619185a333cdec6cc116a79" category="list-text"><block ref="8c62a8856619185a333cdec6cc116a79" category="inline-link-rx"></block></block>
   <block id="a881a0468246e93ae6e2c5bccd78758e" category="inline-link">vCenter Server 向け NetApp Element プラグイン</block>
   <block id="7cf5cffc3745b8348cdcfb1c3d0d472f" category="list-text"><block ref="7cf5cffc3745b8348cdcfb1c3d0d472f" category="inline-link-rx"></block></block>
-  <block id="631923a687ff82d68973d99b95597b47" category="inline-link">SolidFire and Element Resources ページにアクセスします</block>
-  <block id="238c5b123e3473c57e2925edccb205c2" category="list-text"><block ref="238c5b123e3473c57e2925edccb205c2" category="inline-link-rx"></block></block>
   <block id="89313b3a84c80a382af0b25d8870fc39" category="inline-link">SolidFire および Element ソフトウェアのドキュメント</block>
   <block id="4a3ccd34d84d8d5dcf651bea4f92dde6" category="list-text"><block ref="4a3ccd34d84d8d5dcf651bea4f92dde6" category="inline-link-rx"></block></block>
   <block id="feaf808951dafefbf9943700efdb4315" category="inline-link">以前のバージョン用の SolidFire および Element ソフトウェアドキュメントセンター</block>
@@ -11205,9 +11203,6 @@
   <block id="58fd31fc4a0bf37df4c2efec74cb0f7e" category="paragraph">Element 12.5には、ストレージノードのファームウェアの更新が含まれています。 <block ref="0f65f1a5cbc84d01ee508f9ae603c679" category="inline-link-macro-rx"></block>。</block>
   <block id="9ae00a023d80f22436817ac40b5dd0e7" category="section-title">セキュリティの強化</block>
   <block id="7d22dc13d9443150a483a9d1bcc19811" category="paragraph">Element 12.5には、120を超えるCVEセキュリティ脆弱性の修正も含まれています。</block>
-  <block id="0a4e6eb7e62cc9a7906b041a5daa8314" category="section-title">Ansibleによる自動アップグレード</block>
-  <block id="0f3c5d5fd99d58a3db49e358303b6aa1" category="inline-link">NetApp Ansibleリポジトリ</block>
-  <block id="05815c7d362a881d86d68bc8cfd44ab2" category="paragraph">Element 12.5では、Ansibleを使用してストレージクラスタ全体のローリングアップグレードを実行することで、Elementソフトウェアのアップグレードワークフローを自動化できます。作業を開始するには、に移動します<block ref="6657f4ab7e7e02ccfa155e58f184d7f8" category="inline-link-rx"></block> GitHubで'NAR_solidfire_SDS_upgradeロールとドキュメントをダウンロードします</block>
   <block id="3e295da75c8e1147efb1d40b92bc67b1" category="section-title">NetApp Bugs Onlineには、解決済みの問題と既知の問題があります</block>
   <block id="dacb18e4909785f6226e9cc6bcd62371" category="paragraph">解決済みの問題と既知の問題の一覧については、NetApp Bugs Onlineツールを参照してください。これらの問題は、Elementソフトウェアおよびその他の製品で参照できます<block ref="6d0e40d4342f9a7ae6016dd8d3efbf3e" category="inline-link-rx"></block>。</block>
   <block id="875455659aea2dfd3f63e40de150b31c" category="inline-link">NetApp Element ソフトウェア12.5リリースノート</block>
@@ -11368,7 +11363,6 @@
   <block id="3fc5b3acd1d3708d5cfa3ba7d0a8162e" category="admonition">Element 12.7リリースでは、新しいファームウェアアップデートはありません。ただし、ストレージノードで実行されている現在のファームウェアバンドルに基づいて、Element 12.7にアップグレードすると累積的な更新がインストールされます。</block>
   <block id="5c74c03fbdeea06c0e7eb5afe2d9f9bb" category="paragraph">SolidFire Active IQ UIでQoS管理ページに移動して、クラスタに関する推奨事項とノードスロットル情報を確認できるようになりました。また、クラスタダッシュボードに合計Snapshot数が表示されるようになりました。最近の改善点としては、アクティブボリュームのプライマリノードとセカンダリノードの情報の追加、ノードのプライマリボリュームでの平均スループット、IOPS、平均レイテンシなどがあります。</block>
   <block id="ab55ac9ce7363800677511aee7a9ab12" category="paragraph">これで、ElementソフトウェアのドキュメントからSolidFire Active IQ のドキュメントにアクセスできるようになりました。 <block ref="cf42182e91c5e79a875ebd341c48eb99" category="inline-link-macro-rx"></block>。</block>
-  <block id="4dae8e1e6549980e8397eec97af1ecaf" category="paragraph">Element 12.5では、ストレージノードへのアクセスの向上、カスタム保護ドメインの管理性の強化、クラスタの障害やイベントの新規追加と改善、クラスタ作成UI機能の強化、セキュリティの強化、Ansibleによる自動アップグレードなどが可能になっています。</block>
   <block id="b1eb510dd705c0d83386b5f196686d5a" category="inline-link">SolidFire ストレージノードでサポートされるストレージファームウェアのバージョン</block>
   <block id="1dea56720635d200a6c7b3a71efca6ab" category="inline-link">NetApp Element ソフトウェア12.7リリースノート</block>
   <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
@@ -12016,4 +12010,5 @@
   <block id="c04c3f3380a29245247f6e8a6c77a880" category="paragraph">システムをリモートで管理し、データセンター外部のクライアントがリソースに接続できるようにするには、データセンターのエッジファイアウォールで次のTCPポートとUDPポートを許可する必要があります。システムの使用方法によっては、一部のポートは不要な場合もあります。</block>
   <block id="5858de35bb153f56bdb4f3fbd003b515" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block></block>
   <block id="591c130bf36c26fe5946fac7eeba4c11" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block>エンテーション]</block>
+  <block id="710206b65e21ddd5a34f739582fb411f" category="paragraph">Element 12.5では、ストレージノードへのアクセスの向上、カスタムの保護ドメインの管理性の強化、クラスタの障害とイベントの新規作成と改善、クラスタ作成UI機能の強化、セキュリティの強化が導入されています。</block>
 </blocks>

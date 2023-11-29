@@ -80,7 +80,7 @@ SolidFire Active IQ UIでQoS管理ページに移動して、クラスタに関�
 
 == Element 12.5
 
-Element 12.5では、ストレージノードへのアクセスの向上、カスタム保護ドメインの管理性の強化、クラスタの障害やイベントの新規追加と改善、クラスタ作成UI機能の強化、セキュリティの強化、Ansibleによる自動アップグレードなどが可能になっています。
+Element 12.5では、ストレージノードへのアクセスの向上、カスタムの保護ドメインの管理性の強化、クラスタの障害とイベントの新規作成と改善、クラスタ作成UI機能の強化、セキュリティの強化が導入されています。
 
 
 
@@ -124,11 +124,6 @@ Element 12.5には、120を超えるCVEセキュリティ脆弱性の修正も�
 
 
 
-=== Ansibleによる自動アップグレード
-
-Element 12.5では、Ansibleを使用してストレージクラスタ全体のローリングアップグレードを実行することで、Elementソフトウェアのアップグレードワークフローを自動化できます。作業を開始するには、に移動します https://github.com/NetApp-Automation["NetApp Ansibleリポジトリ"^] GitHubで'NAR_solidfire_SDS_upgradeロールとドキュメントをダウンロードします
-
-[discrete]
 == 詳細については、こちらをご覧ください
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["『 NetApp Hybrid Cloud Control and Management Services Release Notes 』を参照してください"^]
