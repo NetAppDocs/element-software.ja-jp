@@ -12011,4 +12011,6 @@
   <block id="5858de35bb153f56bdb4f3fbd003b515" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block></block>
   <block id="591c130bf36c26fe5946fac7eeba4c11" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block>エンテーション]</block>
   <block id="710206b65e21ddd5a34f739582fb411f" category="paragraph">Element 12.5では、ストレージノードへのアクセスの向上、カスタムの保護ドメインの管理性の強化、クラスタの障害とイベントの新規作成と改善、クラスタ作成UI機能の強化、セキュリティの強化が導入されています。</block>
+  <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">アップグレードパッケージのアップロードエラーが原因でSolidFireとHCIのアップグレードを開始できない</block>
+  <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">2023年11月以降、署名キー証明書（プライベートおよびパブリック）の有効期限が2023年11月5日に切れたため、NetApp Hybrid Cloud ControlまたはREST APIを使用してコンポーネントのアップグレードを開始することはできません。この問題を解決するには、ナレッジベースの記事に記載されている回避策を参照してください。<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
 </blocks>
