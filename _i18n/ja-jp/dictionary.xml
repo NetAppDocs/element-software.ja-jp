@@ -10262,23 +10262,6 @@
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
   <block id="93168a8084b3e838d2932c4734bd234e" category="sidebar">以前のバージョン</block>
-  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
-  <block id="01064f33f360eefba819bf9542c0486b" category="sidebar">ハードウェアのメンテナンスをインストールします</block>
-  <block id="f54101aa6702c025c4f74ec5ada7bae3" category="sidebar">ストレージを管理します</block>
-  <block id="bfd78ad06fdbded1393f2f3c6bce1cdb" category="sidebar">Element ソフトウェア UI を使用</block>
-  <block id="1d5eadee8dd359da135590100c405785" category="sidebar">Element ソフトウェア API を使用</block>
-  <block id="b16427ba775ee26e7f5fa22679a4a605" category="sidebar">Element Plug-in for vCenter Server を使用します</block>
-  <block id="6216a3b9e8c46cd0635bc8d3f9c8cf4f" category="sidebar">統合ツールを使用する（ログインが必要）</block>
-  <block id="52e27f272b7f3c0cd5623309ba926677" category="sidebar">Element SDK （ Java 、 .NET 、 Python ）</block>
-  <block id="2a9dbfa4b74c53d7304fc8b79a1874d3" category="sidebar">解決策</block>
-  <block id="fcf140abed196b8eba71c45f21312bce" category="sidebar">ネットアップのソリューション</block>
-  <block id="81a123ccab93cd947289b672b0e50348" category="sidebar">デモチュートリアル</block>
-  <block id="a3306879b2c1b46c3e6e86a4c65d51bc" category="sidebar">NetApp University SolidFire トレーニング（ログインが必要）</block>
-  <block id="ab1cf947f75ab4705fc3fcf084c10a01" category="sidebar">How to install and scale your NetApp SolidFire cluster （ビデオ）</block>
-  <block id="483b680d14606131d42c44dbca0bb4f2" category="sidebar">NetApp SolidFire installation （ビデオ）</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログコミュニティ</block>
-  <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">ネットアップコミュニティ</block>
-  <block id="213686afc3803be7caa09348765467fe" category="sidebar">サポートへのアクセス</block>
   <block id="f3ef8562bc46b3fd5d64fc8a88bab6f9" category="sidebar">H410S および H610S ノードを設置します</block>
   <block id="9282ad3aef7e124a3b2b9c7eab52b33d" category="sidebar">アーキテクチャとコンポーネント</block>
   <block id="53b2a4dd7325c2d7325f310860b0b55f" category="sidebar">多要素認証のための追加情報</block>
@@ -10886,7 +10869,6 @@
   <block id="7a3f74a4a439a353dac2b787f53f28d8" category="list-text">さらに詳しい分析を行うには、 NetApp Element Plug-in for vCenter Server を使用してストレージのパフォーマンスを確認してください。</block>
   <block id="b126b8c3ea62d4e05e486584c3e429e7" category="inline-link">NetApp Element Plug-in for vCenter Server に表示されるパフォーマンス</block>
   <block id="7dcce07eba67a810f05f6b72a7bc76ce" category="paragraph"><block ref="997f70b8f13e5cba5fd5507c9ab58179" category="inline-link-rx"></block>。</block>
-  <block id="ed4186f75217d239b68544e14bbe38c9" category="sidebar">NetApp Hybrid Cloud Control を使用する</block>
   <block id="2e531c00d20727b760f0fefbb4c65c82" category="sidebar">インベントリは、 NetApp Hybrid のノードのページで確認します Cloud Control の略</block>
   <block id="767682e703a28fefdc1067e1fcf04243" category="sidebar">ネットアップハイブリッドクラウドでストレージクラスタのボリュームを監視します 制御</block>
   <block id="527b815afb2a497e0a4e73961b0b2530" category="paragraph"><block ref="4887d593881fb1b00f6709ff486d4e82" category="inline-link-macro-rx"></block> クラスタのパフォーマンスや効率には影響しません。Element API または Element UI を使用してクラスタの設定から暗号化が有効なドライブまたはノードを削除すると、保存データの暗号化がドライブで無効になります。ドライブを削除した後、「 ecureEraseDrives 」 API メソッドを使用してドライブを安全に消去できます。物理ドライブまたはノードが強制的に削除された場合でも、データはクラスタ全体のパスワードおよびドライブごとの暗号化キーによって引き続き保護されます。</block>
@@ -11327,14 +11309,12 @@
   <block id="56ee8203bf76c58f39596dab101d98d5" category="list-text">Quality of Service（QoS；サービス品質）などのActive IQ の一部の機能を正しく機能させるには、Element 11.3以降が必要です。Active IQ のすべての機能を使用できることを確認するために、次のことを推奨します。</block>
   <block id="469eaba8a7048afa0ba6f8eb91801de9" category="doc">SolidFire Active IQ でストレージを監視</block>
   <block id="45f40a7365f71f3eafc4489e01e9aa82" category="sidebar">NetApp SolidFire Active IQ でストレージを監視</block>
-  <block id="d8d2cf4b5fd1196b5be39dd3b93ba995" category="sidebar">NetApp SolidFire Active IQ を使用する</block>
   <block id="d214b4cd328cf59221f38d85dca1988f" category="summary">NetApp Element ソフトウェアを実行しているストレージクラスタを管理および監視するには、VMware vSphereインターフェイスのプラグインであるNetApp Element Plug-in for vCenter Serverを使用します。</block>
   <block id="14dc26d359d13f6037d00a6c79232cd6" category="paragraph">NetApp Element Plug-in for vCenter Serverは、VMware vSphereインターフェイスのプラグインを提供します。これにより、NetApp Element ソフトウェアを実行しているストレージクラスタを管理および監視できるようになります。</block>
   <block id="da3eb0bd8c882a21931739ac39ce915a" category="inline-link">NetApp Element Plug-in for vCenter Server のドキュメント</block>
   <block id="c557278939ddfc5c37a8606a5b8bc3d8" category="paragraph">Element Plug-in for vCenter Serverの詳細については、を参照してください<block ref="4a40fe421733073daff96e428d226590" category="inline-link-rx"></block>。</block>
   <block id="fd0b9b1500c5983ac27a332210ebfe29" category="paragraph">NetApp Hybrid Cloud Control の多くの機能は複数のストレージクラスタを使用するように設計されていますが、認証と許可には制限があります。認証と許可に関する制限事項として、信頼できるクラスタのユーザが、他のストレージクラスタのユーザでなくても、 NetApp Hybrid Cloud Control に関連付けられている他のクラスタに対して操作を実行できることがあります。</block>
   <block id="f0e8a2f025f562374fa58233f9f7cd01" category="sidebar">Element Plug-in for vCenter Serverを使用してストレージを管理します</block>
-  <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp Hシリーズストレージノードでサポートされるファームウェアのリビジョン</block>
   <block id="376acf421ab362eb5e198d9dbe0ef1f4" category="summary">Element 12.5以降では、管理ノードでsfreadonlyユーザアカウントを有効にして、ネットアップサポートによるサポートなしでシステムコンポーネントのトラブルシューティングを行うことができます。高度なトラブルシューティングのために、ネットアップサポート用のリモートサポートトンネルアクセスを有効にして開くこともできます。</block>
   <block id="03977ca9014ed49925d2fb260f5a2b6f" category="paragraph">Elementソフトウェアのバージョンに応じて、次のSFシリーズストレージノードはサポートされません。</block>
   <block id="b1ac6637f319a778daa4b7822c1798b5" category="paragraph">Element 12.5以降へのアップグレード時、「BmcSelfTestFailed」エラーは、BMCにすでに障害が発生しているノード、またはアップグレード中にノードのBMCに障害が発生したノードに対しては生成されません。アップグレード中にセルフテストに失敗したBMCは'クラスタ全体のアップグレードが完了した後'BmcSelfTestFailed'警告エラーを問題 に通知します</block>
@@ -11701,7 +11681,6 @@
   <block id="a869730ec0116e46159bbff419d5cc17" category="list-text"><block ref="2a166fd6597dedff39b139e3ce76f82b" category="inline-link-rx"></block></block>
   <block id="bec35bb5875234837858b1ccdd637fca" category="inline-link">Element 11.1のドキュメントおよびそれ以前のバージョン</block>
   <block id="724428733630050ab3140356839e2af1" category="list-text"><block ref="724428733630050ab3140356839e2af1" category="inline-link-rx"></block></block>
-  <block id="b47307258c4d85ffb5f4141d7a660a9b" category="sidebar">Element 11.8.2以前のドキュメント</block>
   <block id="cf459a4467554220e1dd70f653a8cf43" category="list-text">管理サービス 2.18 以降では、管理ノードでリモートアクセス機能がデフォルトで無効になっています。リモートアクセス機能を有効にするには、を参照してください<block ref="9a48ac510c43b73ee86c7be400c5025f" category="inline-link-rx"></block>。</block>
   <block id="c9621c561bd7ae37e9a7ee7358f4f792" category="list-text">（任意）ディセーブルにします<block ref="2ec0ebe378e4a0f1bbb70e72c3942887" category="inline-link-rx"></block> をもう一度クリックします</block>
   <block id="c046b7ab02983ed5bb8f1b18c0c2c477" category="summary">Elementソフトウェアのバージョンに固有のRTFI ISOイメージをNetApp Support Site からダウンロードし、ブート可能なインストール可能なメディアを使用して導入します。</block>
@@ -12013,4 +11992,5 @@
   <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">アップグレードパッケージのアップロードエラーが原因でSolidFireとHCIのアップグレードを開始できない</block>
   <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">2023年11月以降、署名キー証明書（プライベートおよびパブリック）の有効期限が2023年11月5日に切れたため、NetApp Hybrid Cloud ControlまたはREST APIを使用してコンポーネントのアップグレードを開始することはできません。この問題を解決するには、ナレッジベースの記事に記載されている回避策を参照してください。<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
   <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">を使用できます<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> クラスタの一部であるドライブをプロアクティブに削除する方法。このメソッドは、クラスタの容量を減らしたり、サービス寿命の終わりに近づいているドライブの交換準備を行ったりするときに使用できます。<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> クラスタ内の他のノードにブロックデータの3つ目のコピーを作成し、同期が完了するのを待ってからドライブを「使用可能」のリストに移動します。[使用可能]リストのドライブはシステムから完全に削除され、実行中のサービスやアクティブデータはありません。</block>
+  <block id="f9beecbb3d1ea8584ca694bab8a73de7" category="sidebar">ストレージノードでサポートされるファームウェアバージョン</block>
 </blocks>
