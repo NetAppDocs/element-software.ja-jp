@@ -84,7 +84,7 @@ JSON オブジェクト
  a| 
 属性（ Attributes ）
  a| 
-一括ボリュームジョブの JSON 属性。
+JSON オブジェクト形式の名前と値のペアのリスト。 link:reference_element_api_attributes.html["詳細はこちら。"]。
  a| 
 JSON オブジェクト
  a| 

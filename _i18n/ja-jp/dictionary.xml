@@ -862,21 +862,6 @@
   <block id="01ef303b25d3281cb33cd13014af3226" category="paragraph">VASA Provider は、 Element ソフトウェアのクラスタマスターの一部として実行されます。クラスタマスターは可用性の高いサービスで、必要に応じてクラスタ内の任意のノードにフェイルオーバーします。クラスタマスターがフェイルオーバーすると、 VASA Provider も一緒に移動するため、 VASA Provider の高可用性が確保されます。プロビジョニングタスクとストレージ管理タスクはいずれも VASA Provider を使用します。 VASA Provider は、 Element クラスタで必要な変更を処理します。</block>
   <block id="583fdc81420816faa41efaba6c508421" category="inline-link-macro">ネットアップのソフトウェアダウンロード</block>
   <block id="5709d7946cfaf2f2c04b03412834dd73" category="admonition">VASA Provider を vCenter に登録済みの場合、アップグレードパッチとして最大 10 個の vCenter がサポートされます。をインストールするには、 VASA39 マニフェストの指示に従い、から .tar.gz ファイルをダウンロードします <block ref="4efcd63a00c3a5e6a73880f24942f8e7" category="inline-link-macro-rx"></block> サイトNetApp Element VASA プロバイダはネットアップの証明書を使用します。このパッチでは、 vCenter が証明書を変更せずに使用して、 VASA および VVOL に使用する複数の vCenter をサポートします。証明書は変更しないでください。カスタム SSL 証明書は VASA でサポートされません。</block>
-  <block id="a824a1096e208a26b70c360a0da8b545" category="summary">SolidFire ストレージシステムに関連するタスクの詳細については、 NetApp SolidFire ドキュメントセンターを参照してください。また、 NetApp SolidFire のリソースページで入手できるリソースも参照してください。</block>
-  <block id="4bb047f8c530785002e490ef17fa725e" category="doc">追加情報の参照先</block>
-  <block id="34515669e219305dec5f0b81dbef8b1e" category="paragraph">ドキュメントセンターでは、ハードウェアの設置とメンテナンスに関する情報、利用可能なその他のコンテンツ、既知の問題と解決済みの問題へのリンク、および最新のリリースノートも参照できます。</block>
-  <block id="662a5ad8c6ae651da9220e35d3f16a18" category="list-text">* NetApp SolidFire のリソースページ *</block>
-  <block id="c39c68328651c80dceb0f36d050a7109" category="paragraph">動画コンテンツやテクニカルレポートへのリンクなど、 Element ソフトウェアに関するリソースを提供します。</block>
-  <block id="4b3e0d4570a278a1af3fe11601c01d47" category="inline-link">SolidFire オールフラッシュストレージの関連リソース</block>
-  <block id="c16fe39e6b501b8347fb1dd55ba312c6" category="paragraph"><block ref="c16fe39e6b501b8347fb1dd55ba312c6" category="inline-link-rx"></block></block>
-  <block id="4a9c1435e759b5c6dd543fceea09ea44" category="list-text">* NetApp SolidFire ドキュメントセンター *</block>
-  <block id="028b8f4057634cf2f3954305a74dc779" category="paragraph">ハードウェアの設置とメンテナンスに関する情報、利用可能なその他のコンテンツ、既知の問題と解決済みの問題へのリンク、および最新のリリースノートが記載されています。</block>
-  <block id="99876372740307113d18bf0a8023fbbf" category="inline-link">SolidFire および Element 11.3 ドキュメントセンター</block>
-  <block id="248dd8632f43e9f4128a672b09c790eb" category="paragraph"><block ref="248dd8632f43e9f4128a672b09c790eb" category="inline-link-rx"></block></block>
-  <block id="3bb4917b4da580a3845e4291809fe942" category="list-text">* https://kb.netapp.com/app/answers/answer_view/a_id/1000941/loc/en_US[NetApp SolidFire Element の既知の問題 )*</block>
-  <block id="e4245eba0095196ee103a1119cfa1d87" category="paragraph">Element ソフトウェアの最新バージョンと以前のバージョンの既知の問題のリストです。</block>
-  <block id="454d39955c29112d76b1bd6072c2dcdf" category="list-text">* https://kb.netapp.com/app/answers/answer_view/a_id/1000933[NetApp SolidFire Element の解決済みの問題 )*</block>
-  <block id="e864e5177c5d98d5b8250b49810e1194" category="paragraph">Element ソフトウェアの最新バージョンと以前のバージョンの解決済みの問題のリストです。</block>
   <block id="e3431cec49d508e83a805ec32337258e" category="summary">SolidFire オールフラッシュストレージシステムは、独立したハードウェアコンポーネント（ドライブとノード）で構成され、これらのコンポーネントが 1 つのストレージリソースプールに統合されます。このユニファイドクラスタは、単一のストレージシステムとして外部クライアントに提供され、 NetApp Element ソフトウェアで管理されます。</block>
   <block id="085f7e689b8e475dec027b3304d79e3b" category="paragraph">SolidFire オールフラッシュストレージシステムは、独立したハードウェアコンポーネント（ドライブとノード）で構成され、これらのコンポーネントが 1 つのストレージリソースプールに統合されます。このユニファイドクラスタは、単一のストレージシステムとして外部クライアントに提供され、 NetApp Element ソフトウェアで管理されます。</block>
   <block id="cc9f01b8135bb47e45039b7bd9f446f5" category="paragraph">Element インターフェイス、 API 、またはその他の管理ツールを使用して、 SolidFire クラスタのストレージ容量とパフォーマンスを監視し、マルチテナントインフラ全体のストレージアクティビティを管理できます。</block>
@@ -2862,23 +2847,6 @@
   <block id="8857f9727dda96e7b5e43e56c678ffed" category="paragraph">ストレージシステムからは、各ソリッドステートドライブ（ SSD ）でデータの書き込み / 消去に利用できるおおよその残容量が報告されます。ドライブの設計上の書き込み / 消去サイクルの 5% が消費されている場合は、摩耗度残量は 95% と報告されます。ドライブの摩耗度情報は自動的には更新されません。情報を更新するには、ページを更新するか、またはページを閉じてリロードします。</block>
   <block id="509a3e7c96f28c8cf61138c9b6171802" category="paragraph">ドライブのタイプ。block または metadata のいずれかです。</block>
   <block id="19bb9f2d83ebc22f2e8931ebc34f6110" category="paragraph">クラスタの Element UI で VVol 機能を有効にしておきます。</block>
-  <block id="501b98bdb184166086d9ae33cf2360ff" category="summary">NetApp HCI と SolidFire オールフラッシュストレージの使用と管理の詳細については、両方の製品のドキュメントセンターとリソースページで確認できる資料を参照してください。</block>
-  <block id="7431f7a183aa9cfe2910bb761205485d" category="doc">製品マニュアルとその他の情報の参照先</block>
-  <block id="1c276549c628a78c4d4d38a454a53866" category="paragraph">ドキュメントセンターでは、ハードウェアの設置とメンテナンスに関する情報、利用可能なその他のコンテンツ、既知の問題と解決済みの問題へのリンク、および最新のリリースノートも参照できます。リソースページには、データシート、テクニカルレポート、ホワイトペーパー、およびビデオへのリンクが掲載されています。</block>
-  <block id="ad0a505756223d68dc11afeae3459351" category="inline-link">NetApp HCI のドキュメント</block>
-  <block id="69407a8ea5033d98b78f2bec8e414753" category="list-text"><block ref="69407a8ea5033d98b78f2bec8e414753" category="inline-link-rx"></block></block>
-  <block id="630892b254754255bd524cb995b1de04" category="inline-link">SolidFire および Element 12.2 ドキュメントセンター</block>
-  <block id="b96d5059df63546231a635bb7440dbd4" category="list-text"><block ref="b96d5059df63546231a635bb7440dbd4" category="inline-link-rx"></block></block>
-  <block id="2a967aa6bf55d76db9823f4232586589" category="inline-link">SolidFire および Element 12.0 ドキュメントセンター</block>
-  <block id="a19510c49f28b61467b9471fae60229b" category="list-text"><block ref="a19510c49f28b61467b9471fae60229b" category="inline-link-rx"></block></block>
-  <block id="69695b2e4c70193011d7b658125e9906" category="inline-link">SolidFire および Element 11.8 ドキュメントセンター</block>
-  <block id="6eda8130d86d6c395a1615f6ff53c74a" category="list-text"><block ref="6eda8130d86d6c395a1615f6ff53c74a" category="inline-link-rx"></block></block>
-  <block id="cad93526483d33b276e378bc7f3deaea" category="inline-link">SolidFire および Element 11.7 ドキュメントセンター</block>
-  <block id="a4cba27ccc43d00c0bd0c00a74974b97" category="list-text"><block ref="a4cba27ccc43d00c0bd0c00a74974b97" category="inline-link-rx"></block></block>
-  <block id="275b3db58911d0480b2a907dde87b422" category="inline-link">SolidFire および Element 11.5 ドキュメントセンター</block>
-  <block id="319d00f06f0a5e8e99d071d51fe10259" category="list-text"><block ref="319d00f06f0a5e8e99d071d51fe10259" category="inline-link-rx"></block></block>
-  <block id="de71a625454de99f599dff258c53dbb8" category="inline-link">SolidFire のリソースページ</block>
-  <block id="b81ee69dc01cdd048b45d27758827feb" category="list-text"><block ref="b81ee69dc01cdd048b45d27758827feb" category="inline-link-rx"></block></block>
   <block id="6b00f4ea873dda14e0bc6f9fdd1ae714" category="summary">以下の手順に従い、リストされている Element API メソッドを使用して外部キー管理機能を設定できます。</block>
   <block id="7ab27d3dd83b6b8225315ec0073d2ab7" category="doc">外部キー管理をセットアップする</block>
   <block id="cc2834c4066fdeff02f1c068769a0fba" category="list-text">外部キー管理と保存データの暗号化を組み合わせて設定する場合は、を使用して保存データのソフトウェア暗号化を有効にしておきます <block ref="3302765abfbbe930557ebd20cdd8d8e8" category="inline-link-macro-rx"></block> ボリュームを含まない新しいクラスタ上のメソッド。</block>
@@ -8164,7 +8132,6 @@
   <block id="5ffce89810db963197914e99fa41565d" category="paragraph">実行可能スクリプトの名前。スクリプト名を指定しない場合は、 Element ストレージノードにアクセスするためにキーと URL が必要です。スクリプトはプライマリノードに対して実行され、キーと URL がスクリプトに返されます。これにより、ローカル Web サーバにアクセスできるようになります。</block>
   <block id="9b479e5e1be54276f914b4a04af63458" category="paragraph">scriptParameters</block>
   <block id="2101debca20755a4bf2792764750c8ad" category="paragraph">スクリプトに渡す JSON パラメータ。</block>
-  <block id="42c56c6f739ec986c961aefb154dcc6b" category="paragraph">一括ボリュームジョブの JSON 属性。</block>
   <block id="b8e143ae62ce68a06396ba6b5fc3f89a" category="paragraph">完了を確認する非同期プロセスの ID 。</block>
   <block id="1cf67e15c0f74187a6558d9af0d0b5c3" category="paragraph">セッションを一意に識別する判読不明なキー。</block>
   <block id="e543376d12681b92fd3f5e3641b94d3c" category="paragraph">ノードの Web サーバにアクセスするための URL 。</block>
@@ -11993,4 +11960,5 @@
   <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">2023年11月以降、署名キー証明書（プライベートおよびパブリック）の有効期限が2023年11月5日に切れたため、NetApp Hybrid Cloud ControlまたはREST APIを使用してコンポーネントのアップグレードを開始することはできません。この問題を解決するには、ナレッジベースの記事に記載されている回避策を参照してください。<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
   <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">を使用できます<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> クラスタの一部であるドライブをプロアクティブに削除する方法。このメソッドは、クラスタの容量を減らしたり、サービス寿命の終わりに近づいているドライブの交換準備を行ったりするときに使用できます。<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> クラスタ内の他のノードにブロックデータの3つ目のコピーを作成し、同期が完了するのを待ってからドライブを「使用可能」のリストに移動します。[使用可能]リストのドライブはシステムから完全に削除され、実行中のサービスやアクティブデータはありません。</block>
   <block id="f9beecbb3d1ea8584ca694bab8a73de7" category="sidebar">ストレージノードでサポートされるファームウェアバージョン</block>
+  <block id="3f42de2af50c4c43d7f7e9e5b724d437" category="paragraph">JSON オブジェクト形式の名前と値のペアのリスト。 <block ref="65c96e1c78eaa97668865607183bf923" category="inline-link-macro-rx"></block>。</block>
 </blocks>
