@@ -11960,5 +11960,9 @@
   <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">2023年11月以降、署名キー証明書（プライベートおよびパブリック）の有効期限が2023年11月5日に切れたため、NetApp Hybrid Cloud ControlまたはREST APIを使用してコンポーネントのアップグレードを開始することはできません。この問題を解決するには、ナレッジベースの記事に記載されている回避策を参照してください。<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
   <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">を使用できます<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> クラスタの一部であるドライブをプロアクティブに削除する方法。このメソッドは、クラスタの容量を減らしたり、サービス寿命の終わりに近づいているドライブの交換準備を行ったりするときに使用できます。<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> クラスタ内の他のノードにブロックデータの3つ目のコピーを作成し、同期が完了するのを待ってからドライブを「使用可能」のリストに移動します。[使用可能]リストのドライブはシステムから完全に削除され、実行中のサービスやアクティブデータはありません。</block>
   <block id="f9beecbb3d1ea8584ca694bab8a73de7" category="sidebar">ストレージノードでサポートされるファームウェアバージョン</block>
-  <block id="3f42de2af50c4c43d7f7e9e5b724d437" category="paragraph">JSON オブジェクト形式の名前と値のペアのリスト。 <block ref="65c96e1c78eaa97668865607183bf923" category="inline-link-macro-rx"></block>。</block>
+  <block id="13917e4f5287cba6dc668dc1de806783" category="paragraph">JSONオブジェクト形式の名前と値のペアのリスト。 <block ref="65c96e1c78eaa97668865607183bf923" category="inline-link-macro-rx"></block>。</block>
+  <block id="327364f278eb177dcf0494e22c2aa941" category="paragraph">ブロックアップグレード</block>
+  <block id="33e725144c3cab7870356fc4239ecbe1" category="paragraph">障害によってアップグレードがブロックされます。有効な値は次のとおり</block>
+  <block id="590996f1f1dee9768eb0e638aefabed3" category="list-text">true：アップグレードは障害によってブロックされます。</block>
+  <block id="79acae02e5f768f11852bf8bab56f648" category="list-text">false：アップグレードはブロックされません。</block>
 </blocks>

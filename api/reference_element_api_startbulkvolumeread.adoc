@@ -102,7 +102,7 @@ JSON オブジェクト
  a| 
 属性（ Attributes ）
  a| 
-JSON オブジェクト形式の名前と値のペアのリスト。 link:reference_element_api_attributes.html["詳細はこちら。"]。
+JSONオブジェクト形式の名前と値のペアのリスト。 link:reference_element_api_attributes.html["詳細はこちら。"]。
  a| 
 JSON オブジェクト
  a| 
