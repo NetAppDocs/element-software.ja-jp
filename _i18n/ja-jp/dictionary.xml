@@ -11968,4 +11968,26 @@
   <block id="bfb37ae14420b32b4119e40e73553257" category="paragraph">プラグインのZIPのカスタムURL。</block>
   <block id="8e0d59cc781c5557d1fdc81fdff04d8f" category="paragraph">NetApp Elementリモートプラグイン拡張ポイントが表示されます。</block>
   <block id="5770384eddfc0ac7f73f0f6242a52b50" category="paragraph">NetApp Element Configuration拡張ポイントとManagement拡張ポイントが表示されます。</block>
+  <block id="518a4b6a1346e1ad096698dafab107cf" category="sidebar">SolidFire オールフラッシュストレージシステムは、ドライブやノードなどのハードウェアコンポーネントで構成され、これらのコンポーネントをストレージリソースのプールに統合します。これらのストレージリソースクラスタは、Elementインターフェイス、API、またはその他の管理ツールを使用してNetApp Elementソフトウェアで管理できます。このサイトには、Elementソフトウェア12.5および12.7のドキュメントがあります。</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
+  <block id="01064f33f360eefba819bf9542c0486b" category="sidebar">ハードウェアの設置とメンテナンス</block>
+  <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp Hシリーズストレージノードでサポートされるファームウェアのリビジョン</block>
+  <block id="f54101aa6702c025c4f74ec5ada7bae3" category="sidebar">ストレージを管理します</block>
+  <block id="bfd78ad06fdbded1393f2f3c6bce1cdb" category="sidebar">Element ソフトウェア UI を使用</block>
+  <block id="ed4186f75217d239b68544e14bbe38c9" category="sidebar">NetApp Hybrid Cloud Control を使用する</block>
+  <block id="1d5eadee8dd359da135590100c405785" category="sidebar">ElementソフトウェアAPIの使用</block>
+  <block id="b16427ba775ee26e7f5fa22679a4a605" category="sidebar">Element Plug-in for vCenter Server を使用します</block>
+  <block id="d8d2cf4b5fd1196b5be39dd3b93ba995" category="sidebar">NetApp SolidFire Active IQ を使用する</block>
+  <block id="6216a3b9e8c46cd0635bc8d3f9c8cf4f" category="sidebar">統合ツールを使用する（ログインが必要）</block>
+  <block id="52e27f272b7f3c0cd5623309ba926677" category="sidebar">Element SDK （ Java 、 .NET 、 Python ）</block>
+  <block id="2a9dbfa4b74c53d7304fc8b79a1874d3" category="sidebar">解決策</block>
+  <block id="fcf140abed196b8eba71c45f21312bce" category="sidebar">ネットアップのソリューション</block>
+  <block id="81a123ccab93cd947289b672b0e50348" category="sidebar">デモとチュートリアル</block>
+  <block id="a3306879b2c1b46c3e6e86a4c65d51bc" category="sidebar">NetApp University SolidFire トレーニング（ログインが必要）</block>
+  <block id="ab1cf947f75ab4705fc3fcf084c10a01" category="sidebar">How to install and scale your NetApp SolidFire cluster （ビデオ）</block>
+  <block id="483b680d14606131d42c44dbca0bb4f2" category="sidebar">NetApp SolidFire installation （ビデオ）</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログとコミュニティ</block>
+  <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">ネットアップコミュニティ</block>
+  <block id="213686afc3803be7caa09348765467fe" category="sidebar">サポートへのアクセス</block>
+  <block id="b47307258c4d85ffb5f4141d7a660a9b" category="sidebar">Element 11.8.2以前のドキュメント</block>
 </blocks>
