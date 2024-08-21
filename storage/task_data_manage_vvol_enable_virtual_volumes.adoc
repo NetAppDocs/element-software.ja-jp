@@ -52,4 +52,4 @@ NOTE: vSphere で追加の設定が必要です。vCenter への VASA Provider �
 
 == 詳細については、こちらをご覧ください
 
-https://www.netapp.com/us/media/tr-4642.pdf["『 VMware vSphere Virtual Volumes for SolidFire Storage Configuration Guide 』を参照してください"]
+https://www.netapp.com/pdf.html?item=/media/10516-tr4642pdf.pdf["『 VMware vSphere Virtual Volumes for SolidFire Storage Configuration Guide 』を参照してください"^]

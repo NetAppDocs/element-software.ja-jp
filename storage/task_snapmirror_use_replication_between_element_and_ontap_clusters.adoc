@@ -19,12 +19,12 @@ https://www.youtube.com/embed/kerGI1ZtnZQ?rel=0["ネットアップのビデオ�
 
 NetApp Element ソフトウェアを実行するシステムでは、 NetApp ONTAP システムとの間での SnapMirror 機能を使用した Snapshot コピーのコピーとリストアがサポートされます。このテクノロジを使用する主な理由は、 NetApp HCI から ONTAP へのディザスタリカバリです。エンドポイントには、 ONTAP 、 ONTAP Select 、 Cloud Volumes ONTAP があります。TR-4641 『 NetApp HCI Data Protection 』を参照してください。
 
-http://www.netapp.com/us/media/tr-4641.pdf["ネットアップテクニカルレポート 4641 ：『 NetApp HCI Data Protection 』"^]
+https://www.netapp.com/pdf.html?item=/media/17048-tr4641pdf.pdf["ネットアップテクニカルレポート 4641 ：『 NetApp HCI Data Protection 』"^]
 
 
 
 == 詳細については、こちらをご覧ください
 
-* https://www.netapp.com/us/media/tr-4748.pdf["NetApp HCI 、 ONTAP 、コンバージドインフラでデータファブリックを構築できます"^]
+* https://www.netapp.com/pdf.html?item=/media/16991-tr4748pdf.pdf["NetApp HCI 、 ONTAP 、コンバージドインフラでデータファブリックを構築できます"^]
 * http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-sdbak/home.html["NetApp Element ソフトウェアと ONTAP 間のレプリケーション"^]
 

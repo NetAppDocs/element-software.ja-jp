@@ -35,7 +35,7 @@ Element ストレージデータ保護の概念は次のとおりです。
 * <<SnapMirror を使用した Element クラスタと ONTAP クラスタ間のレプリケーション>>
 
 
-詳細については、を参照してください https://www.netapp.com/us/media/tr-4741.pdf["TR-4741 ：『 NetApp Element Software Remote Replication 』"^]。
+詳細については、を参照してください https://www.netapp.com/pdf.html?item=/media/10607-tr4741pdf.pdf["TR-4741 ：『 NetApp Element Software Remote Replication 』"^]。
 
 
 
