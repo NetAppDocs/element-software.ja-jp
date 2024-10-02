@@ -1,12 +1,12 @@
 ---
 indexpage:
-  title: SolidFire および Element ソフトウェアのドキュメント
+  title: SolidFire およびElementソフトウェア12.7のドキュメント
   summary: SolidFire オールフラッシュストレージシステムは、ドライブやノードなどのハードウェアコンポーネントで構成され、これらのコンポーネントをストレージリソースのプールに統合します。このユニファイドクラスタは、単一のストレージシステムとして
     NetApp Element ソフトウェアで管理されます。
   keywords: solidfire, all-flash, storage, hardware, install, maintain, element software,
     esos, element cli
   lead: SolidFire オールフラッシュストレージシステムは、ドライブやノードなどのハードウェアコンポーネントで構成され、これらのコンポーネントをストレージリソースのプールに統合します。これらのストレージリソースクラスタは、Elementインターフェイス、API、またはその他の管理ツールを使用してNetApp
-    Elementソフトウェアで管理できます。このサイトには、Elementソフトウェア12.5および12.7のドキュメントがあります。
+    Elementソフトウェアで管理できます。このサイトには、Elementソフトウェアのドキュメントがあります。
   tiles:
   - title: はじめに
     links:
@@ -80,6 +80,8 @@ indexpage:
       url: https://mysupport.netapp.com/site/products/all/details/element-software/guideme-tab
   - title: 以前のバージョン
     links:
+    - title: Element 12.5のドキュメント
+      url: https://docs.netapp.com/us-en/element-software-125/index.html
     - title: Element 12.3.xのドキュメント
       url: https://docs.netapp.com/us-en/element-software-123/index.html
     - title: Element 12.2.1のドキュメント
