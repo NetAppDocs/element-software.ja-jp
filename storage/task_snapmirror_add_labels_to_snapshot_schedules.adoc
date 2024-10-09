@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_add_labels_to_snapshot_schedules.html 
 sidebar: sidebar 
-keywords: snapmirror labels, add labels to snapshot schedules, snapmirror policies 
+keywords: element, ui, snapmirror, labels, schedules, policies 
 summary: SnapMirror ラベルを Snapshot スケジュールに追加して、 SnapMirror ポリシーが適用されるようにすることができます。追加できるラベルは、既存の SnapMirror 関係ダイアログボックスまたは NetAppONTAP System Manager で確認できます。 
 ---
 = SnapMirror ラベルを Snapshot スケジュールに追加します

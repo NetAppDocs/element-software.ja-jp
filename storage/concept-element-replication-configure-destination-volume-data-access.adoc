@@ -1,0 +1,19 @@
+---
+permalink: storage/concept-element-replication-configure-destination-volume-data-access.html 
+sidebar: sidebar 
+keywords: ontap, cli, configure, destination, volume, data access 
+summary: デスティネーションボリュームを書き込み可能にしたら、ボリュームをデータアクセス用に設定する必要があります。ソースボリュームが再アクティブ化されるまで、SANホストはデスティネーションボリュームのデータにアクセスできます。 
+---
+= デスティネーションボリュームをデータアクセス用に設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+デスティネーションボリュームを書き込み可能にしたら、ボリュームをデータアクセス用に設定する必要があります。ソースボリュームが再アクティブ化されるまで、SANホストはデスティネーションボリュームのデータにアクセスできます。
+
+. Element LUN を適切なイニシエータグループにマッピングします。
+. SAN ホストイニシエータから SAN LIF への iSCSI セッションを作成します。
+. SAN クライアントで、ストレージの再スキャンを実行して接続された LUN を検出します。
+

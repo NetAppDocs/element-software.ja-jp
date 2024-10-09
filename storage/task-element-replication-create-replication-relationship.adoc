@@ -1,0 +1,86 @@
+---
+permalink: storage/task-element-replication-create-replication-relationship.html 
+sidebar: sidebar 
+keywords: ontap, cli, create, relationship, element, source, destination 
+summary: SnapMirrorを使用して、ElementボリュームのSnapshotコピーをONTAPデスティネーションシステムにレプリケートできます。これにより、 Element サイトで災害が発生した場合でも、 ONTAP システムからクライアントに引き続きデータを提供し、サービスのリストア後に Element ソースボリュームを再アクティブ化することができます。 
+---
+= ElementソースからONTAPデスティネーションへの関係を作成する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+プライマリストレージのソースボリュームとセカンダリストレージのデスティネーションボリュームの関係は、「 a_data 保護関係 _ 」と呼ばれます。コマンドを使用すると、ElementソースからONTAPデスティネーション、またはONTAPソースからElementデスティネーションへのデータ保護関係を作成できます `snapmirror create`。
+
+SnapMirrorを使用して、ElementボリュームのSnapshotコピーをONTAPデスティネーションシステムにレプリケートできます。これにより、 Element サイトで災害が発生した場合でも、 ONTAP システムからクライアントに引き続きデータを提供し、サービスのリストア後に Element ソースボリュームを再アクティブ化することができます。
+
+.作業を開始する前に
+* レプリケートするボリュームを含む Element ノードから ONTAP にアクセスできるようにしておく必要があります。
+* Element ボリュームの SnapMirror レプリケーションを有効にしておく必要があります。
+* ポリシータイプ「m mirror-vault」を使用する場合は、レプリケートするElement SnapshotコピーのSnapMirrorラベルを設定しておく必要があります。
++
+[NOTE]
+====
+このタスクは、またはでのみ実行できますlink:concept_snapmirror_labels.html["ElementソフトウェアWeb UI"]link:../api/concept_element_api_snapshots_overview.html["API メソッド"]。
+
+====
+
+
+.このタスクについて
+Elementのソースパスをの形式で指定する必要があり `<hostip:>/lun/<name>`ます。「LUN」は実際の文字列「LUN」、 `name` はElementボリュームの名前です。
+
+Element ボリュームは ONTAP LUN とほぼ同じです。SnapMirror は、 Element ソフトウェアと ONTAP の間のデータ保護関係の初期化時に、 Element ボリュームの名前を使用して LUN を作成します。Element ソフトウェアから ONTAP へのレプリケーションの要件を満たす既存の LUN がある場合は、その LUN にデータがレプリケートされます。
+
+レプリケーションルールは次のとおりです。
+
+* ONTAP ボリュームに格納できるのは、 1 つの Element ボリュームのデータのみです。
+* 1 つの ONTAP から複数の Element ボリュームにデータをレプリケートすることはできません。
+
+
+ONTAP 9 .3以前では、デスティネーションボリュームに格納できるSnapshotコピーは最大251個です。ONTAP 9 .4以降では、デスティネーションボリュームに格納できるSnapshotコピーは最大1019個です。
+
+.ステップ
+. デスティネーションクラスタから、 Element ソースから ONTAP デスティネーションへのレプリケーション関係を作成します。
++
+`snapmirror create -source-path <hostip:>/lun/<name> -destination-path <SVM:volume>|<cluster://SVM/volume> -type XDP -schedule schedule -policy <policy>`
+
++
+コマンド構文全体については、マニュアルページを参照してください。
+
++
+次の例は、デフォルトのポリシーを使用してSnapMirror DR関係を作成し `MirrorLatest`ます。
+
++
+[listing]
+----
+cluster_dst::> snapmirror create -source-path 10.0.0.11:/lun/0005 -destination-path svm_backup:volA_dst -type XDP -schedule my_daily -policy MirrorLatest
+----
++
+次の例は、デフォルトのポリシーを使用してユニファイドレプリケーション関係を作成し `MirrorAndVault`ます。
+
++
+[listing]
+----
+cluster_dst:> snapmirror create -source-path 10.0.0.11:/lun/0005 -destination-path svm_backup:volA_dst -type XDP -schedule my_daily -policy MirrorAndVault
+----
++
+次の例は、ポリシーを使用してユニファイドレプリケーション関係を作成します `Unified7year`。
+
++
+[listing]
+----
+cluster_dst::> snapmirror create -source-path 10.0.0.11:/lun/0005 -destination-path svm_backup:volA_dst -type XDP -schedule my_daily -policy Unified7year
+----
++
+次の例は、カスタムポリシーを使用してユニファイドレプリケーション関係を作成します `my_unified`。
+
++
+[listing]
+----
+cluster_dst::> snapmirror create -source-path 10.0.0.11:/lun/0005 -destination-path svm_backup:volA_dst -type XDP -schedule my_daily -policy my_unified
+----
+
+
+.終了後
+コマンドを使用し `snapmirror show`て、SnapMirror関係が作成されたことを確認します。コマンド構文全体については、マニュアルページを参照してください。

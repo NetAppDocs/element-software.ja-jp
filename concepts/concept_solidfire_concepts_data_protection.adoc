@@ -105,7 +105,7 @@ Element 10.1 以降を実行するシステムには、 9.3 以降の ONTAP シ�
 
 Element 10.3 以降および ONTAP 9.4 以降のシステムでは、機能は限定されますが、特定のユースケースで ONTAP ボリュームを Element ボリュームにレプリケートできます。
 
-詳細については、 ONTAP のドキュメントを参照してください。
+詳細については、を参照してください link:../storage/element-replication-index.html["NetApp ElementソフトウェアとONTAP間のレプリケーション（ONTAP CLI）"]。
 
 
 

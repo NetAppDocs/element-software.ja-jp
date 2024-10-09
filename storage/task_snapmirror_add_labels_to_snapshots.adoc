@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_add_labels_to_snapshots.html 
 sidebar: sidebar 
-keywords: snapmirror labels, add labels to snapshots, specify retention policies, group snapshots 
+keywords: element, ui, snapmirror, labels, retention, policies, group, snapshots 
 summary: SnapMirror ラベルは、 SnapMirror エンドポイントでの Snapshot 保持ポリシーを指定します。ラベルは、 Snapshot およびグループ Snapshot に追加できます。 
 ---
 = Snapshot に SnapMirror ラベルを追加します

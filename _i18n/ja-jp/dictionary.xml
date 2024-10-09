@@ -539,7 +539,6 @@
   <block id="5ce5a4c32220893139a79b7961ce29a5" category="paragraph">NetApp Element ソフトウェア 10.1 以降では、 ONTAP システムの SnapMirror 機能による Snapshot のコピーとリストアがサポートされます。</block>
   <block id="160c1461d4530203bf5d64f7eb1c0982" category="paragraph">Element 10.1 以降を実行するシステムには、 9.3 以降の ONTAP システム上の SnapMirror と直接通信できるコードが組み込まれています。Element API には、クラスタ、ボリューム、 Snapshot で SnapMirror 機能を有効にするメソッドが用意されています。さらに、 Element UI には、 Element ソフトウェアと ONTAP システムの間の SnapMirror 関係を管理する機能が搭載されています。</block>
   <block id="62f54381b903447523bd94d04a2364be" category="paragraph">Element 10.3 以降および ONTAP 9.4 以降のシステムでは、機能は限定されますが、特定のユースケースで ONTAP ボリュームを Element ボリュームにレプリケートできます。</block>
-  <block id="b3720743bae305bb474d5e403e3739bf" category="paragraph">詳細については、 ONTAP のドキュメントを参照してください。</block>
   <block id="ced6f02fa4444aad2c499194d415578f" category="section-title">データ保護用のボリューム Snapshot</block>
   <block id="6335301e7b2b5f151c62c7dad20c7c1d" category="paragraph">ボリューム Snapshot はボリュームのポイントインタイムコピーであり、あとでその時点にボリュームをリストアする際に使用できます。</block>
   <block id="64ce2a4042bd6dcc85f4453c84c625bd" category="paragraph">Snapshot はボリュームクローンに似ていますが、 Snapshot はボリュームメタデータの単なるレプリカであるため、マウントや書き込みはできません。ボリューム Snapshot の作成には少量のシステムリソースとスペースしか使用されないため、クローニングよりも短い時間で完了します。</block>
@@ -1847,9 +1846,6 @@
   <block id="8e898ca379b1b894ff6ef3d5b88b0a0d" category="list-text">* オプション： * 必要に応じてボリュームを追加します。</block>
   <block id="a5b2d4de2841c516a54a4c4b3db587b1" category="summary">NetApp Element ソフトウェアを実行するシステムでは、 NetApp ONTAP システムとの間での SnapMirror 機能を使用した Snapshot のコピーとリストアがサポートされます。</block>
   <block id="908041e9f7dbdfd6dd76e9617f0b3454" category="doc">SnapMirror の概要</block>
-  <block id="5a5a2d3bbdb5fecdea9055d444ee32af" category="paragraph">機能は限定されますが、特定のユースケースで ONTAP ボリュームを Element ボリュームにレプリケートできます。詳細については、 ONTAP のドキュメントを参照してください。</block>
-  <block id="49c8c279b60ab1926e498dd27ba47ce7" category="inline-link">Element ソフトウェアと ONTAP の間のレプリケーション</block>
-  <block id="e01755805869b3d9cedc19fff7c5daae" category="paragraph"><block ref="e01755805869b3d9cedc19fff7c5daae" category="inline-link-rx"></block></block>
   <block id="cfcdfc8969ff115541d48c6b2118e2c3" category="summary">SolidFire ストレージクラスタ上のバックアップからボリュームをリストアできます。</block>
   <block id="71733e46cd6569a2bc096f0436656767" category="doc">SolidFire ストレージクラスタ上のバックアップからボリュームをリストアします</block>
   <block id="6ddab819b79669df743d4fba3f896f34" category="list-text">統合リストア * （ Integrated Restore * ）ダイアログボックスの * リストア元 * （ * Restore From * ）で * SolidFire * を選択します。</block>
@@ -4061,8 +4057,6 @@
   <block id="02917d00c6e974040b113eec406f933d" category="paragraph">NetApp Element ソフトウェアを実行するシステムでは、 NetApp ONTAP システムとの間での SnapMirror 機能を使用した Snapshot コピーのコピーとリストアがサポートされます。このテクノロジを使用する主な理由は、 NetApp HCI から ONTAP へのディザスタリカバリです。エンドポイントには、 ONTAP 、 ONTAP Select 、 Cloud Volumes ONTAP があります。TR-4641 『 NetApp HCI Data Protection 』を参照してください。</block>
   <block id="37a9cf4fd8039696452f63fb22f06182" category="inline-link">ネットアップテクニカルレポート 4641 ：『 NetApp HCI Data Protection 』</block>
   <block id="0ae5c767cabcaa90f5848cabc66f8aa9" category="inline-link">NetApp HCI 、 ONTAP 、コンバージドインフラでデータファブリックを構築できます</block>
-  <block id="5865b8968ae6d9762765ab7ce3d35fc2" category="inline-link">NetApp Element ソフトウェアと ONTAP 間のレプリケーション</block>
-  <block id="b00bc340461aac1deb8b1a1e1382cf0c" category="list-text"><block ref="b00bc340461aac1deb8b1a1e1382cf0c" category="inline-link-rx"></block></block>
   <block id="7404c86028b71871cbb4ffd48689de0b" category="summary">SolidFire システムのセットアップ後、いくつかのオプションのタスクを実行できます。また、多要素認証、外部キー管理、および連邦情報処理標準（ FIPS ）セキュリティの設定も可能です。</block>
   <block id="37476f9e3646fbb481a9e43ed7b6fa32" category="paragraph">SolidFire システムのセットアップ後、いくつかのオプションのタスクを実行できます。</block>
   <block id="85248af3f1b5f11521551d57e22eca41" category="paragraph">システムのクレデンシャルを変更する場合、必要に応じて他のコンポーネントへの影響を確認しておくことができます。</block>
@@ -11994,4 +11988,284 @@
   <block id="cafb4d76dc2f8321d0134957e0bf3f5d" category="sidebar">SolidFire オールフラッシュストレージシステムは、ドライブやノードなどのハードウェアコンポーネントで構成され、これらのコンポーネントをストレージリソースのプールに統合します。これらのストレージリソースクラスタは、Elementインターフェイス、API、またはその他の管理ツールを使用してNetApp Elementソフトウェアで管理できます。このサイトには、Elementソフトウェアのドキュメントがあります。</block>
   <block id="ab8cbf6e7f3310f1970fbef383696645" category="sidebar">SolidFire およびElementソフトウェア12.7のドキュメント</block>
   <block id="f46f40c99ef0e96fdc79a2f007e1939a" category="sidebar">SolidFireおよびElementソフトウェアのドキュメント12.7</block>
+  <block id="6580584049ef8cc78e6be1833466e606" category="inline-link-macro">NetApp ElementソフトウェアとONTAP間のレプリケーション（ONTAP CLI）</block>
+  <block id="9051badc24841b5e2521cd8790e8f7d8" category="paragraph">詳細については、を参照してください <block ref="5aaa67c40a6461657bd1345524045131" category="inline-link-macro-rx"></block>。</block>
+  <block id="39f2369f3b77569b78b2438bb261689c" category="summary">デスティネーションボリュームを書き込み可能にしたら、ボリュームをデータアクセス用に設定する必要があります。ソースボリュームが再アクティブ化されるまで、SANホストはデスティネーションボリュームのデータにアクセスできます。</block>
+  <block id="5612d69b54615fdbdc0bb5203664f808" category="doc">デスティネーションボリュームをデータアクセス用に設定</block>
+  <block id="76f713176b430a51d8711f47a99d0f8a" category="list-text">Element LUN を適切なイニシエータグループにマッピングします。</block>
+  <block id="57b98362a5b6c4d458251e5989a7cddc" category="list-text">SAN ホストイニシエータから SAN LIF への iSCSI セッションを作成します。</block>
+  <block id="adfba1c6b0a4ee17e069c826350fd982" category="list-text">SAN クライアントで、ストレージの再スキャンを実行して接続された LUN を検出します。</block>
+  <block id="e02d811196d527520d9f9847ef74439d" category="summary">関係のデフォルトポリシーが適切でない場合は、カスタムレプリケーションポリシーを作成できます。</block>
+  <block id="75f83bbaf7f814729366d9e0bac3638f" category="doc">カスタムレプリケーションポリシーを作成します。</block>
+  <block id="e7cb3e43a84c97395c30e6e4d68129f7" category="paragraph">レプリケーション関係の作成時には、デフォルトまたはカスタムのポリシーを使用できます。カスタムのユニファイドレプリケーションポリシーの場合は、初期化と更新の際に転送するSnapshotコピーを決定する1つ以上の_rules_を定義する必要があります。</block>
+  <block id="30f6b1249bdeb93367e19f178253fdf9" category="paragraph">関係のデフォルトポリシーが適切でない場合は、カスタムレプリケーションポリシーを作成できます。たとえば、ネットワーク転送でデータを圧縮したり、SnapMirrorでSnapshotコピーの転送を試行する回数を変更したりできます。</block>
+  <block id="1fac572d0bdbbcd92ac120d658648335" category="paragraph">レプリケーションポリシーの _policy type_of によって、サポートされる関係のタイプが決まります。次の表に、使用可能なポリシータイプを示します。</block>
+  <block id="551e9178cd3ea95d0d7df735e2e30c6f" category="cell">ポリシータイプ</block>
+  <block id="2228e7753431617c517a7caaa0194b62" category="cell">関係タイプ</block>
+  <block id="1790a357007477a89ec0d17e60c8f2da" category="paragraph">非同期ミラー</block>
+  <block id="902d019343f451bbc199de2753b39807" category="paragraph">SnapMirror DR</block>
+  <block id="e7d3e049f94ce3ff8a47f209f012173d" category="paragraph">mirror-vault</block>
+  <block id="f0e0a508c999134c2e1bf29356c7e683" category="paragraph">ユニファイド レプリケーション</block>
+  <block id="f676d3bac6846b9c3cbc3cd472858b82" category="list-text">カスタムレプリケーションポリシーを作成します。</block>
+  <block id="6ad3f82f7c308031d857eac4cbdd47e5" category="paragraph"><block ref="e0c517637c29a89517f910f357fbcec9" prefix="" category="inline-code"></block></block>
+  <block id="cf88f24c3f5326757ea1a0c352d3c45b" category="paragraph">コマンド構文全体については、マニュアルページを参照してください。</block>
+  <block id="bd327b4638ae747ffe450595f761296d" category="paragraph">ONTAP 9 .5以降では、パラメータを使用して、SnapMirror同期関係の共通のSnapshotコピースケジュールを作成するスケジュールを指定でき<block ref="1c2e058e59e0621899abf5587a37dafb" prefix=" " category="inline-code"></block>ます。デフォルトでは、SnapMirror同期関係の共通のSnapshotコピースケジュールは1時間です。SnapMirror同期関係のSnapshotコピースケジュールには、30~2時間の値を指定できます。</block>
+  <block id="ec405ae28bc322b83b8ef2b56af1556f" category="paragraph">次の例は、データ転送のためのネットワーク圧縮を有効にするSnapMirror DR用のカスタムレプリケーションポリシーを作成します。</block>
+  <block id="5038a022fcbb606d55800f700d1a2600" category="paragraph">次の例は、ユニファイドレプリケーション用のカスタムレプリケーションポリシーを作成します。</block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">終了後</block>
+  <block id="54c7d4a5f9788eadd5ea0701f3bd679e" category="paragraph">「mirror-vault」ポリシータイプの場合は、初期化と更新の際に転送するSnapshotコピーを決定するルールを定義する必要があります。</block>
+  <block id="09d4557a2a32f3faa0e7466695eb9ece" category="paragraph">コマンドを使用し<block ref="df3a39db5d8c8c52cbc0d92c0e43a385" prefix=" " category="inline-code"></block>て、SnapMirrorポリシーが作成されたことを確認します。コマンド構文全体については、マニュアルページを参照してください。</block>
+  <block id="a0c9f37e7486a8ef330fca436e2765e1" category="summary">データをElementからONTAPにレプリケートするかONTAPからElementにレプリケートするかに関係なく、ジョブスケジュールを設定し、ポリシーを指定し、関係を作成して初期化する必要があります。デフォルトまたはカスタムのポリシーを使用できます。</block>
+  <block id="f8a7eabb7c1c989fb41862022012f5ba" category="doc">ElementとONTAPの間のレプリケーションのワークフロー</block>
+  <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="inline-link-macro">前提条件</block>
+  <block id="39827364402eb7a6398af8c1194aa72d" category="inline-link-macro">データ保護の概要</block>
+  <block id="35d6c0b88909a77a67dfd7da2d3a1c3e" category="paragraph">このワークフローでは、に示す前提条件となるタスクが完了していることを前提としています<block ref="033c85b6f39ef9e6b306971ea1e5d5c9" category="inline-link-macro-rx"></block>。使用するポリシーに関するガイダンスなど、SnapMirrorポリシーの詳細な背景情報については、を参照してください<block ref="ef3dbddea8dbf43683fb89931b6b3d33" category="inline-link-macro-rx"></block>。</block>
+  <block id="86fd1e70c681153c9061841b64ec4d5c" category="inline-image-macro">SolidFireからONTAPへのワークフロー</block>
+  <block id="e54292b00b7038b209eaa70423768252" category="paragraph"><block ref="e54292b00b7038b209eaa70423768252" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="388657e2af54b4f8e121163ca5784693" category="inline-link-macro">ElementソフトウェアとONTAPの間のレプリケーション（ONTAP CLI）</block>
+  <block id="a21a4ab90a18959fa37c0c2fb846d63e" category="paragraph">機能は限定されますが、特定のユースケースで ONTAP ボリュームを Element ボリュームにレプリケートできます。詳細については、を参照してください <block ref="92cf2e7a852a772499cb0000a5d5d5ab" category="inline-link-macro-rx"></block>。</block>
+  <block id="a8c738646fb5eef610f0017f7272a70e" category="summary">SnapMirrorを使用してElementボリュームのSnapshotコピーをONTAPデスティネーションにレプリケートすることで、Elementシステムのビジネス継続性を確保できます。</block>
+  <block id="0c5cfd2c0e8264bc1b423e19a988bc3d" category="doc">NetApp ElementソフトウェアとONTAP間のレプリケーションの概要（ONTAP CLI）</block>
+  <block id="564e8ed9dc801e6baa03256281129a07" category="paragraph">SnapMirrorを使用してElementボリュームのSnapshotコピーをONTAPデスティネーションにレプリケートすることで、Elementシステムのビジネス継続性を確保できます。これにより、 Element サイトで災害が発生した場合でも、 ONTAP システムからクライアントに引き続きデータを提供し、サービスのリストア後に Element システムを再アクティブ化することができます。</block>
+  <block id="34c547b76ee12c36037c1fbd123f8bb7" category="paragraph">ONTAP 9 .4以降では、ONTAPノードで作成したLUNのSnapshotコピーをElementシステムにレプリケートして戻すことができます。たとえば、Elementサイトの停止中にLUNを作成した場合や、LUNを使用してONTAPからElementソフトウェアにデータを移行する場合などです。</block>
+  <block id="f095051bf202432565bd83b13f223cbe" category="paragraph">次の状況に該当する場合は、ElementからONTAPへのバックアップを実行する必要があります。</block>
+  <block id="41a6f75570e8276bfdd8656708159091" category="list-text">すべての選択肢について検討するのではなく、ベストプラクティスに従う。</block>
+  <block id="1435e27f40347998b5c763bcc4df6b63" category="list-text">System Managerや自動スクリプトツールではなく、ONTAPのコマンドラインインターフェイス（CLI）を使用する必要がある。</block>
+  <block id="83d990511cbb8a6b72c2da3687386ede" category="list-text">iSCSIを使用してクライアントにデータを提供している。</block>
+  <block id="9ae8f55cfebe47cb9ef25253ceb15709" category="paragraph">SnapMirrorの設定や概念に関する追加情報が必要な場合は、を参照してください<block ref="ef3dbddea8dbf43683fb89931b6b3d33" category="inline-link-macro-rx"></block>。</block>
+  <block id="44d71452635eeaf5c7a210399ae9d66d" category="section-title">ElementとONTAP間のレプリケーションについて</block>
+  <block id="bfd057c12b548f30730c200ffe425aac" category="paragraph">ONTAP 9 3以降では、SnapMirrorを使用してElementボリュームのSnapshotコピーをONTAPデスティネーションにレプリケートできます。これにより、 Element サイトで災害が発生した場合でも、 ONTAP システムからクライアントに引き続きデータを提供し、サービスのリストア後に Element ソースボリュームを再アクティブ化することができます。</block>
+  <block id="00f0ca5c226cddf734db19705c282ffc" category="section-title">データ保護関係のタイプ</block>
+  <block id="ec63b8aecacb81cf9705373c2a309a42" category="paragraph">SnapMirrorには、2種類のデータ保護関係があります。タイプごとに、SnapMirrorは関係を初期化または更新する前にElementソースボリュームのSnapshotコピーを作成します。</block>
+  <block id="064586429a532e66540622ca674c0cd1" category="list-text">_ディザスタリカバリ（DR）_データ保護関係では、デスティネーションボリュームにはSnapMirrorで作成されたSnapshotコピーのみが含まれ、プライマリサイトに災害が発生した場合には、このSnapshotコピーから引き続きデータを提供できます。</block>
+  <block id="d6dbbbf18fd021df4ecd159f9c136ff2" category="list-text">_long-term retention_data保護関係では、Elementソフトウェアで作成されたポイントインタイムのSnapshotコピーとSnapMirrorで作成されたSnapshotコピーがデスティネーションボリュームに含まれます。たとえば、20年間にわたって作成された月単位のSnapshotコピーを保持することができます。</block>
+  <block id="91ab4e454992068049452d720c0ce136" category="section-title">デフォルトポリシー</block>
+  <block id="f8efa2b0163fa0c88746c1d17283f1de" category="paragraph">SnapMirror を初めて起動すると、ソース・ボリュームからデスティネーション・ボリュームへの _ ベースライン転送 _ が実行されます。SnapMirror ポリシー _ は、ベースラインおよび更新の内容を定義します。</block>
+  <block id="f0c378f7109cd4f114444bcf8cc8f914" category="paragraph">データ保護関係の作成時にデフォルトまたはカスタムのポリシーを使用できます。ポリシータイプ_は、どのSnapshotコピーを含めるか、および保持するコピー数を決定します。</block>
+  <block id="a58dcf868b54faad66442b4a73e1790b" category="paragraph">次の表に、デフォルトのポリシーを示します。ポリシーを使用して<block ref="e162cfb3e9ccdaa06cb8c6b686825bee" prefix=" " category="inline-code"></block>、従来のDR関係を作成します。または<block ref="4403b8bed8329a1a1ba838d590fec221" prefix=" " category="inline-code"></block>ポリシーを使用し<block ref="37e459201e5691c90f616e05271f4ba3" prefix=" " category="inline-code"></block>て、同じデスティネーションボリュームにDRと長期保持を設定するユニファイドレプリケーション関係を作成します。</block>
+  <block id="51359e8b51c63b87d50cb1bab73380e2" category="cell">ポリシー</block>
+  <block id="cc34a7c064d7dad286c9d460e22937f2" category="cell">ポリシータイプ</block>
+  <block id="ddbca9efd1616e6cf2fc20b858ab701d" category="cell">更新動作</block>
+  <block id="e162cfb3e9ccdaa06cb8c6b686825bee" category="paragraph">MirrorLatest</block>
+  <block id="99a40c6089328d4adfe2e7225e8ae762" category="paragraph">SnapMirrorで作成されたSnapshotコピーを転送します。</block>
+  <block id="37e459201e5691c90f616e05271f4ba3" category="paragraph">MirrorAndVault</block>
+  <block id="ada331490936b1447a0671a382f3b4eb" category="paragraph">SnapMirrorで作成されたSnapshotコピーと、前回の更新後に作成されたSnapshotコピー（SnapMirrorラベルが「daily」または「weekly」の場合）が転送されます。</block>
+  <block id="4403b8bed8329a1a1ba838d590fec221" category="paragraph">ユニファイド7年</block>
+  <block id="345dd259a4c79c21fb10847c03c29489" category="paragraph">SnapMirrorで作成されたSnapshotコピーと、前回の更新後に作成されたSnapshotコピー（SnapMirrorラベルが「daily」、「weekly」、または「monthly」の場合）が転送されます。</block>
+  <block id="eed5438f11ccbb046f71006728017c88" category="paragraph">使用するポリシーに関するガイダンスなど、SnapMirrorポリシーの詳細な背景情報については、を参照してください<block ref="ef3dbddea8dbf43683fb89931b6b3d33" category="inline-link-macro-rx"></block>。</block>
+  <block id="df6dd387c6cb8d3936482f5121407a73" category="section-title">SnapMirrorラベルの概要</block>
+  <block id="51eeb81a2d99a7d3f472b9ce46fdf58c" category="paragraph">ポリシータイプが「m irror-vault」のすべてのポリシーに、レプリケートするSnapshotコピーを指定するルールが必要です。たとえば、「daily」ルールは、「daily」というSnapMirrorラベルが割り当てられたSnapshotコピーだけをレプリケートするように指定します。SnapMirrorラベルは、Element Snapshotコピーの設定時に割り当てます。</block>
+  <block id="ce874ff02e26566f564e38d0ad8939d1" category="section-title">Element ソースクラスタから ONTAP デスティネーションクラスタへのレプリケーション</block>
+  <block id="1726ceb89cde1975f0569ca9335ad84d" category="paragraph">SnapMirrorを使用して、ElementボリュームのSnapshotコピーをONTAPデスティネーションシステムにレプリケートできます。これにより、 Element サイトで災害が発生した場合でも、 ONTAP システムからクライアントに引き続きデータを提供し、サービスのリストア後に Element ソースボリュームを再アクティブ化することができます。</block>
+  <block id="548cdbe30ebc9642da2fa9cb47357c1d" category="paragraph">Element ボリュームは ONTAP LUN とほぼ同じです。SnapMirror は、 Element ソフトウェアと ONTAP の間のデータ保護関係の初期化時に、 Element ボリュームの名前を使用して LUN を作成します。Element から ONTAP へのレプリケーションの要件を満たす既存の LUN がある場合は、その LUN にデータがレプリケートされます。</block>
+  <block id="611160ee2fed0433c2a5d4711fb48b06" category="paragraph">レプリケーションルールは次のとおりです。</block>
+  <block id="60ae019897bd3d84eeeed37065ac318c" category="list-text">ONTAP ボリュームに格納できるのは、 1 つの Element ボリュームのデータのみです。</block>
+  <block id="fe9ad9074743f70b148e3d994116d106" category="list-text">1 つの ONTAP から複数の Element ボリュームにデータをレプリケートすることはできません。</block>
+  <block id="575ad0e96b85453b0e29f712a71a0a2b" category="section-title">ONTAP ソースクラスタから Element デスティネーションクラスタへのレプリケーション</block>
+  <block id="13040250704a4e12c83cd7b9a2c300e1" category="paragraph">.4以降では、ONTAPシステムで作成したONTAP 9のSnapshotコピーをElementボリュームにレプリケートして戻すことができます。</block>
+  <block id="0fab034adb598062e25d1023de01e394" category="list-text">Element ソースと ONTAP デスティネーションの間にすでに SnapMirror 関係がある場合は、デスティネーションからデータを提供している間に作成された LUN はソースが再アクティブ化されたときに自動的にレプリケートされます。</block>
+  <block id="392abd8bc45542e905483bd6ae5f6efa" category="list-text">SnapMirror 関係がない場合は、 ONTAP ソースクラスタと Element デスティネーションクラスタの間に SnapMirror 関係を作成して初期化する必要があります。</block>
+  <block id="2cb11b5f797a74130e629e1f045d1461" category="list-text">レプリケーション関係には「 async 」タイプのポリシーが必要です。</block>
+  <block id="7efb12c6fe6d977da6b78a66991c0809" category="paragraph">「ミラー - ヴォールト」タイプのポリシーはサポートされていません。</block>
+  <block id="756804dcf3bdb28fa642d106946fc1fd" category="list-text">iSCSI LUNのみがサポートされます。</block>
+  <block id="214863aa243c8a82fb5eab8543be5523" category="list-text">ONTAPボリュームからElementボリュームに複数のLUNをレプリケートすることはできません。</block>
+  <block id="bd60ee943b224c9cf82212c56937cd29" category="list-text">1つのONTAPから複数のElementボリュームにLUNをレプリケートすることはできません。</block>
+  <block id="d0eb6da02882c585a65ca348ffff05d5" category="paragraph">Element と ONTAP の間にデータ保護関係を設定するには、次の作業を完了しておく必要があります。</block>
+  <block id="37db2f7fb3e49df30cc32a9649aea32f" category="list-text">Element クラスタで NetApp Element ソフトウェアバージョン 10.1 以降が実行されている必要があります。</block>
+  <block id="f31b6d38bbeb8fcf8ea29dda985316f0" category="list-text">ONTAPクラスタでONTAP 9 .3以降が実行されている必要があります。</block>
+  <block id="feaada5a395125a755e15c612cc44149" category="list-text">ONTAPクラスタでSnapMirrorのライセンスが有効になっている必要があります。</block>
+  <block id="6d74735d1f487a7d257b5cf661f166a9" category="list-text">Element クラスタと ONTAP クラスタに、予想されるデータ転送を処理できる十分な容量のボリュームを設定しておく必要があります。</block>
+  <block id="1c9cc74529c9cbdea35027dbfbe10f61" category="list-text">ポリシータイプ「m mirror-vault」を使用する場合は、レプリケートするElement SnapshotコピーのSnapMirrorラベルを設定しておく必要があります。</block>
+  <block id="ffcff48a8900b759122138dc74affc48" category="inline-link-macro">ElementソフトウェアWeb UI</block>
+  <block id="faa03ad90cfa8dd02ce4f68b832e5926" category="inline-link-macro">API メソッド</block>
+  <block id="f3fde60a3a60d61f5adcdf60b79d244d" category="paragraph">このタスクは、またはでのみ実行できます<block ref="b93072557c65ffea9f42510ec69c2114" category="inline-link-macro-rx"></block><block ref="887e50fc0bb5d7d97f152ed649a55cbc" category="inline-link-macro-rx"></block>。</block>
+  <block id="29092ab8561df9315028f9475d370804" category="list-text">ポート5010が使用可能であることを確認しておく必要があります。</block>
+  <block id="ec26990081e21ee38c3e0acab1f5447c" category="list-text">デスティネーションボリュームの移動が必要になる可能性がある場合は、ソースとデスティネーションの間にフルメッシュ接続が確立されていることを確認しておく必要があります。Element ソースクラスタ上のすべてのノードが、 ONTAP デスティネーションクラスタ上のすべてのノードと通信できる必要があります。</block>
+  <block id="c3ffc8e078b339d5886703a912ed9b58" category="section-title">サポートの詳細</block>
+  <block id="d9b09ea2d53525a69cddf8cff070fbc5" category="paragraph">次の表に、 Element から ONTAP へのバックアップのサポートの詳細を示します。</block>
+  <block id="8db918ed0f3814eca3898085fa4c511b" category="cell">リソースまたは機能</block>
+  <block id="794cb725c5631ad99b5b7c000307f0df" category="paragraph">SnapMirror</block>
+  <block id="21a2e79c7fb50408a04d4338b003fc35" category="list-text">SnapMirrorのリストア機能はサポートされていません。</block>
+  <block id="a4d865020d4d568b7de06dcab179c547" category="list-text"><block ref="549e9a8369377ab9bda71541111ca2f9" prefix=" " category="inline-code"></block>ポリシーと<block ref="a56c1780b810accc7f0bc23193dc16aa" prefix=" " category="inline-code"></block>ポリシーはサポートされません。</block>
+  <block id="aeb6598f6f0d345a9ea3b8f9306c1870" category="list-text">「 vault 」ポリシータイプはサポートされていません。</block>
+  <block id="be23dbf7af78294377409c568f243694" category="list-text">システム定義のルール「 all_source_snapshots 」はサポートされていません。</block>
+  <block id="8c384d54e72de8db435214eca3e993b1" category="list-text">「 mirror vault 」ポリシータイプは、 Element ソフトウェアから ONTAP へのレプリケーションでのみサポートされます。ONTAP から Element ソフトウェアへのレプリケーションには「 async 」を使用します。</block>
+  <block id="f16a2db4342a84cac6ba3ddf9921e455" category="list-text"><block ref="1115f328ec8d317585cad6b29ed517b9" prefix=" " category="inline-code"></block>のオプションと<block ref="6f75186386aaf3d5333336d4c403d2ec" prefix=" " category="inline-code"></block>オプション<block ref="0029d3abd55b9ef7d0f43d20838735b2" prefix=" " category="inline-code"></block>はサポートされていません。</block>
+  <block id="7abbb1222642ca1a125a87cfbe8132bc" category="list-text"><block ref="a6db42a9ef6515d0f373aaa0e2cb1da5" prefix=" " category="inline-code"></block>のオプションと<block ref="4a44b5e31c49a6876ef22d7209f3e8f1" prefix=" " category="inline-code"></block>オプション<block ref="562007dcf7d55742abbc5fd0809cb393" prefix=" " category="inline-code"></block>はサポートされていません。</block>
+  <block id="07bc92e29d924f55f92ba1efe5251a0c" category="list-text">ストレージ効率は維持されません。</block>
+  <block id="767b3644f591d7296d597952b5c37fb2" category="list-text">ファンアウト構成とカスケード構成のデータ保護はサポートされません。</block>
+  <block id="253b40ae359ba25b56231803430c4873" category="paragraph">ONTAP</block>
+  <block id="d1a53027e49c40f67f7d07d9bf2c7289" category="list-text">ONTAP Selectは、ONTAP 9 .4およびElement 10.3以降でサポートされます。</block>
+  <block id="c5fc02d8ab5590c8be21882ed204bef5" category="list-text">Cloud Volumes ONTAPは、ONTAP 9 .5およびElement 11.0以降でサポートされます。</block>
+  <block id="231afe47f3f37d3808096b36c28b4ded" category="paragraph">要素</block>
+  <block id="af2212368d1a1a96570e6ce2f93486c6" category="list-text">ボリュームサイズの上限は8TiBです。</block>
+  <block id="9a4b0811c4aeee55ac501f5f73d0e9cc" category="list-text">ボリュームのブロックサイズは512バイトにする必要があります。4Kバイトのブロックサイズはサポートされません。</block>
+  <block id="42bb1943ff14049938b7af19c411e1a5" category="list-text">ボリュームサイズは1MiBの倍数にする必要があります。</block>
+  <block id="81c2bbfc9ec9795a841edc371c12fdc9" category="list-text">ボリューム属性は維持されません。</block>
+  <block id="81b77bbc7e578477f69adc3b50924346" category="list-text">レプリケートされるSnapshotコピーの最大数は30です。</block>
+  <block id="eec89088ee408b80387155272b113256" category="paragraph">ネットワーク</block>
+  <block id="e92af91135bdb6dced651f59e27e1ddd" category="list-text">1回の転送で使用できるTCP接続は1つです。</block>
+  <block id="47bc0716ece5aa8143da2f1021f1046a" category="list-text">Element ノードは IP アドレスとして指定する必要があります。DNSホスト名検索はサポートされていません。</block>
+  <block id="6fbe07d89b9a98b513b28d4bdec6d62e" category="list-text">IPspaceはサポートされません。</block>
+  <block id="acdc6b4f6edd40f37bce01247a32ff86" category="paragraph">SnapLock</block>
+  <block id="f2443749b29077db72ccdf85691104ac" category="paragraph">SnapLockボリュームはサポートされません。</block>
+  <block id="54452390cac5f65f3bcec580ba079531" category="paragraph">FlexGroup</block>
+  <block id="9b326c2076ec04f5c715a46044ed7875" category="paragraph">FlexGroupボリュームはサポートされません。</block>
+  <block id="7e4716fcadce4a1adb7676534312a764" category="paragraph">SVM DR</block>
+  <block id="be4ce5f5b863230b071a1e9bbc6b526f" category="paragraph">SVM DR構成のONTAPボリュームはサポートされません。</block>
+  <block id="1749d12df3df2319d3eee218a277ff83" category="paragraph">MetroCluster</block>
+  <block id="a3bcdc002e42a770c83a4edb29da0f53" category="paragraph">MetroCluster構成のONTAPボリュームはサポートされません。</block>
+  <block id="4a564490593b9dfe3a2ce1d2fff04fe4" category="summary">4以降では、SnapMirrorを使用して、ONTAPソースで作成されたONTAP 9のSnapshotコピーをElementデスティネーションにレプリケートできます。LUNを使用してONTAPからElementソフトウェアにデータを移行する場合があります。</block>
+  <block id="5fd75f621e23582f2c44185301f3d0bc" category="doc">ONTAPソースからElementデスティネーションへの関係を作成する</block>
+  <block id="671d4984a0edd201ed04cb12a6e7e546" category="paragraph">Elementのデスティネーションパスをの形式で指定する必要があり<block ref="e6c8050b8cd0a398b28edeaa070ef325" prefix=" " category="inline-code"></block>ます。「LUN」は実際の文字列「LUN」、<block ref="b068931cc450442b63f5b3d276ea4297" prefix=" " category="inline-code"></block> はElementボリュームの名前です。</block>
+  <block id="cd57d551152a56e1d856ea5b32a07cdc" category="paragraph">デフォルトまたはカスタムのポリシーを使用できます。</block>
+  <block id="5b389c8a58dad055afa79e4177452302" category="list-text">ONTAPソースからElementデスティネーションへのレプリケーション関係を作成します。</block>
+  <block id="21d54011fd2ab4603029e4ac2184f5a9" category="paragraph"><block ref="c082a86a7cf53d1882908e6733522aef" prefix="" category="inline-code"></block></block>
+  <block id="0d77c8e7d80cb27ae9dc932aa45f1c45" category="paragraph">次の例は、デフォルトのポリシーを使用してSnapMirror DR関係を作成し<block ref="e162cfb3e9ccdaa06cb8c6b686825bee" prefix=" " category="inline-code"></block>ます。</block>
+  <block id="20ca84a5d91d2978217b06774c1ff42a" category="paragraph">次の例は、カスタムポリシーを使用してSnapMirror DR関係を作成し<block ref="71d9dcae261bca2017bff65f9d341cdf" prefix=" " category="inline-code"></block>ます。</block>
+  <block id="9a52d6a5d71c5d44563a5e2f1d1fde56" category="paragraph">コマンドを使用し<block ref="8511c2f3ef6c5e8c42a150c01bd8495c" prefix=" " category="inline-code"></block>て、SnapMirror関係が作成されたことを確認します。コマンド構文全体については、マニュアルページを参照してください。</block>
+  <block id="1b8f57d8466ed9be37f7a96ca1ff045e" category="summary">レプリケーションジョブスケジュールを作成するには、 job schedule cron create コマンドを使用します。ジョブスケジュールは、スケジュールが割り当てられているデータ保護関係をSnapMirrorが自動的に更新するタイミングを決定します。</block>
+  <block id="6e0983de50056fdacdd9550f613eab0a" category="doc">レプリケーションジョブスケジュールの作成</block>
+  <block id="77f7f7ae06760be21bad1e934698a2b6" category="paragraph">コマンドを使用すると、レプリケーションジョブスケジュールを作成できます<block ref="859f5842129c4a4759882f44afc53f67" prefix=" " category="inline-code"></block>。ジョブスケジュールは、スケジュールが割り当てられているデータ保護関係をSnapMirrorが自動的に更新するタイミングを決定します。</block>
+  <block id="4cd38d835e28dd8e89e58a585a1635ce" category="paragraph">ジョブスケジュールは、データ保護関係の作成時に割り当てます。ジョブスケジュールを割り当てない場合は、関係を手動で更新する必要があります。</block>
+  <block id="30d4f2aeb7b82779c70416788d971465" category="list-text">ジョブスケジュールを作成します。</block>
+  <block id="81a9fe82fd59a2c04babfe1577b880cc" category="paragraph"><block ref="bedcaa3bb7cb9fb678c133c3f7789c20" prefix="" category="inline-code"></block></block>
+  <block id="f688f55fb3ce384a9ba02dc800aad85c" category="paragraph"><block ref="82a93b05df3feec57c63ce441966c4aa" prefix=" " category="inline-code"></block>、および<block ref="0b82738fba867e44dfa968af10583698" prefix=" " category="inline-code"></block>では<block ref="c33078b2e2b402748c5df40230241dfd" prefix=" " category="inline-code"></block>、ジョブを毎月、曜日、および時間ごとに実行するように指定できます<block ref="a181a603769c1f98ad927e7367c7aa51" prefix=" " category="inline-code"></block>。</block>
+  <block id="e7b3845f547288333fc43557e68ff726" category="paragraph">ONTAP 9 .10.1以降では、ジョブスケジュールにSVMを含めることができます。</block>
+  <block id="de023266755facdf6e475fb2f1231247" category="paragraph"><block ref="9d80176d3e2b1152929a845746bdfce8" prefix="" category="inline-code"></block></block>
+  <block id="33e6ff13335b307e0cdcabc402432b17" category="paragraph">次の例は、土曜日の午前3時に実行するという名前のジョブスケジュールを作成します<block ref="736f838f8851e1244e29879c9b2c09e2" prefix=" " category="inline-code"></block>。</block>
+  <block id="07c23f69abe32eb16c73feac875a5deb" category="doc">ElementソースからONTAPデスティネーションへの関係を作成する</block>
+  <block id="cfcb25ba2acb78ebcd2bfe10cdf8c05d" category="paragraph">プライマリストレージのソースボリュームとセカンダリストレージのデスティネーションボリュームの関係は、「 a_data 保護関係 _ 」と呼ばれます。コマンドを使用すると、ElementソースからONTAPデスティネーション、またはONTAPソースからElementデスティネーションへのデータ保護関係を作成できます<block ref="f95e5ae9c757f4c65e42842a276ea620" prefix=" " category="inline-code"></block>。</block>
+  <block id="8d1c3ce2c079ea826bf56e8f66968128" category="list-text">レプリケートするボリュームを含む Element ノードから ONTAP にアクセスできるようにしておく必要があります。</block>
+  <block id="93e121887ad04ad70978340760569601" category="paragraph">Elementのソースパスをの形式で指定する必要があり<block ref="e6c8050b8cd0a398b28edeaa070ef325" prefix=" " category="inline-code"></block>ます。「LUN」は実際の文字列「LUN」、<block ref="b068931cc450442b63f5b3d276ea4297" prefix=" " category="inline-code"></block> はElementボリュームの名前です。</block>
+  <block id="f677578eee8cc049cbf2a85aea7b654a" category="paragraph">Element ボリュームは ONTAP LUN とほぼ同じです。SnapMirror は、 Element ソフトウェアと ONTAP の間のデータ保護関係の初期化時に、 Element ボリュームの名前を使用して LUN を作成します。Element ソフトウェアから ONTAP へのレプリケーションの要件を満たす既存の LUN がある場合は、その LUN にデータがレプリケートされます。</block>
+  <block id="d8931e08767e68e987f1b13d764a1acc" category="paragraph">ONTAP 9 .3以前では、デスティネーションボリュームに格納できるSnapshotコピーは最大251個です。ONTAP 9 .4以降では、デスティネーションボリュームに格納できるSnapshotコピーは最大1019個です。</block>
+  <block id="9b410ef8345a58c12249763befbf5acd" category="list-text">デスティネーションクラスタから、 Element ソースから ONTAP デスティネーションへのレプリケーション関係を作成します。</block>
+  <block id="23416754fb164e7a9a90b096e7990743" category="paragraph"><block ref="5b5057c47be283a233ea17044574b88e" prefix="" category="inline-code"></block></block>
+  <block id="df857cb0f08264825fefa55878d286ce" category="paragraph">次の例は、デフォルトのポリシーを使用してユニファイドレプリケーション関係を作成し<block ref="37e459201e5691c90f616e05271f4ba3" prefix=" " category="inline-code"></block>ます。</block>
+  <block id="97fedbfaebdbcfe68bdc2db0e517c79e" category="paragraph">次の例は、ポリシーを使用してユニファイドレプリケーション関係を作成します<block ref="4403b8bed8329a1a1ba838d590fec221" prefix=" " category="inline-code"></block>。</block>
+  <block id="ea71844b20a2af889daba2027461836d" category="paragraph">次の例は、カスタムポリシーを使用してユニファイドレプリケーション関係を作成します<block ref="7d06ce743afb94fd7161f90acba5f66a" prefix=" " category="inline-code"></block>。</block>
+  <block id="6559e429258efad47fd0bec3573ac5e4" category="summary">レプリケーション関係を作成する前に、SnapMirrorエンドポイントを作成する必要があります。このタスクは、ElementソフトウェアWeb UIまたはAPIメソッドでのみ実行できます。</block>
+  <block id="dca879936ace6cbca538e4b03fc5f880" category="paragraph">レプリケーション関係を作成する前に、SnapMirrorエンドポイントを作成する必要があります。このタスクは、ElementソフトウェアWeb UIまたはを使用してのみ実行できます<block ref="9641b9cb3efec10f08ee0a17e27a64d6" category="inline-link-macro-rx"></block>。</block>
+  <block id="410d41840bfe4c79d1cbcbad970381ce" category="paragraph">ElementクラスタでSnapMirrorを有効にしておく必要があります。</block>
+  <block id="5759c23faeaf56d63eb3bea8d1a94825" category="list-text">Create a New Endpoint * ダイアログで、 ONTAP クラスタ管理 IP アドレスを入力します。</block>
+  <block id="d761d08865080249d5b15ce3eeea8150" category="list-text">ONTAPクラスタ管理者のユーザIDとパスワードを入力します。</block>
+  <block id="5273b6bf72b09b4cd1a768e5f5f5004f" category="summary">ポリシータイプが「mirror-vault」のカスタムポリシーの場合は、初期化と更新の際に転送するSnapshotコピーを決定するルールを少なくとも1つ定義する必要があります。「 mirror-vault 」ポリシータイプを使用して、デフォルトポリシーのルールを定義することもできます。</block>
+  <block id="8388fc8e43cd8b1ab56fce10123149f0" category="doc">ポリシーのルールを定義する</block>
+  <block id="2eb9dd495de98bb9f61e0c22a0a12849" category="paragraph">ポリシータイプが「mirror-vault」のカスタムポリシーの場合は、初期化と更新の際に転送するSnapshotコピーを決定するルールを少なくとも1つ定義する必要があります。また、ポリシータイプが「ミラー - ヴォールト」のデフォルトポリシーのルールを定義することもできます。</block>
+  <block id="3f6d281e355855827963828754c8479c" category="paragraph">ポリシータイプが「m irror-vault」のすべてのポリシーに、レプリケートするSnapshotコピーを指定するルールが必要です。たとえば、「bi-monthly」ルールは、「bi-monthly」というSnapMirrorラベルが割り当てられたSnapshotコピーだけをレプリケートするように指定します。SnapMirrorラベルは、Element Snapshotコピーの設定時に割り当てます。</block>
+  <block id="81b83eeba142c094d38a0295edf7af73" category="paragraph">各ポリシータイプは、1つ以上のシステム定義ルールに関連付けられます。これらのルールは、ポリシータイプを指定するとポリシーに自動的に割り当てられます。次の表は、システム定義のルールを示しています。</block>
+  <block id="b3c6a2407675972cff07d225ff2613f9" category="cell">システム定義のルール</block>
+  <block id="73c6de97e79c7f3f0b5a1b5ec4941980" category="cell">ポリシータイプで使用されます</block>
+  <block id="3d461e898a5bb577fcbfc3971839e75a" category="paragraph">sm_created</block>
+  <block id="cd34b3820b2d00ae955db7930b07b587" category="paragraph">非同期ミラー、ミラーバックアップ</block>
+  <block id="a91e81695146cf9603a0cced6620207b" category="paragraph">SnapMirrorで作成されたSnapshotコピーは、初期化と更新の際に転送されます。</block>
+  <block id="bea79186fd7af2da67e59b4b15df5a26" category="paragraph">毎日</block>
+  <block id="39234b8ba77bc7a1fdec2e0fe9301dc1" category="paragraph">ソース上のSnapMirrorラベルが「daily」の新しいSnapshotコピーが初期化および更新の際に転送されます。</block>
+  <block id="4a11fc05ed694c195f0703605b64da90" category="paragraph">毎週</block>
+  <block id="658fa3413ecb4367affa36fa4324e85d" category="paragraph">ソース上のSnapMirrorラベルが「weekly」の新しいSnapshotコピーが初期化および更新の際に転送されます。</block>
+  <block id="708638881f3bac9d9c8c742c79502811" category="paragraph">毎月</block>
+  <block id="56511f880daf8089ead5d32a0a40f45c" category="paragraph">ソース上のSnapMirrorラベルが「monthly」の新しいSnapshotコピーが初期化および更新の際に転送されます。</block>
+  <block id="d77edabf22e91ed88c75e865dfb339e9" category="paragraph">デフォルトポリシーまたはカスタムポリシーに対して、必要に応じて追加のルールを指定できます。例：</block>
+  <block id="aa0e8d0f698f3cfbc2c06adfbaff7f0c" category="list-text">デフォルトポリシーの場合<block ref="37e459201e5691c90f616e05271f4ba3" prefix=" " category="inline-code"></block>は、「bi-monthly」というルールを作成して、ソース上のSnapMirrorラベルが「bi-monthly」のSnapshotコピーを照合できます。</block>
+  <block id="3db7df45d3050befeac0ec1c959ce255" category="list-text">ポリシータイプが「m mirror-vault」のカスタムポリシーの場合は、「bi-weekly」というルールを作成して、ソース上のSnapMirrorラベルが「bi-weekly」のSnapshotコピーを照合できます。</block>
+  <block id="a6b6919f05b95bb622454b95fbdd03fa" category="list-text">ポリシーのルールを定義します。</block>
+  <block id="c6eb6a0a85aecd764f2cf991f7d90d5c" category="paragraph"><block ref="d066152b6ff535c7f867d34e357766f2" prefix="" category="inline-code"></block></block>
+  <block id="b28e0c8394118efd7c92324ce02e0135" category="paragraph">次の例は、SnapMirrorラベルのルールをデフォルト<block ref="37e459201e5691c90f616e05271f4ba3" prefix=" " category="inline-code"></block>ポリシーに追加します<block ref="a093944ec7193cf13ee005e1af950f4c" prefix=" " category="inline-code"></block>。</block>
+  <block id="20cc35bf4f534abf7c8e15480973e9cf" category="paragraph">次の例は、SnapMirrorラベルのルールをカスタム<block ref="1d5de0bd3d87489e1362714791579989" prefix=" " category="inline-code"></block>ポリシーに追加します<block ref="2a44471da66622bfc5b82888ae83a7dc" prefix=" " category="inline-code"></block>。</block>
+  <block id="b0eff705a5813714cb73d5b4afee11b9" category="paragraph">次の例は、SnapMirrorラベルのルールをカスタム<block ref="d8e87c0927539672f54462c837be0b7f" prefix=" " category="inline-code"></block>ポリシーに追加します<block ref="b17c9a947d4e38d7975718380fab6b7a" prefix=" " category="inline-code"></block>。</block>
+  <block id="f0f637ca20caa61073cee1a4ce7e8dfc" category="paragraph">その後、このSnapMirrorラベルに一致するSnapshotコピーをソースクラスタからレプリケートできます。</block>
+  <block id="2914b577684d6c7f339e6fda22c3487f" category="summary">レプリケーション関係を作成する前に、ElementクラスタでSnapMirrorを有効にする必要があります。このタスクは、ElementソフトウェアWeb UIまたはAPIメソッドでのみ実行できます。</block>
+  <block id="28d0537c10dbc179674ef31f5b5a2bab" category="doc">ElementクラスタでSnapMirrorを有効にする</block>
+  <block id="c229b2f8b428f342bff7cf24ff75f1b2" category="inline-link-macro">APIメソッド</block>
+  <block id="0b8667f1f4456982a27ec231d1a84da6" category="paragraph">レプリケーション関係を作成する前に、ElementクラスタでSnapMirrorを有効にする必要があります。このタスクは、ElementソフトウェアWeb UIまたはを使用してのみ実行できます<block ref="08aeb663b3e636fd7806da6cd0761563" category="inline-link-macro-rx"></block>。</block>
+  <block id="c0b5b482ba26a5488d37e9a7bc811294" category="list-text">SnapMirrorは、NetApp ONTAPで使用されるElementクラスタでのみ有効にできます。</block>
+  <block id="4afc20f670cf64f0a4b45231ad8a70ba" category="paragraph">ElementシステムのSnapMirrorはデフォルトで無効になっています。新規インストールまたはアップグレード時にSnapMirrorが自動的に有効になることはありません。</block>
+  <block id="c2d4151faae061b47ac729e96671972f" category="paragraph">一度有効にすると、SnapMirrorは無効にできません。SnapMirror機能を無効にしてデフォルト設定に戻すには、クラスタを工場出荷時のイメージに戻す必要があります。</block>
+  <block id="58d35ba486cdacfc31e43fd6a58950a7" category="summary">レプリケーション関係を作成する前に、ElementソースボリュームでSnapMirrorを有効にする必要があります。このタスクは、ElementソフトウェアWeb UIまたはAPIメソッドでのみ実行できます。</block>
+  <block id="98d336445179a80880568e07dde510b1" category="doc">ElementソースボリュームでSnapMirrorを有効にする</block>
+  <block id="5d2e361c0914a6964545e53b54120709" category="paragraph">レプリケーション関係を作成する前に、ElementソースボリュームでSnapMirrorを有効にする必要があります。このタスクは、ElementソフトウェアWeb UIまたはAPIメソッドと<block ref="50b3ddadfbe173a030d079ab859844eb" category="inline-link-macro-rx"></block>APIメソッドでのみ実行できます<block ref="ed0492a679a5ccbd40bf302baf82a4fe" category="inline-link-macro-rx"></block>。</block>
+  <block id="56701c635309a5e65d18a7422b09c3cd" category="list-text">ボリュームのブロックサイズは512バイトにする必要があります。</block>
+  <block id="b1811edce82ed716d4bc66b1dd1d116f" category="list-text">ボリュームがElementのリモートレプリケーションに参加していないことを確認する必要があります。</block>
+  <block id="235ca555c941bbeb27b8144103315c9b" category="list-text">ボリュームのアクセスタイプは「レプリケーションターゲット」にしないでください。</block>
+  <block id="aa582564183ce90222c0f16b2593de3d" category="paragraph">以下の手順は、ボリュームがすでに存在することを前提としています。SnapMirrorは、ボリュームの作成時またはクローニング時に有効にすることもできます。</block>
+  <block id="5ad3e303fff11348579be9fa7186a3bf" category="inline-image-macro">アクションアイコン</block>
+  <block id="e4516ea54829e71aaeb006b12f3c5a2c" category="list-text">ボリュームのボタンを選択します <block ref="c352969104f9ab1e97bd6725465d4889" category="inline-image-macro-rx" type="image"></block> 。</block>
+  <block id="ddda07cb938f448af103c180857849eb" category="list-text">ドロップダウンメニューで、 * Edit * を選択します。</block>
+  <block id="825a9c3c5a2e7b2df7176baddce9612b" category="list-text">ボリュームの編集 * ダイアログで、 * SnapMirror を有効にする * を選択します。</block>
+  <block id="d8181793389c7f93917cee076030f915" category="summary">すべての関係タイプでは、初期化の際にベースライン転送が実行されます。ベースライン転送では、ソースボリュームのSnapshotコピーが作成され、そのコピーおよびコピーが参照するすべてのデータブロックがデスティネーションボリュームに転送されます。</block>
+  <block id="45df433d6d3e94a4c9cb03d82b93e7fa" category="doc">レプリケーション関係を初期化する</block>
+  <block id="b2b3be1c2a51c9d4540990c4a5d23aae" category="paragraph">すべての関係タイプで初期化を実行すると、_baseline transfer_：が実行され、ソースボリュームのSnapshotコピーが作成されて、そのコピーおよびコピーが参照するすべてのデータブロックがデスティネーションボリュームに転送されます。</block>
+  <block id="e2ad484a6b62ee4735da3967f915cfcd" category="paragraph">Elementのソースパスをの形式で指定する必要があり<block ref="e6c8050b8cd0a398b28edeaa070ef325" prefix=" " category="inline-code"></block>ます。「LUN」は実際の文字列「LUN」、<block ref="556cc083d537486719fe9402a1b8ae6f" prefix=" " category="inline-code"></block> はElementボリュームの名前です。</block>
+  <block id="3c8e9155ad3c335597226d2522259967" category="paragraph">初期化には時間がかかる場合があります。ベースライン転送はオフピークの時間帯に実行することを推奨します。</block>
+  <block id="73e37d6deeb42cd92441f77e04ef2ec1" category="paragraph">ONTAP ソースから Element デスティネーションへの関係の初期化に何らかの理由で失敗した場合は、問題（無効な LUN 名など）を修正したあとも初期化が失敗します。回避策は次のとおりです。</block>
+  <block id="5c5491436ad1d5e7eef4e0acc6abd020" category="list-text">関係を削除します。</block>
+  <block id="84787e1315f0e4ee09bbe0a1ba9b2e53" category="list-text">Element デスティネーションボリュームを削除します。</block>
+  <block id="a625acecf7c6e7cbfefe6e5bad5be4fe" category="list-text">新しい Element デスティネーションボリュームを作成</block>
+  <block id="a8afea736dd29aa69fd4831616add70c" category="list-text">ONTAP ソースから Element デスティネーションボリュームへの新しい関係を作成して初期化します。</block>
+  <block id="19f40727c2b4d6910d9be535ade1d3fe" category="list-text">レプリケーション関係を初期化します。</block>
+  <block id="46c8ba9b9f1ff7f4af12661928b243b3" category="paragraph"><block ref="95be55af434968dd750356bbc62fee8a" prefix="" category="inline-code"></block></block>
+  <block id="3da2b54c500b7e62c9e006a8e3ecf3dc" category="paragraph">次の例は、IPアドレス10.0.0.11のソースボリュームとの<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>デスティネーションボリューム<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>の間の関係を初期化し<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block>ます。</block>
+  <block id="3754a7d0bc07704736c9565c60853267" category="summary">デスティネーションボリュームからクライアントにデータを提供するには、デスティネーションボリュームを書き込み可能にする必要があります。snapmirror quiesce コマンドを使用してデスティネーションへのスケジュールされた転送を停止し、 snapmirror abort コマンドを使用して実行中の転送を停止します。 snapmirror break コマンドを使用すると、デスティネーションを書き込み可能にできます。</block>
+  <block id="193977e29c025c21e4fcc5f83c71ced7" category="doc">デスティネーションボリュームを書き込み可能にする</block>
+  <block id="e299e64cee7826c89274f83c8977b703" category="paragraph">災害によって SnapMirror DR 関係のプライマリサイトが機能しなくなった場合は、システム停止を最小限に抑えてデスティネーションボリュームからデータを提供できます。プライマリサイトでサービスが復旧したら、ソースボリュームを再アクティブ化できます。</block>
+  <block id="bdc8fe3e1d2101f8ae7b0b3ce8978ae5" category="paragraph">デスティネーションボリュームからクライアントにデータを提供するには、デスティネーションボリュームを書き込み可能にする必要があります。コマンドを使用すると、デスティネーションへのスケジュールされた転送を停止したり、<block ref="55c969b3f726ee6617880fb9c8a3f113" prefix=" " category="inline-code"></block>コマンドを使用して実行中の転送を停止したり、<block ref="e1d39aa448c4c7cc75f1a16830613e32" prefix=" " category="inline-code"></block>コマンドを使用してデスティネーションを書き込み可能にしたりでき<block ref="6b13a41afb71010e4fbb1972f0f33998" prefix=" " category="inline-code"></block>ます。</block>
+  <block id="4c370f7d76a9395959e668dca854bf69" category="list-text">デスティネーションへのスケジュールされた転送を停止します。</block>
+  <block id="6aa110cae07600fc4f788d032825fe8a" category="paragraph"><block ref="0133b66d5b0a4c546f0836d4edf8f8b6" prefix="" category="inline-code"></block></block>
+  <block id="71fc23653cde895afc268937426dd719" category="paragraph">次の例は、IPアドレス10.0.0.11のソースボリュームとの<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>デスティネーションボリューム<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>の間のスケジュールされた転送を停止します<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block>。</block>
+  <block id="9622c5db02f0909860645c33ce7ecd5b" category="list-text">デスティネーションへの実行中の転送を停止します。</block>
+  <block id="dc73e892a38aeaa7231db927b9b302d4" category="paragraph"><block ref="231f48d5c42b363a9aa672f96567a3ca" prefix="" category="inline-code"></block></block>
+  <block id="151e9c9a14ab695d2f31445758c764fe" category="paragraph">次の例は、IPアドレス10.0.0.11のソースボリュームとの<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>デスティネーションボリューム<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>の間の実行中の転送を停止します<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block>。</block>
+  <block id="c431f84a8da55289cd5d1e21d9ad35e5" category="list-text">SnapMirror DR関係を解除します。</block>
+  <block id="c48440b123be4a3f63bdae9e5ffce71f" category="paragraph"><block ref="e9481ba03d6c317b9ef899d94e12eba6" prefix="" category="inline-code"></block></block>
+  <block id="f4e29185613adaf99eff92fd4af77281" category="paragraph">次の例は、IPアドレス10.0.0.11のソースボリュームとの<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>デスティネーションボリュームと<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>のデスティネーションボリュームと<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>の<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>関係を解除します<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block>。</block>
+  <block id="1f7be050627f22d103d49b8b9ff0375d" category="summary">デスティネーションからデータを提供する必要がなくなった場合は、ソースボリュームとデスティネーションボリュームの間で元のデータ保護関係を再確立できます。</block>
+  <block id="7cf793834e39bf913f660e315c2cf8ea" category="doc">元のソースボリュームを再アクティブ化</block>
+  <block id="d5511ec9c002a4626b5e190c7ad2015f" category="paragraph">次の手順は、元のソースボリュームのベースラインが損なわれていないことを前提としています。ベースラインが損なわれている場合は、この手順を実行する前に、データの提供元のボリュームと元のソースボリュームの間の関係を作成して初期化する必要があります。</block>
+  <block id="47caa83e52964920ac786b5585c75193" category="paragraph">ONTAP 9 .4以降では、Elementソースが再アクティブ化されると、ONTAPデスティネーションからデータを提供している間に作成されたLUNのSnapshotコピーが自動的にレプリケートされます。</block>
+  <block id="306ac0c651173de66a7de6cd2da25ab3" category="list-text">元のデータ保護関係を削除します。</block>
+  <block id="0ed3f9f870c580e5c7262defb973b65b" category="paragraph"><block ref="118357af521377bc8478ffce60f0a448" prefix="" category="inline-code"></block></block>
+  <block id="e90619ecde90c7c8791fa7552428446a" category="paragraph">次の例は、IPアドレス10.0.0.11の元のソースボリュームとデータの提供元のボリューム<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>の間の関係を削除します<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block><block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>。</block>
+  <block id="8d135bd6c282b16c7b22307a785c86fe" category="list-text">元のデータ保護関係を反転します。</block>
+  <block id="cef688386fba350ca4632b522f623cbc" category="paragraph"><block ref="34b56b5c545a88c82859ac5e7f03d2f8" prefix="" category="inline-code"></block></block>
+  <block id="477838233ef9afdf3352553af0d64d75" category="paragraph">再同期の際にベースライン転送は不要ですが、再同期には時間がかかる場合があります。再同期はオフピークの時間帯に実行することを推奨します。</block>
+  <block id="c9e8c15489e4be41a233bcd4f6dcf856" category="paragraph">次の例は、IPアドレスが10.0.0.11の元のソースボリュームとデータの提供元のボリューム<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>の間の関係を反転します<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block><block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>。</block>
+  <block id="2e3f9125fa6c133f64c2815387e2f4b9" category="list-text">反転した関係を更新します。</block>
+  <block id="b6f7200c863ec1352798fdf5afb82903" category="paragraph"><block ref="6a19b4f1d9b8ce10c2a3d4d670b4abb5" prefix="" category="inline-code"></block></block>
+  <block id="db964e9df7713fedd889e510f2f1adf4" category="paragraph">ソースとデスティネーションに共通のSnapshotコピーが存在しない場合、コマンドは失敗します。を使用し<block ref="933e67aa13ad8ddaabb6373f048e0dac" prefix=" " category="inline-code"></block> て関係を再初期化します。</block>
+  <block id="0b2d401ad2bb39d9dc9feb39b6aa29f5" category="paragraph">次の例は、<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>データの提供元のボリュームと元のソースボリューム（<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block>IPアドレス10.0.0.11）の間の関係を更新します<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>。</block>
+  <block id="27fe2ae42a759ca9346b6534813d7691" category="list-text">反転した関係のスケジュールされた転送を停止します。</block>
+  <block id="20b15fdd12c7e87b7be4a4584a755102" category="paragraph"><block ref="20ba65039534dd7a733e3f4600b4d5bd" prefix="" category="inline-code"></block></block>
+  <block id="ff0dec56e920ae3e2f9362dd2d0ccee0" category="paragraph">次の例は、<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>データの提供元のボリュームと元のソースボリューム（<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block>IPアドレス10.0.0.11）の間のスケジュールされた転送を停止します<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>。</block>
+  <block id="bf00ccdd4db5885fdd6cfcab1cbf4631" category="list-text">反転した関係の実行中の転送を停止します。</block>
+  <block id="3100cb6258c8edd24126bd6a81c815b4" category="paragraph"><block ref="97894a2e01c6fba693b35b6ffa26e4fc" prefix="" category="inline-code"></block></block>
+  <block id="1d901a1bc03306ab17374a46bf0c89aa" category="paragraph">次の例は、<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>データの提供元のボリュームと元のソースボリューム（<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block>IPアドレス10.0.0.11）の間の実行中の転送を停止します<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>。</block>
+  <block id="986ff368c1f785eebaa1c5654593165f" category="list-text">反転した関係を解除します。</block>
+  <block id="301bb9ab8838d4e7518b479a4b244825" category="paragraph"><block ref="d27bf081842f41efa9020c487a0c1991" prefix="" category="inline-code"></block></block>
+  <block id="b8600527382a4fac17f4db181be1df8a" category="paragraph">次の例は、<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>データの提供元のボリュームと元のソースボリューム（<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block>IPアドレス10.0.0.11）の間の関係を解除し<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>ます。</block>
+  <block id="caddec87025aaa1d022b7e7f28bd76d1" category="list-text">反転したデータ保護関係を削除します。</block>
+  <block id="0c251b3806c3a71ffe68c644e1d8f50a" category="paragraph">次の例は、IPアドレス10.0.0.11の元のソースボリュームとデータの提供元のボリューム<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>の間の反転した関係を削除します<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block><block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>。</block>
+  <block id="fc99c44c11f5335138367e9252ce58ae" category="list-text">元のデータ保護関係を再確立します。</block>
+  <block id="67e61d92a8471a1f9cece90f7711cde0" category="paragraph"><block ref="bbc2267279e5d8f6299ba6d5245b5d20" prefix="" category="inline-code"></block></block>
+  <block id="bc415badeb68af8c35139c280abc0140" category="paragraph">次の例は、IPアドレス10.0.0.11の元のソースボリュームと<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>の<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>間の関係を再確立します<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block>。</block>
+  <block id="d11ff43305b7581bffd9bf4a0aac8959" category="summary">ネットワークエラーが原因で更新に失敗した場合は、レプリケーション関係の手動更新が必要になることがあります。</block>
+  <block id="4ee2d87695f5bb64b27457df2a7c6e41" category="doc">レプリケーション関係を再同期する</block>
+  <block id="2338f7e5e83af8d305777617f7d4cf8d" category="paragraph">デスティネーションボリュームを書き込み可能にしたあと、ソースボリュームとデスティネーションボリュームに共通のSnapshotコピーが存在しないために更新が失敗したあと、または関係のレプリケーションポリシーを変更する場合は、レプリケーション関係の再同期が必要になります。</block>
+  <block id="6d5f69495f8e867162efa46a43db438e" category="list-text">ソースボリュームとデスティネーションボリュームを再同期します。</block>
+  <block id="d6f79eadbe284e92f33838a69bd8773e" category="paragraph"><block ref="a49916945de69e088fe119f58d0d86bf" prefix="" category="inline-code"></block></block>
+  <block id="6af23f20bfbdb73aca33a4deb42fc5b5" category="paragraph">次の例は、IPアドレス10.0.0.11のソースボリュームとの<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>デスティネーションボリューム<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>の間の関係を再同期し<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block>ます。</block>
+  <block id="f256b504d2d284ee8560a0f8a3055d20" category="doc">レプリケーション関係を手動で更新する</block>
+  <block id="8d0d647c12a0bef439f40231d34e27f1" category="list-text">レプリケーション関係を手動で更新します。</block>
+  <block id="425fa19eb58652df7f13f2ffd99604f0" category="paragraph"><block ref="f6d9025e0c0a6c599c466c69d7a124aa" prefix="" category="inline-code"></block></block>
+  <block id="23c7e9a87097c480c754c8814695f637" category="paragraph">次の例は、IPアドレス10.0.0.11のソースボリュームとの<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>デスティネーションボリューム<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>の間の関係を更新します<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block>。</block>
+  <block id="6ee6e98dd3f706a9d56d48dbe0b25dcb" category="doc">ElementクラスタとONTAPクラスタの間でSnapMirrorレプリケーションを使用（Element UI）</block>
+  <block id="15fdfbff97a006d7f8dd45be7301f5f3" category="list-text"><block ref="15fdfbff97a006d7f8dd45be7301f5f3" category="inline-link-macro-rx"></block></block>
+  <block id="5a0614fc36540b946021f186f3ba6c85" category="sidebar">NetApp ElementソフトウェアとONTAP間のレプリケーション（ONTAP CLI）</block>
+  <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">概要</block>
+  <block id="24f47cdbe9ddba774a7cc53e51d9032e" category="sidebar">ワークフロー</block>
+  <block id="49bd24b89b4d379ec9d1baed92d0973e" category="sidebar">ElementソフトウェアでのSnapMirrorの有効化</block>
+  <block id="0dc35b344be5654356d1a015d4e8ceac" category="sidebar">レプリケーション関係を設定する</block>
+  <block id="f12dbb93fdd805bce49a897d2f47cd7b" category="sidebar">レプリケーションポリシーをカスタマイズする</block>
+  <block id="ca0c3dd7dca9f636af3209d526098e1e" category="sidebar">レプリケーション関係を作成する</block>
+  <block id="66eec66df56998b2d5cdc13fee06aac5" category="sidebar">SnapMirror DRデスティネーションボリュームからのデータの提供</block>
 </blocks>

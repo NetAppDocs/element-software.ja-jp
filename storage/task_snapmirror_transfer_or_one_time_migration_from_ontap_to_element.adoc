@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_transfer_or_one_time_migration_from_ontap_to_element.html 
 sidebar: sidebar 
-keywords: transfer, perform, source volume, snapmirror, dr, disaster recovery, one-time migration 
+keywords: element, ui, transfer, perform, source, volume, snapmirror, dr, disaster, recovery, one-time, migration 
 summary: 通常、 NetApp Element ソフトウェアを実行する SolidFire ストレージクラスタから ONTAP ソフトウェアへのディザスタリカバリに SnapMirror を使用する場合、 Element がソースで ONTAP がデスティネーションです。ただし、場合によっては、 ONTAP ストレージシステムをソース、 Element をデスティネーションとして使用できます。 
 ---
 = ONTAP から Element への転送または 1 回限りの移行を実行します

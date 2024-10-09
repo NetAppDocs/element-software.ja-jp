@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_create_an_endpoint.html 
 sidebar: sidebar 
-keywords: endpoints, create, snapmirror, ui 
+keywords: element, endpoints, create, snapmirror, ui 
 summary: 関係を作成する前に、NetApp Element UIでSnapMirrorエンドポイントを作成する必要があります。 
 ---
 = SnapMirror エンドポイントを作成します

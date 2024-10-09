@@ -1,0 +1,62 @@
+---
+permalink: storage/task-element-replication-create-relationship-element-destination.html 
+sidebar: sidebar 
+keywords: ontap, cli, create, relationship, replication, snapmirror 
+summary: 4以降では、SnapMirrorを使用して、ONTAPソースで作成されたONTAP 9のSnapshotコピーをElementデスティネーションにレプリケートできます。LUNを使用してONTAPからElementソフトウェアにデータを移行する場合があります。 
+---
+= ONTAPソースからElementデスティネーションへの関係を作成する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+4以降では、SnapMirrorを使用して、ONTAPソースで作成されたONTAP 9のSnapshotコピーをElementデスティネーションにレプリケートできます。LUNを使用してONTAPからElementソフトウェアにデータを移行する場合があります。
+
+.作業を開始する前に
+* Element デスティネーションノードから ONTAP にアクセスできるようにしておく必要があります。
+* Element ボリュームの SnapMirror レプリケーションを有効にしておく必要があります。
+
+
+.このタスクについて
+Elementのデスティネーションパスをの形式で指定する必要があり `<hostip:>/lun/<name>`ます。「LUN」は実際の文字列「LUN」、 `name` はElementボリュームの名前です。
+
+レプリケーションルールは次のとおりです。
+
+* レプリケーション関係には「 async 」タイプのポリシーが必要です。
++
+デフォルトまたはカスタムのポリシーを使用できます。
+
+* iSCSI LUNのみがサポートされます。
+* ONTAPボリュームからElementボリュームに複数のLUNをレプリケートすることはできません。
+* 1つのONTAPから複数のElementボリュームにLUNをレプリケートすることはできません。
+
+
+.ステップ
+. ONTAPソースからElementデスティネーションへのレプリケーション関係を作成します。
++
+`snapmirror create -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name> -type XDP -schedule schedule -policy <policy>`
+
++
+コマンド構文全体については、マニュアルページを参照してください。
+
++
+次の例は、デフォルトのポリシーを使用してSnapMirror DR関係を作成し `MirrorLatest`ます。
+
++
+[listing]
+----
+cluster_dst::> snapmirror create -source-path svm_1:volA_dst -destination-path 10.0.0.11:/lun/0005 -type XDP -schedule my_daily -policy MirrorLatest
+----
++
+次の例は、カスタムポリシーを使用してSnapMirror DR関係を作成し `my_mirror`ます。
+
++
+[listing]
+----
+cluster_dst::> snapmirror create -source-path svm_1:volA_dst -destination-path 10.0.0.11:/lun/0005 -type XDP -schedule my_daily -policy my_mirror
+----
+
+
+.終了後
+コマンドを使用し `snapmirror show`て、SnapMirror関係が作成されたことを確認します。コマンド構文全体については、マニュアルページを参照してください。

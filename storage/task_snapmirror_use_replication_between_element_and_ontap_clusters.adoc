@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replication, snapmirror, data protection 
 summary: SnapMirror関係は、NetApp Element UIのデータ保護タブから作成できます。この情報をユーザインターフェイスで確認するには、 SnapMirror 機能を有効にする必要があります。 
 ---
-= Element クラスタと ONTAP クラスタの間で SnapMirror レプリケーションを使用
+= ElementクラスタとONTAPクラスタの間でSnapMirrorレプリケーションを使用（Element UI）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -26,5 +26,5 @@ https://www.netapp.com/pdf.html?item=/media/17048-tr4641pdf.pdf["ネットアッ
 == 詳細については、こちらをご覧ください
 
 * https://www.netapp.com/pdf.html?item=/media/16991-tr4748pdf.pdf["NetApp HCI 、 ONTAP 、コンバージドインフラでデータファブリックを構築できます"^]
-* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-sdbak/home.html["NetApp Element ソフトウェアと ONTAP 間のレプリケーション"^]
+* link:element-replication-index.html["NetApp ElementソフトウェアとONTAP間のレプリケーション（ONTAP CLI）"]
 

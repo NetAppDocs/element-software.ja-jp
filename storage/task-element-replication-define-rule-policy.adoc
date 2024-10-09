@@ -1,0 +1,108 @@
+---
+permalink: storage/task-element-replication-define-rule-policy.html 
+sidebar: sidebar 
+keywords: ontap, cli, define, rule, policy 
+summary: ポリシータイプが「mirror-vault」のカスタムポリシーの場合は、初期化と更新の際に転送するSnapshotコピーを決定するルールを少なくとも1つ定義する必要があります。「 mirror-vault 」ポリシータイプを使用して、デフォルトポリシーのルールを定義することもできます。 
+---
+= ポリシーのルールを定義する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ポリシータイプが「mirror-vault」のカスタムポリシーの場合は、初期化と更新の際に転送するSnapshotコピーを決定するルールを少なくとも1つ定義する必要があります。また、ポリシータイプが「ミラー - ヴォールト」のデフォルトポリシーのルールを定義することもできます。
+
+.このタスクについて
+ポリシータイプが「m irror-vault」のすべてのポリシーに、レプリケートするSnapshotコピーを指定するルールが必要です。たとえば、「bi-monthly」ルールは、「bi-monthly」というSnapMirrorラベルが割り当てられたSnapshotコピーだけをレプリケートするように指定します。SnapMirrorラベルは、Element Snapshotコピーの設定時に割り当てます。
+
+各ポリシータイプは、1つ以上のシステム定義ルールに関連付けられます。これらのルールは、ポリシータイプを指定するとポリシーに自動的に割り当てられます。次の表は、システム定義のルールを示しています。
+
+|===
+
+
+| システム定義のルール | ポリシータイプで使用されます | 結果 
+
+
+ a| 
+sm_created
+ a| 
+非同期ミラー、ミラーバックアップ
+ a| 
+SnapMirrorで作成されたSnapshotコピーは、初期化と更新の際に転送されます。
+
+
+
+ a| 
+毎日
+ a| 
+mirror-vault
+ a| 
+ソース上のSnapMirrorラベルが「daily」の新しいSnapshotコピーが初期化および更新の際に転送されます。
+
+
+
+ a| 
+毎週
+ a| 
+mirror-vault
+ a| 
+ソース上のSnapMirrorラベルが「weekly」の新しいSnapshotコピーが初期化および更新の際に転送されます。
+
+
+
+ a| 
+毎月
+ a| 
+mirror-vault
+ a| 
+ソース上のSnapMirrorラベルが「monthly」の新しいSnapshotコピーが初期化および更新の際に転送されます。
+
+|===
+デフォルトポリシーまたはカスタムポリシーに対して、必要に応じて追加のルールを指定できます。例：
+
+* デフォルトポリシーの場合 `MirrorAndVault`は、「bi-monthly」というルールを作成して、ソース上のSnapMirrorラベルが「bi-monthly」のSnapshotコピーを照合できます。
+* ポリシータイプが「m mirror-vault」のカスタムポリシーの場合は、「bi-weekly」というルールを作成して、ソース上のSnapMirrorラベルが「bi-weekly」のSnapshotコピーを照合できます。
+
+
+.ステップ
+. ポリシーのルールを定義します。
++
+`snapmirror policy add-rule -vserver _SVM_ -policy _policy_for_rule_ -snapmirror-label _snapmirror-label_ -keep _retention_count_`
+
++
+コマンド構文全体については、マニュアルページを参照してください。
+
++
+次の例は、SnapMirrorラベルのルールをデフォルト `MirrorAndVault`ポリシーに追加します `bi-monthly`。
+
++
+[listing]
+----
+cluster_dst::> snapmirror policy add-rule -vserver svm1 -policy MirrorAndVault -snapmirror-label bi-monthly -keep 6
+----
++
+次の例は、SnapMirrorラベルのルールをカスタム `my_snapvault`ポリシーに追加します `bi-weekly`。
+
++
+[listing]
+----
+cluster_dst::> snapmirror policy add-rule -vserver svm1 -policy my_snapvault -snapmirror-label bi-weekly -keep 26
+----
++
+次の例は、SnapMirrorラベルのルールをカスタム `Sync`ポリシーに追加します `app_consistent`。
+
++
+[listing]
+----
+cluster_dst::> snapmirror policy add-rule -vserver svm1 -policy Sync -snapmirror-label app_consistent -keep 1
+----
++
+その後、このSnapMirrorラベルに一致するSnapshotコピーをソースクラスタからレプリケートできます。
+
++
+[listing]
+----
+cluster_src::> snapshot create -vserver vs1 -volume vol1 -snapshot snapshot1 -snapmirror-label app_consistent
+----
+

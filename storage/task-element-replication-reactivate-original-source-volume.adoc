@@ -1,0 +1,163 @@
+---
+permalink: storage/task-element-replication-reactivate-original-source-volume.html 
+sidebar: sidebar 
+keywords: ontap,cli, reactivate, original, source, volume 
+summary: デスティネーションからデータを提供する必要がなくなった場合は、ソースボリュームとデスティネーションボリュームの間で元のデータ保護関係を再確立できます。 
+---
+= 元のソースボリュームを再アクティブ化
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+デスティネーションからデータを提供する必要がなくなった場合は、ソースボリュームとデスティネーションボリュームの間で元のデータ保護関係を再確立できます。
+
+.このタスクについて
+次の手順は、元のソースボリュームのベースラインが損なわれていないことを前提としています。ベースラインが損なわれている場合は、この手順を実行する前に、データの提供元のボリュームと元のソースボリュームの間の関係を作成して初期化する必要があります。
+
+Elementのソースパスをの形式で指定する必要があり `<hostip:>/lun/<name>`ます。「LUN」は実際の文字列「LUN」、 `name` はElementボリュームの名前です。
+
+ONTAP 9 .4以降では、Elementソースが再アクティブ化されると、ONTAPデスティネーションからデータを提供している間に作成されたLUNのSnapshotコピーが自動的にレプリケートされます。
+
+レプリケーションルールは次のとおりです。
+
+* iSCSI LUNのみがサポートされます。
+* ONTAPボリュームからElementボリュームに複数のLUNをレプリケートすることはできません。
+* 1つのONTAPから複数のElementボリュームにLUNをレプリケートすることはできません。
+
+
+.手順
+. 元のデータ保護関係を削除します。
++
+`snapmirror delete -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name> -policy <policy>`
+
++
+コマンド構文全体については、マニュアルページを参照してください。
+
++
+次の例は、IPアドレス10.0.0.11の元のソースボリュームとデータの提供元のボリューム `volA_dst`の間の関係を削除します `0005` `svm_backup`。
+
++
+[listing]
+----
+cluster_dst::> snapmirror delete -source-path 10.0.0.11:/lun/0005 -policy MirrorLatest -destination-path svm_backup:volA_dst
+----
+. 元のデータ保護関係を反転します。
++
+`snapmirror resync -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name> -policy <policy>`
+
++
+コマンド構文全体については、マニュアルページを参照してください。
+
++
+再同期の際にベースライン転送は不要ですが、再同期には時間がかかる場合があります。再同期はオフピークの時間帯に実行することを推奨します。
+
++
+次の例は、IPアドレスが10.0.0.11の元のソースボリュームとデータの提供元のボリューム `volA_dst`の間の関係を反転します `0005` `svm_backup`。
+
++
+[listing]
+----
+cluster_dst::> snapmirror resync -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005 -policy MirrorLatest
+----
+. 反転した関係を更新します。
++
+`snapmirror update -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name>`
+
++
+コマンド構文全体については、マニュアルページを参照してください。
+
++
+[NOTE]
+====
+ソースとデスティネーションに共通のSnapshotコピーが存在しない場合、コマンドは失敗します。を使用し `snapmirror initialize` て関係を再初期化します。
+
+====
++
+次の例は、 `svm_backup`データの提供元のボリュームと元のソースボリューム（ `0005`IPアドレス10.0.0.11）の間の関係を更新します `volA_dst`。
+
++
+[listing]
+----
+cluster_dst::> snapmirror update -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005
+----
+. 反転した関係のスケジュールされた転送を停止します。
++
+`snapmirror quiesce -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name>`
+
++
+コマンド構文全体については、マニュアルページを参照してください。
+
++
+次の例は、 `svm_backup`データの提供元のボリュームと元のソースボリューム（ `0005`IPアドレス10.0.0.11）の間のスケジュールされた転送を停止します `volA_dst`。
+
++
+[listing]
+----
+cluster_dst::> snapmirror quiesce -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005
+----
+. 反転した関係の実行中の転送を停止します。
++
+`snapmirror abort -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name>`
+
++
+コマンド構文全体については、マニュアルページを参照してください。
+
++
+次の例は、 `svm_backup`データの提供元のボリュームと元のソースボリューム（ `0005`IPアドレス10.0.0.11）の間の実行中の転送を停止します `volA_dst`。
+
++
+[listing]
+----
+cluster_dst::> snapmirror abort -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005
+----
+. 反転した関係を解除します。
++
+`snapmirror break -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name>`
+
++
+コマンド構文全体については、マニュアルページを参照してください。
+
++
+次の例は、 `svm_backup`データの提供元のボリュームと元のソースボリューム（ `0005`IPアドレス10.0.0.11）の間の関係を解除し `volA_dst`ます。
+
++
+[listing]
+----
+cluster_dst::> snapmirror break -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005
+----
+. 反転したデータ保護関係を削除します。
++
+`snapmirror delete -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name> -policy <policy>`
+
++
+コマンド構文全体については、マニュアルページを参照してください。
+
++
+次の例は、IPアドレス10.0.0.11の元のソースボリュームとデータの提供元のボリューム `volA_dst`の間の反転した関係を削除します `0005` `svm_backup`。
+
++
+[listing]
+----
+cluster_src::> snapmirror delete -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005 -policy MirrorLatest
+----
+. 元のデータ保護関係を再確立します。
++
+`snapmirror resync -source-path <hostip:>/lun/<name> -destination-path <SVM:volume>|<cluster://SVM/volume>`
+
++
+コマンド構文全体については、マニュアルページを参照してください。
+
++
+次の例は、IPアドレス10.0.0.11の元のソースボリュームと `volA_dst`の `svm_backup`間の関係を再確立します `0005`。
+
++
+[listing]
+----
+cluster_dst::> snapmirror resync -source-path 10.0.0.11:/lun/0005 -destination-path svm_backup:volA_dst
+----
+
+
+.終了後
+コマンドを使用し `snapmirror show`て、SnapMirror関係が作成されたことを確認します。コマンド構文全体については、マニュアルページを参照してください。

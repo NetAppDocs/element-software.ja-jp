@@ -318,7 +318,7 @@ entries:
           url: "/storage/reference_replication_volume_pairing_messages.html"
         - title: ボリュームペアリングに関する警告
           url: "/storage/reference_replication_volume_pairing_warnings.html"
-  - title: Element クラスタと ONTAP クラスタの間で SnapMirror レプリケーションを使用
+  - title: ElementクラスタとONTAPクラスタの間でSnapMirrorレプリケーションを使用（Element UI）
     url: "/storage/task_snapmirror_use_replication_between_element_and_ontap_clusters.html"
     entries:
     - title: SnapMirror の概要
@@ -356,6 +356,50 @@ entries:
           url: "/storage/task_snapmirror_performing_failback_when_source_volume_no_longer_exists.html"
       - title: ONTAP から Element への転送または 1 回限りの移行を実行します
         url: "/storage/task_snapmirror_transfer_or_one_time_migration_from_ontap_to_element.html"
+  - title: NetApp ElementソフトウェアとONTAP間のレプリケーション（ONTAP CLI）
+    entries:
+    - title: 概要
+      url: "/storage/element-replication-index.html"
+    - title: ワークフロー
+      url: "/storage/concept-element-replication-workflow.html"
+    - title: ElementソフトウェアでのSnapMirrorの有効化
+      entries:
+      - title: ElementクラスタでSnapMirrorを有効にする
+        url: "/storage/task-element-replication-enable-snapmirror-cluster.html"
+      - title: ElementソースボリュームでSnapMirrorを有効にする
+        url: "/storage/task-element-replication-enable-snapmirror-source-volume.html"
+      - title: SnapMirror エンドポイントを作成します
+        url: "/storage/task-element-replication-create-snapmirror-endpoint.html"
+    - title: レプリケーション関係を設定する
+      entries:
+      - title: レプリケーションジョブスケジュールの作成
+        url: "/storage/task-element-replication-create-replication-job-schedule.html"
+      - title: レプリケーションポリシーをカスタマイズする
+        entries:
+        - title: カスタムレプリケーションポリシーを作成します。
+          url: "/storage/concept-element-replication-create-custom-replication-policy.html"
+        - title: ポリシーのルールを定義する
+          url: "/storage/task-element-replication-define-rule-policy.html"
+      - title: レプリケーション関係を作成する
+        entries:
+        - title: ElementソースからONTAPデスティネーションへの関係を作成する
+          url: "/storage/task-element-replication-create-replication-relationship.html"
+        - title: ONTAPソースからElementデスティネーションへの関係を作成する
+          url: "/storage/task-element-replication-create-relationship-element-destination.html"
+      - title: レプリケーション関係を初期化する
+        url: "/storage/task-element-replication-initialize-replication-relationship.html"
+    - title: SnapMirror DRデスティネーションボリュームからのデータの提供
+      entries:
+      - title: デスティネーションボリュームを書き込み可能にする
+        url: "/storage/task-element-replication-make-destination-volume-writeable.html"
+      - title: デスティネーションボリュームをデータアクセス用に設定
+        url: "/storage/concept-element-replication-configure-destination-volume-data-access.html"
+      - title: 元のソースボリュームを再アクティブ化
+        url: "/storage/task-element-replication-reactivate-original-source-volume.html"
+    - title: レプリケーション関係を手動で更新する
+      url: "/storage/task-element-replication-update-replication-relationship-manually.html"
+    - title: レプリケーション関係を再同期する
+      url: "/storage/task-element-replication-resynchronize-data-protection-relationship.html"
   - title: ボリュームのバックアップとリストア
     url: "/storage/task_data_protection_back_up_and_restore_volumes.html"
     entries:

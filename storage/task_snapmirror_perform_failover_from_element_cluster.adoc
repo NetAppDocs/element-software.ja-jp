@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_perform_failover_from_element_cluster.html 
 sidebar: sidebar 
-keywords: failover, cluster, perform a failover, snapmirror 
+keywords: element, ui, failover, cluster, perform a failover, snapmirror 
 summary: Element クラスタからフェイルオーバーを実行して、デスティネーションボリュームを読み書き可能にし、デスティネーション側のホストがアクセスできるようにすることができます。Element クラスタからフェイルオーバーを実行する前に、 SnapMirror 関係を解除する必要があります。 
 ---
 = Element クラスタからフェイルオーバーを実行します
