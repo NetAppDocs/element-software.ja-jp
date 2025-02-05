@@ -12142,7 +12142,6 @@
   <block id="df857cb0f08264825fefa55878d286ce" category="paragraph">次の例は、デフォルトのポリシーを使用してユニファイドレプリケーション関係を作成し<block ref="37e459201e5691c90f616e05271f4ba3" prefix=" " category="inline-code"></block>ます。</block>
   <block id="97fedbfaebdbcfe68bdc2db0e517c79e" category="paragraph">次の例は、ポリシーを使用してユニファイドレプリケーション関係を作成します<block ref="4403b8bed8329a1a1ba838d590fec221" prefix=" " category="inline-code"></block>。</block>
   <block id="ea71844b20a2af889daba2027461836d" category="paragraph">次の例は、カスタムポリシーを使用してユニファイドレプリケーション関係を作成します<block ref="7d06ce743afb94fd7161f90acba5f66a" prefix=" " category="inline-code"></block>。</block>
-  <block id="6559e429258efad47fd0bec3573ac5e4" category="summary">レプリケーション関係を作成する前に、SnapMirrorエンドポイントを作成する必要があります。このタスクは、ElementソフトウェアWeb UIまたはAPIメソッドでのみ実行できます。</block>
   <block id="dca879936ace6cbca538e4b03fc5f880" category="paragraph">レプリケーション関係を作成する前に、SnapMirrorエンドポイントを作成する必要があります。このタスクは、ElementソフトウェアWeb UIまたはを使用してのみ実行できます<block ref="9641b9cb3efec10f08ee0a17e27a64d6" category="inline-link-macro-rx"></block>。</block>
   <block id="410d41840bfe4c79d1cbcbad970381ce" category="paragraph">ElementクラスタでSnapMirrorを有効にしておく必要があります。</block>
   <block id="5759c23faeaf56d63eb3bea8d1a94825" category="list-text">Create a New Endpoint * ダイアログで、 ONTAP クラスタ管理 IP アドレスを入力します。</block>
@@ -12172,7 +12171,6 @@
   <block id="20cc35bf4f534abf7c8e15480973e9cf" category="paragraph">次の例は、SnapMirrorラベルのルールをカスタム<block ref="1d5de0bd3d87489e1362714791579989" prefix=" " category="inline-code"></block>ポリシーに追加します<block ref="2a44471da66622bfc5b82888ae83a7dc" prefix=" " category="inline-code"></block>。</block>
   <block id="b0eff705a5813714cb73d5b4afee11b9" category="paragraph">次の例は、SnapMirrorラベルのルールをカスタム<block ref="d8e87c0927539672f54462c837be0b7f" prefix=" " category="inline-code"></block>ポリシーに追加します<block ref="b17c9a947d4e38d7975718380fab6b7a" prefix=" " category="inline-code"></block>。</block>
   <block id="f0f637ca20caa61073cee1a4ce7e8dfc" category="paragraph">その後、このSnapMirrorラベルに一致するSnapshotコピーをソースクラスタからレプリケートできます。</block>
-  <block id="2914b577684d6c7f339e6fda22c3487f" category="summary">レプリケーション関係を作成する前に、ElementクラスタでSnapMirrorを有効にする必要があります。このタスクは、ElementソフトウェアWeb UIまたはAPIメソッドでのみ実行できます。</block>
   <block id="28d0537c10dbc179674ef31f5b5a2bab" category="doc">ElementクラスタでSnapMirrorを有効にする</block>
   <block id="c229b2f8b428f342bff7cf24ff75f1b2" category="inline-link-macro">APIメソッド</block>
   <block id="0b8667f1f4456982a27ec231d1a84da6" category="paragraph">レプリケーション関係を作成する前に、ElementクラスタでSnapMirrorを有効にする必要があります。このタスクは、ElementソフトウェアWeb UIまたはを使用してのみ実行できます<block ref="08aeb663b3e636fd7806da6cd0761563" category="inline-link-macro-rx"></block>。</block>
@@ -12284,4 +12282,6 @@
   <block id="6f00c58e2f26b2ef4542eb663cdb651d" category="inline-link-macro">管理サービス2.26.30（NetApp Element Plug-in for VMware vCenter Server 5.4.1）に関するお知らせ</block>
   <block id="ea3b1d5907ee8e4303c54ecc7765f0f2" category="list-text"><block ref="ea3b1d5907ee8e4303c54ecc7765f0f2" category="inline-link-macro-rx"></block></block>
   <block id="fdbd44871ecf32ab0e37e9d3c077e28a" category="list-text">Element Plug-in for vCenter Server 5.4、5.3、5.2、5.1、または5.0にアップグレードする。</block>
+  <block id="ec584e493ebc5976220074c48288215d" category="summary">レプリケーション関係を作成する前に、SnapMirrorエンドポイントを作成する必要があります。このタスクは、ElementソフトウェアWeb UIまたはAPIメソッドでのみ実行できます。</block>
+  <block id="a1d54a55e83901cd25e5b3724d5ca5e5" category="summary">レプリケーション関係を作成する前に、ElementクラスタでSnapMirrorを有効にする必要があります。このタスクは、ElementソフトウェアWeb UIまたはAPIメソッドでのみ実行できます。</block>
 </blocks>
