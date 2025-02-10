@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: netapp, solidfire, element, storage, solidfire enterprise sds 
 summary: ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。 
 ---
-= Elementソフトウェア12.5以降の新機能
+= Elementソフトウェアの新機能
 :allow-uri-read: 
 :url-peak: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Element_Software_-_Apache_Log4j_Vulnerability_-_Workaround
 :icons: font
@@ -12,16 +12,54 @@ summary: ネットアップでは、 SolidFire および Element ソフトウェ
 
 
 [role="lead"]
-ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。Element 12.7は最新リリースで、セキュリティおよびシステムコンポーネントのアップデート、運用の改善、および解決済みの問題が含まれています。
+ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。Element 12.8は最新リリースで、セキュリティおよびシステムコンポーネントのアップデート、運用の改善、および解決済みの問題が含まれています。
 
 
-NOTE: ソフトウェアとファームウェアの累積更新は、ストレージクラスタで実行されているElementの現在のバージョンに基づいて、Element 12.7のアップグレードの一環としてインストールされます。たとえば、クラスタでElement 12.3.xが実行されている場合は、Element 12.7に直接アップグレードして、Element 12.5と12.7の両方から累積的な更新を取得できます。サポートされるアップグレードパスについては、こちらを参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software["こちらの技術情報アーティクル"^]
+NOTE: ソフトウェアとファームウェアの累積更新は、ストレージクラスタで実行されているElementの現在のバージョンに基づいて、Element 12.8のアップグレードの一環としてインストールされます。たとえば、クラスタでElement 12.5を実行している場合は、Element 12.8に直接アップグレードして、Element 12.7と12.8の両方から累積的な更新を取得できます。サポートされているアップグレードパスについては、ナレッジベースの記事を参照して https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software["NetApp Elementソフトウェアを実行するストレージクラスタのアップグレードマトリックス"^]ください。
+
+
+
+== 要素12.8
+
+Element 12.8の新機能の詳細については、こちらをご覧ください。
+
+
+
+=== ボリュームのロードバランシング
+
+Element 12.8では、ボリュームロードバランシング機能が導入されています。この機能を使用すると、QoSポリシーに設定されている最小IOPSではなく、各ボリュームの実際のIOPSレベルに基づいてノード間でボリュームを分散できます。ボリュームの負荷分散機能は、ボリュームの負荷分散にのみ使用できます。仮想ボリュームのバランス調整には使用できません。ボリュームロードバランシング機能は、デフォルトでは無効になっています。この機能を有効または無効にするには、APIパラメータでlink:../api/reference_element_api_enablefeature.html["EnableFeature"]およびlink:../api/reference_element_api_disablefeature.html["無効な機能"]APIメソッドを使用するか、link:../storage/task_system_manage_cluster_volume_load_balancing.html["ボリュームのロードバランシング"]Element UIのオプションを使用し `VolumeLoadBalanceOnActualIOPS`ます。
+
+
+
+=== ノードの利用率情報の表示
+
+Element 12.8では、および `ListNodeStats`APIメソッドを使用し `GetNodeStats`て、ノードの利用率情報を表示できます `nodeHeat`。 `nodeHeat`オブジェクトはオブジェクトのメンバー `nodeStats`であり、一定期間の設定されたIOPSに対するプライマリの合計IOPSまたは合計IOPSの比率に基づいてノード利用率の情報が表示されます。
+
+また、Element UIのノードの[View Details]画面で、ノード利用率をの割合として表示することもできます `recentPrimaryTotalHeat`。
+
+
+
+=== ボリュームのI/O統計の表示
+
+Element 12.8では、および `ListVolumeStatsByVolume`APIメソッドを使用して、 `GetVolumeStats`ボリュームのI/O使用率の統計を表示できます `sliceIopsStats`。I/O統計は、ボリュームの読み取りIOPSと書き込みIOPSの情報を使用して計算され、過去24時間と過去1時間の2つの期間にわたって測定されます。link:../api/reference_element_api_volumestats.html#object-members["詳細はこちら。"]です。
+
+
+
+=== iSCSIセッションのCHAPアルゴリズム
+
+ホストiSCSIイニシエータは、Element iSCSIターゲットとのiSCSIセッションを作成するときに使用するChallenge-Handshake Authentication Protocol（CHAP；チャレンジハンドシェイク認証プロトコル）アルゴリズムのリストを要求します。Element 12.8以降では、Element iSCSIターゲットがiSCSIセッションに使用するように選択した、サポートされるCHAPアルゴリズムを表示できます。
+
+
+
+=== VMハードウェアバージョンのアップグレード
+
+既存の管理ノードをElement 12.8にインプレースアップグレードする場合は、アップグレード前に、管理ノードのVMハードウェアのバージョンがESXi 6.7（VMハードウェアバージョン14）以降に対応していることを確認する必要があります。link:../upgrade/task_hcc_upgrade_management_node.html#step-1-upgrade-vm-hardware-version-on-a-management-node["詳細はこちら。"]です。
 
 
 
 == 要素12.7
 
-Element 12.7の新機能の詳細をご確認ください。
+Element 12.7の新機能の詳細については、こちらをご覧ください。
 
 
 
@@ -80,7 +118,7 @@ SolidFire Active IQ UIでQoS管理ページに移動して、クラスタに関�
 
 == Element 12.5
 
-Element 12.5では、ストレージノードへのアクセスの向上、カスタムの保護ドメインの管理性の強化、クラスタの障害とイベントの新規作成と改善、クラスタ作成UI機能の強化、セキュリティの強化が導入されています。
+Element 12.5の新機能の詳細については、こちらをご覧ください。
 
 
 
@@ -128,9 +166,7 @@ Element 12.5には、120を超えるCVEセキュリティ脆弱性の修正も�
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["『 NetApp Hybrid Cloud Control and Management Services Release Notes 』を参照してください"^]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
-* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
-* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"^]
 * http://docs.netapp.com/sfe-122/index.jsp["以前のバージョン用の SolidFire および Element ソフトウェアドキュメントセンター"^]
-* https://www.netapp.com/us/documentation/hci.aspx["NetApp HCI のリソースページ"^]
+* https://docs.netapp.com/us-en/hci/index.html["NetApp HCI のドキュメント"^]
 * link:../hardware/fw_storage_nodes.html["SolidFire ストレージノードでサポートされるストレージファームウェアのバージョン"]
 

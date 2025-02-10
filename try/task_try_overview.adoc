@@ -16,10 +16,3 @@ Element ソフトウェアの導入に役立つリソースとツールをご紹
 * https://handsonlabs.netapp.com/lab/elementsw["Element によるプライベートクラウドストレージの柔軟性に関するラボオンデマンド（ログインが必要）"^]：このラボでは、 Element ソフトウェアを実行するストレージシステムに適用されるスケールアウトの概念について、制限やワークロードパフォーマンスの保証、ストレージインフラの自動化について説明します。
 * link:task_use_demonode.html["Element のデモノードを使用してストレージ機能を試します"^]： Element デモノードは、 VMware 仮想マシン版の Element ソフトウェアで、 NetApp HCI 製品と SolidFire 製品の主要なストレージ機能の多くを簡単にデモできます。
 
-
-
-
-== 詳細については、こちらをご覧ください
-
-* https://www.netapp.com/data-storage/solidfire/documentation/["SolidFire オールフラッシュストレージのリソースページ"^]
-

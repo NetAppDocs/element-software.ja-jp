@@ -27,6 +27,7 @@ volumeStats オブジェクトには、各ボリュームの統計データが�
 
 このオブジェクトのメンバーは次のとおりです。
 
+[cols="20,50,15,15"]
 |===
 | 名前 | 説明 | 計算 | を入力します 
 
@@ -231,6 +232,33 @@ samplePeriodMSec
 該当なし
  a| 
 整数
+
+
+
+ a| 
+sliceIopsStats
+ a| 
+ボリュームのI/O使用率の統計。Element 12.8以降で使用できます。sliceIopsStatsに指定できる値は次のとおりです。
+
+* largeStatistics：より長い期間（通常は過去24時間）に測定されたボリュームのI/O統計。
+* smallStatistics：より短い期間（通常は過去1時間）に測定されたボリュームのI/O統計。
+
+
+largeStatisticsおよびsmallStatisticsに指定できる値は次のとおりです。
+
+* averageReadIops：ボリュームの平均読み取りIOPS。
+* averageTotalIops：ボリュームの平均合計（読み取り+書き込み）IOPS。
+* averageWriteIops：ボリュームの平均書き込みIOPS。
+* nSamples：統計計算に含まれるサンプルの数。
+* peakReadIops：統計間隔で観察された最大読み取りIOPS。
+* peakTotalIops：統計間隔で観察された最大合計IOPS。
+* peakWriteIops：統計間隔で観察された最大書き込みIOPS。
+* sliceID：ボリュームIDまたはスライスID
+
+ a| 
+ポイントインタイム
+ a| 
+JSON オブジェクト
 
 
 

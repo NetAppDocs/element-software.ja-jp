@@ -133,6 +133,4 @@ Element デモノードは、ベストエフォート型のボランティアベ
 
 == 詳細については、こちらをご覧ください
 
-* https://www.netapp.com/data-storage/solidfire/documentation/["SolidFire オールフラッシュストレージのリソースページ"^]
-* https://mysupport.netapp.com/site/tools/tool-eula/element-demonode/download["Element のデモノードのダウンロードページ（ログインが必要）"^]
-
+https://mysupport.netapp.com/site/tools/tool-eula/element-demonode/download["Element のデモノードのダウンロードページ（ログインが必要）"^]

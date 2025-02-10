@@ -53,6 +53,8 @@ entries:
       url: "/storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html"
     - title: クラスタフルしきい値を設定します
       url: "/storage/task_system_manage_cluster_set_the_cluster_full_threshold.html"
+    - title: ボリュームロードバランシングの有効化と無効化
+      url: "/storage/task_system_manage_cluster_volume_load_balancing.html"
     - title: サポートアクセスを有効または無効にします
       url: "/storage/task_system_manage_cluster_enable_and_disable_support_access.html"
     - title: 利用条件のバナーを管理します

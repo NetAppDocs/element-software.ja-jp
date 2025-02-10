@@ -1,0 +1,43 @@
+---
+permalink: storage/task_system_manage_cluster_volume_load_balancing.html 
+sidebar: sidebar 
+keywords: cluster, volume, volumes, load, balancing, actual, IOPS 
+summary: Element 12.8以降では、ボリュームロードバランシングを有効にして、QoSポリシーに設定されている最小IOPSではなく、各ボリュームの実際のIOPSに基づいてノード間でボリュームを分散させることができます。 
+---
+= ボリュームロードバランシングの有効化と無効化
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 12.8以降では、ボリュームロードバランシングを使用して、QoSポリシーに設定されている最小IOPSではなく、各ボリュームの実際のIOPSに基づいてノード間でボリュームを分散できます。ボリュームロードバランシングは、Element UIまたはAPIを使用して有効または無効にできます。これはデフォルトでは無効になっています。
+
+.手順
+. [クラスタ]*>*[設定]*を選択します。
+. [Cluster Specific]セクションで、ボリュームロードバランシングのステータスを変更します。
++
+[role="tabbed-block"]
+====
+.ボリュームのロードバランシングを有効にする
+--
+[実際のIOPSでロードバランシングを有効にする]*を選択し、選択を確定します。
+
+--
+.ボリュームロードバランシングを無効にします。
+--
+[Disable Load Balancing on Actual IOPS]*を選択し、選択を確認します。
+
+--
+====
+. 必要に応じて、*[レポート]*>*[概要]*を選択して、実際のIOPSとのバランスのステータスの変更を確認します。ステータスを確認するために、[クラスタヘルス]の情報を下にスクロールしなければならない場合があります。
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+* link:../api/reference_element_api_enablefeature.html["APIを使用したボリュームロードバランシングの有効化"]
+* https://docs.netapp.com/us-en/element-software/api/reference_element_api_disablefeature.html["APIを使用したボリュームロードバランシングの無効化"]
+* link:../hccstorage/task-hcc-qos-policies.html["ボリュームの QoS ポリシーの作成と管理"]
+

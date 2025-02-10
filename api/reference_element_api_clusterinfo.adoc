@@ -198,11 +198,20 @@ UUID
  a| 
 UUID
 
+
+
+ a| 
+volumeLoadBalanceOnActualIopsState
+ a| 
+最小IOPS機能ではなく実際のIOPSに基づくスライスバランシングのステータス。Element 12.8以降で使用できます。
+ a| 
+文字列
+
 |===
 [discrete]
 == 詳細については、こちらをご覧ください
 
 * link:../api/reference_element_api_getclusterinfo.html["GetClusterInfo を使用します"]
-* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]エンテーション]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"^]
 * https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["以前のバージョンの NetApp SolidFire 製品および Element 製品に関するドキュメント"^]
 

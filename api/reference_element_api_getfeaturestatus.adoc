@@ -19,6 +19,7 @@ GetFeatureStatus メソッドを使用すると、クラスタ機能のステー
 
 このメソッドの入力パラメータは次のとおりです。
 
+[cols="1a,3a,1a,1a,1a"]
 |===
 | 名前 | 説明 | を入力します | デフォルト値 | 必須 
 
@@ -28,10 +29,11 @@ GetFeatureStatus メソッドを使用すると、クラスタ機能のステー
  a| 
 クラスタ機能のステータス。値を指定しない場合は、すべての機能のステータスが返されます。有効な値は次のとおり
 
-* vvols ： VVol クラスタ機能のステータスを取得します。
-* SnapMirror ： SnapMirror レプリケーションクラスタ機能のステータスを取得します。
-* fips ： HTTPS 通信の FIPS 140-2 暗号化機能のステータスを取得します。
-* fipsDrives ： FIPS 140-2 ドライブ暗号化機能のステータスを取得します。
+* `Vvols`：VVolクラスタ機能のステータスを取得します。
+* `SnapMirror`：SnapMirrorレプリケーションクラスタ機能のステータスを取得します。
+* `Fips`：HTTPS通信用のFIPS 140-2暗号化機能のステータスを取得します。
+* `FipsDrives`：FIPS 140-2ドライブ暗号化機能のステータスを取得します。
+* `VolumeLoadBalanceOnActualIOPS`：最小IOPSではなく実際のIOPSでスライスバランシングのステータスを取得します。Element 12.8以降で使用できます。
 
  a| 
 文字列
@@ -105,6 +107,10 @@ JSON オブジェクトの配列
             {
                 "enabled": true,
                 "feature": "FipsDrives"
+            },
+            {
+                "enabled": true,
+                "feature": "VolumeLoadBalanceOnActualIOPS"
             }
         ]
     }

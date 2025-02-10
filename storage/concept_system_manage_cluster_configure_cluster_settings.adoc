@@ -19,6 +19,7 @@ Element UI の Cluster タブでは、クラスタ全体の設定を表示およ
 * xref:concept_data_manage_vvol_work_virtual_volumes.adoc[仮想ボリュームを操作します]
 * xref:task_snapmirror_use_replication_between_element_and_ontap_clusters.adoc[Element クラスタと ONTAP クラスタの間で SnapMirror レプリケーションを使用]
 * xref:task_system_manage_cluster_set_the_cluster_full_threshold.adoc[クラスタフルしきい値を設定します]
+* xref:task_system_manage_cluster_volume_load_balancing.adoc[ボリュームロードバランシングの有効化と無効化]
 * xref:task_system_manage_cluster_enable_and_disable_support_access.adoc[サポートアクセスを有効または無効にします]
 * https://kb.netapp.com/Advice_and_Troubleshooting/Flash_Storage/SF_Series/How_are_the_blockSpace_thresholds_calculated_for_Element["Element のブロックスペースしきい値の計算方法"]
 * xref:task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.adoc[クラスタの暗号化を有効または無効にします]
@@ -27,8 +28,8 @@ Element UI の Cluster タブでは、クラスタ全体の設定を表示およ
 * xref:concept_system_manage_snmp_manage_snmp.adoc[SNMP を管理します]
 * xref:concept_system_manage_drives_managing_drives.adoc[ドライブを管理します]
 * xref:concept_system_manage_nodes_manage_nodes.adoc[ノードを管理]
-* xref:concept_system_manage_virtual_manage_virtual_networks.adoc[仮想ネットワークを管理する]
 * xref:task_system_manage_fc_view_fibre_channel_ports_details.adoc[Fibre Channel ポートの詳細を表示します]
+* xref:concept_system_manage_virtual_manage_virtual_networks.adoc[仮想ネットワークを管理する]
 
 
 

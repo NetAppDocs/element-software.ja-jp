@@ -22,6 +22,7 @@ EnableFeature メソッドを使用すると、デフォルトでは無効とな
 
 NOTE: Element ソフトウェア 11.x を実行しているシステムで保護ドメインの設定前後に仮想ボリュームを有効にすると、クラスタ保護ドメイン機能はノードレベルでのみ機能します。
 
+[cols="1a,3a,1a,1a,1a"]
 |===
 | 名前 | 説明 | を入力します | デフォルト値 | 必須 
 
@@ -34,6 +35,7 @@ NOTE: Element ソフトウェア 11.x を実行しているシステムで保護
 * 「 fips 」： HTTPS 通信の FIPS 140-2 認定暗号化を有効にします。
 * FipsDrives ：ストレージクラスタの FIPS 140-2 ドライブサポートを有効にします。
 * 「 napMirror 」： SnapMirror レプリケーションクラスタ機能を有効にします。
+* `VolumeLoadBalanceOnActualIOPS`：最小IOPSではなく実際のIOPSでスライスバランシングを有効にします。Element 12.8以降で使用できます。
 * 「 vvols 」： Element ソフトウェア VVol クラスタ機能を有効にします。
 
  a| 

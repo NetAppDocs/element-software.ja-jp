@@ -20,8 +20,16 @@ keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgra
 
 [NOTE]
 ====
-* 2023年11月以降、署名キー証明書（プライベートおよびパブリック）の有効期限が2023年11月5日に切れたため、NetApp Hybrid Cloud ControlまたはREST APIを使用してコンポーネントのアップグレードを開始することはできません。この問題を解決するには、ナレッジベースの記事に記載されている回避策を参照してください。 https://kb.netapp.com/onprem/solidfire/Element_OS/SolidFire_and_HCI_upgrades_unable_to_start_due_to_upgrade_package_upload_error["アップグレードパッケージのアップロードエラーが原因でSolidFireとHCIのアップグレードを開始できない"^]。
-* Element 12.7以降では、SF2405およびSF9608ストレージノード、FC0025およびSF-FCN-01 FCノードはサポートされていません。これらのノードのいずれかをElement 12.7にアップグレードしようとすると、このノードがElement 12.7でサポートされていないことを示すエラーが表示されます。
+* 2023年11月以降、署名キー証明書（プライベートおよびパブリック）の有効期限が2023年11月5日に切れたため、NetAppハイブリッドクラウドコントロールまたはREST APIを使用してコンポーネントのアップグレードを開始することはできません。NetAppハイブリッドクラウドコントロールまたはREST APIを使用して管理サービス、Elementソフトウェア、およびストレージファームウェアをアップグレードする前に、この問題をバージョン12.8で回避することができますlink:task_hcc_upgrade_management_node.html["管理ノードのインプレースアップグレードの実行"]。
++
+バージョン12.8の新しい管理ノードを導入する場合は、NetApp Hybrid Cloud ControlまたはREST APIを使用して、に記載されている順序でコンポーネントのアップグレードを実行できます<<sys_upgrade,システムのアップグレード順序>>。
+
+* 次のノードはサポートされていません。次のいずれかのノードをサポート対象外のElementバージョンにアップグレードしようとすると、Element 12.xでサポートされていないことを示すエラーが表示されます。
++
+** Element 12.8、SF4805、SF9605、SF19210、およびSF38410ストレージノード以降。
+** Element 12.7以降、SF2405およびSF9608ストレージノード、FC0025およびSF-FCN-01 FCノード。
+
+
 * Element 12.5以降では、ElementソフトウェアのアップグレードでNetApp HealthToolsがサポートされなくなりました。Element 11.0または11.1を実行している場合は、最初にが必要です https://docs.netapp.com/us-en/element-software-123/upgrade/task_hcc_upgrade_element_software.html#upgrade-element-software-at-connected-sites-using-healthtools["HealthToolsを使用してElement 12.3にアップグレードします"^] NetApp Hybrid Cloud Controlを使用してElement 12.5以降にアップグレードします。
 
 
@@ -30,7 +38,7 @@ keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgra
 
 。 link:task_sf_upgrade_all_vsphere.html["vSphere のアップグレード順序"] Element Plug-in for vCenter Server のコンテンツでは、 Element Plug-in for vCenter Server を再インストールするために必要な、アップグレード前とアップグレード後の追加の手順について説明します。
 
-.必要なもの
+.作業を開始する前に
 * 管理ノード 11.3 以降が実行されていることを確認します。新しいバージョンの管理ノードには、個々のサービスを提供するモジュラアーキテクチャが採用されています。
 +
 

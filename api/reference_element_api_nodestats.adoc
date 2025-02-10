@@ -123,6 +123,21 @@ networkUtilizationStorage の略
 
 
  a| 
+ノードヒート
+ a| 
+ノード利用率の情報。Element 12.8以降で使用できます。メンバー：
+
+* primaryTotalHeat：ノードのプライマリ合計IOPS /ノードの設定後の24時間の平均。
+* recentPrimaryTotalHeat：ノードのプライマリ合計IOPS/ノードの設定された1時間の平均IOPS。
+* recentTotalHeat：1時間のノードの設定されたIOPSあたりの合計IOPS。
+* TotalHeat：24時間のノードの合計IOPS /ノードの設定済みIOPSの平均
+
+ a| 
+JSON オブジェクト
+
+
+
+ a| 
 readLatencyUSecTotal
  a| 
 ノードに対する読み取り処理の実行に費やされた合計時間の単調増加値。

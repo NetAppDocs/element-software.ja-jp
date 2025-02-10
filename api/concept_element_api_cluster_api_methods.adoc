@@ -19,6 +19,7 @@ Element ソフトウェアクラスタ API メソッドを使用すると、ス�
 * xref:reference_element_api_clearclusterfaults.adoc[ClearClusterFaults]
 * xref:reference_element_api_createclusterinterfacepreference.adoc[CreateClusterInterfacePreference]
 * xref:reference_element_api_deleteclusterinterfacepreference.adoc[DeleteClusterInterfacePreference の値]
+* xref:reference_element_api_disablefeature.adoc[無効な機能]
 * xref:reference_element_api_enablefeature.adoc[EnableFeature]
 * xref:reference_element_api_getclustercapacity.adoc[GetClusterCapacity]
 * xref:reference_element_api_getclusterfullthreshold.adoc[「 getClusterFullThreshold 」]

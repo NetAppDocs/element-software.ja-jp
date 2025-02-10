@@ -451,8 +451,6 @@
   <block id="4a3ccd34d84d8d5dcf651bea4f92dde6" category="list-text"><block ref="4a3ccd34d84d8d5dcf651bea4f92dde6" category="inline-link-rx"></block></block>
   <block id="feaf808951dafefbf9943700efdb4315" category="inline-link">以前のバージョン用の SolidFire および Element ソフトウェアドキュメントセンター</block>
   <block id="049adc1802f0210729234e1fe80d95e6" category="list-text"><block ref="049adc1802f0210729234e1fe80d95e6" category="inline-link-rx"></block></block>
-  <block id="c93817bbfc3fab71f5f7ca740a11c847" category="inline-link">NetApp HCI のリソースページ</block>
-  <block id="bc218e71c18c2f809dffb10d3bc2a6e8" category="list-text"><block ref="bc218e71c18c2f809dffb10d3bc2a6e8" category="inline-link-rx"></block></block>
   <block id="148da2fc8997120fa9c4ae723fb03eb1" category="summary">Active IQ は、クラスタ全体のデータの履歴ビューを提供する Web ベースのツールです。ビューは定期的に更新されます。特定のイベント、しきい値、または指標にアラートを設定できます。Active IQ を使用すると、システムのパフォーマンスと容量を監視し、クラスタの健常性を常に把握できます。</block>
   <block id="c9618f4b15d53501dee68300c1517890" category="doc">SolidFire Active IQ の略</block>
   <block id="7d640bfdd148f102df423b6e94b11571" category="paragraph"><block ref="15098cd863d8945571eb3fa1cb63a7fe" category="inline-link-rx"></block> は、クラスタ全体のデータの履歴ビューを提供する Web ベースのツールです。ビューは定期的に更新されます。特定のイベント、しきい値、または指標にアラートを設定できます。SolidFire Active IQ を使用すると、システムのパフォーマンスと容量を監視し、クラスタの健常性を常に把握できます。</block>
@@ -2246,7 +2244,6 @@
   <block id="026348f9f6e3dc829e365625c33c007a" category="list-text">ノードの詳細を確認します。</block>
   <block id="8511241aabf0b5b22a6ec0f33205020a" category="list-text">* Node ID * ：システムによって生成されたノードの ID 。</block>
   <block id="11340b9f0ba088ec3cf2083a21132d99" category="list-text">* Node Name * ：ノードのホスト名。</block>
-  <block id="0ee99b520b4502ffd981cfc386b7a410" category="list-text">* 使用可能な 4k IOPS * ：ノードに設定されている IOPS 。</block>
   <block id="2e08da9f1b8a2b955bb7528232c66123" category="list-text">* Node Role * ：クラスタ内でのノードのロール。有効な値は次のとおり</block>
   <block id="5b677361708b3a9e7ae889385ded1639" category="list-text">Cluster Master ：クラスタ全体の管理タスクを実行し、 MVIP と SVIP を含むノード。</block>
   <block id="e6897c8bbde08136163ed91dd0933239" category="list-text">Ensemble Node ：クラスタに参加するノード。クラスタのサイズに応じて、 3 つまたは 5 つのアンサンブルノードがあります。</block>
@@ -4338,7 +4335,6 @@
   <block id="72e1f4df2e744d26601b11dcae2de156" category="inline-link-macro">ストレージネットワークインターフェイスコントローラ（ NIC ）の設定</block>
   <block id="585629174bd7d07bea958ff023cef12f" category="admonition">ストレージトラフィックを分離するために NIC を追加する必要がある場合は、別の NIC の設定手順を参照してください。 <block ref="3a94a0bfa09a6011bad07afa39abc05f" category="inline-link-macro-rx"></block>。</block>
   <block id="2f81f1b5bf706c50ec3a59d0de214061" category="section-title">時刻同期を設定します</block>
-  <block id="dfa921e1a8d1ecc5798d976447ec498d" category="list-text">NTP を使用して管理ノードとストレージクラスタの間で時刻が同期されていることを確認します。</block>
   <block id="95f677ec3d6290caa67730d5209b4cc2" category="list-text">SSH またはハイパーバイザーが提供するコンソールを使用して、管理ノードにログインします。</block>
   <block id="5c64c907c80a4eaf523f296d26d13989" category="list-text">NTPD を停止：</block>
   <block id="5c6c4538d95e26d538800e50027bee98" category="list-text">NTP 構成ファイル /etc/ntp.conf を編集します</block>
@@ -4538,14 +4534,9 @@
   <block id="7e6093e52119f18464fc862a969c9f6a" category="admonition">IPv6 のサポートが必要な場合は、管理ノード 11.1 を使用してください。</block>
   <block id="9385b032418674e92472a8b4a2ae5cdf" category="list-text">（管理ノード 12.0 以降にプロキシサーバを使用） NetApp Hybrid Cloud Control を管理サービスバージョン 2.16 に更新してから、プロキシサーバを設定しておきます。</block>
   <block id="0406c3e25004e3d1dddbc367d2c4010f" category="paragraph">Element 12.2 管理ノードはオプションのアップグレードです。既存の環境では必要ありません。</block>
-  <block id="c92609be7302c756d6d918553df475c1" category="list-text"><block ref="d9e86326331a25418b718094ae602c19" category="inline-xref-macro-rx"></block></block>
-  <block id="0267f7e06220d0fa6fb42578b5746da3" category="list-text"><block ref="b41cb2f7bd156a4035cdf9347b89cebe" category="inline-xref-macro-rx"></block></block>
   <block id="12b8893b065179b6b80fdc2d448862df" category="inline-link-macro">Element ソフトウェア</block>
-  <block id="e43f2538484fde027e53efbedb634fce" category="list-text">から、インストール環境に対応した OVA または ISO をダウンロードします <block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block> ネットアップサポートサイトのページを参照してください。</block>
   <block id="d8f671f04a7ff090ddfc9b80caaf4c67" category="list-text">（オプション）ストレージクラスタへの管理ネットワークアクセスが可能な仮想ネットワークインターフェイス × 1ストレージクラスタが管理ノード（ eth0 ）とは別のサブネット上にある環境で永続ボリュームを使用する場合は、ストレージサブネット（ eth1 ）上の VM に 2 つ目のネットワークインターフェイスコントローラ（ NIC ）を追加するか、管理ネットワークからストレージネットワークへルーティング可能なことを確認します。</block>
-  <block id="f894cbc944582e1f10fec4bf2a0639f0" category="section-title">管理ノード管理者を作成し、ネットワークを設定</block>
   <block id="148f57c4f729acea3c3d95b35553a056" category="list-text">追加するデフォルトのタイムサーバごとに新しい行を追加します。デフォルトのタイムサーバは、同じ NTP サーバである必要があります で使用するストレージクラスタで使用します A <block ref="1d132a4516f2aafec8e6c256f33f26a5" category="inline-link-macro-rx"></block>。</block>
-  <block id="627bbdc5a7179606b85a5d6ccb6f65e1" category="section-title">管理ノードをセットアップ</block>
   <block id="5a808c62f4f9557c4df556d6a230ba7c" category="list-text">管理ノードのセットアップコマンドを設定して実行します。</block>
   <block id="fea104dd45bc0e75d821ddd5af2b02d0" category="admonition">内はコマンドの省略名で、正式な名前の代わりに使用できます。</block>
   <block id="3f124867257c579e7ba689baed3d4f45" category="list-text">* --mnode_admin_user （ -mu ） [username] * ：管理ノードの管理者アカウントのユーザ名。一般には、管理ノードへのログインに使用したユーザアカウントのユーザ名です。</block>
@@ -4569,7 +4560,6 @@
   <block id="aabee241823de4ff993b60d0a196a387" category="list-text">（オプション）各パラメータに関する追加情報が必要な場合は、 help パラメータを使用します。</block>
   <block id="f89c180fd45cb0275c5ee18e59d2b43d" category="list-text">*--help(-h)*: 各パラメータに関する情報を返します。パラメータは、初期導入時に必須またはオプションとして定義します。アップグレードと再導入ではパラメータの要件が異なる場合があります。</block>
   <block id="79032d0c879c3afbbb570dd870eb09e1" category="list-text">「 etup-mnode 」コマンドを実行します。</block>
-  <block id="7ea2768c656768f853cd68b9066eba0f" category="section-title">コントローラアセットを設定する</block>
   <block id="4240350efa82cb4b2d0dcd00f64f496b" category="list-text">インストール ID を確認します。</block>
   <block id="81b4d8ce3b6d3d31bcc065c5589192ab" category="list-text">ブラウザから、管理ノードの REST API UI にログインします。</block>
   <block id="ed4faf2b135a0f2d74eef06f6fd8899e" category="list-text">ストレージの MVIP にアクセスしてログインします。次の手順で証明書が承認されます。</block>
@@ -4995,8 +4985,6 @@
   <block id="d96582c3f212610cf7055d8271768eca" category="section-title">サポートの利用方法</block>
   <block id="fafbd33c2f1cdd1118f85f84cad94af8" category="inline-link">Element のデモノードフォーラム</block>
   <block id="c6516efb376ed4862c892de563e8a139" category="paragraph">Element デモノードは、ベストエフォート型のボランティアベースで利用できます。サポートについては、に質問を投稿してください<block ref="6e0224cc6824a2d452acedae452da9b1" category="inline-link-rx"></block>。</block>
-  <block id="b0cda36836b6d8e27c36c8d9d6b48f3a" category="inline-link">SolidFire オールフラッシュストレージのリソースページ</block>
-  <block id="a980426853b5ccc1de52aeb0b0ae0463" category="list-text"><block ref="a980426853b5ccc1de52aeb0b0ae0463" category="inline-link-rx"></block></block>
   <block id="e44e873b1562276992051bf0eec8c7e2" category="summary">Element ソフトウェアの導入に役立つリソースとツールをご紹介します。</block>
   <block id="62bdbe048d174b559cb770f9ebaf0895" category="doc">ぜひお試しください</block>
   <block id="6f5f86920704a5057edeb4c22758bd87" category="inline-link">Element によるプライベートクラウドストレージの柔軟性に関するラボオンデマンド（ログインが必要）</block>
@@ -8493,10 +8481,6 @@
   <block id="d5ca0cd6f152369af358915f6c3a2a53" category="doc">GetFeatureStatus の順にクリックします</block>
   <block id="5fe0920c9761a6b3a87a1bbfa4bb9caa" category="paragraph">GetFeatureStatus メソッドを使用すると、クラスタ機能のステータスを取得できます。</block>
   <block id="1a11a5dbdb3a36b6daa4510ffff8ca04" category="paragraph">クラスタ機能のステータス。値を指定しない場合は、すべての機能のステータスが返されます。有効な値は次のとおり</block>
-  <block id="fd92c1c5cef8e392199a662567e717aa" category="list-text">vvols ： VVol クラスタ機能のステータスを取得します。</block>
-  <block id="5e345bcbaddcc57a5f3ac0fed5034dec" category="list-text">SnapMirror ： SnapMirror レプリケーションクラスタ機能のステータスを取得します。</block>
-  <block id="dda284e7bd1ad4ea16811e634581811f" category="list-text">fips ： HTTPS 通信の FIPS 140-2 暗号化機能のステータスを取得します。</block>
-  <block id="26ec8711a6e8d05f3d325ea4fa66c869" category="list-text">fipsDrives ： FIPS 140-2 ドライブ暗号化機能のステータスを取得します。</block>
   <block id="9f034b63948763d489f944319c2eb3de" category="paragraph">の機能</block>
   <block id="215ee6aa91837f28e7d05a1a6faafac5" category="paragraph">機能名とそのステータスを示す機能オブジェクトの配列。オブジェクトメンバーは次のとおりです</block>
   <block id="fcc7ebdd91e5bb840d6f95a4e3b0fc28" category="list-text">feature ：（文字列）機能の名前。</block>
@@ -9473,8 +9457,6 @@
   <block id="6b194904c32ac4b3629f472ddb325eff" category="paragraph">レプリケート中のボリュームのサイズを拡張する必要がある場合は、レプリケーションエラーを回避するために次の手順で実行します。</block>
   <block id="7fd604d5a16d58c4f2811b923ad7877f" category="paragraph">ボリュームに許可するアクセス。有効な値は次のとおり</block>
   <block id="00b1983df56a7fa830315720c415311e" category="paragraph">ボリュームを再割り当てするアカウント ID 。指定しない場合は、以前のアカウント名が使用されます。</block>
-  <block id="3c1a8d9bd4749cfbde8131745b6b686a" category="list-text">true ： QoSPolicy パラメータで指定された QoS ポリシーにボリュームを関連付けます。</block>
-  <block id="668b0f5def0f280a60f397b286c359d0" category="list-text">false ： QoSPolicy パラメータで指定された QoS ポリシーにボリュームを関連付けない。false の場合、 QoSPolicy パラメータで QoS ポリシーを指定したかどうかに関係なく、既存のポリシーの関連付けが削除されます。</block>
   <block id="b8449546ce80375e233d72eb2aadd3c3" category="paragraph">ボリュームの新しい QoS 設定。指定しない場合、 QoS 設定は変更されません。有効な値は次のとおり</block>
   <block id="6d7a4b5dd6075716aa9f5f029e137fe9" category="paragraph">ボリュームの新しいサイズ（バイト）。1 、 000 、 000 、 000 は 1GB に相当します。サイズは最も近い MB 単位に切り上げられます。このパラメータは、ボリュームのサイズを拡張する場合にのみ使用できます。</block>
   <block id="db0bd6d885921bd5ff8fa3a1cedbd136" category="paragraph">変更するボリュームの ID のリスト。</block>
@@ -10266,7 +10248,6 @@
   <block id="51aa09599efde7b5f904971077e61890" category="list-text">[[[[suf_recover_config_time_sync]] ハイパーバイザーを使用したホストとの時間同期を無効にします（ VMware の例を次に示します）。</block>
   <block id="2402451989cd172cbc3b634b598a7bf7" category="inline-xref">再導入コマンド</block>
   <block id="f495ed37a1bc23c35eb85ae7536b34f8" category="admonition">の実行時は NTP に影響するため、時刻の同期設定の完了後は NTP を編集しないでください <block ref="09beec75f3bf74c9ec51917f2b1066ff" category="inline-xref-macro-rx"></block> 管理ノード。</block>
-  <block id="26e6608a1d4408ec1913111c30b06508" category="admonition">Element 12..1 以降では、手順（ a ） ～ （ e ）が自動的に実行されます。管理ノード 12..1 の場合は、に進みます <block ref="745b7d927b75ef73b131f4d1b2da0731" category="inline-xref-macro-rx"></block> 時刻同期の設定を完了します。</block>
   <block id="e7538fbaab3148e24ff8ae41d09df5ce" category="list-text">[[[[suf_install_config_time_sync]] ハイパーバイザーを介したホストとの時間同期を無効にします（ VMware の例を次に示します）。</block>
   <block id="2d80cb22364fea2daaca797ae1d938cb" category="inline-link-macro">Setup コマンド</block>
   <block id="a482c646f7f8199c69090c0d13cac33b" category="admonition">の実行時は NTP に影響するため、時刻の同期設定の完了後は NTP を編集しないでください <block ref="418ec8b5cff4068b256dfd7e9fc5ded7" category="inline-link-macro-rx"></block> 管理ノード。</block>
@@ -10952,8 +10933,6 @@
   <block id="a4f0b4cd8ed43da899bf23d0cc006ec8" category="inline-link-macro">ストレージファームウェアバンドル 2.146 に関する注意事項</block>
   <block id="7a0a6b8351b186d782f2b5b12a09f9d1" category="list-text"><block ref="7a0a6b8351b186d782f2b5b12a09f9d1" category="inline-link-macro-rx"></block></block>
   <block id="fde51f20c5d4f2642518536389dc9ca9" category="list-text"><block ref="fde51f20c5d4f2642518536389dc9ca9" category="inline-link-macro-rx"></block></block>
-  <block id="3ab5d74afdff3156333304ac18ad1977" category="paragraph">この手順を実行する前に、を理解しておく必要があります <block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block> 使用するかどうかを指定します。永続ボリュームはオプションですが、仮想マシン（ VM ）が失われた場合の管理ノードの設定データのリカバリには推奨されます。</block>
-  <block id="2ef294393b47ae9f1c9dee1f319efb0d" category="list-text"><block ref="bf7a9c417954187cdc8487e05cd6fa32" category="inline-xref-macro-rx"></block></block>
   <block id="bb79fe0e6bf117510635c505cc16e74d" category="list-text">次の構成でハイパーバイザーから新しい 64 ビットの VM を作成します。</block>
   <block id="4aec8fb7a6a9c5631ebb25a7b86d9ac5" category="admonition">この手順 の以降の手順で指示があるまでは、 VM の電源をオンにしないでください。</block>
   <block id="1632315c8463eb1e9d1b980297d68c37" category="list-text">ISO を VM に接続し、 .iso インストールイメージでブートします。</block>
@@ -11071,8 +11050,6 @@
   <block id="88935f8e32d3f781d70b8758aacc2e03" category="paragraph">クラスタにまだ追加されていないノードについて、基本的なトラブルシューティングを実行できます。sfreadonlyシステムアカウントは、ネットアップサポートの有無に関係なく使用できます。管理ノードを設定している場合は、SSHに使用し、このタスクに提供されたスクリプトを実行できます。</block>
   <block id="39d7e3e1db072701b357f9d1235c66dc" category="list-text">SSHクライアントがインストールされているWindows、Linux、またはMacマシンで、ネットアップサポートから提供されたシステムに適したスクリプトを実行します。</block>
   <block id="326d0c521ea9c5fcd0fc04bacc22d618" category="list-text">ノードIPへのSSH接続：</block>
-  <block id="a83404b3b2ca8b3c39459b719d7844d7" category="inline-link">NetApp HCI のリソースページ</block>
-  <block id="efb3497df51898324a04d1329dc9b9ae" category="list-text"><block ref="efb3497df51898324a04d1329dc9b9ae" category="inline-link-rx"></block></block>
   <block id="b727b29e2e84d57f6040d22db60d4f2e" category="admonition">Element 12..1以降では、手順（a）～（e）が自動的に実行されます。管理ノード12.3.1以降の場合は、に進みます <block ref="e7aead760c231b389589c93842d555c1" category="inline-xref-macro-rx"></block> 時刻同期の設定を完了します。</block>
   <block id="dce49007d1d10ccadf332bd86146cba7" category="list-text"><block ref="dce49007d1d10ccadf332bd86146cba7" category="inline-link-macro-rx"></block></block>
   <block id="d15380f01867fb0f66a13165a708bf5c" category="inline-link-macro">Elementソフトウェア12.5の場合の注意</block>
@@ -11279,11 +11256,7 @@
   <block id="139691973eba994346784166c2abe4d8" category="cell">最新のファームウェアを搭載したSolidFire およびNetApp Hシリーズのすべてのノード^3^</block>
   <block id="f8d237cd828d649cb8579bc85ca63755" category="inline-link">SolidFire ストレージノードでサポートされるストレージファームウェアのバージョン</block>
   <block id="05b5a3d236fa2bfaecf9efbeb480af88" category="paragraph">Element 12.5以降、「sfreadonly」は新しいシステムアカウントであり、ノード上での基本的なトラブルシューティングを可能にします。このAPIでは、クラスタ内のすべてのノードで「sfreadonly」システムアカウントを使用したSSHアクセスが有効になります。</block>
-  <block id="482c14e23170c54f9df57d397733d7af" category="doc">Elementソフトウェア12.5以降の新機能</block>
-  <block id="5267888908e1548e1d5846f51c92bac9" category="paragraph">ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。Element 12.7は最新リリースで、セキュリティおよびシステムコンポーネントのアップデート、運用の改善、および解決済みの問題が含まれています。</block>
-  <block id="31433f4c595cf82b6f9b0654fe86c038" category="admonition">ソフトウェアとファームウェアの累積更新は、ストレージクラスタで実行されているElementの現在のバージョンに基づいて、Element 12.7のアップグレードの一環としてインストールされます。たとえば、クラスタでElement 12.3.xが実行されている場合は、Element 12.7に直接アップグレードして、Element 12.5と12.7の両方から累積的な更新を取得できます。サポートされるアップグレードパスについては、こちらを参照してください<block ref="5d2488aae82cc199977a2b418e4bfb0b" category="inline-link-rx"></block></block>
   <block id="7a5d44771145d6289118d595153e9a0f" category="section-title">要素12.7</block>
-  <block id="c5955a73b2634f54a283c2c1c11a5f00" category="paragraph">Element 12.7の新機能の詳細をご確認ください。</block>
   <block id="e1aa603edc6a21750a2c4f3ad4c5c6fe" category="section-title">セキュアCHAPアルゴリズム</block>
   <block id="7d8047866d4cd4b945792113fe0aef7e" category="paragraph">Element 12.7には、セキュアなFIPS準拠のChallenge-Handshake Authentication Protocol（CHAP）アルゴリズムSHA1、SHA-256、SHA-256がサポートされています。 <block ref="b6cad66d2ee175f758d394e0154cb07f" category="inline-link-macro-rx"></block>。</block>
   <block id="3dd61b40b979f11e2f99dcbda82fabe4" category="section-title">ダイナミックブロック（BIN）の同期レート</block>
@@ -11331,8 +11304,6 @@
   <block id="80736a9fd1a5cd3a0f3c3ef7e8c627c1" category="cell">Element 12.0</block>
   <block id="3d6ac36552702d0a682fac26d1841715" category="summary">SolidFire ストレージシステムでは、テナントはアカウントを使用して、クライアントがノード上のボリュームに接続できるようにすることができます。アカウントには、そのアカウントに割り当てられているボリュームへのアクセスに必要な CHAP 認証が含まれています。ボリュームは、作成時に特定のアカウントに割り当てられます。</block>
   <block id="adf63029757917f4aff07fe55725e5d9" category="section-title">CHAPアルゴリズム</block>
-  <block id="3b2569fbd052a233a8a46886c97fc207" category="paragraph">Element 12.7以降では、FIPS準拠のセキュアなCHAPアルゴリズムSHA1、SHA-256、およびSHA3-256がサポートされています。Element 12.7では、ホストiSCSIイニシエータがElement iSCSIターゲットを使用してiSCSIセッションを作成している場合、使用するCHAPアルゴリズムのリストを要求します。ElementのiSCSIターゲットは、ホストのiSCSIイニシエータが要求したリストから、最初にサポートするアルゴリズムを選択します。ElementのiSCSIターゲットが最もセキュアなアルゴリズムを選択することを確認するには、ホストのiSCSIイニシエータを設定して、最もセキュアなアルゴリズム（SHA-256など）から最もセキュアでないアルゴリズムのリストを送信する必要があります。たとえば、次のようになります。 SHA1またはMD5。ホストのiSCSIイニシエータからSHAアルゴリズムが要求されない場合は、ホストから提示されたアルゴリズムのリストにMD5が含まれていれば、Element iSCSIターゲットによってMD5が選択されます。セキュアなアルゴリズムのサポートを有効にするために、ホストのiSCSIイニシエータ設定の更新が必要になる場合があります。</block>
-  <block id="b8bb97697b35e86a4877aef90f591533" category="paragraph">Element 12.7のアップグレード時に、ストレージノードの再起動時に、SHAアルゴリズムを含むリストを含むセッション要求を送信するようにホストiSCSIイニシエータ設定がすでに更新されている場合は、 新しいセキュア・アルゴリズムがアクティブ化され、最もセキュアなプロトコルを使用して、新規または再接続されたiSCSIセッションが確立されます。アップグレード時に、既存のすべてのiSCSIセッションがMD5からSHAに移行します。SHAを要求するためにホストiSCSIイニシエータの設定を更新しない場合、既存のiSCSIセッションでは引き続きMD5が使用されます。ホストのiSCSIイニシエータCHAPアルゴリズムをあとで更新したあと、iSCSIセッションは、iSCSIセッションの再接続になるメンテナンス作業に基づいて、時間の経過とともにMD5からSHAに徐々に移行する必要があります。</block>
   <block id="db6cb10180fa1523938da319a188d13d" category="paragraph">たとえば、Red Hat Enterprise Linux（RHEL）8.3のデフォルトのホストiSCSIイニシエータでは、「node.session.auth.chap_algs = SHA3-256、SHA256、SHA1、MD5」の設定がコメントアウトされており、iSCSIイニシエータではMD5が使用されています。ホストでこの設定のコメントを解除し、iSCSIイニシエータを再起動すると、そのホストからのiSCSIセッションがSHA-256を使用し始めるようになります。</block>
   <block id="55fc627721522ae45305c9f988153a20" category="paragraph">必要に応じて、を使用できます<block ref="06aa6b6b67e008146e7c8d6417794b62" category="inline-link-rx"></block> 各セッションで使用されているCHAPアルゴリズムを確認するためのAPIメソッド。</block>
   <block id="197daf7bc8c465056c36b92f2d586989" category="paragraph">Elementソフトウェアのバージョンによっては、次のノードがサポートされません。</block>
@@ -11361,9 +11332,6 @@
   <block id="54c78d15a850ddddfc9da22742280908" category="list-text">*エンドユーザライセンス契約（EULA）*：管理サービス2.20.69以降では、NetApp Hybrid Cloud ControlのUIまたはAPIを使用してElementストレージの健全性チェックを実行する前に、EULAに同意して保存する必要があります。</block>
   <block id="62449609bcf95f48fbdbae6dddedcc19" category="list-text">*エンドユーザライセンス契約（EULA）*：管理サービス2.20.69以降では、NetApp Hybrid Cloud Control UIまたはAPIを使用してElementソフトウェアをアップグレードする前に、EULAに同意して保存する必要があります。</block>
   <block id="d6802e127914e53f73aa2f2db8cb5e44" category="paragraph">管理サービス2.20.69以降では、NetApp Hybrid Cloud ControlのUIまたはAPIを使用して管理サービスをアップグレードする前に、エンドユーザライセンス契約（EULA）に同意して保存する必要があります。</block>
-  <block id="33d4cce2372c2f81af75e357ed402fe5" category="paragraph">^3^ Element 12.7以降、SF2405およびSF9608ストレージノード、FC0025およびSF-FCN-01 FCノードはサポートされていません。これらのノードのいずれかをElement 12.7にアップグレードしようとすると、このノードがElement 12.7でサポートされていないことを示すエラーが表示されます。</block>
-  <block id="eb354756273b461b7f8b4d3abc6ac150" category="paragraph">これらのノードのいずれかをサポート対象外のバージョンにアップグレードしようとすると、Element 12.xでサポートされていないことを示すエラーが表示されます</block>
-  <block id="ab23337415270010383937ce784cb519" category="list-text">Element 12.7以降では、SF2405およびSF9608ストレージノード、FC0025およびSF-FCN-01 FCノードはサポートされていません。これらのノードのいずれかをElement 12.7にアップグレードしようとすると、このノードがElement 12.7でサポートされていないことを示すエラーが表示されます。</block>
   <block id="b2466e723f3725978ed96accd95013ae" category="paragraph">スロット 0 には、ノードのメタデータドライブが格納されます。スロット 0 のドライブを交換する場合は、交換用ドライブの梱包用の箱に入っていたステッカーを貼り、他のドライブとは区別できるようにする必要があります。</block>
   <block id="eb66a5e31d8328246fdb5497ed40a7a4" category="inline-link">『Storage Firmware Bundle 2.164.0 Release Notes』を参照してください</block>
   <block id="134e2a3d5f4b8b65c064815f605c76e6" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block></block>
@@ -11934,10 +11902,6 @@
   <block id="f814466eb9bcf561b354422b41f381f3" category="summary">システムをリモートで管理し、データセンターの外部のクライアントがリソースに接続できるようにするには、データセンターのエッジファイアウォールで次のTCPポートを許可する必要があります。システムの使用方法によっては、一部のポートは不要な場合もあります。</block>
   <block id="c04c3f3380a29245247f6e8a6c77a880" category="paragraph">システムをリモートで管理し、データセンター外部のクライアントがリソースに接続できるようにするには、データセンターのエッジファイアウォールで次のTCPポートとUDPポートを許可する必要があります。システムの使用方法によっては、一部のポートは不要な場合もあります。</block>
   <block id="5858de35bb153f56bdb4f3fbd003b515" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block></block>
-  <block id="591c130bf36c26fe5946fac7eeba4c11" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block>エンテーション]</block>
-  <block id="710206b65e21ddd5a34f739582fb411f" category="paragraph">Element 12.5では、ストレージノードへのアクセスの向上、カスタムの保護ドメインの管理性の強化、クラスタの障害とイベントの新規作成と改善、クラスタ作成UI機能の強化、セキュリティの強化が導入されています。</block>
-  <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">アップグレードパッケージのアップロードエラーが原因でSolidFireとHCIのアップグレードを開始できない</block>
-  <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">2023年11月以降、署名キー証明書（プライベートおよびパブリック）の有効期限が2023年11月5日に切れたため、NetApp Hybrid Cloud ControlまたはREST APIを使用してコンポーネントのアップグレードを開始することはできません。この問題を解決するには、ナレッジベースの記事に記載されている回避策を参照してください。<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
   <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">を使用できます<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> クラスタの一部であるドライブをプロアクティブに削除する方法。このメソッドは、クラスタの容量を減らしたり、サービス寿命の終わりに近づいているドライブの交換準備を行ったりするときに使用できます。<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> クラスタ内の他のノードにブロックデータの3つ目のコピーを作成し、同期が完了するのを待ってからドライブを「使用可能」のリストに移動します。[使用可能]リストのドライブはシステムから完全に削除され、実行中のサービスやアクティブデータはありません。</block>
   <block id="f9beecbb3d1ea8584ca694bab8a73de7" category="sidebar">ストレージノードでサポートされるファームウェアバージョン</block>
   <block id="13917e4f5287cba6dc668dc1de806783" category="paragraph">JSONオブジェクト形式の名前と値のペアのリスト。 <block ref="65c96e1c78eaa97668865607183bf923" category="inline-link-macro-rx"></block>。</block>
@@ -11982,9 +11946,6 @@
   <block id="1791fd435a83f3ee701165e29bb05b2f" category="list-text"><block ref="1791fd435a83f3ee701165e29bb05b2f" category="inline-link-rx"></block></block>
   <block id="30486cdfdde2444e4151845599ac5bf5" category="inline-link">Element 12.5のドキュメント</block>
   <block id="7923ddc778825f970802562c563718d7" category="list-text"><block ref="7923ddc778825f970802562c563718d7" category="inline-link-rx"></block></block>
-  <block id="cafb4d76dc2f8321d0134957e0bf3f5d" category="sidebar">SolidFire オールフラッシュストレージシステムは、ドライブやノードなどのハードウェアコンポーネントで構成され、これらのコンポーネントをストレージリソースのプールに統合します。これらのストレージリソースクラスタは、Elementインターフェイス、API、またはその他の管理ツールを使用してNetApp Elementソフトウェアで管理できます。このサイトには、Elementソフトウェアのドキュメントがあります。</block>
-  <block id="ab8cbf6e7f3310f1970fbef383696645" category="sidebar">SolidFire およびElementソフトウェア12.7のドキュメント</block>
-  <block id="f46f40c99ef0e96fdc79a2f007e1939a" category="sidebar">SolidFireおよびElementソフトウェアのドキュメント12.7</block>
   <block id="6580584049ef8cc78e6be1833466e606" category="inline-link-macro">NetApp ElementソフトウェアとONTAP間のレプリケーション（ONTAP CLI）</block>
   <block id="9051badc24841b5e2521cd8790e8f7d8" category="paragraph">詳細については、を参照してください <block ref="5aaa67c40a6461657bd1345524045131" category="inline-link-macro-rx"></block>。</block>
   <block id="39f2369f3b77569b78b2438bb261689c" category="summary">デスティネーションボリュームを書き込み可能にしたら、ボリュームをデータアクセス用に設定する必要があります。ソースボリュームが再アクティブ化されるまで、SANホストはデスティネーションボリュームのデータにアクセスできます。</block>
@@ -12277,11 +12238,135 @@
   <block id="878e10f3ecb83396704ecc4b39ad7aa2" category="inline-link-macro">ストレージファームウェアバンドル2.182.0に関する注意事項</block>
   <block id="d087896b0989dfd81184775fcc160ca1" category="list-text"><block ref="d087896b0989dfd81184775fcc160ca1" category="inline-link-macro-rx"></block></block>
   <block id="c4891769f65182d5fc5a37494844c496" category="inline-link">『 vCenter Plug-in 5.4 Release Notes 』を参照してください</block>
-  <block id="230e88f97688d3fb971fe1a76f5b2a13" category="list-text"><block ref="912995e99772bb097b2c7b32940725bb" category="inline-link-rx"></block>新規_</block>
   <block id="ce90fd614158a5c7e0a42a5908fa1cd7" category="list-text"><block ref="ce90fd614158a5c7e0a42a5908fa1cd7" category="inline-link-rx"></block></block>
   <block id="6f00c58e2f26b2ef4542eb663cdb651d" category="inline-link-macro">管理サービス2.26.30（NetApp Element Plug-in for VMware vCenter Server 5.4.1）に関するお知らせ</block>
   <block id="ea3b1d5907ee8e4303c54ecc7765f0f2" category="list-text"><block ref="ea3b1d5907ee8e4303c54ecc7765f0f2" category="inline-link-macro-rx"></block></block>
   <block id="fdbd44871ecf32ab0e37e9d3c077e28a" category="list-text">Element Plug-in for vCenter Server 5.4、5.3、5.2、5.1、または5.0にアップグレードする。</block>
   <block id="ec584e493ebc5976220074c48288215d" category="summary">レプリケーション関係を作成する前に、SnapMirrorエンドポイントを作成する必要があります。このタスクは、ElementソフトウェアWeb UIまたはAPIメソッドでのみ実行できます。</block>
   <block id="a1d54a55e83901cd25e5b3724d5ca5e5" category="summary">レプリケーション関係を作成する前に、ElementクラスタでSnapMirrorを有効にする必要があります。このタスクは、ElementソフトウェアWeb UIまたはAPIメソッドでのみ実行できます。</block>
+  <block id="5f974f5b5837f6beacdf509a09ac0df9" category="paragraph">^3^次のノードはサポートされていません。次のいずれかのノードをサポート対象外のElementバージョンにアップグレードしようとすると、Element 12.xでサポートされていないことを示すエラーが表示されます。</block>
+  <block id="5d58ca5bc208ae8a2b2dccd548e30ae3" category="list-text">Element 12.8、SF4805、SF9605、SF19210、およびSF38410ストレージノード以降。</block>
+  <block id="69da7b5a3b37b70e629a477452983e5d" category="summary">DisableFeatureメソッドを使用すると、VolumeLoadBalanceOnActualIOPSを無効にできます。</block>
+  <block id="e0d42ad7a0a546483523eee990c4c722" category="doc">無効な機能</block>
+  <block id="8672fdc0f030d7ad0aaee99cc9cfdd76" category="paragraph">メソッドを使用すると、機能を無効に<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block>できます<block ref="e0d42ad7a0a546483523eee990c4c722" prefix=" " category="inline-code"></block>。<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block>デフォルトでは無効になっています。</block>
+  <block id="ef3cc95d5005ad47e31876972451919d" category="paragraph">VVolなどの別の機能を無効にしようとすると、次のエラーメッセージが表示されます。</block>
+  <block id="ca5bd77a41b5024709aa0c976742b627" category="paragraph">クラスタ機能を無効にします。有効な値：</block>
+  <block id="b1e9ed0268988420a784ad80c03e59d5" category="list-text"><block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix="" category="inline-code"></block>：最小IOPSではなく実際のIOPSでスライスバランシングを無効にします。</block>
+  <block id="e76af95319f03251bdf6c3771f39afbe" category="paragraph">12.8</block>
+  <block id="20b0ad010903f7b2d428d021e0c7d07f" category="list-text"><block ref="20b0ad010903f7b2d428d021e0c7d07f" category="inline-xref-macro-rx"></block></block>
+  <block id="e2d508b5a306e7983664021f6348fbff" category="paragraph">volumeLoadBalanceOnActualIopsState</block>
+  <block id="2f422ae686124762f34b256f66599041" category="paragraph">最小IOPS機能ではなく実際のIOPSに基づくスライスバランシングのステータス。Element 12.8以降で使用できます。</block>
+  <block id="505be3e758aee452e5c40a4250623ef3" category="cell"><block ref="16611c4971284ff4b42c5d19de7c4fc6" prefix="" category="inline-code"></block></block>
+  <block id="02d9b6b9cb591592d0f848c16ce0627a" category="inline-link-macro">VolumeLoadBalanceOnActualIOPS</block>
+  <block id="23c40fdcbdf2c33e4c5cb256f37b65d0" category="paragraph">実際のIOPSでロードバランシングを行う際にボリュームを移動しないようにします。この設定はElement 12.8以降で使用でき、が有効な場合にのみ有効です。<block ref="636ea693b7b2510b539677d0148e4233" category="inline-link-macro-rx"></block>有効な値：</block>
+  <block id="c29abafd53b30e2b89cd07dbab20364e" category="list-text"><block ref="b326b5062b2f0e69046810717534cb09" prefix="" category="inline-code"></block>：実際のIOPSに基づいてボリュームの負荷が分散されません。</block>
+  <block id="5d7a3b5e704aa7e7bf62279cc3278f01" category="list-text"><block ref="68934a3e9455fa72420237eb05902327" prefix="" category="inline-code"></block>：ボリュームは実際のIOPSに基づいて負荷を分散します。</block>
+  <block id="12d73ef73ec07c1c3f13c03403458ac4" category="paragraph">*注*：高可用性（ノード障害）のバランスは、および<block ref="16611c4971284ff4b42c5d19de7c4fc6" prefix=" " category="inline-code"></block>よりも優先され<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block>ます。</block>
+  <block id="70477f1cbb1f9b0ee1ed984e95d175c9" category="list-text"><block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix="" category="inline-code"></block>：最小IOPSではなく実際のIOPSでスライスバランシングを有効にします。Element 12.8以降で使用できます。</block>
+  <block id="51f05aff487f481c11bffc15bbc6e4b2" category="list-text"><block ref="6a4d46deeb21ef2b80060c11f49187e4" prefix="" category="inline-code"></block>：VVolクラスタ機能のステータスを取得します。</block>
+  <block id="553a63549898987796cafd553180c07b" category="list-text"><block ref="794cb725c5631ad99b5b7c000307f0df" prefix="" category="inline-code"></block>：SnapMirrorレプリケーションクラスタ機能のステータスを取得します。</block>
+  <block id="ec81003d6bad23cab3a28018beda6730" category="list-text"><block ref="db70af2af82d2621886d13d37995e481" prefix="" category="inline-code"></block>：HTTPS通信用のFIPS 140-2暗号化機能のステータスを取得します。</block>
+  <block id="cd9f39d245dd7eda6cce60f0322f58d0" category="list-text"><block ref="4223a206268b7c5a804c6b4d52900ea5" prefix="" category="inline-code"></block>：FIPS 140-2ドライブ暗号化機能のステータスを取得します。</block>
+  <block id="490aeb503dc1e4b03161fcccf4cdffc2" category="list-text"><block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix="" category="inline-code"></block>：最小IOPSではなく実際のIOPSでスライスバランシングのステータスを取得します。Element 12.8以降で使用できます。</block>
+  <block id="16611c4971284ff4b42c5d19de7c4fc6" category="paragraph">dontMoveforIopsRebalance</block>
+  <block id="4b568da388833daf83ea72e69801ba34" category="paragraph">ノードヒート</block>
+  <block id="b5c845afcfb7df2d9d7fbef7714c09a9" category="paragraph">ノード利用率の情報。Element 12.8以降で使用できます。メンバー：</block>
+  <block id="ca4488466d23621c06230504c824fb83" category="list-text">primaryTotalHeat：ノードのプライマリ合計IOPS /ノードの設定後の24時間の平均。</block>
+  <block id="9ebe3bf85a15ba77ec5b2cc4408f55d0" category="list-text">recentPrimaryTotalHeat：ノードのプライマリ合計IOPS/ノードの設定された1時間の平均IOPS。</block>
+  <block id="1d6d531f7e976462553ff19c1ec745af" category="list-text">recentTotalHeat：1時間のノードの設定されたIOPSあたりの合計IOPS。</block>
+  <block id="545f1469911d2f62c6bceead8a0c2cc8" category="list-text">TotalHeat：24時間のノードの合計IOPS /ノードの設定済みIOPSの平均</block>
+  <block id="cd10546771cf4d9146236c94201b070f" category="paragraph">sliceIopsStats</block>
+  <block id="e690e448c74acc89f30fd24eaf5cd5d5" category="paragraph">ボリュームのI/O使用率の統計。Element 12.8以降で使用できます。sliceIopsStatsに指定できる値は次のとおりです。</block>
+  <block id="c43b8cf1e5e1112e458b0a8aebe23131" category="list-text">largeStatistics：より長い期間（通常は過去24時間）に測定されたボリュームのI/O統計。</block>
+  <block id="1b11f84facc1daeaa9620b3c31f3c6d0" category="list-text">smallStatistics：より短い期間（通常は過去1時間）に測定されたボリュームのI/O統計。</block>
+  <block id="9c976e58e6bcd2d0658085166cadade3" category="paragraph">largeStatisticsおよびsmallStatisticsに指定できる値は次のとおりです。</block>
+  <block id="18cb448ab99d0b204d2b0056e16c6797" category="list-text">averageReadIops：ボリュームの平均読み取りIOPS。</block>
+  <block id="82b21b548a27fb7c5ccc9f32dd738465" category="list-text">averageTotalIops：ボリュームの平均合計（読み取り+書き込み）IOPS。</block>
+  <block id="ea7f8d6913391d8b988f31fb9efec9bc" category="list-text">averageWriteIops：ボリュームの平均書き込みIOPS。</block>
+  <block id="eaa3a19818b7f5619e46432a531d1f6a" category="list-text">nSamples：統計計算に含まれるサンプルの数。</block>
+  <block id="7fdf87eada1272182b73c768f9f29592" category="list-text">peakReadIops：統計間隔で観察された最大読み取りIOPS。</block>
+  <block id="ea1542c36a1086ca0fcd1be36c6f32c6" category="list-text">peakTotalIops：統計間隔で観察された最大合計IOPS。</block>
+  <block id="f96ed95b5509cb599aadb504ec5aa0d5" category="list-text">peakWriteIops：統計間隔で観察された最大書き込みIOPS。</block>
+  <block id="041f17de41a9f1db9829ff79ad3ef600" category="list-text">sliceID：ボリュームIDまたはスライスID</block>
+  <block id="6db7dd4182be7a1979ad403111fa8618" category="inline-link">NetApp Element ソフトウェア12.8リリースノート</block>
+  <block id="7d776811219f8ebb17adecaa976bd578" category="list-text"><block ref="53e04163346326834efd61306c0800b5" category="inline-link-rx"></block>新規_</block>
+  <block id="912995e99772bb097b2c7b32940725bb" category="list-text"><block ref="912995e99772bb097b2c7b32940725bb" category="inline-link-rx"></block></block>
+  <block id="de1923eab698e40e118f826163735ce9" category="doc">Elementソフトウェアの新機能</block>
+  <block id="95dc02f465fb1139e3e92c363bf6965b" category="paragraph">ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。Element 12.8は最新リリースで、セキュリティおよびシステムコンポーネントのアップデート、運用の改善、および解決済みの問題が含まれています。</block>
+  <block id="54c87de7f5250ba9aa116c671d66513b" category="inline-link">NetApp Elementソフトウェアを実行するストレージクラスタのアップグレードマトリックス</block>
+  <block id="cbc21275b31252cb0d62b8238bf2f7f4" category="admonition">ソフトウェアとファームウェアの累積更新は、ストレージクラスタで実行されているElementの現在のバージョンに基づいて、Element 12.8のアップグレードの一環としてインストールされます。たとえば、クラスタでElement 12.5を実行している場合は、Element 12.8に直接アップグレードして、Element 12.7と12.8の両方から累積的な更新を取得できます。サポートされているアップグレードパスについては、ナレッジベースの記事を参照して<block ref="c5b23fd17ac7c12a5a03bb47eaffc085" category="inline-link-rx"></block>ください。</block>
+  <block id="b96f7bb136ed4e13e527257ff99d9aa8" category="section-title">要素12.8</block>
+  <block id="5f3e8fa2bb7cacdfa568d72b6619b9f7" category="paragraph">Element 12.8の新機能の詳細については、こちらをご覧ください。</block>
+  <block id="de8b5a628a603f8c3af1b2f5792e68de" category="section-title">ボリュームのロードバランシング</block>
+  <block id="9a015d8a2733454aff7d7b5bed746662" category="paragraph">Element 12.8では、ボリュームロードバランシング機能が導入されています。この機能を使用すると、QoSポリシーに設定されている最小IOPSではなく、各ボリュームの実際のIOPSレベルに基づいてノード間でボリュームを分散できます。ボリュームの負荷分散機能は、ボリュームの負荷分散にのみ使用できます。仮想ボリュームのバランス調整には使用できません。ボリュームロードバランシング機能は、デフォルトでは無効になっています。この機能を有効または無効にするには、APIパラメータで<block ref="1028004a3d63b00e7896fde204286489" category="inline-link-macro-rx"></block>および<block ref="ca543ea41b9fe86f5db5c46f8401b9de" category="inline-link-macro-rx"></block>APIメソッドを使用するか、<block ref="0e280c25b1846637cc005ef57df39d27" category="inline-link-macro-rx"></block>Element UIのオプションを使用し<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block>ます。</block>
+  <block id="380221f3a88d939f31cd4269828e2920" category="section-title">ノードの利用率情報の表示</block>
+  <block id="cf1de2ea971a9d03b59178af9472d4b0" category="paragraph">Element 12.8では、および<block ref="84b7393e47ffdee1d6a06f5067a7270c" prefix=" " category="inline-code"></block>APIメソッドを使用し<block ref="f26fbe9dd2d7f06608bbf6327141caa9" prefix=" " category="inline-code"></block>て、ノードの利用率情報を表示できます<block ref="4b568da388833daf83ea72e69801ba34" prefix=" " category="inline-code"></block>。<block ref="4b568da388833daf83ea72e69801ba34" prefix=" " category="inline-code"></block>オブジェクトはオブジェクトのメンバー<block ref="d9bfbffd38f5f9686a85ef17e8138b5c" prefix=" " category="inline-code"></block>であり、一定期間の設定されたIOPSに対するプライマリの合計IOPSまたは合計IOPSの比率に基づいてノード利用率の情報が表示されます。</block>
+  <block id="75a2cb34cbc05ac90dcef2f4d04c6588" category="paragraph">また、Element UIのノードの[View Details]画面で、ノード利用率をの割合として表示することもできます<block ref="3e970dc4a731d994269545ba0dc518ab" prefix=" " category="inline-code"></block>。</block>
+  <block id="df9435e47754394c09f05283809f164d" category="section-title">ボリュームのI/O統計の表示</block>
+  <block id="3fb4d6085a8835e3addca4a9c0fbbf66" category="paragraph">Element 12.8では、および<block ref="27e97d4871384c3d242cfa858abc544a" prefix=" " category="inline-code"></block>APIメソッドを使用して、<block ref="d0d8364463968eb91608c292d6fe317a" prefix=" " category="inline-code"></block>ボリュームのI/O使用率の統計を表示できます<block ref="cd10546771cf4d9146236c94201b070f" prefix=" " category="inline-code"></block>。I/O統計は、ボリュームの読み取りIOPSと書き込みIOPSの情報を使用して計算され、過去24時間と過去1時間の2つの期間にわたって測定されます。<block ref="e0c529df1577dac200ea6d61065ab487" category="inline-link-macro-rx"></block>です。</block>
+  <block id="dfa7d479451fc6bd725c9494a87f3a6a" category="section-title">iSCSIセッションのCHAPアルゴリズム</block>
+  <block id="b7ff4d8cc30e1648a2610b037b9c5b97" category="paragraph">ホストiSCSIイニシエータは、Element iSCSIターゲットとのiSCSIセッションを作成するときに使用するChallenge-Handshake Authentication Protocol（CHAP；チャレンジハンドシェイク認証プロトコル）アルゴリズムのリストを要求します。Element 12.8以降では、Element iSCSIターゲットがiSCSIセッションに使用するように選択した、サポートされるCHAPアルゴリズムを表示できます。</block>
+  <block id="3c72afcfca67f187b816a55135a243dd" category="section-title">VMハードウェアバージョンのアップグレード</block>
+  <block id="7dba8a3f7eba09c328d90efc88b182cd" category="paragraph">既存の管理ノードをElement 12.8にインプレースアップグレードする場合は、アップグレード前に、管理ノードのVMハードウェアのバージョンがESXi 6.7（VMハードウェアバージョン14）以降に対応していることを確認する必要があります。<block ref="f415360b3de270935343c57ae74254e8" category="inline-link-macro-rx"></block>です。</block>
+  <block id="9c5d76276e21d49836999553da451b64" category="paragraph">Element 12.7の新機能の詳細については、こちらをご覧ください。</block>
+  <block id="c709a2d01de03a4c29036ff9f37c0dff" category="paragraph">Element 12.5の新機能の詳細については、こちらをご覧ください。</block>
+  <block id="ad0a505756223d68dc11afeae3459351" category="inline-link">NetApp HCI のドキュメント</block>
+  <block id="bf667c8802395357e4f080e2fcd819e4" category="list-text"><block ref="bf667c8802395357e4f080e2fcd819e4" category="inline-link-rx"></block></block>
+  <block id="f512bd2c4d2b9ed8c936fc1a75c3581e" category="paragraph">Elementソフトウェアのバージョンによっては、次のノードがサポートされません。</block>
+  <block id="c31b8aa345140496ac5200d0d80fa702" category="list-text">Element 12.7以降、SF2405およびSF9608ストレージノード、FC0025およびSF-FCN-01 FCノード。</block>
+  <block id="975648a39ca92865d807bc35f02b5984" category="inline-link-macro">Elementソフトウェア12.8のご注意ください</block>
+  <block id="2d0be4b4ba388979c4f454ae05179965" category="list-text"><block ref="2d0be4b4ba388979c4f454ae05179965" category="inline-link-macro-rx"></block></block>
+  <block id="906ea05443e4b488a42f3f06305353ee" category="paragraph">この手順を実行する前に、これらの手順を理解し、使用するかどうかを判断しておく必要があります<block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block>。永続ボリュームはオプションですが、仮想マシン（ VM ）が失われた場合の管理ノードの設定データのリカバリには推奨されます。</block>
+  <block id="6d8cd87a85946daeae42cb54aade3baa" category="section-title">手順1：ISOまたはOVAをダウンロードしてVMを導入する</block>
+  <block id="90c4d8ddd76d9f5f86c144316cec5657" category="paragraph">NetAppサポートサイトから適切なISOまたはOVAをダウンロードし、VMをインストールします。</block>
+  <block id="4aee9657f267c579c49541b5f19ca32c" category="list-text">NetAppサポートサイトのページから、インストールに対応したOVAまたはISOをダウンロードし<block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block>ます。新しいOVAには更新されたSSL証明書が含まれています。</block>
+  <block id="c6913d34fefabb7329dba971ad99632d" category="section-title">手順2：管理ノードの管理者を作成してネットワークを設定する</block>
+  <block id="8e1cc7b20e9f183452b777f8a4fb586d" category="paragraph">VMのインストールが完了したら、管理ノードのadminユーザを作成し、管理ノードのネットワークを設定します。</block>
+  <block id="5e0472334bca93d0d28d3eeaaf723518" category="section-title">ステップ3：時刻同期を設定する</block>
+  <block id="6646ab3d83d88b5b34e61e3a58b244e8" category="paragraph">管理ノードをセットアップする前に、管理ノードとストレージクラスタの時間を同期してください。</block>
+  <block id="e2a752315a25d69098c34f13da4b8c94" category="list-text">NTPを使用して管理ノードとストレージクラスタの時間が同期されていることを確認します。</block>
+  <block id="60ba6327b0772f4d0beb24ef192dcf80" category="admonition">Element 12..1以降では、手順（a）～（e）が自動的に実行されます。管理ノード12.3.1の場合は、に進み、<block ref="745b7d927b75ef73b131f4d1b2da0731" category="inline-xref-macro-rx"></block>時間の同期の設定を完了します。</block>
+  <block id="ef246c91c687e7d720eb49c5e2a4cd47" category="section-title">手順4：管理ノードをセットアップする</block>
+  <block id="9f150d20e38589485a1bb878b18c51e2" category="paragraph">コマンドを使用して管理ノードを設定し<block ref="73028873f2b0a018096b6a3d871634b5" prefix=" " category="inline-code"></block>ます。</block>
+  <block id="2cec258fd66ace0725a9af6922c80f3e" category="section-title">手順5：コントローラアセットを設定する</block>
+  <block id="b5d27a207b01cd3ca9fef9594d50836f" category="paragraph">インストールIDを確認し、vCenterコントローラアセットを追加します。</block>
+  <block id="e667096facd9382b6410238147c6bd7d" category="inline-xref-macro">ボリュームロードバランシングの有効化と無効化</block>
+  <block id="11bdcf58ce21896925e2cbc1f2174d99" category="list-text"><block ref="11bdcf58ce21896925e2cbc1f2174d99" category="inline-xref-macro-rx"></block></block>
+  <block id="6c7b496a2d02d11880156e116d65fdae" category="paragraph">これらのノードのいずれかをサポート対象外のElementバージョンにアップグレードしようとすると、ノードがElement 12.xでサポートされていないことを示すエラーが表示されます。</block>
+  <block id="b8857076c45a770e167d021272059208" category="list-text">* CHAP *</block>
+  <block id="9cfc902e020fbc18dd2aff7989d4d45f" category="paragraph">iSCSIセッションのCHAPアルゴリズム。CHAPアルゴリズムが使用されていない場合は、ダッシュ（-）が表示されます。Element 12.8以降で使用できます。</block>
+  <block id="4072b99d321d18f605cb9f09366d1668" category="paragraph">Element 12.7以降では、FIPS準拠のセキュアなCHAPアルゴリズムSHA1、SHA-256、およびSHA3-256がサポートされています。ホストiSCSIイニシエータは、Element iSCSIターゲットとのiSCSIセッションを作成するときに、使用するCHAPアルゴリズムのリストを要求します。ElementのiSCSIターゲットは、ホストのiSCSIイニシエータが要求したリストから、最初にサポートするアルゴリズムを選択します。ElementのiSCSIターゲットが最もセキュアなアルゴリズムを選択することを確認するには、ホストのiSCSIイニシエータを設定して、最もセキュアなアルゴリズム（SHA-256など）から最もセキュアでないアルゴリズムのリストを送信する必要があります。たとえば、次のようになります。 SHA1またはMD5。ホストのiSCSIイニシエータからSHAアルゴリズムが要求されない場合は、ホストから提示されたアルゴリズムのリストにMD5が含まれていれば、Element iSCSIターゲットによってMD5が選択されます。セキュアなアルゴリズムのサポートを有効にするために、ホストのiSCSIイニシエータ設定の更新が必要になる場合があります。</block>
+  <block id="b0d6e61e8313606c921c3d2b2ae7e76d" category="paragraph">Element 12.7以降のアップグレードで、ホストのiSCSIイニシエータ設定を更新してSHAアルゴリズムを含むセッション要求を送信している場合は、ストレージノードのリブート時に新しいセキュアアルゴリズムがアクティブ化され、最もセキュアなプロトコルを使用して新規または再接続されたiSCSIセッションが確立されます。アップグレード時に、既存のすべてのiSCSIセッションがMD5からSHAに移行します。SHAを要求するためにホストiSCSIイニシエータの設定を更新しない場合、既存のiSCSIセッションでは引き続きMD5が使用されます。ホストのiSCSIイニシエータCHAPアルゴリズムをあとで更新したあと、iSCSIセッションは、iSCSIセッションの再接続になるメンテナンス作業に基づいて、時間の経過とともにMD5からSHAに徐々に移行する必要があります。</block>
+  <block id="aaee41e33731b48ea709a8d86f92665f" category="summary">Element 12.8以降では、ボリュームロードバランシングを有効にして、QoSポリシーに設定されている最小IOPSではなく、各ボリュームの実際のIOPSに基づいてノード間でボリュームを分散させることができます。</block>
+  <block id="3ef41e0639b21f006f7d5de45b6ee839" category="paragraph">Element 12.8以降では、ボリュームロードバランシングを使用して、QoSポリシーに設定されている最小IOPSではなく、各ボリュームの実際のIOPSに基づいてノード間でボリュームを分散できます。ボリュームロードバランシングは、Element UIまたはAPIを使用して有効または無効にできます。これはデフォルトでは無効になっています。</block>
+  <block id="bcdaa8bc7cb207354c87d8e1232ab12f" category="list-text">[クラスタ]*&gt;*[設定]*を選択します。</block>
+  <block id="0f4c8c48f2ee6af3905e369c115e564d" category="list-text">[Cluster Specific]セクションで、ボリュームロードバランシングのステータスを変更します。</block>
+  <block id="3ad3b40ee22c1193fd89bfbd535ff89c" category="open-title">ボリュームのロードバランシングを有効にする</block>
+  <block id="fc974f059cad1de90d3d0a8283162c27" category="paragraph">[実際のIOPSでロードバランシングを有効にする]*を選択し、選択を確定します。</block>
+  <block id="f2b86d8559c9ce4d77248b1cb9564340" category="open-title">ボリュームロードバランシングを無効にします。</block>
+  <block id="3216ad57a8f2305cd9a59ab5917e54e4" category="paragraph">[Disable Load Balancing on Actual IOPS]*を選択し、選択を確認します。</block>
+  <block id="66b402adbbe6b9f984ecdcd5248bfec0" category="list-text">必要に応じて、*[レポート]*&gt;*[概要]*を選択して、実際のIOPSとのバランスのステータスの変更を確認します。ステータスを確認するために、[クラスタヘルス]の情報を下にスクロールしなければならない場合があります。</block>
+  <block id="4e5a27f88db1734e1af540886a80a4e9" category="inline-link-macro">APIを使用したボリュームロードバランシングの有効化</block>
+  <block id="3b23faa50d0cdbc4e395b29066b18b08" category="list-text"><block ref="3b23faa50d0cdbc4e395b29066b18b08" category="inline-link-macro-rx"></block></block>
+  <block id="e94e13cb2fcae56ae542775b50cc0b10" category="inline-link">APIを使用したボリュームロードバランシングの無効化</block>
+  <block id="9ffe0c15921805682448240c94ddc614" category="list-text"><block ref="9ffe0c15921805682448240c94ddc614" category="inline-link-rx"></block></block>
+  <block id="a7f635a546cbb7490b31779618511dd1" category="list-text"><block ref="a7f635a546cbb7490b31779618511dd1" category="inline-link-macro-rx"></block></block>
+  <block id="e52172b27eb39053f2941029ca952216" category="list-text">* Node Utilization *：nodeHeatに基づくノード利用率。表示される値は、recentPrimaryTotalHeatにパーセンテージで表示されます。Element 12.8以降で使用できます。</block>
+  <block id="5e8ecd2e12df03135f7d9ea0fc9f1e5e" category="list-text">* Custom Protection Domain *：ノードに割り当てられたカスタムの保護ドメイン。</block>
+  <block id="c5c29b3089afd57677f0c6e16b8f6bc1" category="inline-link-macro">管理ノードのインプレースアップグレードの実行</block>
+  <block id="870c21ddabb9d392de6b8260f26cb2bd" category="list-text">2023年11月以降、署名キー証明書（プライベートおよびパブリック）の有効期限が2023年11月5日に切れたため、NetAppハイブリッドクラウドコントロールまたはREST APIを使用してコンポーネントのアップグレードを開始することはできません。NetAppハイブリッドクラウドコントロールまたはREST APIを使用して管理サービス、Elementソフトウェア、およびストレージファームウェアをアップグレードする前に、この問題をバージョン12.8で回避することができます<block ref="3f48e72cfa47aa3f4c9b8d036d27a113" category="inline-link-macro-rx"></block>。</block>
+  <block id="155ca98fbc1ded22cd8604d6760bbd99" category="paragraph">バージョン12.8の新しい管理ノードを導入する場合は、NetApp Hybrid Cloud ControlまたはREST APIを使用して、に記載されている順序でコンポーネントのアップグレードを実行できます<block ref="c0f289a1ce14070fe1c9e60f6416d18d" category="inline-xref-macro-rx"></block>。</block>
+  <block id="1806b0c9501c3b2013932e456db5038b" category="list-text">次のノードはサポートされていません。次のいずれかのノードをサポート対象外のElementバージョンにアップグレードしようとすると、Element 12.xでサポートされていないことを示すエラーが表示されます。</block>
+  <block id="b036ebb7aa6b63db449d4df71f28c3cd" category="section-title">手順1：管理ノードのVMハードウェアバージョンをアップグレードする</block>
+  <block id="6bdecd9b5d3ab973ac36df911f986fc3" category="paragraph">既存の管理ノードをElement 12.8にインプレースアップグレードする場合は、アップグレード前に、管理ノードのVMハードウェアのバージョンがESXi 6.7（VMハードウェアバージョン14）以降に対応していることを確認する必要があります。</block>
+  <block id="da356a9209429c8cb4f06565d719d2b8" category="list-text">vSphere Web Client に vCenter Administrator としてログインします。</block>
+  <block id="7936b082e6a3d2167a2478cee0772514" category="list-text">vSphere Clientのメニューで、*[VMs]*&gt;*[Templates]*を選択します。</block>
+  <block id="ad4062bf296d686c04c351f026e2400d" category="list-text">仮想マシンを右クリックし、* Compatibility *&gt;* Upgrade VM Compatibility *を選択します。</block>
+  <block id="cf8716d5690805e881fbd8fa22fb282a" category="list-text">vSphere環境のバージョンに応じて、ESXi 6.7以降のバージョンを選択します。</block>
+  <block id="3d1c64d2c8b1e4058225a78c3ef09fa6" category="list-text">「* OK *」を選択します。</block>
+  <block id="43c3c8c2f75e6064714e6ec942f1e916" category="list-text">アップグレードが完了したら、* vSphere Clientの更新*を選択し、VMの互換性が目的のバージョンになっていることを確認します。</block>
+  <block id="6b17900bf8b7a52b1be75bbe68b2d77e" category="section-title">手順2：管理ノードをElement 12.5以降にアップグレードする</block>
+  <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">次のいずれかのアップグレードオプションを選択します。</block>
+  <block id="8c5a891df58bfda1762ec23302a952b6" category="sidebar">SolidFire オールフラッシュストレージシステムは、ドライブやノードなどのハードウェアコンポーネントで構成され、これらのコンポーネントをストレージリソースのプールに統合します。これらのストレージリソースクラスタは、Elementインターフェイス、API、またはその他の管理ツールを使用してNetApp Elementソフトウェアで管理できます。このサイトには、Elementソフトウェア12.8のドキュメントが含まれています。</block>
+  <block id="83214fe0ca2841bff645ee69075302da" category="sidebar">SolidFireおよびElementソフトウェアのドキュメント12.8</block>
 </blocks>

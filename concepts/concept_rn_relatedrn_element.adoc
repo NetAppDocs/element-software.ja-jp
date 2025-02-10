@@ -20,6 +20,7 @@ NOTE: ネットアップサポートのクレデンシャルでログインす�
 
 == NetApp Element ソフトウェア
 
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2886996["NetApp Element ソフトウェア12.8リリースノート"^]新規_
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2884468["NetApp Element ソフトウェア12.7リリースノート"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2882193["NetApp Element ソフトウェア12.5リリースノート"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2881056["NetApp Element ソフトウェア 12.3.2 リリースノート"^]
@@ -48,7 +49,7 @@ NOTE: ネットアップサポートのクレデンシャルでログインす�
 
 == vCenter Server 向け NetApp Element プラグイン
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP3330676["『 vCenter Plug-in 5.4 Release Notes 』を参照してください"^]新規_
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP3330676["『 vCenter Plug-in 5.4 Release Notes 』を参照してください"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP3316480["vCenter Plug-in 5.3リリースノート"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2886272["vCenter Plug-in 5.2リリースノート"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2885734["vCenter Plug-in 5.1リリースノート"^]
