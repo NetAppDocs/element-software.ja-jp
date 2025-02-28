@@ -6401,7 +6401,6 @@
   <block id="3c625a13e6a27d16b31373132f1450a8" category="paragraph">次にスケジューラがアクティブになったときにスケジュールを実行するかどうかを示します。true の場合、次にスケジューラがアクティブになったときにスケジュールが実行され、 false に戻ります。有効な値は次のとおり</block>
   <block id="714fceb471c374698251d925d8d05403" category="paragraph">スケジュールの一意の ID 。</block>
   <block id="3e31245b25836087aa43d5d4565230c2" category="paragraph">scheduleInfo を指定します</block>
-  <block id="29a9c6e40ddc0f47741633f0b0bd0699" category="paragraph">スケジュールに指定した一意の名前、作成した Snapshot の保持期間、 Snapshot 作成元のボリュームのボリューム ID が含まれます。</block>
   <block id="b06b56d23b646ad4c7c629956c9fb6a3" category="paragraph">スケジュールに割り当てる一意の名前。</block>
   <block id="1513d59c3808ebf74445995e1a3169e3" category="paragraph">スケジューラの種類</block>
   <block id="01223b82a664dc5c4bb0d162a44002d1" category="paragraph">現時点では、サポートされているスケジュールタイプは snapshot だけです。</block>
@@ -7905,7 +7904,6 @@
   <block id="596b858c2e5a9adba143102768b4dfd1" category="paragraph">ユーザが使用可能な IOP クレジットの合計数。ボリュームが設定された最大 IOPS に到達していない場合、クレジットは蓄積されます。</block>
   <block id="e3610a84890c0cb8e31ba5e2825ef82e" category="paragraph">クライアントキュー深度</block>
   <block id="895b9fd9bd82498f2637ee71223fca99" category="paragraph">クラスタ利用率</block>
-  <block id="53559c487d6329ff8a95081175ee8072" category="paragraph">使用中のクラスタ容量。</block>
   <block id="f6e65c6017cbd8accff3dedbaa7c9157" category="paragraph">desiredMetadataHosts</block>
   <block id="27921d101d13cbcdde780f0bf7b74051" category="paragraph">ボリュームメタデータをメタデータ（スライス）サービス間で移行する場合に移行するメタデータサービス。値「 null 」はボリュームが移行されていないことを意味します。</block>
   <block id="d6768553ce2e9167b5c9051355cc39a0" category="paragraph">遅延時間</block>
@@ -12369,4 +12367,25 @@
   <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">次のいずれかのアップグレードオプションを選択します。</block>
   <block id="8c5a891df58bfda1762ec23302a952b6" category="sidebar">SolidFire オールフラッシュストレージシステムは、ドライブやノードなどのハードウェアコンポーネントで構成され、これらのコンポーネントをストレージリソースのプールに統合します。これらのストレージリソースクラスタは、Elementインターフェイス、API、またはその他の管理ツールを使用してNetApp Elementソフトウェアで管理できます。このサイトには、Elementソフトウェア12.8のドキュメントが含まれています。</block>
   <block id="83214fe0ca2841bff645ee69075302da" category="sidebar">SolidFireおよびElementソフトウェアのドキュメント12.8</block>
+  <block id="d9a22d7a8178d5b42a8750123cbfe5b1" category="list-text">完了</block>
+  <block id="acbccd83186c34328efe61415e4f06c3" category="paragraph">iosInProgress</block>
+  <block id="efadf566bdff7cd45611bcf2ea26634b" category="paragraph">このドライブに対する実行中のI/Oの数。</block>
+  <block id="0fb9cf5f04f61bb6f1151da57ceb1ca1" category="paragraph">読み取り</block>
+  <block id="2e63b183661efd0e03c30a8933592b67" category="paragraph">このドライブに対する1秒あたりのread()呼び出しの数。</block>
+  <block id="0557cc41212e450b334e6cfd03e28356" category="paragraph">readsCombined</block>
+  <block id="2d65b6a0c4e91c801de77a9d9219d227" category="paragraph">より大きなリードに結合できる隣接セクターへのread()呼び出しの数。</block>
+  <block id="89892cc60750e3ae3839fe1bd6f0e295" category="paragraph">readMsec</block>
+  <block id="c30d492a58003b8cb74286227b4474f4" category="paragraph">読み取りに費やされたミリ秒数。</block>
+  <block id="4dcc865dcd8a0440f3e955e66928b6a9" category="paragraph">書き込み</block>
+  <block id="2723fa53100ce7b4222053e0cae1fe2a" category="paragraph">このドライブに対する1秒あたりのwrite()呼び出しの数。</block>
+  <block id="90355908c2c641db38cd1f8d115e8288" category="paragraph">書き込み結合</block>
+  <block id="dff2bd7a729604d5144c21832c60771e" category="paragraph">より大きな書き込みに結合できる隣接セクターへのwrite()呼び出しの数。</block>
+  <block id="48c52f79a065697f974edffe9baa1840" category="paragraph">書き込みミリ秒</block>
+  <block id="a104ca42a35244c8eaac66b37a617289" category="paragraph">書き込みに費やされたミリ秒数。</block>
+  <block id="cbe31e551cb8a7eda07f7c2fbae6f80b" category="list-text"><block ref="dcd44d342c90672f6b7613a3fda7d755" prefix="" category="inline-code"></block>：以前のSnapshotレプリケーションが進行中の場合に、新しいSnapshotの作成を許可するかどうかを指定します。ブール値</block>
+  <block id="e9eb5370de2e3375a67adb6b46c54033" category="list-text"><block ref="6366ebc98be76ca376a9a50b148937ea" prefix="" category="inline-code"></block>：Snapshotが保持されている時間。時間に応じて、次のいずれかの形式で表示されます。</block>
+  <block id="a284d3e41f479772896829e0c83474be" category="list-text">FIFO：スナップショットは先入れ先出し（FIFO）ベースで保持されます。空の場合、 Snapshot は無期限に保持されます。文字列</block>
+  <block id="7ed79c16ce9b38d79b10c8f36aa9049a" category="list-text">HH：mm：ss</block>
+  <block id="99eb6e1c13e9ae0bb02e022566f20121" category="paragraph">スケジュールに指定した一意の名前、作成した Snapshot の保持期間、 Snapshot 作成元のボリュームのボリューム ID が含まれます。有効な値：</block>
+  <block id="65dc2083558f47cd1151751a12c24549" category="paragraph">同期操作のタイプに応じた浮動小数点数または整数</block>
 </blocks>

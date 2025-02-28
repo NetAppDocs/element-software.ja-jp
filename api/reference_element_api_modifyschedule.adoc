@@ -182,13 +182,17 @@ scheduleID です
  a| 
 スケジュールに指定した一意の名前、作成された Snapshot の保持期間、 Snapshot 作成元のボリュームのボリューム ID 。有効な値：
 
+* enableRemoteReplication ：リモート・レプリケーションにスナップショットを含めるかどうかを指定しますブール値
+* `ensureSerialCreation`：以前のSnapshotレプリケーションが進行中の場合に、新しいSnapshotの作成を許可するかどうかを指定します。ブール値
+* `name` ：使用するスナップショット名。文字列
+* `retention`：Snapshotが保持されている時間。時間に応じて、次のいずれかの形式で表示されます。
++
+** FIFO：スナップショットは先入れ先出し（FIFO）ベースで保持されます。空の場合、 Snapshot は無期限に保持されます。文字列
+** HH：mm：ss
+
+
 * volumeID ： Snapshot に含めるボリュームの ID整数
 * `volums` ：グループ Snapshot に含めるボリューム ID のリスト。（整数の配列）。
-* `name` ：使用するスナップショット名。文字列
-* enableRemoteReplication ：リモート・レプリケーションにスナップショットを含めるかどうかを指定しますブール値
-* `Retention` ： HH ： mm ： ss 形式での、 Snapshot を保持する時間空の場合、 Snapshot は無期限に保持されます。文字列
-* FIFO ：スナップショットは FIFO （ First-In First-Out ）ベースで保持されます。文字列
-* 「 ensireSerialCreation 」：以前のスナップショット複製が進行中の場合に、新しいスナップショットの作成を許可するかどうかを指定します。ブール値
 
  a| 
 link:reference_element_api_schedule.html["スケジュール"^]

@@ -51,6 +51,15 @@ failedDieCount （失敗したディーカウント
 
 
  a| 
+iosInProgress
+ a| 
+このドライブに対する実行中のI/Oの数。
+ a| 
+整数
+
+
+
+ a| 
 lifeRemainingPercent （ライフリミンセント）
  a| 
 ドライブメディア摩耗インジケータ。
@@ -87,9 +96,36 @@ PowerOnHours
 
 
  a| 
+読み取り
+ a| 
+このドライブに対する1秒あたりのread()呼び出しの数。
+ a| 
+整数
+
+
+
+ a| 
 readBytes
  a| 
 クライアント処理によりドライブから読み取られた総バイト数。
+ a| 
+整数
+
+
+
+ a| 
+readsCombined
+ a| 
+より大きなリードに結合できる隣接セクターへのread()呼び出しの数。
+ a| 
+整数
+
+
+
+ a| 
+readMsec
+ a| 
+読み取りに費やされたミリ秒数。
  a| 
 整数
 
@@ -168,9 +204,36 @@ usedMemory の略
 
 
  a| 
+書き込み
+ a| 
+このドライブに対する1秒あたりのwrite()呼び出しの数。
+ a| 
+整数
+
+
+
+ a| 
 writeBytes のこと
  a| 
 クライアントアクティビティによってドライブに書き込まれた総バイト数。
+ a| 
+整数
+
+
+
+ a| 
+書き込み結合
+ a| 
+より大きな書き込みに結合できる隣接セクターへのwrite()呼び出しの数。
+ a| 
+整数
+
+
+
+ a| 
+書き込みミリ秒
+ a| 
+書き込みに費やされたミリ秒数。
  a| 
 整数
 
@@ -189,3 +252,5 @@ writeOps
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_getdrivestats.adoc[GetDriveStats]
+
+ // 2025 FEB 27, DOC-4778

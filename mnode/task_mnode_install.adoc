@@ -61,6 +61,7 @@ Element 12.2 管理ノードはオプションのアップグレードです。�
 
 NetAppサポートサイトから適切なISOまたはOVAをダウンロードし、VMをインストールします。
 
+.手順
 . NetAppサポートサイトのページから、インストールに対応したOVAまたはISOをダウンロードしlink:https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["Element ソフトウェア"^]ます。新しいOVAには更新されたSSL証明書が含まれています。
 +
 .. Download Latest Release * を選択し、 EULA に同意します。
