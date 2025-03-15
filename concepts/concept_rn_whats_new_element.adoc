@@ -27,7 +27,7 @@ Element 12.8の新機能の詳細については、こちらをご覧くださ�
 
 === ボリュームのロードバランシング
 
-Element 12.8では、ボリュームロードバランシング機能が導入されています。この機能を使用すると、QoSポリシーに設定されている最小IOPSではなく、各ボリュームの実際のIOPSレベルに基づいてノード間でボリュームを分散できます。ボリュームの負荷分散機能は、ボリュームの負荷分散にのみ使用できます。仮想ボリュームのバランス調整には使用できません。ボリュームロードバランシング機能は、デフォルトでは無効になっています。この機能を有効または無効にするには、APIパラメータでlink:../api/reference_element_api_enablefeature.html["EnableFeature"]およびlink:../api/reference_element_api_disablefeature.html["無効な機能"]APIメソッドを使用するか、link:../storage/task_system_manage_cluster_volume_load_balancing.html["ボリュームのロードバランシング"]Element UIのオプションを使用し `VolumeLoadBalanceOnActualIOPS`ます。
+Element 12.8では、ボリュームロードバランシング機能が導入されています。この機能を使用すると、QoSポリシーに設定されている最小IOPSではなく、各ボリュームの実際のIOPSレベルに基づいてノード間でボリュームを分散できます。ボリュームの負荷分散機能は、ボリュームの負荷分散にのみ使用できます。仮想ボリュームのバランス調整には使用できません。ボリュームロードバランシング機能は、デフォルトでは無効になっています。この機能を有効または無効にするには `VolumeLoadBalanceOnActualIOPS`、およびlink:../api/reference_element_api_disablefeature.html["無効な機能"]APIメソッドを指定したAPIパラメータをlink:../api/reference_element_api_enablefeature.html["EnableFeature"]使用するか、Element UIのオプションを使用しlink:../storage/task_system_manage_cluster_volume_load_balancing.html["ボリュームのロードバランシング"]ます。
 
 
 
