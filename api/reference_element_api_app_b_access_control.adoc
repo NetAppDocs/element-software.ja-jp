@@ -14,6 +14,9 @@ summary: Element API メソッドを使用できるかどうかは、設定す�
 Element API メソッドを使用できるかどうかは、設定するアクセスのタイプによって異なります。
 
 
+NOTE: APIから使用できるアクセスタイプには、Element UIでは使用できないものがあります。
+
+
 
 == アカウント
 
@@ -1108,3 +1111,5 @@ GetAsyncResult
 RemoveDrives の 2 つのコマンド
 
 |===
+.関連情報
+link:../storage/concept_system_manage_manage_cluster_administrator_users.html#view-cluster-admin-details["Element UIで使用可能なアクセスタイプの詳細"]

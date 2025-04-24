@@ -61,9 +61,13 @@ NOTE: ノード UI からクラスタ内のアクティブノードにアクセ�
 
 
 +
+[NOTE]
+====
+administrator アクセスタイプには、すべての権限が割り当てられています。
 
-NOTE: administrator アクセスタイプには、すべての権限が割り当てられています。
+APIから使用できるアクセスタイプには、Element UIでは使用できないものがあります。
 
+====
 +
 ** * タイプ * ：クラスタ管理者のタイプ。有効な値は次のとおり
 +
@@ -152,12 +156,9 @@ Element UI を使用してクラスタ管理者のパスワードを変更でき
 . [ 変更の保存 *] をクリックします。
 
 
-
-
-== 詳細については、こちらをご覧ください
-
+.関連情報
+* link:../api/reference_element_api_app_b_access_control.html["Element APIで使用できるアクセスタイプについて説明します。"]
 * link:task_system_manage_enable_ldap_authentication.html["Element ユーザインターフェイスで LDAP 認証を有効にします"]
 * link:concept_system_manage_manage_ldap.html["LDAP を無効にする"]
-* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
 

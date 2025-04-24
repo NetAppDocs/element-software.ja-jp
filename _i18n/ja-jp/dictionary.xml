@@ -12388,4 +12388,9 @@
   <block id="65dc2083558f47cd1151751a12c24549" category="paragraph">同期操作のタイプに応じた浮動小数点数または整数</block>
   <block id="ec6874eecaec538abf3d408bf6b6b411" category="list-text"><block ref="cf54937a2330ac17aa523bf7130911a3" prefix="" category="inline-code"></block>：スナップショットは先入れ先出し（FIFO）ベースで保持されます。空の場合、 Snapshot は無期限に保持されます。文字列</block>
   <block id="995938d68f1857072e8bf08ab00f47df" category="paragraph">Element 12.8では、ボリュームロードバランシング機能が導入されています。この機能を使用すると、QoSポリシーに設定されている最小IOPSではなく、各ボリュームの実際のIOPSレベルに基づいてノード間でボリュームを分散できます。ボリュームの負荷分散機能は、ボリュームの負荷分散にのみ使用できます。仮想ボリュームのバランス調整には使用できません。ボリュームロードバランシング機能は、デフォルトでは無効になっています。この機能を有効または無効にするには<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block>、および<block ref="ca543ea41b9fe86f5db5c46f8401b9de" category="inline-link-macro-rx"></block>APIメソッドを指定したAPIパラメータを<block ref="1028004a3d63b00e7896fde204286489" category="inline-link-macro-rx"></block>使用するか、Element UIのオプションを使用し<block ref="0e280c25b1846637cc005ef57df39d27" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="cedd3b982f345250c95c539d68542a1c" category="admonition">APIから使用できるアクセスタイプには、Element UIでは使用できないものがあります。</block>
+  <block id="66ae9524f9c214ce3d4ddc510dc6384a" category="inline-link-macro">Element UIで使用可能なアクセスタイプの詳細</block>
+  <block id="e3ae42684db77c59ef80c04aae526de5" category="paragraph"><block ref="e3ae42684db77c59ef80c04aae526de5" category="inline-link-macro-rx"></block></block>
+  <block id="f72c81a1158d9efb9bad238e3c497a6c" category="inline-link-macro">Element APIで使用できるアクセスタイプについて説明します。</block>
+  <block id="c858f3d30df8c552799df529153c0e44" category="list-text"><block ref="c858f3d30df8c552799df529153c0e44" category="inline-link-macro-rx"></block></block>
 </blocks>
