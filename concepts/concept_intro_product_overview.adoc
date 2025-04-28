@@ -41,7 +41,5 @@ link:../concepts/concept_solidfire_concepts_solidfire_architecture_overview.html
 
 == 詳細については、こちらをご覧ください
 
-* https://www.netapp.com/data-storage/solidfire/["SolidFire オールフラッシュストレージの概要"^]
-* https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
 

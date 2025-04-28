@@ -651,8 +651,6 @@
   <block id="ddaa5fe2d426a2a7c85d0912d4c4150d" category="list-text"><block ref="ddaa5fe2d426a2a7c85d0912d4c4150d" category="inline-xref-macro-rx"></block></block>
   <block id="35beb39012d21be6ba566219e99021b9" category="inline-xref-macro">パフォーマンスと QoS</block>
   <block id="18c3954973025e7d4855c26a9bff4989" category="list-text"><block ref="18c3954973025e7d4855c26a9bff4989" category="inline-xref-macro-rx"></block></block>
-  <block id="e2291d0b9bc2d41bc343cf77cf0a1a87" category="inline-link">SolidFire オールフラッシュストレージの概要</block>
-  <block id="e2c85d417b263e570fcb0b7027cad0ba" category="list-text"><block ref="e2c85d417b263e570fcb0b7027cad0ba" category="inline-link-rx"></block></block>
   <block id="a34166d7b2a72e36c4faae9587f3fe85" category="summary">システム上のストレージリソースを管理し、アクセスを提供するには、システムリソースのアカウントを設定する必要があります。</block>
   <block id="8fc879c589cd3a9ef46cd4e14a9daf37" category="paragraph">システム上のストレージリソースを管理してアクセスできるようにするには、システムリソースのアカウントを設定する必要があります。</block>
   <block id="448bea1033c688e6ef44e764985bdf53" category="paragraph">Element ストレージでは、次のタイプのアカウントを作成および管理できます。</block>
@@ -4880,7 +4878,6 @@
   <block id="580c35d1b4dc1d63073ae537ce0f28ab" category="inline-link-macro">追加のストレージ NIC の設定</block>
   <block id="4733d6f93dbca188e79e25900eaeacb7" category="list-text">追加のネットワークアダプタを設定しておきます（必要な場合）。 の手順に従ってください <block ref="1f5ebd4d6fe6b214007c2692b1a22cfb" category="inline-link-macro-rx"></block>。</block>
   <block id="97badad042e3a18dd496d204994f3a2f" category="admonition">eth0 を SVIP にルーティングできない場合は、永続ボリュームに追加のネットワークアダプタが必要になることがあります。永続ボリュームを設定できるように、 iSCSI ストレージネットワークに新しいネットワークアダプタを設定してください。</block>
-  <block id="1a6ffd97834fd7495156f52f3058e50b" category="list-text">SSH またはコンソールアクセスを使用して管理ノード仮想マシンにログインします。</block>
   <block id="e097e26564fa470c938b5aa9cb375497" category="admonition">ISO の名前は 'olidfire-fdva-&lt;Element release&gt;-patchX-XXX.X.XXXX.iso' と似ています</block>
   <block id="7af3e8bcf74bc743e6d42428a1ef8e84" category="list-text">ダウンロードしたファイルに対して md5sum を実行し、その出力をネットアップサポートサイトにある Element ソフトウェア用の ISO と比較することで、ダウンロードの整合性をチェックします。以下の例を参照してください。</block>
   <block id="4e82f8cfbdbaab82d0c8c7e65d59b756" category="paragraph">「 sudo md5sum -b 」 &lt;path to ISO&gt;/solidfire-fdva-&lt;Element release &gt; -patchX-XXX.X.XXXX.iso 」を参照してください</block>
@@ -10917,7 +10914,6 @@
   <block id="592247e1218ecdf894b0dc3bf1e2b0c6" category="paragraph">Element ソフトウェアに移動します<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block> して最新のストレージノードのイメージをダウンロードしてください。</block>
   <block id="37a42081cc0d0c72d69723b5792a6c73" category="list-text">NetApp Hybrid Cloud Control を使用して管理サービスバンドルを最新バージョンに更新しておきます。NetApp Hybrid Cloud Control には、 https://&lt;ManagementNodeIP&gt;` からアクセスできます</block>
   <block id="303c7d52b5c18e714947ecd4996594a2" category="inline-link">管理ノード ISO</block>
-  <block id="bc6733dc102d98376848617102ed0352" category="list-text">をダウンロードします<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block> ネットアップサポートサイトから管理ノード仮想マシンへの Element ソフトウェアの追加。</block>
   <block id="9ec21c21d51558c2c4720284cc8e9f10" category="summary">導入後は、すべてのネットアップストレージコンポーネントをアップグレードすることで、 SolidFire Element ストレージシステムを最新の状態に保つことができます。</block>
   <block id="59a003ce49b82fe00de09fe03510553f" category="doc">アップグレード手順の概要</block>
   <block id="d38f48e8e196e92a833076faf76e21bc" category="inline-xref">システムのアップグレード順序</block>
@@ -11284,7 +11280,6 @@
   <block id="29bba7cbe3dac4ea58cab61272150fe8" category="paragraph">管理ノードをバージョン12.3.x以降から管理ノード12.5以降にアップグレードできます。</block>
   <block id="4ff70a8151851ab1e82db6f0eed42808" category="list-text"><block ref="810c9a492c31390e08f0e76e7c298785" category="inline-xref-macro-rx"></block></block>
   <block id="2a67edcd39483da3b7c2244d1a853ca7" category="section-title">バージョン12.3.x以降から管理ノードをバージョン12.5以降にアップグレードします</block>
-  <block id="00986f242d79556b370e046857ac478c" category="paragraph">新しい管理ノード仮想マシンをプロビジョニングすることなく、バージョン12.3.x以降からバージョン12.5以降への管理ノードのインプレースアップグレードを実行できます。</block>
   <block id="162101c4a12e19388bdcdc0495ccc2ae" category="admonition">Element 12.5以降の管理ノードはオプションのアップグレードです。既存の環境では必要ありません。</block>
   <block id="cd847f70c9955e37a7a701eee9f2cd67" category="list-text">アップグレードする管理ノードのバージョンが 12.0 で、 IPv4 ネットワークを使用している。管理ノードバージョン12.5以降ではIPv6がサポートされません。</block>
   <block id="94f146a196ada89ebff337e86bd67dd8" category="list-text">管理ノードをバージョン12.5以降に更新する場合は、管理サービス2.21.61以降が実行されます。</block>
@@ -12357,11 +12352,8 @@
   <block id="b036ebb7aa6b63db449d4df71f28c3cd" category="section-title">手順1：管理ノードのVMハードウェアバージョンをアップグレードする</block>
   <block id="6bdecd9b5d3ab973ac36df911f986fc3" category="paragraph">既存の管理ノードをElement 12.8にインプレースアップグレードする場合は、アップグレード前に、管理ノードのVMハードウェアのバージョンがESXi 6.7（VMハードウェアバージョン14）以降に対応していることを確認する必要があります。</block>
   <block id="da356a9209429c8cb4f06565d719d2b8" category="list-text">vSphere Web Client に vCenter Administrator としてログインします。</block>
-  <block id="7936b082e6a3d2167a2478cee0772514" category="list-text">vSphere Clientのメニューで、*[VMs]*&gt;*[Templates]*を選択します。</block>
-  <block id="ad4062bf296d686c04c351f026e2400d" category="list-text">仮想マシンを右クリックし、* Compatibility *&gt;* Upgrade VM Compatibility *を選択します。</block>
   <block id="cf8716d5690805e881fbd8fa22fb282a" category="list-text">vSphere環境のバージョンに応じて、ESXi 6.7以降のバージョンを選択します。</block>
   <block id="3d1c64d2c8b1e4058225a78c3ef09fa6" category="list-text">「* OK *」を選択します。</block>
-  <block id="43c3c8c2f75e6064714e6ec942f1e916" category="list-text">アップグレードが完了したら、* vSphere Clientの更新*を選択し、VMの互換性が目的のバージョンになっていることを確認します。</block>
   <block id="6b17900bf8b7a52b1be75bbe68b2d77e" category="section-title">手順2：管理ノードをElement 12.5以降にアップグレードする</block>
   <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">次のいずれかのアップグレードオプションを選択します。</block>
   <block id="8c5a891df58bfda1762ec23302a952b6" category="sidebar">SolidFire オールフラッシュストレージシステムは、ドライブやノードなどのハードウェアコンポーネントで構成され、これらのコンポーネントをストレージリソースのプールに統合します。これらのストレージリソースクラスタは、Elementインターフェイス、API、またはその他の管理ツールを使用してNetApp Elementソフトウェアで管理できます。このサイトには、Elementソフトウェア12.8のドキュメントが含まれています。</block>
@@ -12393,4 +12385,13 @@
   <block id="e3ae42684db77c59ef80c04aae526de5" category="paragraph"><block ref="e3ae42684db77c59ef80c04aae526de5" category="inline-link-macro-rx"></block></block>
   <block id="f72c81a1158d9efb9bad238e3c497a6c" category="inline-link-macro">Element APIで使用できるアクセスタイプについて説明します。</block>
   <block id="c858f3d30df8c552799df529153c0e44" category="list-text"><block ref="c858f3d30df8c552799df529153c0e44" category="inline-link-macro-rx"></block></block>
+  <block id="6e93fbac14e98fd4eee5f4f560e1d580" category="list-text">vSphere Clientのメニューで、*[仮想マシンおよびテンプレート]*を選択します。</block>
+  <block id="be19667c20f2f3c6b932b48a9c488774" category="list-text">仮想マシン（VM）を右クリックし、*[パワー]*&gt;*[ゲストOSのシャットダウン]*を選択します。</block>
+  <block id="6f5f678ae471ecc070cea185b3d40ed4" category="paragraph">VMの電源がオフになるまで待ちます。</block>
+  <block id="b58c4fe6ac8a2dffa0fb94c9d1de7556" category="list-text">VMを右クリックし、* Compatibility *&gt;* Upgrade VM Compatibility *を選択します。</block>
+  <block id="eeb196c0a77fbb85f8908ae3cca16bfc" category="list-text">アップグレードが完了したら、VMを右クリックし、* Power *&gt;* Power On *を選択します。</block>
+  <block id="917268d8045dd1bb18e5f8cc7caf9359" category="list-text">[vsphere client refresh]*を選択し、VMの互換性が目的のバージョンになっていることを確認します。</block>
+  <block id="a879c8e657832d392ef358d2440c3faf" category="paragraph">新しい管理ノードVMをプロビジョニングすることなく、管理ノードのバージョン12.3.x以降からバージョン12.5以降へのインプレースアップグレードを実行できます。</block>
+  <block id="6a309ddf9d0a46d94d5772dacb71dbc0" category="list-text">SSHまたはコンソールアクセスを使用して管理ノードVMにログインします。</block>
+  <block id="7258351fe62749f68f4b75a51c56912b" category="list-text">ElementソフトウェアのをNetAppサポートサイトから管理ノードVMにダウンロードし<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block>ます。</block>
 </blocks>
