@@ -12311,7 +12311,6 @@
   <block id="906ea05443e4b488a42f3f06305353ee" category="paragraph">この手順を実行する前に、これらの手順を理解し、使用するかどうかを判断しておく必要があります<block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block>。永続ボリュームはオプションですが、仮想マシン（ VM ）が失われた場合の管理ノードの設定データのリカバリには推奨されます。</block>
   <block id="6d8cd87a85946daeae42cb54aade3baa" category="section-title">手順1：ISOまたはOVAをダウンロードしてVMを導入する</block>
   <block id="90c4d8ddd76d9f5f86c144316cec5657" category="paragraph">NetAppサポートサイトから適切なISOまたはOVAをダウンロードし、VMをインストールします。</block>
-  <block id="4aee9657f267c579c49541b5f19ca32c" category="list-text">NetAppサポートサイトのページから、インストールに対応したOVAまたはISOをダウンロードし<block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block>ます。新しいOVAには更新されたSSL証明書が含まれています。</block>
   <block id="c6913d34fefabb7329dba971ad99632d" category="section-title">手順2：管理ノードの管理者を作成してネットワークを設定する</block>
   <block id="8e1cc7b20e9f183452b777f8a4fb586d" category="paragraph">VMのインストールが完了したら、管理ノードのadminユーザを作成し、管理ノードのネットワークを設定します。</block>
   <block id="5e0472334bca93d0d28d3eeaaf723518" category="section-title">ステップ3：時刻同期を設定する</block>
@@ -12394,4 +12393,5 @@
   <block id="a879c8e657832d392ef358d2440c3faf" category="paragraph">新しい管理ノードVMをプロビジョニングすることなく、管理ノードのバージョン12.3.x以降からバージョン12.5以降へのインプレースアップグレードを実行できます。</block>
   <block id="6a309ddf9d0a46d94d5772dacb71dbc0" category="list-text">SSHまたはコンソールアクセスを使用して管理ノードVMにログインします。</block>
   <block id="7258351fe62749f68f4b75a51c56912b" category="list-text">ElementソフトウェアのをNetAppサポートサイトから管理ノードVMにダウンロードし<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block>ます。</block>
+  <block id="e43f2538484fde027e53efbedb634fce" category="list-text">NetAppサポートサイトのページから、インストールに対応したOVAまたはISOをダウンロードし<block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block>ます。</block>
 </blocks>
