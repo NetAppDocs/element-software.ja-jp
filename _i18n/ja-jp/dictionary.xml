@@ -3923,7 +3923,6 @@
   <block id="2f00805e044ca70467775f06c1872f89" category="paragraph">LDAP サーバ</block>
   <block id="5483ab43104d3514dfdd7917f5a51b09" category="paragraph">389 TCP/UDP</block>
   <block id="19a0425f816e3267d5a9f5ee03f4fc4f" category="paragraph">（任意） LDAP 検索</block>
-  <block id="6ca93b96b4cd5e33a779ecc83fde0268" category="paragraph">Element ストレージファームウェアのアップグレード</block>
   <block id="5ee0194e49d16c87d081efc156fb0d74" category="paragraph">リモートストレージクラスタの MVIP</block>
   <block id="75a4d5a956df2844befb13a89867e179" category="paragraph">リモートレプリケーションのクラスタペアリング通信</block>
   <block id="e902ca26db3b32a7d466ef307db87d60" category="paragraph">リモートストレージノードの MIP</block>
@@ -12394,4 +12393,5 @@
   <block id="6a309ddf9d0a46d94d5772dacb71dbc0" category="list-text">SSHまたはコンソールアクセスを使用して管理ノードVMにログインします。</block>
   <block id="7258351fe62749f68f4b75a51c56912b" category="list-text">ElementソフトウェアのをNetAppサポートサイトから管理ノードVMにダウンロードし<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block>ます。</block>
   <block id="e43f2538484fde027e53efbedb634fce" category="list-text">NetAppサポートサイトのページから、インストールに対応したOVAまたはISOをダウンロードし<block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="bd000e3a7a010d55765a9684adc1c25f" category="paragraph">要素ストレージのアップグレード</block>
 </blocks>
