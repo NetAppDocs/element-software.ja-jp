@@ -53,6 +53,7 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 * link:./media/mNode_12.7.pdf["管理ノード12.7の注意"^]
 * link:./media/Element_Software_12.5.pdf["Elementソフトウェア12.5の場合の注意"^]
 * link:./media/mNode_12.5.pdf["管理ノード12.5に関する注意"^]
+* link:./media/mgmt_svcs_2.27_notice.pdf["管理サービス 2.27.40 (VMware vCenter Server 5.5.16 用NetApp Elementプラグイン) に関するお知らせ"^]
 * link:./media/mgmt_svcs_2.26_notice.pdf["管理サービス2.26.30（NetApp Element Plug-in for VMware vCenter Server 5.4.1）に関するお知らせ"^]
 * link:./media/mgmt_svcs_2.25_notice.pdf["管理サービス2.25.42（NetApp Element Plug-in for VMware vCenter Server 5.3.9）に関するお知らせ"^]
 * link:./media/mgmt_svcs_2.24_notice.pdf["管理サービス2.24.40（NetApp Element Plug-in for VMware vCenter Server 5.2.12）に関するお知らせ"^]

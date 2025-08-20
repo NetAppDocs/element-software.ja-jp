@@ -59,17 +59,21 @@ NetApp Hybrid Cloud Control を使用したアップグレードは、それよ�
 Element 12.5以降では、次の順序でNetApp SolidFire オールフラッシュストレージシステムをアップグレードできます。
 
 .手順
+. link:task_hcc_upgrade_element_prechecks.html["ストレージをアップグレードする前に、Element ストレージのヘルスチェックを実行します。"] 。
+. link:task_hcc_upgrade_element_software.html["Element ソフトウェアとストレージファームウェアをアップグレードします"]。
 . link:task_hcc_update_management_services.html["Hybrid Cloud Control から管理サービスを更新します"]。
 +
+[IMPORTANT]
+====
+** 管理サービス 2.27 バンドルには、管理ノード 12.8 とのみ互換性のある vCenter Server 5.5 用の Element プラグインが含まれています。管理サービス 2.27 に更新する場合は、管理ノードと管理サービス間の互換性を確保するために、アップグレード シーケンスを変更し、Element 12.8 にアップグレードした後に管理サービス バンドルを更新する必要があります。
+** 管理サービス 2.21.61 から 2.26.40 に更新する場合は、Element 12.8 にアップグレードする前に、管理サービス バンドルを更新する必要があります。
 
-IMPORTANT: 管理サービスをバージョン 2.16 以降に更新する場合、管理ノード 11.3 から 11.8 を実行しているときは、管理サービスを更新する前に管理ノード VM の RAM を増やす必要があります。
 
+====
 +
 
-IMPORTANT: Element ソフトウェアをアップグレードする前に、最新の管理サービスバンドルに更新する必要があります。
+IMPORTANT: 管理サービスをバージョン 2.16 以降に更新していて、管理ノード 11.3 ～ 11.8 を実行している場合は、管理サービスを更新する前に、管理ノード VM の RAM を増やす必要があります。
 
-. link:task_hcc_upgrade_element_prechecks.html["ストレージをアップグレードする前に、 Element ストレージの健全性チェックを実行します"]。
-. link:task_hcc_upgrade_element_software.html["Element ソフトウェアとストレージファームウェアをアップグレードします"]。
 . link:task_hcc_upgrade_storage_firmware.html["（オプション） Element ストレージファームウェアのみをアップグレードします"]。
 +
 

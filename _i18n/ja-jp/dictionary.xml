@@ -4831,9 +4831,6 @@
   <block id="ced99676ffdce11db0cf7ce2a4a812b8" category="list-text">すべてのノードのシステム時間が同期され、 NTP がストレージクラスタとノードに対して正しく設定されていることを確認しておきます。各ノードには、ノード Web UI （「 https://[IP address 」： 442 ）に DNS ネームサーバを設定する必要があります。時刻のずれに関連する未解決のクラスタ障害はありません。</block>
   <block id="524813e84d210a04a3c005022becca08" category="inline-link-macro">Hybrid Cloud Control から管理サービスを更新します</block>
   <block id="c43409e402c491faff614694ff49b45b" category="list-text"><block ref="d96c5e393dc7f7cfcba5644a67a6ff8a" category="inline-link-macro-rx"></block>。</block>
-  <block id="9cd44430d13c7f6664a4e628ee6d90e4" category="admonition">管理サービスをバージョン 2.16 以降に更新する場合、管理ノード 11.3 から 11.8 を実行しているときは、管理サービスを更新する前に管理ノード VM の RAM を増やす必要があります。</block>
-  <block id="17a2ec8576298e274b3b59e46ff67ea2" category="admonition">Element ソフトウェアをアップグレードする前に、最新の管理サービスバンドルに更新する必要があります。</block>
-  <block id="109d7dba2c92c9420fece3ae278874f4" category="list-text"><block ref="bdcf6db43efb3c82b174a0c4c0a65c66" category="inline-link-macro-rx"></block>。</block>
   <block id="77f5518534e304c43787d59aa8f3ed00" category="inline-link-macro">Element ソフトウェアとストレージファームウェアをアップグレードします</block>
   <block id="35e9c48aa9c5ae2adc6b713d2399dba2" category="list-text"><block ref="1e896f189b3768a955ddd6464b4ba1e2" category="inline-link-macro-rx"></block>。</block>
   <block id="1aa4a50ace326eb5b8adfa204053822a" category="inline-link-macro">（オプション） Element ストレージファームウェアのみをアップグレードします</block>
@@ -4867,7 +4864,6 @@
   <block id="f523905d48a1db956815565365a5a6ad" category="admonition">この操作により、新しいデータベースが作成され、 vSphere Web Client でのインストールが完了します。</block>
   <block id="9b572df8237d34b7c32142ac15f1325f" category="list-text">vSphere Web Client で、タスクモニタで次のタスクが完了していることを確認します。「ダウンロードプラグイン」および「デプロイプラグイン」。</block>
   <block id="b9e50e6a339819ad9d12906b29e978ca" category="list-text">プラグインの * NetApp Element 構成 * 拡張ポイントの * バージョン情報 * タブでバージョンの変更を確認します。</block>
-  <block id="a2b39afbde860c9c0fc759f3772e2dd2" category="paragraph">次のバージョンの詳細またはより新しいバージョンの詳細が表示されます。</block>
   <block id="4715e0cc20eb79c52c1f181ce0f6afb0" category="admonition">vCenter Plug-in には、オンラインヘルプが用意されています。ヘルプの最新のコンテンツが読み込まれるようにするために、プラグインをアップグレードしたあとにブラウザキャッシュをクリアしてください。</block>
   <block id="d7cc77e1654b4ecc5878545e7bf4f78d" category="summary">NetApp SolidFire ストレージシステムのアップグレードの一環として、管理ノードをアップグレードします。</block>
   <block id="1761ea607c3f8d002099290408801187" category="doc">管理ノードをアップグレードします</block>
@@ -11274,7 +11270,6 @@
   <block id="11d9cbba51c832a014742a5da1938d41" category="paragraph">Element 12.5以降では、次の順序でNetApp SolidFire オールフラッシュストレージシステムをアップグレードできます。</block>
   <block id="7df8805b6d2dda4d3fb6d3ac7bb98b27" category="inline-link-macro">HealthToolsを使用してElement 12.3.xにアップグレードします</block>
   <block id="dc1b969077a38d3c5d1ddc04ce3b29c7" category="admonition">Element 12.5以降では、ElementソフトウェアのアップグレードでNetApp HealthToolsがサポートされなくなりました。Element 11.0または11.1を実行している場合は、最初にが必要です <block ref="b94815288b0622c054c235dd32c9c615" category="inline-link-macro-rx"></block> NetApp Hybrid Cloud Controlを使用してElement 12.5以降にアップグレードします。</block>
-  <block id="7ef561ec74f917ecad309d4001bff056" category="admonition">Elementソフトウェアをバージョン12.5以降にアップグレードする前に、最新の管理サービスバンドルにアップグレードする必要があります。Elementソフトウェアをバージョン12.5以降に更新する場合は、管理サービス2.21.61以降が必要です。</block>
   <block id="25c6e7b86999549e989728f739c4fc89" category="admonition">H610SシリーズノードをElement 12.5以降にアップグレードする場合、ノードで11.8よりも前のバージョンのElementが実行されているときは、こので追加のアップグレード手順を実行する必要があります<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block> ストレージノードごとに割り当てます。Element 11.8以降を実行している場合は、追加のアップグレード手順は必要ありません。</block>
   <block id="29bba7cbe3dac4ea58cab61272150fe8" category="paragraph">管理ノードをバージョン12.3.x以降から管理ノード12.5以降にアップグレードできます。</block>
   <block id="4ff70a8151851ab1e82db6f0eed42808" category="list-text"><block ref="810c9a492c31390e08f0e76e7c298785" category="inline-xref-macro-rx"></block></block>
@@ -12233,7 +12228,6 @@
   <block id="ce90fd614158a5c7e0a42a5908fa1cd7" category="list-text"><block ref="ce90fd614158a5c7e0a42a5908fa1cd7" category="inline-link-rx"></block></block>
   <block id="6f00c58e2f26b2ef4542eb663cdb651d" category="inline-link-macro">管理サービス2.26.30（NetApp Element Plug-in for VMware vCenter Server 5.4.1）に関するお知らせ</block>
   <block id="ea3b1d5907ee8e4303c54ecc7765f0f2" category="list-text"><block ref="ea3b1d5907ee8e4303c54ecc7765f0f2" category="inline-link-macro-rx"></block></block>
-  <block id="fdbd44871ecf32ab0e37e9d3c077e28a" category="list-text">Element Plug-in for vCenter Server 5.4、5.3、5.2、5.1、または5.0にアップグレードする。</block>
   <block id="ec584e493ebc5976220074c48288215d" category="summary">レプリケーション関係を作成する前に、SnapMirrorエンドポイントを作成する必要があります。このタスクは、ElementソフトウェアWeb UIまたはAPIメソッドでのみ実行できます。</block>
   <block id="a1d54a55e83901cd25e5b3724d5ca5e5" category="summary">レプリケーション関係を作成する前に、ElementクラスタでSnapMirrorを有効にする必要があります。このタスクは、ElementソフトウェアWeb UIまたはAPIメソッドでのみ実行できます。</block>
   <block id="5f974f5b5837f6beacdf509a09ac0df9" category="paragraph">^3^次のノードはサポートされていません。次のいずれかのノードをサポート対象外のElementバージョンにアップグレードしようとすると、Element 12.xでサポートされていないことを示すエラーが表示されます。</block>
@@ -12281,7 +12275,6 @@
   <block id="f96ed95b5509cb599aadb504ec5aa0d5" category="list-text">peakWriteIops：統計間隔で観察された最大書き込みIOPS。</block>
   <block id="041f17de41a9f1db9829ff79ad3ef600" category="list-text">sliceID：ボリュームIDまたはスライスID</block>
   <block id="6db7dd4182be7a1979ad403111fa8618" category="inline-link">NetApp Element ソフトウェア12.8リリースノート</block>
-  <block id="7d776811219f8ebb17adecaa976bd578" category="list-text"><block ref="53e04163346326834efd61306c0800b5" category="inline-link-rx"></block>新規_</block>
   <block id="912995e99772bb097b2c7b32940725bb" category="list-text"><block ref="912995e99772bb097b2c7b32940725bb" category="inline-link-rx"></block></block>
   <block id="de1923eab698e40e118f826163735ce9" category="doc">Elementソフトウェアの新機能</block>
   <block id="95dc02f465fb1139e3e92c363bf6965b" category="paragraph">ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。Element 12.8は最新リリースで、セキュリティおよびシステムコンポーネントのアップデート、運用の改善、および解決済みの問題が含まれています。</block>
@@ -12394,4 +12387,17 @@
   <block id="7258351fe62749f68f4b75a51c56912b" category="list-text">ElementソフトウェアのをNetAppサポートサイトから管理ノードVMにダウンロードし<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block>ます。</block>
   <block id="e43f2538484fde027e53efbedb634fce" category="list-text">NetAppサポートサイトのページから、インストールに対応したOVAまたはISOをダウンロードし<block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block>ます。</block>
   <block id="bd000e3a7a010d55765a9684adc1c25f" category="paragraph">要素ストレージのアップグレード</block>
+  <block id="53e04163346326834efd61306c0800b5" category="list-text"><block ref="53e04163346326834efd61306c0800b5" category="inline-link-rx"></block></block>
+  <block id="7373675a8dd923fb7362a663e0cb6e1f" category="inline-link">vCenter プラグイン 5.5 リリースノート</block>
+  <block id="1bb29b9b64a805e59f4873c404e002c4" category="list-text"><block ref="19934d197d6821fc66160fdecbaaf499" category="inline-link-rx"></block>_新しい_</block>
+  <block id="9addfb2ff8ac3a9826d26736c6697320" category="inline-link-macro">管理サービス 2.27.40 (VMware vCenter Server 5.5.16 用NetApp Elementプラグイン) に関するお知らせ</block>
+  <block id="5f97199338e05d8d021611cc709fe28f" category="list-text"><block ref="5f97199338e05d8d021611cc709fe28f" category="inline-link-macro-rx"></block></block>
+  <block id="111e46cd39158a394cd8236185cf08df" category="inline-link-macro">ストレージをアップグレードする前に、Element ストレージのヘルスチェックを実行します。</block>
+  <block id="15c2fc4333a0aada89bc8cf9f0ebbdac" category="list-text"><block ref="76b28290238ca686b8113b7395511f66" category="inline-link-macro-rx"></block> 。</block>
+  <block id="c759706a0ac25a6b9701339b7c7959d4" category="list-text">管理サービス 2.27 バンドルには、管理ノード 12.8 とのみ互換性のある vCenter Server 5.5 用の Element プラグインが含まれています。管理サービス 2.27 に更新する場合は、管理ノードと管理サービス間の互換性を確保するために、アップグレード シーケンスを変更し、Element 12.8 にアップグレードした後に管理サービス バンドルを更新する必要があります。</block>
+  <block id="aebb2147cc4f1c96830ec15bbe8bbaaa" category="list-text">管理サービス 2.21.61 から 2.26.40 に更新する場合は、Element 12.8 にアップグレードする前に、管理サービス バンドルを更新する必要があります。</block>
+  <block id="a364164cb135a0ea8d140eae7c98e606" category="admonition">管理サービスをバージョン 2.16 以降に更新していて、管理ノード 11.3 ～ 11.8 を実行している場合は、管理サービスを更新する前に、管理ノード VM の RAM を増やす必要があります。</block>
+  <block id="e4ccb22f69b8be133f5125883186655e" category="paragraph">管理サービス 2.22.7 バンドルには、vCenter Server 5.0 用の Element プラグインが含まれており、これにはリモートプラグインが含まれています。Element プラグインをご利用の場合は、ローカルプラグインのサポートを削除する VMware の指示に従うため、管理サービス 2.22.7 以降にアップグレードする必要があります。<block ref="3eff1b8505d27ff6caa23fbbb1b7b25c" category="inline-link-rx"></block> 。</block>
+  <block id="f09175d59684197ed7788662b7cd5fe4" category="list-text">vCenter Server 5.5、5.4、5.3、5.2、5.1、または 5.0 の Element プラグインにアップグレードしています。</block>
+  <block id="6eb41496b0f7ef5be359156d440fc5ea" category="paragraph">次のバージョンの詳細が表示されます。</block>
 </blocks>

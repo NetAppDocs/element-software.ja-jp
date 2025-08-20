@@ -6,12 +6,12 @@ entries:
   url: "/upgrade/concept_element_upgrade_overview.html"
 - title: システムのアップグレード手順
   entries:
-  - title: 管理サービスを更新
-    url: "/upgrade/task_hcc_update_management_services.html"
   - title: ストレージをアップグレードする前に、 Element ストレージの健全性チェックを実行します
     url: "/upgrade/task_hcc_upgrade_element_prechecks.html"
   - title: Element ソフトウェアをアップグレードします
     url: "/upgrade/task_hcc_upgrade_element_software.html"
+  - title: 管理サービスを更新
+    url: "/upgrade/task_hcc_update_management_services.html"
   - title: ストレージファームウェアをアップグレードします
     url: "/upgrade/task_hcc_upgrade_storage_firmware.html"
   - title: 管理ノードをアップグレードします
