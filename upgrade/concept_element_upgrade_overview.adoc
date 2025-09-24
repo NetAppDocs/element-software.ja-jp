@@ -60,7 +60,11 @@ Element 12.5以降では、次の順序でNetApp SolidFire オールフラッシ
 
 .手順
 . link:task_hcc_upgrade_element_prechecks.html["ストレージをアップグレードする前に、Element ストレージのヘルスチェックを実行します。"] 。
-. link:task_hcc_upgrade_element_software.html["Element ソフトウェアとストレージファームウェアをアップグレードします"]。
+. link:task_hcc_upgrade_management_node.html["（オプション）管理ノードをアップグレードします"]。
++
+
+NOTE: ストレージクラスタ上の Element ソフトウェアをアップグレードするために、管理ノードのオペレーティングシステムをアップグレードする必要がなくなりました。管理ノードのバージョンが 11.3 以降である場合は、 NetApp Hybrid Cloud Control を使用して管理サービスを最新バージョンにアップグレードするだけで Element をアップグレードできます。管理ノードのオペレーティングシステムをアップグレードする理由がほかにもある場合は、セキュリティの修正など、管理ノードのアップグレード手順に従ってください。
+
 . link:task_hcc_update_management_services.html["Hybrid Cloud Control から管理サービスを更新します"]。
 +
 [IMPORTANT]
@@ -74,15 +78,11 @@ Element 12.5以降では、次の順序でNetApp SolidFire オールフラッシ
 
 IMPORTANT: 管理サービスをバージョン 2.16 以降に更新していて、管理ノード 11.3 ～ 11.8 を実行している場合は、管理サービスを更新する前に、管理ノード VM の RAM を増やす必要があります。
 
+. link:task_hcc_upgrade_element_software.html["Element ソフトウェアとストレージファームウェアをアップグレードします"]。
 . link:task_hcc_upgrade_storage_firmware.html["（オプション） Element ストレージファームウェアのみをアップグレードします"]。
 +
 
 NOTE: このタスクは、メジャーリリース以外で新しいストレージファームウェアアップグレードがリリースされたときに実行することができます。
-
-. link:task_hcc_upgrade_management_node.html["（オプション）管理ノードをアップグレードします"]。
-+
-
-NOTE: ストレージクラスタ上の Element ソフトウェアをアップグレードするために、管理ノードのオペレーティングシステムをアップグレードする必要がなくなりました。管理ノードのバージョンが 11.3 以降である場合は、 NetApp Hybrid Cloud Control を使用して管理サービスを最新バージョンにアップグレードするだけで Element をアップグレードできます。管理ノードのオペレーティングシステムをアップグレードする理由がほかにもある場合は、セキュリティの修正など、管理ノードのアップグレード手順に従ってください。
 
 . link:task_vcp_upgrade_plugin.html["Element Plug-in for vCenter Server をアップグレードします"]。
 
