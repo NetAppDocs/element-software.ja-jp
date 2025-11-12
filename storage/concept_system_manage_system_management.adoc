@@ -13,8 +13,8 @@ summary: システムは Element UI で管理できます。これには、多�
 [role="lead"]
 システムは Element UI で管理できます。これには、多要素認証の有効化、クラスタ設定の管理、連邦情報処理標準（ FIPS ）のサポート、外部キー管理などが含まれます。
 
-* link:concept_system_manage_mfa_enable_multi_factor_authentication.html["多要素認証を有効にします"]
-* link:concept_system_manage_cluster_configure_cluster_settings.html["クラスタの設定を行います"]
+* link:task_system_manage_mfa_set_up_multi_factor_authentication.html["多要素認証を有効にします"]
+* link:task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["クラスタの設定を行います"]
 * link:task_system_manage_fips_create_a_cluster_supporting_fips_drives.html["FIPS ドライブをサポートするクラスタを作成します"]
 * link:concept_system_manage_key_get_started_with_external_key_management.html["外部キー管理の開始"]
 

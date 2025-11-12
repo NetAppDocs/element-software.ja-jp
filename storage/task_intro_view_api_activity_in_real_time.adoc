@@ -15,7 +15,7 @@ Element システムの各種機能は、 NetApp Element API をその基盤と�
 
 API ログを使用すると、特定のタスクにどの API メソッドが使用されるかを特定し、 API のメソッドおよびオブジェクトを使用してカスタムアプリケーションを構築する方法を確認できます。
 
-各メソッドの詳細については、を参照してください link:../api/index.html["Element ソフトウェア API リファレンス"]。
+各方法については、以下を参照してください。 link:../api/concept_element_api_about_the_api.html["Element ソフトウェア API リファレンス"]。
 
 . Element UI ナビゲーションバーで、 * API ログ * をクリックします。
 . API Log ウィンドウに表示される API アクティビティのタイプを変更するには、次の手順を実行します。
@@ -37,7 +37,7 @@ API ログを使用すると、特定のタスクにどの API メソッドが�
 
 == 詳細については、こちらをご覧ください
 
-* link:../api/index.html["Element API を使用してストレージを管理する"]
+* link:../api/concept_element_api_about_the_api.html["Element API を使用してストレージを管理する"]
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
 

@@ -20,7 +20,7 @@ Element ソフトウェアを実行しているストレージクラスタでは
 
 NOTE: API を使用して作成され、クレデンシャルが保存されていない既存のエンドポイントは、 Element UI には表示されて存在を確認することはできますが、 Element UI で管理することはできません。このエンドポイントを管理するには、 Element API を使用する必要があります。
 
-API メソッドの詳細については、を参照してください link:../api/index.html["Element API を使用してストレージを管理します"]。
+APIメソッドの詳細については、 link:../api/concept_element_api_about_the_api.html["Element API を使用してストレージを管理します"]。
 
 .必要なもの
 * ストレージクラスタの Element UI で SnapMirror を有効にしておく必要があります。

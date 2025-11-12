@@ -22,7 +22,7 @@ TIP: 各ボリュームのイニシエータを特定するには、アクショ
 
 イニシエータベースの CHAP 属性を割り当てるには、 API 呼び出しを使用します。イニシエータごとに CHAP アカウント名とクレデンシャルを追加するには、 ModifyInitiator API 呼び出しを使用して、 CHAP アクセスと属性を削除および追加する必要があります。
 
-詳細については、を参照してください link:../api/index.html["Element API を使用してストレージを管理します"]。
+詳細については、link:../api/concept_element_api_about_the_api.html["Element API を使用してストレージを管理します"] 。
 
 .手順
 . [* 管理 *>* イニシエータ *] をクリックします。

@@ -31,7 +31,7 @@ NetApp Element ソフトウェアの GetFipsReport API メソッドを使用し�
 ** Element API を使用して、「 GetHardwareList 」と入力します
 ** DriveEncryptionCapabilityType* の値を確認します。値が「 fips 」の場合、そのハードウェアは FIPS ドライブ機能に対応しています。
 +
-の「 GetFipsReport 」または「 ListDriveHardware 」の詳細を参照してください link:../api/index.html["Element API リファレンス"]。
+詳細を見る `GetFipsReport` または `ListDriveHardware` の中で link:../api/concept_element_api_about_the_api.html["Element API リファレンス"]。
 
 
 

@@ -36,7 +36,7 @@ link:../storage/index.html["Element ソフトウェアでストレージを管�
 
 一連のオブジェクト、メソッド、ルーチンを使用して Element ストレージを管理できます。Element API は、 HTTPS 経由の JSON-RPC プロトコルに基づいています。Element UI で API 処理を監視するには、 API ログを有効にします。これにより、システムに対して実行されているメソッドを確認できます。要求と応答の両方を有効にすると、実行したメソッドに対するシステムの応答を確認できます。
 
-link:../api/index.html["Element API を使用してストレージを管理します"]
+link:../api/concept_element_api_about_the_api.html["Element API を使用してストレージを管理します"]
 
 
 
@@ -52,7 +52,7 @@ https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Eleme
 
 NetApp Hybrid Cloud Control インターフェイスを使用して、 Element ストレージサービスと管理サービスをアップグレードし、ストレージアセットを管理できます。
 
-link:../hccstorage/index.html["NetApp Hybrid Cloud Control の概要を使用してストレージを管理および監視します"]
+link:../hccstorage/task-hcc-manage-storage-clusters.html["NetApp Hybrid Cloud Control を使用してストレージを管理および監視します"]
 
 
 

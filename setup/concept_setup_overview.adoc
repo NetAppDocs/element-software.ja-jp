@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: element, solidfire, install, setup, node, cluster 
 summary: 開始する前に、 NetApp Element ソフトウェアのインストールとセットアップの手順を理解しておくことを推奨します。 
 ---
-= セットアップの概要
+= ストレージの設定について学ぶ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -20,8 +20,14 @@ image::../media/sf_and_element_workflow_for_setup_shorter_workflow.png[セット
 .ストレージのセットアップ手順
 . 次のいずれかを選択します。
 +
-** link:../setup/task_setup_cluster_with_storage_nodes.html["ストレージノードを含むクラスタをセットアップする"]
-** link:../setup/task_setup_cluster_with_fibre_channel_nodes.html["Fibre Channel ノードを含むクラスタをセットアップします"]
+** link:../setup/concept_setup_configure_a_storage_node.html["ストレージノードを含むクラスタをセットアップする"]
++
+ラックユニットにノードを設置してケーブル接続し、電源を投入したら、ストレージノードでクラスタをセットアップし、 Element ソフトウェアを使用してクラスタを管理できます。その後、ストレージシステムに追加コンポーネントをインストールして設定できます。
+
+** link:../setup/concept_setup_fc_configure_a_fibre_channel_node.html["Fibre Channel ノードを含むクラスタをセットアップします"]
++
+ラック ユニットにノードをインストールしてケーブル接続し、電源をオンにした後、ファイバー チャネル ノードを使用してクラスターを設定し、Element ソフトウェアを使用して管理できます。その後、ストレージ システムに追加のコンポーネントをインストールして構成できます。
+
 
 
 . link:../setup/task_setup_determine_which_solidfire_components_to_install.html["インストールする SolidFire コンポーネントを決定します"]

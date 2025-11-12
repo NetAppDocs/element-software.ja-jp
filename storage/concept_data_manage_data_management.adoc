@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: virtual volumes, volumes, manage 
 summary: Element ソフトウェアを実行しているクラスタのデータは、 Element UI の管理タブで管理できます。実行可能なクラスタ管理機能には、データボリューム、ユーザアカウント、ボリュームアクセスグループ、イニシエータ、および QoS ポリシーの作成と管理などがあります。 
 ---
-= ボリュームと仮想ボリュームを管理します
+= ボリュームと仮想ボリュームの管理について学ぶ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,10 +13,62 @@ summary: Element ソフトウェアを実行しているクラスタのデータ
 [role="lead"]
 Element ソフトウェアを実行しているクラスタのデータは、 Element UI の管理タブで管理できます。使用可能なクラスタ管理機能には、データボリューム、ボリュームアクセスグループ、イニシエータ、および QoS ポリシーの作成と管理などがあります。
 
-* link:task_data_manage_volumes_work_with_volumes_task.html["ボリュームを操作します"]
-* link:concept_data_manage_vvol_work_virtual_volumes.html["仮想ボリュームを操作します"]
-* link:concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html["ボリュームアクセスグループとイニシエータを使用する"]
 
+
+== ボリュームを操作します
+
+SolidFire システムは、ボリュームを使用してストレージをプロビジョニングします。ボリュームは、 iSCSI または Fibre Channel クライアントがネットワーク経由でアクセスするブロックデバイスです。管理タブのボリュームページでは、ノードのボリュームを作成、変更、クローニング、および削除できます。ボリュームの帯域幅と I/O 使用量に関する統計も確認できます。
+
+link:../storage/concept_data_manage_volumes_quality_of_service_policies.html["ボリュームの操作について学ぶ"]
+
+
+
+== 仮想ボリュームを操作します
+
+Element UI を使用して、仮想ボリュームおよび仮想ボリュームに関連付けられたストレージコンテナ、プロトコルエンドポイント、バインド、およびホストの情報を確認し、タスクを実行できます。
+
+Virtual Volumes （ VVol ）機能は、 NetApp Element ソフトウェアストレージシステムの出荷時点では無効になっています。Element UI を使用して vSphere VVol 機能を手動で有効にするタスクを 1 回だけ実行する必要があります。
+
+VVol 機能を有効にすると、ユーザインターフェイスに VVol 関連の監視オプションと一部の管理オプションを使用できる VVol タブが表示されます。また、 VASA Provider と呼ばれるストレージ側のソフトウェアコンポーネントは、 vSphere 向けのストレージ認識サービスとして機能します。VVOL の作成、クローニング、編集などのほとんどの vVol コマンドは、 vCenter Server または ESXi ホストで開始され、 VASA Provider から Element ソフトウェアストレージシステムの Element API に変換されます。ストレージコンテナの作成、削除、管理および仮想ボリュームの削除を実行するコマンドは、 Element UI を使用して開始できます。
+
+Element ソフトウェアストレージシステムで仮想ボリューム機能を使用するために必要な構成の大部分は、 vSphere で作成されます。vCenter への VASA Provider の登録、 VVol データストアの作成と管理、およびポリシーに基づくストレージの管理を行うには、 VMware vSphere Virtual Volumes for SolidFire ストレージ構成ガイドを参照してください。
+
+
+NOTE: Element 12.5以前では、1つのvCenterインスタンスに複数のNetApp Element VASAプロバイダを登録しないでください。2 つ目の NetApp Element VASA Provider が追加されている場合、その結果、すべての VVOL データストアにアクセスできなくなります。
+
+
+NOTE: VASA Provider を vCenter に登録済みの場合は、複数の vCenter に対する VASA サポートをアップグレードパッチとして利用できます。をインストールするには、から VASA39 .tar.gz ファイルをダウンロードします https://mysupport.netapp.com/products/element_software/VASA39/index.html["ネットアップのソフトウェアダウンロード"] サイトに移動し、マニフェストの指示に従います。NetApp Element VASA プロバイダはネットアップの証明書を使用します。このパッチでは、 vCenter が証明書を変更せずに使用して、 VASA および VVOL に使用する複数の vCenter をサポートします。証明書は変更しないでください。カスタム SSL 証明書は VASA でサポートされません。
+
+link:../storage/task_data_manage_vvol_enable_virtual_volumes.html["仮想ボリュームの操作について学ぶ"]
+
+
+
+== ボリュームアクセスグループとイニシエータを使用する
+
+iSCSI イニシエータまたは Fibre Channel イニシエータを使用して、ボリュームアクセスグループ内に定義されたボリュームにアクセスできます。
+
+アクセスグループを作成するには、 iSCSI イニシエータの IQN または Fibre Channel の WWPN をボリュームのグループにマッピングします。アクセスグループに追加した各 IQN は、 CHAP 認証なしでグループ内の各ボリュームにアクセスできます。
+
+CHAP 認証には、次の 2 種類の方法があります。
+
+* アカウントレベルの CHAP 認証：アカウントに CHAP 認証を割り当てることができます。
+* イニシエータレベルの CHAP 認証： 1 つのアカウントを 1 つの CHAP にバインドすることなく、特定のイニシエータに一意の CHAP ターゲットとシークレットを割り当てることができます。このイニシエータレベルの CHAP 認証では、アカウントレベルのクレデンシャルが置き換えられます
+
+
+必要に応じて、イニシエータ単位の CHAP を使用して、イニシエータの承認とイニシエータごとの CHAP 認証を適用できます。これらのオプションはイニシエータ単位で定義でき、アクセスグループにはオプションの異なるイニシエータを混在させることができます。
+
+アクセスグループに追加した各 WWPN は、アクセスグループ内のボリュームへの Fibre Channel ネットワークアクセスを許可します。
+
+
+NOTE: ボリュームアクセスグループには次の制限があります。
+
+* 1 つのアクセスグループに含めることができる IQN または WWPN は最大 64 個です。
+* 1 つのアクセスグループに含めることができるボリュームは最大 2 、 000 個です。
+* 1 つの IQN または WWPN が属することのできるアクセスグループは 1 つだけです。
+* 1 つのボリュームが最大 4 つのアクセスグループに属することができます。
+
+
+link:../storage/task_data_manage_vol_access_group_create_a_volume_access_group.html["ボリューム アクセス グループとイニシエーターの操作について学習します"]
 
 
 

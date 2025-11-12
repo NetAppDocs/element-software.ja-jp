@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: solidfire, element, aiq, cluster, active iq, vcenter plugin, vcp, storage, what is, activeiq 
 summary: SolidFire オールフラッシュストレージシステムは、独立したハードウェアコンポーネントで構成されます（ドライブとノード）。これらのコンポーネントは、各ノードでそれぞれ実行されている NetApp Element ソフトウェアを通じて単一のストレージリソースプールに統合されます。この統合されたクラスタは、単一のストレージシステムとして外部クライアントに提供され、 Element ソフトウェアの UI 、 API 、およびその他の管理ツールによって単一のエンティティとして管理されます。 
 ---
-= SolidFire アーキテクチャの概要
+= SolidFireアーキテクチャについて学ぶ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

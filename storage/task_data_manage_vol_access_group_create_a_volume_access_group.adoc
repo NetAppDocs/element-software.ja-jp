@@ -61,7 +61,7 @@ TIP: 各ボリュームのイニシエータ IQN を確認するには、 * Mana
 
 イニシエータを変更するときは、 requiredCHAP 属性を True に切り替えて、ターゲットイニシエータシークレットを設定できます詳細については、 ModifyInitiator API メソッドに関する API 情報を参照してください。
 
-link:../api/index.html["Element API を使用してストレージを管理します"]
+link:../api/concept_element_api_about_the_api.html["Element API を使用してストレージを管理します"]
 
 |===
 . * オプション： * 必要に応じてイニシエータを追加します。

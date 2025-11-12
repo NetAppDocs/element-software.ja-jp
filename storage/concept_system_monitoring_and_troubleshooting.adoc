@@ -21,7 +21,7 @@ summary: システムの監視は、診断目的、および各種システム�
 * link:task_monitor_iscsi_sessions.html["iSCSI セッションを表示します"]
 * link:task_monitor_fibre_channel_sessions.html["Fibre Channel セッションを表示します"]
 * link:concept_troubleshoot_drives.html["ドライブのトラブルシューティング"]
-* link:concept_troubleshoot_nodes.html["ノードのトラブルシューティングを行う"]
+* link:concept_remove_nodes_from_cluster.html["ノードのトラブルシューティングを行う"]
 * link:concept_per_node_work_with_utilities.html["ストレージノードのノードユーティリティを使用する"]
 * link:concept_mnode_work_with_the_management_node.html["管理ノードを操作します"]
 * link:concept_monitor_understand_cluster_fullness_levels.html["クラスタフルレベルを把握"]

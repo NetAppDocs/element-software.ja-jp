@@ -102,5 +102,5 @@ ID
 == 詳細については、こちらをご覧ください
 
 * xref:reference_monitor_cluster_fault_codes.adoc[クラスタ障害コード]
-* link:../api/index.html["Element API を使用してストレージを管理します"]
+* link:../api/concept_element_api_about_the_api.html["Element API を使用してストレージを管理します"]
 

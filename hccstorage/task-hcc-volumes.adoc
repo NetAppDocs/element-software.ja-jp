@@ -66,7 +66,7 @@ image::hcc_volumes_icons.png[HCC Volumes ページのアイコン]
 .. * イニシエータ * ：ボリュームの iSCSI イニシエータ IQN または Fibre Channel WWPN を確認できます。アクセスグループに追加された各 IQN は、 CHAP 認証なしでグループ内の各ボリュームにアクセスできます。アクセスグループに追加された各 WWPN は、アクセスグループ内のボリュームへの Fibre Channel ネットワークアクセスを許可します。
 .. * QoS ポリシー * ：ボリュームに適用されている QoS ポリシーを確認できます。QoS ポリシーは、最小 IOPS 、最大 IOPS 、バースト時の IOPS の標準的な設定を複数のボリュームに適用します。
 +
-については、を参照してください link:../concepts/concept_data_manage_volumes_solidfire_quality_of_service.html#qos-performance.html["パフォーマンスポリシーと QoS ポリシー"]。
+に関する情報を見る link:../concepts/concept_data_manage_volumes_solidfire_quality_of_service.html#qos-performance["パフォーマンスポリシーと QoS ポリシー"]。
 
 
 

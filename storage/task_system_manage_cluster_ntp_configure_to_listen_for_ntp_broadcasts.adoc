@@ -13,6 +13,8 @@ summary: ブロードキャストモードを使用すると、クラスタ内�
 [role="lead"]
 ブロードキャストモードを使用すると、クラスタ内の各ノードが特定のサーバからの Network Time Protocol （ NTP ；ネットワークタイムプロトコル）ブロードキャストメッセージをネットワーク上でリスンするように設定できます。
 
+NTP は、ネットワークを介してクロックを同期するために使用されます。内部または外部の NTP サーバへの接続は、クラスタの初期セットアップ時に行う必要があります。
+
 .必要なもの
 * この設定を行うには、クラスタ管理者の権限が必要です。
 * ネットワーク上の NTP サーバをブロードキャストサーバとして設定する必要があります。
@@ -30,6 +32,7 @@ summary: ブロードキャストモードを使用すると、クラスタ内�
 
 == 詳細については、こちらをご覧ください
 
+* link:../storage/task_system_manage_cluster_ntp_configure.html["クラスタが照会するネットワークタイムプロトコルサーバを設定します"]
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
 

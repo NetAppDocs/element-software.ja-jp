@@ -31,7 +31,7 @@ summary: クラスタで FIPS ドライブ機能が有効になっているか�
 
 == 詳細については、こちらをご覧ください
 
-* link:../api/index.html["Element API を使用してストレージを管理します"]
+* link:../api/concept_element_api_about_the_api.html["Element API を使用してストレージを管理します"]
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
 

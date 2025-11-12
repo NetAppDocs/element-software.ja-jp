@@ -158,7 +158,7 @@ sudo service ntpd stop
 . NTP 構成ファイル /etc/ntp.conf を編集します
 +
 .. 各サーバの前に # を追加して ' デフォルト・サーバ（サーバ 0.gentoo.pool.ntp.org ）をコメントアウトします
-.. 追加するデフォルトのタイムサーバごとに新しい行を追加します。デフォルトのタイムサーバは、同じ NTP サーバである必要があります で使用するストレージクラスタで使用します A link:task_mnode_install.html#set-up-the-management-node["後の手順"]。
+.. 追加したいデフォルトのタイムサーバーごとに新しい行を追加します。デフォルトのタイムサーバーは、ストレージクラスターで使用するNTPサーバーと同じである必要があります。 <<set-up-the-management-node,後の手順>>。
 +
 [listing]
 ----
@@ -213,7 +213,7 @@ NOTE: 今後 VM を変更する場合は、このオプションを有効にし�
 
 
 
-NOTE: の実行時は NTP に影響するため、時刻の同期設定の完了後は NTP を編集しないでください link:task_mnode_install.html#set-up-the-management-node["Setup コマンド"] 管理ノード。
+NOTE: 時刻同期の設定が完了したら、NTPを編集しないでください。これは、実行時にNTPに影響します。 <<set-up-the-management-node,Setup コマンド>> 管理ノード上。
 
 
 
@@ -240,7 +240,7 @@ NOTE: 内はコマンドの省略名で、正式な名前の代わりに使用�
 
 +
 *** * --mnode_admin_user （ -mu ） [username] * ：管理ノードの管理者アカウントのユーザ名。一般には、管理ノードへのログインに使用したユーザアカウントのユーザ名です。
-*** * --storage_mvip （ -SM ） [MVIP アドレス ] * ： Element ソフトウェアを実行しているストレージクラスタの管理仮想 IP アドレス（ MVIP ）。同じストレージクラスタを使用して管理ノードを設定します の間に使用しました link:task_mnode_install.html#configure-time-sync["NTP サーバの設定"]。
+*** *--storage_mvip (-sm) [MVIP アドレス]*: Element ソフトウェアを実行しているストレージ クラスターの管理仮想 IP アドレス (MVIP)。管理ノードを、インストール時に使用したのと同じストレージクラスターで構成します。 <<configure-time-sync,NTP サーバの設定>>。
 *** *--storage_username(-su )[username] * ：「 --storage_mvip 」パラメータで指定したクラスタのストレージクラスタ管理者のユーザ名。
 *** * --metal_active （ -t ） [true]* ： Active IQ による分析のためのデータ収集を有効にする値を true のままにします。
 

@@ -13,12 +13,13 @@ summary: EnableEncryptionAtRest メソッドを使用すると、クラスタの
 [role="lead"]
 EnableEncryptionAtRest メソッドを使用すると、クラスタの保存データの Advanced Encryption Standard （ AES ） 256 ビット暗号化を有効にできます。これにより、各ノードのドライブで使用される暗号化キーをクラスタで管理できるようになります。この機能はデフォルトでは有効になっていません。
 
+[NOTE]
+====
+* この方法では、保存データのソフトウェア暗号化は有効になりません。これは、を使用した場合にのみ実行できます link:../api/reference_element_api_createcluster.html["クラスタメソッドを作成します"^] enableSoftwareEncryptionAtRest を「 true 」に設定します。
+* クラスタ上の保存時の暗号化、保存時のソフトウェア暗号化、またはその両方の現在のステータスを表示するには、 link:../api/reference_element_api_getclusterinfo.html["クラスタ情報メソッドを取得します"]。使用することができます `GetSoftwareEncryptionAtRestInfo` link:../api/reference_element_api_getsoftwareencryptionatrestinfo.html["クラスタが保存データの暗号化に使用する情報を取得する方法"]。
 
-TIP: クラスタの保存データの暗号化とソフトウェア暗号化の現在のステータスを確認するには、を使用します link:../api/reference_element_api_getclusterinfo["クラスタ情報メソッドを取得します"^]。GetSoftwareEncryptionAtRestInfo' を使用できます link:../api/reference_element_api_getsoftwareencryptionatrestinfo["クラスタが保存データの暗号化に使用する情報を取得する方法"^]。
 
-
-NOTE: この方法では、保存データのソフトウェア暗号化は有効になりません。これは、を使用した場合にのみ実行できます link:../api/reference_element_api_createcluster.html["クラスタメソッドを作成します"^] enableSoftwareEncryptionAtRest を「 true 」に設定します。
-
+====
 保存データの暗号化を有効にすると、クラスタ内の各ノードのドライブについて、暗号化キーがクラスタ内部で自動的に管理されます。
 
 keyProviderID を指定すると、キープロバイダのタイプに応じてパスワードが生成され、取得されます。KMIP キープロバイダの場合は、通常 Key Management Interoperability Protocol （ KMIP ）キーサーバが使用されます。この処理の実行後、指定したプロバイダはアクティブとみなされ、「 D isableEncryptionAtRest 」メソッドを使用して保存データの暗号化を無効にするまで削除できません。

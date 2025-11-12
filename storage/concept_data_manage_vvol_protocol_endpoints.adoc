@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: protocol endpoint, access, cluster, storage node, iscsi supported 
 summary: プロトコルエンドポイントは、ホストが NetApp Element ソフトウェアを実行しているクラスタ上のストレージに対処する際に使用するアクセスポイントです。ユーザがプロトコルエンドポイントを削除または変更することはできません。プロトコルエンドポイントはアカウントには関連付けられず、またボリュームアクセスグループに追加することはできません。 
 ---
-= プロトコルエンドポイント
+= プロトコルエンドポイントについて学ぶ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

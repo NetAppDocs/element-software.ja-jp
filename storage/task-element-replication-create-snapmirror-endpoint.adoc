@@ -11,7 +11,7 @@ summary: レプリケーション関係を作成する前に、SnapMirrorエン�
 
 
 [role="lead"]
-レプリケーション関係を作成する前に、SnapMirrorエンドポイントを作成する必要があります。このタスクは、ElementソフトウェアWeb UIまたはを使用してのみ実行できますlink:../api/concept_element_api_snapmirror_api_methods.html["SnapMirror API メソッド"]。
+レプリケーション関係を作成する前に、SnapMirrorエンドポイントを作成する必要があります。このタスクは、ElementソフトウェアのWeb UIまたは link:../api/reference_element_api_abortsnapmirrorrelationship.html["SnapMirror API メソッド"]。
 
 .作業を開始する前に
 ElementクラスタでSnapMirrorを有効にしておく必要があります。

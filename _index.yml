@@ -17,15 +17,15 @@ indexpage:
     - title: 新機能
       url: "/concepts/concept_rn_whats_new_element.html"
     - title: 要件
-      url: "/setup/concept_requirements_overview.html"
+      url: "/storage/concept_prereq_networking.html"
     - title: セットアップの概要
       url: "/setup/concept_setup_overview.html"
   - title: ハードウェアの設置とメンテナンス
     links:
     - title: H410S および H610S ハードウェアの情報
-      url: "/hardware/concept_h410s_h610s_info.html"
+      url: "/hardware/task_h410s_h610s_install.html"
     - title: SF シリーズハードウェアの情報
-      url: "/hardware/concept_sfseries_info.html"
+      url: "/hardware/task_sfseries_chassisrepl.html"
     - title: 工場出荷時のイメージ情報に戻ります
       url: "/hardware/concept_rtfi_configure.html"
     - title: NetApp Hシリーズストレージノードでサポートされるファームウェアのリビジョン
@@ -35,9 +35,9 @@ indexpage:
     - title: Element ソフトウェア UI を使用
       url: "/storage/index.html"
     - title: NetApp Hybrid Cloud Control を使用する
-      url: "/hccstorage/index.html"
+      url: "/hccstorage/task-hcc-manage-storage-clusters.html"
     - title: ElementソフトウェアAPIの使用
-      url: "/api/index.html"
+      url: "/api/concept_element_api_about_the_api.html"
     - title: Element Plug-in for vCenter Server を使用します
       url: https://docs.netapp.com/us-en/vcp/
     - title: NetApp SolidFire Active IQ を使用する
@@ -80,10 +80,6 @@ indexpage:
       url: https://mysupport.netapp.com/site/products/all/details/element-software/guideme-tab
   - title: 以前のバージョン
     links:
-    - title: Element 12.5のドキュメント
-      url: https://docs.netapp.com/us-en/element-software-125/index.html
-    - title: Element 12.3.xのドキュメント
-      url: https://docs.netapp.com/us-en/element-software-123/index.html
     - title: Element 12.2.1のドキュメント
       url: https://mysupport.netapp.com/documentation/docweb/index.html?productID=63945&language=en-US
     - title: Element 12.2 のドキュメント

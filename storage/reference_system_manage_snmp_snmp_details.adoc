@@ -4,13 +4,24 @@ sidebar: sidebar
 keywords: snmp, overview, reference, mib, settings, trap 
 summary: クラスタタブの SNMP ページでは、次の情報を表示できます。 
 ---
-= SNMP の詳細
+= SNMPの詳細
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+クラスタに簡易ネットワーク管理プロトコル（ SNMP ）を設定できます。
+
+SNMP リクエスタの選択、使用する SNMP のバージョンの選択、 SNMP User-based Security Model （ USM ；ユーザベースのセキュリティモデル）ユーザの識別、 SolidFire クラスタを監視するためのトラップの設定を行うことができます。また、管理情報ベースファイルを表示してアクセスすることもできます。
+
+
+NOTE: IPv4 アドレスと IPv6 アドレスの両方を使用できます。
+
+
+
+== SNMP の詳細
+
 クラスタタブの SNMP ページでは、次の情報を表示できます。
 
 * * SNMP MIB*

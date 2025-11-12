@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SolidFire,API,overview,about,Element 
 summary: Element API は、 HTTPS 経由の JSON-RPC プロトコルに基づいています。JSON-RPC は、軽量な JSON データ交換形式をベースにした単純なテキストベースの RPC プロトコルです。クライアントライブラリは、すべての主要なプログラミング言語で使用できます。 
 ---
-= Element ソフトウェア API の概要
+= Element API を使用したストレージ管理について学ぶ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -23,13 +23,210 @@ NOTE: Element Web UI は、本ドキュメントに記載された API メソッ
 
 NOTE: ストレージクラスタの負荷が高い場合や、多数の連続した API 要求を間隔を空けずに送信した場合は、メソッドが失敗してエラー「 xDBVersionMismatch 」を返すことがあります。この場合は、メソッドの呼び出しを再試行してください。
 
-* xref:reference_element_api_request_object_members.adoc[要求オブジェクトメンバー]
-* xref:reference_element_api_response_object_members.adoc[応答オブジェクトメンバー]
-* xref:concept_element_api_request_endpoints.adoc[要求エンドポイント]
-* xref:concept_element_api_authentication.adoc[API 認証]
-* xref:concept_element_api_asynchronous_methods.adoc[非同期メソッド]
-* xref:reference_element_api_attributes.adoc[属性（ Attributes ）]
 
+
+== 共通オブジェクト
+
+Element ソフトウェア API は、まとまったデータの概念を表すのに JSON オブジェクトを使用します。これらのオブジェクトは、多くの API メソッドでデータの入力や出力に使用されています。このセクションでは、これらの共通オブジェクトについて説明します。 1 つのメソッドでのみ使用されるオブジェクトについては、このセクションではなく、該当するメソッドの説明に記載します。
+
+link:../api/reference_element_api_account.html["一般的な物について学ぶ"]
+
+
+
+== 共通メソッド
+
+共通メソッドは、ストレージクラスタ、 API 自体、または実行中の API 処理に関する情報を取得するために使用されるメソッドです。
+
+link:../api/reference_element_api_getapi.html["一般的な方法について学ぶ"]
+
+
+
+== アカウント API メソッド
+
+アカウントメソッドを使用すると、アカウントおよびセキュリティ情報を追加、削除、表示、および変更できます。
+
+link:../api/reference_element_api_addaccount.html["アカウントAPIメソッドについて学ぶ"]
+
+
+
+== 管理者 API メソッド
+
+管理者 API メソッドを使用すると、ストレージクラスタ管理者の作成、変更、表示、削除、およびストレージクラスタにアクセスするクラスタ管理者のアクセスレベルや権限の割り当てができます。
+
+link:../api/reference_element_api_addclusteradmin.html["管理者APIメソッドについて学ぶ"]
+
+
+
+== クラスタ API メソッド
+
+Element ソフトウェアクラスタ API メソッドを使用すると、ストレージクラスタおよびストレージクラスタに属するノードの設定とトポロジを管理できます。
+
+一部のクラスタ API メソッドは、クラスタに含まれているノードまたはクラスタに参加するように設定されているノードに対して実行されます。新しいクラスタまたは既存のクラスタにノードを追加できます。クラスタに追加する準備ができているノードは「 Pending 」状態です。設定は終わっているが、クラスタにはまだ追加されていないノードが該当します。
+
+link:../api/reference_element_api_addnodes.html["クラスターAPIメソッドについて学ぶ"]
+
+
+
+== クラスター作成APIメソッド
+
+これらの API メソッドを使用して、ストレージクラスタを作成できます。これらのメソッドはすべて、単一のノードの API エンドポイントに対して使用する必要があります。
+
+link:../api/reference_element_api_checkproposedcluster.html["クラスター作成APIメソッドについて学ぶ"]
+
+
+
+== ドライブ API メソッド
+
+ドライブ API メソッドを使用すると、ストレージクラスタで使用可能なドライブを追加および管理できます。ストレージノードをストレージクラスタに追加するか既存のストレージノードに新しいドライブをインストールすると、ドライブはストレージクラスタに追加可能な状態になります。
+
+link:../api/reference_element_api_adddrives.html["ドライブAPIメソッドについて学ぶ"]
+
+
+
+== Fibre Channel API メソッド
+
+Fibre Channel API メソッドを使用すると、ストレージクラスタの Fibre Channel ノードのメンバーを追加、変更、または削除できます。
+
+link:../api/reference_element_api_getvolumeaccessgrouplunassignments.html["ファイバーチャネルAPIメソッドについて学ぶ"]
+
+
+
+== イニシエータ API メソッド
+
+イニシエータメソッドを使用すると、ストレージシステムと外部ストレージクライアントの間の通信を処理する iSCSI イニシエータオブジェクトを追加、削除、表示、および変更できます。
+
+link:../api/reference_element_api_createinitiators.html["イニシエーターAPIメソッドについて学ぶ"]
+
+
+
+== LDAP API メソッド
+
+Lightweight Directory Access Protocol （ LDAP ）を使用して、 Element ストレージへのアクセスを認証できます。このセクションで説明する LDAP API メソッドを使用すると、ストレージクラスタへの LDAP アクセスを設定できます。
+
+link:../api/reference_element_api_addldapclusteradmin.html["LDAP APIメソッドについて学ぶ"]
+
+
+
+== 多要素認証 API メソッド
+
+多要素認証（ MFA ）を使用して、 Security Assertion Markup Language （ SAML ）を介してサードパーティのアイデンティティプロバイダ（ IdP ）を使用してユーザセッションを管理できます。
+
+link:../api/reference_element_api_addidpclusteradmin.html["多要素認証APIメソッドについて学ぶ"]
+
+
+
+== セッション認証 API メソッド
+
+セッションベースの認証を使用してユーザセッションを管理できます。
+
+link:../api/reference_element_api_listauthsessionbyclusteradmin.html["セッション認証APIメソッドについて学ぶ"]
+
+
+
+== ノード API メソッド
+
+ノード API メソッドを使用すると、個々のノードを設定できます。これらのメソッドは、設定が必要なノード、設定済みだがクラスタに参加していないノード、またはクラスタにアクティブに参加しているノードに対して実行されます。ノード API メソッドを使用して、個々のノード、およびノードとの通信に使用されるクラスタネットワークの設定を表示および変更できます。これらのメソッドは個々のノードに対して実行する必要があります。クラスタのアドレスに対してノード API メソッドを実行することはできません。
+
+link:../api/reference_element_api_checkpingonvlan.html["ノードAPIメソッドについて学ぶ"]
+
+
+
+== レプリケーション API メソッド
+
+レプリケーション API メソッドを使用すると、継続的なデータ保護（ CDP ）のために 2 つのクラスタを接続できます。2 つのクラスタを接続すると、 1 つのクラスタ内のアクティブなボリュームをもう一方のクラスタに継続的にレプリケートしてデータリカバリを実現できます。レプリケーション用にボリュームをペアリングすることで、データにアクセスできなくなる可能性のあるイベントからデータを保護できます。
+
+link:../api/reference_element_api_cluster_pairing_order_of_operations.html["レプリケーションAPIメソッドについて学ぶ"]
+
+
+
+== セキュリティ API メソッド
+
+Element ソフトウェアは、外部キー管理サーバなどの外部セキュリティ関連サービスと統合できます。これらのセキュリティ関連のメソッドを使用して、保存データの暗号化のための外部キー管理などの Element セキュリティ機能を設定できます。
+
+link:../api/reference_element_api_addkeyservertoproviderkmip.html["セキュリティAPIメソッドについて学ぶ"]
+
+
+
+== SnapMirror API メソッド
+
+SnapMirror API メソッドは、リモート ONTAP システムでミラーリングされる Snapshot を Element Web UI で管理するために使用されます。このメソッドは、 Element Web UI でのみ使用されます。SnapMirror 機能への API アクセスが必要な場合は、 ONTAP API を使用します。SnapMirror API メソッドには、要求例と戻り値の例が示されません。
+
+link:../api/reference_element_api_abortsnapmirrorrelationship.html["SnapMirror APIメソッドについて学ぶ"]
+
+
+
+== システム設定 API メソッド
+
+システム設定 API メソッドを使用すると、クラスタ内のすべてのノードに適用される設定値を取得および設定できます。
+
+link:../api/reference_element_api_disablebmccoldreset.html["システム構成APIメソッドについて学ぶ"]
+
+
+
+== マルチテナントネットワーク API メソッド
+
+Element ストレージクラスタのマルチテナントネットワークを使用すると、別々の論理ネットワークに属する複数のクライアント間のトラフィックをレイヤ 3 のルーティングなしで 1 つの Element ストレージクラスタに接続できます。
+
+ストレージクラスタへの各接続は、 VLAN タギングを使用してネットワークスタック内で分離されます。
+
+
+
+=== マルチテナント仮想ネットワークをセットアップするための前提条件
+
+* ストレージノード上の仮想ネットワークに割り当てるクライアントネットワーク IP アドレスのブロックを特定しておく必要があります。
+* すべてのストレージトラフィックのエンドポイントとして使用するクライアントストレージネットワーク IP （ SVIP ）アドレスを特定しておく必要があります。
+
+
+
+
+=== 仮想ネットワークの処理順序
+
+. AddVirtualNetwork メソッドを使用して、入力した IP アドレスを一括でプロビジョニングします。
++
+仮想ネットワークを追加すると、クラスタでは次の手順が自動的に実行されます。
+
++
+** ストレージノードごとに仮想ネットワークインターフェイスが作成され、
+** 各ストレージノードには、仮想 SVIP を使用してルーティングできる VLAN アドレスが割り当てられます。
+** ノードのリブート後も、各ノードの VLAN IP アドレスは維持されます。
+
+
+. 仮想ネットワークインターフェイスと VLAN アドレスが割り当てられたら、クライアントネットワークトラフィックを仮想 SVIP に割り当てることができます。
+
+
+link:../api/concept_element_api_virtual_network_naming_conventions.html["マルチテナントネットワークAPIメソッドについて学ぶ"]
+
+
+
+== ボリューム API メソッド
+
+Element ソフトウェアボリューム API メソッドを使用すると、ストレージノードにあるボリュームを管理できます。これらのメソッドを使用して、ボリュームを作成、変更、クローニング、および削除できます。また、ボリュームのデータ測定値を収集して表示することもできます。
+
+link:../api/reference_element_api_cancelclone.html["ボリュームAPIメソッドについて学ぶ"]
+
+
+
+== ボリュームアクセスグループ API メソッド
+
+ボリュームアクセスグループメソッドを使用すると、ボリュームアクセスグループを追加、削除、表示、および変更できます。ボリュームアクセスグループは、 iSCSI イニシエータまたは Fibre Channel イニシエータを使用してユーザがアクセスできるボリュームの集まりです。
+
+link:../api/reference_element_api_addinitiatorstovolumeaccessgroup.html["ボリューム アクセス グループ API メソッドについて学習する"]
+
+
+
+== ボリューム Snapshot API メソッド
+
+Element ソフトウェアのボリューム Snapshot API メソッドを使用すると、ボリューム Snapshot を管理できます。ボリューム Snapshot API メソッドを使用して、ボリューム Snapshot を作成、変更、クローニング、および削除できます。
+
+link:../api/concept_element_api_snapshots_overview.html["ボリュームスナップショットAPIメソッドについて学ぶ"]
+
+
+
+== 仮想ボリューム API メソッド
+
+Element ソフトウェア仮想ボリューム API メソッドを使用すると、仮想ボリューム（ VVol ）を管理できます。これらの API メソッドを使用して、既存の VVol を表示したり、仮想ボリュームストレージコンテナを作成、変更、削除したりできます。これらのメソッドを使用して通常のボリュームを処理することはできませんが、通常のボリュームの API メソッドを使用して VVol に関する情報を表示することはできます。
+
+link:../api/reference_element_api_createstoragecontainer.html["仮想ボリュームAPIメソッドについて学ぶ"]
 
 
 

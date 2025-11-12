@@ -21,13 +21,13 @@ sidebar:
   - title: SolidFireおよびElementソフトウェアのドキュメント12.8
     url: "/index.html"
   - title: リリースノート
-    url: "/concepts/concept_rn_relatedrn_element.html"
     entries:
+    - title: 現在のリリースノートと以前のリリースノート
+      url: "/concepts/concept_rn_relatedrn_element.html"
     - title: 新機能
       url: "/concepts/concept_rn_whats_new_element.html"
   - section: concepts
   - title: 要件
-    url: "/setup/concept_requirements_overview.html"
     entries:
     - title: ネットワーク要件
       url: "/storage/concept_prereq_networking.html"

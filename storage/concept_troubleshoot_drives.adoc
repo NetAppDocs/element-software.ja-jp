@@ -39,6 +39,6 @@ IMPORTANT: SolidFire ストレージシステムでは、データの移行に�
 * xref:task_troubleshoot_remove_mdss_drives.adoc[MDSS ドライブを削除します]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2844771["SolidFire ストレージノードのドライブの交換"]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2846859["H600S シリーズストレージノードのドライブの交換"]
-* link:../hardware/concept_h410s_h610s_info.html["H410S および H610S ハードウェアの情報"]
-* link:../hardware/concept_sfseries_info.html["SF シリーズハードウェアの情報"]
+* link:../hardware/task_h410s_h610s_install.html["H410S および H610S ハードウェアの情報"]
+* link:../hardware/task_sfseries_chassisrepl.html["SF シリーズハードウェアの情報"]
 

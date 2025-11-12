@@ -6,8 +6,9 @@ entries:
 - title: 製品の概要
   url: "/concepts/concept_intro_product_overview.html"
 - title: アーキテクチャとコンポーネント
-  url: "/concepts/concept_solidfire_concepts_solidfire_architecture_overview.html"
   entries:
+  - title: SolidFireアーキテクチャについて学ぶ
+    url: "/concepts/concept_solidfire_concepts_solidfire_architecture_overview.html"
   - title: SolidFire ソフトウェアインターフェイス
     url: "/concepts/concept_intro_solidfire_software_interfaces.html"
   - title: SolidFire Active IQ の略

@@ -39,7 +39,7 @@ FIPS を有効にする API 要求の例を次に示します。
 == 詳細については、こちらをご覧ください
 
 * xref:reference_system_manage_fips_ssl_cipher_changes.adoc[SSL 暗号]
-* link:../api/index.html["Element API を使用してストレージを管理します"]
+* link:../api/concept_element_api_about_the_api.html["Element API を使用してストレージを管理します"]
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
 

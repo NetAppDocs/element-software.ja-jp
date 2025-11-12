@@ -13,6 +13,8 @@ summary: クラスタ内の各ノードでネットワークタイムプロト�
 [role="lead"]
 クラスタ内の各ノードで Network Time Protocol （ NTP ；ネットワークタイムプロトコル）サーバに更新を照会するように設定できます。クラスタは、設定済みのサーバのみと通信し、そのサーバから NTP 情報を要求します。
 
+NTP は、ネットワークを介してクロックを同期するために使用されます。内部または外部の NTP サーバへの接続は、クラスタの初期セットアップ時に行う必要があります。
+
 ローカルの NTP サーバを参照するようにクラスタの NTP を設定してください。IP アドレスまたは FQDN ホスト名を使用できます。クラスタの作成時に設定されるデフォルトの NTP サーバは us.pool.ntp.org です。ただし SolidFire クラスタの物理的な場所によっては、このサイトへの接続を常に確立できるとはかぎりません。
 
 FQDN の使用方法は、個々のストレージノードの DNS 設定が正常に機能しているかどうかによって異なります。そのためには、すべてのストレージノードで DNS サーバを設定し、 [Network Port Requirements] ページでポートが開いていることを確認します。
@@ -37,6 +39,7 @@ NOTE: IPv4 アドレスと IPv6 アドレスの両方を使用できます。
 
 == 詳細については、こちらをご覧ください
 
+* link:../storage/task_system_manage_cluster_ntp_configure_to_listen_for_ntp_broadcasts.html["NTP ブロードキャストをリスンするようにクラスタを設定する"]
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]
 

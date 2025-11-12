@@ -11,9 +11,11 @@ summary: 以下の Element API による基本的な手順を使用して、マ�
 
 
 [role="lead"]
+多要素認証（ MFA ）では、 Security Assertion Markup Language （ SAML ）を使用してサードパーティのアイデンティティプロバイダ（ IdP ）を使用してユーザセッションを管理します。MFA を使用することで、管理者は、パスワードとテキストメッセージ、パスワードと E メールメッセージなど、必要に応じて認証のその他の要素を設定できます。
+
 以下の Element API による基本的な手順を使用して、マルチファクタ認証を使用するようにクラスタをセットアップできます。
 
-各 API メソッドの詳細については、を参照してください link:../api/index.html["Element API リファレンス"]。
+各APIメソッドの詳細については、 link:../api/concept_element_api_about_the_api.html["Element API リファレンス"]。
 
 . 次の API メソッドを呼び出し、 IdP メタデータを JSON 形式で渡して、クラスタの新しいサードパーティのアイデンティティプロバイダ（ IdP ）設定を作成します：「 CreateIdpConfiguration 」
 +

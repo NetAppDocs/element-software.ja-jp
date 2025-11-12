@@ -1,7 +1,6 @@
 ---
 section: hccstorage
 title: NetApp Hybrid Cloud Control を使用してストレージを管理および監視します
-url: "/hccstorage/index.html"
 entries:
 - title: NetApp Hybrid Cloud Control を使用してストレージクラスタを追加および管理します
   url: "/hccstorage/task-hcc-manage-storage-clusters.html"

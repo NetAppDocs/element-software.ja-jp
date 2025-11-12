@@ -61,7 +61,6 @@ Fibre Channel ノードには次の特徴があります。
 
 == ノードの処理の状態
 
-[role="lead"]
 設定のレベルによって、ノードは次のいずれかの状態になります。
 
 * * 利用可能 *
@@ -90,7 +89,8 @@ Fibre Channel ノードには次の特徴があります。
 
 上記の各状態では、一部のフィールドは読み取り専用です。
 
-[discrete]
+
+
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

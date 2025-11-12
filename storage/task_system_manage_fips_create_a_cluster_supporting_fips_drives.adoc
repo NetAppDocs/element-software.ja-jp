@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fips, security, federal information processing standards, 140-2, cluster, create 
 summary: 多くのお客様の環境にソリューションを導入する場合、セキュリティの重要性はますます高まっています。Federal Information Processing Standards （ FIPS ；連邦情報処理標準）は、コンピュータのセキュリティと相互運用性に関する標準です。FIPS 140-2 認定の保存データの暗号化は、全体的なセキュリティ解決策に欠かせない要素です。 
 ---
-= FIPS ドライブをサポートするクラスタを作成します
+= FIPSドライブ機能用にElementクラスタを準備する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,10 +13,12 @@ summary: 多くのお客様の環境にソリューションを導入する場�
 [role="lead"]
 多くのお客様の環境にソリューションを導入する場合、セキュリティの重要性はますます高まっています。Federal Information Processing Standard （ FIPS ；連邦情報処理標準）は、コンピュータのセキュリティと相互運用性に関する標準です。FIPS 140-2 認定の保存データの暗号化は、全体的なセキュリティ解決策に欠かせない要素です。
 
-* link:task_system_manage_fips_avoid_mixing_nodes_for_fips_drives.html["FIPS ドライブのノードを混在させないようにします"]
-* link:task_system_manage_fips_enable_encryption_at_rest.html["保存データの暗号化を有効にします"]
-* link:task_system_manage_fips_identify_nodes_ready_for_fips_drives["ノードが FIPS ドライブ機能に対応しているかどうかを確認します"]
-* link:task_system_manage_fips_enable_the_fips_drives_feature.html["FIPS ドライブ機能を有効にします"]
-* link:task_system_manage_fips_check_the_fips_drive_status.html["FIPS ドライブのステータスを確認します"]
-* link:task_system_manage_fips_troubleshoot_the_fips_drive_feature["FIPS ドライブ機能のトラブルシューティングを行います"]
+FIPS ドライブ機能を有効にする準備として、 FIPS ドライブに対応しているノードと対応していないノードが混在しないようにする必要があります。
+
+次の条件を満たす場合、クラスタは FIPS ドライブに準拠しているとみなされます。
+
+* すべてのドライブが FIPS ドライブとして認定されている。
+* すべてのノードが FIPS ドライブノードである。
+* 保存データの暗号化（ EAR ）が有効になっている。
+* FIPS ドライブ機能が有効になっている。FIPS ドライブ機能を有効にするには、すべてのドライブとノードが FIPS に対応し、保存データの暗号化が有効になっている必要があります。
 
