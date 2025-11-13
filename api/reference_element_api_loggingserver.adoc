@@ -11,7 +11,7 @@ summary: loggingServer オブジェクトには、ストレージクラスタに
 
 
 [role="lead"]
-loggingServer オブジェクトには、ストレージクラスタに対して設定されたロギングホストの情報が含まれます。「 GetRemoteLoggingHosts 」を使用して現在のロギングホストを特定し、「 S etRemoteLoggingHosts 」を使用して現在のロギングホストと新しいロギングホストのリストを設定できます。
+loggingServer オブジェクトには、ストレージ クラスター用に構成されたログ ホストに関する情報が格納されます。使用 `GetRemoteLoggingHosts`現在のログホストを表示し、 `SetRemoteLoggingHosts`現在のログホストと新しいログホストの必要なリストを設定します。
 
 
 
@@ -26,7 +26,7 @@ loggingServer オブジェクトには、ストレージクラスタに対して
  a| 
 ホスト
  a| 
-ログサーバの IP アドレス。
+ログサーバーのFQDNまたはIPアドレス
  a| 
 文字列
 
@@ -35,8 +35,12 @@ loggingServer オブジェクトには、ストレージクラスタに対して
  a| 
 ポート
  a| 
-ログサーバとの通信に使用するポート番号。
+ログサーバーとの通信に使用するポート番号
  a| 
 整数
 
 |===
+.関連情報
+* link:reference_element_api_getremotelogginghosts.html["GetRemoteLoggingHosts"]
+* link:reference_element_api_setremotelogginghosts.html["SetRemoteLoggingHosts"]
+

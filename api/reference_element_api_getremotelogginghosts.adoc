@@ -17,13 +17,13 @@ summary: GetRemoteLoggingHosts メソッドを使用すると、現在のログ�
 
 == パラメータ
 
-このメソッドには入力パラメータはありません。
+入力パラメータはありません `GetRemoteLoggingHosts`。
 
 
 
 == 戻り値
 
-このメソッドの戻り値は次のとおりです。
+その `GetRemoteLoggingHosts`このメソッドには次の戻り値があります。
 
 |===
 | 名前 | 説明 | を入力します 
@@ -32,7 +32,7 @@ summary: GetRemoteLoggingHosts メソッドを使用すると、現在のログ�
  a| 
 リモートホスト
  a| 
-転送されたロギング情報を受信するように設定されているホストの IP アドレスおよびポート情報のリスト。
+転送されたログ情報を受信するように構成されたホストの IP アドレス、FQDN、およびポート情報を一覧表示します。
  a| 
 xref:reference_element_api_loggingserver.adoc[loggingServer の場合] 配列
 
@@ -69,6 +69,10 @@ xref:reference_element_api_loggingserver.adoc[loggingServer の場合] 配列
          },
          {
            "host": "172.16.1.25"
+         },
+         {
+            "host": "syslogs.lab.company.net",
+            "port": 514
          }
       ]
    }
@@ -78,7 +82,7 @@ xref:reference_element_api_loggingserver.adoc[loggingServer の場合] 配列
 
 == 新規導入バージョン
 
-9.6
+ONTAP 9.6 以降で使用可能です。
 
 
 

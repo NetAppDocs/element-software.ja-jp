@@ -12,16 +12,30 @@ summary: ネットアップでは、 SolidFire および Element ソフトウェ
 
 
 [role="lead"]
-ネットアップでは、 SolidFire および Element ソフトウェアを定期的に更新して、新機能、拡張機能、およびバグの修正を提供しています。Element 12.8は最新リリースで、セキュリティおよびシステムコンポーネントのアップデート、運用の改善、および解決済みの問題が含まれています。
+NetApp は、新しい機能、拡張機能、バグ修正を提供するために、 SolidFireおよび Element ソフトウェアを定期的に更新します。Element 12.9 は最新リリースであり、セキュリティとシステム コンポーネントの更新、運用の改善、および解決された問題が含まれています。
 
 
-NOTE: ソフトウェアとファームウェアの累積更新は、ストレージクラスタで実行されているElementの現在のバージョンに基づいて、Element 12.8のアップグレードの一環としてインストールされます。たとえば、クラスタでElement 12.5を実行している場合は、Element 12.8に直接アップグレードして、Element 12.7と12.8の両方から累積的な更新を取得できます。サポートされているアップグレードパスについては、ナレッジベースの記事を参照して https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software["NetApp Elementソフトウェアを実行するストレージクラスタのアップグレードマトリックス"^]ください。
+NOTE: 累積的なソフトウェアおよびファームウェアの更新は、ストレージ クラスターで実行されている現在の Element バージョンに基づいて、Element 12.9 アップグレードの一部としてインストールされます。たとえば、クラスターが現在 Element 12.5 を実行している場合、Element 12.9 に直接アップグレードして、Element 12.7、12.8、および 12.9 の両方からの累積的な更新を取得できます。サポートされているアップグレードパスについては、ナレッジベースの記事を参照してください。 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software["NetApp Elementソフトウェアを実行するストレージクラスタのアップグレードマトリックス"^] 。
+
+
+
+== 要素12.9
+
+Element 12.9 の新機能について説明します。
+
+
+
+=== 「SetRemoteLoggingHosts」でのFQDNのサポート
+
+Element 12.9以降では、 `SetRemoteLoggingHosts`ストレージ クラスターのログ ホスト値として完全修飾ドメイン名 (FQDN) または IP アドレスを構成する方法。応答内のFQDNホスト値を確認できます。 `GetRemoteLoggingHosts`方法。  Element 12.8 以前では、ログ ホスト値として IP アドレスのみを設定できます。
+
+https://docs.netapp.com/us-en/element-software/api/reference_element_api_loggingserver.html["ログホスト構成の詳細"]
 
 
 
 == 要素12.8
 
-Element 12.8の新機能の詳細については、こちらをご覧ください。
+Element 12.8 の新機能について説明します。
 
 
 
@@ -59,7 +73,7 @@ Element 12.8では、および `ListVolumeStatsByVolume`APIメソッドを使用
 
 == 要素12.7
 
-Element 12.7の新機能の詳細については、こちらをご覧ください。
+Element 12.7 の新機能について説明します。
 
 
 
@@ -118,7 +132,7 @@ SolidFire Active IQ UIでQoS管理ページに移動して、クラスタに関�
 
 == Element 12.5
 
-Element 12.5の新機能の詳細については、こちらをご覧ください。
+Element 12.5 の新機能について説明します。
 
 
 

@@ -20,7 +20,7 @@ keywords: netapp, vcp, vCenter plug-in, upgrade, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 4
 
 [NOTE]
 ====
-管理サービス 2.27 バンドルには、管理ノード 12.8 とのみ互換性のある vCenter Server 5.5 用の Element プラグインが含まれています。管理サービス 2.27 に更新する場合は、管理ノードと管理サービス間の互換性を確保するために、アップグレード シーケンスを変更し、Element 12.8 にアップグレードした後に管理サービス バンドルを更新する必要があります。
+管理サービス 2.27 バンドルには、管理ノード 12.8 以降とのみ互換性のある vCenter Server 5.5 用の Element プラグインが含まれています。管理サービス 2.27 に更新する場合は、管理ノードと管理サービス間の互換性を確保するために、アップグレード シーケンスを変更し、Element 12.9 にアップグレードした後に管理サービス バンドルを更新する必要があります。
 
 管理サービス 2.22.7 バンドルには、vCenter Server 5.0 用の Element プラグインが含まれており、これにはリモートプラグインが含まれています。Element プラグインをご利用の場合は、ローカルプラグインのサポートを削除する VMware の指示に従うため、管理サービス 2.22.7 以降にアップグレードする必要があります。 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere-sdks-tools/8-0/developing-local-plug-ins-client-sdk/about-this-book-local/deprecation-of-local-plug-in-architecture.html["詳細はこちら。"^]。
 

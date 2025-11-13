@@ -5,8 +5,9 @@ indexpage:
     NetApp Element ソフトウェアで管理されます。
   keywords: solidfire, all-flash, storage, hardware, install, maintain, element software,
     esos, element cli
-  lead: SolidFire オールフラッシュストレージシステムは、ドライブやノードなどのハードウェアコンポーネントで構成され、これらのコンポーネントをストレージリソースのプールに統合します。これらのストレージリソースクラスタは、Elementインターフェイス、API、またはその他の管理ツールを使用してNetApp
-    Elementソフトウェアで管理できます。このサイトには、Elementソフトウェア12.8のドキュメントが含まれています。
+  lead: SolidFireオールフラッシュ ストレージ システムは、ストレージ リソースのプールに結合されたドライブやノードなどのハードウェア コンポーネントで構成されています。Element
+    インターフェイス、API、またはその他の管理ツールを使用して、 NetApp Elementソフトウェアでこれらのストレージ リソース クラスターを管理できます。このサイトには、Element
+    ソフトウェア 12.9 のドキュメントが含まれています。
   tiles:
   - title: はじめに
     links:

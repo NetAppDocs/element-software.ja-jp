@@ -20,6 +20,7 @@ NOTE: ネットアップサポートのクレデンシャルでログインす�
 
 == NetApp Element ソフトウェア
 
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP3362264["NetApp Elementソフトウェア 12.9 リリースノート"^]_新しい_
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2886996["NetApp Element ソフトウェア12.8リリースノート"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2884468["NetApp Element ソフトウェア12.7リリースノート"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2882193["NetApp Element ソフトウェア12.5リリースノート"^]
@@ -49,7 +50,7 @@ NOTE: ネットアップサポートのクレデンシャルでログインす�
 
 == vCenter Server 向け NetApp Element プラグイン
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP3344864["vCenter プラグイン 5.5 リリースノート"^]_新しい_
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP3344864["vCenter プラグイン 5.5 リリースノート"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP3330676["『 vCenter Plug-in 5.4 Release Notes 』を参照してください"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP3316480["vCenter Plug-in 5.3リリースノート"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2886272["vCenter Plug-in 5.2リリースノート"^]
@@ -78,7 +79,7 @@ NOTE: ネットアップサポートのクレデンシャルでログインす�
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.76.html["ストレージファームウェアバンドル 2.76 リリースノート"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.27.html["ストレージファームウェアバンドル 2.27 リリースノート"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_H610S_BMC_3.84.07.html["H610S BMC 3.84.07 リリースノート"^]
-* https://docs.netapp.com/us-en/hci/docs/firmware_driver_versions.html["サポートされているファームウェアおよびESXiドライバのバージョン"] _ 新規 _
+* https://docs.netapp.com/us-en/hci/docs/firmware_driver_versions.html["サポートされているファームウェアおよびESXiドライバのバージョン"]
 
 
 
