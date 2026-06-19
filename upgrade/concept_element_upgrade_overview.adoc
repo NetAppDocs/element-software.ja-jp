@@ -49,7 +49,7 @@ TIP: バージョンを確認するには、管理ノードにログインし、
 NetApp Hybrid Cloud Control を使用したアップグレードは、それよりも前のバージョンのサービスバンドルでは利用できません。
 
 * すべてのノードのシステム時間が同期され、 NTP がストレージクラスタとノードに対して正しく設定されていることを確認しておきます。各ノードには、ノード Web UI （「 https://[IP address 」： 442 ）に DNS ネームサーバを設定する必要があります。時刻のずれに関連する未解決のクラスタ障害はありません。
-* に十分な時間を設定しておきます link:task_hcc_upgrade_element_software.html#element-upgrade-time["Element ソフトウェア"] および link:task_hcc_upgrade_storage_firmware.html#storage-firmware-upgrade["ストレージファームウェア"] アップグレード：Elementソフトウェア12.5以降にアップグレードする場合は、Elementソフトウェアのバージョンとファームウェアの更新によってアップグレードプロセスの時間が異なります。
+* link:task_hcc_upgrade_element_software.html["Element ソフトウェア"]およびlink:task_hcc_upgrade_storage_firmware.html#storage-firmware-upgrade["ストレージファームウェア"]のアップグレードに十分な時間を確保しています。Element ソフトウェアをバージョン 12.5 以降にアップグレードする場合、アップグレードにかかる時間は、Element ソフトウェアのバージョンとファームウェアのアップデート内容によって異なります。
 
 
 

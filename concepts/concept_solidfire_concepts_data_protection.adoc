@@ -35,7 +35,7 @@ Element ストレージデータ保護の概念は次のとおりです。
 * <<SnapMirror を使用した Element クラスタと ONTAP クラスタ間のレプリケーション>>
 
 
-詳細については、を参照してください https://www.netapp.com/pdf.html?item=/media/10607-tr4741pdf.pdf["TR-4741 ：『 NetApp Element Software Remote Replication 』"^]。
+詳細については、 https://www.netapp.com/pdf.html?item=/media/10607-tr4741.pdf["TR-4741 ：『 NetApp Element Software Remote Replication 』"^]を参照してください。
 
 
 
@@ -93,7 +93,7 @@ SnapMirror は、地理的に離れたサイトのプライマリストレージ
 
 SnapMirror は、 NetApp ONTAP コントローラにあらかじめ搭載されており、 NetApp HCI クラスタと SolidFire クラスタで実行される Element に統合されています。SnapMirror を制御するロジックは ONTAP ソフトウェアにあるため、連携して機能するには、すべての SnapMirror 関係に少なくとも 1 つ ONTAP システムが含まれている必要があります。ユーザは主に Element UI から Element クラスタと ONTAP クラスタの間の関係を管理しますが、一部の管理タスクは NetApp ONTAP System Manager で実行します。また、 ONTAP と Element の両方で使用できる CLI と API を使用して SnapMirror を管理することもできます。
 
-を参照してください https://fieldportal.netapp.com/content/616239["TR-4651 ：『 NetApp SolidFire SnapMirror Architecture and Configuration 』"^] （ログインが必要）
+参照 https://www.netapp.com/pdf.html?item=/media/19771-tr-4651.pdf["TR-4651 ：『 NetApp SolidFire SnapMirror Architecture and Configuration 』"^]
 
 Element ソフトウェアを使用して、クラスタレベルで SnapMirror 機能を手動で有効にする必要があります。SnapMirror 機能はデフォルトでは無効になっており、新規インストール時やアップグレード時に自動的に有効になることはありません。
 
