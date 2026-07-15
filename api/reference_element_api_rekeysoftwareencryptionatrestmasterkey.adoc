@@ -15,6 +15,7 @@ RekeySoftwareEncryptionAtRestMasterKey メソッドを使用すると、 DEK （
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。keyManagementType パラメータを指定しない場合は、既存のキー管理設定を使用してキー変更操作が実行されます。「 keyManagementType 」を指定し、キープロバイダが外部の場合は、「 keyProviderID 」パラメータも使用する必要があります。
@@ -31,6 +32,7 @@ RekeySoftwareEncryptionAtRestMasterKey メソッドを使用すると、 DEK （
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -44,6 +46,7 @@ RekeySoftwareEncryptionAtRestMasterKey メソッドを使用すると、 DEK （
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -60,6 +63,7 @@ RekeySoftwareEncryptionAtRestMasterKey メソッドを使用すると、 DEK （
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -72,6 +76,7 @@ RekeySoftwareEncryptionAtRestMasterKey メソッドを使用すると、 DEK （
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 12.3

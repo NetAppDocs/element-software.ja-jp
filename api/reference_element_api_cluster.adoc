@@ -15,6 +15,7 @@ cluster オブジェクトには、ノードとクラスタの通信で使用さ
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -147,6 +148,7 @@ SIPI
 |===
 
 
+[[member-modifiability-and-node-states]]
 == メンバーの変更の可否とノードの状態
 
 次の表に、それぞれのノード状態でオブジェクトのパラメータを変更できるかどうかを示します。
@@ -290,6 +292,7 @@ SIPI
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_getclusterconfig.adoc[GetClusterConfig]

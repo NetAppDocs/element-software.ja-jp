@@ -15,6 +15,7 @@ summary: clusterconfig オブジェクトは、ノードがクラスタとの通
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

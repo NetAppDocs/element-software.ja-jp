@@ -15,6 +15,7 @@ snapMirrorVserverAggregateInfo オブジェクトには、デスティネーシ�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

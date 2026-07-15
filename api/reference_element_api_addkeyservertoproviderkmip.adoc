@@ -15,6 +15,7 @@ AddKeyServerToProviderKmip メソッドを使用すると、指定したキー�
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -50,12 +51,14 @@ KeyServerID
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドには戻り値はありません。エラーが返されないかぎり、割り当ては成功したとみなされます。
 
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -73,6 +76,7 @@ KeyServerID
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -88,6 +92,7 @@ KeyServerID
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 11.7

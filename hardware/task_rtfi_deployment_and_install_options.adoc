@@ -22,6 +22,7 @@ RTFI ISOイメージをダウンロードしたら、次の一般的な方法の
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

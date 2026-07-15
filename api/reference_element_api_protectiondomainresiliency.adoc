@@ -15,6 +15,7 @@ protectionDomainResiliency オブジェクトには、このストレージク�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

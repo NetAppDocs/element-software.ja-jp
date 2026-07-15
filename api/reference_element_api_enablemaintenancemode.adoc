@@ -15,6 +15,7 @@ summary: EnableMaintenanceMode メソッドを使用して、ストレージノ�
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -76,6 +77,7 @@ perMinutePrimarySwapLimit のように表示されます
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -128,6 +130,7 @@ MaintenanceMode ( 文字列 )
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -147,6 +150,7 @@ MaintenanceMode ( 文字列 )
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -165,12 +169,14 @@ MaintenanceMode ( 文字列 )
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 12.2
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 http://docs.netapp.com/us-en/hci/docs/concept_hci_storage_maintenance_mode.html["NetApp HCI ストレージメンテナンスモードの概念"^]

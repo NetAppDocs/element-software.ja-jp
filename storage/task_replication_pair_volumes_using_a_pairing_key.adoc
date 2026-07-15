@@ -66,6 +66,7 @@ IMPORTANT: ペアリングキーの文字はいっさい変更しないでくだ
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:reference_replication_volume_pairing_messages.adoc[ボリュームペアリングに関するメッセージ]

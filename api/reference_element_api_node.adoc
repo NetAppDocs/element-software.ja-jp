@@ -15,6 +15,7 @@ node オブジェクトには、クラスタ内の各ノードに関する情報
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -225,6 +226,7 @@ xref:reference_element_api_virtualnetwork.adoc[VirtualNetwork] 配列
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:reference_element_api_listactivenodes.adoc[ListActiveNodes]

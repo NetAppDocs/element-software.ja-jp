@@ -18,6 +18,7 @@
 
 
 
+[[best-practices-for-adding-and-removing-drives]]
 == ドライブの追加と取り外しを行う際のベストプラクティス
 
 * スライスドライブを追加する前に、ブロックドライブをすべて追加し、ブロックの同期が完了していることを確認します。
@@ -106,6 +107,7 @@ NOTE: 既存のノードに新しいドライブをインストールすると�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

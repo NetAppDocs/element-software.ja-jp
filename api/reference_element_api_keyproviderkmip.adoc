@@ -15,6 +15,7 @@ keyProviderKmip オブジェクトは、 Key Management Interoperability Protoco
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

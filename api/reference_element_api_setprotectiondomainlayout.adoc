@@ -26,6 +26,7 @@ NOTE: カスタム保護ドメインは、次の構成ではサポートされ�
 
 
 
+[[parameter]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -48,6 +49,7 @@ protectionDomainLayout の略
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -66,6 +68,7 @@ protectionDomainLayout の略
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -119,6 +122,7 @@ protectionDomainLayout の略
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -188,6 +192,7 @@ protectionDomainLayout の略
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 12.0

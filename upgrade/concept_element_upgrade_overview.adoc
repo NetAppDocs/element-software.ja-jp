@@ -54,6 +54,7 @@ NetApp Hybrid Cloud Control を使用したアップグレードは、それよ�
 
 
 
+[[sysupgradesystem-upgrade-sequence]]
 == [[sys_upgrade]システムのアップグレード順序
 
 Element 12.5以降では、次の順序でNetApp SolidFire オールフラッシュストレージシステムをアップグレードできます。

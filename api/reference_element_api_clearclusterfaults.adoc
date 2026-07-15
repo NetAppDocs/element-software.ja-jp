@@ -15,6 +15,7 @@ ClearClusterFaults メソッドを使用すると、現在検出されている�
 
 
 
+[[parameter]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -45,12 +46,14 @@ ClearClusterFaults メソッドを使用すると、現在検出されている�
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドには戻り値はありません。
 
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -65,6 +68,7 @@ ClearClusterFaults メソッドを使用すると、現在検出されている�
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -78,6 +82,7 @@ ClearClusterFaults メソッドを使用すると、現在検出されている�
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

@@ -15,6 +15,7 @@ summary: SetConfig メソッドを使用すると、ノードのネットワー�
 
 
 
+[[parameter]]
 == パラメータ
 
 注意
@@ -54,6 +55,7 @@ xref:reference_element_api_network_all_interfaces.adoc[network （すべての�
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -76,6 +78,7 @@ JSON オブジェクト
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -98,18 +101,21 @@ JSON オブジェクト
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドからの応答は GetConfig メソッドの戻り値と同じです。SetConfig を使用すると、オブジェクトのすべてのフィールドに更新後の値が表示されます。
 
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:reference_element_api_setclusterconfig.adoc[SetClusterConfig の場合]

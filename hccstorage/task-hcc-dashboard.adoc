@@ -27,6 +27,7 @@ NOTE: 新しい NetApp Hybrid Cloud Control セッションを初めて起動し
 
 
 
+[[access-the-netapp-hcc-dashboard]]
 == NetApp HCC ダッシュボードにアクセスします
 
 . Webブラウザで管理ノードのIPアドレスを開きます。例：
@@ -43,6 +44,7 @@ image::hcc_dashboard_all.PNG[HCC ダッシュボード]
 
 
 
+[[monitor-storage-resources]]
 == ストレージリソースを監視する
 
 「 * ストレージ * 」パネルを使用して、ストレージ環境全体を確認します。ストレージクラスタ、ストレージノード、およびボリュームの総数を監視できます。
@@ -59,6 +61,7 @@ TIP: 最新のストレージクラスタデータを表示するには、スト
 
 
 
+[[monitor-storage-capacity]]
 == ストレージ容量を監視
 
 環境のストレージ容量を監視することが重要です。Storage Capacity ペインを使用すると、圧縮、重複排除、シンプロビジョニングの各機能を有効または無効にして、ストレージ容量の効率化による効果を確認できます。
@@ -97,6 +100,7 @@ NOTE: 総削減率は（ maxUsedSpace * efficiency factor ） /2 で、 efficien
 
 
 
+[[monitor-storage-performance]]
 == ストレージパフォーマンスを監視
 
 Storage Performance ペインを使用すると、クラスタから取得できる IOPS またはスループットを確認できます。このとき、リソースの有用なパフォーマンスを超過することはありません。ストレージパフォーマンスとは、レイテンシの問題が発生する前に利用率を最大限に高めるポイントです。

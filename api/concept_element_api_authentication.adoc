@@ -17,6 +17,7 @@ API 認証にはクラスタ管理者アカウントを使用します。
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

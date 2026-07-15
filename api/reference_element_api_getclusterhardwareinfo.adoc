@@ -15,6 +15,7 @@ summary: GetClusterHardwareInfo メソッドを使用すると、クラスタ内
 
 
 
+[[parameter]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -47,6 +48,7 @@ summary: GetClusterHardwareInfo メソッドを使用すると、クラスタ内
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -67,6 +69,7 @@ xref:reference_element_api_hardwareinfo.adoc[hardwareInfo]
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -83,18 +86,21 @@ xref:reference_element_api_hardwareinfo.adoc[hardwareInfo]
 ----
 
 
+[[response-example]]
 == 応答例
 
 この応答例は分量が多いため、補足のトピックに記載しています。
 
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_response_example_getclusterhardwareinfo.adoc[GetClusterHardwareInfo]

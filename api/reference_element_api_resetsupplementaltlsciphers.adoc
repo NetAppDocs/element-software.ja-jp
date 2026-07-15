@@ -15,18 +15,21 @@ summary: ResetsendalTlsCiphers メソッドを使用すると、追加 TLS 暗�
 
 
 
+[[parameter]]
 == パラメータ
 
 このメソッドには入力パラメータはありません。
 
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドには戻り値はありません。
 
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -41,6 +44,7 @@ summary: ResetsendalTlsCiphers メソッドを使用すると、追加 TLS 暗�
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -54,6 +58,7 @@ summary: ResetsendalTlsCiphers メソッドを使用すると、追加 TLS 暗�
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 11.3

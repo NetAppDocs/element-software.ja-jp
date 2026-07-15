@@ -17,6 +17,7 @@ PurgeDeletedVolume メソッドを使用すると、削除されたボリュー�
 
 
 
+[[parameter]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -29,12 +30,14 @@ PurgeDeletedVolume メソッドを使用すると、削除されたボリュー�
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドには戻り値はありません。
 
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -51,6 +54,7 @@ PurgeDeletedVolume メソッドを使用すると、削除されたボリュー�
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -64,12 +68,14 @@ PurgeDeletedVolume メソッドを使用すると、削除されたボリュー�
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_deletevolume.adoc[DeleteVolume]

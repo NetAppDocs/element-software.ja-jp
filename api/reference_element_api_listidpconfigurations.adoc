@@ -15,6 +15,7 @@ summary: ListIdpConfigurations メソッドを使用すると、サードパー�
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -63,6 +64,7 @@ idpName
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -83,6 +85,7 @@ link:reference_element_api_idpconfiginfo.html["idpConfigInfo"] 配列
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -96,6 +99,7 @@ link:reference_element_api_idpconfiginfo.html["idpConfigInfo"] 配列
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -125,6 +129,7 @@ link:reference_element_api_idpconfiginfo.html["idpConfigInfo"] 配列
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 12.0

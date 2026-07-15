@@ -15,6 +15,7 @@ ListVolumes メソッドを使用すると、クラスタ内のボリューム�
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -138,6 +139,7 @@ ID の値が指定した値以上のボリュームのみが返されます。vo
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -158,6 +160,7 @@ xref:reference_element_api_volume.adoc[ボリューム] 配列
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -176,6 +179,7 @@ xref:reference_element_api_volume.adoc[ボリューム] 配列
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -230,6 +234,7 @@ xref:reference_element_api_volume.adoc[ボリューム] 配列
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

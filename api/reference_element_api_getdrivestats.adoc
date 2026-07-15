@@ -15,6 +15,7 @@ GetDriveStats メソッドを使用すると、 1 つのドライブのアクテ
 
 
 
+[[parameter]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -37,6 +38,7 @@ driveID
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -55,6 +57,7 @@ xref:reference_element_api_drivestats.adoc[driveStats]
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -71,6 +74,7 @@ xref:reference_element_api_drivestats.adoc[driveStats]
 ----
 
 
+[[response-example-block-drive]]
 == 応答例（ブロックドライブ）
 
 このメソッドのブロックドライブに対する応答例を次に示します。
@@ -103,6 +107,7 @@ xref:reference_element_api_drivestats.adoc[driveStats]
 ----
 
 
+[[response-example-volume-metadata-drive]]
 == 応答例（ボリュームメタデータドライブ）
 
 このメソッドのボリュームメタデータドライブに対する応答例を次に示します。
@@ -136,12 +141,14 @@ xref:reference_element_api_drivestats.adoc[driveStats]
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_listdrives.adoc[ListDrives の 2 つのメソッド]

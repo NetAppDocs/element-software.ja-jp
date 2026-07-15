@@ -19,12 +19,14 @@ NOTE: 累積的なソフトウェアおよびファームウェアの更新は�
 
 
 
+[[element-12-9]]
 == 要素12.9
 
 Element 12.9 の新機能について説明します。
 
 
 
+[[support-for-fqdn-in-setremotelogginghosts]]
 === 「SetRemoteLoggingHosts」でのFQDNのサポート
 
 Element 12.9以降では、 `SetRemoteLoggingHosts`ストレージ クラスターのログ ホスト値として完全修飾ドメイン名 (FQDN) または IP アドレスを構成する方法。応答内のFQDNホスト値を確認できます。 `GetRemoteLoggingHosts`方法。  Element 12.8 以前では、ログ ホスト値として IP アドレスのみを設定できます。
@@ -33,18 +35,21 @@ https://docs.netapp.com/us-en/element-software/api/reference_element_api_logging
 
 
 
+[[element-12-8]]
 == 要素12.8
 
 Element 12.8 の新機能について説明します。
 
 
 
+[[volume-load-balancing]]
 === ボリュームのロードバランシング
 
 Element 12.8では、ボリュームロードバランシング機能が導入されています。この機能を使用すると、QoSポリシーに設定されている最小IOPSではなく、各ボリュームの実際のIOPSレベルに基づいてノード間でボリュームを分散できます。ボリュームの負荷分散機能は、ボリュームの負荷分散にのみ使用できます。仮想ボリュームのバランス調整には使用できません。ボリュームロードバランシング機能は、デフォルトでは無効になっています。この機能を有効または無効にするには `VolumeLoadBalanceOnActualIOPS`、およびlink:../api/reference_element_api_disablefeature.html["無効な機能"]APIメソッドを指定したAPIパラメータをlink:../api/reference_element_api_enablefeature.html["EnableFeature"]使用するか、Element UIのオプションを使用しlink:../storage/task_system_manage_cluster_volume_load_balancing.html["ボリュームのロードバランシング"]ます。
 
 
 
+[[view-node-utilization-information]]
 === ノードの利用率情報の表示
 
 Element 12.8では、および `ListNodeStats`APIメソッドを使用し `GetNodeStats`て、ノードの利用率情報を表示できます `nodeHeat`。 `nodeHeat`オブジェクトはオブジェクトのメンバー `nodeStats`であり、一定期間の設定されたIOPSに対するプライマリの合計IOPSまたは合計IOPSの比率に基づいてノード利用率の情報が表示されます。
@@ -53,36 +58,42 @@ Element 12.8では、および `ListNodeStats`APIメソッドを使用し `GetNo
 
 
 
+[[view-io-statistics-for-a-volume]]
 === ボリュームのI/O統計の表示
 
 Element 12.8では、および `ListVolumeStatsByVolume`APIメソッドを使用して、 `GetVolumeStats`ボリュームのI/O使用率の統計を表示できます `sliceIopsStats`。I/O統計は、ボリュームの読み取りIOPSと書き込みIOPSの情報を使用して計算され、過去24時間と過去1時間の2つの期間にわたって測定されます。link:../api/reference_element_api_volumestats.html#object-members["詳細はこちら。"]です。
 
 
 
+[[chap-algorithm-for-iscsi-session]]
 === iSCSIセッションのCHAPアルゴリズム
 
 ホストiSCSIイニシエータは、Element iSCSIターゲットとのiSCSIセッションを作成するときに使用するChallenge-Handshake Authentication Protocol（CHAP；チャレンジハンドシェイク認証プロトコル）アルゴリズムのリストを要求します。Element 12.8以降では、Element iSCSIターゲットがiSCSIセッションに使用するように選択した、サポートされるCHAPアルゴリズムを表示できます。
 
 
 
+[[upgrade-vm-hardware-version]]
 === VMハードウェアバージョンのアップグレード
 
 既存の管理ノードをElement 12.8にインプレースアップグレードする場合は、アップグレード前に、管理ノードのVMハードウェアのバージョンがESXi 6.7（VMハードウェアバージョン14）以降に対応していることを確認する必要があります。link:../upgrade/task_hcc_upgrade_management_node.html#step-1-upgrade-vm-hardware-version-on-a-management-node["詳細はこちら。"]です。
 
 
 
+[[element-12-7]]
 == 要素12.7
 
 Element 12.7 の新機能について説明します。
 
 
 
+[[secure-chap-algorithms]]
 === セキュアCHAPアルゴリズム
 
 Element 12.7には、セキュアなFIPS準拠のChallenge-Handshake Authentication Protocol（CHAP）アルゴリズムSHA1、SHA-256、SHA-256がサポートされています。 link:../storage/task_data_manage_accounts_work_with_accounts_task.html["詳細はこちら。"]。
 
 
 
+[[dynamic-block-bin-sync-in-rate]]
 === ダイナミックブロック（BIN）の同期レート
 
 ノードの追加、アップグレード、メンテナンスなどのクラスタ処理やドライブの追加などのクラスタ処理では、ブロック（bin）の同期がトリガーされ、クラスタレイアウトの新しいノードまたは更新されたノードにブロックデータが分散されます。デフォルトの同期速度として1つの低速を使用すると、これらの処理に長い時間がかかり、大規模なノードの処理能力は活用されません。Element 12.7以降、ストレージノード上のコア数に基づいて動的に同期速度が調整されるため、これらの処理を大幅に高速化できます。
@@ -95,18 +106,21 @@ Element 12.7には、セキュアなFIPS準拠のChallenge-Handshake Authenticat
 
 
 
+[[garbage-collection-improvement]]
 === ガベージコレクションの改善
 
 ストレージノードが大規模なクラスタの場合：1PBの使用済みスペースがあるH610S-4では、上書きされて非常に高いワークロードが実行されています。 また、重複排除機能と圧縮機能が高いため、大容量ノードのデフォルトのブルームフィルタサイズが700GB以上から1048576ビットに拡大されているため、ガベージコレクション操作を維持できるようになりました。この変更は、ストレージノードをElement 12.7にアップグレードすると自動的に有効になり、小規模なノードには影響しません。
 
 
 
+[[scale-improvement]]
 === スケールの改善
 
 Element 12.7では、既存のクラスタに複数のストレージノードのブロックドライブとメタデータドライブを追加する際に、特定の順序を指定する必要がなくなりました。Element UIまたはAPIを使用すると、使用可能なすべてのドライブを選択し、同時に一括で追加することができます。Element 12.7は、すべてのブロックサービスが同時に同期されるように、データ同期を自動的に管理します。各ノードのブロックサービスが同期を完了すると、そのノード上のメタデータドライブがボリュームをホストできるようになります。この拡張性の向上により、読み取り応答のレイテンシが大幅に低減され、新しく追加したストレージノード間でデータを同期する際のパフォーマンスの低下を防ぐことができます。
 
 
 
+[[storage-node-firmware-updates]]
 === ストレージノードのファームウェアの更新
 
 Element 12.7には、ストレージファームウェアバンドルバージョン2.164.0が含まれています。このバンドルには、新しいシステムコンポーネントのサポートが含まれています。 link:https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.164.0.html["詳細はこちら。"]。
@@ -116,6 +130,7 @@ NOTE: Element 12.7リリースでは、新しいファームウェアアップ�
 
 
 
+[[solidfire-active-iq-documentation]]
 === SolidFire Active IQ のドキュメント
 
 SolidFire Active IQ UIでQoS管理ページに移動して、クラスタに関する推奨事項とノードスロットル情報を確認できるようになりました。また、クラスタダッシュボードに合計Snapshot数が表示されるようになりました。最近の改善点としては、アクティブボリュームのプライマリノードとセカンダリノードの情報の追加、ノードのプライマリボリュームでの平均スループット、IOPS、平均レイテンシなどがあります。
@@ -124,48 +139,56 @@ SolidFire Active IQ UIでQoS管理ページに移動して、クラスタに関�
 
 
 
+[[netapp-bugs-online-contains-resolved-and-known-issues]]
 === NetApp Bugs Onlineには、解決済みの問題と既知の問題があります
 
 解決済みの問題と既知の問題の一覧については、NetApp Bugs Onlineツールを参照してください。これらの問題は、Elementソフトウェアおよびその他の製品で参照できます https://mysupport.netapp.com/site/products/all/details/element-software/bugsonline-tab["NetApp Bugs Online では"^]。
 
 
 
+[[element-12-5]]
 == Element 12.5
 
 Element 12.5 の新機能について説明します。
 
 
 
+[[improved-storage-node-access]]
 === ストレージノードへのアクセスの向上
 
 Element 12.5では、署名付きSSH証明書を使用して、個々のノードへのリモートアクセスが向上していますストレージノードへのセキュアなリモートアクセスを提供するために、ストレージノードのRTFI実行時に「sfreadonly」という新しい権限制限付きローカルユーザアカウントが作成されるようになりました。sfreadonlyアカウントを使用すると'基本的な保守やトラブルシューティングの目的で'ストレージ・ノードのバックエンドにアクセスできますクラスタ管理者ユーザの「supportAdmin」アクセスタイプを設定し、ネットアップサポートが必要に応じてクラスタにアクセスできるようになりました。
 
 
 
+[[enhanced-custom-protection-domains-manageability]]
 === 強化されたカスタム保護ドメインの管理性
 
 Element 12.5には、既存のカスタム保護ドメインをすばやく簡単に表示したり、新しいカスタム保護ドメインを設定したりできる新しいユーザインターフェイスが用意されています。
 
 
 
+[[new-and-improved-cluster-faults-events-and-alerts]]
 === クラスタの新しい障害、イベント、アラートが追加されました
 
 Element 12.5では、新しいクラスタ障害コード「BmcSelfTestFailed」および「CpuThermalEventThreshold」が導入され、システムのトラブルシューティングが強化されています。Element 12.5では、「nodeOffline」、「volumeOffline」、「driveHealthFault」、「networkEvent」など、既存のクラスタイベントおよびアラートの堅牢性も向上しています。 と「cSumEvent」です。
 
 
 
+[[enable-software-encryption-at-rest-from-the-create-cluster-ui]]
 === クラスタ作成UIから保存データのソフトウェア暗号化を有効にします
 
 Element 12.5では、クラスタ作成UIの新しいチェックボックスが追加され、クラスタ作成時にSolidFire オールフラッシュストレージクラスタの保存データの暗号化をクラスタ全体で有効にすることができます。
 
 
 
+[[storage-node-firmware-updates]]
 === ストレージノードのファームウェアの更新
 
 Element 12.5には、ストレージノードのファームウェアの更新が含まれています。 link:../concepts/concept_rn_relatedrn_element.html#storage-firmware["詳細はこちら。"]。
 
 
 
+[[enhanced-security]]
 === セキュリティの強化
 
 Element 12.5には、Apache log4jの脆弱性に対するElementソフトウェアの影響を緩和する機能が含まれています。仮想ボリューム（VVol）機能が有効になっているNetApp SolidFire ストレージクラスタは、Apache log4jの脆弱性の影響を受けやすくなっています。NetApp Element ソフトウェアのApache log4jの脆弱性に対する回避策 の詳細については、｛url-peak｝[KB Article ^]を参照してください。
@@ -176,6 +199,7 @@ Element 12.5には、120を超えるCVEセキュリティ脆弱性の修正も�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["『 NetApp Hybrid Cloud Control and Management Services Release Notes 』を参照してください"^]

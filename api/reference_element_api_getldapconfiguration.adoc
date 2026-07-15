@@ -15,12 +15,14 @@ GetLdapConfiguration メソッドを使用すると、クラスタ上で現在�
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドには入力パラメータはありません。
 
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -39,6 +41,7 @@ xref:reference_element_api_ldapconfiguration.adoc[ldapConfiguration （ ldapConf
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -53,6 +56,7 @@ xref:reference_element_api_ldapconfiguration.adoc[ldapConfiguration （ ldapConf
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -82,6 +86,7 @@ xref:reference_element_api_ldapconfiguration.adoc[ldapConfiguration （ ldapConf
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

@@ -20,6 +20,7 @@ NOTE: Snapshot を作成できるのは、クラスタフルが「ステージ 1
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -138,6 +139,7 @@ SnapMirror エンドポイントでの Snapshot 保持ポリシーを指定す�
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -176,6 +178,7 @@ xref:reference_element_api_snapshot.adoc[スナップショット]
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -192,6 +195,7 @@ xref:reference_element_api_snapshot.adoc[スナップショット]
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -225,12 +229,14 @@ xref:reference_element_api_snapshot.adoc[スナップショット]
 ----
 
 
+[[exception]]
 == 例外
 
 「 createsnapshot 」 API が呼び出され、スナップショットを作成できない場合は、 xNotPrimary 例外が表示されます。これは想定される動作です。CreateSnapshot` API 呼び出しを再試行します。
 
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

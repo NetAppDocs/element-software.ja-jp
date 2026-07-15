@@ -15,6 +15,7 @@ ListInitiators メソッドを使用すると、イニシエータの IQN また
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -63,6 +64,7 @@ startInitiatorID
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -83,6 +85,7 @@ xref:reference_element_api_initiator.adoc[イニシエータ] 配列
 |===
 
 
+[[exceptions]]
 == 例外
 
 このメソッドでは、次の例外が発生する可能性があります。
@@ -101,6 +104,7 @@ xInvalidParameter
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -115,6 +119,7 @@ xInvalidParameter
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -140,6 +145,7 @@ xInvalidParameter
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

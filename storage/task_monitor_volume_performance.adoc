@@ -31,6 +31,7 @@ summary: クラスタ内のすべてのボリュームの詳細なパフォー�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_monitor_volume_performance_details.adoc[ボリュームのパフォーマンスの詳細]

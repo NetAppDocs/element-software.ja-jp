@@ -19,6 +19,7 @@ SolidFire ストレージシステムでは、テナントはアカウントを�
 
 
 
+[[for-more-information]]
 == を参照してください。
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

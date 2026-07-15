@@ -17,6 +17,7 @@ summary: DeleteSnapshot メソッドを使用すると、 Snapshot を削除で�
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -52,12 +53,14 @@ OverrideSnapMirrorHold
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドには戻り値はありません。
 
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -75,6 +78,7 @@ OverrideSnapMirrorHold
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -88,12 +92,14 @@ OverrideSnapMirrorHold
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_rollbacktosnapshot.adoc[RollbackToSnapshot]

@@ -39,6 +39,7 @@ IMPORTANT: ペアリングキーの文字はいっさい変更しないでくだ
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:task_replication_pair_cluster_using_mvip.adoc[MVIP を使用してクラスタをペアリング]

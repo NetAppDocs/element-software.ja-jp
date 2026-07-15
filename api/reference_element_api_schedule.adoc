@@ -15,6 +15,7 @@ schedule オブジェクトには、ボリュームの Snapshot を自動的に�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -228,6 +229,7 @@ Snapshot を作成する曜日を示します。
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_listschedules.adoc[ListSchedules （リストスケジュール]

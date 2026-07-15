@@ -15,6 +15,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/element-demonode/download["Ele
 
 
 
+[[supported-functionality]]
 == サポートされる機能：
 
 Element デモノードは、デモおよび開発用のツールとしてのみ使用します。デモノードを使用する前に、次の機能上の制限事項に注意してください。
@@ -40,6 +41,7 @@ NOTE: Element ソフトウェアに関するその他の制限事項がすべて
 
 
 
+[[vm-requirements]]
 == VM の要件
 
 * 240 GB の合計容量（ VM の仮想ディスクのサイズと数は変更できません。ハイパーバイザーで提供された追加のストレージはゲスト OS で無視されます）。
@@ -53,6 +55,7 @@ NOTE: Element ソフトウェアに関するその他の制限事項がすべて
 
 
 
+[[host-requirements]]
 == ホストの要件
 
 * Element デモノード 11.7 VM の ESXi 6.0 または 6.5
@@ -63,12 +66,14 @@ NOTE: Element ソフトウェアに関するその他の制限事項がすべて
 
 
 
+[[download-element-demo-node]]
 == Element のデモノードをダウンロード
 
 Element のデモノードソフトウェアは、 .ova ファイルにパッケージ化された VMware ファイルのセットです。
 
 
 
+[[install-element-demo-node-on-vmware-esxi]]
 == VMware ESXi に Element デモノードをインストールします
 
 VMware ESXi に Element デモノードをインストールするには、次のタスクを実行します。
@@ -80,12 +85,14 @@ VMware ESXi に Element デモノードをインストールするには、次�
 
 
 
+[[configure-network-interfaces]]
 === ネットワークインターフェイスを設定
 
 Element デモノードには、 2 つの仮想マシンネットワークが必要です。1 つはストレージトラフィック用で、もう 1 つは管理トラフィック用です。ジャンボフレームをサポートするようにストレージネットワークを設定する必要があります。
 
 
 
+[[register-the-demo-node-on-an-esxi-server]]
 === ESXi サーバでデモノードを登録します
 
 ESXi サーバに Element のデモノードを登録するには、 vSphere Client を使用して demo ノードの .ova ファイルを導入する必要があります。
@@ -111,6 +118,7 @@ NOTE: デモノードの導入が完了するまでに数分かかることが�
 
 
 
+[[start-the-demo-node-on-an-esxi-server]]
 === ESXi サーバでデモノードを起動します
 
 VMware ESXi コンソールから Element にアクセスするには、デモノード VM を起動する必要があります。
@@ -125,12 +133,14 @@ VMware ESXi コンソールから Element にアクセスするには、デモ�
 
 
 
+[[how-to-get-support]]
 == サポートの利用方法
 
 Element デモノードは、ベストエフォート型のボランティアベースで利用できます。サポートについては、に質問を投稿してください https://community.netapp.com/t5/Simulator-Discussions/bd-p/simulator-discussions["Element のデモノードフォーラム"^]。
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 https://mysupport.netapp.com/site/tools/tool-eula/element-demonode/download["Element のデモノードのダウンロードページ（ログインが必要）"^]

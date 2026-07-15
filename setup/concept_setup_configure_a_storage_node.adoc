@@ -28,6 +28,7 @@ NOTE: Element バージョン 11.0 以降では、ノードの管理ネットワ
 
 
 
+[[configure-a-storage-node-using-the-per-node-ui]]
 == ノード UI を使用してストレージノードを設定します
 
 ノードはノードユーザインターフェイスを使用して設定できます。
@@ -66,6 +67,7 @@ IMPORTANT: クラスタを作成する前に、すべてのノードの構成に
 
 
 
+[[configure-a-storage-node-using-the-tui]]
 == TUI を使用してストレージノードを設定します
 
 ターミナルユーザインターフェイス（ TUI ）を使用して、新しいノードの初期設定を実行できます。
@@ -99,6 +101,7 @@ TIP: メニュー内を移動するには、上矢印キーまたは下矢印キ
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

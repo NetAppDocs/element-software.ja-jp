@@ -17,6 +17,7 @@ summary: ModifyAccount メソッドを使用すると、既存アカウントを
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -121,6 +122,7 @@ targetSecret
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -141,6 +143,7 @@ xref:reference_element_api_account.adoc[アカウント：]
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。この例では、属性は ｛ ｝ でクリアされています。
@@ -159,6 +162,7 @@ xref:reference_element_api_account.adoc[アカウント：]
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -183,6 +187,7 @@ xref:reference_element_api_account.adoc[アカウント：]
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

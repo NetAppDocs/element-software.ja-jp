@@ -15,6 +15,7 @@ ontapVersionInfo オブジェクトには、 SnapMirror 関係にある ONTAP �
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

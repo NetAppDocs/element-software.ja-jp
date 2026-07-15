@@ -20,6 +20,7 @@ summary: 接続されているボリュームやイニシエータなど、個�
 
 
 
+[[volume-access-group-details]]
 == ボリュームアクセスグループの詳細
 
 ボリュームアクセスグループについては、 Management （管理）タブの Access Groups （アクセスグループ）ページで確認できます。

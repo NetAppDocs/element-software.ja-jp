@@ -15,6 +15,7 @@ SNMP network オブジェクトには、クラスタノードの SNMP v3 の設�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -67,6 +68,7 @@ SNMP コミュニティストリング。
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_getsnmpinfo.adoc[GetSnmpInfo を追加します]

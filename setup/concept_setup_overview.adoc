@@ -36,6 +36,7 @@ image::../media/sf_and_element_workflow_for_setup_shorter_workflow.png[セット
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * link:../setup/concept_setup_whats_next.html["ストレージを使用するための次のステップを確認してください"]

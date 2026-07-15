@@ -15,6 +15,7 @@ Element ソフトウェアは、このバージョンの「 modySnapMirrorEndpoi
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -65,6 +66,7 @@ IP アドレス
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -85,6 +87,7 @@ xref:reference_element_api_snapmirrorendpoint.adoc[snapMirrorEndpoint のこと�
 |===
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 10.3

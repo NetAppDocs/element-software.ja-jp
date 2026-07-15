@@ -15,12 +15,14 @@ summary: 単一のノードで GetNodeSupportedTlsCiphers メソッドを使用�
 
 
 
+[[parameter]]
 == パラメータ
 
 このメソッドには入力パラメータはありません。
 
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -57,6 +59,7 @@ SetNodeJassentalTlsCiphers API メソッドを使用して設定できる追加 
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -71,6 +74,7 @@ SetNodeJassentalTlsCiphers API メソッドを使用して設定できる追加 
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。

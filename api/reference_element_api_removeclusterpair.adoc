@@ -15,6 +15,7 @@ RemoveClusterPair メソッドを使用すると、 2 つのペアクラスタ�
 
 
 
+[[parameter]]
 == パラメータ
 
 
@@ -40,12 +41,14 @@ clusterPairID
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドには戻り値はありません。
 
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -62,6 +65,7 @@ clusterPairID
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -75,6 +79,7 @@ clusterPairID
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

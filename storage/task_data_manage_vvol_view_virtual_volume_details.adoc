@@ -31,6 +31,7 @@ Element UI では、クラスタ上のすべてのアクティブな仮想ボリ
 
 
 
+[[details]]
 == 詳細
 
 VVol タブの Virtual Volumes ページには、ボリューム ID 、 Snapshot ID 、親仮想ボリューム ID 、仮想ボリューム ID など、クラスタ上の各アクティブな仮想ボリュームに関する情報が表示されます。
@@ -55,6 +56,7 @@ VVol タブの Virtual Volumes ページには、ボリューム ID 、 Snapshot
 
 
 
+[[individual-virtual-volume-details]]
 == 個々の仮想ボリュームの詳細
 
 vVol タブの仮想ボリュームページでは、個々の仮想ボリュームを選択してその詳細を表示すると、次の仮想ボリューム情報が表示されます。

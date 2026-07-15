@@ -42,6 +42,7 @@ Element Web UI やその他の互換性のあるツールを使用して、シ�
 
 
 
+[[common-urls]]
 == 共通 URL
 
 SolidFire オールフラッシュストレージシステムで使用される一般的な URL を次に示します。
@@ -70,6 +71,7 @@ SolidFire オールフラッシュストレージシステムで使用される�
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

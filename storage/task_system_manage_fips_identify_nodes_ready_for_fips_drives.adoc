@@ -40,6 +40,7 @@ NetApp Element ソフトウェアの GetFipsReport API メソッドを使用し�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

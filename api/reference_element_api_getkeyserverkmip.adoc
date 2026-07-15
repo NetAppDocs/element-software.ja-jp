@@ -15,6 +15,7 @@ GetKeyServerKmip メソッドを使用すると、指定した Key Management In
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -37,6 +38,7 @@ KeyServerID
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -55,6 +57,7 @@ link:reference_element_api_keyserverkmip.html["KeyServerKmip"]
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -71,6 +74,7 @@ link:reference_element_api_keyserverkmip.html["KeyServerKmip"]
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -98,6 +102,7 @@ link:reference_element_api_keyserverkmip.html["KeyServerKmip"]
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 11.7

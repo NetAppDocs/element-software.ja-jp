@@ -31,6 +31,7 @@ NOTE: セキュリティ上の理由から、ペアリングキーを E メー�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:reference_element_api_startclusterpairing.adoc[StartClusterPairing を参照してください]

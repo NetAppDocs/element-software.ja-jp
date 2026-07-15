@@ -15,12 +15,14 @@ GetPendingOperation メソッドを使用すると、現在進行中のノード
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドには入力パラメータはありません。
 
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -55,6 +57,7 @@ GetPendingOperation メソッドを使用すると、現在進行中のノード
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -69,6 +72,7 @@ GetPendingOperation メソッドを使用すると、現在進行中のノード
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -87,6 +91,7 @@ GetPendingOperation メソッドを使用すると、現在進行中のノード
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

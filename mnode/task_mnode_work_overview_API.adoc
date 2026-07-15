@@ -20,6 +20,7 @@ REST API で実行できるタスクは次のとおりです。
 
 
 
+[[authorization]]
 == 承認
 
 * link:task_mnode_api_get_authorizationtouse.html["REST API を使用するための許可を取得する"]
@@ -27,6 +28,7 @@ REST API で実行できるタスクは次のとおりです。
 
 
 
+[[asset-configuration]]
 == アセットの設定
 
 * link:task_mnode_enable_activeIQ.html["Active IQ とネットアップによる監視を有効にします"]
@@ -38,6 +40,7 @@ REST API で実行できるタスクは次のとおりです。
 
 
 
+[[asset-management]]
 == 資産管理
 
 * link:task_mnode_edit_vcenter_assets.html["既存のコントローラアセットを表示または編集する"]

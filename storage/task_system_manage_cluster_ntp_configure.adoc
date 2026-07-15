@@ -37,6 +37,7 @@ NOTE: IPv4 アドレスと IPv6 アドレスの両方を使用できます。
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * link:../storage/task_system_manage_cluster_ntp_configure_to_listen_for_ntp_broadcasts.html["NTP ブロードキャストをリスンするようにクラスタを設定する"]

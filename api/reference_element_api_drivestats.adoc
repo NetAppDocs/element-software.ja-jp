@@ -15,6 +15,7 @@ driveStats オブジェクトには、 1 つのドライブのアクティビテ
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -249,6 +250,7 @@ writeOps
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_getdrivestats.adoc[GetDriveStats]

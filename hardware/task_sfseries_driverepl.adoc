@@ -77,6 +77,7 @@ NOTE: 上の図は一例です。SF9608 のドライブレイアウトに含ま�
 
 
 
+[[remove-the-drive-from-the-cluster]]
 == クラスタからドライブを削除します
 
 ドライブの自己診断によりドライブで障害が発生したことがノードに通知された場合、あるいはドライブとの通信が 5 分半以上停止した場合、 SolidFire システムはドライブを障害状態にします。障害ドライブのリストが表示されます。障害が発生したドライブは、 NetApp Element ソフトウェアの障害ドライブリストから削除する必要があります。
@@ -116,6 +117,7 @@ NOTE: 上の図は一例です。SF9608 のドライブレイアウトに含ま�
 
 
 
+[[replace-the-drive-from-the-chassis]]
 == シャーシからドライブを交換します。
 
 Element UI で障害ドライブのリストから障害ドライブを削除すると、シャーシ内の障害ドライブを物理的に交換できるようになります。
@@ -159,6 +161,7 @@ image::../media/sf_series_drive_numbers.gif[この図は、 SolidFire ストレ�
 
 
 
+[[add-the-drive-to-the-cluster]]
 == クラスタにドライブを追加します
 
 シャーシに新しいドライブを取り付けると、ドライブが使用可能として登録されます。ドライブがクラスタに参加できるようにするためには、 Element UI を使用してドライブをクラスタに追加する必要があります。
@@ -194,6 +197,7 @@ image::../media/sf_series_drive_numbers.gif[この図は、 SolidFire ストレ�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

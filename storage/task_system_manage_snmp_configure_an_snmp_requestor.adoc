@@ -28,6 +28,7 @@ NOTE: デフォルトでは、コミュニティストリングは public に、
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:task_system_manage_snmp_configure_snmp_traps.adoc[SNMP トラップを設定する]

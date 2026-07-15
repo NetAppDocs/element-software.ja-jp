@@ -15,6 +15,7 @@ session オブジェクトには、クラスタが認識できる各 Fibre Chann
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -85,6 +86,7 @@ JSON オブジェクト
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_listfibrechannelsessions.adoc[ListFibreChannelSessions]

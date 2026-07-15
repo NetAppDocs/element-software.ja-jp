@@ -15,6 +15,7 @@ SolidFire オールフラッシュストレージシステムを使用すると�
 
 
 
+[[encryption-at-rest-hardware]]
 == 保存データの暗号化（ハードウェア）
 
 ストレージノード内のドライブはいずれも、ドライブレベルの暗号化機能で AES 256 ビット暗号化を利用できます。各ドライブには、ドライブが最初に初期化されたときに作成される、専用の暗号化キーがあります。暗号化機能を有効にすると、クラスタ全体のパスワードが作成され、複数のチャンクとしてクラスタ内のすべてのノードに配信されます。どのノードにもパスワード全体が格納されることはありません。このパスワードを使用して、ドライブへのすべてのアクセスが保護されます。ドライブのロックを解除するにはパスワードが必要です。ドライブの電源がオフになっているかドライブがロックされている場合以外は、パスワードは必要ありません。
@@ -23,6 +24,7 @@ link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_c
 
 
 
+[[encryption-at-rest-software]]
 == 保存データの暗号化（ソフトウェア）
 
 保存データを暗号化するソフトウェア暗号化機能のもう 1 つのタイプを使用すると、ストレージクラスタ内の SSD に書き込まれるすべてのデータを暗号化できます。 link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["有効になっている場合"^]ソフトウェアで自動的に読み取られたすべてのデータを暗号化し、復号化します。保存データのソフトウェア暗号化は、 SED （自己暗号化ドライブ）のハードウェアへの実装を反映して、 SED がない場合にデータセキュリティを提供します。
@@ -34,6 +36,7 @@ WARNING: SolidFire オールフラッシュストレージクラスタの場合�
 
 
 
+[[external-key-management]]
 == 外部キー管理
 
 サードパーティの KMIP 準拠キー管理サービス（ KMS ）を使用してストレージクラスタの暗号化キーを管理するように Element ソフトウェアを設定できます。この機能を有効にすると、ストレージクラスタ全体のドライブアクセスパスワード暗号化キーが KMS によって指定した値で管理されます。
@@ -51,6 +54,7 @@ Element では、次のキー管理サービスを使用できます。
 
 
 
+[[multi-factor-authentication]]
 == 多要素認証
 
 多要素認証（ MFA ）を使用することで、ログイン時に NetApp Element Web UI またはストレージノード UI で認証するためのさまざまな種類の証拠をユーザに提示する必要があります。既存のユーザ管理システムおよびアイデンティティプロバイダと統合されたログインに対して多要素認証のみを受け入れるように Element を設定できます。Element を既存の SAML 2.0 アイデンティティプロバイダと統合するように設定できます。これにより、パスワードとテキストメッセージ、パスワードと E メールメッセージ、その他の方法など、複数の認証方式を適用できます。
@@ -61,6 +65,7 @@ MFAを設定するには、 link:../storage/task_system_manage_mfa_set_up_multi_
 
 
 
+[[fips-140-2-for-https-and-data-at-rest-encryption]]
 == HTTPS 向けの FIPS 140-2 と保存データ暗号化
 
 NetApp SolidFire ストレージクラスタでは、暗号モジュールに関する Federal Information Processing Standard （ FIPS ；連邦情報処理標準） 140-2 の要件に準拠した暗号化がサポートされています。SolidFire クラスタで HTTPS 通信とドライブ暗号化の両方に対して FIPS 140-2 準拠を有効にすることができます。
@@ -73,6 +78,7 @@ NetApp SolidFire ストレージクラスタでは、暗号モジュールに関
 
 
 
+[[for-more-information]]
 == を参照してください。
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

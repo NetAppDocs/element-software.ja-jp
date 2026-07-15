@@ -17,6 +17,7 @@ summary: DeleteInitiators を使用して、 1 つ以上のイニシエータを
 
 
 
+[[parameter]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -39,12 +40,14 @@ summary: DeleteInitiators を使用して、 1 つ以上のイニシエータを
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドには戻り値はありません。
 
 
 
+[[error]]
 == エラー
 
 このメソッドでは、次のエラーが返されることがあります。
@@ -63,6 +66,7 @@ xInitiatorDoesNotExist の 2 つの例外があります
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -82,6 +86,7 @@ xInitiatorDoesNotExist の 2 つの例外があります
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -95,6 +100,7 @@ xInitiatorDoesNotExist の 2 つの例外があります
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

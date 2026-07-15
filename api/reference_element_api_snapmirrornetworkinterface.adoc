@@ -15,6 +15,7 @@ snapMirrorNetworkInterface オブジェクトには、クラスタ間論理イ�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

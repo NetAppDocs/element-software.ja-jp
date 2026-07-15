@@ -15,6 +15,7 @@ summary: CreatePublicPrivateKeyPair メソッドを使用すると、パブリ�
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -115,12 +116,14 @@ X.509 識別名 * State * または * Province Name * フィールド（ ST ま�
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドには戻り値はありません。エラーがなければ、キーの作成は成功したとみなされます。
 
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -139,6 +142,7 @@ X.509 識別名 * State * または * Province Name * フィールド（ ST ま�
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -153,6 +157,7 @@ X.509 識別名 * State * または * Province Name * フィールド（ ST ま�
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 11.7

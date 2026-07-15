@@ -21,6 +21,7 @@ summary: システムは Element UI で管理できます。これには、多�
 
 
 
+[[for-more-information]]
 == を参照してください。
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

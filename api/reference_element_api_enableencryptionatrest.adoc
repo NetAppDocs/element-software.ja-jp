@@ -35,6 +35,7 @@ NOTE: このプロセスは非同期であり、暗号化が有効になる前�
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -57,12 +58,14 @@ KeyProviderID
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドには戻り値はありません。
 
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -77,6 +80,7 @@ KeyProviderID
 ----
 
 
+[[response-examples]]
 == 応答例
 
 このメソッドの EnableEncryptionAtRest メソッドの応答例を次に示します。レポートする結果はありません。
@@ -116,6 +120,7 @@ GetClusterInfo でクラスタの保存データの暗号化を有効にして�
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

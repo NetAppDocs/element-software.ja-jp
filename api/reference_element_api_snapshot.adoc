@@ -15,6 +15,7 @@ snapshot オブジェクトには、ボリューム用に作成した Snapshot �
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -218,6 +219,7 @@ Snapshot が作成された時点でのボリュームの名前。
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_listsnapshots.adoc[Listsnapshots を使用します]

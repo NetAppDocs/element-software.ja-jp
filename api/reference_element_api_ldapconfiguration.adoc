@@ -15,6 +15,7 @@ ldapConfiguration オブジェクトには、ストレージシステムの LDAP
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -127,6 +128,7 @@ userSearchFilter のように入力します
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_getldapconfiguration.adoc[GetLdapConfiguration を実行します]

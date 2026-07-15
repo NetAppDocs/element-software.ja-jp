@@ -15,6 +15,7 @@ snapMirrorPolicy オブジェクトには、 ONTAP システムに格納され�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

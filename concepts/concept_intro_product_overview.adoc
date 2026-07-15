@@ -17,6 +17,7 @@ Element インターフェイス、 API 、またはその他の管理ツール�
 
 
 
+[[solidfire-features]]
 == SolidFire の機能
 
 SolidFire システムには次の機能があります。
@@ -31,6 +32,7 @@ SolidFire システムには次の機能があります。
 
 
 
+[[solidfire-deployment]]
 == SolidFire の導入
 
 ネットアップが提供し、NetApp Element ソフトウェアと統合されたストレージノードを使用できます。
@@ -39,6 +41,7 @@ link:../concepts/concept_solidfire_concepts_solidfire_architecture_overview.html
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server 向け NetApp Element プラグイン"^]

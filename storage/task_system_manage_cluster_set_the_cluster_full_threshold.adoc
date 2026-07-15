@@ -24,6 +24,7 @@ summary: ブロッククラスタフルの警告を生成するレベルを次�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 https://kb.netapp.com/Advice_and_Troubleshooting/Flash_Storage/SF_Series/How_are_the_blockSpace_thresholds_calculated_for_Element["Element のブロックスペースしきい値の計算方法"^]

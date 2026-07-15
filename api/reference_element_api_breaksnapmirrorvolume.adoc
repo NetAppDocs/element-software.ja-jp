@@ -15,6 +15,7 @@ Element Web UI は「 BreakSnapMirrorVolume 」メソッドを使用して、 ON
 
 
 
+[[parameter]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -87,18 +88,21 @@ false を指定すると、 Snapshot ID よりも新しい Snapshot がすべて
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドには戻り値はありません。
 
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 10.0
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_breaksnapmirrorrelationship.adoc[BreakSnapMirror 関係]

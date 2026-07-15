@@ -27,6 +27,7 @@ https://www.youtube.com/embed/q9VCBRDtrnI?rel=0["ネットアップのビデオ�
 
 
 
+[[create-a-qos-policy]]
 == QoS ポリシーを作成する
 
 QoS ポリシーを作成し、ボリュームの作成時に適用することができます。
@@ -40,6 +41,7 @@ QoS ポリシーを作成し、ボリュームの作成時に適用すること�
 
 
 
+[[edit-a-qos-policy]]
 == QoS ポリシーを編集する
 
 既存の QoS ポリシーの名前を変更したり、ポリシーに関連付けられている値を編集したりできます。QoS ポリシーの変更は、そのポリシーに関連付けられているすべてのボリュームに反映されます。
@@ -60,6 +62,7 @@ QoS ポリシーを作成し、ボリュームの作成時に適用すること�
 
 
 
+[[delete-a-qos-policy]]
 == QoS ポリシーを削除する
 
 不要になった QoS ポリシーを削除できます。QoS ポリシーを削除すると、そのポリシーに関連付けられているすべてのボリュームの QoS 設定は維持されますが、ポリシーとの関連付けは解除されます。
@@ -75,6 +78,7 @@ NOTE: ボリュームと QoS ポリシーの関連付けを解除する代わり
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * link:task_data_manage_volumes_remove_a_qos_policy_association_of_a_volume.html["ボリュームの QoS ポリシーの関連付けを削除します"]

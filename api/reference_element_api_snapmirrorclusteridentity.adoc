@@ -15,6 +15,7 @@ snapMirrorClusterIdentity オブジェクトには、 SnapMirror 関係にある
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

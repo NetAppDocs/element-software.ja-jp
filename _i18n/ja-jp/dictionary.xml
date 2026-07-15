@@ -1430,7 +1430,6 @@
   <block id="1d571a87e429de32d15e077fd11efa4c" category="paragraph">リモートクラスタのボリュームのボリューム ID 。</block>
   <block id="62fac95c783d4dee37c3fd0105a6842d" category="list-text">* リモートボリューム名 *</block>
   <block id="8ddc2f3b11177418057af7e520d41192" category="paragraph">リモートボリュームの作成時に指定した名前。</block>
-  <block id="b1ff5704b48e42d700d43961dd415064" category="doc">商標です</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp のロゴ、および NetApp の商標ページに記載されているマークは、 NetApp, Inc. の商標です。その他の会社名および製品名は、それぞれの所有者の商標である場合があります。</block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="paragraph"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
   <block id="1759b9c79a173bf71c901a3ed149de04" category="summary">VLAN 名、ネットマスク、ゲートウェイ、 IP アドレスブロックなどの VRF VLAN 属性を変更できます。</block>
@@ -5977,7 +5976,6 @@
   <block id="c738c7338057d92776135c39b1b1dec3" category="list-text">削除</block>
   <block id="9440025bb9d633cec83a85e7a9cb4ba8" category="paragraph">operationalState</block>
   <block id="9657129e12fbfe99a53283bf6ea49124" category="paragraph">SVM の基本的な動作状態。有効な値は次のとおり</block>
-  <block id="a93bc0a57623c2facaa010825c808507" category="paragraph"><block ref="a93bc0a57623c2facaa010825c808507" category="inline-link-rx"></block></block>
   <block id="597db28f7b1addd507c26f6ed87e5a1b" category="summary">storageContainer オブジェクトには、仮想ボリュームストレージコンテナの属性が含まれます。ListStorageContainers API メソッドを使用すると、クラスタ内の各ストレージコンテナに関する以下の情報を取得できます。</block>
   <block id="3b21a275020ee024aada34f19341b67c" category="doc">ストレージコンテナ</block>
   <block id="eaa90b634b5d3ff3b92ad67ad0e091b3" category="paragraph">storageContainer オブジェクトには、仮想ボリュームストレージコンテナの属性が含まれます。「 ListStorageContainers 」 API メソッドを使用すると、クラスタ内の各ストレージコンテナに関するこの情報を取得できます。</block>
@@ -11422,9 +11420,6 @@
   <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">ネットアップコミュニティ</block>
   <block id="213686afc3803be7caa09348765467fe" category="sidebar">サポートへのアクセス</block>
   <block id="b47307258c4d85ffb5f4141d7a660a9b" category="sidebar">Element 11.8.2以前のドキュメント</block>
-  <block id="3d08f19c985682eb2a632e36184cedd2" category="paragraph"><block ref="3d08f19c985682eb2a632e36184cedd2" category="inline-link-rx"></block></block>
-  <block id="b456d131470ee117b6ff900f949b80c5" category="paragraph"><block ref="b456d131470ee117b6ff900f949b80c5" category="inline-link-rx"></block></block>
-  <block id="1791fd435a83f3ee701165e29bb05b2f" category="list-text"><block ref="1791fd435a83f3ee701165e29bb05b2f" category="inline-link-rx"></block></block>
   <block id="6580584049ef8cc78e6be1833466e606" category="inline-link-macro">NetApp ElementソフトウェアとONTAP間のレプリケーション（ONTAP CLI）</block>
   <block id="9051badc24841b5e2521cd8790e8f7d8" category="paragraph">詳細については、を参照してください <block ref="5aaa67c40a6461657bd1345524045131" category="inline-link-macro-rx"></block>。</block>
   <block id="39f2369f3b77569b78b2438bb261689c" category="summary">デスティネーションボリュームを書き込み可能にしたら、ボリュームをデータアクセス用に設定する必要があります。ソースボリュームが再アクティブ化されるまで、SANホストはデスティネーションボリュームのデータにアクセスできます。</block>
@@ -12063,4 +12058,7 @@
   <block id="132c11da2b1e7646c3d397a41e823c61" category="admonition">オペレーティングシステムによって、クローンされたボリュームの扱い方が異なります。VMware ESXiは、クローンされたボリュームをボリュームコピーまたはスナップショットボリュームとして扱います。そのボリュームは、新しいデータストアを作成するために使用できるデバイスとなります。クローンボリュームのマウントとスナップショットLUNの処理の詳細については、VMFSデータストアのコピーのマウントおよび重複したVMFSデータストアの管理に関する<block ref="3be1aef9521c6da181e637c000f32aa2" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="75b0b932212b6758e37fc8920da31e3e" category="list-text"><block ref="da6d02632764bebb791a1a7b176b342b" category="inline-link-macro-rx"></block>および<block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block>のアップグレードに十分な時間を確保しています。Element ソフトウェアをバージョン 12.5 以降にアップグレードする場合、アップグレードにかかる時間は、Element ソフトウェアのバージョンとファームウェアのアップデート内容によって異なります。</block>
   <block id="fe3c28c386d2be6c3cbda4b2feb01c29" category="list-text"><block ref="e8348e5b207b91893f9322900bc614aa" category="inline-link-rx"></block>.</block>
+  <block id="161b4ed96d634114cd790ffb7038cc24" category="paragraph"><block ref="161b4ed96d634114cd790ffb7038cc24" category="inline-link-rx"></block></block>
+  <block id="c28c56f7a7ce8d5595899ccc3950cb6d" category="paragraph"><block ref="c28c56f7a7ce8d5595899ccc3950cb6d" category="inline-link-rx"></block></block>
+  <block id="145012f945e6ea9359e0b746c1a4925a" category="list-text"><block ref="145012f945e6ea9359e0b746c1a4925a" category="inline-link-rx"></block></block>
 </blocks>

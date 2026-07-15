@@ -15,6 +15,7 @@ session （ iSCSI ）オブジェクトには、各ボリュームの iSCSI セ�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -229,6 +230,7 @@ iSCSI セッションに関連付けられているボリュームオブジェ�
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_listiscsisessions.adoc[ListISCSISessions]

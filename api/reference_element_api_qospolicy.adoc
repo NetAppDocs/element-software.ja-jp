@@ -15,6 +15,7 @@ QoSPolicy オブジェクトには、 Element ソフトウェアを実行して�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -60,6 +61,7 @@ xref:reference_element_api_qos.adoc[QoS]
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_getqospolicy.adoc[GetQoSPolicy を参照してください]

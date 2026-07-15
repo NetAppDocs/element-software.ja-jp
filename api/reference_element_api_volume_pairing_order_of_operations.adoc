@@ -29,6 +29,7 @@ summary: ボリュームをペアリングする前に、 2 つのクラスタ�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:reference_element_api_startvolumepairing.adoc[StartVolumePairing を参照してください]

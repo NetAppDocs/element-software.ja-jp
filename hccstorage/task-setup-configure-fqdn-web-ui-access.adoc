@@ -34,6 +34,7 @@ NetApp Hybrid Cloud Control と REST API を使用して、 FQDN Web UI アク�
 
 
 
+[[configure-fqdn-web-ui-access-using-netapp-hybrid-cloud-control]]
 == NetApp Hybrid Cloud Control を使用して、 FQDN Web UI アクセスを設定します
 
 .手順
@@ -60,6 +61,7 @@ NOTE: FQDN が設定されている接続されたストレージクラスタの
 
 
 
+[[configure-fqdn-web-ui-access-using-the-rest-api]]
 == REST API を使用して FQDN Web UI アクセスを設定します
 
 .手順
@@ -116,6 +118,7 @@ https://<management_node_IP>/mnode/2/`
 
 
 
+[[remove-fqdn-web-ui-access-using-netapp-hybrid-cloud-control]]
 == NetApp Hybrid Cloud Control を使用して、 FQDN Web UI アクセスを削除します
 
 この手順を使用して、管理ノードとストレージクラスタの FQDN Web アクセスを削除できます。
@@ -131,6 +134,7 @@ https://<management_node_IP>/mnode/2/`
 
 
 
+[[remove-fqdn-web-ui-access-using-the-rest-api]]
 == REST API を使用して FQDN Web UI アクセスを削除します
 
 .手順
@@ -181,6 +185,7 @@ https://<management_node_IP>/mnode/2/
 
 
 
+[[troubleshooting]]
 == トラブルシューティング
 
 FQDN が正しく設定されていないと、管理ノード、ストレージクラスタ、またはその両方へのアクセスで問題が発生する可能性があります。問題のトラブルシューティングを行うには、次の情報を参照してください。
@@ -212,6 +217,7 @@ FQDN が正しく設定されていないと、管理ノード、ストレージ
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

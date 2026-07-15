@@ -15,6 +15,7 @@ QoS オブジェクトには、ボリュームの Quality of Service （ QoS ；
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -69,6 +70,7 @@ Min IOPS
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_getdefaultqos.adoc[GetDefaultQoS の設定]

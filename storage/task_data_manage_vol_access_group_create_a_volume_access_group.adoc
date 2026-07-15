@@ -75,6 +75,7 @@ link:../api/concept_element_api_about_the_api.html["Element API を使用して�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:task_data_manage_vol_access_group_add_volumes.adoc[アクセスグループにボリュームを追加する]

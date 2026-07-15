@@ -26,6 +26,7 @@ SnapMirrorの設定や概念に関する追加情報が必要な場合は、を�
 
 
 
+[[about-replication-between-element-and-ontap]]
 == ElementとONTAP間のレプリケーションについて
 
 ONTAP 9 3以降では、SnapMirrorを使用してElementボリュームのSnapshotコピーをONTAPデスティネーションにレプリケートできます。これにより、 Element サイトで災害が発生した場合でも、 ONTAP システムからクライアントに引き続きデータを提供し、サービスのリストア後に Element ソースボリュームを再アクティブ化することができます。
@@ -34,6 +35,7 @@ ONTAP 9 .4以降では、ONTAPノードで作成したLUNのSnapshotコピーを
 
 
 
+[[types-of-data-protection-relationship]]
 === データ保護関係のタイプ
 
 SnapMirrorには、2種類のデータ保護関係があります。タイプごとに、SnapMirrorは関係を初期化または更新する前にElementソースボリュームのSnapshotコピーを作成します。
@@ -44,6 +46,7 @@ SnapMirrorには、2種類のデータ保護関係があります。タイプご
 
 
 
+[[default-policies]]
 === デフォルトポリシー
 
 SnapMirror を初めて起動すると、ソース・ボリュームからデスティネーション・ボリュームへの _ ベースライン転送 _ が実行されます。SnapMirror ポリシー _ は、ベースラインおよび更新の内容を定義します。
@@ -92,12 +95,14 @@ SnapMirrorで作成されたSnapshotコピーと、前回の更新後に作成�
 ====
 
 
+[[understanding-snapmirror-labels]]
 === SnapMirrorラベルの概要
 
 ポリシータイプが「m irror-vault」のすべてのポリシーに、レプリケートするSnapshotコピーを指定するルールが必要です。たとえば、「daily」ルールは、「daily」というSnapMirrorラベルが割り当てられたSnapshotコピーだけをレプリケートするように指定します。SnapMirrorラベルは、Element Snapshotコピーの設定時に割り当てます。
 
 
 
+[[replication-from-an-element-source-cluster-to-an-ontap-destination-cluster]]
 === Element ソースクラスタから ONTAP デスティネーションクラスタへのレプリケーション
 
 SnapMirrorを使用して、ElementボリュームのSnapshotコピーをONTAPデスティネーションシステムにレプリケートできます。これにより、 Element サイトで災害が発生した場合でも、 ONTAP システムからクライアントに引き続きデータを提供し、サービスのリストア後に Element ソースボリュームを再アクティブ化することができます。
@@ -112,6 +117,7 @@ Element ボリュームは ONTAP LUN とほぼ同じです。SnapMirror は、 E
 
 
 
+[[replication-from-an-ontap-source-cluster-to-an-element-destination-cluster]]
 === ONTAP ソースクラスタから Element デスティネーションクラスタへのレプリケーション
 
 .4以降では、ONTAPシステムで作成したONTAP 9のSnapshotコピーをElementボリュームにレプリケートして戻すことができます。
@@ -133,6 +139,7 @@ Element ボリュームは ONTAP LUN とほぼ同じです。SnapMirror は、 E
 
 
 
+[[prerequisites]]
 === 前提条件
 
 Element と ONTAP の間にデータ保護関係を設定するには、次の作業を完了しておく必要があります。
@@ -154,6 +161,7 @@ Element と ONTAP の間にデータ保護関係を設定するには、次の�
 
 
 
+[[support-details]]
 === サポートの詳細
 
 次の表に、 Element から ONTAP へのバックアップのサポートの詳細を示します。

@@ -15,6 +15,7 @@ storageContainer オブジェクトには、仮想ボリュームストレージ
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -100,6 +101,7 @@ UUID の配列
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_liststoragecontainers.adoc[ListStorageContainers]

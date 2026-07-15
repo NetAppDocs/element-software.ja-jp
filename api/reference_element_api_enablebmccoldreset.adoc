@@ -15,6 +15,7 @@ summary: EnableBmcColdReset メソッドを使用すると、クラスタ内の�
 
 
 
+[[parameter]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -37,6 +38,7 @@ BMC のリセット処理の間隔（分）。
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -55,6 +57,7 @@ cBmcResetDurationMinutes
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -71,6 +74,7 @@ cBmcResetDurationMinutes
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -86,6 +90,7 @@ cBmcResetDurationMinutes
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 12.0

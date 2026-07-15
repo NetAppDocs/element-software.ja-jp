@@ -15,6 +15,7 @@ summary: プライマリ側の問題が軽減されたら、元のソースボ�
 
 
 
+[[snapmirror-failback-scenarios]]
 == SnapMirror フェイルバックのシナリオ
 
 SnapMirror ディザスタリカバリ機能について、 2 つのフェイルバックシナリオを例に説明します。どちらのシナリオも、元の関係がフェイルオーバーされた（解除された）状況を前提としています。
@@ -34,6 +35,7 @@ image::../media/snapmirror_element_failback2.png[ソースボリュームが存�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:task_snapmirror_perform_failback_when_source_volume_exists.adoc[ソースボリュームが存在する場合は、フェイルバックを実行します]

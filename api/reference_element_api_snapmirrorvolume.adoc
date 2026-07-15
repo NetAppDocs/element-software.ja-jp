@@ -15,6 +15,7 @@ snapMirrorVolume オブジェクトには、 ONTAP ボリュームの情報が�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

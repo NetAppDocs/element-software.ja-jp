@@ -33,6 +33,7 @@ RTFI国際標準化機構（ISO）イメージを導入してインストール�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

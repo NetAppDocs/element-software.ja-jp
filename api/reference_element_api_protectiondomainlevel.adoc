@@ -15,6 +15,7 @@ protectionDomainLevel オブジェクトには、ストレージクラスタの�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

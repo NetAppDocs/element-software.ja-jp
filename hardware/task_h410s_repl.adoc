@@ -39,6 +39,7 @@ image::hci_stor_node_ssd_bays.gif[は、 H410S ノードが設置された 4 ノ
 
 
 
+[[prepare-to-replace-the-node]]
 == ノードを交換する準備をします
 
 交換用ノードを設置する前に、 NetApp Element ソフトウェア UI で障害が発生したストレージノードをクラスタから正しく削除する必要があります。これは、サービスを中断することなく実行できます。障害が発生したストレージノードのシリアル番号を Element UI から取得し、ノード背面のステッカーに記載されているシリアル番号と照合する必要があります。
@@ -81,6 +82,7 @@ image::hci_stor_node_ssd_bays.gif[は、 H410S ノードが設置された 4 ノ
 
 
 
+[[replace-the-node-in-the-chassis]]
 == シャーシ内のノードを交換します
 
 NetApp Element ソフトウェア UI を使用して障害ノードをクラスタから削除すると、ノードをシャーシから物理的に取り外すことができます。交換用ノードは、障害ノードを取り外したシャーシの同じスロットに取り付ける必要があります。
@@ -203,6 +205,7 @@ TIP: 交換用ノードがシャーシ内の他のノードと同じ方法でケ
 
 
 
+[[add-the-node-to-the-cluster]]
 == クラスタにノードを追加します
 
 クラスタにノードを追加したり、既存のノードに新しいドライブを設置すると、ドライブが自動的に Available として登録されます。ドライブがクラスタに参加できるようにするためには、 Element UI または API を使用してドライブをクラスタに追加する必要があります。
@@ -238,6 +241,7 @@ NOTE: 追加するノードの Element ソフトウェアのバージョンが�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

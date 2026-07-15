@@ -23,6 +23,7 @@ NetApp エンジニアリングでは 'GetCompleteStats' API メソッドを使�
 
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

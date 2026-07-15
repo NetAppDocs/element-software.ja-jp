@@ -17,6 +17,7 @@ SolidFire ストレージノードと Fibre Channel ノードは、クラスタ�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:task_system_manage_nodes_adding_a_node_to_a_cluster.adoc[クラスタにノードを追加します]

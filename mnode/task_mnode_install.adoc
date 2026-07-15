@@ -57,6 +57,7 @@ Element 12.2 管理ノードはオプションのアップグレードです。�
 
 
 
+[[step-1-download-iso-or-ova-and-deploy-the-vm]]
 == 手順1：ISOまたはOVAをダウンロードしてVMを導入する
 
 NetAppサポートサイトから適切なISOまたはOVAをダウンロードし、VMをインストールします。
@@ -106,6 +107,8 @@ NOTE: イメージを使用して管理ノードをインストールすると�
 
 
 
+[[step-2-create-the-management-node-admin-and-configure-the-network]]
+[[create_mnode_admin]]
 == 手順2：管理ノードの管理者を作成してネットワークを設定する
 
 VMのインストールが完了したら、管理ノードのadminユーザを作成し、管理ノードのネットワークを設定します。
@@ -137,6 +140,8 @@ NOTE: ストレージトラフィックを分離するために NIC を追加す
 
 
 
+[[step-3-configure-time-sync]]
+[[configure-time-sync]]
 == ステップ3：時刻同期を設定する
 
 管理ノードをセットアップする前に、管理ノードとストレージクラスタの時間を同期してください。
@@ -217,6 +222,8 @@ NOTE: 時刻同期の設定が完了したら、NTPを編集しないでくだ�
 
 
 
+[[step-4-set-up-the-management-node]]
+[[set-up-the-management-node]]
 == 手順4：管理ノードをセットアップする
 
 コマンドを使用して管理ノードを設定し `setup-mnode`ます。
@@ -283,6 +290,7 @@ NOTE: 永続ボリュームには、クラスタ上の既存のアカウント�
 
 
 
+[[step-5-configure-controller-assets]]
 == 手順5：コントローラアセットを設定する
 
 インストールIDを確認し、vCenterコントローラアセットを追加します。
@@ -345,6 +353,7 @@ NOTE: コントローラサブアセットを追加する場合は、vCenterで�
 
 
 
+[[find-more-information]]
 == 詳細はこちら
 
 * link:../concepts/concept_solidfire_concepts_volumes.html#persistent-volumes["永続ボリューム"]

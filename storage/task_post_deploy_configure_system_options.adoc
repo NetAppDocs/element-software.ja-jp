@@ -19,6 +19,7 @@ SolidFire システムのセットアップ後、いくつかのオプション�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * link:task_post_deploy_credentials.html["NetApp HCI と NetApp SolidFire でクレデンシャルを変更"]

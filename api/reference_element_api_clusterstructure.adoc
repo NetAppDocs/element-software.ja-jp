@@ -15,6 +15,7 @@ clusterStructure オブジェクトには、 GetClusterStructure メソッドで
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトには、次のメソッドから返された情報がすべて格納されます。
@@ -41,6 +42,7 @@ clusterStructure オブジェクトには、 GetClusterStructure メソッドで
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:reference_element_api_getclusterstructure.adoc[GetClusterStructure （ GetClusterStructure ）]

@@ -15,6 +15,7 @@ summary: SetLoginBanner メソッドを使用すると、ユーザが Element We
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -54,6 +55,7 @@ summary: SetLoginBanner メソッドを使用すると、ユーザが Element We
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -85,6 +87,7 @@ summary: SetLoginBanner メソッドを使用すると、ユーザが Element We
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -102,6 +105,7 @@ summary: SetLoginBanner メソッドを使用すると、ユーザが Element We
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -120,6 +124,7 @@ summary: SetLoginBanner メソッドを使用すると、ユーザが Element We
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 10.0

@@ -15,6 +15,7 @@ initiator オブジェクトには、 iSCSI イニシエータまたは Fibre Ch
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -114,6 +115,7 @@ volumeAccessGroups
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_listinitiators.adoc[ListInitiators の 1 つです]

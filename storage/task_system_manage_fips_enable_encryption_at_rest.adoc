@@ -19,6 +19,7 @@ summary: 保存データの暗号化をクラスタ全体で有効または無�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.adoc[クラスタの暗号化を有効または無効にします]

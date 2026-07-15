@@ -15,6 +15,7 @@ summary: CompleteVolumePairing を使用すると、 2 つのボリュームの�
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -50,12 +51,14 @@ volumePairingKey のように指定します
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドには戻り値はありません。
 
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -73,6 +76,7 @@ volumePairingKey のように指定します
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -86,12 +90,14 @@ volumePairingKey のように指定します
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_startvolumepairing.adoc[StartVolumePairing を参照してください]

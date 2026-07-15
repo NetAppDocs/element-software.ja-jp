@@ -20,6 +20,7 @@ NOTE: Snapshot を作成できるのは、クラスタフルが「ステージ 1
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -242,6 +243,7 @@ JSON オブジェクトの配列
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -271,6 +273,7 @@ xref:reference_element_api_schedule.adoc[スケジュール]
 |===
 
 
+[[request-example-1]]
 == 要求例 1
 
 次のパラメータを含むスケジュールの例を次に示します。
@@ -319,6 +322,7 @@ xref:reference_element_api_schedule.adoc[スケジュール]
 ----
 
 
+[[response-example-1]]
 == 応答例 1
 
 上記の要求に対する応答例を次に示します。
@@ -367,6 +371,7 @@ xref:reference_element_api_schedule.adoc[スケジュール]
 ----
 
 
+[[request-example-2]]
 == 要求例 2.
 
 次のパラメータを含むスケジュールの例を次に示します。
@@ -409,6 +414,7 @@ xref:reference_element_api_schedule.adoc[スケジュール]
 ----
 
 
+[[response-example-2]]
 == 応答例 2
 
 上記の要求に対する応答例を次に示します。
@@ -452,6 +458,7 @@ xref:reference_element_api_schedule.adoc[スケジュール]
 ----
 
 
+[[request-example-3]]
 == 要求例 3
 
 次のパラメータを含むスケジュールの例を次に示します。
@@ -489,6 +496,7 @@ xref:reference_element_api_schedule.adoc[スケジュール]
 ----
 
 
+[[response-example-3]]
 == 応答例 3
 
 上記の要求に対する応答例を次に示します。
@@ -534,6 +542,7 @@ xref:reference_element_api_schedule.adoc[スケジュール]
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

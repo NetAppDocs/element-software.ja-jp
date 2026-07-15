@@ -15,6 +15,7 @@ network （すべてのインターフェイス）オブジェクトは、スト
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -62,6 +63,7 @@ xref:reference_element_api_network_local_interfaces.adoc[network （ローカル
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:reference_element_api_getconfig.adoc[設定]

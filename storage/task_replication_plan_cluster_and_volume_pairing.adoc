@@ -26,6 +26,7 @@ NOTE: データのレプリケーションにおける WAN アクセラレータ
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:task_replication_pair_clusters.adoc[レプリケーション用にクラスタをペアリング]

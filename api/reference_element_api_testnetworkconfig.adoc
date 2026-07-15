@@ -15,6 +15,7 @@ summary: TestNetworkConfig メソッドを使用すると、設定したネッ�
 
 
 
+[[parameters]]
 == パラメータ
 
 SetNetworkConfig メソッドを使用してノードを設定する場合は、 UI または TUI で設定が検証されて格納されます。TestNetworkConfig API テストでは、検証後のロジックに格納された設定を使用します。たとえば、停電やネットワーク障害が発生した場合、この API メソッドを使用してノードが直近に保存されたネットワーク設定で稼働していることを確認できます。設定にエラーがないこと、および現在の設定が使用中であることが検証されます。
@@ -25,6 +26,7 @@ SetNetworkConfig メソッドを使用してノードを設定する場合は、
 
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -43,6 +45,7 @@ JSON オブジェクト
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -57,6 +60,7 @@ JSON オブジェクト
 ----
 
 
+[[response-example-1]]
 == 応答例 1
 
 エラーが検出されなかった場合は、応答は返されません。
@@ -76,6 +80,7 @@ JSON オブジェクト
 ----
 
 
+[[response-example-2]]
 == 応答例 2
 
 MTU が一致しない例。
@@ -100,6 +105,7 @@ MTU が一致しない例。
 ----
 
 
+[[response-example-3]]
 == 応答例 3
 
 静的ルートが見つからない例。
@@ -124,12 +130,14 @@ MTU が一致しない例。
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_setnetworkconfig.adoc[SetNetworkConfig の場合]

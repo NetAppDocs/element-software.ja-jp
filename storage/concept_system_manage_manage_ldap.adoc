@@ -31,6 +31,7 @@ LDAP を有効にする手順の概要を次に示します。
 
 
 
+[[complete-pre-configuration-steps-for-ldap-support]]
 == LDAP サポートの設定前の手順を実行します
 
 Element で LDAP サポートを有効にする前に、 Windows Active Directory Server をセットアップし、その他の設定前のタスクを実行する必要があります。
@@ -44,6 +45,7 @@ Element で LDAP サポートを有効にする前に、 Windows Active Director
 
 
 
+[[enable-ldap-authentication-with-the-element-user-interface]]
 == Element ユーザインターフェイスで LDAP 認証を有効にします
 
 ストレージシステムと既存の LDAP サーバの統合を設定できます。これにより、 LDAP 管理者はストレージシステムへのユーザアクセスを一元管理できます。
@@ -94,6 +96,7 @@ image::../media/element_new_cluster_admin.jpg[新しいユーザーの作成ペ�
 
 
 
+[[enable-ldap-authentication-with-the-element-api]]
 == Element API を使用して LDAP 認証を有効にします
 
 ストレージシステムと既存の LDAP サーバの統合を設定できます。これにより、 LDAP 管理者はストレージシステムへのユーザアクセスを一元管理できます。
@@ -199,6 +202,8 @@ searchBindPassword
 
 
 
+[[view-ldap-details]]
+[[view_ldap_details]]
 == LDAP の詳細を表示します
 
 クラスタタブの LDAP ページで LDAP 情報を表示します。
@@ -237,6 +242,7 @@ NOTE: これらの LDAP 設定を表示するには、 LDAP を有効にする�
 
 
 
+[[test-the-ldap-configuration]]
 == LDAP 設定をテストします
 
 LDAP を設定したら、 Element UI または Element API の TestLdapAuthentication メソッドを使用して、 LDAP をテストする必要があります。
@@ -331,6 +337,7 @@ LDAP サーバの URI が正しくありません。
 
 
 
+[[disable-ldap]]
 == LDAP を無効にする
 
 Element UI を使用して、 LDAP との統合を無効にすることができます。
@@ -345,6 +352,7 @@ LDAP を無効にするとすべての設定が消去されるため、作業を
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

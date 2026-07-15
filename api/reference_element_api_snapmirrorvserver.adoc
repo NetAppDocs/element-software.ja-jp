@@ -15,6 +15,7 @@ snapMirrorVserver オブジェクトに、デスティネーション ONTAP ク�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

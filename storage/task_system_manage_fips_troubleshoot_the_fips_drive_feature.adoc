@@ -25,6 +25,7 @@ NetApp Element ソフトウェア UI を使用して、システムにおける 
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:reference_monitor_cluster_fault_codes.adoc[クラスタ障害コード]

@@ -17,6 +17,7 @@ AddClusterAdmin メソッドを使用して、新しいクラスタ管理者ア�
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -91,6 +92,7 @@ JSON オブジェクト
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -111,6 +113,7 @@ clusterAdminID
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -131,6 +134,7 @@ clusterAdminID
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -146,12 +150,14 @@ clusterAdminID
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_app_b_access_control.adoc[Access Control の略]

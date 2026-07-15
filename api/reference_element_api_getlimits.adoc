@@ -18,18 +18,21 @@ NOTE: GetLimits メソッドは、このメソッドを渡す API エンドポ�
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドには入力パラメータはありません。
 
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドは、名前と値のペアの形式で API の制限値を含む JSON オブジェクトを返します。
 
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -43,6 +46,7 @@ NOTE: GetLimits メソッドは、このメソッドを渡す API エンドポ�
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -118,6 +122,7 @@ NOTE: GetLimits メソッドは、このメソッドを渡す API エンドポ�
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

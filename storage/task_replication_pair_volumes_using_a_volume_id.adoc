@@ -55,6 +55,7 @@ Web ブラウザのタブが開き、リモートクラスタの Element UI に�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:reference_replication_volume_pairing_messages.adoc[ボリュームペアリングに関するメッセージ]

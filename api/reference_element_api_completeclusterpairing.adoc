@@ -15,6 +15,7 @@ summary: CompleteClusterPairing メソッドは、クラスタペアリングプ
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -37,6 +38,7 @@ clusterPairingKey を使用します
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -57,6 +59,7 @@ clusterPairID
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -73,6 +76,7 @@ clusterPairID
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -88,12 +92,14 @@ clusterPairID
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_startclusterpairing.adoc[StartClusterPairing を参照してください]

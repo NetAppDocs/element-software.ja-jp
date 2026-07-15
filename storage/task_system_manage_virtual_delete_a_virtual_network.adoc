@@ -21,6 +21,7 @@ summary: 仮想ネットワークオブジェクトを削除することがで�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:task_system_manage_virtual_edit_a_virtual_network.adoc[仮想ネットワークを編集します]

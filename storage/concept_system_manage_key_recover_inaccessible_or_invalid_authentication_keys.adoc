@@ -15,6 +15,7 @@ summary: 場合によっては、ユーザの介入を必要とするエラー�
 
 
 
+[[the-cluster-is-unable-to-unlock-the-drives-due-to-a-kmipserverfault-cluster-fault]]
 == 「 KmipServerFault 」クラスタエラーが原因で、クラスタがドライブのロックを解除できません。
 
 これは、クラスタの初回ブート時にキーサーバにアクセスできないか、必要なキーを使用できない場合に発生します。
@@ -24,6 +25,7 @@ summary: 場合によっては、ユーザの介入を必要とするエラー�
 
 
 
+[[a-sliceserviceunhealthy-fault-might-be-set-because-the-metadata-drives-have-been-marked-as-failed-and-placed-into-the-available-state]]
 == メタデータドライブが障害としてマークされ、「 Available 」状態になっているため、 sliceServiceUnhealthy エラーが表示される場合があります。
 
 クリアする手順：

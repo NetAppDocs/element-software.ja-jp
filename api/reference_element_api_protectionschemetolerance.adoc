@@ -15,6 +15,7 @@ protectionSchemeTolerance オブジェクトには、障害発生後もストレ
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

@@ -15,6 +15,7 @@ clusterCapacity オブジェクトには、クラスタの容量測定の概要�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -222,6 +223,7 @@ usedSpace
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_getclustercapacity.adoc[GetClusterCapacity]

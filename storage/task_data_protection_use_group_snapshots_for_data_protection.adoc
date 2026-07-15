@@ -15,6 +15,7 @@ summary: 関連する一連のボリュームのグループ Snapshot を作成�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:task_data_protection_create_a_group_snapshot.adoc[グループ Snapshot を作成します]

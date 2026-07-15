@@ -15,12 +15,14 @@ summary: GetRemoteLoggingHosts メソッドを使用すると、現在のログ�
 
 
 
+[[parameters]]
 == パラメータ
 
 入力パラメータはありません `GetRemoteLoggingHosts`。
 
 
 
+[[return-value]]
 == 戻り値
 
 その `GetRemoteLoggingHosts`このメソッドには次の戻り値があります。
@@ -39,6 +41,7 @@ xref:reference_element_api_loggingserver.adoc[loggingServer の場合] 配列
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -53,6 +56,7 @@ xref:reference_element_api_loggingserver.adoc[loggingServer の場合] 配列
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -80,12 +84,14 @@ xref:reference_element_api_loggingserver.adoc[loggingServer の場合] 配列
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 ONTAP 9.6 以降で使用可能です。
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_setremotelogginghosts.adoc[SetRemoteLoggingHosts]

@@ -28,6 +28,7 @@ ssh -i <identity_file> sfreadonly@<node_ip>
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -79,6 +80,7 @@ supportAdminクラスタアクセスを使用してAPI呼び出しを行う場�
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -130,6 +132,7 @@ signed_public_key
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -147,6 +150,7 @@ signed_public_key
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -167,6 +171,7 @@ signed_public_key
 
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 12.5

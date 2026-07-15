@@ -19,6 +19,7 @@ summary: クラスタに接続されている iSCSI セッションを確認で�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_monitor_iscsi_session_details.adoc[iSCSI セッションの詳細]

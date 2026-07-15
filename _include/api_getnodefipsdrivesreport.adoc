@@ -6,12 +6,14 @@
 
 
 
+[[parameter]]
 == パラメータ
 
 このメソッドには入力パラメータはありません。
 
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -35,6 +37,7 @@ fipsDrives
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -49,6 +52,7 @@ fipsDrives
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -64,6 +68,7 @@ fipsDrives
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 11.5

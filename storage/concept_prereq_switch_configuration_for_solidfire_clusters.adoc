@@ -68,6 +68,7 @@ NetApp Element には次のものが必要です。
 
 
 
+[[for-more-information]]
 == を参照してください。
 
 * https://docs.netapp.com/us-en/hci/docs/hci_prereqs_network_switch.html["NetApp HCI のネットワークとスイッチの要件"^]

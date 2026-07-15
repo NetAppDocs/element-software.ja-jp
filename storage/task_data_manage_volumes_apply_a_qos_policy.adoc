@@ -25,6 +25,7 @@ summary: 既存の QoS ポリシーを 1 つ以上のボリュームに一括し
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:concept_data_manage_volumes_quality_of_service_policies.adoc[QoS ポリシー]

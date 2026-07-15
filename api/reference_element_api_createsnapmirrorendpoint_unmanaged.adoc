@@ -15,6 +15,7 @@ Element ソフトウェアストレージシステムは、「 CreateSnapMirrorE
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -50,6 +51,7 @@ IP アドレス
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -70,6 +72,7 @@ xref:reference_element_api_snapmirrorendpoint.adoc[snapMirrorEndpoint のこと�
 |===
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 10.3

@@ -36,6 +36,7 @@ RTFIプロセスが正常に完了したあとにノードを設定するには�
 
 
 
+[[perform-the-rtfi-process]]
 == RTFIプロセスを実行します
 
 次の手順 を使用して、SolidFire ノードでElementソフトウェアをリストアします。
@@ -101,6 +102,7 @@ RTFIプロセス中にエラーメッセージが発生した場合は、を参�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

@@ -15,6 +15,7 @@ summary: remoteClusterSnapshotStatus オブジェクトには、リモートス�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

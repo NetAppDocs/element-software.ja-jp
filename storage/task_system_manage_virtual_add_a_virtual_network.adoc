@@ -48,6 +48,7 @@ IMPORTANT: この構成では、次の条件を考慮する必要があります
 
 
 
+[[view-virtual-network-details]]
 == 仮想ネットワークの詳細を表示します
 
 .手順

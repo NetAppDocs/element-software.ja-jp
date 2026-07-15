@@ -15,12 +15,14 @@ GetClusterState API メソッドを使用すると、ノードがクラスタに
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドには入力パラメータはありません。
 
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -51,6 +53,7 @@ GetClusterState API メソッドを使用すると、ノードがクラスタに
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -65,6 +68,7 @@ GetClusterState API メソッドを使用すると、ノードがクラスタに
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -80,6 +84,7 @@ GetClusterState API メソッドを使用すると、ノードがクラスタに
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

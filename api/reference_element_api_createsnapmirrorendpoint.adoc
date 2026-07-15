@@ -15,6 +15,7 @@ Element Web UI は、「 CreateSnapMirrorEndpoint 」メソッドを使用して
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -63,6 +64,7 @@ ONTAP システムの管理パスワード。
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -83,6 +85,7 @@ xref:reference_element_api_snapmirrorendpoint.adoc[snapMirrorEndpoint のこと�
 |===
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 10.0

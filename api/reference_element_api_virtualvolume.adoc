@@ -15,6 +15,7 @@ virtualVolume オブジェクトには、仮想ボリュームの情報と仮想
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -146,6 +147,7 @@ xref:reference_element_api_volume.adoc[ボリューム]
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:reference_element_api_listvirtualvolumes.adoc[ListVirtualVolumes の場合]

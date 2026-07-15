@@ -19,6 +19,7 @@ summary: クラスタに接続されている Fibre Channel （ FC ；ファイ�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_monitor_fibre_channel_session_details.adoc[Fibre Channel セッションの詳細]

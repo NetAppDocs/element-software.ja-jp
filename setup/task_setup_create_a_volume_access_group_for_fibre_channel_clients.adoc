@@ -36,6 +36,7 @@ NOTE: イニシエータはあとから追加または削除できます。
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

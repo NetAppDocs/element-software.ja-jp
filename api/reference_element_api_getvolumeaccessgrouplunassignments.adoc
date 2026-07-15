@@ -15,6 +15,7 @@ summary: GetVolumeAccessGroupLunAssignments メソッドを使用すると、指
 
 
 
+[[parameter]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -37,6 +38,7 @@ summary: GetVolumeAccessGroupLunAssignments メソッドを使用すると、指
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -57,6 +59,7 @@ JSON オブジェクト
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -74,6 +77,7 @@ JSON オブジェクト
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -100,6 +104,7 @@ JSON オブジェクト
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

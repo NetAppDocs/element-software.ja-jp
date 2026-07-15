@@ -15,6 +15,7 @@ task オブジェクトには、システム内で現在実行中または完了
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -133,6 +134,7 @@ UUID
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_listvirtualvolumetasks.adoc[ListVirtualVolumeTasks を実行します]

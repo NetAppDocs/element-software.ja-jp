@@ -15,6 +15,7 @@ summary: ModifySchedule を使用すると、スケジュールされた Snapsho
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -271,6 +272,7 @@ Snapshot を作成する曜日。曜日は日曜の「 0 」から始まり、�
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -291,6 +293,7 @@ xref:reference_element_api_schedule.adoc[スケジュール]
 |===
 
 
+[[request-example]]
 == 要求例
 
 [listing]
@@ -306,6 +309,7 @@ xref:reference_element_api_schedule.adoc[スケジュール]
 ----
 
 
+[[response-example]]
 == 応答例
 
 [listing]
@@ -346,6 +350,7 @@ xref:reference_element_api_schedule.adoc[スケジュール]
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

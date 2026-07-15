@@ -15,6 +15,7 @@ RemoveVolumePair メソッドを使用すると、 2 つのボリューム間の
 
 
 
+[[parameter]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -37,12 +38,14 @@ RemoveVolumePair メソッドを使用すると、 2 つのボリューム間の
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドには戻り値はありません。
 
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -59,6 +62,7 @@ RemoveVolumePair メソッドを使用すると、 2 つのボリューム間の
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -73,6 +77,7 @@ RemoveVolumePair メソッドを使用すると、 2 つのボリューム間の
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

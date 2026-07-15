@@ -17,6 +17,7 @@ API の 3 つの要求エンドポイントは、次の方法で指定されま�
 
 
 
+[[cluster-api-methods]]
 == クラスタ API メソッド
 
 ストレージ・クラスタ全体の API 要求の HTTPS エンドポイントは '+https://<mvip>/json-rpc/<api-version>+` ですここでは ' 次のようになります
@@ -27,6 +28,7 @@ API の 3 つの要求エンドポイントは、次の方法で指定されま�
 
 
 
+[[cluster-creation-and-bootstrap-api-methods]]
 == クラスタ作成とブートストラップ API メソッド
 
 ストレージクラスタの作成とブートストラップ API 要求へのアクセスに使用する HTTPS エンドポイントは、「 + https://<nodeIP>/json-rpc/<api-version>+` 」です。
@@ -37,6 +39,7 @@ API の 3 つの要求エンドポイントは、次の方法で指定されま�
 
 
 
+[[per-node-api-methods]]
 == ノード単位の API メソッド
 
 個々のストレージ・ノードの API 要求の HTTPS エンドポイントは '+ https://<nodeIP>:442/json-rpc/<api-version>+` ですここでは ' 次のようになります
@@ -47,6 +50,7 @@ API の 3 つの要求エンドポイントは、次の方法で指定されま�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

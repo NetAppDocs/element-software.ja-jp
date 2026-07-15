@@ -15,6 +15,7 @@ summary: 各ノードには 1 つ以上の物理ドライブが搭載され、�
 
 
 
+[[drives-details]]
 == ドライブの詳細
 
 クラスタタブのドライブページには、クラスタ内のアクティブドライブのリストが表示されます。ページをフィルタするには、 Active 、 Available 、 Removing 、 Erasing 、 Failed の各タブを選択します。
@@ -62,6 +63,7 @@ summary: 各ノードには 1 つ以上の物理ドライブが搭載され、�
 
 
 
+[[for-more-information]]
 == を参照してください。
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

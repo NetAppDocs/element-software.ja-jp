@@ -15,6 +15,7 @@ snapMirrorEndpoint オブジェクトには、 Element ストレージクラス�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

@@ -43,6 +43,7 @@ NOTE: 逆再同期（ Reverse Resync ）処理では、元のソースボリュ�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:concept_snapmirror_failback_scenarios.adoc[SnapMirror フェイルバックのシナリオ]

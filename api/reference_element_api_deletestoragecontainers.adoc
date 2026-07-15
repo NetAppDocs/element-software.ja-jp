@@ -15,6 +15,7 @@ summary: DeleteStorageContainers メソッドを使用すると、最大で 2 �
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -37,12 +38,14 @@ UUID の配列
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドには戻り値はありません。
 
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -59,6 +62,7 @@ UUID の配列
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -72,6 +76,7 @@ UUID の配列
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

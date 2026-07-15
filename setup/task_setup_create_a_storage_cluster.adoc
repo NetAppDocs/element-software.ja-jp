@@ -67,6 +67,7 @@ NOTE: ユーザ名とパスワードには、大文字と小文字のアルフ�
 
 
 
+[[for-more-information]]
 == を参照してください。
 
 * link:../api/concept_element_api_about_the_api.html["Element API を使用してストレージを管理する"]

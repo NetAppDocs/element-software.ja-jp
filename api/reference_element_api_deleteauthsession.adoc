@@ -15,6 +15,7 @@ summary: DeleteAuthSession メソッドを使用すると、個々の認証セ�
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -37,6 +38,7 @@ UUID
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -57,6 +59,7 @@ link:reference_element_api_authsessioninfo.html["authSessionInfo"]
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -73,6 +76,7 @@ link:reference_element_api_authsessioninfo.html["authSessionInfo"]
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -102,6 +106,7 @@ link:reference_element_api_authsessioninfo.html["authSessionInfo"]
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 12.0

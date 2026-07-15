@@ -30,6 +30,7 @@ NTP は、ネットワークを介してクロックを同期するために使�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * link:../storage/task_system_manage_cluster_ntp_configure.html["クラスタが照会するネットワークタイムプロトコルサーバを設定します"]

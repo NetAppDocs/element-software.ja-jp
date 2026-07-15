@@ -26,6 +26,7 @@ NOTE: 新しいノードを追加してから、そのノードが起動して�
 
 
 
+[[parameter]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -61,6 +62,7 @@ pendingNodes
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -90,6 +92,7 @@ JSON オブジェクトの配列
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -107,6 +110,7 @@ JSON オブジェクトの配列
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -140,12 +144,14 @@ JSON オブジェクトの配列
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:reference_element_api_adddrives.adoc[AddDrives]

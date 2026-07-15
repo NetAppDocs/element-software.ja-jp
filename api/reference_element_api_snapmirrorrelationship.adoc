@@ -15,6 +15,7 @@ snapMirrorRelationship オブジェクトに、 Element ボリュームと ONTAP
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

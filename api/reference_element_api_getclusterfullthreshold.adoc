@@ -18,12 +18,14 @@ NOTE: クラスタがブロッククラスタフルの Error ステージに達�
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドには入力パラメータはありません。
 
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -244,6 +246,7 @@ sumUsedMetadataClusterBytes
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -258,6 +261,7 @@ sumUsedMetadataClusterBytes
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -289,12 +293,14 @@ sumUsedMetadataClusterBytes
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_modifyclusterfullthreshold.adoc[ModifyClusterFullThreshold のでした]

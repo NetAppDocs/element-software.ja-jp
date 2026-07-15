@@ -15,6 +15,7 @@ keyServerKmip オブジェクトは、 Key Management Interoperability Protocol 
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

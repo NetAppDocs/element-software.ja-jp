@@ -15,12 +15,14 @@ summary: GetSnmpState メソッドを使用すると、 SNMP 機能の現在の�
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドには入力パラメータはありません。
 
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -60,6 +62,7 @@ snmpV3Enabled を使用します
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -74,6 +77,7 @@ snmpV3Enabled を使用します
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -90,12 +94,14 @@ snmpV3Enabled を使用します
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_setsnmpacl.adoc[SetSnmpACL の場合]

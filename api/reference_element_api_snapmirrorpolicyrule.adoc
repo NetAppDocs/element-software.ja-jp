@@ -15,6 +15,7 @@ snapMirrorPolicyRule オブジェクトには、 SnapMirror ポリシーのル�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

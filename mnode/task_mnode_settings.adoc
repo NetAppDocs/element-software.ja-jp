@@ -23,6 +23,7 @@ keywords: netapp, management node ui, mnode ui, network settings, test network, 
 
 
 
+[[update-management-node-network-settings]]
 == 管理ノードのネットワーク設定を更新します
 
 ノード管理ノード UI のネットワーク設定タブで、管理ノードのネットワークインターフェイスフィールドを変更できます。
@@ -66,6 +67,7 @@ IMPORTANT: IPv6 オプションは、 11.3 以降のバージョンの管理ノ�
 
 
 
+[[update-management-node-cluster-settings]]
 == 管理ノードのクラスタ設定を更新します
 
 管理ノードのノード UI のクラスタ設定タブで、ノードの状態が Available 、 Pending 、 PendingActive 、または Active であるときにクラスタインターフェイスのフィールドを変更できます。
@@ -83,6 +85,7 @@ IMPORTANT: IPv6 オプションは、 11.3 以降のバージョンの管理ノ�
 
 
 
+[[test-the-management-node-settings]]
 == 管理ノードの設定をテストします
 
 管理ノードの管理設定とネットワーク設定を変更して変更をコミットしたら、テストを実行して変更を検証できます。

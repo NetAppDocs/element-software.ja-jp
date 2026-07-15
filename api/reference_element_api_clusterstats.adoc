@@ -15,6 +15,7 @@ clusterStats オブジェクトには、クラスタの統計データが含ま�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -288,6 +289,7 @@ writeOpsLastSample
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_getclusterstats.adoc[GetClusterStats から参照できます]

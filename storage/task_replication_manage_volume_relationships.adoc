@@ -15,6 +15,7 @@ summary: レプリケーションの一時停止、ボリュームペアリン�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:task_replication_pause_replication.adoc[レプリケーションを一時停止]

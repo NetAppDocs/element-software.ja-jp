@@ -15,6 +15,7 @@ fibreChannelPort オブジェクトには、ノード上の個別のポートま
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -136,6 +137,7 @@ HBA の物理ポートに割り当てられた World Wide Port Name 。
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_listnodefibrechannelportinfo.adoc[ListNodeFibreChannelPortInfo]

@@ -15,6 +15,7 @@ summary: TestHardwareConfig メソッドを使用すると、ノードでハー�
 
 
 
+[[parameters]]
 == パラメータ
 
 
@@ -57,6 +58,7 @@ NOTE: このテストは、ハードウェア障害の検出を目的とした�
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -75,6 +77,7 @@ JSON オブジェクト
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -91,18 +94,21 @@ JSON オブジェクト
 ----
 
 
+[[response-example]]
 == 応答例
 
 この応答例は分量が多いため、補足のトピックに記載しています。
 
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_response_example_testhardwareconfig.adoc[TestHardwareConfig]

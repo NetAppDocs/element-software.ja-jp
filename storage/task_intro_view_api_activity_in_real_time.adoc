@@ -35,6 +35,7 @@ API ログを使用すると、特定のタスクにどの API メソッドが�
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * link:../api/concept_element_api_about_the_api.html["Element API を使用してストレージを管理する"]

@@ -15,6 +15,7 @@ snapMirrorLunInfo オブジェクトには、 ONTAP の LUN オブジェクト�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

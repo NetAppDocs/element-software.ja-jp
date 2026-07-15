@@ -15,6 +15,7 @@ ListKeyServersKmip メソッドを使用すると、作成されたすべての 
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -75,6 +76,7 @@ kmipHasProviderAssigned の一つです
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -95,6 +97,7 @@ link:reference_element_api_keyserverkmip.html["KeyServerKmip"] 配列
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -109,6 +112,7 @@ link:reference_element_api_keyserverkmip.html["KeyServerKmip"] 配列
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -134,6 +138,7 @@ link:reference_element_api_keyserverkmip.html["KeyServerKmip"] 配列
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 11.7

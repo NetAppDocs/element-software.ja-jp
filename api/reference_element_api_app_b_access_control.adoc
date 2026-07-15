@@ -18,6 +18,7 @@ NOTE: APIから使用できるアクセスタイプには、Element UIでは使�
 
 
 
+[[accounts]]
 == アカウント
 
 accounts アクセスタイプで使用できるメソッドは次のとおりです。
@@ -61,12 +62,14 @@ RemoveAccount を使用します
 |===
 
 
+[[administrator]]
 == 管理者
 
 administrator アクセスタイプでは、すべてのメソッドを使用できます。
 
 
 
+[[clusteradmin]]
 == クラスタ管理者
 
 cluster admin アクセスタイプで使用できるメソッドは次のとおりです。
@@ -464,6 +467,7 @@ GetVirtualNetwork
 |===
 
 
+[[drives]]
 == ドライブ
 
 drives アクセスタイプで使用できるメソッドは次のとおりです。
@@ -492,6 +496,7 @@ SecureEraseDrives の 2 つの特長を説明
 |===
 
 
+[[nodes]]
 == ノード
 
 nodes アクセスタイプで使用できるメソッドは次のとおりです。
@@ -520,6 +525,7 @@ RemoveNodes
 |===
 
 
+[[read]]
 == 読み取り
 
 read アクセスタイプで使用できるメソッドは次のとおりです。
@@ -663,6 +669,7 @@ ListBackupTargets を参照します
 |===
 
 
+[[reporting]]
 == レポート作成
 
 reporting アクセスタイプで使用できるメソッドは次のとおりです。
@@ -821,12 +828,14 @@ ListVolumeStatsByVolumeAccessGroup
 |===
 
 
+[[repositories]]
 == リポジトリ
 
 repositories アクセスタイプでは、 ListAllNodes メソッドを使用できます。
 
 
 
+[[volumes]]
 == 個のボリューム
 
 volumes アクセスタイプで使用できるメソッドは次のとおりです。
@@ -1000,6 +1009,7 @@ UpdateBulkVolumeStatus
 |===
 
 
+[[write]]
 == 書き込み
 
 write アクセスタイプで使用できるメソッドは次のとおりです。

@@ -23,6 +23,7 @@ NetApp エンジニアリングでは 'GetRawStats' API メソッドを使用し
 
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

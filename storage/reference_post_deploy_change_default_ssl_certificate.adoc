@@ -36,6 +36,7 @@ NOTE: クラスタの SSL 証明書は、クラスタに追加される新しい
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * link:../mnode/reference_change_mnode_default_ssl_certificate.html["管理ノードのデフォルトSSL証明書を変更します"]

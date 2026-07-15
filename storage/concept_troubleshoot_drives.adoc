@@ -32,6 +32,7 @@ IMPORTANT: SolidFire ストレージシステムでは、データの移行に�
 
 
 
+[[for-more-information]]
 == を参照してください。
 
 * xref:task_troubleshoot_remove_failed_drives.adoc[クラスタから障害ドライブを削除します]

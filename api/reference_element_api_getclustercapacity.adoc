@@ -15,6 +15,7 @@ GetClusterCapacity を使用すると、ストレージクラスタ全体の容�
 
 
 
+[[efficiency-calculations]]
 == 削減率の計算
 
 シンプロビジョニング、重複排除、および圧縮を計算するには、次の式を使用します。これらの式は Element 8.2 以降に適用されます。
@@ -26,6 +27,7 @@ GetClusterCapacity を使用すると、ストレージクラスタ全体の容�
 
 
 
+[[overall-efficiency-rate-calculation]]
 == 全体的な削減率の計算
 
 シンプロビジョニング、重複排除、および圧縮の削減率に関する計算結果を使用してクラスタ全体の削減率を計算するには、次の式を使用します。
@@ -35,12 +37,14 @@ GetClusterCapacity を使用すると、ストレージクラスタ全体の容�
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドには入力パラメータはありません。
 
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -59,6 +63,7 @@ xref:reference_element_api_clustercapacity.adoc[clusterCapacity]
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -73,6 +78,7 @@ xref:reference_element_api_clustercapacity.adoc[clusterCapacity]
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -112,6 +118,7 @@ xref:reference_element_api_clustercapacity.adoc[clusterCapacity]
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6

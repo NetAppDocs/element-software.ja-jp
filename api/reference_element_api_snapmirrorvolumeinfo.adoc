@@ -15,6 +15,7 @@ snapMirrorVolumeInfo オブジェクトには、 SnapMirror 関係のボリュ�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。

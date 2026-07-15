@@ -25,6 +25,7 @@ summary: カスタム QoS 設定を選択すると、ボリュームへの QoS �
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:task_data_manage_volumes_deleting_a_qos_policy.adoc[QoS ポリシーを削除する]

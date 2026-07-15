@@ -15,6 +15,7 @@ summary: AddIpdClusterAdmin メソッドを使用して、サードパーティ�
 
 
 
+[[parameters]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -76,6 +77,7 @@ IdP クラスタ管理者への SAML の属性と値のマッピング（例： 
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -96,6 +98,7 @@ clusterAdminID
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -113,6 +116,7 @@ clusterAdminID
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -127,6 +131,7 @@ clusterAdminID
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 12.0

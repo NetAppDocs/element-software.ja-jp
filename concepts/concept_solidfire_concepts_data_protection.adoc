@@ -26,6 +26,7 @@ Element ストレージデータ保護の概念は次のとおりです。
 
 
 
+[[remote-replication-types]]
 == リモートレプリケーションの種類
 
 データのリモートレプリケーションには、次の形式を使用できます。
@@ -39,6 +40,7 @@ Element ストレージデータ保護の概念は次のとおりです。
 
 
 
+[[synchronous-and-asynchronous-replication-between-clusters]]
 === クラスタ間の同期レプリケーションと非同期レプリケーション
 
 NetApp Element ソフトウェアを実行するクラスタでは、リアルタイムレプリケーションを使用してボリュームデータのリモートコピーを迅速に作成できます。
@@ -73,6 +75,7 @@ NetApp Element ソフトウェアを実行するクラスタでは、リアル�
 
 
 
+[[snapshot-only-replication]]
 === Snapshot のみのレプリケーション
 
 Snapshot のみのデータ保護では、特定の時点における変更済みのデータをリモートクラスタにレプリケートします。ソースクラスタで作成された Snapshot だけがレプリケートされます。ソースボリュームのアクティブな書き込みはレプリケートされません。
@@ -83,6 +86,7 @@ Snapshot レプリケーションは、非同期レプリケーションまた�
 
 
 
+[[replication-between-element-and-ontap-clusters-using-snapmirror]]
 === SnapMirror を使用した Element クラスタと ONTAP クラスタ間のレプリケーション
 
 NetApp SnapMirror テクノロジを使用すると、ディザスタリカバリを目的として、 NetApp Element ソフトウェアを使用して作成された Snapshot を ONTAP にレプリケートできます。SnapMirror 関係では、 Element が一方のエンドポイントで、 ONTAP がもう一方のエンドポイントです。
@@ -109,6 +113,7 @@ Element 10.3 以降および ONTAP 9.4 以降のシステムでは、機能は�
 
 
 
+[[volume-snapshots-for-data-protection]]
 == データ保護用のボリューム Snapshot
 
 ボリューム Snapshot はボリュームのポイントインタイムコピーであり、あとでその時点にボリュームをリストアする際に使用できます。
@@ -123,6 +128,7 @@ Snapshot は、 Element クラスタから外部のオブジェクトストア�
 
 
 
+[[volume-clones]]
 == ボリュームクローン
 
 単一のボリュームまたは複数のボリュームのクローンは、データのポイントインタイムコピーです。ボリュームをクローニングすると、ボリュームの Snapshot が作成され、次にその Snapshot が参照しているデータのコピーが作成されます。
@@ -133,6 +139,7 @@ Snapshot は、 Element クラスタから外部のオブジェクトストア�
 
 
 
+[[backup-and-restore-process-overview-for-element-storage]]
 == Element ストレージのバックアップとリストアのプロセスの概要
 
 他の SolidFire ストレージ、および Amazon S3 または OpenStack Swift と互換性のあるセカンダリオブジェクトストアに対して、ボリュームのバックアップとリストアを実行できます。
@@ -148,6 +155,7 @@ OpenStack Swift または Amazon S3 からボリュームをリストアする�
 
 
 
+[[protection-domains]]
 == 保護ドメイン
 
 保護ドメインは、データの可用性を維持したまま、任意の部分またはすべてで障害が発生する可能性があるように、グループ化されたノードまたはノードのセットです。保護ドメインを使用すると、ストレージクラスタをシャーシ（シャーシアフィニティ）またはドメイン全体（シャーシのグループ）の損失から自動的に修復できます。
@@ -171,6 +179,7 @@ Protection Domain レイアウトは、各ノードを特定の保護ドメイ�
 
 
 
+[[custompdcustom-protection-domains]]
 == [[custom_pd]]カスタム保護ドメイン
 
 特定のシャーシおよびノードレイアウトに一致するカスタム保護ドメインレイアウトを定義し、各ノードが 1 つだけのカスタム保護ドメインに関連付けられるようにすることができます。デフォルトでは、各ノードは同じデフォルトのカスタム保護ドメインに割り当てられます。
@@ -198,6 +207,7 @@ Element UI を使用して、を実行できます link:../storage/task_data_pro
 
 
 
+[[double-helix-high-availability]]
 == Double Helix の高可用性
 
 Double Helix データ保護は、システム内のすべてのドライブに、少なくとも 2 つのデータの冗長コピーを分散するレプリケーション方法です。「 RAID レス」アプローチにより、システムは、ストレージシステムのあらゆるレベルで同時に発生する複数の障害を吸収し、迅速に修復することができます。

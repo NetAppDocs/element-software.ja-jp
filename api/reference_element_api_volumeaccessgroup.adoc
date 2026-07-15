@@ -15,6 +15,7 @@ volumeAccessGroup オブジェクトには、特定のボリュームアクセ�
 
 
 
+[[object-members]]
 == オブジェクトメンバー
 
 このオブジェクトのメンバーは次のとおりです。
@@ -87,6 +88,7 @@ deleteVolumes 」という 2 つのコマンドを
 |===
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 xref:reference_element_api_listvolumeaccessgroups.adoc[ListVolumeAccessGroups の実行]

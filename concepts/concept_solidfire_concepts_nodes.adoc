@@ -24,12 +24,14 @@ NetApp Element ソフトウェアでは、クラスタのさまざまなノー�
 
 
 
+[[management-node]]
 == 管理ノード
 
 管理ノードは、アップグレード後にシステムサービスを提供するために使用される仮想マシンです。監視と計測のほか、クラスタのアセットと設定の管理、システムテストとユーティリティの実行、トラブルシューティングのためのネットアップサポートアクセスの有効化などを行います。link:../concepts/concept_intro_management_node.html["詳細はこちら。"]
 
 
 
+[[storage-node]]
 == ストレージノード
 
 SolidFire ストレージノードは、 Bond10G ネットワークインターフェイスを通じて相互に通信する一連のドライブを搭載したサーバです。ノード内のドライブには、データの格納用と管理用にブロックスペースとメタデータスペースが確保されます。各ノードには、 NetApp Element ソフトウェアの工場出荷時のイメージが含まれています。
@@ -45,6 +47,7 @@ SolidFire ストレージノードは、 Bond10G ネットワークインター�
 
 
 
+[[fibre-channel-node]]
 == Fibre Channel ノード
 
 SolidFire Fibre Channel ノードは Fibre Channel スイッチへの接続を提供し、 Fibre Channel スイッチは Fibre Channel クライアントに接続できます。Fibre Channel ノードは、 Fibre Channel プロトコルと iSCSI プロトコル間のプロトコルコンバータとして機能するため、新規または既存の任意の SolidFire クラスタへの Fibre Channel 接続を追加できます。
@@ -59,6 +62,7 @@ Fibre Channel ノードには次の特徴があります。
 
 
 
+[[node-states-of-operation]]
 == ノードの処理の状態
 
 設定のレベルによって、ノードは次のいずれかの状態になります。
@@ -91,6 +95,7 @@ Fibre Channel ノードには次の特徴があります。
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire および Element ソフトウェアのドキュメント"]

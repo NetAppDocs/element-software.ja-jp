@@ -15,6 +15,7 @@ summary: SetNetworkConfig メソッドを使用して、ノードのネットワ
 
 
 
+[[parameter]]
 == パラメータ
 
 注意
@@ -41,6 +42,7 @@ xref:reference_element_api_network_all_interfaces.adoc[network （すべての�
 |===
 
 
+[[return-value]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -59,6 +61,7 @@ xref:reference_element_api_network_all_interfaces.adoc[network （すべての�
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -87,18 +90,21 @@ xref:reference_element_api_network_all_interfaces.adoc[network （すべての�
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドからの応答は、 GetNetworkConfig メソッドからの応答と同じです。メソッドは、各オブジェクトのすべてのメンバーを表示し、変更されたメンバーの新しい値を組み込みます。
 
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 9.6
 
 
 
+[[find-more-information]]
 == 詳細については、こちらをご覧ください
 
 * xref:reference_element_api_getnetworkconfig.adoc[GetNetworkConfig （ GetNetworkConfig ）]

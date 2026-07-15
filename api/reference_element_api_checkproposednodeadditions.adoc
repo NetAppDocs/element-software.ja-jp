@@ -15,6 +15,7 @@ summary: CheckProposedNodeAdditions メソッドを使用すると、一連の�
 
 
 
+[[parameter]]
 == パラメータ
 
 このメソッドの入力パラメータは次のとおりです。
@@ -37,6 +38,7 @@ summary: CheckProposedNodeAdditions メソッドを使用すると、一連の�
 |===
 
 
+[[return-values]]
 == 戻り値
 
 このメソッドの戻り値は次のとおりです。
@@ -79,6 +81,7 @@ summary: CheckProposedNodeAdditions メソッドを使用すると、一連の�
 |===
 
 
+[[request-example]]
 == 要求例
 
 このメソッドの要求例を次に示します。
@@ -100,6 +103,7 @@ summary: CheckProposedNodeAdditions メソッドを使用すると、一連の�
 ----
 
 
+[[response-example]]
 == 応答例
 
 このメソッドの応答例を次に示します。
@@ -116,6 +120,7 @@ summary: CheckProposedNodeAdditions メソッドを使用すると、一連の�
 ----
 
 
+[[new-since-version]]
 == 新規導入バージョン
 
 11.0
